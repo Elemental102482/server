@@ -1,0 +1,19 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.wretched_wraith_fire.particles": {
+			"loop": true,
+			"animation_length": 1,
+			"particle_effects": {
+				"0.0": {
+					"effect": "fire",
+					"locator": "particles"
+				},
+				"0.01": {
+					"effect": "smoke",
+					"locator": "particles"
+				}
+			}
+		}
+	}
+}

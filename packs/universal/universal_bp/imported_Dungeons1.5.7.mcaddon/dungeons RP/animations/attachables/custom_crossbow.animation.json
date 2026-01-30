@@ -1,0 +1,74 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.custom_crossbow.first_person": {
+			"loop": true,
+			"bones": {
+				"rightItem": {
+					"rotation": [
+						-18.4833,
+						-26.7082,
+						-23.6947
+					],
+					"position": [
+						-5.5,
+						0,
+						-2
+					],
+					"scale": 0.85
+				}
+			}
+		},
+		"animation.custom_crossbow.third_person": {
+			"loop": true,
+			"bones": {
+				"rightItem": {
+					"rotation": [
+						0.5,
+						90,
+						0
+					],
+					"position": [
+						2.5,
+						-8.5,
+						-1.5
+					]
+				}
+			}
+		},
+		"animation.custom_crossbow.test": {
+			"loop": true,
+			"bones": {
+				"rightItem": {
+					"rotation": [
+						0,
+						180,
+						0
+					],
+					"position": [
+						0,
+						16,
+						0
+					]
+				}
+			}
+		},
+		"animation.custom_crossbow.wield_first_person_pull": {
+			"loop": true,
+			"bones": {
+				"rightItem": {
+					"rotation": [
+						-11,
+						0,
+						-11
+					],
+					"position": [
+						-1,
+						"1+(v.charge_amount>=1?math.sin(1300*(q.life_time))*0.1-math.sin(q.life_time*45)*0.5:0)",
+						0.2
+					]
+				}
+			}
+		}
+	}
+}

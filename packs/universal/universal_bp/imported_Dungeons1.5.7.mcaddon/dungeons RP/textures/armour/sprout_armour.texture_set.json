@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "sprout_armour",
+        "metalness_emissive_roughness": "sprout_armour_mer"
+    }
+}

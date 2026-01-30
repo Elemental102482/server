@@ -1,0 +1,119 @@
+{
+	"format_version": "1.21.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "cata:phantom_divine_scythe_of_heaven",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"runtime_identifier": "minecraft:vex"
+		},
+		"component_groups": {
+			"despawn": {
+				"minecraft:instant_despawn": {
+					"remove_child_entities": true
+				}
+			},
+			"move1": {
+				"minecraft:skin_id": {
+					"value": 0
+				}
+			},
+			"move2": {
+				"minecraft:skin_id": {
+					"value": 1
+				}
+			}
+		},
+		"components": {
+			"minecraft:health": {
+				"value": 100,
+				"min": 1
+			},
+			"minecraft:type_family": {
+				"family": [
+					"exodius_armor_elements",
+					"inanimate"
+				]
+			},
+			"minecraft:physics": {
+				"has_collision": false,
+				"has_gravity": false
+			},
+			"minecraft:jump.static": {},
+			"minecraft:can_climb": {},
+			"minecraft:scale": {
+				"value": 1
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "all",
+						"deals_damage": "no"
+					}
+				]
+			},
+			"minecraft:despawn": {
+				"despawn_from_distance": {}
+			},
+			"minecraft:cannot_be_attacked": {},
+			"minecraft:behavior.float": {
+				"priority": 0
+			},
+			"minecraft:timer": {
+				"looping": true,
+				"time": [
+					1.8,
+					1.8
+				],
+				"time_down_event": {
+					"event": "despawn"
+				}
+			},
+			"minecraft:collision_box": {
+				"width": 0,
+				"height": 0
+			},
+			"minecraft:area_attack": {
+				"damage_range": 2,
+				"damage_per_tick": 20,
+				"cause": "projectile",
+				"entity_filter": [
+					{
+						"test": "is_family",
+						"subject": "other",
+						"operator": "!=",
+						"value": "player"
+					}
+				],
+				"damage_cooldown": 0.1
+			},
+			"minecraft:knockback_resistance": {
+				"value": 100
+			}
+		},
+		"events": {
+			"despawn": {
+				"add": {
+					"component_groups": [
+						"despawn"
+					]
+				}
+			},
+			"move1": {
+				"add": {
+					"component_groups": [
+						"move1"
+					]
+				}
+			},
+			"move2": {
+				"add": {
+					"component_groups": [
+						"move2"
+					]
+				}
+			}
+		}
+	}
+}

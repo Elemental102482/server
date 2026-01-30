@@ -1,0 +1,80 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.wildfire.shields": {
+			"initial_state": "4",
+			"states": {
+				"0": {
+					"animations": [
+						"0_shields"
+					],
+					"blend_transition": 0.1
+				},
+				"1": {
+					"animations": [
+						{
+							"spin_shields": "((0.7+(q.has_target*0.8))*2)*q.variant"
+						},
+						"1_shield"
+					],
+					"transitions": [
+						{
+							"0": "query.property('dungeons:shields')==0"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"2": {
+					"animations": [
+						{
+							"spin_shields": "((0.7+(q.has_target*0.8))*1.5)*q.variant"
+						},
+						"2_shields"
+					],
+					"transitions": [
+						{
+							"1": "query.property('dungeons:shields')==1"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"3": {
+					"animations": [
+						{
+							"spin_shields": "((0.7+(q.has_target*0.8))*1.33)*q.variant"
+						},
+						"3_shields"
+					],
+					"transitions": [
+						{
+							"2": "query.property('dungeons:shields')==2"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"4": {
+					"animations": [
+						{
+							"spin_shields": "(0.7+(q.has_target*0.8))*q.variant"
+						}
+					],
+					"transitions": [
+						{
+							"3": "query.property('dungeons:shields')==3"
+						},
+						{
+							"2": "query.property('dungeons:shields')==2"
+						},
+						{
+							"1": "query.property('dungeons:shields')==1"
+						},
+						{
+							"0": "query.property('dungeons:shields')==0"
+						}
+					],
+					"blend_transition": 0.1
+				}
+			}
+		}
+	}
+}

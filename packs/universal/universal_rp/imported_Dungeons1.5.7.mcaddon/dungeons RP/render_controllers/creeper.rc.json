@@ -1,0 +1,30 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.creeper": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"arrays": {
+				"textures": {
+					"array.skins": [
+						"texture.default",
+						"texture.charged"
+					]
+				}
+			},
+			"textures": [
+				"array.skins[query.is_powered]"
+			],
+			"overlay_color": {
+				"r": "((variable.flash==0)||(query.swelling_dir<0))?this:1",
+				"g": "((variable.flash==0)||(query.swelling_dir<0))?this:1",
+				"b": "((variable.flash==0)||(query.swelling_dir<0))?this:1",
+				"a": "((variable.flash==0)||(query.swelling_dir<0))?this:1"
+			}
+		}
+	}
+}

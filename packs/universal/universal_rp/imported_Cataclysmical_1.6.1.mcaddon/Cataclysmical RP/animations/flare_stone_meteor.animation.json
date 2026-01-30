@@ -1,0 +1,182 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.flare_stone_meteor.spawn": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1.25,
+			"bones": {
+				"root": {
+					"position": {
+						"0.0": [
+							0,
+							260,
+							0
+						],
+						"1.25": [
+							0,
+							0,
+							0
+						]
+					},
+					"scale": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.375": [
+							1,
+							1,
+							1
+						]
+					}
+				}
+			},
+			"particle_effects": {
+				"1.2083": {
+					"effect": "large_impact"
+				}
+			}
+		},
+		"animation.flare_stone_meteor.spawn_variant1": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1.25,
+			"bones": {
+				"root": {
+					"position": {
+						"0.0": [
+							0,
+							260,
+							131
+						],
+						"1.25": [
+							0,
+							0,
+							0
+						]
+					},
+					"scale": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.375": [
+							1,
+							1,
+							1
+						]
+					}
+				}
+			},
+			"particle_effects": {
+				"1.2083": {
+					"effect": "large_impact"
+				}
+			}
+		},
+		"animation.flare_stone_meteor.spawn_variant2": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1.25,
+			"bones": {
+				"root": {
+					"position": {
+						"0.0": [
+							154,
+							260,
+							131
+						],
+						"1.25": [
+							0,
+							0,
+							0
+						]
+					},
+					"scale": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.375": [
+							1,
+							1,
+							1
+						]
+					}
+				}
+			},
+			"particle_effects": {
+				"1.2083": {
+					"effect": "large_impact"
+				}
+			}
+		},
+		"animation.flare_stone_meteor.spawn_variant3": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1.25,
+			"bones": {
+				"root": {
+					"position": {
+						"0.0": [
+							-166,
+							260,
+							-154
+						],
+						"1.25": [
+							0,
+							0,
+							0
+						]
+					},
+					"scale": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.375": [
+							1,
+							1,
+							1
+						]
+					}
+				}
+			},
+			"particle_effects": {
+				"1.2083": {
+					"effect": "large_impact"
+				}
+			}
+		},
+		"animation.flare_stone_meteor.rotate": {
+			"loop": true,
+			"animation_length": 1.5,
+			"bones": {
+				"root": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.5": [
+							-360,
+							360,
+							0
+						]
+					}
+				}
+			}
+		},
+		"animation.flare_stone_meteor.particle": {
+			"loop": true,
+			"particle_effects": {
+				"0.0": {
+					"effect": "flare_stone_meteor_emitter",
+					"locator": "locator"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "bps:backpack_xl"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " N ",
+	  "NBN",
+	  " N "
+    ],
+    "key": {
+	  "B": {
+        "item": "bps:backpack_big"
+      },
+	  "N": {
+        "item": "minecraft:netherite_scrap"
+      }
+    },
+    "result": {
+      "item": "bps:backpack_xl"
+    }
+  }
+}

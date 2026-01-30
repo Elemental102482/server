@@ -1,0 +1,38 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "bp_bow_of_lost_souls"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"B": {
+				"item": "dungeons:blue_print"
+			},
+			"W": {
+				"item": "dungeons:bow_of_lost_souls"
+			}
+		},
+		"unlock": [
+			{
+				"item": "dungeons:bow_of_lost_souls"
+			}
+		],
+		"pattern": [
+			"B",
+			"W"
+		],
+		"result": [
+			{
+				"item": "dungeons:bow_of_lost_souls",
+				"count": 1
+			},
+			{
+				"item": "dungeons:bow_of_lost_souls",
+				"count": 1
+			}
+		]
+	}
+}

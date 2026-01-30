@@ -1,0 +1,33 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "plate_leggings"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"III",
+			"B B",
+			"I I"
+		],
+		"unlock": [
+			{
+				"item": "minecraft:iron_ingot"
+			}
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:redstone"
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			}
+		},
+		"result": {
+			"item": "dungeons:plate_leggings",
+			"count": 1
+		}
+	}
+}

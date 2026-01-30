@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "spooky_gourdian_glow",
+        "metalness_emissive_roughness": "spooky_gourdian_glow_mer"
+    }
+}

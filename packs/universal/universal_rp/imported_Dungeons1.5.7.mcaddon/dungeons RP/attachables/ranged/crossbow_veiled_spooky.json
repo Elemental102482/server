@@ -1,0 +1,51 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "dungeons:shrieking_crossbow",
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "bow_standby": "textures/items/ranged/shrieking_crossbow/standby",
+        "bow_pulling_0": "textures/items/ranged/shrieking_crossbow/pulling_1",
+        "bow_pulling_1": "textures/items/ranged/shrieking_crossbow/pulling_2",
+        "bow_pulling_2": "textures/items/ranged/shrieking_crossbow/pulling_3",
+        "bow_ready": "textures/items/ranged/shrieking_crossbow/ready",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "crossbow_standby": "geometry.custom_crossbow_standby",
+        "crossbow_pulling_0": "geometry.custom_crossbow_pulling_0",
+        "crossbow_pulling_1": "geometry.custom_crossbow_pulling_1",
+        "crossbow_pulling_2": "geometry.custom_crossbow_pulling_2",
+        "crossbow_ready": "geometry.custom_crossbow_ready"
+      },
+      "animations": {
+        "first_person_hold": "animation.custom_crossbow.first_person",
+        "third_person_hold": "animation.custom_crossbow.third_person",
+        "wield_first_person_pull": "animation.custom_crossbow.wield_first_person_pull"
+      },
+      "scripts": {
+        "pre_animation": [
+          "v.charge_amount = q.main_hand_item_use_duration > 0.0f ? (math.clamp((q.main_hand_item_max_duration - q.main_hand_item_use_duration) / 5, 1, 3)) : 0;"
+        ],
+        "animate": [
+          {
+            "first_person_hold": "c.is_first_person"
+          },
+          {
+            "third_person_hold": "!c.is_first_person"
+          },
+          {
+            "wield_first_person_pull": "q.main_hand_item_use_duration > 0.0f && c.is_first_person"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.custom_crossbow"
+      ]
+    }
+  }
+}

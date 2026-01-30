@@ -1,0 +1,47 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.leapleaf.root": {
+			"initial_state": "default",
+			"states": {
+				"charge": {
+					"animations": [
+						"charge",
+						"look_at_target"
+					],
+					"transitions": [
+						{
+							"default": "q.all_animations_finished&&!q.timer_flag_1"
+						}
+					],
+					"blend_transition": 0
+				},
+				"stunned": {
+					"animations": [
+						"stunned"
+					],
+					"transitions": [
+						{
+							"default": "q.all_animations_finished&&!q.is_stunned"
+						}
+					],
+					"blend_transition": 0
+				},
+				"default": {
+					"animations": [
+						"look_at_target"
+					],
+					"transitions": [
+						{
+							"charge": "q.timer_flag_1"
+						},
+						{
+							"stunned": "q.is_stunned"
+						}
+					],
+					"blend_transition": 0.1
+				}
+			}
+		}
+	}
+}

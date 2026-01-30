@@ -1,0 +1,18 @@
+{
+	"format_version": "1.21.20",
+	"minecraft:template_pool": {
+		"description": {
+			"identifier": "cata:flare_star_part"
+		},
+		"elements": [
+			{
+				"element": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "flare_star2",
+					"processors": "cata:flare_star_replacement"
+				},
+				"weight": 1
+			}
+		]
+	}
+}

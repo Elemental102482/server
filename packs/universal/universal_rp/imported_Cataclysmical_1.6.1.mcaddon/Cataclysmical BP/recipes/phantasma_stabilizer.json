@@ -1,0 +1,37 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cata:phantasma_stabilizer"
+		},
+		"pattern": [
+			"111",
+			"232",
+			"444"
+		],
+		"key": {
+			"1": {
+				"item": "cata:terrorite_brick"
+			},
+			"2": {
+				"item": "cata:phantasma_nucleus"
+			},
+			"3": {
+				"item": "cata:terror_detector"
+			},
+			"4": {
+				"item": "cata:platinum_alloy"
+			}
+		},
+		"result": {
+			"item": "cata:phantasma_stabilizer",
+			"count": 1
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": {
+			"context": "AlwaysUnlocked"
+		}
+	}
+}

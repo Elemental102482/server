@@ -1,0 +1,52 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Created by Kamii",
+    "name": "Novelty API v1.3",
+    "uuid": "06c192ec-c20c-4277-b061-fce14e71ff1f",
+    "version": [
+      1,
+      3,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "",
+      "type": "script",
+      "language": "javascript",
+      "uuid": "b27c95e3-2e66-44d1-90ae-31d26f537ad5",
+      "version": [
+        1,
+        3,
+        0
+      ],
+      "entry": "scripts/main.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.15.0"
+    },
+    {
+      "uuid": "ea8da0de-83d7-4ae2-aa43-bbcd4192e0c7",
+      "version": [
+        1,
+        3,
+        0
+      ]
+    }
+  ],
+  "metadata": {
+    "authors": [
+      "Kamii"
+    ],
+    "product_type": "addon"
+  }
+}

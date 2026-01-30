@@ -1,0 +1,23 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:item": {
+		"description": {
+			"identifier": "cata:chaosspec_ingot",
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:block_placer": {
+				"block": "cata:chaosspec_ingot",
+				"use_on": [
+					"cata:chaosspec_ingot"
+				],
+				"replace_block_item": true
+			},
+			"minecraft:hover_text_color": {
+				"value": "red"
+			}
+		}
+	}
+}

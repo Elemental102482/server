@@ -1,0 +1,15 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ws:warpstone",
+			"menu_category": { "category": "items" }
+    },
+    "components": {
+      "minecraft:custom_components": [ "ws:warpstone" ],
+      "minecraft:icon": "warpstone",
+      "minecraft:max_stack_size": 1,
+      "minecraft:can_destroy_in_creative": false
+    }
+  }
+}

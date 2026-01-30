@@ -1,0 +1,41 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:corrupted_cauldron_resting",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/corrupted_cauldron/off",
+				"on": "textures/entity/corrupted_cauldron/on"
+			},
+			"geometry": {
+				"default": "geometry.corrupted_cauldron"
+			},
+			"render_controllers": [
+				"controller.render.redstone_monstrosity"
+			],
+			"animations": {
+				"resting": "animation.corrupted_cauldron.inactive",
+				"awaken": "animation.corrupted_cauldron.activate",
+				"wake_controller": "controller.animation.redstone_monstrosity.rest"
+			},
+			"scripts": {
+				"animate": [
+					"wake_controller"
+				]
+			},
+			"sound_effects": {
+				"awaken": "mob.corrupted_cauldron.awaken"
+			},
+			"particle_effects": {
+				"bubble": "dungeons:cauldron_bubble",
+				"base_flame": "dungeons:cauldron_base"
+			},
+			"spawn_egg": {
+				"texture": "egg_corrupted_cauldron"
+			}
+		}
+	}
+}

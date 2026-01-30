@@ -1,0 +1,17 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.target_dummy.wiggle": {
+			"loop": true,
+			"bones": {
+				"base": {
+					"rotation": [
+						0,
+						"math.sin((q.hurt_time-query.frame_alpha)*120)*3",
+						0
+					]
+				}
+			}
+		}
+	}
+}

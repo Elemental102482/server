@@ -1,0 +1,44 @@
+{
+  "format_version": 2,
+  "metadata": {
+    "authors": [
+      "Minera"
+    ]
+  },
+  "header": {
+    "name": "Cataclysmical",
+    "description": "Cataclysmical By Minera Studios",
+    "min_engine_version": [
+      1,
+      20,
+      60
+    ],
+    "uuid": "6f42900c-5899-4fe1-83c3-1d98c3f18e6e",
+    "version": [
+      1,
+      0,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "38a85698-d4cb-45af-9b91-e844381f48f6",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "3db20b3b-6a1f-4c60-bb1d-a736f2574c31",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}

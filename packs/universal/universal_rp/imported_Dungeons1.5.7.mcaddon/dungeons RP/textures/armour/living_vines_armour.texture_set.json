@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "living_vines_armour",
+        "metalness_emissive_roughness": "living_vines_armour_mer"
+    }
+}

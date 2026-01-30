@@ -1,0 +1,59 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.anchor.first_person_hold": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"rotation": [
+						-662.37137,
+						63.08518,
+						-794.37491
+					],
+					"position": [
+						6,
+						19,
+						3
+					],
+					"scale": 1.5
+				}
+			}
+		},
+		"animation.anchor.third_person_hold": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"rotation": [
+						87.5,
+						0,
+						0
+					],
+					"position": [
+						0.5,
+						22,
+						0
+					],
+					"scale": 1.6
+				}
+			}
+		},
+		"animation.anchor.third_person_hold2": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"rotation": [
+						87.5,
+						0,
+						0
+					],
+					"position": [
+						0.5,
+						22,
+						0
+					],
+					"scale": 1.8
+				}
+			}
+		}
+	}
+}

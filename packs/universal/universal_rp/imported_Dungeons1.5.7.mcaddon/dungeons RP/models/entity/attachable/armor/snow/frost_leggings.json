@@ -1,0 +1,127 @@
+{
+	"format_version": "1.10.0",
+	"geometry.frost_leggings": {
+		"texturewidth": 64,
+		"textureheight": 64,
+		"visible_bounds_width": 3,
+		"visible_bounds_height": 3,
+		"visible_bounds_offset": [
+			0,
+			1.5,
+			0
+		],
+		"bones": [
+			{
+				"name": "body",
+				"pivot": [
+					0,
+					24,
+					0
+				]
+			},
+			{
+				"name": "legs",
+				"parent": "body",
+				"pivot": [
+					0,
+					24,
+					0
+				],
+				"cubes": [
+					{
+						"origin": [
+							-4,
+							12,
+							-2
+						],
+						"size": [
+							8,
+							3,
+							4
+						],
+						"uv": [
+							40,
+							0
+						],
+						"inflate": 0.201
+					}
+				]
+			},
+			{
+				"name": "leftLeg",
+				"pivot": [
+					-1.9,
+					12,
+					0
+				]
+			},
+			{
+				"name": "legging1",
+				"parent": "rightLeg",
+				"pivot": [
+					3,
+					0,
+					0
+				],
+				"cubes": [
+					{
+						"origin": [
+							0,
+							3.65,
+							-2
+						],
+						"size": [
+							4,
+							8,
+							4
+						],
+						"uv": [
+							44,
+							24
+						],
+						"inflate": 0.2,
+						"mirror": true
+					}
+				]
+			},
+			{
+				"name": "rightLeg",
+				"pivot": [
+					1.9,
+					12,
+					0
+				],
+				"mirror": true
+			},
+			{
+				"name": "legging2",
+				"parent": "leftLeg",
+				"pivot": [
+					0,
+					0,
+					0
+				],
+				"cubes": [
+					{
+						"origin": [
+							-4,
+							3.65,
+							-2
+						],
+						"size": [
+							4,
+							8,
+							4
+						],
+						"uv": [
+							44,
+							24
+						],
+						"inflate": 0.2,
+						"mirror": false
+					}
+				]
+			}
+		]
+	}
+}

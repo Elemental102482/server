@@ -1,0 +1,24 @@
+{
+	"format_version": 1.12,
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "e:bless_of_mercury_netherite_pickaxe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "minecraft:netherite_pickaxe"
+			},
+			{
+				"item": "e:bless_of_mercury_book_1"
+			}
+		],
+		"result": [
+			{
+				"item": "e:netherite_pickaxe_bom"
+			}
+		]
+	}
+}

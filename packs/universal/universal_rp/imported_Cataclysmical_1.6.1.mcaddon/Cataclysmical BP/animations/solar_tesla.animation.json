@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.solar_tesla.normal_attack": {
+			"animation_length": 2.5
+		},
+		"animation.solar_tesla.summon": {
+			"animation_length": 1.5,
+			"timeline": {
+				"1.05": [
+					"/summon cata:solar_tesla_summon ~ ~ ~"
+				]
+			}
+		}
+	}
+}

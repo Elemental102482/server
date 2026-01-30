@@ -1,0 +1,21 @@
+{
+	"format_version": "1.21.80",
+	"minecraft:structure_set": {
+		"description": {
+			"identifier": "cata:sanctum"
+		},
+		"placement": {
+			"type": "minecraft:random_spread",
+			"salt": 65026762,
+			"separation": 25,
+			"spacing": 60,
+			"spread_type": "linear"
+		},
+		"structures": [
+			{
+				"structure": "cata:sanctum",
+				"weight": 1
+			}
+		]
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"format_version": "1.21.10",
+	"minecraft:item": {
+		"description": {
+			"identifier": "dungeons:enchanted_eye_of_ender",
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:hover_text_color": {
+				"value": "light_purple"
+			},
+			"minecraft:icon": "enchanted_eye_of_ender",
+			"minecraft:glint": {
+				"value": true
+			}
+		}
+	}
+}

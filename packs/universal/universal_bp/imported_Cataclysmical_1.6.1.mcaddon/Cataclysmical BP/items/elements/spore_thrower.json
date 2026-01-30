@@ -1,0 +1,35 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:item": {
+		"description": {
+			"identifier": "cata:spore_thrower",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:max_stack_size": {
+				"value": 1
+			},
+			"minecraft:block_placer": {
+				"block": "cata:spore_thrower",
+				"use_on": [
+					"cata:spore_thrower"
+				],
+				"replace_block_item": true
+			},
+			"minecraft:interact_button": true,
+			"minecraft:use_modifiers": {
+				"use_duration": 99999999,
+				"movement_modifier": 0.8
+			},
+			"minecraft:use_animation": {
+				"value": "spyglass"
+			},
+			"minecraft:cooldown": {
+				"category": "spore_thrower",
+				"duration": 0.5
+			}
+		}
+	}
+}

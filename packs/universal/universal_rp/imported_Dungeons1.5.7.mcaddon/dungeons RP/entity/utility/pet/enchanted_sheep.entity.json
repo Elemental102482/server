@@ -1,0 +1,60 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:enchanted_sheep",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "entity_emissive",
+				"enchanted": "dungeons_entity_enchant"
+			},
+			"textures": {
+				"default": "textures/entity/enchanted_sheep/red",
+				"green": "textures/entity/enchanted_sheep/green",
+				"blue": "textures/entity/enchanted_sheep/blue",
+				"red_enchanted": "textures/entity/enchanted_sheep/enchanted_red",
+				"green_enchanted": "textures/entity/enchanted_sheep/enchanted_green",
+				"blue_enchanted": "textures/entity/enchanted_sheep/enchanted_blue",
+				"enchanted": "textures/misc/enchanted_entity_glint"
+			},
+			"geometry": {
+				"default": "geometry.enchanted_sheep"
+			},
+			"particle_effects": {
+				"enchant": "dungeons:humanoid_enchant"
+			},
+			"animations": {
+				"enchanted_particles": "animation.enchanted_mob.particles",
+				"setup": "animation.sheep.setup",
+				"grazing": "animation.quadruped.walk",
+				"walk": "animation.quadruped.walk",
+				"look_at_target": "animation.common.look_at_target",
+				"baby_transform": "animation.sheep.baby_transform",
+				"move": "controller.animation.sheep.move"
+			},
+			"scripts": {
+				"animate": [
+					"setup",
+					"look_at_target",
+					"move",
+					{
+						"baby_transform": "query.is_baby"
+					},
+					{
+						"enchanted_particles": "query.is_saddled"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.enchanted_sheep",
+				{
+					"controller.render.dungeons_entity_enchanted": "q.is_saddled==1"
+				}
+			],
+			"spawn_egg": {
+				"texture": "spawn_egg",
+				"texture_index": 3
+			}
+		}
+	}
+}

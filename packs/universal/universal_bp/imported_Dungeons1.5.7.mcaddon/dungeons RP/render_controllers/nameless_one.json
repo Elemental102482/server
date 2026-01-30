@@ -1,0 +1,37 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.nameless_one": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default",
+					"outside*": "material.orb"
+				}
+			],
+			"textures": [
+				"texture.default"
+			]
+		},
+		"controller.render.nameless_one_sleeping": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default",
+					"outside*": "material.orb"
+				}
+			],
+			"arrays": {
+				"textures": {
+					"array.skins": [
+						"texture.default",
+						"texture.on"
+					]
+				}
+			},
+			"textures": [
+				"array.skins[query.variant]"
+			]
+		}
+	}
+}

@@ -1,0 +1,105 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.grim_chestplate",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "body",
+					"pivot": [
+						0,
+						24,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								12,
+								-3
+							],
+							"size": [
+								8,
+								12,
+								6
+							],
+							"uv": [
+								1,
+								18
+							],
+							"inflate": 0.34
+						}
+					]
+				},
+				{
+					"name": "rightArm",
+					"pivot": [
+						-5,
+						22,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-9.33,
+								17,
+								-3
+							],
+							"size": [
+								5,
+								7,
+								6
+							],
+							"uv": [
+								39,
+								0
+							],
+							"inflate": 0.33,
+							"mirror": true
+						}
+					]
+				},
+				{
+					"name": "leftArm",
+					"pivot": [
+						5,
+						22,
+						0
+					],
+					"mirror": true,
+					"cubes": [
+						{
+							"origin": [
+								4.33,
+								17,
+								-3
+							],
+							"size": [
+								5,
+								7,
+								6
+							],
+							"uv": [
+								39,
+								0
+							],
+							"inflate": 0.33,
+							"mirror": false
+						}
+					]
+				}
+			]
+		}
+	]
+}

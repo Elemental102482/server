@@ -1,0 +1,40 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.bone_club.first_person_hold": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"rotation": [
+						103.5,
+						62,
+						-50
+					],
+					"position": [
+						3,
+						34.1,
+						11
+					]
+				}
+			}
+		},
+		"animation.bone_club.third_person_hold": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"rotation": [
+						90,
+						0,
+						0
+					],
+					"position": [
+						0.25,
+						23.5,
+						4.25
+					],
+					"scale": 1.033
+				}
+			}
+		}
+	}
+}

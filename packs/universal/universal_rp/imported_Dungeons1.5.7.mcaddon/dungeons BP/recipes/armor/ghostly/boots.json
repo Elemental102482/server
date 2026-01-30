@@ -1,0 +1,32 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ghost_boots"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"B B",
+			"L L"
+		],
+		"unlock": [
+			{
+				"item": "minecraft:bone"
+			}
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:bone"
+			},
+			"L": {
+				"item": "minecraft:iron_ingot"
+			}
+		},
+		"result": {
+			"item": "dungeons:ghostly_boots",
+			"count": 1
+		}
+	}
+}

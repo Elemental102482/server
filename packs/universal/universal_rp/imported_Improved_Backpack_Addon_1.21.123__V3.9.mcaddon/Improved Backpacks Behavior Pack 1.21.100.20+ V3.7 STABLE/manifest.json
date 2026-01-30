@@ -1,0 +1,59 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Made By:Dewdimpple\nYoutube:Dewdimpple\nTwitter:@Dewdimpple",
+    "name": "Improved Backpack+ 1.21.123+ V3.9 STABLE",
+    "uuid": "a6b9ea6e-7dc9-450c-b800-74cb38699943",
+    "version": [
+      1,
+      4,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      123
+    ]
+  },
+  "modules": [
+    {
+      "description": "Data",
+      "type": "data",
+      "uuid": "96407c99-c20a-4e98-8625-30d680c3d758",
+      "version": [
+        1,
+        4,
+        0
+      ]
+    },
+    {
+      "description": "JavaScript module code",
+      "language": "javascript",
+      "type": "script",
+      "uuid": "3c1f0f2a-6c61-4b8f-a797-2af4c158e7f3",
+      "version": [
+        1,
+        4,
+        0
+      ],
+      "entry": "scripts/Main.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "2.3.0"
+    },
+    {
+      "uuid": "deb394fc-1248-4752-8bb5-345e58ab4720",
+      "version": [
+        5,
+        0,
+        10
+      ]
+    }
+  ],
+  "metadata": {
+    "product_type": "addon"
+  }
+}

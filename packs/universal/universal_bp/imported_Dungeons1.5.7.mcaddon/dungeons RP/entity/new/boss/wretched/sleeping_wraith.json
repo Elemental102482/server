@@ -1,0 +1,36 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:wretched_wraith_resting",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/wretched_wraith/wretched_wraith"
+			},
+			"geometry": {
+				"default": "geometry.wretched_wraith"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"animations": {
+				"resting": "animation.wretched_wraith.resting",
+				"awaken": "animation.wretched_wraith.awaken",
+				"wake_controller": "controller.animation.redstone_monstrosity.rest"
+			},
+			"scripts": {
+				"animate": [
+					"wake_controller"
+				]
+			},
+			"sound_effects": {
+				"awaken": "mob.wretched_wraith.awaken"
+			},
+			"spawn_egg": {
+				"texture": "egg_wretched_wraith"
+			}
+		}
+	}
+}

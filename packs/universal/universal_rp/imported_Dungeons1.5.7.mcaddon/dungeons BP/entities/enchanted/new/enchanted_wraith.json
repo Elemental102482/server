@@ -1,0 +1,501 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "dungeons:enchanted_wraith",
+			"runtime_identifier": "minecraft:stray",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"dungeons:enchant_protection": {
+				"minecraft:boss": {
+					"should_darken_sky": false,
+					"hud_range": 8,
+					"name": "§dEnchanted Wraith  Protection"
+				},
+				"minecraft:health": {
+					"value": 72,
+					"max": 72
+				}
+			},
+			"dungeons:enchant_chilling": {
+				"minecraft:boss": {
+					"should_darken_sky": false,
+					"hud_range": 8,
+					"name": "§dEnchanted Wraith  Chilling"
+				},
+				"minecraft:mob_effect": {
+					"effect_range": 4,
+					"effect_time": 2,
+					"mob_effect": "slowness",
+					"cooldown_time": 1,
+					"entity_filter": {
+						"any_of": [
+							{
+								"all_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									},
+									{
+										"none_of": {
+											"test": "has_ability",
+											"subject": "other",
+											"value": "instabuild"
+										}
+									}
+								]
+							},
+							{
+								"test": "is_family",
+								"subject": "other",
+								"value": "snowgolem"
+							},
+							{
+								"test": "is_family",
+								"subject": "other",
+								"value": "irongolem"
+							}
+						]
+					}
+				}
+			},
+			"dungeons:enchant_quick": {
+				"minecraft:boss": {
+					"should_darken_sky": false,
+					"hud_range": 8,
+					"name": "§dEnchanted Wraith  Quick"
+				},
+				"minecraft:movement": {
+					"value": 0.45
+				}
+			},
+			"dungeons:cooldown_teleport": {
+				"minecraft:pushable": {
+					"is_pushable": true,
+					"is_pushable_by_piston": true
+				},
+				"minecraft:timer": {
+					"looping": false,
+					"time": 3.33,
+					"time_down_event": {
+						"event": "dungeons:can_teleport"
+					}
+				},
+				"minecraft:variant": {
+					"value": 0
+				}
+			},
+			"dungeons:can_teleport": {
+				"minecraft:pushable": {
+					"is_pushable": true,
+					"is_pushable_by_piston": true
+				},
+				"minecraft:variant": {
+					"value": 0
+				},
+				"minecraft:entity_sensor": {
+					"sensor_range": 2.5,
+					"relative_range": false,
+					"minimum_count": 1,
+					"event_filters": {
+						"any_of": [
+							{
+								"all_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									},
+									{
+										"none_of": {
+											"test": "has_ability",
+											"subject": "other",
+											"value": "instabuild"
+										}
+									}
+								]
+							},
+							{
+								"test": "is_family",
+								"subject": "other",
+								"value": "snowgolem"
+							},
+							{
+								"test": "is_family",
+								"subject": "other",
+								"value": "irongolem"
+							}
+						]
+					},
+					"event": "dungeons:begin_teleport"
+				}
+			},
+			"dungeons:begin_teleport": {
+				"minecraft:timer": {
+					"looping": false,
+					"time": 1,
+					"time_down_event": {
+						"event": "dungeons:teleport"
+					}
+				},
+				"minecraft:pushable": {
+					"is_pushable": false,
+					"is_pushable_by_piston": false
+				},
+				"minecraft:variant": {
+					"value": 1
+				},
+				"minecraft:entity_sensor": {},
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"cause": "all",
+							"deals_damage": false
+						}
+					]
+				}
+			},
+			"dungeons:teleport": {
+				"minecraft:timer": {
+					"looping": false,
+					"time": 2.18,
+					"time_down_event": {
+						"event": "dungeons:finish_teleport"
+					}
+				},
+				"minecraft:variant": {
+					"value": 1
+				},
+				"minecraft:pushable": {
+					"is_pushable": false,
+					"is_pushable_by_piston": false
+				},
+				"minecraft:entity_sensor": {},
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"cause": "all",
+							"deals_damage": false
+						}
+					]
+				}
+			}
+		},
+		"components": {
+			"minecraft:is_hidden_when_invisible": {},
+			"minecraft:despawn": {
+				"despawn_from_distance": {}
+			},
+			"minecraft:damage_sensor": {},
+			"minecraft:experience_reward": {
+				"on_death": "query.last_hit_by_player?40:0"
+			},
+			"minecraft:type_family": {
+				"family": [
+					"enchanted",
+					"wraith",
+					"monster",
+					"undead",
+					"mob"
+				]
+			},
+			"minecraft:breathable": {
+				"total_supply": 15,
+				"suffocate_time": 0
+			},
+			"minecraft:nameable": {},
+			"minecraft:scale": {
+				"value": 1.1
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/wraith.json"
+			},
+			"minecraft:health": {
+				"value": 48,
+				"max": 48
+			},
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"filters": {
+							"test": "in_lava",
+							"subject": "self",
+							"operator": "==",
+							"value": true
+						},
+						"cause": "lava",
+						"damage_per_tick": 4
+					}
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 0.6,
+				"height": 2.1
+			},
+			"minecraft:movement": {
+				"value": 0.3
+			},
+			"minecraft:navigation.walk": {
+				"avoid_water": true,
+				"can_path_over_water": true,
+				"avoid_sun": true,
+				"can_walk": true
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:can_climb": {},
+			"minecraft:behavior.float": {
+				"priority": 0
+			},
+			"minecraft:variable_max_auto_step": {
+				"base_value": 1.0625,
+				"jump_prevented_value": 0.5625
+			},
+			"minecraft:behavior.summon_entity": {
+				"priority": 2,
+				"summon_choices": [
+					{
+						"min_activation_range": 1,
+						"max_activation_range": 32,
+						"cooldown_time": 4,
+						"weight": 1,
+						"cast_duration": 0.85,
+						"start_sound_event": "cast.spell",
+						"sequence": [
+							{
+								"shape": "circle",
+								"target": "target",
+								"base_delay": 0.85,
+								"delay_per_summon": 0,
+								"num_entities_spawned": 1,
+								"entity_type": "dungeons:wraith_fire_strong",
+								"size": 0.3
+							}
+						]
+					}
+				]
+			},
+			"minecraft:behavior.avoid_mob_type": {
+				"priority": 5,
+				"entity_types": [
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "snowgolem"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "irongolem"
+								}
+							]
+						},
+						"max_dist": 8,
+						"walk_speed_multiplier": 1.1,
+						"sprint_speed_multiplier": 1.2
+					}
+				]
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 8,
+				"speed_multiplier": 0.95
+			},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 2,
+				"entity_types": [
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "snowgolem"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "irongolem"
+								}
+							]
+						},
+						"max_dist": 16
+					}
+				],
+				"must_see": true
+			},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1
+			},
+			"minecraft:physics": {},
+			"minecraft:burns_in_daylight": {},
+			"minecraft:follow_range": {
+				"value": 64
+			},
+			"minecraft:conditional_bandwidth_optimization": {}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"sequence": [
+					{
+						"randomize": [
+							{
+								"weight": 1,
+								"add": {
+									"component_groups": [
+										"dungeons:enchant_quick",
+										"dungeons:can_teleport"
+									]
+								}
+							},
+							{
+								"weight": 1,
+								"add": {
+									"component_groups": [
+										"dungeons:enchant_protection",
+										"dungeons:can_teleport"
+									]
+								}
+							},
+							{
+								"weight": 1,
+								"remove": {},
+								"add": {
+									"component_groups": [
+										"dungeons:enchant_chilling",
+										"dungeons:can_teleport"
+									]
+								}
+							}
+						]
+					},
+					{
+						"queue_command": {
+							"command": [
+								"effect @s slowness 1 8 true",
+								"particle dungeons:tower_wraith_black"
+							]
+						}
+					}
+				]
+			},
+			"minecraft:entity_transformed": {
+				"sequence": [
+					{
+						"randomize": [
+							{
+								"weight": 1,
+								"add": {
+									"component_groups": [
+										"dungeons:enchant_quick",
+										"dungeons:can_teleport"
+									]
+								}
+							},
+							{
+								"weight": 1,
+								"add": {
+									"component_groups": [
+										"dungeons:enchant_protection",
+										"dungeons:can_teleport"
+									]
+								}
+							},
+							{
+								"weight": 1,
+								"remove": {},
+								"add": {
+									"component_groups": [
+										"dungeons:enchant_chilling",
+										"dungeons:can_teleport"
+									]
+								}
+							}
+						]
+					},
+					{
+						"queue_command": {
+							"command": [
+								"effect @s slowness 1 8 true",
+								"particle dungeons:tower_wraith_black"
+							]
+						}
+					}
+				]
+			},
+			"dungeons:begin_teleport": {
+				"add": {
+					"component_groups": [
+						"dungeons:begin_teleport"
+					]
+				},
+				"queue_command": {
+					"command": [
+						"playanimation @s animation.wraith.teleport_away",
+						"effect @s slowness 3 99 true",
+						"effect @s fire_resistance 3 99 true"
+					]
+				}
+			},
+			"dungeons:teleport": {
+				"remove": {
+					"component_groups": [
+						"dungeons:begin_teleport"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"dungeons:teleport"
+					]
+				},
+				"queue_command": {
+					"command": [
+						"playanimation @s animation.wraith.teleport_in",
+						"effect @s invisibility 1 0 true",
+						"spreadplayers ~ ~ 3.0 8.0 @s ~8"
+					]
+				}
+			},
+			"dungeons:finish_teleport": {
+				"remove": {
+					"component_groups": [
+						"dungeons:teleport"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"dungeons:cooldown_teleport"
+					]
+				}
+			},
+			"dungeons:can_teleport": {
+				"remove": {
+					"component_groups": [
+						"dungeons:cooldown_teleport"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"dungeons:can_teleport"
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.icy_creeper.particles": {
+			"loop": true,
+			"animation_length": 2,
+			"particle_effects": {
+				"0.01": {
+					"effect": "frost_particle",
+					"locator": "particles"
+				}
+			}
+		},
+		"animation.icy_creeper.charge_particles": {
+			"loop": true,
+			"animation_length": 0.5,
+			"particle_effects": {
+				"0.01": {
+					"effect": "charge_particle",
+					"locator": "particles"
+				}
+			}
+		}
+	}
+}

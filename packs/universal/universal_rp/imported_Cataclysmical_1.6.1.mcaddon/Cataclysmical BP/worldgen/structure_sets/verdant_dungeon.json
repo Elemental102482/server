@@ -1,0 +1,21 @@
+{
+	"format_version": "1.21.80",
+	"minecraft:structure_set": {
+		"description": {
+			"identifier": "cata:verdant_dungeon"
+		},
+		"placement": {
+			"type": "minecraft:random_spread",
+			"salt": 24284043,
+			"separation": 60,
+			"spacing": 130,
+			"spread_type": "linear"
+		},
+		"structures": [
+			{
+				"structure": "cata:verdant_dungeon",
+				"weight": 1
+			}
+		]
+	}
+}

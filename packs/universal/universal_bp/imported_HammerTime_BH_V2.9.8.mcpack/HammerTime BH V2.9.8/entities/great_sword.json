@@ -1,0 +1,322 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity":{
+        "description":{
+            "identifier": "new:great_sword",
+            "is_spawnbale": false,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "component_groups":{
+            "despawn":{
+                "minecraft:instant_despawn":{}
+            },
+            "netherite_great_sword":{
+                "minecraft:behavior.knockback_roar": {
+                    "attack_time": 0.1,
+                    "cooldown_time": 0,
+                    "duration": 0.1,
+                    "knockback_damage": 10,
+                    "knockback_strength": 5,
+                    "knockback_range": 5,
+                    "damage_filters": {
+                        "all_of": [{
+                            "test": "has_equipment",
+                            "operator": "!=",
+                            "subject": "self",
+                            "domain": "hand",
+                            "value": "new:netherite_great_sword"
+                         },
+                         {
+                            "test": "has_equipment",
+                            "operator": "!=",
+                            "subject": "self",
+                            "domain": "hand",
+                            "value": "new:obsidian_great_sword"
+                         }
+                      ]
+                   },
+                   "knockback_filters": {
+                    "all_of": [{
+                            "test": "has_equipment",
+                            "operator": "!=",
+                            "subject": "self",
+                            "domain": "hand",
+                            "value": "new:netherite_great_sword"
+                         },
+                         {
+                            "test": "has_equipment",
+                            "operator": "!=",
+                            "subject": "self",
+                            "domain": "hand",
+                            "value": "new:obsidian_great_sword"
+                      }
+                   ]
+                },
+                "on_roar_end": {
+                  "event": "new:despawn"
+                }
+              }
+            },
+            "diamond_great_sword":{
+                "minecraft:behavior.knockback_roar": {
+                    "attack_time": 0.1,
+                    "cooldown_time": 0,
+                    "duration": 0.1,
+                    "knockback_damage": 8,
+                    "knockback_strength": 4,
+                    "knockback_range": 5,
+                    "damage_filters": {
+                        "all_of": [{
+                            "test": "has_equipment",
+                            "operator": "!=",
+                            "subject": "self",
+                            "domain": "hand",
+                            "value": "new:diamond_great_sword"
+                         },
+                         {
+                            "test": "has_equipment",
+                            "operator": "!=",
+                            "subject": "self",
+                            "domain": "hand",
+                            "value": "new:emerald_great_sword"
+                         }
+                      ]
+                   },
+                   "knockback_filters": {
+                    "all_of": [{
+                            "test": "has_equipment",
+                            "operator": "!=",
+                            "subject": "self",
+                            "domain": "hand",
+                            "value": "new:diamond_great_sword"
+                         },
+                         {
+                            "test": "has_equipment",
+                            "operator": "!=",
+                            "subject": "self",
+                            "domain": "hand",
+                            "value": "new:emerald_great_sword"
+                      }
+                   ]
+                },
+                "on_roar_end": {
+                  "event": "new:despawn"
+                }
+              }
+            },
+            "iron_great_sword":{
+                "minecraft:behavior.knockback_roar": {
+                    "attack_time": 0.1,
+                    "cooldown_time": 0,
+                    "duration": 0.1,
+                    "knockback_damage": 9,
+                    "knockback_strength": 3,
+                    "knockback_range": 5,
+                    "damage_filters": {
+                        "all_of": [{
+                            "test": "has_equipment",
+                            "operator": "!=",
+                            "subject": "self",
+                            "domain": "hand",
+                            "value": "new:iron_great_sword"
+                         },
+                         {
+                            "test": "has_equipment",
+                            "operator": "!=",
+                            "subject": "self",
+                            "domain": "hand",
+                            "value": "new:redstone_great_sword"
+                         }
+                      ]
+                   },
+                   "knockback_filters": {
+                    "all_of": [{
+                            "test": "has_equipment",
+                            "operator": "!=",
+                            "subject": "self",
+                            "domain": "hand",
+                            "value": "new:iron_great_sword"
+                         },
+                         {
+                            "test": "has_equipment",
+                            "operator": "!=",
+                            "subject": "self",
+                            "domain": "hand",
+                            "value": "new:redstone_great_sword"
+                      }
+                   ]
+                },
+                "on_roar_end": {
+                  "event": "new:despawn"
+                }
+              }
+            },
+            "stone_great_sword":{
+                "minecraft:behavior.knockback_roar": {
+                    "attack_time": 0.1,
+                    "cooldown_time": 0,
+                    "duration": 0.1,
+                    "knockback_damage": 7,
+                    "knockback_strength": 2,
+                    "knockback_range": 5,
+                    "damage_filters": {
+                        "all_of": [{
+                            "test": "has_equipment",
+                            "operator": "!=",
+                            "subject": "self",
+                            "domain": "hand",
+                            "value": "new:stone_great_sword"
+                         },
+                         {
+                            "test": "has_equipment",
+                            "operator": "!=",
+                            "subject": "self",
+                            "domain": "hand",
+                            "value": "new:lapis_great_sword"
+                         }
+                      ]
+                   },
+                   "knockback_filters": {
+                    "all_of": [{
+                            "test": "has_equipment",
+                            "operator": "!=",
+                            "subject": "self",
+                            "domain": "hand",
+                            "value": "new:stone_great_sword"
+                         },
+                         {
+                            "test": "has_equipment",
+                            "operator": "!=",
+                            "subject": "self",
+                            "domain": "hand",
+                            "value": "new:lapis_great_sword"
+                      }
+                   ]
+                },
+                "on_roar_end": {
+                  "event": "new:despawn"
+                }
+              }
+            },
+            "wood_great_sword":{
+                "minecraft:behavior.knockback_roar": {
+                    "attack_time": 0.1,
+                    "cooldown_time": 0,
+                    "duration": 0.1,
+                    "knockback_damage": 6,
+                    "knockback_strength": 1,
+                    "knockback_range": 5,
+                    "damage_filters": {
+                        "all_of": [{
+                            "test": "has_equipment",
+                            "operator": "!=",
+                            "subject": "self",
+                            "domain": "hand",
+                            "value": "new:wood_great_sword"
+                         },
+                         {
+                            "test": "has_equipment",
+                            "operator": "!=",
+                            "subject": "self",
+                            "domain": "hand",
+                            "value": "new:gold_great_sword"
+                         }
+                      ]
+                   },
+                   "knockback_filters": {
+                    "all_of": [{
+                            "test": "has_equipment",
+                            "operator": "!=",
+                            "subject": "self",
+                            "domain": "hand",
+                            "value": "new:wood_great_sword"
+                         },
+                         {
+                            "test": "has_equipment",
+                            "operator": "!=",
+                            "subject": "self",
+                            "domain": "hand",
+                            "value": "new:gold_great_sword"
+                      }
+                   ]
+                },
+                "on_roar_end": {
+                  "event": "new:despawn"
+                }
+              }
+            }
+        },
+        "components":{
+            "minecraft:collision_box":{
+                "width": 0.1,
+                "height": 0.1
+            },
+            "minecraft:damage_sensor":{
+              "triggers":[
+                {
+                    "on_damage":{
+                    },
+                    "deals_damage": false
+                }
+              ]
+            },
+            "minecraft:scale":{
+                "value": 0
+            },
+            "minecraft:health":{
+                "value": 1,
+                "max": 1,
+                "min":1
+            },
+            "minecraft:physics":{},
+            "minecraft:pushable":{
+                "is_pushable":false
+            }
+        },
+        "events":{
+            "new:diamond_great_sword":{
+                "add":{
+                    "component_groups":[
+                        "diamond_great_sword"
+                    ]
+                }
+            },
+            "new:netherite_great_sword":{
+                "add":{
+                    "component_groups":[
+                        "netherite_great_sword"
+                    ]
+                }
+            },
+            "new:iron_great_sword":{
+                "add":{
+                    "component_groups":[
+                        "iron_great_sword"
+                    ]
+                }
+            },
+            "new:stone_great_sword":{
+                "add":{
+                    "component_groups":[
+                        "stone_great_swordt_sword"
+                    ]
+                }
+            },
+            "new:wood_great_sword":{
+                "add":{
+                    "component_groups":[
+                        "wood_great_sword"
+                    ]
+                }
+            },
+            "new:despawn":{
+                "add":{
+                    "component_groups":[
+                        "despawn"
+                    ]
+                }
+            }
+        }
+    }
+}

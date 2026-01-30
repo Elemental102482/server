@@ -1,0 +1,18 @@
+{
+	"format_version": "1.21.20",
+	"minecraft:template_pool": {
+		"description": {
+			"identifier": "cata:sanctum_main_room"
+		},
+		"elements": [
+			{
+				"element": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "sanctum/main_room",
+					"processors": "cata:flare_stone_replacement"
+				},
+				"weight": 1
+			}
+		]
+	}
+}

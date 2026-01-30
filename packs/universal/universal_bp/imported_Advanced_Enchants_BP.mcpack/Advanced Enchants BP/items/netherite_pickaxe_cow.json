@@ -1,0 +1,1837 @@
+{
+	"format_version": "1.17.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "e:netherite_pickaxe_cow",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:mining_speed": 9,
+			"minecraft:damage": 6,
+			"minecraft:enchantable": {
+				"value": 7,
+				"slot": "pickaxe"
+			},
+			"minecraft:durability": {
+				"damage_chance": {
+					"min": 5,
+					"max": 10
+				},
+				"max_durability": 2031
+			},
+			"minecraft:icon": {
+				"texture": "netherite_pickaxe"
+			},
+			"minecraft:display_name": {
+				"value": "§bNetherite Pickaxe \n§7Durability: 2031 \nMining Speed: 9 \n§4Curse of the Wither \n§aAbility: \n§7-10 Percent Chance to wither away when mining"
+			},
+			"minecraft:weapon": {
+				"on_hurt_entity": {
+					"event": "dam"
+				}
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.pickaxe"
+			},
+			"tag:is_pickaxe_costum": {},
+			"minecraft:foil": true,
+			"minecraft:digger": {
+				"use_efficiency": true,
+				"destroy_speeds": [
+					{
+						"block": "minecraft:stone",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:mud_bricks",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:ender_chest",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:ancient_debris",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:packed_mud",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:cobblestone",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:mossy_cobblestone",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:smooth_stone",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:stone_pressure_plate",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:stone_slab",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:mud_brick_slab",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:stone_slab2",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:stone_slab3",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:stone_slab4",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:cobblestone_wall",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:mud_brick_wall",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:stone_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:normal_stone_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:mossy_cobblestone_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:andesite_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:polished_andesite_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:granite_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:polished_granite_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:diorite_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:polished_diorite_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:mud_brick_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:coal_ore",
+						"speed": 9,
+						"on_dig": {
+							"event": "damy"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_coal_ore",
+						"speed": 9,
+						"on_dig": {
+							"event": "damy"
+						}
+					},
+					{
+						"block": "minecraft:copper_ore",
+						"speed": 9,
+						"on_dig": {
+							"event": "damy"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_copper_ore",
+						"speed": 9,
+						"on_dig": {
+							"event": "damy"
+						}
+					},
+					{
+						"block": "minecraft:lapis_ore",
+						"speed": 9,
+						"on_dig": {
+							"event": "damy"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_lapis_ore",
+						"speed": 9,
+						"on_dig": {
+							"event": "damy"
+						}
+					},
+					{
+						"block": "minecraft:redstone_ore",
+						"speed": 9,
+						"on_dig": {
+							"event": "damy"
+						}
+					},
+					{
+						"block": "minecraft:lit_redstone_ore",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_redstone_ore",
+						"speed": 9,
+						"on_dig": {
+							"event": "damy"
+						}
+					},
+					{
+						"block": "minecraft:lit_deepslate_redstone_ore",
+						"speed": 9,
+						"on_dig": {
+							"event": "damy"
+						}
+					},
+					{
+						"block": "minecraft:iron_ore",
+						"speed": 9,
+						"on_dig": {
+							"event": "damy"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_iron_ore",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:gold_ore",
+						"speed": 9,
+						"on_dig": {
+							"event": "damy"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_gold_ore",
+						"speed": 9,
+						"on_dig": {
+							"event": "damy"
+						}
+					},
+					{
+						"block": "minecraft:emerald_ore",
+						"speed": 9,
+						"on_dig": {
+							"event": "damy"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_emerald_ore",
+						"speed": 9,
+						"on_dig": {
+							"event": "damy"
+						}
+					},
+					{
+						"block": "minecraft:diamond_ore",
+						"speed": 9,
+						"on_dig": {
+							"event": "damy"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_diamond_ore",
+						"speed": 9,
+						"on_dig": {
+							"event": "damy"
+						}
+					},
+					{
+						"block": "minecraft:nether_gold_ore",
+						"speed": 9,
+						"on_dig": {
+							"event": "damy"
+						}
+					},
+					{
+						"block": "minecraft:quartz_ore",
+						"speed": 9,
+						"on_dig": {
+							"event": "damy"
+						}
+					},
+					{
+						"block": "minecraft:coal_block",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:redstone_block",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:lapis_block",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:iron_block",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:gold_block",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:diamond_block",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:emerald_block",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:ender_chest",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:concrete",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:hardened_clay",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:stained_hardened_clay",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:black_glazed_terracotta",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:blue_glazed_terracotta",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:brown_glazed_terracotta",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:cyan_glazed_terracotta",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:gray_glazed_terracotta",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:green_glazed_terracotta",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:light_blue_glazed_terracotta",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:lime_glazed_terracotta",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:magenta_glazed_terracotta",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:orange_glazed_terracotta",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:pink_glazed_terracotta",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:purple_glazed_terracotta",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:red_glazed_terracotta",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:silver_glazed_terracotta",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:white_glazed_terracotta",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:yellow_glazed_terracotta",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:coral_block",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:purpur_block",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:purpur_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:prismarine",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:prismarine_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:prismarine_bricks_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:dark_prismarine_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:quartz_block",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:quartz_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:quartz_bricks",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:smooth_quartz_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:sandstone",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:sandstone_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:smooth_sandstone_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:red_sandstone",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:red_sandstone_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:smooth_red_sandstone_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:brick_block",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:brick_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:end_stone",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:end_bricks",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:end_brick_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:nether_brick",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:netherite_block",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:cracked_nether_bricks",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:chiseled_nether_bricks",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:nether_brick_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:nether_brick_fence",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:red_nether_brick",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:red_nether_brick_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:stonebrick",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:stone_brick_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:mossy_stone_brick_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:deepslate",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:chiseled_deepslate",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:cobbled_deepslate",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:cobbled_deepslate_double_slab",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:cobbled_deepslate_slab",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:cobbled_deepslate_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:cobbled_deepslate_wall",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_brick",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:polished_deepslate",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:polished_deepslate_double_slab",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:polished_deepslate_slab",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:polished_deepslate_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:polished_deepslate_wall",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_tiles",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:cracked_deepslate_tiles",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_tile_double_slab",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_tile_slab",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_tile_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_tile_wall",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_bricks",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:cracked_deepslate_bricks",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_brick_double_slab",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_brick_slab",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_brick_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_brick_wall",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:blackstone",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:gilded_blackstone",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:blackstone_double_slab",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:blackstone_slab",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:blackstone_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:blackstone_wall",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:polished_blackstone",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:polished_blackstone_double_slab",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:polished_blackstone_slab",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:polished_blackstone_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:polished_blackstone_wall",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:polished_blackstone_pressure_plate",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:polished_blackstone_button",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:chiseled_polished_blackstone",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:polished_blackstone_bricks",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:cracked_polished_blackstone_bricks",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:polished_blackstone_brick_double_slab",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:polished_blackstone_brick_slab",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:polished_blackstone_brick_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:polished_blackstone_brick_wall",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:ice",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:blue_ice",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:frosted_ice",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:packed_ice",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:amethyst_block",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:budding_amethyst",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:amethyst_cluster",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:large_amethyst_bud",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:medium_amethyst_bud",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:small_amethyst_bud",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:dripstone_block",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:pointed_dripstone",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:basalt",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:polished_basalt",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:smooth_basalt",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:furnace",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:lit_furnace",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:respawn_anchor",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:blast_furnace",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:lit_blast_furnace",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:smoker",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:light_smoker",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:bone_block",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:end_stone",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:magma",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:netherrack",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:mob_spawner",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:calcite",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:tuff",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:lodestone",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:anvil",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:shulker_box",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:undyed_shulker_box",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:brewing_stand",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:stonecutter_block",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:grindstone",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:enchanting_table",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:cauldron",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:beacon",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:bell",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:observer",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:hopper",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:dispenser",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:dropper",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:iron_door",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:iron_trapdoor",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:iron_bars",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:heavy_weighted_pressure_plate",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:light_weighted_pressure_plate",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:chain",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:copper_block",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:exposed_copper",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:weathered_copper",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:oxidized_copper",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:waxed_copper",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:waxed_exposed_copper",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:waxed_weathered_copper",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:waxed_oxidized_copper",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:cut_copper",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:cut_copper_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:cut_copper_slab",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:double_cut_copper_slab",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:waxed_cut_copper",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:waxed_cut_copper_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:waxed_cut_copper_slab",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:waxed_double_cut_copper_slab",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:exposed_cut_copper",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:exposed_cut_copper_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:exposed_cut_copper_slab",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:exposed_double_cut_copper_slab",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:waxed_exposed_cut_copper",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:waxed_exposed_cut_copper_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:waxed_exposed_cut_copper_slab",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:waxed_exposed_double_cut_copper_slab",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:weathered_cut_copper",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:weathered_cut_copper_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:weathered_cut_copper_slab",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:weathered_double_cut_copper_slab",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:waxed_weathered_cut_copper",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:waxed_weathered_cut_copper_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:waxed_weathered_cut_copper_slab",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:waxed_weathered_double_cut_copper_slab",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:oxidized_cut_copper",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:oxidized_cut_copper_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:oxidized_cut_copper_slab",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:oxidized_double_cut_copper_slab",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:waxed_oxidized_cut_copper",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:waxed_oxidized_cut_copper_stairs",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:waxed_oxidized_cut_copper_slab",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:waxed_oxidized_double_cut_copper_slab",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:raw_copper_block",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:raw_iron_block",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:raw_gold_block",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:obsidian",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:crying_obsidian",
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"speed": 9,
+						"on_dig": {
+							"event": "dam"
+						},
+						"block": {
+							"tags": "q.any_tag('fast_pickaxe_minable')"
+						}
+					}
+				],
+				"on_dig": {
+					"event": "dam"
+				}
+			}
+		},
+		"events": {
+			"dam": {
+				"randomize": [
+					{
+						"weight": 10,
+						"run_command": {
+							"command": [
+								"effect @s wither 3 3",
+								"playsound mob.wither.hurt"
+							],
+							"target": "holder"
+						},
+						"damage": {
+							"type": "magic",
+							"amount": 1,
+							"target": "self"
+						}
+					},
+					{
+						"weight": 90,
+						"damage": {
+							"type": "magic",
+							"amount": 1,
+							"target": "self"
+						}
+					}
+				]
+			},
+			"damy": {
+				"randomize": [
+					{
+						"weight": 10,
+						"run_command": {
+							"command": [
+								"effect @s wither 3 3",
+								"playsound mob.wither.hurt"
+							],
+							"target": "other"
+						},
+						"damage": {
+							"type": "magic",
+							"amount": 1,
+							"target": "self"
+						}
+					},
+					{
+						"weight": 90,
+						"damage": {
+							"type": "magic",
+							"amount": 1,
+							"target": "self"
+						}
+					}
+				]
+			}
+		}
+	}
+}

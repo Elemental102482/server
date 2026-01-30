@@ -1,0 +1,113 @@
+{
+	"format_version": "1.21.80",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "cata:feral_fang",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"despawn": {
+				"minecraft:instant_despawn": {
+					"remove_child_entities": true
+				}
+			},
+			"attack": {
+				"minecraft:area_attack": {
+					"damage_range": 1,
+					"damage_per_tick": 12,
+					"cause": "entity_attack",
+					"entity_filter": {
+						"all_of": [
+							{
+								"subject": "other",
+								"operator": "!=",
+								"test": "is_family",
+								"value": "floret"
+							}
+						]
+					}
+				},
+				"minecraft:timer": {
+					"looping": true,
+					"time": 0.42,
+					"time_down_event": {
+						"event": "end"
+					}
+				}
+			},
+			"end": {
+				"minecraft:timer": {
+					"looping": true,
+					"time": 0.25,
+					"time_down_event": {
+						"event": "despawn"
+					}
+				}
+			}
+		},
+		"components": {
+			"minecraft:knockback_resistance": {
+				"value": 100
+			},
+			"minecraft:physics": {
+				"has_collision": true,
+				"has_gravity": false
+			},
+			"minecraft:health": {
+				"value": 1
+			},
+			"minecraft:scale": {
+				"value": 1
+			},
+			"minecraft:collision_box": {
+				"width": 0,
+				"height": 0
+			},
+			"minecraft:type_family": {
+				"family": [
+					"inanimate",
+					"floret"
+				]
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "all",
+						"deals_damage": "no"
+					}
+				]
+			},
+			"minecraft:cannot_be_attacked": {}
+		},
+		"events": {
+			"despawn": {
+				"add": {
+					"component_groups": [
+						"despawn"
+					]
+				}
+			},
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"attack"
+					]
+				}
+			},
+			"end": {
+				"add": {
+					"component_groups": [
+						"end"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"attack"
+					]
+				}
+			}
+		}
+	}
+}

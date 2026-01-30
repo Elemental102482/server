@@ -1,0 +1,544 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "cata:verdant_sentinel",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			"animations": {
+				"attack_controller": "controller.animation.verdant_sentinel.attack_controller",
+				"normal_attack": "animation.feralbloom.normal_attack",
+				"double_attack": "animation.verdant_sentinel.double_attack",
+				"heavy_attack": "animation.verdant_sentinel.heavy_attack",
+				"exhausted": "animation.verdant_sentinel.exhausted",
+				"move_attack": "animation.verdant_sentinel.move_attack"
+			},
+			"scripts": {
+				"animate": [
+					"attack_controller"
+				]
+			}
+		},
+		"component_groups": {
+			"unconscious": {
+				"minecraft:skin_id": {
+					"value": 0
+				},
+				"minecraft:behavior.nearest_attackable_target": {
+					"priority": 1,
+					"must_see": true,
+					"entity_types": {
+						"max_dist": 8,
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"operator": "==",
+									"value": "player"
+								}
+							]
+						}
+					}
+				},
+				"minecraft:environment_sensor": {
+					"triggers": {
+						"filters": [
+							{
+								"test": "has_target",
+								"value": true
+							}
+						],
+						"event": "awaken_animation"
+					}
+				},
+				"minecraft:damage_sensor": {
+					"triggers": {
+						"cause": "all",
+						"deals_damage": false
+					}
+				},
+				"minecraft:is_stunned": {},
+				"minecraft:pushable": {
+					"is_pushable": false,
+					"is_pushable_by_piston": true
+				}
+			},
+			"awaken_animation": {
+				"minecraft:skin_id": {
+					"value": 1
+				},
+				"minecraft:timer": {
+					"looping": false,
+					"time": [
+						2.5,
+						2.5
+					],
+					"time_down_event": {
+						"event": "awaken"
+					}
+				},
+				"minecraft:damage_sensor": {
+					"triggers": {
+						"cause": "all",
+						"deals_damage": false
+					}
+				},
+				"minecraft:is_stunned": {},
+				"minecraft:pushable": {
+					"is_pushable": false,
+					"is_pushable_by_piston": true
+				}
+			},
+			"has_target": {
+				"minecraft:skin_id": {
+					"value": 2
+				},
+				"minecraft:behavior.look_at_player": {
+					"priority": 7,
+					"look_distance": 8,
+					"probability": 0.02
+				},
+				"minecraft:behavior.nearest_attackable_target": {
+					"priority": 1,
+					"must_see": true,
+					"reselect_targets": true,
+					"entity_types": {
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"operator": "==",
+									"value": "player"
+								}
+							]
+						},
+						"max_dist": 64,
+						"must_see": true
+					}
+				},
+				"minecraft:follow_range": {
+					"value": 64
+				},
+				"minecraft:behavior.random_stroll": {
+					"priority": 7
+				},
+				"minecraft:pushable": {
+					"is_pushable": true,
+					"is_pushable_by_piston": true
+				},
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"cause": "fire",
+							"deals_damage": false
+						},
+						{
+							"cause": "fall",
+							"deals_damage": false
+						},
+						{
+							"cause": "projectile",
+							"deals_damage": true,
+							"damage_multiplier": 0.1,
+							"on_damage": {
+								"event": "null_attack"
+							}
+						},
+						{
+							"cause": "magic",
+							"deals_damage": false
+						},
+						{
+							"cause": "mace_smash",
+							"deals_damage": true,
+							"damage_multiplier": 0.1,
+							"on_damage": {
+								"event": "null_attack"
+							}
+						}
+					]
+				}
+			},
+			"normal_attack": {
+				"minecraft:skin_id": {
+					"value": 3
+				},
+				"minecraft:behavior.delayed_attack": {
+					"priority": 2,
+					"speed_multiplier": 1,
+					"attack_once": false,
+					"require_complete_path": true,
+					"reach_multiplier": 4.2,
+					"attack_duration": 2.5,
+					"track_target": false,
+					"hit_delay_pct": 0.49
+				},
+				"minecraft:attack": {
+					"damage": 12
+				}
+			},
+			"double_attack": {
+				"minecraft:skin_id": {
+					"value": 4
+				},
+				"minecraft:behavior.delayed_attack": {
+					"priority": 2,
+					"speed_multiplier": 1,
+					"attack_once": false,
+					"require_complete_path": true,
+					"reach_multiplier": 4.3,
+					"attack_duration": 2.25,
+					"track_target": false,
+					"hit_delay_pct": 0.42
+				},
+				"minecraft:attack": {
+					"damage": 8
+				}
+			},
+			"heavy_attack": {
+				"minecraft:skin_id": {
+					"value": 5
+				},
+				"minecraft:behavior.delayed_attack": {
+					"priority": 2,
+					"speed_multiplier": 1,
+					"attack_once": false,
+					"require_complete_path": true,
+					"reach_multiplier": 4.8,
+					"attack_duration": 3.5,
+					"track_target": false,
+					"hit_delay_pct": 0.56
+				},
+				"minecraft:attack": {
+					"damage": 16
+				}
+			},
+			"move_attack": {
+				"minecraft:skin_id": {
+					"value": 6
+				},
+				"minecraft:behavior.delayed_attack": {
+					"priority": 2,
+					"speed_multiplier": 1,
+					"attack_once": false,
+					"require_complete_path": true,
+					"reach_multiplier": 3,
+					"attack_duration": 5.5,
+					"track_target": false,
+					"hit_delay_pct": 0.55
+				},
+				"minecraft:attack": {
+					"damage": 0
+				}
+			},
+			"is_attacking": {
+				"minecraft:movement": {
+					"value": 0.01
+				}
+			},
+			"can_move": {
+				"minecraft:movement": {
+					"value": 0.22
+				}
+			},
+			"exhausted_set_up": {
+				"minecraft:is_sheared": {}
+			},
+			"flawless_loot": {
+				"minecraft:loot": {
+					"table": "loot_tables/entities/flawless/verdant_sentinel.json"
+				}
+			},
+			"flawed_loot": {
+				"minecraft:loot": {
+					"table": "loot_tables/entities/verdant_sentinel.json"
+				}
+			}
+		},
+		"components": {
+			"minecraft:boss": {
+				"should_darken_sky": false,
+				"hud_range": 64,
+				"name": "Verdant Sentinel"
+			},
+			"minecraft:health": {
+				"value": 450,
+				"max": 450
+			},
+			"minecraft:type_family": {
+				"family": [
+					"mob",
+					"monster",
+					"floret",
+					"sentinel",
+					"undead",
+					"debuff_immunity"
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 1,
+				"height": 2.8
+			},
+			"minecraft:physics": {
+				"has_collision": true,
+				"has_gravity": true
+			},
+			"minecraft:experience_reward": {
+				"on_death": "query.last_hit_by_player?150:0"
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:navigation.walk": {
+				"avoid_powder_snow": true,
+				"avoid_portals": true,
+				"avoid_damage_blocks": true,
+				"avoid_water": true,
+				"can_path_over_water": true
+			},
+			"minecraft:break_blocks": {
+				"breakable_blocks": [
+					"minecraft:acacia_planks",
+					"minecraft:bamboo_planks",
+					"minecraft:birch_planks",
+					"minecraft:cherry_planks",
+					"minecraft:crimson_planks",
+					"minecraft:dark_oak_planks",
+					"minecraft:jungle_planks",
+					"minecraft:mangrove_planks",
+					"minecraft:oak_planks",
+					"minecraft:spruce_planks",
+					"minecraft:warped_planks"
+				]
+			},
+			"minecraft:jump.static": {},
+			"minecraft:can_climb": {},
+			"minecraft:scale": {
+				"value": 1.4
+			},
+			"minecraft:knockback_resistance": {
+				"value": 1
+			},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1,
+				"alert_same_type": true
+			},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:equipment": {
+				"table": "loot_tables/entities/disable_shield.json",
+				"slot_drop_chance": [
+					{
+						"drop_chance": 0,
+						"slot": "slot.weapon.mainhand"
+					},
+					{
+						"drop_chance": 0,
+						"slot": "slot.inventory"
+					}
+				]
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"unconscious",
+						"flawless_loot"
+					]
+				}
+			},
+			"awaken_animation": {
+				"add": {
+					"component_groups": [
+						"awaken_animation"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"unconscious"
+					]
+				}
+			},
+			"awaken": {
+				"add": {
+					"component_groups": [
+						"has_target",
+						"can_move",
+						"exhausted_set_up"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"is_attacking",
+						"unconscious",
+						"awaken_animation"
+					]
+				},
+				"trigger": "attack_types"
+			},
+			"attack_types": {
+				"randomize": [
+					{
+						"weight": 5,
+						"add": {
+							"component_groups": [
+								"normal_attack"
+							]
+						},
+						"remove": {
+							"component_groups": [
+								"heavy_attack",
+								"double_attack",
+								"move_attack"
+							]
+						},
+						"queue_command": {
+							"command": [
+								"tag @s add heavy_attack",
+								"tag @s remove mega_attack"
+							]
+						}
+					},
+					{
+						"weight": 4,
+						"add": {
+							"component_groups": [
+								"double_attack"
+							]
+						},
+						"remove": {
+							"component_groups": [
+								"normal_attack",
+								"heavy_attack",
+								"move_attack"
+							]
+						},
+						"queue_command": {
+							"command": [
+								"tag @s add heavy_attack",
+								"tag @s remove mega_attack"
+							]
+						}
+					},
+					{
+						"weight": 3,
+						"add": {
+							"component_groups": [
+								"heavy_attack"
+							]
+						},
+						"remove": {
+							"component_groups": [
+								"normal_attack",
+								"double_attack",
+								"move_attack"
+							]
+						},
+						"queue_command": {
+							"command": [
+								"tag @s add mega_attack",
+								"tag @s remove heavy_attack"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"move_attack"
+							]
+						},
+						"remove": {
+							"component_groups": [
+								"normal_attack",
+								"double_attack",
+								"heavy_attack"
+							]
+						},
+						"queue_command": {
+							"command": [
+								"tag @s remove heavy_attack",
+								"tag @s remove mega_attack"
+							]
+						}
+					}
+				]
+			},
+			"is_attacking": {
+				"add": {
+					"component_groups": [
+						"is_attacking"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"can_move"
+					]
+				}
+			},
+			"finish_attack": {
+				"add": {
+					"component_groups": [
+						"can_move"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"is_attacking"
+					]
+				}
+			},
+			"exhausted_start": {
+				"add": {
+					"component_groups": [
+						"is_attacking"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"normal_attack",
+						"heavy_attack",
+						"can_move"
+					]
+				}
+			},
+			"exhausted_finished": {
+				"add": {
+					"component_groups": [
+						"can_move",
+						"normal_attack"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"exhausted_set_up",
+						"is_attacking"
+					]
+				}
+			},
+			"null_attack": {
+				"queue_command": {
+					"command": [
+						"playsound random.anvil_land @a[r=32] ~ ~ ~ 0.6 2 1"
+					]
+				}
+			},
+			"flawed_fight": {
+				"add": {
+					"component_groups": [
+						"flawed_loot"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"flawless_loot"
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,40 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.tower_wraith.cast": {
+			"initial_state": "default",
+			"states": {
+				"casting_fire": {
+					"animations": [
+						"cast_flame"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_casting&&query.all_animations_finished"
+						}
+					]
+				},
+				"casting_poison": {
+					"animations": [
+						"cast_poison"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_casting&&query.all_animations_finished"
+						}
+					]
+				},
+				"default": {
+					"transitions": [
+						{
+							"casting_fire": "query.is_casting&&!q.is_saddled"
+						},
+						{
+							"casting_poison": "query.is_casting&&q.is_saddled"
+						}
+					]
+				}
+			}
+		}
+	}
+}

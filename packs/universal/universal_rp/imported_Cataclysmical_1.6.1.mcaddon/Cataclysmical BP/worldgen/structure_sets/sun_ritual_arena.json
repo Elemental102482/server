@@ -1,0 +1,21 @@
+{
+	"format_version": "1.21.80",
+	"minecraft:structure_set": {
+		"description": {
+			"identifier": "cata:sun_ritual_arena"
+		},
+		"placement": {
+			"type": "minecraft:random_spread",
+			"salt": 53500117,
+			"separation": 100,
+			"spacing": 210,
+			"spread_type": "linear"
+		},
+		"structures": [
+			{
+				"structure": "cata:sun_ritual_arena",
+				"weight": 1
+			}
+		]
+	}
+}

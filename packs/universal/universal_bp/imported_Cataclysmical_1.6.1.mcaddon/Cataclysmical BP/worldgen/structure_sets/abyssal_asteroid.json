@@ -1,0 +1,21 @@
+{
+	"format_version": "1.21.80",
+	"minecraft:structure_set": {
+		"description": {
+			"identifier": "cata:abyssal_asteroid"
+		},
+		"placement": {
+			"type": "minecraft:random_spread",
+			"salt": 97183632,
+			"separation": 3,
+			"spacing": 8,
+			"spread_type": "linear"
+		},
+		"structures": [
+			{
+				"structure": "cata:abyssal_asteroid",
+				"weight": 1
+			}
+		]
+	}
+}

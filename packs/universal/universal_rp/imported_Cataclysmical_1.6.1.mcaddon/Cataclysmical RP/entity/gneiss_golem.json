@@ -1,0 +1,43 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "cata:gneiss_golem",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/gneiss_golem_texture"
+			},
+			"geometry": {
+				"default": "geometry.gneiss_golem"
+			},
+			"render_controllers": [
+				"controller.render.gneiss_golem"
+			],
+			"spawn_egg": {
+				"texture": "cata_gneiss_golem_egg"
+			},
+			"animations": {
+				"idle": "animation.gneiss_golem.idle",
+				"move": "animation.gneiss_golem.move",
+				"attack": "animation.gneiss_golem.attack",
+				"move_controller": "controller.animation.stone_golem.move",
+				"attack_controller": "controller.animation.stone_golem.attack"
+			},
+			"scripts": {
+				"animate": [
+					"move_controller",
+					"attack_controller"
+				]
+			},
+			"particle_effects": {
+				"tiny_impact": "cata:small_impact",
+				"large_impact": "cata:massive_impact"
+			},
+			"sound_effects": {
+				"stone_golem_impact": "mob.stone_golem_impact"
+			}
+		}
+	}
+}

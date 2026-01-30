@@ -1,0 +1,297 @@
+{
+	"format_version": "1.21.20",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.terror_skull_launcher",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 6,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [
+					0,
+					1.25,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "item",
+					"pivot": [
+						-9,
+						10,
+						1
+					],
+					"cubes": [
+						{
+							"origin": [
+								-9,
+								2,
+								0
+							],
+							"size": [
+								3,
+								4,
+								2
+							],
+							"uv": [
+								14,
+								30
+							]
+						},
+						{
+							"origin": [
+								-6,
+								4,
+								1
+							],
+							"size": [
+								3,
+								1,
+								0
+							],
+							"uv": [
+								32,
+								0
+							]
+						},
+						{
+							"origin": [
+								-4,
+								5,
+								-2
+							],
+							"size": [
+								7,
+								8,
+								6
+							],
+							"uv": [
+								0,
+								16
+							]
+						},
+						{
+							"origin": [
+								3,
+								7,
+								-1
+							],
+							"size": [
+								7,
+								4,
+								4
+							],
+							"uv": [
+								26,
+								21
+							]
+						},
+						{
+							"origin": [
+								10,
+								5,
+								-3
+							],
+							"size": [
+								8,
+								8,
+								8
+							],
+							"uv": [
+								0,
+								0
+							]
+						},
+						{
+							"origin": [
+								-4,
+								11,
+								1
+							],
+							"size": [
+								14,
+								5,
+								0
+							],
+							"uv": [
+								26,
+								16
+							]
+						},
+						{
+							"origin": [
+								-12,
+								7,
+								1
+							],
+							"size": [
+								7,
+								7,
+								0
+							],
+							"uv": [
+								0,
+								30
+							]
+						},
+						{
+							"origin": [
+								-10,
+								6,
+								-1
+							],
+							"size": [
+								6,
+								5,
+								4
+							],
+							"uv": [
+								26,
+								29
+							]
+						}
+					]
+				}
+			],
+			"item_display_transforms": {
+				"thirdperson_righthand": {
+					"rotation": [
+						0,
+						-90,
+						0
+					],
+					"translation": [
+						0.75,
+						2.25,
+						-4.75
+					],
+					"scale": [
+						1,
+						1,
+						1
+					],
+					"rotation_pivot": [
+						0,
+						0,
+						0
+					],
+					"scale_pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				"firstperson_righthand": {
+					"rotation": [
+						8.45,
+						-87,
+						5.7
+					],
+					"translation": [
+						-0.25,
+						3.5,
+						-4.25
+					],
+					"scale": [
+						1,
+						1,
+						1
+					],
+					"rotation_pivot": [
+						0,
+						0,
+						0
+					],
+					"scale_pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				"ground": {
+					"rotation": [
+						0,
+						0,
+						0
+					],
+					"translation": [
+						0,
+						3,
+						0
+					],
+					"scale": [
+						0.8,
+						0.8,
+						0.8
+					],
+					"rotation_pivot": [
+						0,
+						0,
+						0
+					],
+					"scale_pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				"gui": {
+					"rotation": [
+						27,
+						36,
+						-44
+					],
+					"translation": [
+						0.75,
+						-1.75,
+						0
+					],
+					"scale": [
+						0.8,
+						0.8,
+						0.8
+					],
+					"rotation_pivot": [
+						0,
+						0,
+						0
+					],
+					"scale_pivot": [
+						0,
+						0,
+						0
+					],
+					"fit_to_frame": false
+				},
+				"fixed": {
+					"rotation": [
+						-180,
+						0,
+						143
+					],
+					"translation": [
+						0.5,
+						0,
+						-0.25
+					],
+					"scale": [
+						1.2,
+						1.2,
+						1.2
+					],
+					"rotation_pivot": [
+						0,
+						0,
+						0
+					],
+					"scale_pivot": [
+						0,
+						0,
+						0
+					]
+				}
+			}
+		}
+	]
+}

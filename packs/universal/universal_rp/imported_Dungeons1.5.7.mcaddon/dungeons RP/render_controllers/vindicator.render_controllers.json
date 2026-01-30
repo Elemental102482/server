@@ -1,0 +1,71 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.vindicator_vanilla": {
+			"geometry": "geometry.default",
+			"part_visibility": [
+				{
+					"rightArm": "query.is_angry || query.is_celebrating"
+				},
+				{
+					"leftArm": "query.is_angry || query.is_celebrating"
+				},
+				{
+					"rightItem": "query.is_angry"
+				},
+				{
+					"arms": "!(query.is_angry || query.is_celebrating)"
+				}
+			],
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"texture.default"
+			]
+		},
+		"controller.render.vindicator": {
+			"geometry": "array.geo[query.skin_id]",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"array.skins[query.skin_id]"
+			],
+			"part_visibility": [
+				{
+					"rightArm": "query.is_angry || query.is_celebrating"
+				},
+				{
+					"leftArm": "query.is_angry || query.is_celebrating"
+				},
+				{
+					"rightItem": "query.is_angry"
+				},
+				{
+					"arms": "!(query.is_angry || query.is_celebrating)"
+				}
+			],
+			"arrays": {
+				"textures": {
+					"array.skins": [
+						"texture.default",
+						"texture.gold",
+						"texture.diamond"
+					]
+				},
+				"geometries": {
+					"array.geo": [
+						"geometry.default",
+						"geometry.armored",
+						"geometry.armored"
+					]
+				}
+			}
+		}
+	}
+}

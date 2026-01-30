@@ -1,0 +1,57 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:drowned_necromancer",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/necromancer/drowned_necromancer"
+			},
+			"geometry": {
+				"default": "geometry.drowned_necromancer"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"animations": {
+				"walk": "animation.necromancer.walk",
+				"cast_controller": "controller.animation.necromancer.cast",
+				"particles": "animation.necromancer_shot.particles",
+				"cast": "animation.drowned_necromancer.summon",
+				"look_at_target_default": "animation.humanoid.look_at_target.default",
+				"look_at_target_gliding": "animation.humanoid.look_at_target.gliding",
+				"look_at_target_swimming": "animation.humanoid.look_at_target.swimming",
+				"head_controller": "controller.animation.humanoid.look_at_target",
+				"swimming": "animation.zombie.swimming",
+				"idle": "animation.drowned_necromancer.idle",
+				"attack": "animation.drowned_necromancer.ranged",
+				"attack_controller": "controller.animation.drowned_necromancer.ranged"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+				],
+				"animate": [
+					"particles",
+					"walk",
+					"head_controller",
+					"cast_controller",
+					"attack_controller",
+					{
+						"swimming": "variable.swim_amount>0"
+					}
+				]
+			},
+			"particle_effects": {
+				"energy": "dungeons:drowned_necromancer_orb",
+				"summon": "dungeons:drowned_necromancer_summon",
+				"ring": "dungeons:drowned_necromancer_ring"
+			},
+			"spawn_egg": {
+				"texture": "egg_drowned_necromancer"
+			}
+		}
+	}
+}

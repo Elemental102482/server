@@ -1,0 +1,125 @@
+{
+	"format_version": "1.17.20",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "dungeons:squall_golem",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"components": {
+			"minecraft:is_hidden_when_invisible": {},
+			"minecraft:experience_reward": {
+				"on_death": "query.last_hit_by_player?30:0"
+			},
+			"minecraft:attack": {
+				"damage": 10
+			},
+			"minecraft:breathable": {
+				"suffocate_time": 0,
+				"total_supply": 999
+			},
+			"minecraft:collision_box": {
+				"height": 2.75,
+				"width": 2.25
+			},
+			"minecraft:health": {
+				"max": 100,
+				"value": 100
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "fall",
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:jump.static": {},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/squall_golem.json"
+			},
+			"minecraft:knockback_resistance": {
+				"value": 0.95
+			},
+			"minecraft:movement": {
+				"value": 0.2
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:nameable": {},
+			"minecraft:navigation.walk": {
+				"avoid_damage_blocks": false,
+				"can_path_over_water": false,
+				"can_sink": true
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:behavior.delayed_attack": {
+				"priority": 3,
+				"track_target": true,
+				"require_complete_path": false,
+				"random_stop_interval": 0,
+				"reach_multiplier": 1.5,
+				"cooldown_time": 0.5,
+				"speed_multiplier": 1.45,
+				"attack_duration": 1.25,
+				"hit_delay_pct": 0.7
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 7,
+				"speed_multiplier": 1
+			},
+			"minecraft:behavior.random_look_around": {
+				"priority": 9
+			},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1
+			},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 2,
+				"must_see": true,
+				"reselect_targets": true,
+				"within_radius": 25,
+				"must_see_forget_duration": 17,
+				"entity_types": [
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "snowgolem"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "irongolem"
+								}
+							]
+						},
+						"max_dist": 24
+					}
+				]
+			},
+			"minecraft:conditional_bandwidth_optimization": {},
+			"minecraft:follow_range": {
+				"value": 32
+			},
+			"minecraft:type_family": {
+				"family": [
+					"monster",
+					"squall_golem",
+					"mob"
+				]
+			}
+		}
+	}
+}

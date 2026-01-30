@@ -1,0 +1,45 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:boss_wildfire",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/wildfire/boss_wildfire"
+			},
+			"geometry": {
+				"default": "geometry.boss_wildfire"
+			},
+			"particle_effects": {
+				"smoke": "dungeons:wildfire_smoke",
+				"slam": "dungeons:wildfire_slam"
+			},
+			"spawn_egg": {
+				"base_color": "#FEF36D",
+				"overlay_color": "#2C0A00"
+			},
+			"scripts": {
+				"animate": [
+					"smoke",
+					"look_at_target",
+					"spin",
+					{
+						"death": "query.is_alive!=1"
+					}
+				]
+			},
+			"animations": {
+				"smoke": "animation.wildfire.smoke",
+				"shockwave": "animation.wildfire2.slam",
+				"spin": "animation.wildfire2.spin",
+				"death": "animation.wildfire2.death",
+				"look_at_target": "animation.common.look_at_target"
+			},
+			"render_controllers": [
+				"controller.render.wildfire"
+			]
+		}
+	}
+}

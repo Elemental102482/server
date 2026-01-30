@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "tower_wraith_pink",
+        "metalness_emissive_roughness": "tower_wraith_mer"
+    }
+}

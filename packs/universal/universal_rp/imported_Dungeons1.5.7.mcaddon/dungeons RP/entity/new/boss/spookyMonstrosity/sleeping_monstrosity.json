@@ -1,0 +1,39 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:spooky_monstrosity_resting",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/spooky_monstrosity/spooky_monstrosity",
+				"none": "textures/misc/void",
+				"redstone": "textures/entity/spooky_monstrosity/spooky_monstrosity_redstone"
+			},
+			"geometry": {
+				"default": "geometry.spooky_monstrosity"
+			},
+			"render_controllers": [
+				"controller.render.default",
+				"controller.render.monstrosity_awaken"
+			],
+			"animations": {
+				"resting": "animation.redstone_monstrosity.resting",
+				"awaken": "animation.redstone_monstrosity.awaken",
+				"wake_controller": "controller.animation.redstone_monstrosity.rest"
+			},
+			"scripts": {
+				"animate": [
+					"wake_controller"
+				]
+			},
+			"sound_effects": {
+				"awaken": "mob.monstrosity.awaken"
+			},
+			"spawn_egg": {
+				"texture": "egg_spooky_monstrosity"
+			}
+		}
+	}
+}

@@ -1,0 +1,24 @@
+{
+	"format_version": 1.12,
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "e:chance_of_the_farmer_1_diamond_hoe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "minecraft:diamond_hoe"
+			},
+			{
+				"item": "e:chance_of_the_farmer_book_1"
+			}
+		],
+		"result": [
+			{
+				"item": "e:diamond_hoe_cotf1"
+			}
+		]
+	}
+}

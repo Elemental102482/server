@@ -1,0 +1,38 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "cata:stellar_bolt",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/blank"
+			},
+			"geometry": {
+				"default": "geometry.wand_projectile"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"base_color": "#000000",
+				"overlay_color": "#FFFFFF"
+			},
+			"animations": {
+				"particle": "animation.wand_projectile.particle",
+				"particle_fast": "animation.wand_projectile.particle_fast"
+			},
+			"particle_effects": {
+				"wand_particle": "cata:stellar_bolt",
+				"wand_particle_fast": "cata:stellar_bolt_star"
+			},
+			"scripts": {
+				"animate": [
+					"particle",
+					"particle_fast"
+				]
+			}
+		}
+	}
+}

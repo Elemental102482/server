@@ -1,0 +1,71 @@
+{
+	"format_version": "1.21.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "cata:solar_monolith_bottom",
+			"menu_category": {
+				"category": "construction"
+			},
+			"states": {
+				"cata:solar_monolith_activate": [
+					false,
+					true
+				]
+			}
+		},
+		"components": {
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 9999
+			},
+			"minecraft:geometry": "geometry.solar_monolith_bottom",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "cata_solar_monolith_deactivated",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:item_visual": {
+				"geometry": "geometry.solar_monolith_full_block",
+				"material_instances": {
+					"*": {
+						"texture": "cata_solar_monolith_deactivated",
+						"render_method": "alpha_test"
+					}
+				}
+			},
+			"minecraft:custom_components": [
+				"component:solar_monolith_place",
+				"component:solar_monolith_bottom_destroy",
+				"component:solar_monolith_activate"
+			],
+			"minecraft:loot": "loot_tables/empty.json",
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 99999
+			}
+		},
+		"permutations": [
+			{
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "cata_solar_monolith",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:custom_components": [
+						"component:solar_monolith_bottom_destroy",
+						"component:solar_monolith_tick"
+					],
+					"minecraft:tick": {
+						"interval_range": [
+							4460,
+							4460
+						],
+						"looping": true
+					}
+				},
+				"condition": "q.block_state('cata:solar_monolith_activate')"
+			}
+		]
+	}
+}

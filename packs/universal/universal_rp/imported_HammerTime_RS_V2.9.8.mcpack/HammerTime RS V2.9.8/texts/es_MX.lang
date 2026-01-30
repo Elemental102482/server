@@ -1,0 +1,68 @@
+item.system:wood_great_sword=Gran Espada de Madera
+item.system:stone_great_sword=Gran Espada de Piedra
+item.system:gold_great_sword=Gran Espada de Oro
+item.system:iron_great_sword=Gran Espada de Hierro
+item.system:diamond_great_sword=Gran Espada de Diamante
+item.system:obsidian_great_sword=Gran Espada de Obsidiana
+item.system:netherite_great_sword=Gran Espada de Netherite
+item.system:redstone_great_sword=Gran Espada de Redstone
+item.system:emerald_great_sword=Gran Espada de Esmeralda
+item.system:lapis_great_sword=Gran Espada de Lapis
+
+item.system:wood_great_shovel=Gran Pala de Madera
+item.system:stone_great_shovel=Gran Pala de Piedra
+item.system:gold_great_shovel=Gran Pala de Oro
+item.system:iron_great_shovel=Gran Pala de Hierro
+item.system:diamond_great_shovel=Gran Pala de Diamante
+item.system:obsidian_great_shovel=Gran Pala de Obsidiana
+item.system:netherite_great_shovel=Gran Pala de Netherite
+item.system:redstone_great_shovel=Gran Pala de Redstone
+item.system:emerald_great_shovel=Gran Pala de Esmeralda
+item.system:lapis_great_shovel=Gran Pala de Lapis
+
+item.system:wood_great_axe=Gran Hacha de Madera
+item.system:stone_great_axe=Gran Hacha de Piedra
+item.system:gold_great_axe=Gran Hacha de Oro
+item.system:iron_great_axe=Gran Hacha de Hierro
+item.system:diamond_great_axe=Gran Hacha de Diamante
+item.system:obsidian_great_axe=Gran Hacha de Obsidiana
+item.system:netherite_great_axe=Gran Hacha de Netherite
+item.system:redstone_great_axe=Gran Hacha de Redstone
+item.system:emerald_great_axe=Gran Hacha de Esmeralda
+item.system:lapis_great_axe=Gran Hacha de Lapis
+
+item.system:wood_sickle=Hoz de Madera
+item.system:stone_sickle=Hoz de Piedra
+item.system:gold_sickle=Hoz de Oro
+item.system:iron_sickle=Hoz de Hierro
+item.system:diamond_sickle=Hoz de Diamante
+item.system:obsidian_sickle=Hoz de Obsidiana
+item.system:netherite_sickle=Hoz de Netherite
+item.system:redstone_sickle=Hoz de Redstone
+item.system:emerald_sickle=Hoz de Esmeralda
+item.system:lapis_sickle=Hoz de Lapis
+
+item.system:wood_hammer=Martillo de Madera
+item.system:stone_hammer=Martillo de Piedra
+item.system:gold_hammer=Martillo de Oro
+item.system:iron_hammer=Martillo de Hierro
+item.system:diamond_hammer=Martillo de Diamante
+item.system:obsidian_hammer=Martillo de Obsidiana
+item.system:netherite_hammer=Martillo de Netherite
+item.system:redstone_hammer=Martillo de Redstone
+item.system:emerald_hammer=Martillo de Esmeralda
+item.system:lapis_hammer=Martillo de Lapis
+
+
+
+item.system:copper_hammer=Martillo de Cobre
+item.system:copper_sickle=Hoz de Cobre
+item.system:copper_great_axe=Gran Hacha de Cobre
+item.system:copper_great_shovel=Gran Pala de Cobre
+item.system:copper_great_sword=Gran Espada de Cobre
+
+item.system:amethyst_hammer=Martillo de Amatista
+item.system:amethyst_sickle=Hoz de Amatista
+item.system:amethyst_great_axe=Gran Hacha de Amatista
+item.system:amethyst_great_shovel=Gran Pala de Amatista
+item.system:amethyst_great_sword=Gran Espada de Amatista

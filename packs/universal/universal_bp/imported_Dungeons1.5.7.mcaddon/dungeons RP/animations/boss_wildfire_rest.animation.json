@@ -1,0 +1,120 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.boss_wildfire.awaken": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 4.75,
+			"sound_effects": {
+				"0.1": {
+					"effect": "awaken"
+				},
+				"2.1": {
+					"effect": "awaken"
+				},
+				"4.1": {
+					"effect": "awaken"
+				}
+			},
+			"bones": {
+				"button": {
+					"rotation": {
+						"2.9167": [
+							0,
+							0,
+							0
+						],
+						"4.1667": [
+							0,
+							0,
+							10
+						]
+					},
+					"position": {
+						"2.0": [
+							0,
+							0,
+							0
+						],
+						"2.0417": [
+							-1,
+							0,
+							0
+						],
+						"2.125": [
+							1,
+							0,
+							0
+						],
+						"2.1667": [
+							0,
+							0,
+							0
+						],
+						"2.75": [
+							0,
+							0,
+							0
+						],
+						"3.375": [
+							0,
+							-3.09,
+							0
+						],
+						"4.75": [
+							0,
+							-25,
+							0
+						]
+					}
+				},
+				"fake": {
+					"scale": {
+						"0.0": [
+							1,
+							0,
+							1
+						],
+						"1.0": [
+							1,
+							1,
+							1
+						]
+					}
+				},
+				"fake2": {
+					"scale": {
+						"1.0": [
+							1,
+							0,
+							1
+						],
+						"2.0": [
+							1,
+							1,
+							1
+						]
+					}
+				}
+			}
+		},
+		"animation.boss_wildfire.resting": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"fake": {
+					"scale": [
+						1,
+						0,
+						1
+					]
+				},
+				"fake2": {
+					"scale": [
+						1,
+						0,
+						1
+					]
+				}
+			}
+		}
+	}
+}

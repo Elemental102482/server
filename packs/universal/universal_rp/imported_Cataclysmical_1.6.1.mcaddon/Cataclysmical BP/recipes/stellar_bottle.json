@@ -1,0 +1,36 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "cata:stellar_bottle"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "cata:stellar_dust",
+				"count": 1
+			},
+			{
+				"item": "minecraft:amethyst_shard",
+				"count": 1
+			},
+			{
+				"item": "cata:ectoplasm",
+				"count": 1
+			},
+			{
+				"item": "minecraft:glass_bottle",
+				"count": 1
+			}
+		],
+		"result": {
+			"item": "cata:stellar_bottle",
+			"count": 1
+		},
+		"unlock": {
+			"context": "AlwaysUnlocked"
+		}
+	}
+}

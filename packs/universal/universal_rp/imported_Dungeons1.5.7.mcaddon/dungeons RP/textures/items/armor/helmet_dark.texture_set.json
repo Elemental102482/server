@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "helmet_dark",
+        "metalness_emissive_roughness": "helmet_dark_mer"
+    }
+}

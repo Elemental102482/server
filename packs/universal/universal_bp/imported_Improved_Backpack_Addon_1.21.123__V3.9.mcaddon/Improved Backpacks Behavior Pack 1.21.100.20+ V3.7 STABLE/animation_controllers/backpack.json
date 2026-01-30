@@ -1,0 +1,43 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.backpack" : {
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"open" : "query.is_in_ui"
+						}
+					],
+					"on_entry":[
+						//"/event entity @s open",
+						"/say wa"
+					]
+					
+				},
+				"open" : {
+					"transitions" : [
+						{
+							"close": "!query.is_in_ui"
+						}
+					],
+					"on_entry":[
+						//"/event entity @s open",
+						"/say test"
+					]
+				},
+				"close" : {
+					"transitions" : [
+						{
+							"open": "query.is_in_ui"
+						}
+					],
+					"on_entry":[
+						//"/event entity @s close",
+						"/say test2"
+					]
+				}
+			}
+		}		
+	}
+}

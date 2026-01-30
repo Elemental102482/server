@@ -1,0 +1,23 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.bloom_poison.bloom_poison": {
+			"loop": true,
+			"animation_length": 1.375,
+			"particle_effects": {
+				"0.0": {
+					"effect": "bloom_poison_aoe"
+				}
+			}
+		},
+		"animation.bloom_poison.floret_poison": {
+			"loop": true,
+			"animation_length": 1.25,
+			"particle_effects": {
+				"0.0": {
+					"effect": "poison_cloud_aoe"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,219 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.whisperer_vine.grow": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.75,
+			"bones": {
+				"vine": {
+					"position": {
+						"0.0": [
+							0,
+							-45,
+							0
+						],
+						"0.2083": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"vine2": {
+					"rotation": {
+						"0.0": [
+							7.5,
+							0,
+							0
+						],
+						"0.375": [
+							-7.5,
+							0,
+							0
+						],
+						"0.75": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"vine3": {
+					"rotation": {
+						"0.0": [
+							15,
+							0,
+							0
+						],
+						"0.375": [
+							-15,
+							0,
+							0
+						],
+						"0.75": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			}
+		},
+		"animation.whisperer_vine.damage": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.375,
+			"bones": {
+				"vine": {
+					"rotation": {
+						"0.0833": {
+							"pre": [
+								0,
+								0,
+								0
+							],
+							"post": [
+								0,
+								0,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"0.2083": {
+							"post": [
+								0,
+								360,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"0.3333": {
+							"post": [
+								0,
+								0,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						}
+					},
+					"position": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.375": [
+							0,
+							-45,
+							0
+						]
+					},
+					"scale": {
+						"0.0": [
+							1,
+							1,
+							1
+						],
+						"0.2083": [
+							1,
+							1,
+							1
+						],
+						"0.375": [
+							1,
+							0,
+							1
+						]
+					}
+				}
+			}
+		},
+		"animation.whisperer_vine.idle": {
+			"loop": true,
+			"bones": {
+				"vine": {
+					"rotation": [
+						"math.cos(q.anim_time*50)*2",
+						0,
+						0
+					]
+				},
+				"vine2": {
+					"rotation": [
+						"math.cos(q.anim_time*50)*2",
+						"math.cos(q.anim_time*120)*2",
+						0
+					]
+				},
+				"vine3": {
+					"rotation": [
+						"math.cos(q.anim_time*50)*8",
+						"math.cos(q.anim_time*120)*2",
+						0
+					]
+				}
+			}
+		},
+		"animation.whisperer_vine.q_attack": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.5,
+			"bones": {
+				"vine": {
+					"position": {
+						"0.0": {
+							"post": [
+								0,
+								-45,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"0.2917": {
+							"post": [
+								0,
+								-15,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"0.5": [
+							0,
+							-45,
+							0
+						]
+					},
+					"scale": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.0417": {
+							"pre": [
+								0,
+								0,
+								0
+							],
+							"post": [
+								1,
+								1,
+								1
+							]
+						},
+						"0.5": {
+							"pre": [
+								1,
+								1,
+								1
+							],
+							"post": [
+								0,
+								0,
+								0
+							]
+						}
+					}
+				}
+			}
+		}
+	}
+}

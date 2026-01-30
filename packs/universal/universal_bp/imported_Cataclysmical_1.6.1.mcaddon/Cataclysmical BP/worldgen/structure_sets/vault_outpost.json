@@ -1,0 +1,21 @@
+{
+	"format_version": "1.21.80",
+	"minecraft:structure_set": {
+		"description": {
+			"identifier": "cata:vault_outpost"
+		},
+		"placement": {
+			"type": "minecraft:random_spread",
+			"salt": 95764312,
+			"separation": 3,
+			"spacing": 7,
+			"spread_type": "linear"
+		},
+		"structures": [
+			{
+				"structure": "cata:vault_outpost",
+				"weight": 1
+			}
+		]
+	}
+}

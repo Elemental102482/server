@@ -1,0 +1,164 @@
+{
+	"format_version": "1.16.210",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "dungeons:void_portal",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"properties": {
+				"dungeons:eyes": {
+					"type": "int",
+					"client_sync": true,
+					"range": [
+						0,
+						6
+					],
+					"default": 0
+				}
+			}
+		},
+		"component_groups": {
+			"dungeons:instant_despawn": {
+				"minecraft:instant_despawn": {}
+			},
+			"dungeons:open": {
+				"minecraft:variant": {
+					"value": 1
+				}
+			},
+			"dungeons:closed": {
+				"minecraft:environment_sensor": {
+					"triggers": [
+						{
+							"filters": {
+								"all_of": [
+									{
+										"test": "int_property",
+										"subject": "self",
+										"domain": "dungeons:eyes",
+										"operator": "==",
+										"value": 6
+									}
+								]
+							},
+							"event": "dungeons:open_void_portal_cutscene"
+						}
+					]
+				},
+				"minecraft:variant": {
+					"value": 0
+				}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"ignore",
+					"inanimate",
+					"gravity_immune"
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 0,
+				"height": 0
+			},
+			"minecraft:health": {
+				"value": 2000,
+				"max": 2000
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "all",
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:knockback_resistance": {
+				"value": 1
+			},
+			"minecraft:persistent": {},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:conditional_bandwidth_optimization": {}
+		},
+		"events": {
+			"dungeons:eye_placed": {
+				"set_property": {
+					"dungeons:eyes": "query.property('dungeons:eyes') + 1"
+				}
+			},
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"dungeons:closed"
+					]
+				}
+			},
+			"dungeons:despawn": {
+				"add": {
+					"component_groups": [
+						"dungeons:instant_despawn"
+					]
+				}
+			},
+			"dungeons:open_void_portal_cutscene": {
+				"queue_command": {
+					"command": [
+						"playsound block.end_portal.spawn @a[r=128] ~~~ 1.0 0.7",
+						"summon dungeons:vengeful_heart_of_ender_resting ~~~ ~~ dungeons:start_cutscene"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"dungeons:open"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"dungeons:closed"
+					]
+				},
+				"set_property": {
+					"dungeons:eyes": 0
+				}
+			},
+			"dungeons:open_void_portal": {
+				"queue_command": {
+					"command": [
+						"playsound block.end_portal.spawn @a[r=128] ~~~ 1.0 0.7"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"dungeons:open"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"dungeons:closed"
+					]
+				},
+				"set_property": {
+					"dungeons:eyes": 0
+				}
+			},
+			"dungeons:close_void_portal": {
+				"add": {
+					"component_groups": [
+						"dungeons:closed"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"dungeons:open"
+					]
+				}
+			}
+		}
+	}
+}

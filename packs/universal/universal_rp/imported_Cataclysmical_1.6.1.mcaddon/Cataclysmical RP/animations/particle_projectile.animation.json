@@ -1,0 +1,35 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.particle_projectile.floret": {
+			"loop": true,
+			"animation_length": 0.0833,
+			"particle_effects": {
+				"0.0": {
+					"effect": "floret_particle_projectile",
+					"locator": "particle"
+				}
+			}
+		},
+		"animation.particle_projectile.solar": {
+			"loop": true,
+			"animation_length": 0.0833,
+			"particle_effects": {
+				"0.0": {
+					"effect": "solar_particle_projectile",
+					"locator": "particle"
+				}
+			}
+		},
+		"animation.particle_projectile.lunar": {
+			"loop": true,
+			"animation_length": 0.0833,
+			"particle_effects": {
+				"0.0": {
+					"effect": "lunar_particle_projectile",
+					"locator": "particle"
+				}
+			}
+		}
+	}
+}

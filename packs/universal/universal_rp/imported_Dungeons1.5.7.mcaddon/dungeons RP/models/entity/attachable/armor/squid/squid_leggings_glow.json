@@ -1,0 +1,123 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.squid_leggings_glow",
+				"texture_width": 64,
+				"texture_height": 44,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [
+					0,
+					1.5,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "waist",
+					"pivot": [
+						0,
+						12,
+						0
+					]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [
+						0,
+						24,
+						0
+					]
+				},
+				{
+					"name": "rightLeg",
+					"parent": "body",
+					"pivot": [
+						-1.9,
+						12,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								5,
+								-2
+							],
+							"size": [
+								4,
+								7,
+								4
+							],
+							"inflate": 0.519,
+							"uv": [
+								0,
+								31
+							]
+						}
+					]
+				},
+				{
+					"name": "leftLeg",
+					"parent": "body",
+					"pivot": [
+						1.9,
+						12,
+						0
+					],
+					"mirror": true,
+					"cubes": [
+						{
+							"origin": [
+								0,
+								5,
+								-2
+							],
+							"size": [
+								4,
+								7,
+								4
+							],
+							"inflate": 0.519,
+							"uv": [
+								0,
+								31
+							]
+						}
+					]
+				},
+				{
+					"name": "upper_legs",
+					"parent": "body",
+					"pivot": [
+						0,
+						24,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								12,
+								-2
+							],
+							"size": [
+								8,
+								12,
+								4
+							],
+							"inflate": 0.524,
+							"uv": [
+								36,
+								15
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,45 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.obsidian_claymore",
+				"texture_width": 28,
+				"texture_height": 28,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root_item",
+					"pivot": [
+						-0.5,
+						5,
+						0
+					],
+					"rotation": [
+						0,
+						-45,
+						-90
+					],
+					"binding": "q.item_slot_to_bone_name(c.item_slot)",
+					"texture_meshes": [
+						{
+							"texture": "default",
+							"position": [
+								-10,
+								0,
+								-18
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

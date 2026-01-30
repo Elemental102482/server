@@ -1,0 +1,5 @@
+tag @a[tag=!dungeons:sturdy_shulker_armour,hasitem=[{item=dungeons:sturdy_shulker_helmet,location=slot.armor.head},{item=dungeons:sturdy_shulker_chestplate,location=slot.armor.chest},{item=dungeons:sturdy_shulker_leggings,location=slot.armor.legs},{item=dungeons:sturdy_shulker_boots,location=slot.armor.feet}]] add dungeons:sturdy_shulker_armour
+tag @a[tag=dungeons:sturdy_shulker_armour,hasitem={quantity=0,item=dungeons:sturdy_shulker_helmet,location=slot.armor.head}] remove dungeons:sturdy_shulker_armour
+tag @a[tag=dungeons:sturdy_shulker_armour,hasitem={quantity=0,item=dungeons:sturdy_shulker_chestplate,location=slot.armor.chest}] remove dungeons:sturdy_shulker_armour
+tag @a[tag=dungeons:sturdy_shulker_armour,hasitem={quantity=0,item=dungeons:sturdy_shulker_leggings,location=slot.armor.legs}] remove dungeons:sturdy_shulker_armour
+tag @a[tag=dungeons:sturdy_shulker_armour,hasitem={quantity=0,item=dungeons:sturdy_shulker_boots,location=slot.armor.feet}] remove dungeons:sturdy_shulker_armour

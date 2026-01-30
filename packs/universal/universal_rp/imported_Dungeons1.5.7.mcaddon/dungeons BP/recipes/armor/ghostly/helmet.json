@@ -1,0 +1,35 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ghost_helmet"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"LLL",
+			"BIB"
+		],
+		"unlock": [
+			{
+				"item": "minecraft:bone"
+			}
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:bone"
+			},
+			"L": {
+				"item": "minecraft:leather"
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			}
+		},
+		"result": {
+			"item": "dungeons:ghostly_helmet",
+			"count": 1
+		}
+	}
+}

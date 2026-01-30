@@ -1,0 +1,5 @@
+tag @a[tag=!dungeons:cloaked_skull_armour,hasitem=[{item=dungeons:cloaked_skull_helmet,location=slot.armor.head},{item=dungeons:cloaked_skull_chestplate,location=slot.armor.chest},{item=dungeons:cloaked_skull_leggings,location=slot.armor.legs},{item=dungeons:cloaked_skull_boots,location=slot.armor.feet}]] add dungeons:cloaked_skull_armour
+tag @a[tag=dungeons:cloaked_skull_armour,hasitem={quantity=0,item=dungeons:cloaked_skull_helmet,location=slot.armor.head}] remove dungeons:cloaked_skull_armour
+tag @a[tag=dungeons:cloaked_skull_armour,hasitem={quantity=0,item=dungeons:cloaked_skull_chestplate,location=slot.armor.chest}] remove dungeons:cloaked_skull_armour
+tag @a[tag=dungeons:cloaked_skull_armour,hasitem={quantity=0,item=dungeons:cloaked_skull_leggings,location=slot.armor.legs}] remove dungeons:cloaked_skull_armour
+tag @a[tag=dungeons:cloaked_skull_armour,hasitem={quantity=0,item=dungeons:cloaked_skull_boots,location=slot.armor.feet}] remove dungeons:cloaked_skull_armour

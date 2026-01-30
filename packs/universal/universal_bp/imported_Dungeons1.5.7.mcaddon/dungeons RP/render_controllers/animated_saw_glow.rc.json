@@ -1,0 +1,30 @@
+{
+	"format_version": "1.10.0",
+	"render_controllers": {
+		"controller.render.animated_sawblade_glow": {
+			"arrays": {
+				"textures": {
+					"array.skins": [
+						"texture.glow",
+						"texture.glow_alt"
+					]
+				},
+				"geometries": {
+					"array.geo": [
+						"Geometry.glow",
+						"Geometry.glow_alt"
+					]
+				}
+			},
+			"geometry": "array.geo[math.mod(q.life_time*8,2)]",
+			"materials": [
+				{
+					"*": "material.glow"
+				}
+			],
+			"textures": [
+				"array.skins[math.mod(q.life_time*8,2)]"
+			]
+		}
+	}
+}

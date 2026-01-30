@@ -1,0 +1,793 @@
+item.spawn_egg.entity.dungeons:enchanted_zombie.name=§bVerzauberter-Zombie§f-Spawn-Ei
+entity.dungeons:enchanted_zombie.name=§bZombie§f
+item.spawn_egg.entity.dungeons:enchanted_skeleton.name=§bVerzaubertes-Skelett§f-Spawn-Ei
+entity.dungeons:enchanted_skeleton.name=§bSkelett§f
+item.spawn_egg.entity.dungeons:enchanted_creeper.name=§bVerzauberter-Creeper§f-Spawn-Ei
+entity.dungeons:enchanted_creeper.name=§bCreeper§f
+item.spawn_egg.entity.dungeons:enchanted_spider.name=§bVerzauberte-Spinne§f-Spawn-Ei
+entity.dungeons:enchanted_spider.name=§bSpinne§f
+item.spawn_egg.entity.dungeons:enchanted_cave_spider.name=§bVerzauberte-Höhlenspinne§f-Spawn-Ei
+entity.dungeons:enchanted_cave_spider.name=§bHöhlenspinne§f
+item.spawn_egg.entity.dungeons:enchanted_witch.name=§bVerzauberte-Hexe§f-Spawn-Ei
+entity.dungeons:enchanted_witch.name=§bHexe§f
+item.spawn_egg.entity.dungeons:enchanted_husk.name=§bVerzauberter-Wüstenzombie§f-Spawn-Ei
+entity.dungeons:enchanted_husk.name=§bWüstenzombie§f
+item.spawn_egg.entity.dungeons:enchanted_blaze.name=§bVerzauberte-Lohe§f-Spawn-Ei
+entity.dungeons:enchanted_blaze.name=§bLohe§f
+item.spawn_egg.entity.dungeons:enchanted_wither_skeleton.name=§bVerzaubertes-Wither-Skelett§f-Spawn-Ei
+entity.dungeons:enchanted_wither_skeleton.name=§bWither-Skelett§f
+item.spawn_egg.entity.dungeons:enchanted_bogged.name=§bVerzaubertes-Sumpfskelett§f-Spawn-Ei
+entity.dungeons:enchanted_bogged.name=§bSumpfskelett§f
+
+item.spawn_egg.entity.dungeons:enchanted_necromancer.name=§bVerzauberter-Nekromant§f-Spawn-Ei
+entity.dungeons:enchanted_necromancer.name=§bNekromant§f
+item.spawn_egg.entity.dungeons:enchanted_wraith.name=§bVerzauberter-Geist§f-Spawn-Ei
+entity.dungeons:enchanted_wraith.name=§bGeist§f
+item.spawn_egg.entity.dungeons:enchanted_iceologer.name=§bVerzaubertr-Eisling§f-Spawn-Ei
+entity.dungeons:enchanted_iceologer.name=§bEisling§f
+item.spawn_egg.entity.dungeons:enchanted_vanguard.name=§bVerzauberte-Vorhut§f-Spawn-Ei
+entity.dungeons:enchanted_vanguard.name=§bVorhut§f
+item.spawn_egg.entity.dungeons:enchanted_sunken_skeleton.name=§bVerzaubertes-Versunkenes-Skelett§f-Spawn-Ei
+entity.dungeons:enchanted_sunken_skeleton.name=§bVersunkenes Skelett§f
+item.spawn_egg.entity.dungeons:enchanted_wither_skeleton_archer.name=§bVerzauberter-Witherskelettbogenschütze§f-Spawn-Ei
+entity.dungeons:enchanted_wither_skeleton_archer.name=§bWitherskelettbogenschütze§f
+item.spawn_egg.entity.dungeons:enchanted_watchling.name=§bVerzauberter-Seherling§f-Spawn-Ei
+entity.dungeons:enchanted_watchling.name=§bSeherling§f
+item.spawn_egg.entity.dungeons:enchanted_jungle_zombie.name=§bVerzauberter-Dschungelzombie§f-Spawn-Ei
+entity.dungeons:enchanted_jungle_zombie.name=§bDschungelzombie§f
+item.spawn_egg.entity.dungeons:enchanted_wildfire.name=§bVerzauberter-Flächenbrand§f-Spawn-Ei
+entity.dungeons:enchanted_wildfire.name=§bFlächenbrand§f
+
+
+entity.dungeons:angry_mooshroom.name=???
+entity.dungeons:wretched_frozen_zombie.name=Gefrorener Zombie
+entity.dungeons:corrupted_ooze.name=Verdorbener Schlick
+item.spawn_egg.entity.dungeons:corrupted_ooze.name=Verdorbener-Schlick-Spawn-Ei
+entity.dungeons:cauldron_bogged.name=Kessel-Sumpfskelett
+
+item.spawn_egg.entity.dungeons:frozen_zombie.name=Gefrorener-Zombie-Spawn-Ei
+entity.dungeons:frozen_zombie.name=Gefrorener Zombie
+item.spawn_egg.entity.dungeons:icy_creeper.name=Eis-Creeper-Spawn-Ei
+entity.dungeons:icy_creeper.name=Eis-Creeper
+
+item.spawn_egg.entity.dungeons:mossy_skeleton.name=Bemoostes-Skelett-Spawn-Ei
+entity.dungeons:mossy_skeleton.name=Bemoostes Skelett
+item.spawn_egg.entity.dungeons:jungle_zombie.name=Dschungelzombie-Spawn-Ei
+entity.dungeons:jungle_zombie.name=Dschungelzombie
+
+item.spawn_egg.entity.dungeons:drowned_hunter.name=Ertrunkener-Jäger-Spawn-Ei
+entity.dungeons:drowned_hunter.name=Ertrunkener Jäger
+item.spawn_egg.entity.dungeons:drowned_elite.name=Ertrunkene-Elite-Spawn-Ei
+entity.dungeons:drowned_elite.name=Ertrunkene Elite
+item.spawn_egg.entity.dungeons:sunken_skeleton.name=Versunkenes-Skelett-Spawn-Ei
+entity.dungeons:sunken_skeleton.name=Versunkenes Skelett
+
+item.spawn_egg.entity.dungeons:zombified_piglin_brute.name=Zombie-Piglin-Barbar-Spawn-Ei
+entity.dungeons:zombified_piglin_brute.name=Zombie-Piglin-Barbar
+entity.dungeons:wither_skeleton_archer.name=Witherskelett
+
+item.spawn_egg.entity.dungeons:baby_ghast.name=Babyghast-Spawn-Ei
+entity.dungeons:baby_ghast.name=Babyghast
+
+
+
+item.spawn_egg.entity.dungeons:necromancer.name=Nekromant-Spawn-Ei
+entity.dungeons:necromancer.name=Nekromant 
+item.spawn_egg.entity.dungeons:wraith.name=Geist-Spawn-Ei
+entity.dungeons:wraith.name=Geist
+item.spawn_egg.entity.dungeons:iceologer.name=Eisling-Spawn-Ei
+entity.dungeons:iceologer.name=Eisling
+item.spawn_egg.entity.dungeons:vanguard.name=Vorhut-Spawn-Ei
+entity.dungeons:vanguard.name=Vorhut
+item.spawn_egg.entity.dungeons:redstone_cube.name=Redstone-Würfel-Spawn-Ei
+entity.dungeons:redstone_cube.name=Redstone-Würfel
+item.spawn_egg.entity.dungeons:royal_guard.name=Königswache-Spawn-Ei
+entity.dungeons:royal_guard.name=Königswache
+item.spawn_egg.entity.dungeons:guardian_vex.name=Wächter-Plagegeist-Spawn-Ei
+entity.dungeons:guardian_vex.name=Wächter-Plagegeist
+item.spawn_egg.entity.dungeons:watchling.name=Seherling-Spawn-Ei
+entity.dungeons:watchling.name=Seherling
+item.spawn_egg.entity.dungeons:blastling.name=Sprengling-Spawn-Ei
+entity.dungeons:blastling.name=Sprengling
+entity.dungeons:snareling.name=Schlingling
+item.spawn_egg.entity.dungeons:snareling.name=Schlingling-Spawn-Ei
+tem.spawn_egg.entity.dungeons:pet_bee.name=Eifrige-Biene-Spawn-Ei
+entity.dungeons:pet_bee.name=Eifrige Biene
+entity.dungeons:pet_iron_golem.name=Eisengolem
+entity.dungeons:whisperer.name=Flüsterer
+item.spawn_egg.entity.dungeons:whisperer.name=Flüsterer-Spawn-Ei
+tem.spawn_egg.entity.dungeons:enchanted_sheep.name=Verzaubertes-Schaf-Spawn-Ei
+entity.dungeons:enchanted_sheep.name=Verzaubertes Schaf
+entity.dungeons:wavewhisperer.name=Wellenflüsterer
+item.spawn_egg.entity.dungeons:wavewhisperer.name=Wellenflüsterer-Spawn-Ei
+entity.dungeons:leapleaf.name=Springer
+item.spawn_egg.entity.dungeons:leapleaf.name=Springer-Spawn-Ei
+
+entity.dungeons:squall_golem.name=Sturmböengolem
+item.spawn_egg.entity.dungeons:squall_golem.name=Sturmböengolem-Spawn-Ei
+entity.dungeons:windcaller.name=Windrufer
+item.spawn_egg.entity.dungeons:windcaller.name=Windrufer-Spawn-Ei
+item.spawn_egg.entity.dungeons:tower_wraith.name=Turmgeist-Spawn-Ei
+entity.dungeons:tower_wraith.name=Turmgeist
+item.spawn_egg.entity.dungeons:piglin_fungus_thrower.name=Pilzwerfer-Spawn-Ei
+entity.dungeons:piglin_fungus_thrower.name=Pilzwerfer
+item.spawn_egg.entity.dungeons:zombified_piglin_fungus_thrower.name=Zombie-Pilzwerfer-Spawn-Ei
+entity.dungeons:zombified_piglin_fungus_thrower.name=Zombie-Pilzwerfer
+item.spawn_egg.entity.dungeons:vindicator_chef.name=Diener-Koch-Spawn-Ei
+entity.dungeons:vindicator_chef.name=Diener-Koch
+item.spawn_egg.entity.dungeons:soul_wizard.name=Seelenzauberer-Spawn-Ei
+entity.dungeons:soul_wizard.name=Seelenzauberer
+
+item.spawn_egg.entity.dungeons:wildfire.name=Flächenbrand-Spawn-Ei
+entity.dungeons:wildfire.name=Flächenbrand
+item.spawn_egg.entity.dungeons:redstone_golem.name=Redstone-Golem-Spawn-Ei
+entity.dungeons:redstone_golem.name=Redstone-Golem
+entity.dungeons:redstone_golem_resting.name=Redstone-Golem
+entity.dungeons:endersent.name=Endergesandter
+item.spawn_egg.entity.dungeons:endersent.name=Endergesandter-Spawn-Ei
+entity.dungeons:drowned_necromancer.name=Ertrunkener Nekromant
+item.spawn_egg.entity.dungeons:drowned_necromancer.name=Ertrunkener-Nekromant-Spawn-Ei
+item.spawn_egg.entity.dungeons:illusioner.name=Illusionist-Spawn-Ei
+entity.dungeons:illusioner.name=Illusionist
+entity.dungeons:illusioner_clone.name=Illusionist
+
+
+
+item.spawn_egg.entity.dungeons:redstone_monstrosity_resting.name=Redstone-Ungetüm-Spawn-Ei 
+entity.dungeons:redstone_monstrosity_resting.name=Redstone-Ungetüm
+entity.dungeons:redstone_monstrosity.name=Redstone-Ungetüm
+item.spawn_egg.entity.dungeons:nameless_one_resting.name=Namenloser-Spawn-Ei 
+entity.dungeons:nameless_one_resting.name=Namenloser
+entity.dungeons:nameless_one.name=Namenloser
+item.spawn_egg.entity.dungeons:mooshroom_monstrosity_resting.name=Pilzkuhungetüm-Spawn-Ei 
+entity.dungeons:mooshroom_monstrosity_resting.name=Pilzkuhungetüm
+entity.dungeons:mooshroom_monstrosity.name=Pilzkuhungetüm
+item.spawn_egg.entity.dungeons:wretched_wraith_resting.name=Gruseliger-Geist-Spawn-Ei 
+entity.dungeons:wretched_wraith_resting.name=Gruseliger Geist
+entity.dungeons:wretched_wraith.name=Gruseliger Geist
+item.spawn_egg.entity.dungeons:corrupted_cauldron_resting.name=Verdorbener-Kessel-Spawn-Ei 
+entity.dungeons:corrupted_cauldron_resting.name=Verdorbener Kessel
+entity.dungeons:jungle_abomination.name=Dschungelscheusal
+item.spawn_egg.entity.dungeons:jungle_abomination_resting.name=Dschungelscheusal-Spawn-Ei 
+entity.dungeons:jungle_abomination_resting.name=Dschungelscheusal
+entity.dungeons:jungle_abomination.name=Dschungelscheusal
+item.spawn_egg.entity.dungeons:tempest_golem_resting.name=Sturmgolem-Spawn-Ei 
+entity.dungeons:tempest_golem_resting.name=Sturmgolem
+entity.dungeons:tempest_golem.name=Sturmgolem
+item.spawn_egg.entity.dungeons:ancient_guardian_resting.name=Uralter Wächter-Spawn-Ei 
+entity.dungeons:ancient_guardian_resting.name=Uralter Wächter
+entity.dungeons:ancient_guardian.name=Uralter Wächter
+item.spawn_egg.entity.dungeons:boss_wildfire_resting.name=Flächenbrand-Spawn-Ei 
+entity.dungeons:boss_wildfire_resting.name=Flächenbrand
+entity.dungeons:boss_wildfire.name=Flächenbrand
+item.spawn_egg.entity.dungeons:vengeful_heart_of_ender_resting.name=Rachsüchtiges-Herz-des-Ender-Spawn-Ei 
+entity.dungeons:vengeful_heart_of_ender_resting.name=Rachsüchtiges Herz des Ender
+entity.dungeons:vengeful_heart_of_ender.name=Rachsüchtiges Herz des Ender
+
+item.spawn_egg.entity.dungeons:spiked_eye_resting.name=§bStacheliges-Auge§f-Spawn-Ei 
+entity.dungeons:spiked_eye_resting.name=§bStacheliges Auge§f
+entity.dungeons:spiked_eye.name=§bStacheliges Auge§f
+item.spawn_egg.entity.dungeons:binding_eye_resting.name=§bBindendes-Auge§f-Spawn-Ei 
+entity.dungeons:binding_eye_resting.name=§bBindendes Auge§f
+entity.dungeons:binding_eye.name=§bBindendes Auge§f
+item.spawn_egg.entity.dungeons:reaping_eye_resting.name=§bErntendes-Auge§f-Spawn-Ei 
+entity.dungeons:reaping_eye_resting.name=§bErntendes Auge§f
+entity.dungeons:reaping_eye.name=§bErntendes Auge§f
+item.spawn_egg.entity.dungeons:blight_eye_resting.name=§bSeuchenauge§f-Spawn-Ei 
+entity.dungeons:blight_eye_resting.name=§bSeuchenauge§f
+entity.dungeons:blight_eye.name=§bSeuchenauge§f
+item.spawn_egg.entity.dungeons:ravenous_eye_resting.name=§bHungriges Auge§f Spawn Egg 
+entity.dungeons:ravenous_eye_resting.name=§bHungriges Auge§f
+entity.dungeons:ravenous_eye.name=§bHungriges Auge§f
+item.spawn_egg.entity.dungeons:savage_eye_resting.name=§bGrausames Auge§f Spawn Egg 
+entity.dungeons:savage_eye_resting.name=§bGrausames Auge§f
+entity.dungeons:savage_eye.name=§bGrausames Auge§f
+
+entity.dungeons:cursed_presence.name=§6Verfluchte Präsenz§f
+entity.dungeons:cursed_presence_guard.name=§cZombie§f
+
+
+entity.dungeons:target_dummy.name=Übungspuppe
+item.dungeons:target_dummy=Übungspuppe
+item.spawn_egg.entity.dungeons:dummy.name=Kreativpuppe-Spawn-Ei
+entity.dungeons:dummy.name=Kreativpuppe
+
+
+entity.dungeons:spooky_monstrosity_resting.name=Spukendes Ungetüm
+entity.dungeons:spooky_monstrosity.name=Spukendes Ungetüm
+entity.dungeons:rolling_flame.name=Rollende Flamme
+
+item.spawn_egg.entity.dungeons:spooky_monstrosity_resting.name=§dSpukendes-Ungetüm-Spawn-Ei §r
+item.spawn_egg.entity.dungeons:rolling_flame.name=§dRollende-Flamme-Spawn-Ei§r
+
+
+entity.dungeons:web.name=Spinnenweben
+entity.dungeons:wraith_fire.name=Eisblumenstrauß
+entity.dungeons:wraith_fire_strong.name=Eisblumenstrauß
+entity.dungeons:redstone_golem_mine.name=Redstone-Golem-Mine
+entity.dungeons:redstone_mine_explosion.name=Redstone-Golem-Mine
+entity.dungeons:necromancer_shot.name=Energieschuss
+entity.dungeons:necromancer_shot_strong.name=Energieschuss
+entity.dungeons:necromancer_shot_levitation.name=Energieschuss
+entity.dungeons:ice_chunk.name=Eisbrocken
+entity.dungeons:ice_chunk_strong.name=Eisbrocken
+entity.dungeons:ice_chunk_double.name=Eisbrocken
+entity.dungeons:blastling_ammo.name=Sprengling
+entity.dungeons:wildfire<>.name=Flächenbrand
+entity.dungeons:wildfire_blast.name=Flächenbrand
+entity.dungeons:wildfire_fireball.name=Flächenbrand
+entity.dungeons:monstrosity_knockback.name=Redstone-Ungetüm
+entity.dungeons:redstone_monstrosity_boom.name=Redstone-Ungetüm
+entity.dungeons:redstone_monstrosity_awaken_boom.name=Redstone-Ungetüm
+entity.dungeons:false_king.name=Falscher König
+entity.dungeons:totem_of_regeneration.name=Totem der Regeneration
+entity.dungeons:totem_of_shielding.name=Totem der Abschirmung
+entity.dungeons:mushroom_knockback.name=Redstone-Ungetüm
+entity.dungeons:mushroom_rocket.name=Pilzkuhrakete
+entity.dungeons:mooshroom_monstrosity_awaken_boom.name=Pilzkuhungetüm
+entity.dungeons:wretched_wraith_fire.name=Brennender Hass
+entity.dungeons:wretched_wraith_awaken_boom.name=Gruseliger Geist
+entity.dungeons:whisperer_vine.name=Flüstererranke
+entity.dungeons:whisperer_vine2.name=Flüstererranke
+entity.dungeons:wavewhisperer_kelp.name=Wellenflüstererseetang
+entity.dungeons:wavewhisperer_kelp2.name=Wellenflüstererseetang
+entity.dungeons:redstone_core.name=Schmiedekern
+entity.dungeons:corrupted_cauldron_awaken_boom.name=Verdorbener Kessel
+entity.dungeons:cauldron_fire.name=Verdorbener Schlamm
+entity.dungeons:abomination_vine.name=Scheusalranke
+entity.dungeons:abomination_quick_vine.name=Scheusalranke
+entity.dungeons:jungle_abomination_awaken_boom.name=Dschungelscheusal
+entity.dungeons:spooky_knockback.name=Spukendes Ungetüm
+entity.dungeons:spooky_monstrosity_boom.name=Spukendes Ungetüm
+entity.dungeons:spooky_monstrosity_awaken_boom.name=Spukendes Ungetüm
+entity.dungeons:tempest_golem_awaken_boom.name=Sturmgolem
+entity.dungeons:tempest_golem_zap.name=Sturmgolem
+entity.dungeons:wind_totem_left.name=Windtotem
+entity.dungeons:wind_totem_right.name=Windtotem
+entity.dungeons:wind_totem_burst.name=Windtotem
+entity.dungeons:wind_push_burst.name=Windrufer
+entity.dungeons:wind_pillar_burst.name=Windrufer
+entity.dungeons:drowned_necromancer_shot.name=Ertrunkener Nekromant
+entity.dungeons:ancient_guardian_awaken_boom.name=Uralter Wächter
+entity.dungeons:biomine.name=Biomine
+entity.dungeons:biomine_boom.name=Biomine
+entity.dungeons:biomine_poison.name=Biomine
+entity.dungeons:tower_wraith_fire.name=Eisblumenstrauß
+entity.dungeons:tower_wraith_poison.name=Giftgas
+entity.dungeons:player_scatter_mine.name=Splittermine
+entity.dungeons:player_mine_explosion.name=Spukendes Ungetüm
+entity.dungeons:ancient_guardian_ammo.name=Uralter-Wächter-Laser
+entity.dungeons:eye_guardian_ammo.name=Wächter-Laser
+entity.dungeons:blue_nethershroom.name=Blauer Netherpilz
+entity.dungeons:boss_wildfire<>.name=Flächenbrand
+entity.dungeons:boss_wildfire_blast.name=Flächenbrand
+entity.dungeons:boss_wildfire_fireball.name=Flächenbrand
+entity.dungeons:wildfire_blaze.name=Lohe
+entity.dungeons:corrupted_beacon_ammo.name=Leuchtfeuerstrahl
+entity.dungeons:corrupted_pumpkin_ammo.name=Verfluchter Strahl
+entity.dungeons:endersent_awaken_boom.name=Endgesandter
+entity.dungeons:vengeful_heart_of_ender_awaken_boom.name=Rachsüchtiges Herz des Ender
+entity.dungeons:vengeful_endermite_boom.name=Rachsüchtiges Herz des Ender
+entity.dungeons:vengeful_endermite.name=Endermilbe
+entity.dungeons:vhoe_bomb.name=Enderbombe
+entity.dungeons:vhoe_bomb_explosion.name=Enderbombe
+entity.dungeons:vhoe_flame.name=Rachsüchtige Flamme
+entity.dungeons:vhoe_projectile.name=Rachsüchtige Flamme
+entity.dungeons:void_portal.name=Leerenportal
+
+item.dungeons:diamond_dust=Diamantstaub
+item.dungeons:blue_print=Blaupause
+item.dungeons:pink_print=Rosapause
+
+item.dungeons:enchanted_rune_a=Verzauberte Rune
+item.dungeons:enchanted_rune_c=Verzauberte Rune
+item.dungeons:enchanted_rune_i=Verzauberte Rune
+item.dungeons:enchanted_rune_o=Verzauberte Rune
+item.dungeons:enchanted_rune_p=Verzauberte Rune
+item.dungeons:enchanted_rune_r=Verzauberte Rune
+item.dungeons:enchanted_rune_s=Verzauberte Rune
+item.dungeons:enchanted_rune_t=Verzauberte Rune
+item.dungeons:enchanted_rune_u=Verzauberte Rune
+
+
+tile.dungeons:redstone_golem_head.name=Redstone-Golem-Kopf
+tile.dungeons:wildfire_head.name=§eFlächenbrandkopf§r
+
+tile.dungeons:ice_crown_replica.name=§bEiskronenreplika§r
+tile.dungeons:staff_statue.name=§bStabstatue§r
+tile.dungeons:corrupted_core.name=§bKorrumpierter Kern§r
+tile.dungeons:benevolent_brew_statue.name=§bGütige Braustatue§r
+tile.dungeons:abomination_bloom.name=§bScheusalblüte§r
+tile.dungeons:whirlwindgig.name=§bWirbelwinddreher§r
+tile.dungeons:enormous_eyeball.name=§bRiesiger Augapfel§r
+tile.dungeons:blaze_cage.name=§bLohenkäfig§r
+tile.dungeons:enchanted_pearl.name=§bVerzauberte Perle§r
+tile.dungeons:eternal_brazier.name=§bEwiges Feuer§r
+tile.dungeons:skullager.name=§dErz-Schädel-Illager§r
+
+item.dungeons:redstone_ministrosity_statue=Redstone-Ministrosität-Statue
+
+item.dungeons:redstone_core=Kern der Schmiede
+
+item.dungeons:redstone_painting=Dunkles Gemälde
+item.dungeons:nameless_painting=Antikes Gemälde
+item.dungeons:mooshroom_painting=Seltsames Gemälde
+item.dungeons:wraith_painting=Unheimliches Gemälde
+item.dungeons:cauldron_painting=Arkanes Gemälde
+item.dungeons:abomination_painting=Krummes Gemälde
+item.dungeons:tempest_painting=Wirbelwind-Gemälde
+item.dungeons:guardian_painting=Vergessenes Gemälde
+item.dungeons:wildfire_painting=Höllisches Gemälde
+item.dungeons:endersent_painting=Augen-Gemälde
+item.dungeons:vengeful_painting=Ultimatives Gemälde
+
+item.dungeons:spooky_painting=Gruseliges Gemälde
+
+
+tile.dungeons:void_fluid.name=Leere
+tile.dungeons:void_portal_frame.name=Leerenportalrahmen
+
+
+item.dungeons:redstone_key=Redstone-Schlüssel
+item.dungeons:nameless_key=Namenloser Schlüssel
+item.dungeons:ancient_key=Antiker Schlüssel
+item.dungeons:wretched_key=Elender Schlüssel
+item.dungeons:jungle_key=Dschungelschlüssel
+item.dungeons:questionable_key=Fragwürdiger Schlüssel
+item.dungeons:tempest_key=Sturmschlüssel
+item.dungeons:corrupted_key=Korrumpierter Schlüssel
+item.dungeons:blaze_key=Lohenschlüssel
+item.dungeons:echo_key=Echoschlüssel
+item.dungeons:void_key=§d§kLEERENSCHLÜSSEL§f
+item.dungeons:skeleton_key=Skelettschlüssel
+
+
+item.dungeons:book_of_heroes=Buch des Heldentums 
+
+item.dungeons:enchanted_eye_of_ender=Enderauge
+
+item.dungeons:totem_of_regeneration=Totem der Regeneration
+item.dungeons:rare_totem_of_regeneration=Totem der Regeneration 
+item.dungeons:soul_healer=Seelenheiler
+item.dungeons:rare_soul_healer=Seelenheiler 
+item.dungeons:iron_hide_amulet=Eisenhaut-Amulett
+item.dungeons:rare_iron_hide_amulet=Eisenhaut-Amulett 
+item.dungeons:harvester=Ernter
+item.dungeons:rare_harvester=Ernter 
+item.dungeons:gong_of_weakening=Gong der Schwächung
+item.dungeons:rare_gong_of_weakening=Gong der Schwächung 
+item.dungeons:shock_powder=Schockpulver
+item.dungeons:rare_shock_powder=Schockpulver 
+item.dungeons:blast_fungus=Sprengpilz
+item.dungeons:rare_blast_fungus=Sprengpilz 
+item.dungeons:totem_of_shielding=Totem der Abschirmung
+item.dungeons:rare_totem_of_shielding=Totem der Abschirmung 
+item.dungeons:shadow_shifter=Schattenwandler
+item.dungeons:rare_shadow_shifter=Schattenwandler 
+item.dungeons:vexing_chant=Plagegesang
+item.dungeons:rare_vexing_chant=Plagegesang 
+item.dungeons:satchel_of_elements=Umhängetasche der Elemente
+item.dungeons:rare_satchel_of_elements=Umhängetasche der Elemente 
+item.dungeons:wind_horn=Windhorn
+item.dungeons:rare_wind_horn=Windhorn 
+item.dungeons:ice_wand=Eisstab
+item.dungeons:rare_ice_wand=Eisstab 
+item.dungeons:death_cap_mushroom=Todeskappenpilz
+item.dungeons:rare_death_cap_mushroom=Todeskappenpilz 
+item.dungeons:enchanted_grass=Verzaubertes Gras
+item.dungeons:rare_enchanted_grass=Verzaubertes Gras 
+item.dungeons:corrupted_seeds=Verdorbene Samen
+item.dungeons:rare_corrupted_seeds=Verdorbene Samen 
+item.dungeons:boots_of_swiftness=Stiefel der Geschwindigkeit
+item.dungeons:rare_boots_of_swiftness=Stiefel der Geschwindigkeit 
+item.dungeons:lightning_rod=Blitzstab
+item.dungeons:rare_lightning_rod=Bitzstab 
+item.dungeons:buzzy_nest=Geschäftigs Nest
+item.dungeons:rare_buzzy_nest=Geschäftiges Nest 
+item.dungeons:light_feather=Leichte Feder
+item.dungeons:rare_light_feather=Leichte Feder 
+item.dungeons:golem_kit=Golem-Bausatz
+item.dungeons:rare_golem_kit=Golem-Bausatz 
+item.dungeons:updraft_tome=Aufwindfoliant
+item.dungeons:rare_updraft_tome=Aufwindfoliant 
+item.dungeons:enchanters_tome=Foliant des Zaubermeisters
+item.dungeons:rare_enchanters_tome=Foliant des Zaubermeisters 
+item.dungeons:scatter_mines=Streuminen
+item.dungeons:rare_scatter_mines=Streuminen 
+item.dungeons:satchel_of_snacks=Umhängetasche des Imbiss
+item.dungeons:rare_satchel_of_snacks=Umhängetasche des Imbiss 
+item.dungeons:satchel_of_elixirs=Umhängetasche der Elixiere
+item.dungeons:rare_satchel_of_elixirs=Umhängetasche der Elixiere 
+item.dungeons:eye_of_the_guardian=Auge des Wächters
+item.dungeons:rare_eye_of_the_guardian=Auge des Wächters 
+item.dungeons:totem_of_casting=Totem des Zauberns
+item.dungeons:rare_totem_of_casting=Totem des Zauberns 
+item.dungeons:powershaker=Mächtiger Rüttler
+item.dungeons:rare_powershaker=Mächtiger Rüttler 
+item.dungeons:corrupted_beacon=Verseuchtes Leuchtfeuer
+item.dungeons:rare_corrupted_beacon=Verseuchtes Leuchtfeuer 
+item.dungeons:ghost_cloak=Gespensterumhang
+item.dungeons:rare_ghost_cloak=Gespensterumhang 
+item.dungeons:soul_lantern=Seelenfeuerlaterne
+item.dungeons:rare_soul_lantern=Seelenfeuerlaterne 
+item.dungeons:tome_of_duplication=Foliant der Duplizierung
+item.dungeons:tome_of_duplication=Foliant der Duplizierung 
+item.dungeons:spinblade=Wirbelklinge
+item.dungeons:rare_spinblade=Wirbelklinge 
+
+
+
+item.dungeons:anchor=Anker
+item.dungeons:encrusted_anchor=Verkrusteter Anker
+item.dungeons:axe=Axt
+item.dungeons:highlands_axe=Hochlandaxt
+item.dungeons:firebrand=Feuerbrand
+item.dungeons:backstabber=Meuchelklinge
+item.dungeons:swift_striker=Flinkstich
+item.dungeons:battlestaff=Kampfstab
+item.dungeons:growing_staff=Wachstumsstab
+item.dungeons:battlestaff_of_terror=Kampfstab des Terrors
+item.dungeons:bone_club=Knochenkeule
+item.dungeons:bone_cudgel=Knochenknüppel
+item.dungeons:claymore=Claymore
+item.dungeons:great_axeblade=Große Axtschneide
+item.dungeons:broadsword=Breitschwert
+item.dungeons:heartstealer=Herzdieb
+item.dungeons:cutlass=Entersäbel
+item.dungeons:sponge_striker=Schwammschläger
+item.dungeons:cutlass=Entersäbel
+item.dungeons:nameless_blade=Namenlose Klinge
+item.dungeons:dancers_sword=Tänzerschwert
+item.dungeons:daggers=Dolche
+item.dungeons:moon_daggers=Monddolche
+item.dungeons:sheer_daggers=Schurdolche
+item.dungeons:frost_knives=Frost-Reißzähne
+item.dungeons:double_axe=Doppelaxt
+item.dungeons:cursed_axe=Verfluchte Axt
+item.dungeons:whirlwind=Wirbelwind
+item.dungeons:gauntlets=Panzerhandschuhe
+item.dungeons:fighters_bindings=Kämpferbandagen
+item.dungeons:maulers=Zermalmer
+item.dungeons:soul_fists=Seelenfäustlinge
+item.dungeons:glaive=Gleve
+item.dungeons:grave_bane=Grabesfluch
+item.dungeons:venom_glaive=Toxingleve
+item.dungeons:great_hammer=Großhammer
+item.dungeons:hammer_of_gravity=Schwerkrafthammer
+item.dungeons:stormlander=Sturmbrecher
+item.dungeons:katana=Katana
+item.dungeons:masters_katana=Meister-Katana
+item.dungeons:dark_katana=Finstere Katana
+item.dungeons:mace=Streitkolben
+item.dungeons:flail=Flegel
+item.dungeons:suns_grace=Gunst der Sonne
+item.dungeons:soul_knife=Seelenmesser
+item.dungeons:eternal_knife=Messer der Ewigkeit
+item.dungeons:truthseeker=Wahrheitssucher
+item.dungeons:obsidian_claymore=Obsidian-Claymore
+item.dungeons:starless_night=Die sternenlose Nacht
+item.dungeons:rapier=Rapier
+item.dungeons:bee_stinger=Bienenstachel
+item.dungeons:freezing_foil=Frost-Florett
+item.dungeons:broken_sawblade=Kaputtes Sägeblatt
+item.dungeons:mechanised_sawblade=Mechanisiertes Sägeblatt
+item.dungeons:soul_scythe=Seelensense
+item.dungeons:frost_scythe=Frostsense
+item.dungeons:jailors_scythe=Sense des Gefängniswächters
+item.dungeons:sword=Langschwert
+item.dungeons:diamond_sword=Diamantlangschwert
+item.dungeons:hawkbrand=Falkenklaue
+item.dungeons:tempest_knife=Sturmmesser
+item.dungeons:resolute_tempest_knife=Bewährtes Sturmmesser
+item.dungeons:chill_gale_knife=Eissturmmesser
+item.dungeons:void_touched_blades=Leerenberührte Klinge
+item.dungeons:the_beginning_and_the_end=Der Anfang und das Ende
+item.dungeons:whip=Peitsche
+item.dungeons:vine_whip=Rankenpeitsche
+
+
+item.dungeons:dark_boots=Dunkle Stiefel
+item.dungeons:dark_leggings=Dunkle Hose
+item.dungeons:dark_chestplate=Dunkler Harnisch
+item.dungeons:dark_helmet=Dunkler Helm
+item.dungeons:titans_shroud_boots=Titanenschleierstiefel
+item.dungeons:titans_shroud_leggings=Titanenschleierhose
+item.dungeons:titans_shroud_chestplate=Titanenschleierharnisch
+item.dungeons:titans_shroud_helmet=Titanenschleierhelm
+
+item.dungeons:grim_boots=Finstere Stiefel
+item.dungeons:grim_leggings=Finstere Hose
+item.dungeons:grim_chestplate=Finsterer Harnisch
+item.dungeons:grim_helmet=Finsterer Helm
+item.dungeons:wither_boots=Wither-Stiefel
+item.dungeons:wither_leggings=Wither-Hose
+item.dungeons:wither_chestplate=Wither-Harnisch
+item.dungeons:wither_helmet=Wither-Helm
+
+item.dungeons:snow_boots=Schneestiefel
+item.dungeons:snow_leggings=Schneehose
+item.dungeons:snow_chestplate=Schneeharnisch
+item.dungeons:snow_helmet=Schneehelm
+item.dungeons:frost_boots=Froststiefel
+item.dungeons:frost_leggings=Frosthose
+item.dungeons:frost_chestplate=Frostharnisch
+item.dungeons:frost_helmet=Frosthelm
+
+item.dungeons:wolf_boots=Wolfsstiefel
+item.dungeons:wolf_leggings=Wolfshose
+item.dungeons:wolf_chestplate=Wolfshemd
+item.dungeons:wolf_helmet=Wolfshelm
+item.dungeons:fox_boots=Fuchsstiefel
+item.dungeons:fox_leggings=Fuchshose
+item.dungeons:fox_chestplate=Fuchshemd
+item.dungeons:fox_helmet=Fuchshelm
+item.dungeons:black_wolf_boots=Schwarzwolfsstiefel
+item.dungeons:black_wolf_leggings=Schwarzwolfshose
+item.dungeons:black_wolf_chestplate=Schwarzwolfshemd
+item.dungeons:black_wolf_helmet=Schwarzwolfshelm
+
+item.dungeons:evocation_boots=Beschwörungsstiefel
+item.dungeons:evocation_leggings=Beschwörungshose
+item.dungeons:evocation_chestplate=Beschwörungsrobe
+item.dungeons:evocation_helmet=Beschwörungshut
+item.dungeons:verdant_boots=Immergrüne Stiefel
+item.dungeons:verdant_leggings=Immergrüne Hose
+item.dungeons:verdant_chestplate=Immergrüne Robe
+item.dungeons:verdant_helmet=Immergrüner Hut
+item.dungeons:ember_boots=Glutstiefel
+item.dungeons:ember_leggings=Gluthose
+item.dungeons:ember_chestplate=Glutrobe
+item.dungeons:ember_helmet=Gluthut
+
+item.dungeons:ocelot_boots=Ozelotstiefel
+item.dungeons:ocelot_leggings=Ozelothose
+item.dungeons:ocelot_chestplate=Ozelothemd
+item.dungeons:ocelot_helmet=Ozelothose
+item.dungeons:shadow_walker_boots=Schattenläuferstiefel
+item.dungeons:shadow_walker_leggings=Schattenläuferhose
+item.dungeons:shadow_walker_chestplate=Schattenläuferhemd
+item.dungeons:shadow_walker_helmet=Schattenläuferhelm
+
+item.dungeons:emerald_boots=Smaragdstiefel
+item.dungeons:emerald_leggings=Smaragdhose
+item.dungeons:emerald_chestplate=Smaragdharnisch
+item.dungeons:emerald_helmet=Smaragdhelm
+item.dungeons:opulent_boots=Opulente Stiefel
+item.dungeons:opulent_leggings=Opulente Hose
+item.dungeons:opulent_chestplate=Opulenter Harnisch
+item.dungeons:opulent_helmet=Opulenter Helm
+item.dungeons:gilded_glory_boots=Vergoldeter-Ruhm-Stiefel
+item.dungeons:gilded_glory_leggings=Vergoldeter-Ruhm-Hose
+item.dungeons:gilded_glory_chestplate=Vergoldeter-Ruhm-Harnisch
+item.dungeons:gilded_glory_helmet=Vergoldeter-Ruhm-Helm
+
+item.dungeons:turtle_boots=Schildkrötenstiefel
+item.dungeons:turtle_leggings=Schildkrötenhose
+item.dungeons:turtle_chestplate=Schildkrötenharnisch
+item.dungeons:turtle_helmet=Schildkrötenhelm
+item.dungeons:nimble_turtle_boots=Leichte Schildkrötenstiefel
+item.dungeons:nimble_turtle_leggings=Leichte Schildkrötenhose
+item.dungeons:nimble_turtle_chestplate=Leichter Schildkrötenharnisch
+item.dungeons:nimble_turtle_helmet=Leichter Schildkrötenhelm
+
+item.dungeons:squid_boots=Tintenfischstiefel
+item.dungeons:squid_leggings=Tintenfischhose
+item.dungeons:squid_chestplate=Tintenfischharnisch
+item.dungeons:squid_helmet=Tintenfischhaube
+item.dungeons:glow_squid_boots=Leuchttintenfischstiefel
+item.dungeons:glow_squid_leggings=Leuchttintenfischhose
+item.dungeons:glow_squid_chestplate=Leuchttintenfischharnisch
+item.dungeons:glow_squid_helmet=Leuchttintenfischhaube
+
+item.dungeons:thief_boots=Diebesstiefel
+item.dungeons:thief_leggings=Diebeshose
+item.dungeons:thief_chestplate=Diebesharnisch
+item.dungeons:thief_helmet=Diebeshelm
+item.dungeons:spider_boots=Spinnenschuhe
+item.dungeons:spider_leggings=Spinnenhose
+item.dungeons:spider_chestplate=Spinnenharnisch
+item.dungeons:spider_helmet=Spinnenhelm
+
+item.dungeons:sprout_boots=Keimstiefel
+item.dungeons:sprout_leggings=Keimhose
+item.dungeons:sprout_chestplate=Keimharnisch
+item.dungeons:sprout_helmet=Keimhaube
+item.dungeons:living_vines_boots=Rankenstiefel
+item.dungeons:living_vines_leggings=Rankenhose
+item.dungeons:living_vines_chestplate=Rankenharnisch
+item.dungeons:living_vines_helmet=Rankenhaube
+
+item.dungeons:root_rot_boots=Welkwurzelstiefel
+item.dungeons:root_rot_leggings=Welkwurzelhose
+item.dungeons:root_rot_chestplate=Welkwurzelharnisch
+item.dungeons:root_rot_helmet=Welkwurzelhaube
+item.dungeons:black_spot_boots=Schwarzfleckenstiefel
+item.dungeons:black_spot_leggings=Schwarzfleckenhose
+item.dungeons:black_spot_chestplate=Schwarzfleckenharnisch
+item.dungeons:black_spot_helmet=Schwarzfleckenhaube
+
+item.dungeons:piglin_boots=Piglinstiefel
+item.dungeons:piglin_leggings=Piglinhose
+item.dungeons:piglin_chestplate=Piglinharnisch
+item.dungeons:piglin_helmet=Piglinhelm
+item.dungeons:golden_piglin_boots=Goldene Piglinstiefel
+item.dungeons:golden_piglin_leggings=Goldene Piglinhose
+item.dungeons:golden_piglin_chestplate=Goldener Piglinharnisch
+item.dungeons:golden_piglin_helmet=Goldener Piglinhelm
+
+item.dungeons:guard_boots=Wächtersiefel
+item.dungeons:guard_leggings=Wächterhse
+item.dungeons:guard_chestplate=Wähterharnisch
+item.dungeons:guard_helmet=Wächterhelm
+item.dungeons:ender_boots=Neugierstiefel
+item.dungeons:ender_leggings=Neugierhose
+item.dungeons:ender_chestplate=Neugierharnisch
+item.dungeons:ender_helmet=Neugierhelm
+
+item.dungeons:entertainer_boots=Stiefel des Unterhalters
+item.dungeons:entertainer_leggings=Hose des Unterhalters
+item.dungeons:entertainer_chestplate=Gewand des Unterhalters
+item.dungeons:entertainer_helmet=Hut des Unterhalters
+item.dungeons:troubadour_boots=Stiefel des Troubadours
+item.dungeons:troubadour_leggings=Hose des Troubadours
+item.dungeons:troubadour_chestplate=Gewand des Troubadours
+item.dungeons:troubadour_helmet=Hut des Troubadours
+
+item.dungeons:shulker_boots=Shulkerstiefel
+item.dungeons:shulker_leggings=Shulkerhose
+item.dungeons:shulker_chestplate=Shulkerharnisch
+item.dungeons:shulker_helmet=Shulkerhelm
+item.dungeons:sturdy_shulker_boots=Robuste Shulkerstiefel
+item.dungeons:sturdy_shulker_leggings=Robuste Shulkerhose
+item.dungeons:sturdy_shulker_chestplate=Robuster Shulkerharnisch
+item.dungeons:sturdy_shulker_helmet=Robuster Shulkerhelm
+
+item.dungeons:teleportation_boots=Teleportationsstiefel
+item.dungeons:teleportation_leggings=Teleportationshose
+item.dungeons:teleportation_chestplate=Teleportationsgewand
+item.dungeons:teleportation_helmet=Teleportationskapuze
+item.dungeons:unstable_boots=Instabile Stiefel
+item.dungeons:unstable_leggings=Instabile Hose 
+item.dungeons:unstable_chestplate=Instabiles Gewand
+item.dungeons:unstable_helmet=Instabile Kapuze
+
+item.dungeons:plate_boots=Plattenstiefel
+item.dungeons:plate_leggings=Plattenhose
+item.dungeons:plate_chestplate=Plattenharnisch
+item.dungeons:plate_helmet=Plattenhelm
+item.dungeons:full_metal_boots=Metallstiefel
+item.dungeons:full_metal_leggings=Metallhose
+item.dungeons:full_metal_chestplate=Metallharnisch
+item.dungeons:full_metal_helmet=Metallhelm
+
+item.dungeons:ghostly_boots=Gespenstische Stiefel
+item.dungeons:ghostly_leggings=Gespenstische Hose
+item.dungeons:ghostly_chestplate=Gespenstischer Harnisch
+item.dungeons:ghostly_helmet=Gespenstischer Helm
+item.dungeons:ghost_kindler_boots=Gespensterflammenstiefel
+item.dungeons:ghost_kindler_leggings=Gespensterflammenhose
+item.dungeons:ghost_kindler_chestplate=Gespensterflammenharnisch
+item.dungeons:ghost_kindler_helmet=Gespensterflammenhelm
+
+
+
+item.dungeons:burning_arrow=Brennender Pfeil
+item.dungeons:thundering_arrow=Donnernder Pfeil
+item.dungeons:torment_arrow=Qualpfeil
+item.dungeons:harpoon_arrow=Harpunenpfeil
+item.dungeons:firework_arrow=Feuerwerkpfeil
+
+item.dungeons:longbow=Langbogen
+item.dungeons:guardian_bow=Wächterbogen
+item.dungeons:red_snake=Feuerrote Schlange
+
+item.dungeons:bow=Bogen
+item.dungeons:bonebow=Knochenbogen
+item.dungeons:twin_bow=Zwillingsbogen
+
+item.dungeons:wind_bow=Windbogen
+item.dungeons:echo_of_the_valley=Echo des fernen Tals
+item.dungeons:burst_gale_bow=Wirbelwindbogen
+
+item.dungeons:snow_bow=Schneebogen
+item.dungeons:winters_touch=Wintergriff
+
+item.dungeons:twisting_vine_bow=Verdrehter Rankenbogen
+item.dungeons:weeping_vine_bow=Trauerrankenbogen
+
+item.dungeons:soul_bow=Seelenbogen
+item.dungeons:bow_of_lost_souls=Bogen der verlorenen Seelen
+item.dungeons:nocturnal_bow=Nachtbogen
+
+item.dungeons:void_bow=Leerenbogen
+item.dungeons:call_of_the_void=Ruf der Leere
+
+item.dungeons:exploding_crossbow=Explosionsarmbrust
+item.dungeons:imploding_crossbow=Implodierende Armbrust
+item.dungeons:firebolt_thrower=Feuerbolzenwerfer
+
+item.dungeons:soul_crossbow=Seelenarmbrust
+item.dungeons:feral_soul_crossbow=Wilde Seelenarmbrust
+item.dungeons:voidcaller=Leerenrufer
+
+item.dungeons:burst_crossbow=Explosions-Armbrust
+item.dungeons:soul_hunter_crossbow=Seelenjäger-Armbrust
+item.dungeons:corrupted_crossbow=Verdorbene Armbrust
+
+item.dungeons:harpoon_crossbow=Harpunenarmbrust
+item.dungeons:nautical_crossbow=Nautiker-Armbrust
+
+item.dungeons:cog_crossbow=Zahnradarmbrust
+item.dungeons:pride_of_the_piglins=Stolz der Piglins
+
+item.dungeons:heavy_crossbow=Schwere Armbrust
+item.dungeons:doom_crossbow=Verdammtenarmbrust
+item.dungeons:slayer_crossbow=Metzlerarmbrust
+
+item.dungeons:shadow_crossbow=Schattenarmbrust
+item.dungeons:veiled_crossbow=Verschleierte Armbrust
+
+
+item.dungeons:sinister_sword=Finsteres Schwert
+item.dungeons:skull_scythe=Schädelsense
+item.dungeons:bonehead_hammer=Holzkopfhammer
+item.dungeons:cackling_broom=Cackling Broom
+item.dungeons:spooky_gourdian_helmet=Kürbiswächtermaske
+item.dungeons:spooky_gourdian_chestplate=Kürbiswächterharnisch
+item.dungeons:spooky_gourdian_leggings=Kürbiswächterhose
+item.dungeons:spooky_gourdian_boots=Kürbiswächterschuhe
+item.dungeons:cauldron_helmet=Kesselhelm
+item.dungeons:cauldron_chestplate=Kesselharnisch
+item.dungeons:cauldron_leggings=Kesselhose
+item.dungeons:cauldron_boots=Kesselstiefel
+item.dungeons:corrupted_pumpkin=Verdorbener Kürbis
+item.dungeons:haunted_bow=Verfluchter Bogen
+item.dungeons:webbed_bow=Gesponnener Bogen
+item.dungeons:shrieking_crossbow=Kreischende Armbrust
+
+
+
+
+
+action.interact.redstone_monstrosity=Erwecke die Monstrosität auf
+action.interact.spooky_monstrosity=Erwecke die Monstrosität auf
+action.interact.nameless_one=Störe den Namenlosen
+action.interact.mooshroom_monstrosity=Erwecke die.. Monstrosität?
+action.interact.wretched_wraith=Greife nach der Krone
+action.interact.corrupted_cauldron=Untersuche den Kessel
+action.interact.jungle_abomination=Erwecke das Scheusal
+action.interact.tempest_golem=Erwecke den Golem
+action.interact.ancient_guardian=Greif nach dem Schatz
+action.interact.boss_wildfire=Ersetze das Götzenbild
+action.interact.endersent=Fordere das verzauberte Auge heraus
+action.interact.vengeful_heart_of_ender=Beschwöre das Herz
+
+action.interact.redstone_golem=Aktivieren
+action.interact.squall_golem=Windkraft
+
+action.interact.unlock_chest=Aufschließen
+action.interact.open_chest=Öffnen
+action.interact.locked_chest=Verschlossen
+
+item.use.artefact=Artefakt benutzen
+item.use.book_of_heroes=Lesen
+
+
+dungeons:itemGroup.name.enchantedRunes=Verzauberte Runen
+dungeons:itemGroup.name.dungeonsPainting=Bossgemälde
+dungeons:itemGroup.name.bossTrophies=Boss Trophies
+dungeons:itemGroup.name.bossKeys=Bossschlüssel
+
+dungeons:itemGroup.name.commonMelee=Normale Nahkampfwaffen
+dungeons:itemGroup.name.uniqueMelee=§bEinzigartige Nahkampfwaffen
+dungeons:itemGroup.name.seasonalMelee=§dSaisonale Nahkampfwaffen
+dungeons:itemGroup.name.commonRanged=Normale Fernkampfwaffen
+dungeons:itemGroup.name.uniqueRanged=§bEinzigartige Fernkampfwaffen
+dungeons:itemGroup.name.seasonalRanged=§dSaisonale Fernkampfwaffen
+dungeons:itemGroup.name.commonArmours=Rüstungen
+dungeons:itemGroup.name.uniqueArmours=§bEinzigartige Artefakte
+dungeons:itemGroup.name.seasonalArmours=§dSaisonale Rüstungen
+dungeons:itemGroup.name.commonArtefact=Normale Artefakte
+dungeons:itemGroup.name.rareArtefact=§aSeltene Artefakte
+
+dungeons:itemGroup.name.customArrows=Modifizierte Pfeile

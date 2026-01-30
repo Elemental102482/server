@@ -1,0 +1,29 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "bps:container_entity_new",
+      "materials": { "default": "skeleton" },
+      "textures": {
+        "default": "textures/backpack_model"
+      },
+      "geometry": {
+        "default": "geometry.backpack_model"
+      },
+      "scripts": {
+        "scale": "0.35",
+			"animate":[
+			""
+			]
+      },
+      "animations": {
+        "resting": "animation.bat.resting"
+      },
+      "render_controllers": [ "controller.render.default" ],
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 18
+      }
+    }
+  }
+}

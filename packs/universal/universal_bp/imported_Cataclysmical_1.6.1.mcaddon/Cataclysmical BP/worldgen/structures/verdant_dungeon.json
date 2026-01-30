@@ -1,0 +1,44 @@
+{
+	"format_version": "1.21.100",
+	"minecraft:jigsaw": {
+		"description": {
+			"identifier": "cata:verdant_dungeon"
+		},
+		"step": "underground_structures",
+		"terrain_adaptation": "none",
+		"start_pool": "cata:verdant_dungeon_start",
+		"max_depth": 15,
+		"heightmap_projection": "world_surface",
+		"biome_filters": {
+			"any_of": [
+				{
+					"test": "has_biome_tag",
+					"operator": "==",
+					"value": "overworld"
+				},
+				{
+					"test": "has_biome_tag",
+					"operator": "==",
+					"value": "overworld_generation"
+				},
+				{
+					"test": "has_biome_tag",
+					"operator": "!=",
+					"value": "mountains"
+				},
+				{
+					"test": "has_biome_tag",
+					"operator": "!=",
+					"value": "ocean"
+				}
+			]
+		},
+		"start_height": {
+			"type": "constant",
+			"value": {
+				"absolute": -65
+			}
+		},
+		"liquid_settings": "ignore_waterlogging"
+	}
+}

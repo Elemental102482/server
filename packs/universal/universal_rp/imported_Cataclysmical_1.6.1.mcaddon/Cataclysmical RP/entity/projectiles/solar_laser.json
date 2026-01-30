@@ -1,0 +1,39 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "cata:solar_laser",
+			"materials": {
+				"default": "drowned"
+			},
+			"textures": {
+				"default": "textures/entity/projectile/solar_laser_texture"
+			},
+			"geometry": {
+				"default": "geometry.solar_laser"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"base_color": "#000000",
+				"overlay_color": "#FFFFFF"
+			},
+			"animations": {
+				"move": "animation.projectile.move",
+				"particle": "animation.wand_projectile.particle",
+				"laser": "animation.wand_projectile.laser"
+			},
+			"particle_effects": {
+				"wand_particle": "cata:solar_bolt"
+			},
+			"scripts": {
+				"animate": [
+					"move",
+					"particle",
+					"laser"
+				]
+			}
+		}
+	}
+}

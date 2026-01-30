@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "ghost_kindler",
+        "metalness_emissive_roughness": "ghost_kindler_mer"
+    }
+}

@@ -1,0 +1,61 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"weight": 1,
+					"name": "cata:solar_element",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "cata:flare_stone",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 5
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"weight": 5,
+					"name": "cata:solar_core"
+				},
+				{
+					"type": "item",
+					"name": "cata:solar_tesla_coil",
+					"weight": 1
+				},
+				{
+					"type": "empty",
+					"weight": 10
+				}
+			]
+		}
+	]
+}

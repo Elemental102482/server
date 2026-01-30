@@ -1,0 +1,40 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:item": {
+		"description": {
+			"identifier": "cata:morningstar",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:icon": "cata_morningstar",
+			"minecraft:damage": {
+				"value": 9
+			},
+			"minecraft:can_destroy_in_creative": {
+				"value": false
+			},
+			"minecraft:hand_equipped": true,
+			"minecraft:durability": {
+				"max_durability": 690
+			},
+			"minecraft:max_stack_size": {
+				"value": 1
+			},
+			"minecraft:digger": {
+				"use_efficiency": true,
+				"destroy_speeds": [
+					{
+						"block": "minecraft:web",
+						"speed": 18
+					}
+				]
+			},
+			"minecraft:cooldown": {
+				"category": "elemental_weapon",
+				"duration": 5
+			}
+		}
+	}
+}

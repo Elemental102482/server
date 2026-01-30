@@ -1,0 +1,85 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.wretched_wraith.death": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						"idle"
+					],
+					"transitions": [
+						{
+							"awaken": "q.variant==1"
+						}
+					]
+				},
+				"awaken": {
+					"animations": [
+						"awaken"
+					]
+				}
+			}
+		},
+		"controller.animation.wretched_wraith.idle": {
+			"initial_state": "default",
+			"states": {
+				"idle": {
+					"animations": [
+						"idle",
+						"look_at_target"
+					],
+					"transitions": [
+						{
+							"default": "!q.is_saddled"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"default": {
+					"transitions": [
+						{
+							"idle": "query.is_saddled==1"
+						}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		},
+		"controller.animation.wretched_wraith.stun": {
+			"initial_state": "default",
+			"states": {
+				"stun": {
+					"animations": [
+						"stun"
+					],
+					"transitions": [
+						{
+							"end": "q.variant==2"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"end": {
+					"animations": [
+						"enter_new_phase"
+					],
+					"transitions": [
+						{
+							"default": "q.variant==0"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"default": {
+					"transitions": [
+						{
+							"stun": "query.variant==1"
+						}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		}
+	}
+}

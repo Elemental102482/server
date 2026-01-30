@@ -1,0 +1,33 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "entertainer_chestplate"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"G G",
+			"GBG",
+			"GBG"
+		],
+		"unlock": [
+			{
+				"item": "minecraft:wool"
+			}
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:wool"
+			},
+			"G": {
+				"item": "minecraft:glow_ink_sac"
+			}
+		},
+		"result": {
+			"item": "dungeons:entertainer_chestplate",
+			"count": 1
+		}
+	}
+}

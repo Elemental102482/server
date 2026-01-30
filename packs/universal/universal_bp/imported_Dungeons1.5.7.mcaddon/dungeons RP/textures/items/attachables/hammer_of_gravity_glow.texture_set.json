@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "hammer_of_gravity_glow",
+        "metalness_emissive_roughness": "hammer_of_gravity_glow_mer"
+    }
+}

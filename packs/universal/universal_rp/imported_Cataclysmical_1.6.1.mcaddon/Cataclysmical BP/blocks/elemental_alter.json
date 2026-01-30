@@ -1,0 +1,127 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:block": {
+		"description": {
+			"identifier": "cata:elemental_alter",
+			"menu_category": {
+				"category": "construction"
+			},
+			"states": {
+				"cata:powered": [
+					false,
+					true
+				]
+			}
+		},
+		"permutations": [
+			{
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "cata_elemental_alter_powered",
+							"render_method": "alpha_test"
+						},
+						"polished_asteroid": {
+							"texture": "cata_polished_asteroid",
+							"render_method": "alpha_test"
+						},
+						"down": {
+							"texture": "cata_polished_asteroid",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"looping": true,
+						"interval_range": [
+							35,
+							90
+						]
+					},
+					"minecraft:custom_components": [
+						"component:elemental_alter_particle",
+						"component:elemental_alter_powered"
+					]
+				},
+				"condition": "q.block_state('cata:powered')"
+			}
+		],
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "cata_elemental_alter",
+					"render_method": "alpha_test"
+				},
+				"polished_asteroid": {
+					"texture": "cata_polished_asteroid",
+					"render_method": "alpha_test"
+				},
+				"down": {
+					"texture": "cata_polished_asteroid",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:geometry": {
+				"identifier": "geometry.elemental_alter"
+			},
+			"minecraft:selection_box": {
+				"size": [
+					16,
+					12,
+					16
+				],
+				"origin": [
+					-8,
+					0,
+					-8
+				]
+			},
+			"minecraft:collision_box": {
+				"size": [
+					16,
+					12,
+					16
+				],
+				"origin": [
+					-8,
+					0,
+					-8
+				]
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 100
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 7.5,
+				"item_specific_speeds": [
+					{
+						"destroy_speed": 0.6,
+						"item": "minecraft:stone_pickaxe"
+					},
+					{
+						"destroy_speed": 0.4,
+						"item": "minecraft:iron_pickaxe"
+					},
+					{
+						"destroy_speed": 0.3,
+						"item": "minecraft:diamond_pickaxe"
+					},
+					{
+						"destroy_speed": 0.25,
+						"item": "minecraft:netherite_pickaxe"
+					},
+					{
+						"destroy_speed": 0.2,
+						"item": "minecraft:golden_pickaxe"
+					},
+					{
+						"destroy_speed": 0.5,
+						"item": "cata:sunflare_pickaxe"
+					}
+				]
+			},
+			"minecraft:custom_components": [
+				"component:elemental_alter_empty"
+			]
+		}
+	}
+}

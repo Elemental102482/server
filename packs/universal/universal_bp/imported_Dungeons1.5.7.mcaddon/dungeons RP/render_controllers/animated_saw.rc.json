@@ -1,0 +1,30 @@
+{
+	"format_version": "1.10.0",
+	"render_controllers": {
+		"controller.render.animated_sawblade": {
+			"arrays": {
+				"textures": {
+					"array.skins": [
+						"texture.default",
+						"texture.alt"
+					]
+				},
+				"geometries": {
+					"array.geo": [
+						"Geometry.default",
+						"Geometry.alt"
+					]
+				}
+			},
+			"geometry": "array.geo[math.mod(q.life_time*8,2)]",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"array.skins[math.mod(q.life_time*8,2)]"
+			]
+		}
+	}
+}

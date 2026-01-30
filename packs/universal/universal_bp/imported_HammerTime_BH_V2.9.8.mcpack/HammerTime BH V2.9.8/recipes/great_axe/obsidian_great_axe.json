@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "system:obsidian_great_axe"
+    },
+
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "CCC",
+      "CCS",
+      "  S"
+    ],
+    "key": {
+      "S": {
+        "item": "minecraft:stick"
+      },
+      "C": {
+        "item": "minecraft:obsidian"
+      }
+    },
+    "result": {
+      "item": "system:obsidian_great_axe"
+    }
+  }
+}

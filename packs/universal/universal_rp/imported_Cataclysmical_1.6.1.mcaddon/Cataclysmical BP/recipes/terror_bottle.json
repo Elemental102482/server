@@ -1,0 +1,36 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "cata:terror_bottle"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "cata:platinum_chunk",
+				"count": 1
+			},
+			{
+				"item": "cata:terrorite_brick",
+				"count": 1
+			},
+			{
+				"item": "cata:ectoplasm",
+				"count": 1
+			},
+			{
+				"item": "minecraft:experience_bottle",
+				"count": 1
+			}
+		],
+		"result": {
+			"item": "cata:terror_bottle",
+			"count": 1
+		},
+		"unlock": {
+			"context": "AlwaysUnlocked"
+		}
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "e:bless_of_mercury_book_1",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "book_enchanted"
+			},
+			"minecraft:display_name": {
+				"value": "§eEnchanted Book \n§3Blessing of Mercury \n§dCan Enchant: \n§7-Pickaxe \n§aAbility: \n§7-Repairs Tool when mining Certain Ores  \n§6Advanced Enchants"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.enchantedBook"
+			},
+			"minecraft:foil": true,
+			"minecraft:max_stack_size": 1
+		}
+	}
+}

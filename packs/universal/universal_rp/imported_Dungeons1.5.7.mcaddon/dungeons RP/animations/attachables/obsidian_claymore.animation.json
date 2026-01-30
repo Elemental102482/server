@@ -1,0 +1,41 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.obsidian_claymore.first_person_hold": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"rotation": [
+						-76.16173,
+						73.86524,
+						-130.35581
+					],
+					"position": [
+						1,
+						15,
+						4.1
+					],
+					"scale": 1.1
+				}
+			}
+		},
+		"animation.obsidian_claymore.third_person_hold": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"rotation": [
+						0,
+						90,
+						0
+					],
+					"position": [
+						5.03,
+						17.33,
+						-6
+					],
+					"scale": 1.1
+				}
+			}
+		}
+	}
+}

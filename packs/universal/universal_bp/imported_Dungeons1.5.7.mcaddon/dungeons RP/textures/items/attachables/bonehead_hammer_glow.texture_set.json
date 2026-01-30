@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "bonehead_hammer_glow",
+        "metalness_emissive_roughness": "bonehead_hammer_glow_mer"
+    }
+}

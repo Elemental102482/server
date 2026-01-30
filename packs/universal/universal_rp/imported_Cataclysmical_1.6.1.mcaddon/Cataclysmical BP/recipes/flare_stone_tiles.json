@@ -1,0 +1,23 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "cata:flare_stone_tiles"
+		},
+		"tags": [
+			"stonecutter"
+		],
+		"ingredients": [
+			{
+				"item": "cata:flare_stone_brick"
+			}
+		],
+		"result": {
+			"item": "cata:flare_stone_tiles",
+			"count": 1
+		},
+		"unlock": {
+			"context": "AlwaysUnlocked"
+		}
+	}
+}

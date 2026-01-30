@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "book_of_heroes",
+        "metalness_emissive_roughness": "book_of_heroes_mer"
+    }
+}

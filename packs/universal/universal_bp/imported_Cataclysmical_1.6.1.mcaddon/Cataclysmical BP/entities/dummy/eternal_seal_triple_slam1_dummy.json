@@ -1,0 +1,107 @@
+{
+	"format_version": "1.21.80",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "cata:eternal_seal_triple_slam1_dummy",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"despawn": {
+				"minecraft:instant_despawn": {
+					"remove_child_entities": true
+				}
+			}
+		},
+		"components": {
+			"minecraft:knockback_resistance": {
+				"value": 100
+			},
+			"minecraft:physics": {
+				"has_collision": false,
+				"has_gravity": false
+			},
+			"minecraft:health": {
+				"value": 1
+			},
+			"minecraft:scale": {
+				"value": 1
+			},
+			"minecraft:collision_box": {
+				"width": 0,
+				"height": 0
+			},
+			"minecraft:type_family": {
+				"family": [
+					"inanimate"
+				]
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "all",
+						"deals_damage": "no"
+					}
+				]
+			},
+			"minecraft:behavior.summon_entity": {
+				"priority": 1,
+				"summon_choices": [
+					{
+						"do_casting": true,
+						"weight": 1,
+						"cast_duration": 0.1,
+						"sequence": [
+							{
+								"shape": "circle",
+								"target": "self",
+								"base_delay": 0.2,
+								"delay_per_summon": 0,
+								"entity_type": "cata:flare_stone_meteor",
+								"num_entities_spawned": 10,
+								"entity_lifespan": -1,
+								"summon_cap": 10,
+								"summon_cap_radius": 30,
+								"size": 10
+							}
+						],
+						"cooldown_time": 9999
+					}
+				]
+			},
+			"minecraft:cannot_be_attacked": {},
+			"minecraft:timer": {
+				"looping": true,
+				"time": 15,
+				"time_down_event": {
+					"event": "despawn"
+				}
+			},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 1,
+				"must_reach": false,
+				"must_see": false,
+				"entity_types": {
+					"max_dist": 128,
+					"must_see": false,
+					"filters": {
+						"test": "is_family",
+						"subject": "other",
+						"operator": "==",
+						"value": "player"
+					}
+				}
+			}
+		},
+		"events": {
+			"despawn": {
+				"add": {
+					"component_groups": [
+						"despawn"
+					]
+				}
+			}
+		}
+	}
+}

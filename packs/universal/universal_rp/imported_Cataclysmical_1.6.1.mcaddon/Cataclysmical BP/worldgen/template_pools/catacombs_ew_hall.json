@@ -1,0 +1,107 @@
+{
+	"format_version": "1.21.20",
+	"minecraft:template_pool": {
+		"description": {
+			"identifier": "cata:catacombs_ew_hall"
+		},
+		"elements": [
+			{
+				"element": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "catacombs/ew_hall1",
+					"processors": "cata:stone_replacement"
+				},
+				"weight": 4
+			},
+			{
+				"element": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "catacombs/ew_hall2",
+					"processors": "cata:stone_replacement"
+				},
+				"weight": 3
+			},
+			{
+				"element": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "catacombs/main_hall1",
+					"processors": "cata:stone_replacement"
+				},
+				"weight": 2
+			},
+			{
+				"element": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "catacombs/main_hall2",
+					"processors": "cata:stone_replacement"
+				},
+				"weight": 1
+			},
+			{
+				"element": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "catacombs/main_hall3",
+					"processors": "cata:stone_replacement"
+				},
+				"weight": 1
+			},
+			{
+				"element": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "catacombs/room1",
+					"processors": "cata:stone_replacement"
+				},
+				"weight": 1
+			},
+			{
+				"element": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "catacombs/room2",
+					"processors": "cata:stone_replacement"
+				},
+				"weight": 1
+			},
+			{
+				"element": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "catacombs/room3",
+					"processors": "cata:stone_replacement"
+				},
+				"weight": 1
+			},
+			{
+				"element": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "catacombs/room4",
+					"processors": "cata:stone_replacement"
+				},
+				"weight": 1
+			},
+			{
+				"element": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "catacombs/room5",
+					"processors": "cata:stone_replacement"
+				},
+				"weight": 1
+			},
+			{
+				"element": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "catacombs/room6",
+					"processors": "cata:stone_replacement"
+				},
+				"weight": 1
+			},
+			{
+				"element": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "catacombs/main_hall4",
+					"processors": "cata:stone_replacement"
+				},
+				"weight": 1
+			}
+		],
+		"fallback": "cata:catacombs_ew_fallback"
+	}
+}

@@ -1,0 +1,296 @@
+{
+	"resource_pack_name": "Cataclysmical",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"cata_floret_element": {
+			"textures": "textures/items/floret_element"
+		},
+		"cata_astral_blade": {
+			"textures": "textures/items/stellar_greatsword"
+		},
+		"cata_floret_hatchet": {
+			"textures": "textures/items/floret_hatchet"
+		},
+		"cata_gneiss_rock_placer": {
+			"textures": "textures/blocks/gneiss_rocks"
+		},
+		"cata_astral_chunk": {
+			"textures": "textures/items/astral_chunk"
+		},
+		"cata_astral_alloy": {
+			"textures": "textures/items/astral_ingot"
+		},
+		"cata_floret_rune": {
+			"textures": "textures/items/floret_rune"
+		},
+		"cata_verdant_key": {
+			"textures": "textures/items/verdant_key"
+		},
+		"cata_morningstar": {
+			"textures": "textures/items/morningstar"
+		},
+		"cata_solar_element": {
+			"textures": "textures/items/solar_element"
+		},
+		"cata_verdant_blade": {
+			"textures": "textures/items/verdant_blade"
+		},
+		"cata_verdant_helmet": {
+			"textures": "textures/items/verdant_helmet"
+		},
+		"cata_feral_roots_placer": {
+			"textures": "textures/blocks/feral_roots"
+		},
+		"cata_solar_tablet": {
+			"textures": "textures/items/solar_tablet"
+		},
+		"cata_lunar_element": {
+			"textures": "textures/items/lunar_element"
+		},
+		"cata_lunar_sickle": {
+			"textures": "textures/items/lunar_sickle"
+		},
+		"cata_stellar_helmet": {
+			"textures": "textures/items/stellar_helmet"
+		},
+		"cata_stellar_chestplate": {
+			"textures": "textures/items/stellar_chestplate"
+		},
+		"cata_stellar_leggings": {
+			"textures": "textures/items/stellar_leggings"
+		},
+		"cata_stellar_boots": {
+			"textures": "textures/items/stellar_boots"
+		},
+		"cata_verdant_shard": {
+			"textures": "textures/items/verdant_shard"
+		},
+		"cata_verdant_sword": {
+			"textures": "textures/items/verdant_sword"
+		},
+		"cata_shard_of_calamity": {
+			"textures": "textures/items/shard_of_calamity"
+		},
+		"cata_floret_wand": {
+			"textures": "textures/items/floret_wand"
+		},
+		"cata_solar_wand": {
+			"textures": "textures/items/solar_wand"
+		},
+		"cata_shard_of_cataclysm": {
+			"textures": "textures/items/shard_of_cataclysm"
+		},
+		"cata_stellar_charm": {
+			"textures": "textures/items/stellar_charm"
+		},
+		"cata_charm": {
+			"textures": "textures/items/charm"
+		},
+		"cata_stellar_dust": {
+			"textures": "textures/items/stellar_dust"
+		},
+		"cata_verdant_hatchet": {
+			"textures": "textures/items/verdant_hatchet"
+		},
+		"cata_master_verdant_key": {
+			"textures": "textures/items/master_verdant_key"
+		},
+		"cata_verdant_sentinel_egg": {
+			"textures": "textures/items/spawn_eggs/verdant_sentinel_egg"
+		},
+		"cata_verdant_skeleton_egg": {
+			"textures": "textures/items/spawn_eggs/verdant_skeleton_egg"
+		},
+		"cata_starling_egg": {
+			"textures": "textures/items/spawn_eggs/starling_egg"
+		},
+		"cata_astro_jelly_egg": {
+			"textures": "textures/items/spawn_eggs/astro_jelly_egg"
+		},
+		"cata_stone_golem_egg": {
+			"textures": "textures/items/spawn_eggs/stone_golem_egg"
+		},
+		"cata_gneiss_golem_egg": {
+			"textures": "textures/items/spawn_eggs/gneiss_golem_egg"
+		},
+		"cata_feralbloom_egg": {
+			"textures": "textures/items/spawn_eggs/feralbloom_egg"
+		},
+		"cata_feral_flower": {
+			"textures": [
+				"textures/items/feral_flower_placer"
+			]
+		},
+		"cata_stellar_wand": {
+			"textures": "textures/items/stellar_wand"
+		},
+		"cata_platinum_chunk": {
+			"textures": "textures/items/platinum_chunk"
+		},
+		"cata_platinum_alloy": {
+			"textures": "textures/items/platinum_alloy"
+		},
+		"cata_ancient_halberd": {
+			"textures": "textures/items/ancient_halberd"
+		},
+		"cata_cosmic_terror_egg": {
+			"textures": "textures/items/spawn_eggs/cosmic_terror_egg"
+		},
+		"cata_phantasma_nucleus": {
+			"textures": "textures/items/phantasma_nucleus"
+		},
+		"cata_plasma_egg": {
+			"textures": "textures/items/spawn_eggs/plasma_egg"
+		},
+		"cata_plasma_hive_egg": {
+			"textures": "textures/items/spawn_eggs/plasma_hive_egg"
+		},
+		"cata_solarium_egg": {
+			"textures": "textures/items/spawn_eggs/solarium_egg"
+		},
+		"cata_verdant_plating": {
+			"textures": "textures/items/verdant_plating"
+		},
+		"cata_solar_tesla_egg": {
+			"textures": "textures/items/spawn_eggs/solar_tesla_egg"
+		},
+		"cata_verdant_chestplate": {
+			"textures": "textures/items/verdant_chestplate"
+		},
+		"cata_platinum_key": {
+			"textures": "textures/items/platinum_key"
+		},
+		"cata_eternal_seal": {
+			"textures": "textures/items/spawn_eggs/eternal_seal_egg"
+		},
+		"cata_ancient_ring": {
+			"textures": "textures/items/ancient_ring"
+		},
+		"cata_floret_ring": {
+			"textures": "textures/items/floret_ring"
+		},
+		"cata_solar_ring": {
+			"textures": "textures/items/solar_ring"
+		},
+		"cata_calamity_ring": {
+			"textures": "textures/items/calamity_ring"
+		},
+		"cata_skeleton_paladin_egg": {
+			"textures": "textures/items/spawn_eggs/skeleton_paladin_egg"
+		},
+		"cata_verdant_ring": {
+			"textures": "textures/items/verdant_ring"
+		},
+		"cata_blossom_jewel": {
+			"textures": "textures/items/blossom_jewel"
+		},
+		"cata_stellar_bottle": {
+			"textures": "textures/items/stellar_bottle"
+		},
+		"cata_solar_bottle": {
+			"textures": "textures/items/solar_bottle"
+		},
+		"cata_floret_bottle": {
+			"textures": "textures/items/floret_bottle"
+		},
+		"cata_phantasma_bottle": {
+			"textures": "textures/items/phantasma_bottle"
+		},
+		"cata_terror_bottle": {
+			"textures": "textures/items/terror_bottle"
+		},
+		"cata_lunar_bottle": {
+			"textures": "textures/items/lunar_bottle"
+		},
+		"cata_exodius_cluster": {
+			"textures": "textures/items/exodius_cluster"
+		},
+		"cata_exodius_helmet": {
+			"textures": "textures/items/exodius_helmet"
+		},
+		"cata_exodius_chestplate": {
+			"textures": "textures/items/exodius_chestplate"
+		},
+		"cata_exodius_leggings": {
+			"textures": "textures/items/exodius_leggings"
+		},
+		"cata_exodius_boots": {
+			"textures": "textures/items/exodius_boots"
+		},
+		"cata_sunflare_pickaxe": {
+			"textures": "textures/items/sunflare_pickaxe"
+		},
+		"cata_blooming_aegis": {
+			"textures": "textures/items/blooming_aegis"
+		},
+		"cata_verdant_aegis": {
+			"textures": "textures/items/verdant_aegis"
+		},
+		"cata_astro_jelly_in_a_bottle": {
+			"textures": "textures/items/astro_jelly_in_a_bottle"
+		},
+		"cata_sun_engine": {
+			"textures": "textures/items/sun_engine"
+		},
+		"cata_floret_absorption": {
+			"textures": "textures/items/floret_absorption"
+		},
+		"cata_solar_absorption": {
+			"textures": "textures/items/solar_absorption"
+		},
+		"cata_calibrated_stellar_core": {
+			"textures": "textures/items/calibrated_stellar_core"
+		},
+		"cata_solar_aegis": {
+			"textures": "textures/items/solar_aegis"
+		},
+		"cata_phantasma_ring": {
+			"textures": "textures/items/phantasma_ring"
+		},
+		"cata_exodius_aegis": {
+			"textures": "textures/items/exodius_aegis"
+		},
+		"cata_floret_necklace": {
+			"textures": "textures/items/floret_necklace"
+		},
+		"cata_lunar_absorption": {
+			"textures": "textures/items/lunar_absorption"
+		},
+		"cata_phantasma_necklace": {
+			"textures": "textures/items/phantasma_necklace"
+		},
+		"cata_solar_necklace": {
+			"textures": "textures/items/solar_necklace"
+		},
+		"cata_stellar_necklace": {
+			"textures": "textures/items/stellar_necklace"
+		},
+		"cata_stellar_ring": {
+			"textures": "textures/items/stellar_ring"
+		},
+		"cata_sun_necklace": {
+			"textures": "textures/items/sun_necklace"
+		},
+		"cata_sun_ring": {
+			"textures": "textures/items/sun_ring"
+		},
+		"cata_terror_eye": {
+			"textures": "textures/items/terror_eye"
+		},
+		"cata_lunar_necklace": {
+			"textures": "textures/items/lunar_necklace"
+		},
+		"cata_lunar_ring": {
+			"textures": "textures/items/lunar_ring"
+		},
+		"cata_empty_ring": {
+			"textures": "textures/items/empty_ring"
+		},
+		"cata_recall_mirror": {
+			"textures": "textures/items/recall_mirror"
+		},
+		"cata_cosmic_fragment": {
+			"textures": "textures/items/cosmic_fragment"
+		}
+	}
+}

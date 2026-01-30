@@ -1,0 +1,54 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:corrupted_cauldron",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/corrupted_cauldron/on"
+			},
+			"geometry": {
+				"default": "geometry.corrupted_cauldron"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"animations": {
+				"idle": "animation.corrupted_cauldron.idle",
+				"idle_particles": "animation.corrupted_cauldron.idle_particles",
+				"look_at_target": "animation.corrupted_cauldron.look_at_target",
+				"cast_controller": "controller.animation.necromancer.cast",
+				"cast": "animation.corrupted_cauldron.summon2",
+				"charge_controller": "controller.animation.corrupted_cauldron.charge",
+				"charge": "animation.corrupted_cauldron.charge"
+			},
+			"scripts": {
+				"animate": [
+					"idle",
+					"idle_particles",
+					"look_at_target",
+					"cast_controller",
+					"charge_controller"
+				]
+			},
+			"sound_effects": {
+				"heal": "mob.corrupted_cauldron.heal",
+				"fire": "mob.wildfire.shoot",
+				"charge": "mob.corrupted_cauldron.charge"
+			},
+			"particle_effects": {
+				"bubble": "dungeons:cauldron_bubble",
+				"base_flame": "dungeons:cauldron_base",
+				"healing_smoke": "dungeons:cauldron_heal",
+				"botch": "dungeons:cauldron_botch",
+				"poison": "dungeons:cauldron_poison"
+			},
+			"spawn_egg": {
+				"base_color": "#4E2D56",
+				"overlay_color": "#8E00FF"
+			}
+		}
+	}
+}

@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "soul_wizard",
+        "metalness_emissive_roughness": "soul_wizard_mer"
+    }
+}

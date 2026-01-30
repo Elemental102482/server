@@ -1,0 +1,118 @@
+{
+	"format_version": "1.10.0",
+	"geometry.evocation_leggings": {
+		"texturewidth": 90,
+		"textureheight": 90,
+		"visible_bounds_width": 3,
+		"visible_bounds_height": 4,
+		"visible_bounds_offset": [
+			0,
+			2,
+			0
+		],
+		"bones": [
+			{
+				"name": "waist",
+				"pivot": [
+					0,
+					12,
+					0
+				]
+			},
+			{
+				"name": "body",
+				"parent": "waist",
+				"pivot": [
+					0,
+					24,
+					0
+				]
+			},
+			{
+				"name": "rightLeg",
+				"parent": "body",
+				"pivot": [
+					-1.9,
+					12,
+					0
+				],
+				"cubes": [
+					{
+						"origin": [
+							-3.9,
+							0,
+							-2
+						],
+						"size": [
+							4,
+							12,
+							4
+						],
+						"uv": [
+							0,
+							23
+						],
+						"inflate": 0.242
+					}
+				]
+			},
+			{
+				"name": "leftLeg",
+				"parent": "body",
+				"pivot": [
+					1.9,
+					12,
+					0
+				],
+				"mirror": true,
+				"cubes": [
+					{
+						"origin": [
+							-0.1,
+							0,
+							-2
+						],
+						"size": [
+							4,
+							12,
+							4
+						],
+						"uv": [
+							0,
+							23
+						],
+						"inflate": 0.243
+					}
+				]
+			},
+			{
+				"name": "belt",
+				"parent": "body",
+				"pivot": [
+					0,
+					24,
+					0
+				],
+				"cubes": [
+					{
+						"origin": [
+							-4,
+							11,
+							-2
+						],
+						"size": [
+							8,
+							3,
+							4
+						],
+						"uv": [
+							40,
+							33
+						],
+						"inflate": 0.247
+					}
+				]
+			}
+		]
+	}
+}

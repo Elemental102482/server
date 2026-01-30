@@ -1,0 +1,37 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.redstone_core": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"exploding": "q.variant==1"
+						}
+					]
+				},
+				"exploding": {
+					"animations": [
+						"explode"
+					],
+					"transitions": [
+						{
+							"reload": "q.variant==0&&q.all_animations_finished"
+						}
+					]
+				},
+				"reload": {
+					"animations": [
+						"reload"
+					],
+					"transitions": [
+						{
+							"default": "q.variant==0&&q.all_animations_finished"
+						}
+					]
+				}
+			}
+		}
+	}
+}

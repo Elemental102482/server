@@ -1,0 +1,43 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:squall_golem",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/squall_golem/squall_golem_on"
+			},
+			"geometry": {
+				"default": "geometry.squall_golem"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"animations": {
+				"move": "animation.squall_golem.walk",
+				"attack.rotations": "animation.squall_golem.attack",
+				"attack_controller": "controller.animation.redstone_golem.attack",
+				"move_controller": "controller.animation.redstone_golem.move2",
+				"idle": "animation.squall_golem.idle",
+				"wind_sounds": "animation.squall_golem.wind_sounds"
+			},
+			"scripts": {
+				"animate": [
+					"attack_controller",
+					"move_controller",
+					"idle",
+					"wind_sounds"
+				]
+			},
+			"sound_effects": {
+				"attack": "mob.squall_golem.attack",
+				"wind": "mob.breeze.whirl"
+			},
+			"spawn_egg": {
+				"texture": "egg_squall_golem"
+			}
+		}
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"format_version": "1.21.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "cata:gneiss_door_lock"
+		},
+		"components": {
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 99999
+			},
+			"minecraft:loot": "loot_tables/empty.json",
+			"minecraft:destructible_by_explosion": false,
+			"component:gneiss_door_unlock": {}
+		}
+	}
+}

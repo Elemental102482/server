@@ -1,0 +1,42 @@
+{
+	"format_version": "1.21.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "cata:solar_ore",
+			"menu_category": {
+				"category": "nature",
+				"group": "minecraft:itemGroup.name.ore"
+			}
+		},
+		"components": {
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 7.5,
+				"item_specific_speeds": [
+					{
+						"destroy_speed": 0.25,
+						"item": "minecraft:netherite_pickaxe"
+					},
+					{
+						"destroy_speed": 0.5,
+						"item": "cata:sunflare_pickaxe"
+					}
+				]
+			},
+			"minecraft:loot": "loot_tables/blocks/solar_ore.json",
+			"minecraft:tick": {
+				"interval_range": [
+					120,
+					200
+				],
+				"looping": true
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 100
+			},
+			"minecraft:custom_components": [
+				"component:solar_ore_emitter",
+				"component:solar_ore_explosion"
+			]
+		}
+	}
+}

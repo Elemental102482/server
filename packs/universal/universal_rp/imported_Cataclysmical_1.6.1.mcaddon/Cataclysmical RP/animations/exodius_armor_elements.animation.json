@@ -1,0 +1,149 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.exodius_armor_elements.floret": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 2,
+			"bones": {
+				"lunar": {
+					"scale": 0
+				},
+				"solar": {
+					"scale": 0
+				},
+				"floret": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"2.0": [
+							0,
+							1080,
+							0
+						]
+					},
+					"scale": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.25": [
+							1,
+							1,
+							1
+						],
+						"1.75": [
+							1,
+							1,
+							1
+						],
+						"2.0": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			}
+		},
+		"animation.exodius_armor_elements.solar": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 2,
+			"bones": {
+				"lunar": {
+					"scale": 0
+				},
+				"solar": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"2.0": [
+							0,
+							1080,
+							0
+						]
+					},
+					"scale": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.25": [
+							1,
+							1,
+							1
+						],
+						"1.75": [
+							1,
+							1,
+							1
+						],
+						"2.0": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"floret": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.exodius_armor_elements.lunar": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 2,
+			"bones": {
+				"lunar": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"2.0": [
+							0,
+							1080,
+							0
+						]
+					},
+					"scale": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.25": [
+							1,
+							1,
+							1
+						],
+						"1.75": [
+							1,
+							1,
+							1
+						],
+						"2.0": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"solar": {
+					"scale": 0
+				},
+				"floret": {
+					"scale": 0
+				}
+			}
+		}
+	}
+}

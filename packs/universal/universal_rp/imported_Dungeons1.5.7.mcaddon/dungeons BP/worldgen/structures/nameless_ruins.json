@@ -1,0 +1,27 @@
+{
+  "format_version": "1.21.20",
+  "minecraft:jigsaw": {
+    "description": {
+      "identifier": "dungeons:nameless_ruins"
+    },
+    "biome_filters": [
+      {
+        "test": "has_biome_tag",
+        "operator": "==",
+        "value": "desert"
+      }
+    ],
+    "heightmap_projection": "world_surface",
+    "max_depth": 10,
+    "start_height": {
+      "type": "constant",
+      "value": {
+        "absolute": 1
+      }
+    },
+    "start_pool": "dungeons:nameless_top",
+    "step": "surface_structures",
+    "terrain_adaptation": "beard_thin",
+    "liquid_settings": "ignore_waterlogging"
+  }
+}

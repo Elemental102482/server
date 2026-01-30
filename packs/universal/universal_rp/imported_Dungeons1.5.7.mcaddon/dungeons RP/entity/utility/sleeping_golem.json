@@ -1,0 +1,38 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:redstone_golem_resting",
+			"materials": {
+				"default": "entity_emissive"
+			},
+			"textures": {
+				"default": "textures/entity/redstone_golem/redstone_golem_inactive",
+				"on": "textures/entity/redstone_golem/redstone_golem"
+			},
+			"geometry": {
+				"default": "geometry.redstone_golem"
+			},
+			"render_controllers": [
+				"controller.render.redstone_monstrosity"
+			],
+			"animations": {
+				"resting": "animation.redstone_golem.sleep",
+				"awaken": "animation.redstone_golem.wake",
+				"wake_controller": "controller.animation.redstone_monstrosity.rest"
+			},
+			"scripts": {
+				"animate": [
+					"wake_controller"
+				]
+			},
+			"sound_effects": {
+				"awaken": "mob.monstrosity.zap"
+			},
+			"spawn_egg": {
+				"base_color": "#97b0af",
+				"overlay_color": "#258a17"
+			}
+		}
+	}
+}

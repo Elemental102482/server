@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "spider_armour_glow",
+        "metalness_emissive_roughness": "spider_armour_glow_mer"
+    }
+}

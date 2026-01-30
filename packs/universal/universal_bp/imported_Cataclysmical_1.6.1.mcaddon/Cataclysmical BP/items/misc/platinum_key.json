@@ -1,0 +1,17 @@
+{
+	"format_version": "1.21.80",
+	"minecraft:item": {
+		"description": {
+			"identifier": "cata:platinum_key",
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:icon": "cata_platinum_key",
+			"minecraft:max_stack_size": {
+				"value": 64
+			}
+		}
+	}
+}

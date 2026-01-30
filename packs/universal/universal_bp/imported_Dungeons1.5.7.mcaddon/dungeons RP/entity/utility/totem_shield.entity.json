@@ -1,0 +1,21 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:totem_of_shielding",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/totem_of_shielding",
+				"glow": "textures/entity/totem_of_shielding"
+			},
+			"geometry": {
+				"default": "geometry.totem_shield"
+			},
+			"render_controllers": [
+				"controller.render.guardian_vex"
+			]
+		}
+	}
+}

@@ -1,0 +1,35 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "cata:phantom_moonlight",
+			"materials": {
+				"default": "drowned"
+			},
+			"textures": {
+				"default": "textures/entity/projectile/phantom_moonlight"
+			},
+			"geometry": {
+				"default": "geometry.phantom_moonlight"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"base_color": "#000000",
+				"overlay_color": "#FFFFFF"
+			},
+			"animations": {
+				"move": "animation.phantom_moonlight.move"
+			},
+			"scripts": {
+				"animate": [
+					"move"
+				]
+			},
+			"sound_effects": {
+				"large_swing": "mob.sun_tribunal_double_dash_attack"
+			}
+		}
+	}
+}

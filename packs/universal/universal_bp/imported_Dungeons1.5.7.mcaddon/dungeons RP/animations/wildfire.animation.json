@@ -1,0 +1,432 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.wildfire.spin_shields": {
+			"loop": true,
+			"bones": {
+				"shields": {
+					"rotation": {
+						"7": [
+							0,
+							1440,
+							0
+						],
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.75": [
+							0,
+							360,
+							0
+						],
+						"3.5": [
+							0,
+							720,
+							0
+						],
+						"5.25": [
+							0,
+							1080,
+							0
+						]
+					},
+					"position": {
+						"7": [
+							0,
+							0,
+							0
+						],
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.75": [
+							0,
+							1,
+							0
+						],
+						"3.5": [
+							0,
+							0,
+							0
+						],
+						"5.25": [
+							0,
+							1,
+							0
+						]
+					}
+				}
+			}
+		},
+		"animation.wildfire.idle": {
+			"loop": true,
+			"animation_length": 2.25,
+			"bones": {
+				"body": {
+					"position": {
+						"0.0": {
+							"post": [
+								0,
+								2,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"1.125": {
+							"post": [
+								0,
+								3,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"2.25": {
+							"post": [
+								0,
+								2,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			}
+		},
+		"animation.wildfire.smoke": {
+			"loop": true,
+			"animation_length": 0.5,
+			"particle_effects": {
+				"0.01": {
+					"effect": "smoke",
+					"locator": "particles"
+				}
+			}
+		},
+		"animation.wildfire.shockwave": {
+			"animation_length": 4.5,
+			"bones": {
+				"body": {
+					"position": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"2.0": [
+							0,
+							7.5,
+							0
+						],
+						"2.1667": [
+							0,
+							-4.5,
+							0
+						],
+						"2.625": [
+							0,
+							-4.5,
+							0
+						],
+						"4.0": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"head": {
+					"rotation": {
+						"0.0": [
+							6.67,
+							0,
+							0
+						],
+						"0.6667": [
+							0,
+							0,
+							0
+						],
+						"2.0": [
+							-20,
+							0,
+							0
+						],
+						"2.0833": [
+							-20,
+							0,
+							0
+						],
+						"2.1667": [
+							20,
+							0,
+							0
+						],
+						"3.0": [
+							20,
+							0,
+							0
+						],
+						"4.25": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"shields": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.5": [
+							0,
+							360,
+							0
+						],
+						"1.0": [
+							0,
+							720,
+							0
+						],
+						"1.5": [
+							0,
+							1080,
+							0
+						],
+						"1.75": [
+							0,
+							1440,
+							0
+						],
+						"2.0": [
+							0,
+							1800,
+							0
+						],
+						"2.25": [
+							0,
+							2160,
+							0
+						],
+						"2.2917": [
+							0,
+							0,
+							0
+						],
+						"2.625": {
+							"pre": [
+								0,
+								0,
+								0
+							],
+							"post": [
+								0,
+								0,
+								0
+							]
+						},
+						"4.0": [
+							0,
+							360,
+							0
+						]
+					}
+				},
+				"shield1": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							0,
+							0,
+							0
+						],
+						"2.0": [
+							17.5,
+							0,
+							0
+						],
+						"2.5": [
+							17.5,
+							0,
+							0
+						],
+						"4.0": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"shield2": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							0,
+							0,
+							0
+						],
+						"2.0": [
+							17.5,
+							0,
+							0
+						],
+						"2.5": [
+							17.5,
+							0,
+							0
+						],
+						"4.0": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"shield3": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							0,
+							0,
+							0
+						],
+						"2.0": [
+							17.5,
+							0,
+							0
+						],
+						"2.5": [
+							17.5,
+							0,
+							0
+						],
+						"4.0": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"shield4": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							0,
+							0,
+							0
+						],
+						"2.0": [
+							17.5,
+							0,
+							0
+						],
+						"2.5": [
+							17.5,
+							0,
+							0
+						],
+						"4.0": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			"particle_effects": {
+				"2.1667": {
+					"effect": "slam"
+				}
+			}
+		},
+		"animation.wildfire.3_shield": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"shield1": {
+					"rotation": [
+						0,
+						65,
+						0
+					]
+				},
+				"shield2": {
+					"rotation": [
+						0,
+						25,
+						0
+					]
+				},
+				"shield4": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.wildfire.2_shield": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"shield2": {
+					"rotation": [
+						0,
+						-90,
+						0
+					]
+				},
+				"shield4": {
+					"scale": 0
+				},
+				"shield3": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.wildfire.1_shield": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"shield2": {
+					"rotation": [
+						0,
+						0,
+						0
+					],
+					"scale": 0
+				},
+				"shield4": {
+					"scale": 0
+				},
+				"shield3": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.wildfire.no_shield": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"shields": {
+					"scale": 0
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "evil_skulls3",
+        "metalness_emissive_roughness": "evil_skulls3_mer"
+    }
+}

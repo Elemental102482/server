@@ -1,0 +1,123 @@
+{
+	"format_version": "1.19.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.great_hammer",
+				"texture_width": 48,
+				"texture_height": 48,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root_item",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"binding": "q.item_slot_to_bone_name(c.item_slot)",
+					"cubes": [
+						{
+							"origin": [
+								-1,
+								0,
+								-1
+							],
+							"size": [
+								2,
+								12,
+								2
+							],
+							"uv": [
+								39,
+								1
+							]
+						},
+						{
+							"origin": [
+								-3.5,
+								12,
+								-6
+							],
+							"size": [
+								7,
+								7,
+								12
+							],
+							"uv": [
+								0,
+								0
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.glowing_hammer",
+				"texture_width": 48,
+				"texture_height": 48,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "glow_item",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"binding": "q.item_slot_to_bone_name(c.item_slot)",
+					"cubes": [
+						{
+							"origin": [
+								-1,
+								0,
+								-1
+							],
+							"size": [
+								2,
+								12,
+								2
+							],
+							"uv": [
+								39,
+								1
+							]
+						},
+						{
+							"origin": [
+								-3.5,
+								12,
+								-6
+							],
+							"size": [
+								7,
+								7,
+								12
+							],
+							"uv": [
+								0,
+								0
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

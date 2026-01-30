@@ -1,0 +1,142 @@
+{
+	"format_version": "1.21.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "cata:flare_stone_brick_slab",
+			"menu_category": {
+				"category": "construction",
+				"group": "minecraft:itemGroup.name.slab"
+			},
+			"traits": {
+				"minecraft:placement_position": {
+					"enabled_states": [
+						"minecraft:vertical_half"
+					]
+				}
+			},
+			"states": {
+				"cata:double": [
+					false,
+					true
+				],
+				"cata:waterlogged": [
+					false,
+					true
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('minecraft:vertical_half') == 'bottom' && !q.block_state('cata:double')",
+				"components": {
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							8,
+							16
+						]
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							8,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:vertical_half') == 'top' && !q.block_state('cata:double')",
+				"components": {
+					"minecraft:collision_box": {
+						"origin": [
+							-8,
+							8,
+							-8
+						],
+						"size": [
+							16,
+							8,
+							16
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							8,
+							-8
+						],
+						"size": [
+							16,
+							8,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('cata:double')",
+				"components": {
+					"minecraft:geometry": "minecraft:geometry.full_block",
+					"minecraft:loot": "loot_tables/blocks/flare_stone_brick_slab_double.json",
+					"component:on_player_destroy": {}
+				}
+			}
+		],
+		"components": {
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 7.5,
+				"item_specific_speeds": [
+					{
+						"destroy_speed": 0.4,
+						"item": "minecraft:iron_pickaxe"
+					},
+					{
+						"destroy_speed": 0.3,
+						"item": "minecraft:diamond_pickaxe"
+					},
+					{
+						"destroy_speed": 0.25,
+						"item": "minecraft:netherite_pickaxe"
+					},
+					{
+						"destroy_speed": 0.2,
+						"item": "minecraft:golden_pickaxe"
+					},
+					{
+						"destroy_speed": 0.5,
+						"item": "cata:sunflare_pickaxe"
+					}
+				]
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 80
+			},
+			"minecraft:geometry": {
+				"identifier": "geometry.slab",
+				"bone_visibility": {
+					"bottom_slab": "q.block_state('minecraft:vertical_half') == 'bottom'",
+					"top_slab": "q.block_state('minecraft:vertical_half') == 'top'"
+				}
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "cata_flare_stone_brick"
+				}
+			},
+			"minecraft:map_color": "#707070",
+			"minecraft:loot": "loot_tables/blocks/flare_stone_brick_slab.json",
+			"component:on_interact": {}
+		}
+	}
+}

@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "spawn_egg_drowned_necromancer",
+        "metalness_emissive_roughness": "spawn_egg_drowned_necromancer_mer"
+    }
+}

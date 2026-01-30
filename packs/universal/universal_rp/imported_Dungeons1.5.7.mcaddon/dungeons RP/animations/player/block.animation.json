@@ -1,0 +1,30 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.player.block": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.233,
+			"bones": {
+				"rightArm": {
+					"rotation": [
+						-50,
+						0,
+						0
+					]
+				},
+				"rightItem": {
+					"rotation": [
+						45,
+						-10,
+						-90
+					],
+					"position": [
+						0,
+						-2.5,
+						0
+					]
+				}
+			}
+		}
+	}
+}

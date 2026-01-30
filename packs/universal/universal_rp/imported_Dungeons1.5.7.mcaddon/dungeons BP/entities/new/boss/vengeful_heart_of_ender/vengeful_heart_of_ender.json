@@ -1,0 +1,670 @@
+{
+	"format_version": "1.21.90",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "dungeons:vengeful_heart_of_ender",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"properties": {
+				"dungeons:ammo": {
+					"type": "int",
+					"client_sync": true,
+					"range": [
+						0,
+						4
+					],
+					"default": 4
+				},
+				"dungeons:portal_uses": {
+					"type": "int",
+					"client_sync": true,
+					"range": [
+						0,
+						2
+					],
+					"default": 2
+				},
+				"dungeons:big_bang": {
+					"type": "int",
+					"client_sync": true,
+					"range": [
+						0,
+						3
+					],
+					"default": 3
+				}
+			}
+		},
+		"component_groups": {
+			"dungeons:non_portal": {
+				"minecraft:movement": {
+					"value": 0.27
+				},
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"on_damage": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "actor_health",
+											"subject": "self",
+											"operator": "<=",
+											"value": 1000
+										},
+										{
+											"test": "int_property",
+											"subject": "self",
+											"domain": "dungeons:portal_uses",
+											"operator": "==",
+											"value": 2
+										}
+									]
+								},
+								"event": "dungeons:enter_portal"
+							},
+							"deals_damage": "yes"
+						},
+						{
+							"on_damage": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "actor_health",
+											"subject": "self",
+											"operator": "<=",
+											"value": 500
+										},
+										{
+											"test": "int_property",
+											"subject": "self",
+											"domain": "dungeons:portal_uses",
+											"operator": "==",
+											"value": 1
+										}
+									]
+								},
+								"event": "dungeons:enter_portal"
+							},
+							"deals_damage": "yes"
+						},
+						{
+							"cause": "fall",
+							"deals_damage": "no"
+						},
+						{
+							"cause": "entity_explosion",
+							"deals_damage": "no"
+						}
+					]
+				}
+			},
+			"dungeons:immune": {
+				"minecraft:movement": {
+					"value": 0
+				},
+				"minecraft:reflect_projectiles": {
+					"reflected_projectiles": [
+						"experience_bottle",
+						"thrown_trident",
+						"shulker_bullet",
+						"dragon_fireball",
+						"arrow",
+						"snowball",
+						"thrownegg",
+						"fireball",
+						"splash_potion",
+						"ender_pearl",
+						"thrownenderpearl",
+						"wither_skull",
+						"small_fireball",
+						"lingering_potion",
+						"llama_spit",
+						"evocation_fang",
+						"ice_bomb",
+						"thrownicebomb"
+					],
+					"azimuth_angle": "180.0 + Math.random(-20.0, 20.0)",
+					"reflection_scale": "0.25"
+				},
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"cause": "all",
+							"deals_damage": "no"
+						}
+					]
+				}
+			},
+			"dungeons:enter_portal": {
+				"minecraft:is_saddled": {},
+				"minecraft:timer": {
+					"looping": false,
+					"time": 1,
+					"time_down_event": {
+						"event": "dungeons:in_portal"
+					}
+				}
+			},
+			"dungeons:in_portal": {
+				"minecraft:is_saddled": {},
+				"minecraft:behavior.timer_flag_1": {
+					"priority": 0,
+					"cooldown_range": 0,
+					"duration_range": 8,
+					"on_end": {
+						"event": "dungeons:big_bang_attack",
+						"target": "self"
+					}
+				},
+				"minecraft:timer": {
+					"looping": false,
+					"time": 26,
+					"time_down_event": {
+						"event": "dungeons:exit_portal"
+					}
+				}
+			},
+			"dungeons:exit_portal": {
+				"minecraft:behavior.timer_flag_1": {},
+				"minecraft:timer": {
+					"looping": false,
+					"time": 2.2083,
+					"time_down_event": {
+						"event": "dungeons:out_portal"
+					}
+				}
+			},
+			"dungeons:melee_attack": {
+				"minecraft:behavior.delayed_attack": {
+					"priority": 3,
+					"track_target": true,
+					"require_complete_path": false,
+					"random_stop_interval": 0,
+					"reach_multiplier": 1.75,
+					"cooldown_time": 2,
+					"speed_multiplier": 1.17,
+					"attack_duration": 0.75,
+					"hit_delay_pct": 0.33
+				},
+				"minecraft:timer": {
+					"looping": false,
+					"time": 15,
+					"time_down_event": {
+						"event": "dungeons:endermite_attack_start"
+					}
+				}
+			},
+			"dungeons:projectile_attack": {
+				"minecraft:behavior.ranged_attack": {
+					"priority": 3,
+					"attack_interval": 3,
+					"charge_charged_trigger": 0.2,
+					"charge_shoot_trigger": 1.3,
+					"burst_shots": 1,
+					"burst_interval": 0.2,
+					"attack_radius": 20,
+					"attack_radius_min": 0,
+					"speed_multiplier": 1,
+					"target_in_sight_time": 0.2
+				},
+				"minecraft:shooter": {
+					"def": "dungeons:vhoe_projectile"
+				},
+				"minecraft:environment_sensor": {
+					"triggers": [
+						{
+							"filters": {
+								"all_of": [
+									{
+										"test": "int_property",
+										"subject": "self",
+										"domain": "dungeons:ammo",
+										"operator": "==",
+										"value": 0
+									}
+								]
+							},
+							"event": "dungeons:melee_attack_start"
+						}
+					]
+				}
+			},
+			"dungeons:endermite_attack": {
+				"minecraft:behavior.summon_entity": {
+					"priority": 2,
+					"summon_choices": [
+						{
+							"weight": 1,
+							"cooldown_time": 10,
+							"cast_duration": 3,
+							"start_sound_event": "cast.spell",
+							"sequence": [
+								{
+									"shape": "circle",
+									"target": "self",
+									"base_delay": 0.9,
+									"num_entities_spawned": 5,
+									"delay_per_summon": 0.1,
+									"entity_type": "dungeons:vhoe_bomb",
+									"summon_cap": 30,
+									"summon_cap_radius": 64,
+									"size": 8
+								},
+								{
+									"shape": "circle",
+									"target": "self",
+									"base_delay": 0.25,
+									"num_entities_spawned": 5,
+									"delay_per_summon": 0.11,
+									"entity_type": "dungeons:vhoe_bomb",
+									"summon_cap": 30,
+									"summon_cap_radius": 64,
+									"size": 10
+								},
+								{
+									"shape": "circle",
+									"target": "self",
+									"base_delay": 0.25,
+									"num_entities_spawned": 4,
+									"delay_per_summon": 0.11,
+									"entity_type": "dungeons:vhoe_bomb",
+									"summon_cap": 30,
+									"summon_cap_radius": 64,
+									"size": 6
+								},
+								{
+									"shape": "circle",
+									"target": "self",
+									"base_delay": 1.6,
+									"num_entities_spawned": 1,
+									"delay_per_summon": 0.11,
+									"entity_type": "dungeons:vhoe_endermite_finish",
+									"summon_cap": 30,
+									"summon_cap_radius": 64,
+									"size": 0.1
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		"components": {
+			"minecraft:mob_effect_immunity": {
+				"mob_effects": [
+					"levitation"
+				]
+			},
+			"minecraft:is_hidden_when_invisible": {},
+			"minecraft:attack": {
+				"damage": 20
+			},
+			"minecraft:breathable": {
+				"suffocate_time": 0,
+				"total_supply": 150
+			},
+			"minecraft:collision_box": {
+				"height": 8,
+				"width": 4.5
+			},
+			"minecraft:health": {
+				"max": 1500,
+				"value": 1500
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "fall",
+						"deals_damage": "no"
+					},
+					{
+						"cause": "entity_explosion",
+						"deals_damage": "no"
+					}
+				]
+			},
+			"minecraft:jump.static": {},
+			"minecraft:break_blocks": {
+				"breakable_blocks": [
+					"bamboo",
+					"bamboo_sapling",
+					"beetroot",
+					"brown_mushroom",
+					"carrots",
+					"carved_pumpkin",
+					"chorus_flower",
+					"chorus_plant",
+					"deadbush",
+					"double_plant",
+					"leaves",
+					"leaves2",
+					"lit_pumpkin",
+					"melon_block",
+					"melon_stem",
+					"potatoes",
+					"pumpkin",
+					"pumpkin_stem",
+					"red_flower",
+					"red_mushroom",
+					"crimson_fungus",
+					"warped_fungus",
+					"reeds",
+					"sapling",
+					"snow_layer",
+					"sweet_berry_bush",
+					"tallgrass",
+					"turtle_egg",
+					"vine",
+					"waterlily",
+					"wheat",
+					"yellow_flower",
+					"azalea",
+					"flowering_azalea",
+					"azalea_leaves",
+					"azalea_leaves_flowered",
+					"cave_vines",
+					"cave_vines_body_with_berries",
+					"cave_vines_head_with_berries",
+					"small_dripleaf_block",
+					"big_dripleaf",
+					"spore_blossom",
+					"hanging_roots",
+					"mangrove_leaves"
+				]
+			},
+			"minecraft:knockback_resistance": {
+				"value": 1
+			},
+			"minecraft:behavior.look_at_target": {
+				"priority": 5,
+				"angle_of_view_vertical": 75,
+				"look_distance": 28
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 6,
+				"angle_of_view_vertical": 75,
+				"look_distance": 28
+			},
+			"minecraft:movement": {
+				"value": 0.27
+			},
+			"minecraft:lava_movement": {
+				"value": 0.26
+			},
+			"minecraft:fire_immune": {},
+			"minecraft:movement.basic": {},
+			"minecraft:nameable": {},
+			"minecraft:navigation.walk": {
+				"can_walk_in_lava": true,
+				"can_path_over_lava": true,
+				"avoid_damage_blocks": false,
+				"can_path_over_water": false,
+				"can_sink": true
+			},
+			"minecraft:physics": {},
+			"minecraft:boss": {
+				"should_darken_sky": true,
+				"hud_range": 64,
+				"name": " §dVengeful Heart of Ender§r "
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 7,
+				"speed_multiplier": 1
+			},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1,
+				"entity_types": [
+					{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"operator": "!=",
+							"value": "monster"
+						}
+					}
+				]
+			},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 2,
+				"must_see": false,
+				"reselect_targets": true,
+				"within_radius": 32,
+				"entity_types": [
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "snowgolem"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "irongolem"
+								}
+							]
+						},
+						"max_dist": 48
+					}
+				]
+			},
+			"minecraft:conditional_bandwidth_optimization": {},
+			"minecraft:follow_range": {
+				"value": 64
+			},
+			"minecraft:home": {
+				"restriction_radius": 64,
+				"restriction_type": "random_movement"
+			},
+			"minecraft:type_family": {
+				"family": [
+					"dungeons_musicbox",
+					"vengeful_heart_of_ender",
+					"monster",
+					"mob",
+					"boss",
+					"gravity_immune"
+				]
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"dungeons:endermite_attack"
+					]
+				},
+				"queue_command": {
+					"command": [
+						"execute if entity @e[type=dungeons:void_portal,r=64] run event entity @s dungeons:spawn_from_cutscene"
+					]
+				}
+			},
+			"minecraft:entity_transformed": {
+				"add": {
+					"component_groups": [
+						"dungeons:endermite_attack"
+					]
+				},
+				"queue_command": {
+					"command": [
+						"execute if entity @e[type=dungeons:void_portal,r=64] run event entity @s dungeons:spawn_from_cutscene"
+					]
+				}
+			},
+			"dungeons:spawn_from_cutscene": {
+				"add": {
+					"component_groups": [
+						"dungeons:non_portal"
+					]
+				}
+			},
+			"dungeons:enter_portal": {
+				"set_property": {
+					"dungeons:portal_uses": "query.property('dungeons:portal_uses') - 1"
+				},
+				"add": {
+					"component_groups": [
+						"dungeons:enter_portal",
+						"dungeons:immune"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"dungeons:non_portal",
+						"dungeons:endermite_attack",
+						"dungeons:projectile_attack",
+						"dungeons:melee_attack"
+					]
+				}
+			},
+			"dungeons:in_portal": {
+				"queue_command": {
+					"command": [
+						"tp @e[type=dungeons:void_portal,c=1]",
+						"tag @s add dungeons:vhoe_pull",
+						"summon dungeons:vhoe_flame ~3~~3",
+						"summon dungeons:vhoe_flame ~-3~~3",
+						"summon dungeons:vhoe_flame ~~~-3"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"dungeons:in_portal",
+						"dungeons:immune"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"dungeons:non_portal",
+						"dungeons:enter_portal",
+						"dungeons:endermite_attack",
+						"dungeons:projectile_attack",
+						"dungeons:melee_attack"
+					]
+				}
+			},
+			"dungeons:exit_portal": {
+				"queue_command": {
+					"command": [
+						"tp @e[type=dungeons:void_portal,c=1]",
+						"tag @s remove dungeons:vhoe_pull"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"dungeons:exit_portal",
+						"dungeons:immune"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"dungeons:non_portal",
+						"dungeons:in_portal",
+						"dungeons:endermite_attack",
+						"dungeons:projectile_attack",
+						"dungeons:melee_attack"
+					]
+				}
+			},
+			"dungeons:out_portal": {
+				"add": {
+					"component_groups": [
+						"dungeons:non_portal",
+						"dungeons:endermite_attack"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"dungeons:exit_portal",
+						"dungeons:immune",
+						"dungeons:endermite_attack",
+						"dungeons:projectile_attack",
+						"dungeons:melee_attack"
+					]
+				},
+				"set_property": {
+					"dungeons:big_bang": 3
+				}
+			},
+			"dungeons:endermite_attack_start": {
+				"add": {
+					"component_groups": [
+						"dungeons:endermite_attack"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"dungeons:projectile_attack",
+						"dungeons:melee_attack"
+					]
+				}
+			},
+			"dungeons:projectile_attack_start": {
+				"set_property": {
+					"dungeons:ammo": 4
+				},
+				"add": {
+					"component_groups": [
+						"dungeons:projectile_attack"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"dungeons:endermite_attack",
+						"dungeons:melee_attack"
+					]
+				}
+			},
+			"dungeons:melee_attack_start": {
+				"add": {
+					"component_groups": [
+						"dungeons:melee_attack"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"dungeons:projectile_attack",
+						"dungeons:endermite_attack"
+					]
+				}
+			},
+			"dungeons:reduce_ammo": {
+				"set_property": {
+					"dungeons:ammo": "query.property('dungeons:ammo') - 1"
+				}
+			},
+			"dungeons:big_bang_attack": {
+				"filters": {
+					"test": "int_property",
+					"subject": "self",
+					"domain": "dungeons:big_bang",
+					"operator": ">",
+					"value": 0
+				},
+				"queue_command": {
+					"command": [
+						"playanimation @s animation.vengeful_heart_of_ender.big_bang",
+						"playsound mob.wither.ambient @a ~~~ 2.0 1.4",
+						"scriptevent dungeons:big_bang_attack 18"
+					]
+				},
+				"set_property": {
+					"dungeons:big_bang": "query.property('dungeons:big_bang') - 1"
+				}
+			}
+		}
+	}
+}

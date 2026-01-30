@@ -1,0 +1,37 @@
+{
+	"format_version": "1.20.10",
+	"render_controllers": {
+		"controller.render.custom_crossbow": {
+			"arrays": {
+				"textures": {
+					"array.bow_texture_frames": [
+						"texture.bow_standby",
+						"texture.bow_pulling_0",
+						"texture.bow_pulling_1",
+						"texture.bow_pulling_2",
+						"texture.bow_ready"
+					]
+				},
+				"geometries": {
+					"array.bow_geo_frames": [
+						"geometry.crossbow_standby",
+						"geometry.crossbow_pulling_0",
+						"geometry.crossbow_pulling_1",
+						"geometry.crossbow_pulling_2",
+						"geometry.crossbow_ready"
+					]
+				}
+			},
+			"geometry": "array.bow_geo_frames[q.item_is_charged ? 4 : v.charge_amount]",
+			"materials": [
+				{
+					"*": "v.is_enchanted?material.enchanted:material.default"
+				}
+			],
+			"textures": [
+				"array.bow_texture_frames[q.item_is_charged ? 4 : v.charge_amount]",
+				"texture.enchanted"
+			]
+		}
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.solar_monolith.barrier": {
+			"loop": true,
+			"animation_length": 4.75,
+			"particle_effects": {
+				"0.0": {
+					"effect": "solar_monolith_barrier"
+				}
+			}
+		}
+	}
+}

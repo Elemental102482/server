@@ -1,0 +1,30 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:block": {
+		"description": {
+			"identifier": "cata:solar_block",
+			"menu_category": {
+				"category": "construction"
+			}
+		},
+		"components": {
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 7.5,
+				"item_specific_speeds": [
+					{
+						"destroy_speed": 0.25,
+						"item": "minecraft:netherite_pickaxe"
+					},
+					{
+						"destroy_speed": 0.5,
+						"item": "cata:sunflare_pickaxe"
+					}
+				]
+			},
+			"minecraft:loot": "loot_tables/blocks/solar_block.json",
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 70
+			}
+		}
+	}
+}

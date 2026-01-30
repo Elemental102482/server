@@ -1,0 +1,37 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:baby_ghast",
+			"min_engine_version": "1.10.0",
+			"materials": {
+				"default": "entity_alphablend",
+				"insides": "entity"
+			},
+			"textures": {
+				"default": "textures/entity/baby_ghast/baby_ghast",
+				"amelia": "textures/entity/baby_ghast/amelia"
+			},
+			"geometry": {
+				"default": "geometry.baby_ghast"
+			},
+			"scripts": {
+				"animate": [
+					"root"
+				]
+			},
+			"animations": {
+				"root": "controller.animation.baby_ghast.root",
+				"idle": "animation.baby_ghast.idle",
+				"idle_moving": "animation.baby_ghast.idle_when_moving",
+				"walk": "animation.baby_ghast.walk"
+			},
+			"render_controllers": [
+				"controller.render.baby_ghast"
+			],
+			"spawn_egg": {
+				"texture": "egg_baby_ghast"
+			}
+		}
+	}
+}

@@ -1,0 +1,76 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.exodius_chestplate.move": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"bb_main": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							0,
+							360,
+							0
+						]
+					},
+					"scale": 0.6
+				},
+				"bb_main2": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							0,
+							360,
+							0
+						]
+					},
+					"scale": 0.6
+				},
+				"bb_main3": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							0,
+							360,
+							0
+						]
+					},
+					"scale": 0.6
+				}
+			}
+		},
+		"animation.exodius_chestplate.move2": {
+			"loop": true,
+			"animation_length": 2,
+			"bones": {
+				"elements": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"2.0": [
+							0,
+							-360,
+							0
+						]
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,69 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.daggers",
+				"texture_width": 13,
+				"texture_height": 13,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root_item",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"binding": "q.item_slot_to_bone_name(c.item_slot)",
+					"texture_meshes": [
+						{
+							"texture": "default",
+							"position": [
+								-0.5,
+								-4,
+								-7
+							],
+							"rotation": [
+								0,
+								-45,
+								-90
+							]
+						}
+					]
+				},
+				{
+					"name": "root_item2",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"binding": "'leftitem'",
+					"texture_meshes": [
+						{
+							"texture": "default",
+							"position": [
+								-0.5,
+								-4,
+								-7
+							],
+							"rotation": [
+								0,
+								-45,
+								-90
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

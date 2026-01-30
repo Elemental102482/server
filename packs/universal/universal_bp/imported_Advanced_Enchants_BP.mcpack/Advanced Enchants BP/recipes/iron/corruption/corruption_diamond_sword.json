@@ -1,0 +1,24 @@
+{
+	"format_version": 1.12,
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "e:corruption_iron_sword"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "minecraft:iron_sword"
+			},
+			{
+				"item": "e:corruption_book_1"
+			}
+		],
+		"result": [
+			{
+				"item": "e:iron_sword_corr"
+			}
+		]
+	}
+}

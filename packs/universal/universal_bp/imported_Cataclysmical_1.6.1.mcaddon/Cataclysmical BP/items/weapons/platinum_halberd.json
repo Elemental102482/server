@@ -1,0 +1,50 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:item": {
+		"description": {
+			"identifier": "cata:platinum_halberd",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:can_destroy_in_creative": false,
+			"minecraft:durability": {
+				"max_durability": 4300
+			},
+			"minecraft:damage": 8,
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"cata:platinum_alloy"
+						],
+						"repair_amount": "query.max_durability*0.25"
+					},
+					{
+						"items": [
+							"cata:platinum_halberd"
+						],
+						"repair_amount": "context.other->query.remaining_durability+0.12*context.other->query.max_durability"
+					}
+				]
+			},
+			"minecraft:block_placer": {
+				"block": "cata:platinum_halberd",
+				"use_on": [
+					"cata:platinum_halberd"
+				],
+				"replace_block_item": true
+			},
+			"minecraft:enchantable": {
+				"value": 2,
+				"slot": "elytra"
+			},
+			"minecraft:rarity": {
+				"value": "uncommon"
+			}
+		}
+	}
+}

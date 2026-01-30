@@ -1,0 +1,47 @@
+{
+	"format_version": "1.10",
+	"render_controllers": {
+		"controller.render.creeper_charged": {
+			"geometry": "geometry.default",
+			"part_visibility": [
+				{
+					"*": true
+				}
+			],
+			"materials": [
+				{
+					"*": "material.enchanted"
+				}
+			],
+			"arrays": {
+				"textures": {
+					"array.skins": [
+						"texture.empty",
+						"texture.glint"
+					]
+				}
+			},
+			"textures": [
+				"array.skins[query.is_powered]"
+			],
+			"color": {
+				"r": 0.5,
+				"g": 0,
+				"b": 1,
+				"a": 1
+			},
+			"uv_anim": {
+				"offset": [
+					"(math.floor(query.life_time*20)+query.frame_alpha)*-0.02",
+					"(math.floor(query.life_time*20)+query.frame_alpha)*0.03"
+				],
+				"scale": [
+					1,
+					1
+				]
+			},
+			"light_color_multiplier": 1.5,
+			"ignore_lighting": false
+		}
+	}
+}

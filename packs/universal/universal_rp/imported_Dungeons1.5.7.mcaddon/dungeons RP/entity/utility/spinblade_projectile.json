@@ -1,0 +1,38 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:spinblade_projectile",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/spinblade_projectile"
+			},
+			"geometry": {
+				"default": "geometry.spinblade_projectile"
+			},
+			"animations": {
+				"spin": "animation.spinblade_projectile.fly",
+				"particles": "animation.spinblade_projectile.particles",
+				"wind_sounds": "animation.spinblade_projectile.wind_sounds"
+			},
+			"particle_effects": {
+				"spinblade": "dungeons:spinblade_particle"
+			},
+			"sound_effects": {
+				"wind": "artefact.spinblade.loop"
+			},
+			"scripts": {
+				"animate": [
+					"spin",
+					"particles",
+					"wind_sounds"
+				]
+			},
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

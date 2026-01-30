@@ -1,0 +1,38 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:ancient_guardian_resting",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/ancient_guardian/ancient_guardian"
+			},
+			"geometry": {
+				"default": "geometry.ancient_guardian"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"animations": {
+				"scale": "animation.ancient_guardian.scale",
+				"resting": "animation.ancient_guardian.sleep",
+				"awaken": "animation.ancient_guardian.awaken",
+				"wake_controller": "controller.animation.redstone_monstrosity.rest"
+			},
+			"scripts": {
+				"animate": [
+					"wake_controller",
+					"scale"
+				]
+			},
+			"sound_effects": {
+				"awaken": "mob.ancient_guardian.awaken"
+			},
+			"spawn_egg": {
+				"texture": "egg_ancient_guardian"
+			}
+		}
+	}
+}

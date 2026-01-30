@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "big_bang",
+        "metalness_emissive_roughness": "big_bang_mer"
+    }
+}

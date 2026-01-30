@@ -1,0 +1,42 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "forge_core"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"SSS",
+			"DRD",
+			"DND"
+		],
+		"unlock": [
+			{
+				"item": "dungeons:redstone_key"
+			},
+			{
+				"item": "dungeons:redstone_core"
+			}
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:stone_bricks"
+			},
+			"D": {
+				"item": "minecraft:deepslate_bricks"
+			},
+			"R": {
+				"item": "minecraft:redstone_block"
+			},
+			"N": {
+				"item": "minecraft:netherite_scrap"
+			}
+		},
+		"result": {
+			"item": "dungeons:redstone_core",
+			"count": 1
+		}
+	}
+}

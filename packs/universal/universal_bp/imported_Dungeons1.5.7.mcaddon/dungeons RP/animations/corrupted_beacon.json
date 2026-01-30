@@ -1,0 +1,19 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.corrupted_beacon.particles": {
+			"loop": true,
+			"animation_length": 0.02,
+			"particle_effects": {
+				"0.01": {
+					"effect": "energy",
+					"locator": "particles"
+				},
+				"0.012": {
+					"effect": "energy2",
+					"locator": "particles"
+				}
+			}
+		}
+	}
+}

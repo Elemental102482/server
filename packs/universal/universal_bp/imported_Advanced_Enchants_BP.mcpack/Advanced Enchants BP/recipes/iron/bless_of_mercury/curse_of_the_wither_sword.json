@@ -1,0 +1,24 @@
+{
+	"format_version": 1.12,
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "e:curse_of_the_wither_iron_pickaxe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "minecraft:iron_pickaxe"
+			},
+			{
+				"item": "e:curse_of_the_wither_book_1"
+			}
+		],
+		"result": [
+			{
+				"item": "e:iron_pickaxe_cow"
+			}
+		]
+	}
+}

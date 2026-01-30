@@ -1,0 +1,27 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:item": {
+		"description": {
+			"identifier": "cata:sun_engine",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:icon": "cata_sun_engine",
+			"minecraft:max_stack_size": 1,
+			"minecraft:cooldown": {
+				"category": "sun_engine",
+				"duration": 1
+			},
+			"minecraft:rarity": {
+				"value": "rare"
+			},
+			"minecraft:tags": {
+				"tags": [
+					"novelty:is_charm"
+				]
+			}
+		}
+	}
+}

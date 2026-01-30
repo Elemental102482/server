@@ -1,0 +1,66 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.eternal_seal.attack_controller": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"slam_attack": "query.is_delayed_attacking==1&&query.skin_id==2"
+						},
+						{
+							"triple_slam_attack": "query.is_delayed_attacking==1&&query.skin_id==3"
+						},
+						{
+							"summon": "query.is_casting&&query.skin_id==4"
+						},
+						{
+							"death": "query.health<=1"
+						}
+					],
+					"blend_transition": 0.4
+				},
+				"slam_attack": {
+					"animations": [
+						"slam_attack"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_delayed_attacking"
+						}
+					],
+					"blend_transition": 0.4
+				},
+				"triple_slam_attack": {
+					"animations": [
+						"triple_slam_attack"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_delayed_attacking"
+						}
+					],
+					"blend_transition": 0.4
+				},
+				"summon": {
+					"transitions": [
+						{
+							"default": "!query.is_casting"
+						}
+					]
+				},
+				"death": {
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+					"animations": [
+						"death"
+					],
+					"blend_transition": 0.4
+				}
+			}
+		}
+	}
+}

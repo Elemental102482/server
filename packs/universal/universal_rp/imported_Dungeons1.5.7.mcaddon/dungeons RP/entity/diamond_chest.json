@@ -1,0 +1,43 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:diamond_chest",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/diamond_chest"
+			},
+			"geometry": {
+				"default": "geometry.diamond_chest"
+			},
+			"render_controllers": [
+				"controller.render.dummy"
+			],
+			"animations": {
+				"opening": "animation.diamond_chest.open",
+				"open_lid": "animation.diamond_chest.open_lid",
+				"opened": "animation.diamond_chest.particles",
+				"opened_water": "animation.diamond_chest.water_particles",
+				"control": "controller.animation.diamond_chest.open"
+			},
+			"particle_effects": {
+				"open": "dungeons:open_chest",
+				"magic": "dungeons:chest_opened",
+				"bubble": "dungeons:chest_bubble"
+			},
+			"sound_effects": {
+				"open": "diamond_chest.open"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+				],
+				"animate": [
+					"control"
+				]
+			}
+		}
+	}
+}

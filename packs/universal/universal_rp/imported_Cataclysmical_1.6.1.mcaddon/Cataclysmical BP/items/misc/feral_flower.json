@@ -1,0 +1,21 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:item": {
+		"description": {
+			"identifier": "cata:feral_flower",
+			"menu_category": {
+				"category": "nature"
+			}
+		},
+		"components": {
+			"minecraft:icon": "cata_feral_flower",
+			"minecraft:block_placer": {
+				"block": "cata:feral_flower",
+				"replace_block_item": true
+			},
+			"minecraft:max_stack_size": {
+				"value": 64
+			}
+		}
+	}
+}

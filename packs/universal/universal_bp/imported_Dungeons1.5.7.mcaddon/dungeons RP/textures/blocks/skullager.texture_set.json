@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "skullager",
+        "metalness_emissive_roughness": "skullager_mer"
+    }
+}

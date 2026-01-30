@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "system:amethyst_great_sword"
+    },
+
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " CC",
+      "CBC",
+      "SC"
+    ],
+    "key": {
+      "S": {
+        "item": "minecraft:stick"
+      },
+      "B": {
+        "item": "minecraft:amethyst_block"
+      },
+      "C": {
+        "item": "minecraft:amethyst_shard"
+      }
+    },
+    "result": {
+      "item": "system:amethyst_great_sword"
+    }
+  }
+}

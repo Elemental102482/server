@@ -1,0 +1,52 @@
+{
+  "format_version": 2,
+  "metadata": {
+    "authors": [
+      "Laith"
+    ],
+    "generated_with": {
+      "bridge": [
+        "2.6.1"
+      ],
+      "dash": [
+        "0.10.10"
+      ]
+    }
+  },
+  "header": {
+    "name": "Advanced Enchants",
+    "description": "Are you bored of the old and lame enchantments? Well, don't worry! This add-on is what will cure your boredom a lot!",
+    "min_engine_version": [
+      1,
+      18,
+      0
+    ],
+    "uuid": "c029d62f-1c53-46f7-b8a5-26af4de6c032",
+    "version": [
+      1,
+      0,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "f7b269b6-fbbe-4037-81ce-456134bbfe88",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "9f98a67c-77ae-4ddb-ae26-cfc988174d59",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "cata:solar_tesla",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			"animations": {
+				"attack": "animation.solar_tesla.normal_attack",
+				"summon": "animation.solar_tesla.summon",
+				"attack_controller": "controller.animation.solarium.attack_controller"
+			},
+			"scripts": {
+				"animate": [
+					"attack_controller"
+				]
+			}
+		},
+		"component_groups": {
+			"attack": {
+				"minecraft:skin_id": {
+					"value": 0
+				},
+				"minecraft:behavior.delayed_attack": {
+					"priority": 2,
+					"speed_multiplier": 1,
+					"attack_once": false,
+					"require_complete_path": true,
+					"attack_duration": 2.5,
+					"reach_multiplier": 4,
+					"track_target": false,
+					"hit_delay_pct": 0.43,
+					"cooldown_time": 2
+				},
+				"minecraft:attack": {
+					"damage": 16
+				}
+			},
+			"summon": {
+				"minecraft:skin_id": {
+					"value": 1
+				},
+				"minecraft:behavior.summon_entity": {
+					"priority": 1,
+					"summon_choices": [
+						{
+							"do_casting": true,
+							"weight": 1,
+							"cast_duration": 1.5,
+							"sequence": [
+								{
+									"shape": "circle",
+									"target": "self",
+									"base_delay": 0,
+									"delay_per_summon": 0,
+									"num_entities_spawned": 0,
+									"entity_lifespan": 0,
+									"summon_cap": 1,
+									"summon_cap_radius": 1
+								}
+							]
+						}
+					]
+				},
+				"minecraft:attack": {
+					"damage": 0
+				}
+			},
+			"can_move": {
+				"minecraft:movement": {
+					"value": 0.19
+				}
+			},
+			"is_attacking": {
+				"minecraft:movement": {
+					"value": 0.01
+				}
+			}
+		},
+		"components": {
+			"minecraft:behavior.look_at_player": {
+				"priority": 7,
+				"look_distance": 8,
+				"probability": 0.02
+			},
+			"minecraft:follow_range": {
+				"value": 32
+			},
+			"minecraft:collision_box": {
+				"width": 1.1,
+				"height": 4
+			},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 1,
+				"entity_types": [
+					{
+						"max_dist": 32,
+						"must_see": true,
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"operator": "==",
+									"value": "player"
+								}
+							]
+						}
+					}
+				],
+				"reselect_targets": true,
+				"must_see": false
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 7
+			},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "magic",
+						"deals_damage": false
+					},
+					{
+						"cause": "projectile",
+						"deals_damage": true,
+						"damage_multiplier": 0.5
+					}
+				]
+			},
+			"minecraft:physics": {
+				"has_collision": true,
+				"has_gravity": true
+			},
+			"minecraft:health": {
+				"value": 200,
+				"max": 200
+			},
+			"minecraft:experience_reward": {
+				"on_death": "query.last_hit_by_player?80:0"
+			},
+			"minecraft:type_family": {
+				"family": [
+					"mob",
+					"monster",
+					"solar"
+				]
+			},
+			"minecraft:navigation.walk": {
+				"avoid_powder_snow": true,
+				"avoid_portals": true,
+				"can_path_over_water": true,
+				"can_path_over_lava": true
+			},
+			"minecraft:jump.static": {},
+			"minecraft:can_climb": {},
+			"minecraft:movement.basic": {},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1,
+				"alert_same_type": true
+			},
+			"minecraft:knockback_resistance": {
+				"value": 0.8
+			},
+			"minecraft:fire_immune": true,
+			"minecraft:loot": {
+				"table": "loot_tables/entities/solar_tesla.json"
+			},
+			"minecraft:equipment": {
+				"table": "loot_tables/entities/disable_shield.json",
+				"slot_drop_chance": [
+					{
+						"slot": "slot.inventory",
+						"drop_chance": 0
+					},
+					{
+						"slot": "slot.weapon.mainhand",
+						"drop_chance": 0
+					}
+				]
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"can_move"
+					]
+				},
+				"trigger": {
+					"event": "attack_types"
+				}
+			},
+			"attack_types": {
+				"randomize": [
+					{
+						"weight": 2,
+						"add": {
+							"component_groups": [
+								"attack"
+							]
+						},
+						"remove": {
+							"component_groups": [
+								"summon"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"summon"
+							]
+						},
+						"remove": {
+							"component_groups": [
+								"attack"
+							]
+						}
+					}
+				]
+			},
+			"is_attacking": {
+				"add": {
+					"component_groups": [
+						"is_attacking"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"can_move"
+					]
+				}
+			},
+			"finish_attack": {
+				"add": {
+					"component_groups": [
+						"can_move"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"is_attacking"
+					]
+				}
+			}
+		}
+	}
+}

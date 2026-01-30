@@ -1,0 +1,36 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "system:lapis_great_axe",
+			"materials": {
+				"default": "entity_alphatest",
+				"enchanted": "entity_alphatest_glint"
+			},
+			"textures": {
+				"default": "textures/great_axe/lapis",
+				"enchanted": "textures/misc/enchanted_item_glint"
+			},
+			"geometry": {
+				"default": "geometry.great_axe"
+			},
+			"animations": {
+				"first_person": "animation.player.great_axe_tool.first_person",
+				"default": "animation.player.great_axe_tool"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"first_person": "c.is_first_person && c.item_slot == 'main_hand' && q.get_equipped_item_name == 'lapis_great_axe'"
+					},
+					{
+						"default": "!c.is_first_person && c.item_slot == 'main_hand' && q.get_equipped_item_name == 'lapis_great_axe'"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.hammer"
+			]
+		}
+	}
+}

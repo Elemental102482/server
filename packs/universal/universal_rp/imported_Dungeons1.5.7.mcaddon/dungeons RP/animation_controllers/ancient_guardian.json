@@ -1,0 +1,108 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.ancient_guardian.eye": {
+			"initial_state": "no_target",
+			"states": {
+				"has_target": {
+					"transitions": [
+						{
+							"no_target": "!q.has_target"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"no_target": {
+					"animations": [
+						"no_target"
+					],
+					"transitions": [
+						{
+							"has_target": "q.has_target"
+						}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		},
+		"controller.animation.ancient_guardian.charge": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"charging": "q.has_target&&q.is_saddled"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"charging": {
+					"animations": [
+						"charge"
+					],
+					"transitions": [
+						{
+							"default": "!q.has_target||!q.is_saddled"
+						}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		},
+		"controller.animation.ancient_guardian.shooting": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"start_shooting": "q.variant==1"
+						}
+					],
+					"blend_transition": 0.4
+				},
+				"start_shooting": {
+					"animations": [
+						"start_shooting",
+						"aim"
+					],
+					"transitions": [
+						{
+							"default": "q.variant==0"
+						},
+						{
+							"hold_shooting": "q.variant==1&&q.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.4
+				},
+				"hold_shooting": {
+					"animations": [
+						"hold_shooting",
+						"aim"
+					],
+					"transitions": [
+						{
+							"stop_shooting": "q.variant==0"
+						}
+					],
+					"blend_transition": 0.6
+				},
+				"stop_shooting": {
+					"animations": [
+						"stop_shooting",
+						"aim"
+					],
+					"transitions": [
+						{
+							"hold_shooting": "q.variant==1"
+						},
+						{
+							"default": "q.variant==0&&q.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.5
+				}
+			}
+		}
+	}
+}

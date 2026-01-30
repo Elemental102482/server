@@ -1,0 +1,24 @@
+{
+	"format_version": 1.12,
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "e:curse_of_neptune_2_diamond_sword"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "minecraft:diamond_sword"
+			},
+			{
+				"item": "e:curse_of_neptune_book_2"
+			}
+		],
+		"result": [
+			{
+				"item": "e:diamond_sword_con2"
+			}
+		]
+	}
+}

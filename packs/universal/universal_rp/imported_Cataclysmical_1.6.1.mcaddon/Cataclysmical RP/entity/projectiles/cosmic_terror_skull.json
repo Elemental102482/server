@@ -1,0 +1,36 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "cata:cosmic_terror_skull",
+			"materials": {
+				"default": "drowned"
+			},
+			"textures": {
+				"default": "textures/entity/projectile/cosmic_terror_skull_texture"
+			},
+			"geometry": {
+				"default": "geometry.cosmic_terror_skull"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "cata_stone_golem_egg"
+			},
+			"animations": {
+				"particle": "animation.cosmic_terror_skull.particle",
+				"spawn": "animation.cosmic_terror_skull.spawn"
+			},
+			"scripts": {
+				"animate": [
+					"particle",
+					"spawn"
+				]
+			},
+			"particle_effects": {
+				"plasma_emitter": "cata:plasma_emitter"
+			}
+		}
+	}
+}

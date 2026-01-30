@@ -1,0 +1,36 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "system:stone_great_shovel",
+			"materials": {
+				"default": "entity_alphatest",
+				"enchanted": "entity_alphatest_glint"
+			},
+			"textures": {
+				"default": "textures/shovel/stone_great_shovel",
+				"enchanted": "textures/misc/enchanted_item_glint"
+			},
+			"geometry": {
+				"default": "geometry.shovel"
+			},
+			"animations": {
+				"first_person": "animation.player.shovel_tool.first_person",
+				"default": "animation.player.shovel_tool"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"first_person": "c.is_first_person && c.item_slot == 'main_hand' && q.get_equipped_item_name == 'stone_great_shovel'"
+					},
+					{
+						"default": "!c.is_first_person && c.item_slot == 'main_hand' && q.get_equipped_item_name == 'stone_great_shovel'"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.hammer"
+			]
+		}
+	}
+}

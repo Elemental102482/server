@@ -1,0 +1,37 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:tempest_golem_resting",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/tempest_golem/tempest_golem_off",
+				"on": "textures/entity/tempest_golem/tempest_golem"
+			},
+			"geometry": {
+				"default": "geometry.tempest_golem"
+			},
+			"render_controllers": [
+				"controller.render.redstone_monstrosity"
+			],
+			"animations": {
+				"resting": "animation.tempest_golem.rest",
+				"awaken": "animation.tempest_golem.wake2",
+				"wake_controller": "controller.animation.redstone_monstrosity.rest"
+			},
+			"scripts": {
+				"animate": [
+					"wake_controller"
+				]
+			},
+			"sound_effects": {
+				"awaken": "mob.tempest_golem.awaken"
+			},
+			"spawn_egg": {
+				"texture": "egg_tempest_golem"
+			}
+		}
+	}
+}

@@ -1,0 +1,68 @@
+{
+	"format_version": "1.21.10",
+	"minecraft:item": {
+		"description": {
+			"identifier": "dungeons:rare_tome_of_duplication",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:tags": {
+				"tags": [
+					"dungeons:tome_of_duplication"
+				]
+			},
+			"minecraft:icon": "tome_of_duplication",
+			"minecraft:max_stack_size": 1,
+			"minecraft:stacked_by_data": false,
+			"minecraft:can_destroy_in_creative": false,
+			"minecraft:custom_components": [
+				"dungeons:dynamic_cooldown",
+				"dungeons:tome_of_duplication",
+				"dungeons:blast_fungus",
+				"dungeons:buzzy_nest",
+				"dungeons:rare_corrupted_beacon",
+				"dungeons:corrupted_seeds",
+				"dungeons:rare_death_cap_mushroom",
+				"dungeons:enchanted_grass",
+				"dungeons:enchanters_tome",
+				"dungeons:rare_eye_of_the_guardian",
+				"dungeons:rare_ghost_cloak",
+				"dungeons:golem_kit",
+				"dungeons:rare_gong_of_weakening",
+				"dungeons:rare_harvester",
+				"dungeons:rare_iron_hide_amulet",
+				"dungeons:light_feather",
+				"dungeons:rare_lightning_rod",
+				"dungeons:rare_powershaker",
+				"dungeons:satchel_of_elements",
+				"dungeons:satchel_of_elixirs",
+				"dungeons:rare_satchel_of_snacks",
+				"dungeons:scatter_mines",
+				"dungeons:rare_shock_powder",
+				"dungeons:rare_soul_healer",
+				"dungeons:soul_lantern",
+				"dungeons:rare_boots_of_swiftness",
+				"dungeons:totem_casting",
+				"dungeons:totem_regeneration",
+				"dungeons:totem_shielding",
+				"dungeons:updraft_tome",
+				"dungeons:rare_shadow_shifter",
+				"dungeons:ice_wand",
+				"dungeons:vexing_chant",
+				"dungeons:rare_wind_horn",
+				"dungeons:spinblade",
+				"dungeons:corrupted_pumpkin"
+			],
+			"minecraft:cooldown": {
+				"category": "tome_duplication_rare",
+				"duration": 20
+			},
+			"minecraft:interact_button": "item.use.artefact",
+			"minecraft:use_modifiers": {
+				"use_duration": 0
+			}
+		}
+	}
+}

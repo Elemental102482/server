@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "system:wood_great_sword"
+    },
+
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " CC",
+      "CBC",
+      "SC"
+    ],
+    "key": {
+      "S": {
+        "item": "minecraft:stick"
+      },
+      "B": {
+        "item": "minecraft:log"
+      },
+      "C": {
+        "item": "minecraft:planks"
+      }
+    },
+    "result": {
+      "item": "system:wood_great_sword"
+    }
+  }
+}

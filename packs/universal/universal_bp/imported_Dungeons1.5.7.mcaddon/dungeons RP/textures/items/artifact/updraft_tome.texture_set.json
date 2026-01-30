@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "updraft_tome",
+        "metalness_emissive_roughness": "updraft_tome_mer"
+    }
+}

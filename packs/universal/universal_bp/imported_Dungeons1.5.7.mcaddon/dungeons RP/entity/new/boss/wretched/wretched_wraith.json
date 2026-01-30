@@ -1,0 +1,45 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:wretched_wraith",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/wretched_wraith/wretched_wraith"
+			},
+			"geometry": {
+				"default": "geometry.wretched_wraith"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"animations": {
+				"idle": "animation.wretched_wraith.idle",
+				"look_at_target": "animation.common.look_at_target",
+				"idle_controller": "controller.animation.wretched_wraith.idle",
+				"stun": "animation.wretched_wraith.stunned",
+				"enter_new_phase": "animation.wretched_wraith.enter_new_phase",
+				"hide": "animation.wretched_wraith.hide",
+				"stun_controller": "controller.animation.wretched_wraith.stun"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"hide": "query.is_alive!=1"
+					},
+					"idle_controller",
+					"stun_controller"
+				]
+			},
+			"sound_effects": {
+				"awaken": "mob.wretched_wraith.awaken"
+			},
+			"spawn_egg": {
+				"base_color": "#210B38",
+				"overlay_color": "#5BFFE2"
+			}
+		}
+	}
+}

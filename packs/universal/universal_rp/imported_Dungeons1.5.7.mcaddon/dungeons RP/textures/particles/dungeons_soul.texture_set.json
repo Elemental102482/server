@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "dungeons_soul",
+        "metalness_emissive_roughness": "dungeons_soul_mer"
+    }
+}

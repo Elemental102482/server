@@ -1,0 +1,548 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "dungeons:tower_wraith",
+			"runtime_identifier": "minecraft:stray",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"dungeons:becoming_black": {
+				"minecraft:is_saddled": {},
+				"minecraft:behavior.timer_flag_1": {
+					"priority": 0,
+					"cooldown_range": 0,
+					"duration_range": [
+						1,
+						1
+					],
+					"on_end": {
+						"event": "dungeons:convert_to_black_success",
+						"target": "self"
+					}
+				}
+			},
+			"dungeons:black_hood": {
+				"minecraft:behavior.timer_flag_1": {
+					"priority": 0,
+					"cooldown_range": 0,
+					"duration_range": [
+						5,
+						15
+					],
+					"on_end": {
+						"event": "dungeons:convert_to_pink",
+						"target": "self"
+					}
+				},
+				"minecraft:behavior.summon_entity": {
+					"priority": 2,
+					"summon_choices": [
+						{
+							"min_activation_range": 1,
+							"max_activation_range": 32,
+							"cooldown_time": 4,
+							"weight": 1,
+							"cast_duration": 0.85,
+							"start_sound_event": "cast.spell",
+							"sequence": [
+								{
+									"shape": "circle",
+									"target": "target",
+									"base_delay": 0.85,
+									"delay_per_summon": 0,
+									"num_entities_spawned": 1,
+									"entity_type": "dungeons:tower_wraith_fire",
+									"size": 0.3
+								}
+							]
+						}
+					]
+				}
+			},
+			"dungeons:becoming_pink": {
+				"minecraft:behavior.timer_flag_1": {
+					"priority": 0,
+					"cooldown_range": 0,
+					"duration_range": [
+						1,
+						1
+					],
+					"on_end": {
+						"event": "dungeons:convert_to_pink_success",
+						"target": "self"
+					}
+				}
+			},
+			"dungeons:pink_hood": {
+				"minecraft:is_saddled": {},
+				"minecraft:behavior.timer_flag_1": {
+					"priority": 0,
+					"cooldown_range": 0,
+					"duration_range": [
+						5,
+						15
+					],
+					"on_end": {
+						"event": "dungeons:convert_to_black",
+						"target": "self"
+					}
+				},
+				"minecraft:behavior.summon_entity": {
+					"priority": 2,
+					"summon_choices": [
+						{
+							"min_activation_range": 1,
+							"max_activation_range": 32,
+							"cooldown_time": 5,
+							"weight": 1,
+							"cast_duration": 0.96,
+							"start_sound_event": "cast.spell",
+							"sequence": [
+								{
+									"shape": "circle",
+									"target": "target",
+									"base_delay": 0.85,
+									"delay_per_summon": 0,
+									"num_entities_spawned": 1,
+									"entity_type": "dungeons:tower_wraith_poison",
+									"size": 0.3
+								}
+							]
+						}
+					]
+				}
+			},
+			"dungeons:cooldown_teleport": {
+				"minecraft:pushable": {
+					"is_pushable": true,
+					"is_pushable_by_piston": true
+				},
+				"minecraft:timer": {
+					"looping": false,
+					"time": 3.33,
+					"time_down_event": {
+						"event": "dungeons:can_teleport"
+					}
+				},
+				"minecraft:variant": {
+					"value": 0
+				}
+			},
+			"dungeons:can_teleport": {
+				"minecraft:pushable": {
+					"is_pushable": true,
+					"is_pushable_by_piston": true
+				},
+				"minecraft:variant": {
+					"value": 0
+				},
+				"minecraft:entity_sensor": {
+					"sensor_range": 2.5,
+					"relative_range": false,
+					"minimum_count": 1,
+					"event_filters": {
+						"any_of": [
+							{
+								"all_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									},
+									{
+										"none_of": {
+											"test": "has_ability",
+											"subject": "other",
+											"value": "instabuild"
+										}
+									}
+								]
+							},
+							{
+								"test": "is_family",
+								"subject": "other",
+								"value": "snowgolem"
+							},
+							{
+								"test": "is_family",
+								"subject": "other",
+								"value": "irongolem"
+							}
+						]
+					},
+					"event": "dungeons:begin_teleport"
+				}
+			},
+			"dungeons:begin_teleport": {
+				"minecraft:timer": {
+					"looping": false,
+					"time": 1,
+					"time_down_event": {
+						"event": "dungeons:teleport"
+					}
+				},
+				"minecraft:pushable": {
+					"is_pushable": false,
+					"is_pushable_by_piston": false
+				},
+				"minecraft:variant": {
+					"value": 1
+				},
+				"minecraft:entity_sensor": {},
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"cause": "all",
+							"deals_damage": false
+						}
+					]
+				}
+			},
+			"dungeons:teleport": {
+				"minecraft:timer": {
+					"looping": false,
+					"time": 2.18,
+					"time_down_event": {
+						"event": "dungeons:finish_teleport"
+					}
+				},
+				"minecraft:variant": {
+					"value": 1
+				},
+				"minecraft:pushable": {
+					"is_pushable": false,
+					"is_pushable_by_piston": false
+				},
+				"minecraft:entity_sensor": {},
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"cause": "all",
+							"deals_damage": false
+						}
+					]
+				}
+			}
+		},
+		"components": {
+			"minecraft:is_hidden_when_invisible": {},
+			"minecraft:despawn": {
+				"despawn_from_distance": {}
+			},
+			"minecraft:damage_sensor": {},
+			"minecraft:experience_reward": {
+				"on_death": "query.last_hit_by_player?12:0"
+			},
+			"minecraft:type_family": {
+				"family": [
+					"wraith",
+					"tower",
+					"monster",
+					"undead",
+					"mob"
+				]
+			},
+			"minecraft:breathable": {
+				"total_supply": 15,
+				"suffocate_time": 0
+			},
+			"minecraft:nameable": {},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/tower_wraith.json"
+			},
+			"minecraft:health": {
+				"value": 36,
+				"max": 36
+			},
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"filters": {
+							"test": "in_lava",
+							"subject": "self",
+							"operator": "==",
+							"value": true
+						},
+						"cause": "lava",
+						"damage_per_tick": 4
+					}
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 0.6,
+				"height": 2.1
+			},
+			"minecraft:movement": {
+				"value": 0.3
+			},
+			"minecraft:navigation.walk": {
+				"avoid_water": true,
+				"can_path_over_water": true,
+				"avoid_sun": true,
+				"can_walk": true
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:can_climb": {},
+			"minecraft:behavior.float": {
+				"priority": 0
+			},
+			"minecraft:variable_max_auto_step": {
+				"base_value": 1.0625,
+				"jump_prevented_value": 0.5625
+			},
+			"minecraft:behavior.avoid_mob_type": {
+				"priority": 5,
+				"entity_types": [
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "snowgolem"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "irongolem"
+								}
+							]
+						},
+						"max_dist": 8,
+						"walk_speed_multiplier": 1.1,
+						"sprint_speed_multiplier": 1.2
+					}
+				]
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 8,
+				"speed_multiplier": 0.95
+			},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 2,
+				"entity_types": [
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "snowgolem"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "irongolem"
+								}
+							]
+						},
+						"max_dist": 16
+					}
+				],
+				"must_see": true
+			},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1
+			},
+			"minecraft:physics": {},
+			"minecraft:follow_range": {
+				"value": 20
+			},
+			"minecraft:conditional_bandwidth_optimization": {}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"dungeons:black_hood",
+						"dungeons:can_teleport"
+					]
+				},
+				"queue_command": {
+					"command": [
+						"effect @s slowness 1 8 true",
+						"particle dungeons:tower_wraith_black"
+					]
+				}
+			},
+			"dungeons:convert_to_pink": {
+				"sequence": [
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_variant",
+									"value": 0
+								},
+								{
+									"test": "has_target"
+								}
+							]
+						},
+						"add": {
+							"component_groups": [
+								"dungeons:becoming_pink"
+							]
+						},
+						"remove": {
+							"component_groups": [
+								"dungeons:black_hood"
+							]
+						},
+						"queue_command": {
+							"command": [
+								"playanimation @s animation.tower_wraith.change",
+								"particle dungeons:tower_wraith_black",
+								"playsound mob.evocation_illager.cast_spell @a ~~~ 0.5 0.6",
+								"effect @s slowness 1 98 true"
+							]
+						}
+					}
+				]
+			},
+			"dungeons:convert_to_pink_success": {
+				"remove": {
+					"component_groups": [
+						"dungeons:becoming_pink"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"dungeons:pink_hood"
+					]
+				},
+				"queue_command": {
+					"command": [
+						"particle dungeons:tower_wraith_pink",
+						"playsound mob.player.hurt_freeze @a ~~~ 0.5 0.4"
+					]
+				}
+			},
+			"dungeons:convert_to_black": {
+				"sequence": [
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_variant",
+									"value": 0
+								},
+								{
+									"test": "has_target"
+								}
+							]
+						},
+						"add": {
+							"component_groups": [
+								"dungeons:becoming_black"
+							]
+						},
+						"remove": {
+							"component_groups": [
+								"dungeons:pink_hood"
+							]
+						},
+						"queue_command": {
+							"command": [
+								"playanimation @s animation.tower_wraith.change",
+								"particle dungeons:tower_wraith_pink",
+								"playsound mob.evocation_illager.cast_spell @a ~~~ 0.5 0.6",
+								"effect @s slowness 1 98 true"
+							]
+						}
+					}
+				]
+			},
+			"dungeons:convert_to_black_success": {
+				"remove": {
+					"component_groups": [
+						"dungeons:becoming_black"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"dungeons:black_hood"
+					]
+				},
+				"queue_command": {
+					"command": [
+						"particle dungeons:tower_wraith_black",
+						"playsound mob.wildfire.shield_impact @a ~~~ 0.5 0.6"
+					]
+				}
+			},
+			"dungeons:begin_teleport": {
+				"add": {
+					"component_groups": [
+						"dungeons:begin_teleport"
+					]
+				},
+				"queue_command": {
+					"command": [
+						"playanimation @s animation.tower_wraith.teleport_away",
+						"effect @s slowness 3 99 true"
+					]
+				}
+			},
+			"dungeons:teleport": {
+				"remove": {
+					"component_groups": [
+						"dungeons:begin_teleport"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"dungeons:teleport"
+					]
+				},
+				"queue_command": {
+					"command": [
+						"playanimation @s animation.tower_wraith.teleport_in",
+						"effect @s invisibility 1 0 true",
+						"tp @s @e[r=16,c=1,family=irongolem] true",
+						"tp @s @e[m=!creative,family=player,r=16,c=1] true",
+						"tp ^^^-5 facing @p true"
+					]
+				}
+			},
+			"dungeons:finish_teleport": {
+				"remove": {
+					"component_groups": [
+						"dungeons:teleport"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"dungeons:cooldown_teleport"
+					]
+				}
+			},
+			"dungeons:can_teleport": {
+				"remove": {
+					"component_groups": [
+						"dungeons:cooldown_teleport"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"dungeons:can_teleport"
+					]
+				}
+			}
+		}
+	}
+}

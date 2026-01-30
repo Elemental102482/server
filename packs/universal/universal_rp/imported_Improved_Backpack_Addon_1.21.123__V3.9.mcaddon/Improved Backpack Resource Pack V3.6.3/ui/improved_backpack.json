@@ -1,0 +1,162 @@
+{
+	"namespace": "improved_backpack",
+	
+	///////////////////////////////////
+	//BACKPACK BACKGROUND TEXTURES
+	///////////////////////////////////
+	
+	"bg_bp_small@common.dialog_background_common": {
+		"texture": "textures/bg_bp_small"
+	},
+	
+	"bg_bp_medium@common.dialog_background_common": {
+		"texture": "textures/bg_bp_medium"
+	},
+	
+	"bg_bp_big@common.dialog_background_common": {
+		"texture": "textures/bg_bp_big"
+	},
+	
+	"bg_bp_xl@common.dialog_background_common": {
+		"texture": "textures/bg_bp_xl"
+	},
+	
+	///////////////////////////////////
+	//BACKPACK CREDIT PANEL
+	///////////////////////////////////
+	
+	"credit_panel_content":{
+		"type": "panel",
+		"offset":[-67,-35],
+		"controls":[
+			{
+				"credit_image":{
+					"type": "image",
+					"layer": 10,
+					"size":[132,74],
+					"offset": [-1,0],
+					"texture": "textures/bp_ui_credit"
+				}
+			},
+			{
+				"credit_panel_container@common.common_panel":{
+					"layer": -1,
+					"size":[136,66],
+					"$show_close_button": false,
+					"$dialog_background": "$backpack_background"
+				}
+			}	
+		]
+	},
+	
+	///////////////////////////////////
+	//BACKPACK CONTAINER GRID
+	///////////////////////////////////
+	
+	"backpack_container_grid@common.container_grid": {
+		"anchor_from": "top_left",
+		"anchor_to": "top_left",
+		"layer": 3,
+		"grid_item_template": "@common.container_item",
+		"collection_name": "container_items",
+		"$item_collection_name": "container_items"
+	},
+	
+	///////////////////////////////////
+	//BACKPACK TOP HALF SCROLLING PANEL
+	///////////////////////////////////
+	
+	"improved_backpack_top_half":{
+		"type": "panel",
+		"size": [ "100%", 102 ],
+		"offset": [ 0, 11 ],
+		"anchor_to": "top_left",
+		"anchor_from": "top_left",	
+		"controls": [
+			{ "chest_label@chest.chest_label": {} },
+			{
+				"credit_panel@common.common_panel":{
+					"layer": 999,
+					"offset":[-95,37],
+					"size": [ 50, 50 ],
+					"controls":[
+						{
+							"credit_button":{
+								"type": "button",
+								"size":[16,16],
+								"offset": [ 0, 11 ],
+								"hover_control": "credit_panel_content",
+								"controls":[
+									{
+										"credit_icon2":{
+											"type": "image",
+											"size":[16,16],
+											"texture": "textures/ui_credit"
+										}
+									},
+									{
+										"credit_panel_content@improved_backpack.credit_panel_content":{}
+									}	
+								]
+							}
+						}
+					]
+				}
+			},
+			{
+				"scrolling_panel@common.container_scroll_panel":{
+					"offset": [ 0, 11 ],
+					"size": [ 164, 90 ],
+					"$scrolling_content|default": "improved_backpack.backpack_container_grid"
+				}
+			}
+		]
+	},
+	
+	///////////////////////////////////
+	//BACKPACK ROOT PANEL
+	///////////////////////////////////
+	
+	"backpack_root_panel@common.root_panel":{
+		"size": [ 190, 220 ],
+		"layer": 1,
+		"controls": [
+			{ 
+				"common_panel@common.common_panel": {
+					"$dialog_background": "$backpack_background"
+				} 
+			},
+			{
+				"chest_panel": {
+					"type": "panel",
+					"layer": 5,
+					"controls": [
+						{ "small_chest_panel_top_half@improved_backpack.improved_backpack_top_half": {} },
+						{ "inventory_panel_bottom_half_with_label@common.inventory_panel_bottom_half_with_label": {} },
+						{ "hotbar_grid@common.hotbar_grid_template": {} },
+						{ "inventory_take_progress_icon_button@common.inventory_take_progress_icon_button": {} },
+						{ "flying_item_renderer@common.flying_item_renderer": { "layer": 15 } }
+					]
+				}
+			},
+			{ "inventory_selected_icon_button@common.inventory_selected_icon_button": {} },
+			{ "gamepad_cursor@common.gamepad_cursor_button": {} }
+		]
+	},
+	
+	///////////////////////////////////
+	//BACKPACK MAIN PANEL
+	///////////////////////////////////
+	
+	"backpack_panel": {
+		"type": "panel",
+		"controls": [
+		  { "container_gamepad_helpers@common.container_gamepad_helpers": {} },
+		  { "selected_item_details_factory@common.selected_item_details_factory": {} },
+		  { "item_lock_notification_factory@common.item_lock_notification_factory": {} },
+		  {
+			"root_panel@improved_backpack.backpack_root_panel": {}
+		  }
+		]
+	}
+}

@@ -1,0 +1,604 @@
+{
+	"format_version": "1.14.0",
+	"sound_definitions": {
+		"sound.large_sword_swing": {
+			"sounds": [
+				{
+					"name": "sounds/msic/large_sword_swing1",
+					"volume": 1
+				},
+				{
+					"name": "sounds/msic/large_sword_swing2",
+					"volume": 1
+				}
+			],
+			"category": "hostile",
+			"min_distance": 0,
+			"max_distance": 12
+		},
+		"sound.small_sword_swing": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/msic/small_sword_swing",
+					"volume": 1
+				}
+			],
+			"min_distance": 1,
+			"max_distance": 12
+		},
+		"sound.verdant_door_unlock": {
+			"sounds": [
+				{
+					"name": "sounds/msic/verdant_door_unlock",
+					"volume": 1
+				}
+			],
+			"category": "block",
+			"min_distance": 0,
+			"max_distance": 32
+		},
+		"sound.solar_swing": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/msic/solar_swing1",
+					"volume": 1
+				},
+				{
+					"name": "sounds/msic/solar_swing2",
+					"volume": 1
+				}
+			],
+			"min_distance": 0,
+			"max_distance": 12
+		},
+		"sound.solar_beam": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/msic/Solar_beam",
+					"volume": 0.5
+				}
+			],
+			"min_distance": 0,
+			"max_distance": 24
+		},
+		"sound.solar_explosion": {
+			"category": "hostile",
+			"min_distance": 0,
+			"max_distance": 12,
+			"sounds": [
+				{
+					"name": "sounds/msic/solar_explosion",
+					"volume": 1
+				}
+			]
+		},
+		"sound.feral_gas": {
+			"category": "block",
+			"sounds": [
+				{
+					"name": "sounds/msic/feral_gas",
+					"volume": 1
+				}
+			],
+			"min_distance": 0,
+			"max_distance": 8
+		},
+		"sound.wand": {
+			"category": "player",
+			"sounds": [
+				{
+					"name": "sounds/msic/wand1",
+					"volume": 0.6
+				},
+				{
+					"name": "sounds/msic/wand2",
+					"volume": 0.6
+				}
+			],
+			"min_distance": 0,
+			"max_distance": 8
+		},
+		"mob.feralbloom_hurt": {
+			"sounds": [
+				{
+					"name": "sounds/feralbloom/feralbloom_hurt1",
+					"volume": 1
+				},
+				{
+					"name": "sounds/feralbloom/feralbloom_hurt2",
+					"volume": 1
+				}
+			],
+			"category": "hostile",
+			"min_distance": 0,
+			"max_distance": 8
+		},
+		"mob.stone_golem_hurt": {
+			"sounds": [
+				{
+					"name": "sounds/stone_golem/stone_golem_hurt1",
+					"volume": 1
+				},
+				{
+					"name": "sounds/stone_golem/stone_golem_hurt2",
+					"volume": 1
+				}
+			],
+			"category": "hostile",
+			"min_distance": 0,
+			"max_distance": 8
+		},
+		"mob.stone_golem_impact": {
+			"sounds": [
+				{
+					"name": "sounds/stone_golem/stone_golem_impact",
+					"volume": 2.5
+				}
+			],
+			"category": "hostile",
+			"min_distance": 0,
+			"max_distance": 16
+		},
+		"mob.verdant_sentinel_hurt": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/verdant_sentinel/verdant_sentinel_hurt1",
+					"volume": 1
+				},
+				{
+					"name": "sounds/verdant_sentinel/verdant_sentinel_hurt2",
+					"volume": 1
+				}
+			],
+			"min_distance": 0,
+			"max_distance": 12
+		},
+		"mob.verdant_sentinel_move": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/verdant_sentinel/verdant_sentinel_move1",
+					"volume": 1
+				},
+				{
+					"name": "sounds/verdant_sentinel/verdant_sentinel_move2",
+					"volume": 1
+				}
+			],
+			"min_distance": 0,
+			"max_distance": 16
+		},
+		"mob.verdant_sentinel_heavy_attack": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/verdant_sentinel/verdant_sentinel_heavy_attack",
+					"volume": 1
+				}
+			],
+			"min_distance": 0,
+			"max_distance": 12
+		},
+		"mob.solar_mob_hurt": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/msic/solar_mob_hurt1",
+					"volume": 1
+				},
+				{
+					"name": "sounds/msic/solar_mob_hurt2",
+					"volume": 1
+				}
+			],
+			"min_distance": 0,
+			"max_distance": 24
+		},
+		"mob.feral_fang_summon": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/msic/feral_fang_summon",
+					"volume": 1
+				}
+			],
+			"min_distance": 0,
+			"max_distance": 8
+		},
+		"mob.large_impact": {
+			"category": "hostile",
+			"min_distance": 0,
+			"max_distance": 24,
+			"sounds": [
+				{
+					"name": "sounds/msic/large_impact",
+					"volume": 1
+				}
+			]
+		},
+		"mob.large_swing": {
+			"category": "hostile",
+			"min_distance": 0,
+			"max_distance": 12,
+			"sounds": [
+				{
+					"name": "sounds/msic/large_swing1",
+					"volume": 1
+				},
+				{
+					"name": "sounds/msic/large_swing2"
+				}
+			]
+		},
+		"sound.rock_throw": {
+			"category": "block",
+			"max_distance": 32,
+			"min_distance": 0,
+			"sounds": [
+				{
+					"name": "sounds/msic/rock_throw",
+					"volume": 2.5
+				}
+			]
+		},
+		"block.phantasma_stabilizer": {
+			"category": "block",
+			"min_distance": 0,
+			"max_distance": 24,
+			"sounds": [
+				{
+					"name": "sounds/msic/phantasma_stabilizer",
+					"volume": 1.5
+				}
+			]
+		},
+		"sound.laser_shoot": {
+			"category": "hostile",
+			"min_distance": 0,
+			"max_distance": 16,
+			"sounds": [
+				{
+					"name": "sounds/msic/laser_shoot",
+					"volume": 1
+				}
+			]
+		},
+		"sound.ray_gun_overload": {
+			"category": "hostile",
+			"min_distance": 0,
+			"max_distance": 16,
+			"sounds": [
+				{
+					"name": "sounds/msic/ray_gun_overload",
+					"volume": 1
+				}
+			]
+		},
+		"sound.tesla_coil_zap": {
+			"category": "block",
+			"min_distance": 0,
+			"max_distance": 16,
+			"sounds": [
+				{
+					"name": "sounds/msic/tesla_coil_zap1",
+					"volume": 1
+				},
+				{
+					"name": "sounds/msic/tesla_coil_zap2",
+					"volume": 1
+				},
+				{
+					"name": "sounds/msic/tesla_coil_zap3",
+					"volume": 1
+				}
+			]
+		},
+		"sound.massive_weapon_swing": {
+			"category": "hostile",
+			"min_distance": 0,
+			"max_distance": 24,
+			"sounds": [
+				{
+					"name": "sounds/msic/massive_weapon_swing1",
+					"volume": 1
+				},
+				{
+					"name": "sounds/msic/massive_weapon_swing2",
+					"volume": 1
+				}
+			]
+		},
+		"sound.terror_ambient": {
+			"category": "ambient",
+			"min_distance": 0,
+			"max_distance": 32,
+			"sounds": [
+				{
+					"name": "sounds/msic/terror_ambient1",
+					"volume": 1
+				},
+				{
+					"name": "sounds/msic/terror_ambient2",
+					"volume": 1
+				}
+			]
+		},
+		"sound.meowclysm": {
+			"category": "hostile",
+			"min_distance": 0,
+			"max_distance": 25,
+			"sounds": [
+				{
+					"name": "sounds/msic/meowclysm1",
+					"volume": 1
+				},
+				{
+					"name": "sounds/msic/meowclysm2",
+					"volume": 1
+				},
+				{
+					"name": "sounds/msic/meowclysm3",
+					"volume": 1
+				},
+				{
+					"name": "sounds/msic/meowclysm4",
+					"volume": 1
+				}
+			]
+		},
+		"sound.electric_blade": {
+			"category": "hostile",
+			"min_distance": 0,
+			"max_distance": 25,
+			"sounds": [
+				{
+					"name": "sounds/msic/electric_blade1",
+					"volume": 1
+				},
+				{
+					"name": "sounds/msic/electric_blade2",
+					"volume": 1
+				},
+				{
+					"name": "sounds/msic/electric_blade3",
+					"volume": 1
+				}
+			]
+		},
+		"sound.sunandmoonlight_change": {
+			"category": "hostile",
+			"min_distance": 0,
+			"max_distance": 10,
+			"sounds": [
+				{
+					"name": "sounds/msic/sunandmoonlight_change",
+					"volume": 1
+				}
+			]
+		},
+		"mob.meteor_crash": {
+			"category": "hostile",
+			"min_distance": 0,
+			"max_distance": 24,
+			"sounds": [
+				{
+					"name": "sounds/msic/meteor_crash1",
+					"volume": 1,
+					"load_on_low_memory": true
+				},
+				{
+					"name": "sounds/msic/meteor_crash2",
+					"volume": 1,
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"sound.blazing_excalibur": {
+			"category": "hostile",
+			"min_distance": 0,
+			"max_distance": 16,
+			"sounds": [
+				{
+					"name": "sounds/msic/blazing_excalibur",
+					"volume": 1
+				}
+			]
+		},
+		"sound.blazing_excalibur_end": {
+			"category": "hostile",
+			"min_distance": 0,
+			"max_distance": 16,
+			"sounds": [
+				{
+					"name": "sounds/msic/blazing_excalibur_end",
+					"volume": 1
+				}
+			]
+		},
+		"sound.eternal_seal_spawn": {
+			"category": "hostile",
+			"min_distance": 0,
+			"max_distance": 64,
+			"sounds": [
+				{
+					"name": "sounds/eternal_seal/eternal_seal_spawn",
+					"volume": 1
+				}
+			]
+		},
+		"sound.eternal_seal_woosh": {
+			"category": "hostile",
+			"min_distance": 0,
+			"max_distance": 64,
+			"sounds": [
+				{
+					"name": "sounds/eternal_seal/eternal_seal_woosh",
+					"volume": 1
+				}
+			]
+		},
+		"mob.sun_tribunal_double_dash_attack": {
+			"category": "hostile",
+			"min_distance": 0,
+			"max_distance": 64,
+			"sounds": [
+				{
+					"name": "sounds/sun_tribunal/double_dash_attack",
+					"volume": 1
+				}
+			]
+		},
+		"mob.sun_tribunal_normal_attack_projectile": {
+			"category": "hostile",
+			"min_distance": 0,
+			"max_distance": 64,
+			"sounds": [
+				{
+					"name": "sounds/sun_tribunal/normal_attack_projectile",
+					"volume": 1
+				}
+			]
+		},
+		"mob.sun_tribunal_normal_attack": {
+			"category": "hostile",
+			"min_distance": 0,
+			"max_distance": 64,
+			"sounds": [
+				{
+					"name": "sounds/sun_tribunal/normal_attack",
+					"volume": 1
+				}
+			]
+		},
+		"sound.eternal_seal_spawn2": {
+			"category": "hostile",
+			"min_distance": 0,
+			"max_distance": 64,
+			"sounds": [
+				{
+					"name": "sounds/eternal_seal/eternal_seal_spawn2",
+					"volume": 1
+				}
+			]
+		},
+		"mob.eternal_seal_start_death": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/eternal_seal/eternal_seal_start_death",
+					"volume": 1.5
+				}
+			]
+		},
+		"mob.phatom_sword_spin": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/msic/phatom_sword_spin",
+					"volume": 0.2
+				}
+			]
+		},
+		"sound.aegis_protection": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/msic/aegis_protection"
+				}
+			]
+		},
+		"sound.cosmic_terror_spawn": {
+			"sounds": [
+				{
+					"name": "sounds/mob/wither/spawn",
+					"volume": 1
+				}
+			],
+			"category": "hostile"
+		},
+		"mob.small_impact": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/msic/small_impact1",
+					"volume": 1
+				},
+				{
+					"name": "sounds/msic/small_impact2",
+					"volume": 1
+				}
+			]
+		},
+		"mob.spirit_scream": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/msic/spirit_scream1",
+					"volume": 1
+				},
+				{
+					"name": "sounds/msic/spirit_scream2",
+					"volume": 1
+				},
+				{
+					"name": "sounds/msic/spirit_scream3",
+					"volume": 1
+				}
+			]
+		},
+		"mob.cosmic_terror_roar": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/cosmic_terror/cosmic_terror_roar",
+					"volume": 1
+				}
+			]
+		},
+		"sound.powerful_sword_swing": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/msic/powerful_sword_swing1",
+					"volume": 1
+				},
+				{
+					"name": "sounds/msic/powerful_sword_swing2",
+					"volume": 1
+				},
+				{
+					"name": "sounds/msic/powerful_sword_swing3",
+					"volume": 1
+				}
+			]
+		},
+		"sound.sword_impact": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/msic/sword_impact1",
+					"volume": 1
+				},
+				{
+					"name": "sounds/msic/sword_impact2",
+					"volume": 1
+				}
+			]
+		},
+		"sound.nebulous_greatsword_song": {
+			"category": "music",
+			"sounds": [
+				{
+					"name": "sounds/msic/nebulous_greatsword_song",
+					"volume": 0.7,
+					"stream": true,
+					"load_on_low_memory": true
+				}
+			]
+		}
+	}
+}

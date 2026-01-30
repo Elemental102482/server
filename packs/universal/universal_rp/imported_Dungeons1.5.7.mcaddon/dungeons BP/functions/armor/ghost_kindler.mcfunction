@@ -1,0 +1,5 @@
+tag @a[tag=!dungeons:ghost_kindler_armour,hasitem=[{item=dungeons:ghost_kindler_helmet,location=slot.armor.head},{item=dungeons:ghost_kindler_chestplate,location=slot.armor.chest},{item=dungeons:ghost_kindler_leggings,location=slot.armor.legs},{item=dungeons:ghost_kindler_boots,location=slot.armor.feet}]] add dungeons:ghost_kindler_armour
+tag @a[tag=dungeons:ghost_kindler_armour,hasitem={quantity=0,item=dungeons:ghost_kindler_helmet,location=slot.armor.head}] remove dungeons:ghost_kindler_armour
+tag @a[tag=dungeons:ghost_kindler_armour,hasitem={quantity=0,item=dungeons:ghost_kindler_chestplate,location=slot.armor.chest}] remove dungeons:ghost_kindler_armour
+tag @a[tag=dungeons:ghost_kindler_armour,hasitem={quantity=0,item=dungeons:ghost_kindler_leggings,location=slot.armor.legs}] remove dungeons:ghost_kindler_armour
+tag @a[tag=dungeons:ghost_kindler_armour,hasitem={quantity=0,item=dungeons:ghost_kindler_boots,location=slot.armor.feet}] remove dungeons:ghost_kindler_armour

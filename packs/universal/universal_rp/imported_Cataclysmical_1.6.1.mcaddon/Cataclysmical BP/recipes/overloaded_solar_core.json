@@ -1,0 +1,37 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cata:overloaded_solar_core"
+		},
+		"pattern": [
+			"123",
+			"242",
+			"321"
+		],
+		"key": {
+			"1": {
+				"item": "cata:phantasma_nucleus"
+			},
+			"2": {
+				"item": "cata:solar_element"
+			},
+			"3": {
+				"item": "minecraft:netherite_scrap"
+			},
+			"4": {
+				"item": "cata:solar_core"
+			}
+		},
+		"result": {
+			"item": "cata:overloaded_solar_core",
+			"count": 1
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": {
+			"context": "AlwaysUnlocked"
+		}
+	}
+}

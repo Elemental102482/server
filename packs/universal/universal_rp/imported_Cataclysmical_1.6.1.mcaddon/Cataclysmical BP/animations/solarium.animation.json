@@ -1,0 +1,15 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.solarium.attack": {
+			"animation_length": 2
+		},
+		"animation.solarium.summon": {
+			"animation_length": 1.5
+		},
+		"animation.solarium.heavy_attack": {
+			"animation_length": 2.75,
+			"loop": false
+		}
+	}
+}

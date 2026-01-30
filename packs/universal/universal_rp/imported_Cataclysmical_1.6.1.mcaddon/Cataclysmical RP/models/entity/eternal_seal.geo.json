@@ -1,0 +1,592 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.eternal_seal",
+				"texture_width": 144,
+				"texture_height": 144,
+				"visible_bounds_width": 12,
+				"visible_bounds_height": 7.5,
+				"visible_bounds_offset": [
+					0,
+					3.25,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						12,
+						0
+					]
+				},
+				{
+					"name": "body",
+					"parent": "root",
+					"pivot": [
+						0,
+						30,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-15,
+								26,
+								-15
+							],
+							"size": [
+								30,
+								30,
+								30
+							],
+							"uv": [
+								0,
+								0
+							]
+						},
+						{
+							"origin": [
+								-10,
+								12,
+								-10
+							],
+							"size": [
+								20,
+								14,
+								20
+							],
+							"uv": [
+								0,
+								60
+							]
+						},
+						{
+							"origin": [
+								-4,
+								54,
+								-4
+							],
+							"size": [
+								8,
+								8,
+								8
+							],
+							"uv": [
+								0,
+								94
+							]
+						}
+					]
+				},
+				{
+					"name": "debris",
+					"parent": "root",
+					"pivot": [
+						0,
+						12,
+						0
+					]
+				},
+				{
+					"name": "large_rocks",
+					"parent": "debris",
+					"pivot": [
+						0,
+						42,
+						0
+					]
+				},
+				{
+					"name": "large_rock1",
+					"parent": "large_rocks",
+					"pivot": [
+						60.5,
+						32.5,
+						30.5
+					],
+					"cubes": [
+						{
+							"origin": [
+								53,
+								25,
+								23
+							],
+							"size": [
+								15,
+								15,
+								15
+							],
+							"uv": [
+								80,
+								60
+							]
+						}
+					]
+				},
+				{
+					"name": "large_rock2",
+					"parent": "large_rocks",
+					"pivot": [
+						-50.5,
+						49.5,
+						-30.5
+					],
+					"cubes": [
+						{
+							"origin": [
+								-58,
+								42,
+								-38
+							],
+							"size": [
+								15,
+								15,
+								15
+							],
+							"uv": [
+								80,
+								60
+							]
+						}
+					]
+				},
+				{
+					"name": "big_rocks",
+					"parent": "debris",
+					"pivot": [
+						0,
+						42,
+						0
+					]
+				},
+				{
+					"name": "big_rock1",
+					"parent": "big_rocks",
+					"pivot": [
+						26,
+						25,
+						34
+					],
+					"cubes": [
+						{
+							"origin": [
+								21,
+								20,
+								29
+							],
+							"size": [
+								10,
+								10,
+								10
+							],
+							"uv": [
+								80,
+								90
+							]
+						}
+					]
+				},
+				{
+					"name": "big_rock2",
+					"parent": "big_rocks",
+					"pivot": [
+						-27,
+						49,
+						29
+					],
+					"cubes": [
+						{
+							"origin": [
+								-32,
+								44,
+								24
+							],
+							"size": [
+								10,
+								10,
+								10
+							],
+							"uv": [
+								80,
+								90
+							]
+						}
+					]
+				},
+				{
+					"name": "big_rock3",
+					"parent": "big_rocks",
+					"pivot": [
+						-7,
+						44,
+						-39
+					],
+					"cubes": [
+						{
+							"origin": [
+								-12,
+								39,
+								-44
+							],
+							"size": [
+								10,
+								10,
+								10
+							],
+							"uv": [
+								80,
+								90
+							]
+						}
+					]
+				},
+				{
+					"name": "small_rocks",
+					"parent": "debris",
+					"pivot": [
+						0,
+						42,
+						0
+					]
+				},
+				{
+					"name": "small_rock1",
+					"parent": "small_rocks",
+					"pivot": [
+						25,
+						22,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								22,
+								19,
+								-3
+							],
+							"size": [
+								6,
+								6,
+								6
+							],
+							"uv": [
+								32,
+								94
+							]
+						}
+					]
+				},
+				{
+					"name": "small_rock2",
+					"parent": "small_rocks",
+					"pivot": [
+						-27,
+						30,
+						11
+					],
+					"cubes": [
+						{
+							"origin": [
+								-30,
+								27,
+								8
+							],
+							"size": [
+								6,
+								6,
+								6
+							],
+							"uv": [
+								32,
+								94
+							]
+						}
+					]
+				},
+				{
+					"name": "small_rock4",
+					"parent": "small_rocks",
+					"pivot": [
+						10,
+						55,
+						31
+					],
+					"cubes": [
+						{
+							"origin": [
+								7,
+								52,
+								28
+							],
+							"size": [
+								6,
+								6,
+								6
+							],
+							"uv": [
+								32,
+								94
+							]
+						}
+					]
+				},
+				{
+					"name": "small_rock3",
+					"parent": "small_rocks",
+					"pivot": [
+						27,
+						67,
+						-29
+					],
+					"cubes": [
+						{
+							"origin": [
+								24,
+								64,
+								-32
+							],
+							"size": [
+								6,
+								6,
+								6
+							],
+							"uv": [
+								32,
+								94
+							]
+						}
+					]
+				},
+				{
+					"name": "solar_cores",
+					"parent": "debris",
+					"pivot": [
+						0,
+						82,
+						0
+					]
+				},
+				{
+					"name": "solar_core8",
+					"parent": "solar_cores",
+					"pivot": [
+						-30,
+						82,
+						30
+					],
+					"cubes": [
+						{
+							"origin": [
+								-34,
+								78,
+								26
+							],
+							"size": [
+								8,
+								8,
+								8
+							],
+							"uv": [
+								0,
+								94
+							]
+						}
+					]
+				},
+				{
+					"name": "solar_core7",
+					"parent": "solar_cores",
+					"pivot": [
+						30,
+						82,
+						-30
+					],
+					"cubes": [
+						{
+							"origin": [
+								26,
+								78,
+								-34
+							],
+							"size": [
+								8,
+								8,
+								8
+							],
+							"uv": [
+								0,
+								94
+							]
+						}
+					]
+				},
+				{
+					"name": "solar_core6",
+					"parent": "solar_cores",
+					"pivot": [
+						-30,
+						82,
+						-30
+					],
+					"cubes": [
+						{
+							"origin": [
+								-34,
+								78,
+								-34
+							],
+							"size": [
+								8,
+								8,
+								8
+							],
+							"uv": [
+								0,
+								94
+							]
+						}
+					]
+				},
+				{
+					"name": "solar_core5",
+					"parent": "solar_cores",
+					"pivot": [
+						-38,
+						82,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-42,
+								78,
+								-4
+							],
+							"size": [
+								8,
+								8,
+								8
+							],
+							"uv": [
+								0,
+								94
+							]
+						}
+					]
+				},
+				{
+					"name": "solar_core4",
+					"parent": "solar_cores",
+					"pivot": [
+						0,
+						82,
+						-38
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								78,
+								-42
+							],
+							"size": [
+								8,
+								8,
+								8
+							],
+							"uv": [
+								0,
+								94
+							]
+						}
+					]
+				},
+				{
+					"name": "solar_core3",
+					"parent": "solar_cores",
+					"pivot": [
+						38,
+						82,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								34,
+								78,
+								-4
+							],
+							"size": [
+								8,
+								8,
+								8
+							],
+							"uv": [
+								0,
+								94
+							]
+						}
+					]
+				},
+				{
+					"name": "solar_core2",
+					"parent": "solar_cores",
+					"pivot": [
+						0,
+						82,
+						38
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								78,
+								34
+							],
+							"size": [
+								8,
+								8,
+								8
+							],
+							"uv": [
+								0,
+								94
+							]
+						}
+					]
+				},
+				{
+					"name": "solar_core1",
+					"parent": "solar_cores",
+					"pivot": [
+						30,
+						82,
+						30
+					],
+					"cubes": [
+						{
+							"origin": [
+								26,
+								78,
+								26
+							],
+							"size": [
+								8,
+								8,
+								8
+							],
+							"uv": [
+								0,
+								94
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

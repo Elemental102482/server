@@ -1,0 +1,68 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.solar_tesla.move_controller": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"move": "q.ground_speed>0.1"
+						}
+					],
+					"blend_transition": 0.4,
+					"animations": [
+						"idle"
+					]
+				},
+				"move": {
+					"animations": [
+						"move"
+					],
+					"transitions": [
+						{
+							"default": "q.ground_speed<0.1"
+						}
+					],
+					"blend_transition": 0.4
+				}
+			}
+		},
+		"controller.animation.solar_tesla.attack_controller": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"attack": "query.is_delayed_attacking==1&&query.skin_id==0"
+						},
+						{
+							"summon": "query.is_casting&&query.skin_id==1"
+						}
+					],
+					"blend_transition": 0.4
+				},
+				"attack": {
+					"animations": [
+						"attack"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_delayed_attacking"
+						}
+					],
+					"blend_transition": 0.4
+				},
+				"summon": {
+					"animations": [
+						"summon"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_casting"
+						}
+					],
+					"blend_transition": 0.4
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"format_version": "1.21.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "cata:exodius_ore",
+			"menu_category": {
+				"category": "nature",
+				"group": "minecraft:itemGroup.name.ore"
+			}
+		},
+		"components": {
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 7.5,
+				"item_specific_speeds": [
+					{
+						"destroy_speed": 0.5,
+						"item": "cata:sunflare_pickaxe"
+					}
+				]
+			},
+			"minecraft:loot": "loot_tables/blocks/exodius_ore.json",
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 9999
+			}
+		}
+	}
+}

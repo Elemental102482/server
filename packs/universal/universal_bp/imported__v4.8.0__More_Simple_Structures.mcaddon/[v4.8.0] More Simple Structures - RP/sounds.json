@@ -1,0 +1,81 @@
+//bridge-file-version: #39
+{
+	"entity_sounds": {
+		"entities": {
+			"korbon:mummy": {
+				"volume": 1,
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"events": {
+					"ambient": "mob.mummy.ambient",
+					"hurt": "mob.mummy.hurt",
+					"death": "mob.mummy.death",
+					"step": {
+						"sound": "mob.mummy.step",
+						"volume": 0.15,
+						"pitch": 1
+					}
+				}
+			},
+			"korbon:pirate": {
+				"volume": 1,
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"events": {
+					"ambient": "mob.pirate.idle",
+					"hurt": "mob.pirate.hurt",
+					"death": "mob.pirate.death",
+					"ambient.in.raid": {
+						"sound": "mob.pirate.idle",
+						"volume": 3,
+						"pitch": [
+							0.8,
+							1.2
+						]
+					},
+					"celebrate": "mob.pirate.celebrate"
+				}
+			},
+			"korbon:possessed_cow": {
+				"events": {
+					"ambient": "mob.cow.say",
+					"death": "mob.cow.hurt",
+					"hurt": "mob.cow.hurt",
+					"step": {
+						"pitch": [
+							0.9,
+							1.1
+						],
+						"sound": "mob.cow.step",
+						"volume": 0.65
+					}
+				},
+				"pitch": [
+					0.5,
+					0.5
+				],
+				"volume": 1
+			},
+			"korbon:possessed_villager": {
+				"events": {
+					"ambient": "mob.villager.idle",
+					"death": "mob.villager.death",
+					"death.to.zombie": "mob.villager.death",
+					"haggle": "mob.villager.haggle",
+					"haggle.no": "mob.villager.no",
+					"haggle.yes": "mob.villager.yes",
+					"hurt": "mob.villager.hit"
+				},
+				"pitch": [
+					0.5,
+					0.5
+				],
+				"volume": 1
+			}
+		}
+	}
+}

@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "vengeful_heart_of_ender",
+        "metalness_emissive_roughness": "vengeful_heart_of_ender_mer"
+    }
+}

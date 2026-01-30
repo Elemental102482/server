@@ -1,0 +1,107 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "cata:sun_orb",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"despawn": {
+				"minecraft:instant_despawn": {
+					"remove_child_entities": true
+				}
+			},
+			"test": {
+				"minecraft:timer": {
+					"looping": true,
+					"time": [
+						0.1,
+						0.1
+					],
+					"time_down_event": {
+						"event": "despawn"
+					}
+				}
+			}
+		},
+		"components": {
+			"minecraft:health": {
+				"value": 999
+			},
+			"minecraft:physics": {
+				"has_collision": true,
+				"has_gravity": false,
+				"push_towards_closest_space": true
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "fall",
+						"deals_damage": false
+					},
+					{
+						"on_damage": {
+							"filters": {
+								"test": "has_damage",
+								"subject": "self",
+								"value": "attack"
+							},
+							"event": "blow_up"
+						},
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:knockback_resistance": {
+				"value": 1
+			},
+			"minecraft:type_family": {
+				"family": [
+					"inanimate"
+				]
+			},
+			"minecraft:custom_hit_test": {
+				"hitboxes": [
+					{
+						"width": 1,
+						"height": 1,
+						"pivot": [
+							0,
+							0.4,
+							0
+						]
+					}
+				]
+			}
+		},
+		"events": {
+			"blow_up": {
+				"sequence": [
+					{
+						"queue_command": {
+							"command": [
+								"particle cata:sun_orb_explode ~ ~ ~",
+								"summon cata:sun_orb_damage ~ ~ ~"
+							]
+						},
+						"add": {
+							"component_groups": [
+								"test"
+							]
+						}
+					}
+				]
+			},
+			"despawn": {
+				"add": {
+					"component_groups": [
+						"despawn"
+					]
+				}
+			}
+		}
+	}
+}

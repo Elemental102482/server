@@ -1,0 +1,29 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.endersent.attack": {
+			"initial_state": "default",
+			"states": {
+				"attacking": {
+					"animations": [
+						"attack.rotations"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_delayed_attacking"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"default": {
+					"transitions": [
+						{
+							"attacking": "query.is_delayed_attacking==1"
+						}
+					],
+					"blend_transition": 0.3
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.player.greatsword_hold": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.257193,
+			"bones": {
+				"leftarm": {
+					"rotation": [
+						"(v.is_first_person?0:-variable.tcos0)+(v.is_first_person?0:-68.5)",
+						"v.is_first_person?0:26.5",
+						"v.is_first_person?0:17.5"
+					]
+				},
+				"rightItem": {
+					"position": [
+						"v.is_first_person?0:2",
+						"v.is_first_person?0:-1",
+						"v.is_first_person?0:0"
+					]
+				},
+				"rightarm": {
+					"rotation": [
+						"(v.is_first_person?0:-55.5)+(v.is_first_person?0:variable.tcos0/2)",
+						"v.is_first_person?0:-20.2",
+						"v.is_first_person?0:-9"
+					]
+				}
+			}
+		}
+	}
+}

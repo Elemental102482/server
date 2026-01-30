@@ -1,0 +1,23 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.vengeful_heart_of_ender.particles": {
+			"loop": true,
+			"animation_length": 0.9,
+			"particle_effects": {
+				"0.0": {
+					"effect": "neckFlame",
+					"locator": "headsmoke"
+				},
+				"0.01": {
+					"effect": "hornFlame",
+					"locator": "hornleft"
+				},
+				"0.02": {
+					"effect": "hornFlame",
+					"locator": "hornright"
+				}
+			}
+		}
+	}
+}

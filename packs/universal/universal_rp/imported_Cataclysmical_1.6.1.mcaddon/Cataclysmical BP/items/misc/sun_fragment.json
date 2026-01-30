@@ -1,0 +1,23 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:item": {
+		"description": {
+			"identifier": "cata:sun_fragment",
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:block_placer": {
+				"block": "cata:sun_fragment",
+				"use_on": [
+					"cata:sun_fragment"
+				],
+				"replace_block_item": true
+			},
+			"minecraft:rarity": {
+				"value": "rare"
+			}
+		}
+	}
+}

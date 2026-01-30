@@ -1,0 +1,137 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.custom_bow_standby",
+				"texture_width": 18,
+				"texture_height": 18
+			},
+			"bones": [
+				{
+					"name": "rightItem",
+					"binding": "q.item_slot_to_bone_name(c.item_slot)",
+					"texture_meshes": [
+						{
+							"local_pivot": [
+								6,
+								0,
+								6
+							],
+							"position": [
+								2,
+								1,
+								-2
+							],
+							"rotation": [
+								0,
+								-135,
+								90
+							],
+							"texture": "bow_standby"
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.custom_bow_pulling_0",
+				"texture_width": 18,
+				"texture_height": 18
+			},
+			"bones": [
+				{
+					"name": "rightItem",
+					"binding": "q.item_slot_to_bone_name(c.item_slot)",
+					"texture_meshes": [
+						{
+							"local_pivot": [
+								6,
+								0,
+								6
+							],
+							"position": [
+								2,
+								1,
+								-1
+							],
+							"rotation": [
+								0,
+								-135,
+								90
+							],
+							"texture": "bow_pulling_0"
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.custom_bow_pulling_1",
+				"texture_width": 18,
+				"texture_height": 18
+			},
+			"bones": [
+				{
+					"name": "rightItem",
+					"binding": "q.item_slot_to_bone_name(c.item_slot)",
+					"texture_meshes": [
+						{
+							"local_pivot": [
+								6,
+								0,
+								6
+							],
+							"position": [
+								2.01,
+								1,
+								-1
+							],
+							"rotation": [
+								0,
+								-135,
+								90
+							],
+							"texture": "bow_pulling_1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.custom_bow_pulling_2",
+				"texture_width": 18,
+				"texture_height": 18
+			},
+			"bones": [
+				{
+					"name": "rightItem",
+					"binding": "q.item_slot_to_bone_name(c.item_slot)",
+					"texture_meshes": [
+						{
+							"local_pivot": [
+								6,
+								0,
+								6
+							],
+							"position": [
+								2.01,
+								1,
+								-1
+							],
+							"rotation": [
+								0,
+								-135,
+								90
+							],
+							"texture": "bow_pulling_2"
+						}
+					]
+				}
+			]
+		}
+	]
+}

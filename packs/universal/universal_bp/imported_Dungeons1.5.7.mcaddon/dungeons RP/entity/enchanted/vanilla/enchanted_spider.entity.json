@@ -1,0 +1,44 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:enchanted_spider",
+			"min_engine_version": "1.10.0",
+			"materials": {
+				"default": "entity_emissive_alpha",
+				"invisible": "spider_invisible",
+				"enchanted": "dungeons_entity_enchant"
+			},
+			"textures": {
+				"default": "textures/entity/spider/enchanted_spider",
+				"enchanted": "textures/misc/enchanted_entity_glint"
+			},
+			"geometry": {
+				"default": "geometry.spider.v1.8"
+			},
+			"particle_effects": {
+				"enchant": "dungeons:spider_enchant"
+			},
+			"scripts": {
+				"animate": [
+					"move_controller",
+					"enchanted_particles"
+				]
+			},
+			"animations": {
+				"enchanted_particles": "animation.enchanted_mob.particles",
+				"default_leg_pose": "animation.spider.default_leg_pose",
+				"look_at_target": "animation.spider.look_at_target",
+				"walk": "animation.spider.walk",
+				"move_controller": "controller.animation.spider.move"
+			},
+			"render_controllers": [
+				"controller.render.spider",
+				"controller.render.dungeons_entity_enchanted"
+			],
+			"spawn_egg": {
+				"texture": "egg_enchanted_spider"
+			}
+		}
+	}
+}

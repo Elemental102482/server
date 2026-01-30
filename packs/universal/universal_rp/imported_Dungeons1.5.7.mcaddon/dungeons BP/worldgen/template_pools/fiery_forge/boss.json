@@ -1,0 +1,18 @@
+{
+    "format_version": "1.21.20",
+    "minecraft:template_pool": {
+        "description": {
+            "identifier": "dungeons:forge_boss"
+        },
+        "elements": [
+            {
+                "element": {
+                    "element_type": "minecraft:single_pool_element",
+                    "location": "fiery_forge/boss_room",
+                    "processors": "dungeons:forge_processor_boss"
+                },
+                "weight": 1
+            }
+        ]
+    }
+}

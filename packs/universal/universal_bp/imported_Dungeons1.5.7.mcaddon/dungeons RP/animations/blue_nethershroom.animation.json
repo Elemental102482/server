@@ -1,0 +1,22 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.blue_nethershroom.spin": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [
+						"q.anim_time*600+q.rotation_to_camera(0)",
+						"query.rotation_to_camera(1)-query.body_y_rotation",
+						0
+					],
+					"position": [
+						0,
+						"math.cos(q.anim_time*1200)*0.21",
+						0
+					]
+				}
+			}
+		}
+	}
+}

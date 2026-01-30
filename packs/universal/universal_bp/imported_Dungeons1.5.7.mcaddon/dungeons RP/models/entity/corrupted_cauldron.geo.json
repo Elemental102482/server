@@ -1,0 +1,429 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.corrupted_cauldron",
+				"texture_width": 160,
+				"texture_height": 160,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [
+					0,
+					1.25,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "cauldron",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "base",
+					"parent": "cauldron",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-2,
+								0,
+								-14
+							],
+							"size": [
+								4,
+								4,
+								28
+							],
+							"uv": [
+								96,
+								32
+							]
+						},
+						{
+							"origin": [
+								6,
+								0,
+								-14
+							],
+							"size": [
+								4,
+								4,
+								28
+							],
+							"uv": [
+								96,
+								32
+							],
+							"mirror": true
+						},
+						{
+							"origin": [
+								-10,
+								0,
+								-14
+							],
+							"size": [
+								4,
+								4,
+								28
+							],
+							"uv": [
+								88,
+								0
+							]
+						},
+						{
+							"origin": [
+								-4,
+								0,
+								-16
+							],
+							"size": [
+								4,
+								4,
+								28
+							],
+							"inflate": 0.015,
+							"pivot": [
+								-2,
+								2,
+								0
+							],
+							"rotation": [
+								0,
+								-90,
+								0
+							],
+							"uv": [
+								88,
+								0
+							]
+						},
+						{
+							"origin": [
+								-4,
+								0,
+								-8
+							],
+							"size": [
+								4,
+								4,
+								28
+							],
+							"inflate": 0.015,
+							"pivot": [
+								-2,
+								2,
+								8
+							],
+							"rotation": [
+								0,
+								-90,
+								0
+							],
+							"uv": [
+								88,
+								0
+							],
+							"mirror": true
+						},
+						{
+							"origin": [
+								-4,
+								0,
+								-24
+							],
+							"size": [
+								4,
+								4,
+								28
+							],
+							"inflate": 0.015,
+							"pivot": [
+								-2,
+								2,
+								-8
+							],
+							"rotation": [
+								0,
+								-90,
+								0
+							],
+							"uv": [
+								96,
+								32
+							]
+						}
+					],
+					"locators": {
+						"base_flame": [
+							0,
+							6,
+							0
+						]
+					}
+				},
+				{
+					"name": "cauldron2",
+					"parent": "base",
+					"pivot": [
+						0,
+						4,
+						0
+					]
+				},
+				{
+					"name": "lower_mouth",
+					"parent": "cauldron2",
+					"pivot": [
+						0,
+						7,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-11,
+								4.15,
+								-11
+							],
+							"size": [
+								22,
+								4,
+								22
+							],
+							"inflate": 0.1,
+							"uv": [
+								0,
+								38
+							]
+						},
+						{
+							"origin": [
+								-8.5,
+								5,
+								-8.5
+							],
+							"size": [
+								17,
+								4,
+								17
+							],
+							"inflate": 0.1,
+							"uv": [
+								64,
+								104
+							]
+						},
+						{
+							"origin": [
+								-8.5,
+								6,
+								-8.5
+							],
+							"size": [
+								17,
+								12,
+								17
+							],
+							"inflate": -0.76,
+							"uv": [
+								0,
+								64
+							]
+						}
+					],
+					"locators": {
+						"mouth": [
+							0,
+							8,
+							0
+						]
+					}
+				},
+				{
+					"name": "upper",
+					"parent": "cauldron2",
+					"pivot": [
+						0,
+						13,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-11,
+								7,
+								-11
+							],
+							"size": [
+								22,
+								16,
+								22
+							],
+							"uv": [
+								0,
+								0
+							]
+						},
+						{
+							"origin": [
+								-8,
+								23,
+								-8
+							],
+							"size": [
+								3,
+								3,
+								16
+							],
+							"uv": [
+								89,
+								65
+							]
+						},
+						{
+							"origin": [
+								5,
+								23,
+								-8
+							],
+							"size": [
+								3,
+								3,
+								16
+							],
+							"uv": [
+								89,
+								65
+							],
+							"mirror": true
+						},
+						{
+							"origin": [
+								-5,
+								23,
+								-8
+							],
+							"size": [
+								10,
+								3,
+								3
+							],
+							"uv": [
+								76,
+								68
+							]
+						},
+						{
+							"origin": [
+								-5,
+								23,
+								5
+							],
+							"size": [
+								10,
+								3,
+								3
+							],
+							"pivot": [
+								0,
+								24.5,
+								6.5
+							],
+							"rotation": [
+								0,
+								180,
+								0
+							],
+							"uv": [
+								76,
+								68
+							]
+						}
+					],
+					"locators": {
+						"bubble": [
+							0,
+							25,
+							0
+						]
+					}
+				},
+				{
+					"name": "wave",
+					"parent": "upper",
+					"pivot": [
+						0,
+						23.1,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-7,
+								23.16,
+								-7
+							],
+							"size": [
+								14,
+								0,
+								14
+							],
+							"uv": [
+								-14,
+								38
+							]
+						}
+					]
+				},
+				{
+					"name": "ladle",
+					"parent": "upper",
+					"pivot": [
+						0,
+						23,
+						1
+					],
+					"cubes": [
+						{
+							"origin": [
+								-1,
+								21,
+								6.5
+							],
+							"size": [
+								2,
+								16,
+								1
+							],
+							"pivot": [
+								0,
+								30,
+								7.5
+							],
+							"rotation": [
+								-32.5,
+								0,
+								0
+							],
+							"uv": [
+								116,
+								9
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

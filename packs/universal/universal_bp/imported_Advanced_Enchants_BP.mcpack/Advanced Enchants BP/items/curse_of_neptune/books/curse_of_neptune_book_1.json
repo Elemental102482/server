@@ -1,0 +1,22 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "e:curse_of_neptune_book_1",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "book_enchanted"
+			},
+			"minecraft:display_name": {
+				"value": "§eEnchanted Book \n§5Curse of Neptune I \n§dCan Enchant: \n§7-Sword \n§aAbility: \n§7-Has a 20 Procent chance of freezing mobs when striking \n§6Advanced Enchants"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.enchantedBook"
+			},
+			"minecraft:foil": true,
+			"minecraft:max_stack_size": 1
+		}
+	}
+}

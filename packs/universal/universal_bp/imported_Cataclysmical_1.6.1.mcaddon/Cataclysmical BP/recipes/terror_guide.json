@@ -1,0 +1,31 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cata:terror_guide"
+		},
+		"pattern": [
+			"111",
+			" 2 ",
+			" 1 "
+		],
+		"key": {
+			"1": {
+				"item": "cata:terrorite_brick"
+			},
+			"2": {
+				"item": "cata:ectoplasm"
+			}
+		},
+		"result": {
+			"item": "cata:terror_guide",
+			"count": 1
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": {
+			"context": "AlwaysUnlocked"
+		}
+	}
+}

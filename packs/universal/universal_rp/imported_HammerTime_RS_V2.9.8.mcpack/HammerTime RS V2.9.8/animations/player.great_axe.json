@@ -1,0 +1,25 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.player.great_axe_tool.first_person": {
+			"loop": true,
+			"bones": {
+				"rightitem": {
+					"rotation": ["c.is_first_person ? 150 : 0", "c.is_first_person ? 20 : 0", "c.is_first_person ? 60 : 0"],
+					"position": [" c.is_first_person ? 3 : 0", "c.is_first_person ? -2 : 0", "c.is_first_person ? 2 : 0"],
+					"scale": 0.4
+				}
+			}
+		},
+		"animation.player.great_axe_tool": {
+			"loop": true,
+			"bones": {
+				"rightitem": {
+					"rotation": [90, 0, 90],
+					"position": [0, -1, -4.2],
+					"scale": 0.5
+				}
+			}
+		}
+	}
+}

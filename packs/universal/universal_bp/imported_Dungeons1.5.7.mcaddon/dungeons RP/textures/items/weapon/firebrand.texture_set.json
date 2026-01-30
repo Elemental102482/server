@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "firebrand",
+        "metalness_emissive_roughness": "firebrand_mer"
+    }
+}

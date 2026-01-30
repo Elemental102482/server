@@ -1,0 +1,31 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:biomine",
+			"materials": {
+				"default": "entity_emissive"
+			},
+			"textures": {
+				"default": "textures/entity/ancient_guardian/biomine"
+			},
+			"geometry": {
+				"default": "geometry.biomine"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"animations": {
+				"idle": "animation.biomine.idle",
+				"move": "animation.biomine.roll",
+				"move_controller": "controller.animation.biomine.move"
+			},
+			"scripts": {
+				"animate": [
+					"idle",
+					"move_controller"
+				]
+			}
+		}
+	}
+}

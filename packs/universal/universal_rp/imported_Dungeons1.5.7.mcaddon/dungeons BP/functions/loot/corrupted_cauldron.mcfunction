@@ -1,0 +1,1 @@
+loot spawn ^^1.5^0.5 loot "chests/diamond_chest/corrupted_cauldron"

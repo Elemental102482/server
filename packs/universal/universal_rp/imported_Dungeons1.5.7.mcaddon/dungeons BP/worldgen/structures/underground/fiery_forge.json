@@ -1,0 +1,44 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:jigsaw": {
+    "description": {
+      "identifier": "dungeons:fiery_forge"
+    },
+    "biome_filters": [
+      {
+        "any_of": [
+          {
+            "test": "has_biome_tag",
+            "operator": "==",
+            "value": "overworld"
+          },
+          {
+            "test": "has_biome_tag",
+            "operator": "==",
+            "value": "overworld_generation"
+          }
+        ]
+      }
+    ],
+    "heightmap_projection": "none",
+    "max_depth": 15,
+    "dimension_padding": {
+      "bottom": 0,
+      "top": 256
+    },
+    "start_height": {
+      "type": "constant",
+      "value": {
+        "above_bottom": 5
+      }
+    },
+    "max_distance_from_center": {
+      "vertical": 96,
+      "horizontal": 128
+    },
+    "liquid_settings": "ignore_waterlogging",
+    "start_pool": "dungeons:forge_main",
+    "step": "underground_structures",
+    "terrain_adaptation": "encapsulate"
+  }
+}

@@ -1,0 +1,35 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "cata:bloom_poison",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/blank"
+			},
+			"geometry": {
+				"default": "geometry.bloom_poison"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"base_color": "#000000",
+				"overlay_color": "#FFFFFF"
+			},
+			"animations": {
+				"bloom_poison": "animation.bloom_poison.bloom_poison"
+			},
+			"particle_effects": {
+				"bloom_poison_aoe": "cata:bloom_poison_aoe"
+			},
+			"scripts": {
+				"animate": [
+					"bloom_poison"
+				]
+			}
+		}
+	}
+}

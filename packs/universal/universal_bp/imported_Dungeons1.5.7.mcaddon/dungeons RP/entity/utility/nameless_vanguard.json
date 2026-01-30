@@ -1,0 +1,38 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:nameless_vanguard",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/skeleton/vanguard",
+				"glaive": "textures/entity/skeleton/glaive"
+			},
+			"geometry": {
+				"default": "geometry.vanguard"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"animations": {
+				"summon": "animation.vanguard.summon",
+				"glaive": "animation.vanguard.glaive"
+			},
+			"particle_effects": {
+				"summon": "dungeons:vanguard_summon1"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+				],
+				"animate": [
+					"summon",
+					"glaive"
+				]
+			},
+			"enable_attachables": true
+		}
+	}
+}

@@ -1,0 +1,63 @@
+{
+  "format_version": 2,
+  "metadata": {
+    "authors": [
+      "Minera"
+    ]
+  },
+  "header": {
+    "name": "Cataclysmical",
+    "description": "Cataclysmical By Minera Studios",
+    "min_engine_version": [
+      1,
+      20,
+      60
+    ],
+    "uuid": "6f5a94ec-5dc8-43ac-8915-e4bae3f851aa",
+    "version": [
+      1,
+      0,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "d0b9a85a-fa18-4ba1-b2f8-dd3522577e5d",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "script",
+      "language": "javascript",
+      "uuid": "16550f50-f847-4db7-954f-128c84241eea",
+      "entry": "scripts/main.js",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "c7cc45a5-1f1e-4c1a-93f4-83c9ec683100",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "module_name": "@minecraft/server",
+      "version": "2.1.0"
+    },
+    {
+      "module_name": "@minecraft/server-ui",
+      "version": "2.0.0"
+    }
+  ]
+}

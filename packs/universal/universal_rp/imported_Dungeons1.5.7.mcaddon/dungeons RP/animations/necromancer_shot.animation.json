@@ -1,0 +1,15 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.necromancer_shot.particles": {
+			"loop": true,
+			"animation_length": 0.02,
+			"particle_effects": {
+				"0.01": {
+					"effect": "energy",
+					"locator": "particles"
+				}
+			}
+		}
+	}
+}

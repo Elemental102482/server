@@ -1,0 +1,31 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:vhoe_bomb",
+			"materials": {
+				"default": "entity_emissive"
+			},
+			"textures": {
+				"default": "textures/entity/vengeful_heart_of_ender/vhoe_bomb"
+			},
+			"geometry": {
+				"default": "geometry.redstone_mine"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"animations": {
+				"particles": "animation.redstone_mine.particles"
+			},
+			"particle_effects": {
+				"mine": "dungeons:vhoe_bomb"
+			},
+			"scripts": {
+				"animate": [
+					"particles"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,5 @@
+tag @a[tag=!dungeons:unstable_armour,hasitem=[{item=dungeons:unstable_helmet,location=slot.armor.head},{item=dungeons:unstable_chestplate,location=slot.armor.chest},{item=dungeons:unstable_leggings,location=slot.armor.legs},{item=dungeons:unstable_boots,location=slot.armor.feet}]] add dungeons:unstable_armour
+tag @a[tag=dungeons:unstable_armour,hasitem={quantity=0,item=dungeons:unstable_helmet,location=slot.armor.head}] remove dungeons:unstable_armour
+tag @a[tag=dungeons:unstable_armour,hasitem={quantity=0,item=dungeons:unstable_chestplate,location=slot.armor.chest}] remove dungeons:unstable_armour
+tag @a[tag=dungeons:unstable_armour,hasitem={quantity=0,item=dungeons:unstable_leggings,location=slot.armor.legs}] remove dungeons:unstable_armour
+tag @a[tag=dungeons:unstable_armour,hasitem={quantity=0,item=dungeons:unstable_boots,location=slot.armor.feet}] remove dungeons:unstable_armour

@@ -1,0 +1,73 @@
+{
+	"format_version": "1.21.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "cata:verdant_vault",
+			"menu_category": {
+				"category": "construction"
+			},
+			"states": {
+				"cata:activate": [
+					false,
+					true
+				]
+			}
+		},
+		"components": {
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 99999
+			},
+			"minecraft:loot": "loot_tables/empty.json",
+			"minecraft:destructible_by_explosion": false,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "cata_verdant_vault_side",
+					"render_method": "alpha_test"
+				},
+				"up": {
+					"texture": "cata_verdant_vault_top",
+					"render_method": "alpha_test"
+				},
+				"down": {
+					"texture": "cata_verdant_vault_bottom",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:geometry": "minecraft:geometry.full_block",
+			"minecraft:custom_components": [
+				"component:verdant_vault"
+			]
+		},
+		"permutations": [
+			{
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "cata_verdant_vault_side",
+							"render_method": "alpha_test"
+						},
+						"up": {
+							"texture": "cata_verdant_vault_top_open",
+							"render_method": "alpha_test"
+						},
+						"down": {
+							"texture": "cata_verdant_vault_bottom",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"looping": true,
+						"interval_range": [
+							45,
+							45
+						]
+					},
+					"minecraft:custom_components": [
+						"component:verdant_vault_break"
+					]
+				},
+				"condition": "q.block_state('cata:activate')"
+			}
+		]
+	}
+}

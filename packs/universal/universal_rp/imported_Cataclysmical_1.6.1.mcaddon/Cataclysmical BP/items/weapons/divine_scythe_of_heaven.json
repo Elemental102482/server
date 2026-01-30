@@ -1,0 +1,31 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:item": {
+		"description": {
+			"identifier": "cata:divine_scythe_of_heaven",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:can_destroy_in_creative": false,
+			"minecraft:damage": 25,
+			"minecraft:block_placer": {
+				"block": "cata:divine_scythe_of_heaven",
+				"use_on": [
+					"cata:divine_scythe_of_heaven"
+				],
+				"replace_block_item": true
+			},
+			"minecraft:rarity": {
+				"value": "epic"
+			},
+			"minecraft:cooldown": {
+				"category": "divine_scythe_of_heaven",
+				"duration": 2
+			}
+		}
+	}
+}

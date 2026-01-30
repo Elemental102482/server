@@ -1,0 +1,82 @@
+{
+	"format_version": "1.21.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "cata:emberglow",
+			"menu_category": {
+				"category": "nature"
+			},
+			"states": {
+				"cata:stepon": [
+					false,
+					true
+				]
+			}
+		},
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "cata_emberglow",
+					"render_method": "opaque",
+					"ambient_occlusion": false,
+					"face_dimming": false
+				}
+			},
+			"minecraft:light_emission": 15,
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 9999
+			},
+			"minecraft:geometry": {
+				"identifier": "geometry.emberglow"
+			},
+			"minecraft:custom_components": [
+				"component:emberglow_stepon"
+			],
+			"minecraft:collision_box": {
+				"size": [
+					16,
+					5,
+					16
+				],
+				"origin": [
+					-8,
+					0,
+					-8
+				]
+			},
+			"minecraft:selection_box": {
+				"size": [
+					16,
+					14,
+					16
+				],
+				"origin": [
+					-8,
+					0,
+					-8
+				]
+			},
+			"minecraft:replaceable": {},
+			"minecraft:loot": "loot_tables/empty.json",
+			"minecraft:friction": 0.1
+		},
+		"permutations": [
+			{
+				"components": {
+					"minecraft:custom_components": [
+						"component:emberglow",
+						"component:emberglow_stepoff"
+					],
+					"minecraft:tick": {
+						"interval_range": [
+							10,
+							10
+						],
+						"looping": true
+					}
+				},
+				"condition": "q.block_state('cata:stepon')"
+			}
+		]
+	}
+}

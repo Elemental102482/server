@@ -1,0 +1,118 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.guardian_vex.idle": {
+			"loop": true,
+			"animation_length": 2,
+			"bones": {
+				"leftArm": {
+					"rotation": {
+						"0.0": [
+							-2,
+							0,
+							0
+						],
+						"0.75": [
+							-10,
+							0,
+							0
+						],
+						"2.0": [
+							-2,
+							0,
+							0
+						]
+					}
+				},
+				"rightArm": {
+					"rotation": {
+						"0.0": [
+							-2,
+							0,
+							0
+						],
+						"0.75": [
+							-10,
+							0,
+							0
+						],
+						"2.0": [
+							-2,
+							0,
+							0
+						]
+					}
+				},
+				"leftWing": {
+					"rotation": [
+						"27-this",
+						"-(15+math.cos(query.life_time*916.8)*9)-this",
+						"-25-this"
+					]
+				},
+				"rightWing": {
+					"rotation": [
+						"27-this",
+						"15+math.cos(query.life_time*916.8)*9-this",
+						"25-this"
+					]
+				},
+				"rightItem": {
+					"scale": 0.9
+				},
+				"leftItem": {
+					"scale": 0.9
+				}
+			}
+		},
+		"animation.guardian_vex.particles": {
+			"loop": true,
+			"animation_length": 0.23,
+			"particle_effects": {
+				"0.01": {
+					"effect": "glow",
+					"locator": "enchanted_particles"
+				}
+			}
+		},
+		"animation.guardian_vex.charging": {
+			"loop": true,
+			"bones": {
+				"leftArm": {
+					"rotation": [
+						20,
+						0,
+						0
+					]
+				},
+				"rightArm": {
+					"rotation": [
+						20,
+						0,
+						0
+					]
+				},
+				"leftWing": {
+					"rotation": [
+						"27-this",
+						"-(15+math.cos(query.life_time*916.8)*9)-this",
+						"-25-this"
+					]
+				},
+				"rightWing": {
+					"rotation": [
+						"27-this",
+						"15+math.cos(query.life_time*916.8)*9-this",
+						"25-this"
+					]
+				},
+				"rightItem": {
+					"scale": 0.9
+				},
+				"leftItem": {
+					"scale": 0.9
+				}
+			}
+		}
+	}
+}

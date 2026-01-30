@@ -1,0 +1,20 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:item": {
+		"description": {
+			"identifier": "cata:blooming_heart",
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:block_placer": {
+				"block": "cata:blooming_heart",
+				"use_on": [
+					"cata:blooming_heart"
+				],
+				"replace_block_item": true
+			}
+		}
+	}
+}

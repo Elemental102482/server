@@ -1,0 +1,42 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:redstone_core",
+			"min_engine_version": "1.10.0",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/redstone_core"
+			},
+			"geometry": {
+				"default": "geometry.redstone_core"
+			},
+			"scripts": {
+				"should_update_bones_and_effects_offscreen": true,
+				"animate": [
+					"redstone_core_controller"
+				]
+			},
+			"animations": {
+				"explode": "animation.redstone_core.explode",
+				"reload": "animation.redstone_core.reload",
+				"redstone_core_controller": "controller.animation.redstone_core"
+			},
+			"sound_effects": {
+				"explode": "mob.monstrosity.exploding",
+				"zap": "mob.monstrosity.zap",
+				"reload": "mob.monstrosity.reload"
+			},
+			"particle_effects": {
+				"redstone": "dungeons:redstone_core",
+				"ring": "dungeons:explosion_ring_forge",
+				"smoke": "dungeons:forge_smoke"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "system:lapis_great_shovel"
+    },
+
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " CC",
+      " SC",
+      "S "
+    ],
+    "key": {
+      "S": {
+        "item": "minecraft:stick"
+      },
+      "C": {
+        "item": "minecraft:lapis_block"
+      }
+    },
+    "result": {
+      "item": "system:lapis_great_shovel"
+    }
+  }
+}

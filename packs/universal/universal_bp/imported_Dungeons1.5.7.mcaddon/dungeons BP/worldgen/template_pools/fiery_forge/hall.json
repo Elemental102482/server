@@ -1,0 +1,154 @@
+{
+    "format_version": "1.21.20",
+    "minecraft:template_pool": {
+        "description": {
+            "identifier": "dungeons:forge_hall"
+        },
+        "elements": [
+            {
+                "element": {
+                    "element_type": "minecraft:single_pool_element",
+                    "location": "fiery_forge/hall/fail",
+                    "processors": "dungeons:forge_processor_default"
+                },
+                "weight": 1
+            },
+            {
+                "element": {
+                    "element_type": "minecraft:single_pool_element",
+                    "location": "fiery_forge/hall/end",
+                    "processors": "dungeons:forge_processor_default"
+                },
+                "weight": 1
+            },
+            {
+                "element": {
+                    "element_type": "minecraft:single_pool_element",
+                    "location": "fiery_forge/hall/left_split",
+                    "processors": "dungeons:forge_processor_default"
+                },
+                "weight": 3
+            },
+            {
+                "element": {
+                    "element_type": "minecraft:single_pool_element",
+                    "location": "fiery_forge/hall/right_split",
+                    "processors": "dungeons:forge_processor_default"
+                },
+                "weight": 3
+            },
+            {
+                "element": {
+                    "element_type": "minecraft:single_pool_element",
+                    "location": "fiery_forge/hall/fork_split",
+                    "processors": "dungeons:forge_processor_default"
+                },
+                "weight": 3
+            },
+            {
+                "element": {
+                    "element_type": "minecraft:single_pool_element",
+                    "location": "fiery_forge/hall/fourway_split",
+                    "processors": "dungeons:forge_processor_default"
+                },
+                "weight": 3
+            },
+            {
+                "element": {
+                    "element_type": "minecraft:single_pool_element",
+                    "location": "fiery_forge/hall/room_core",
+                    "processors": "dungeons:forge_processor_default"
+                },
+                "weight": 4
+            },
+            {
+                "element": {
+                    "element_type": "minecraft:single_pool_element",
+                    "location": "fiery_forge/hall/room_long",
+                    "processors": "dungeons:forge_processor_default"
+                },
+                "weight": 4
+            },
+            {
+                "element": {
+                    "element_type": "minecraft:single_pool_element",
+                    "location": "fiery_forge/hall/room_lavacross",
+                    "processors": "dungeons:forge_processor_default"
+                },
+                "weight": 4
+            },
+            {
+                "element": {
+                    "element_type": "minecraft:single_pool_element",
+                    "location": "fiery_forge/hall/room_lava",
+                    "processors": "dungeons:forge_processor_default"
+                },
+                "weight": 4
+            },
+            {
+                "element": {
+                    "element_type": "minecraft:single_pool_element",
+                    "location": "fiery_forge/hall/room_store",
+                    "processors": "dungeons:forge_processor_default"
+                },
+                "weight": 4
+            },
+            {
+                "element": {
+                    "element_type": "minecraft:single_pool_element",
+                    "location": "fiery_forge/hall/room_weapons",
+                    "processors": "dungeons:forge_processor_default"
+                },
+                "weight": 4
+            },
+            {
+                "element": {
+                    "element_type": "minecraft:single_pool_element",
+                    "location": "fiery_forge/hall/room_golem",
+                    "processors": "dungeons:forge_processor_default"
+                },
+                "weight": 2
+            },
+            {
+                "element": {
+                    "element_type": "minecraft:single_pool_element",
+                    "location": "fiery_forge/hall/room_book",
+                    "processors": "dungeons:forge_processor_default"
+                },
+                "weight": 2
+            },
+            {
+                "element": {
+                    "element_type": "minecraft:single_pool_element",
+                    "location": "fiery_forge/hall/room_zombie",
+                    "processors": "dungeons:forge_processor_default"
+                },
+                "weight": 1
+            },
+            {
+                "element": {
+                    "element_type": "minecraft:single_pool_element",
+                    "location": "fiery_forge/hall/room_mine_enter",
+                    "processors": "dungeons:forge_processor_default"
+                },
+                "weight": 5
+            },
+            {
+                "element": {
+                    "element_type": "minecraft:single_pool_element",
+                    "location": "fiery_forge/hall/stairs",
+                    "processors": "dungeons:forge_processor_default"
+                },
+                "weight": 2
+            },
+            {
+                "element": {
+                    "element_type": "minecraft:single_pool_element",
+                    "location": "fiery_forge/hall/stairs_heavy",
+                    "processors": "dungeons:forge_processor_default"
+                },
+                "weight": 1
+            }
+        ]
+    }
+}

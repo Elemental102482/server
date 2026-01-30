@@ -1,0 +1,43 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:item": {
+		"description": {
+			"identifier": "cata:phantasma_greatsword",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:damage": 2,
+			"minecraft:max_stack_size": 1,
+			"minecraft:durability": {
+				"max_durability": 1200
+			},
+			"minecraft:can_destroy_in_creative": false,
+			"minecraft:interact_button": true,
+			"minecraft:enchantable": {
+				"value": 2,
+				"slot": "elytra"
+			},
+			"minecraft:digger": {
+				"use_efficiency": true,
+				"destroy_speeds": [
+					{
+						"block": "minecraft:web",
+						"speed": 14
+					}
+				]
+			},
+			"minecraft:block_placer": {
+				"block": "cata:phantasma_greatsword",
+				"use_on": [
+					"cata:phantasma_greatsword"
+				],
+				"replace_block_item": true
+			},
+			"minecraft:rarity": {
+				"value": "common"
+			}
+		}
+	}
+}

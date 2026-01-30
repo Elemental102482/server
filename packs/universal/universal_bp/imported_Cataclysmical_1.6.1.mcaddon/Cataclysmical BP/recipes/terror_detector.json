@@ -1,0 +1,30 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cata:terror_detector"
+		},
+		"pattern": [
+			"121",
+			" 1 "
+		],
+		"key": {
+			"1": {
+				"item": "cata:terrorite_brick"
+			},
+			"2": {
+				"item": "cata:ectoplasm"
+			}
+		},
+		"result": {
+			"item": "cata:terror_detector",
+			"count": 1
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": {
+			"context": "AlwaysUnlocked"
+		}
+	}
+}

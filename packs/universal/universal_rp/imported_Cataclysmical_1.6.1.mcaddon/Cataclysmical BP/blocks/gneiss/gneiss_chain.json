@@ -1,0 +1,79 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:block": {
+		"description": {
+			"identifier": "cata:gneiss_chain",
+			"menu_category": {
+				"category": "construction"
+			}
+		},
+		"components": {
+			"minecraft:geometry": "geometry.cata_custom_plant",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "cata_gneiss_chain",
+					"render_method": "alpha_test",
+					"ambient_occlusion": false,
+					"face_dimming": false
+				}
+			},
+			"minecraft:collision_box": {
+				"size": [
+					6,
+					16,
+					6
+				],
+				"origin": [
+					-3,
+					0,
+					-3
+				]
+			},
+			"minecraft:selection_box": {
+				"size": [
+					6,
+					16,
+					6
+				],
+				"origin": [
+					-3,
+					0,
+					-3
+				]
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 7.5,
+				"item_specific_speeds": [
+					{
+						"destroy_speed": 0.6,
+						"item": "minecraft:stone_pickaxe"
+					},
+					{
+						"destroy_speed": 0.4,
+						"item": "minecraft:iron_pickaxe"
+					},
+					{
+						"destroy_speed": 0.3,
+						"item": "minecraft:diamond_pickaxe"
+					},
+					{
+						"destroy_speed": 0.25,
+						"item": "minecraft:netherite_pickaxe"
+					},
+					{
+						"destroy_speed": 0.2,
+						"item": "minecraft:golden_pickaxe"
+					},
+					{
+						"destroy_speed": 0.5,
+						"item": "cata:sunflare_pickaxe"
+					}
+				]
+			},
+			"minecraft:loot": "loot_tables/blocks/gneiss_chain.json",
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 70
+			}
+		}
+	}
+}

@@ -1,0 +1,46 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "cata:exodius_elements",
+			"materials": {
+				"default": "drowned"
+			},
+			"textures": {
+				"default": "textures/entity/blank"
+			},
+			"geometry": {
+				"default": "geometry.particle_projectile"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "cata_stone_golem_egg"
+			},
+			"animations": {
+				"floret": "animation.particle_projectile.floret",
+				"solar": "animation.particle_projectile.solar",
+				"lunar": "animation.particle_projectile.lunar"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"floret": "query.skin_id==0"
+					},
+					{
+						"solar": "query.skin_id==1"
+					},
+					{
+						"lunar": "query.skin_id==2"
+					}
+				]
+			},
+			"particle_effects": {
+				"floret_particle_projectile": "cata:floret_particle_projectile",
+				"solar_particle_projectile": "cata:solar_particle_projectile",
+				"lunar_particle_projectile": "cata:lunar_particle_projectile"
+			}
+		}
+	}
+}

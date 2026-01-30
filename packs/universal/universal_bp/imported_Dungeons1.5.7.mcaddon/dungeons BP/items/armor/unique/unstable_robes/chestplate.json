@@ -1,0 +1,40 @@
+{
+	"format_version": "1.21.10",
+	"minecraft:item": {
+		"description": {
+			"identifier": "dungeons:unstable_chestplate",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:icon": "unstable_chestplate",
+			"minecraft:hover_text_color": {
+				"value": "aqua"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:stacked_by_data": false,
+			"minecraft:enchantable": {
+				"value": 5,
+				"slot": "armor_torso"
+			},
+			"minecraft:wearable": {
+				"protection": 12,
+				"slot": "slot.armor.chest"
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"minecraft:ender_pearl"
+						],
+						"repair_amount": "q.max_durability*0.25"
+					}
+				]
+			},
+			"minecraft:durability": {
+				"max_durability": 480
+			}
+		}
+	}
+}

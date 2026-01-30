@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "black_spot_armour",
+        "metalness_emissive_roughness": "black_spot_armour_mer"
+    }
+}

@@ -1,0 +1,36 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "plate_chestplate"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"I I",
+			"BbB",
+			"III"
+		],
+		"unlock": [
+			{
+				"item": "minecraft:iron_ingot"
+			}
+		],
+		"key": {
+			"b": {
+				"item": "minecraft:iron_block"
+			},
+			"B": {
+				"item": "minecraft:redstone"
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			}
+		},
+		"result": {
+			"item": "dungeons:plate_chestplate",
+			"count": 1
+		}
+	}
+}

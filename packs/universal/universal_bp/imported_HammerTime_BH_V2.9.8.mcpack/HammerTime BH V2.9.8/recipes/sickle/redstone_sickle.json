@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "system:redstone_sickle"
+    },
+
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " C ",
+      "  C",
+      "SC "
+    ],
+    "key": {
+      "S": {
+        "item": "minecraft:stick"
+      },
+      "C": {
+        "item": "minecraft:redstone_block"
+      }
+    },
+    "result": {
+      "item": "system:redstone_sickle"
+    }
+  }
+}

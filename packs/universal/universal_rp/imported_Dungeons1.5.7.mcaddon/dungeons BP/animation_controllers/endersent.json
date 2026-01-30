@@ -1,0 +1,40 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.endersent.teleport": {
+			"initial_state": "default",
+			"states": {
+				"attacking": {
+					"animations": [
+						"teleport_timer"
+					],
+					"transitions": [
+						{
+							"finish": "query.all_animations_finished"
+						}
+					]
+				},
+				"default": {
+					"on_entry": [],
+					"transitions": [
+						{
+							"attacking": "query.is_saddled==1"
+						}
+					]
+				},
+				"finish": {
+					"on_entry": [
+						"/particle dungeons:endersent_teleport ~~3~",
+						"/summon dungeons:summon_watchling",
+						"/effect @s speed 3 3 true"
+					],
+					"transitions": [
+						{
+							"default": "query.is_saddled==0"
+						}
+					]
+				}
+			}
+		}
+	}
+}

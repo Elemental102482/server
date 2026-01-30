@@ -1,0 +1,32 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:redstone_cube",
+			"materials": {
+				"default": "entity_emissive"
+			},
+			"textures": {
+				"default": "textures/entity/redstone_monstrosity/redstone_cube"
+			},
+			"geometry": {
+				"default": "geometry.redstone_cube"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"animations": {
+				"move": "animation.redstone_cube.roll",
+				"move_controller": "controller.animation.redstone_cube.move"
+			},
+			"scripts": {
+				"animate": [
+					"move_controller"
+				]
+			},
+			"spawn_egg": {
+				"texture": "egg_redstone_cube"
+			}
+		}
+	}
+}

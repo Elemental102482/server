@@ -1,0 +1,42 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "dungeons:mechanised_sawblade",
+			"render_controllers": [
+				"controller.render.item_default",
+				"controller.render.animated_sawblade_glow"
+			],
+			"materials": {
+				"default": "entity_alphatest",
+				"glow": "entity_emissive_alpha",
+				"enchanted": "entity_alphatest_glint"
+			},
+			"textures": {
+				"default": "textures/items/attachables/mechanised_sawblade_static",
+				"glow": "textures/items/attachables/mechanised_sawblade_glow",
+				"glow_alt": "textures/items/attachables/mechanised_sawblade_glow_alt",
+				"enchanted": "textures/misc/enchanted_item_glint"
+			},
+			"geometry": {
+				"default": "geometry.broken_sawblade",
+				"glow": "geometry.glowing_sawblade",
+				"glow_alt": "geometry.glowing_sawblade_alt"
+			},
+			"animations": {
+				"first_person_hold": "animation.sawblade.first_person_hold",
+				"third_person_hold": "animation.sawblade.third_person_hold"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"first_person_hold": "c.is_first_person"
+					},
+					{
+						"third_person_hold": "!c.is_first_person"
+					}
+				]
+			}
+		}
+	}
+}

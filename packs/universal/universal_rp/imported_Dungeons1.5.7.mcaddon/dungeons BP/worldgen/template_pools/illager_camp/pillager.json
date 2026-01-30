@@ -1,0 +1,26 @@
+{
+    "format_version": "1.21.20",
+    "minecraft:template_pool": {
+        "description": {
+            "identifier": "dungeons:illager_camp_mob"
+        },
+        "elements": [
+            {
+                "element": {
+                    "element_type": "minecraft:single_pool_element",
+                    "location": "fiery_forge/pillager",
+                    "processors": "dungeons:processor_default"
+                },
+                "weight": 3
+            },
+            {
+                "element": {
+                    "element_type": "minecraft:single_pool_element",
+                    "location": "fiery_forge/no_mob",
+                    "processors": "dungeons:processor_default"
+                },
+                "weight": 1
+            }
+        ]
+    }
+}

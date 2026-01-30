@@ -1,0 +1,50 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.spinblade_projectile.fly": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [
+						"query.head_x_rotation(0)",
+						0,
+						0
+					]
+				},
+				"blade": {
+					"rotation": [
+						0,
+						"q.life_time*720",
+						0
+					]
+				}
+			}
+		},
+		"animation.spinblade_projectile.particles": {
+			"loop": true,
+			"animation_length": 0.5,
+			"particle_effects": {
+				"0.0": [
+					{
+						"effect": "spinblade",
+						"locator": "particles1"
+					},
+					{
+						"effect": "spinblade",
+						"locator": "particles2"
+					}
+				]
+			}
+		},
+		"animation.spinblade_projectile.wind_sounds": {
+			"loop": true,
+			"animation_length": 0.5,
+			"sound_effects": {
+				"0.0": {
+					"effect": "wind",
+					"locator": "particles2"
+				}
+			}
+		}
+	}
+}

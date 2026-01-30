@@ -1,0 +1,26 @@
+{
+  "format_version": "1.13",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "system:wood_sickle"
+    },
+
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " C ",
+      "  C",
+      "SC "
+    ],
+    "key": {
+      "S": {
+        "item": "minecraft:stick"
+      },
+      "C": {
+        "item": "minecraft:log"
+      }
+    },
+    "result": {
+      "item": "system:wood_sickle"
+    }
+  }
+}

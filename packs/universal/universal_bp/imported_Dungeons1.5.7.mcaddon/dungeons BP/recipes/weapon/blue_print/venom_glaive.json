@@ -1,0 +1,38 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "bp_venom_glaive"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"B": {
+				"item": "dungeons:blue_print"
+			},
+			"W": {
+				"item": "dungeons:venom_glaive"
+			}
+		},
+		"unlock": [
+			{
+				"item": "dungeons:venom_glaive"
+			}
+		],
+		"pattern": [
+			"B",
+			"W"
+		],
+		"result": [
+			{
+				"item": "dungeons:venom_glaive",
+				"count": 1
+			},
+			{
+				"item": "dungeons:venom_glaive",
+				"count": 1
+			}
+		]
+	}
+}

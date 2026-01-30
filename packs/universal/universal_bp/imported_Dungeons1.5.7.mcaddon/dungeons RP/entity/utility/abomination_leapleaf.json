@@ -1,0 +1,32 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:abomination_leapleaf_spawn",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/leapleaf/leapleaf"
+			},
+			"geometry": {
+				"default": "geometry.leapleaf"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"animations": {
+				"summon": "animation.leapleaf.spawn"
+			},
+			"scripts": {
+				"animate": [
+					"summon"
+				]
+			},
+			"spawn_egg": {
+				"base_color": "#69AE38",
+				"overlay_color": "#8240FF"
+			}
+		}
+	}
+}

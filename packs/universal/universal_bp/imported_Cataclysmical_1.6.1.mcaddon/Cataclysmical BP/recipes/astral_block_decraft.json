@@ -1,0 +1,24 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "cata:astral_block_decraft"
+		},
+		"ingredients": [
+			{
+				"item": "cata:astral_block",
+				"count": 1
+			}
+		],
+		"result": {
+			"item": "cata:astral_alloy",
+			"count": 9
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": {
+			"context": "AlwaysUnlocked"
+		}
+	}
+}

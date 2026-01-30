@@ -1,0 +1,53 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "cata:solarium",
+			"materials": {
+				"default": "drowned"
+			},
+			"textures": {
+				"default": "textures/entity/solarium_texture"
+			},
+			"geometry": {
+				"default": "geometry.solarium"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "cata_solarium_egg"
+			},
+			"animations": {
+				"rods": "animation.solarium.rods",
+				"bobbing": "animation.solarium.bobbing",
+				"idle": "animation.solarium.idle",
+				"stance": "animation.solarium.stance",
+				"move": "animation.solarium.move",
+				"attack": "animation.solarium.attack",
+				"summon": "animation.solarium.summon",
+				"move_controller": "controller.animation.solarium.move_controller",
+				"attack_controller": "controller.animation.solarium.attack_controller",
+				"stance_controller": "controller.animation.solarium.stance_controller",
+				"heavy_attack": "animation.solarium.heavy_attack"
+			},
+			"scripts": {
+				"animate": [
+					"idle",
+					"rods",
+					"bobbing",
+					"move_controller",
+					"attack_controller",
+					"stance_controller"
+				]
+			},
+			"particle_effects": {
+				"small_solar_slash": "cata:small_solar_slash",
+				"large_impact": "cata:large_impact"
+			},
+			"sound_effects": {
+				"solar_swing": "sound.solar_swing"
+			}
+		}
+	}
+}

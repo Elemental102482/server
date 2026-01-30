@@ -1,0 +1,21 @@
+{
+	"format_version": "1.21.80",
+	"minecraft:structure_set": {
+		"description": {
+			"identifier": "cata:flare_star"
+		},
+		"placement": {
+			"type": "minecraft:random_spread",
+			"salt": 7176035,
+			"separation": 30,
+			"spacing": 70,
+			"spread_type": "linear"
+		},
+		"structures": [
+			{
+				"structure": "cata:flare_star",
+				"weight": 1
+			}
+		]
+	}
+}

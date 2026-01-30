@@ -1,0 +1,35 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.stone_golem.attack": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"attack": "query.is_delayed_attacking==1"
+						}
+					],
+					"blend_transition": 0.4
+				},
+				"attack": {
+					"animations": [
+						"attack"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_delayed_attacking"
+						}
+					],
+					"blend_transition": 0.4,
+					"on_entry": [
+						"@s is_attacking"
+					],
+					"on_exit": [
+						"@s finish_attack",
+						"@s cooldown"
+					]
+				}
+			}
+		}
+	}
+}

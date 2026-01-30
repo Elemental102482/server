@@ -1,0 +1,38 @@
+{
+	"format_version": "1.20.20",
+	"minecraft:weighted_random_feature": {
+		"description": {
+			"identifier": "cata:gneiss_pillar"
+		},
+		"features": [
+			[
+				"cata:gneiss_pillar1_feature",
+				10
+			],
+			[
+				"cata:gneiss_pillar2_feature",
+				10
+			],
+			[
+				"cata:gneiss_pillar3_feature",
+				10
+			],
+			[
+				"cata:gneiss_pillar4_feature",
+				10
+			],
+			[
+				"cata:gneiss_pillar5_feature",
+				10
+			],
+			[
+				"cata:gneiss_pillar6_feature",
+				10
+			],
+			[
+				"cata:gneiss_pillar7_feature",
+				10
+			]
+		]
+	}
+}

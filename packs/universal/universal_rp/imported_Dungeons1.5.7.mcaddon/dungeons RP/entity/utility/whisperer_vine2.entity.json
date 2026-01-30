@@ -1,0 +1,33 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:whisperer_vine2",
+			"min_engine_version": "1.10.0",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/whisperer/whisperer_vine"
+			},
+			"geometry": {
+				"default": "geometry.whisperer_vine"
+			},
+			"scripts": {
+				"animate": [
+					"attack"
+				]
+			},
+			"animations": {
+				"attack": "animation.whisperer_vine.q_attack"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"base_color": "#204B16",
+				"overlay_color": "#769849"
+			}
+		}
+	}
+}

@@ -1,0 +1,42 @@
+{
+    "format_version": "1.21.20",
+    "minecraft:template_pool": {
+        "description": {
+            "identifier": "dungeons:sanctum_mob"
+        },
+        "elements": [
+            {
+                "element": {
+                    "element_type": "minecraft:single_pool_element",
+                    "location": "gale_sanctum/pillager",
+                    "processors": "dungeons:processor_default"
+                },
+                "weight": 4
+            },
+            {
+                "element": {
+                    "element_type": "minecraft:single_pool_element",
+                    "location": "gale_sanctum/windcaller",
+                    "processors": "dungeons:processor_default"
+                },
+                "weight": 1
+            },
+            {
+                "element": {
+                    "element_type": "minecraft:single_pool_element",
+                    "location": "gale_sanctum/royal_guard",
+                    "processors": "dungeons:processor_default"
+                },
+                "weight": 1
+            },
+            {
+                "element": {
+                    "element_type": "minecraft:single_pool_element",
+                    "location": "gale_sanctum/no_mob",
+                    "processors": "dungeons:processor_default"
+                },
+                "weight": 1
+            }
+        ]
+    }
+}

@@ -1,0 +1,32 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.windcaller.move": {
+			"initial_state": "default",
+			"states": {
+				"moving": {
+					"animations": [
+						"move"
+					],
+					"transitions": [
+						{
+							"default": "q.modified_move_speed<=0.1"
+						}
+					],
+					"blend_transition": 1
+				},
+				"default": {
+					"animations": [
+						"look_at_target"
+					],
+					"transitions": [
+						{
+							"moving": "q.modified_move_speed>0.1"
+						}
+					],
+					"blend_transition": 1
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:void_portal",
+			"materials": {
+				"default": "entity"
+			},
+			"textures": {
+				"default": "textures/entity/void_portal"
+			},
+			"geometry": {
+				"default": "geometry.void_portal"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"animations": {
+				"hide": "animation.void_portal.hide_portal",
+				"hide_controller": "controller.animation.void_portal.hide"
+			},
+			"scripts": {
+				"animate": [
+					"hide_controller"
+				]
+			}
+		}
+	}
+}

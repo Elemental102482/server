@@ -1,0 +1,42 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:corrupted_ooze",
+			"materials": {
+				"default": "slime",
+				"outer": "slime_outer"
+			},
+			"textures": {
+				"default": "textures/entity/corrupted_cauldron/ooze"
+			},
+			"geometry": {
+				"default": "geometry.corrupted_ooze",
+				"armor": "geometry.corrupted_ooze.armor"
+			},
+			"animations": {
+				"spawn": "animation.corrupted_ooze.spawn",
+				"despawn": "animation.corrupted_ooze.despawn",
+				"particles": "animation.corrupted_ooze.particles",
+				"land": "animation.corrupted_ooze.land",
+				"land_controller": "controller.animation.corrupted_ooze.land"
+			},
+			"scripts": {
+				"animate": [
+					"land_controller",
+					"particles"
+				]
+			},
+			"render_controllers": [
+				"controller.render.ooze",
+				"controller.render.ooze_armor"
+			],
+			"particle_effects": {
+				"slime": "dungeons:cauldron_slime"
+			},
+			"spawn_egg": {
+				"texture": "egg_corrupted_ooze"
+			}
+		}
+	}
+}

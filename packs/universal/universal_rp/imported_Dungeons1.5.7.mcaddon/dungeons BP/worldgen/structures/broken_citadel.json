@@ -1,0 +1,30 @@
+{
+  "format_version": "1.21.20",
+  "minecraft:jigsaw": {
+    "description": {
+      "identifier": "dungeons:broken_citadel"
+    },
+    "biome_filters": [
+      {
+        "any_of": [
+          {
+            "test": "has_biome_tag",
+            "operator": "==",
+            "value": "the_end"
+          }
+        ]
+      }
+    ],
+    "heightmap_projection": "world_surface",
+    "max_depth": 1,
+    "start_height": {
+      "type": "constant",
+      "value": {
+        "above_bottom": 64
+      }
+    },
+    "start_pool": "dungeons:broken_citadel",
+    "step": "surface_structures",
+    "terrain_adaptation": "none"
+  }
+}

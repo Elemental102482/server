@@ -1,0 +1,56 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:item": {
+		"description": {
+			"identifier": "cata:stellar_greatsword",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:damage": 7,
+			"minecraft:max_stack_size": 1,
+			"minecraft:durability": {
+				"max_durability": 890
+			},
+			"minecraft:can_destroy_in_creative": false,
+			"minecraft:interact_button": true,
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"cata:astral_alloy"
+						],
+						"repair_amount": "query.max_durability*0.5"
+					},
+					{
+						"items": [
+							"cata:stellar_greatsword"
+						],
+						"repair_amount": "context.other->query.remaining_durability+0.12*context.other->query.max_durability"
+					}
+				]
+			},
+			"minecraft:enchantable": {
+				"value": 13,
+				"slot": "sword"
+			},
+			"minecraft:digger": {
+				"use_efficiency": true,
+				"destroy_speeds": [
+					{
+						"block": "minecraft:web",
+						"speed": 14
+					}
+				]
+			},
+			"minecraft:block_placer": {
+				"block": "cata:stellar_greatsword",
+				"use_on": [
+					"cata:stellar_greatsword"
+				],
+				"replace_block_item": true
+			}
+		}
+	}
+}

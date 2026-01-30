@@ -1,0 +1,13 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.void_portal.hide_portal": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"portal": {
+					"scale": 0
+				}
+			}
+		}
+	}
+}

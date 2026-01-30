@@ -1,0 +1,304 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.sunken_skeleton",
+				"texture_width": 64,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [
+					0,
+					1.25,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "waist",
+					"pivot": [
+						0,
+						12,
+						0
+					],
+					"locators": {
+						"enchanted_particles": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [
+						0,
+						24,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								12,
+								-2
+							],
+							"size": [
+								8,
+								12,
+								4
+							],
+							"uv": [
+								16,
+								16
+							]
+						},
+						{
+							"origin": [
+								2,
+								10,
+								-6
+							],
+							"size": [
+								2,
+								2,
+								0
+							],
+							"pivot": [
+								3,
+								11,
+								-4
+							],
+							"rotation": [
+								0,
+								180,
+								0
+							],
+							"uv": [
+								12,
+								30
+							]
+						}
+					]
+				},
+				{
+					"name": "head",
+					"parent": "body",
+					"pivot": [
+						0,
+						24,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								24,
+								-4
+							],
+							"size": [
+								8,
+								8,
+								8
+							],
+							"uv": [
+								0,
+								0
+							]
+						},
+						{
+							"origin": [
+								-1,
+								27,
+								2
+							],
+							"size": [
+								6,
+								0,
+								4
+							],
+							"uv": [
+								47,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "hat",
+					"parent": "head",
+					"pivot": [
+						0,
+						24,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-1,
+								29,
+								-4.05
+							],
+							"size": [
+								9,
+								9,
+								0
+							],
+							"inflate": 0.001,
+							"uv": [
+								32,
+								1
+							]
+						}
+					]
+				},
+				{
+					"name": "rightArm",
+					"parent": "body",
+					"pivot": [
+						-5,
+						22,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-6,
+								12,
+								-1
+							],
+							"size": [
+								2,
+								12,
+								2
+							],
+							"uv": [
+								0,
+								16
+							]
+						}
+					]
+				},
+				{
+					"name": "rightItem",
+					"parent": "rightArm",
+					"pivot": [
+						-6,
+						15,
+						1
+					]
+				},
+				{
+					"name": "leftArm",
+					"parent": "body",
+					"pivot": [
+						5,
+						22,
+						0
+					],
+					"mirror": true,
+					"cubes": [
+						{
+							"origin": [
+								4,
+								12,
+								-1
+							],
+							"size": [
+								2,
+								12,
+								2
+							],
+							"uv": [
+								0,
+								16
+							]
+						}
+					]
+				},
+				{
+					"name": "leftItem",
+					"parent": "leftArm",
+					"pivot": [
+						6,
+						15,
+						1
+					]
+				},
+				{
+					"name": "rightLeg",
+					"parent": "body",
+					"pivot": [
+						-2,
+						12,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								0,
+								-1
+							],
+							"size": [
+								2,
+								12,
+								2
+							],
+							"uv": [
+								40,
+								16
+							]
+						},
+						{
+							"origin": [
+								-4,
+								8,
+								-2
+							],
+							"size": [
+								2,
+								0,
+								4
+							],
+							"uv": [
+								49,
+								10
+							]
+						}
+					]
+				},
+				{
+					"name": "leftLeg",
+					"parent": "body",
+					"pivot": [
+						2,
+						12,
+						0
+					],
+					"mirror": true,
+					"cubes": [
+						{
+							"origin": [
+								1,
+								0,
+								-1
+							],
+							"size": [
+								2,
+								12,
+								2
+							],
+							"uv": [
+								40,
+								16
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

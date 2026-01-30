@@ -1,0 +1,272 @@
+{
+	"format_version": [
+		1,
+		1,
+		0
+	],
+	"cata:feralplast": {
+		"sound": "mud",
+		"textures": "cata_feralplast"
+	},
+	"cata:floret_ore": {
+		"sound": "mud_bricks",
+		"textures": "cata_floret_ore"
+	},
+	"cata:floret_block": {
+		"sound": "iron",
+		"textures": "cata_floret_block"
+	},
+	"cata:feral_roots": {
+		"sound": "mud"
+	},
+	"cata:gneiss_grate": {
+		"sound": "copper_grate",
+		"textures": "cata_gneiss_grate"
+	},
+	"cata:asteroid": {
+		"sound": "deepslate_bricks",
+		"textures": "cata_asteroid"
+	},
+	"cata:asteroid_brick": {
+		"sound": "deepslate_bricks",
+		"textures": "cata_asteroid_brick"
+	},
+	"cata:astral_ore": {
+		"sound": "deepslate_bricks",
+		"textures": "cata_astral_ore"
+	},
+	"cata:astral_dust": {
+		"sound": "stone"
+	},
+	"cata:astral_block": {
+		"sound": "iron",
+		"textures": "cata_astral_block"
+	},
+	"cata:smooth_gneiss_brick": {
+		"sound": "mud_bricks",
+		"textures": "cata_smooth_gneiss_brick"
+	},
+	"cata:gneiss": {
+		"sound": "mud_bricks",
+		"textures": "cata_gneiss"
+	},
+	"cata:gneiss_brick_slab": {
+		"sound": "mud_bricks"
+	},
+	"cata:gneiss_brick": {
+		"sound": "mud_bricks",
+		"textures": "cata_gneiss_brick"
+	},
+	"cata:gneiss_rocks": {
+		"sound": "mud_bricks"
+	},
+	"cata:gneiss_lantern": {
+		"sound": "mud_bricks"
+	},
+	"cata:gneiss_chain": {
+		"sound": "chain"
+	},
+	"cata:gneiss_door": {
+		"sound": "mud_bricks",
+		"textures": "cata_gneiss_door"
+	},
+	"cata:gneiss_door_lock": {
+		"sound": "mud_bricks",
+		"textures": "cata_gneiss_door_lock"
+	},
+	"cata:unbreakable_gneiss_brick": {
+		"sound": "mud_bricks",
+		"textures": "cata_gneiss_brick"
+	},
+	"cata:unbreakable_gneiss": {
+		"sound": "mud_bricks",
+		"textures": "cata_gneiss"
+	},
+	"cata:unbreakable_smooth_gneiss_brick": {
+		"sound": "mud_bricks",
+		"textures": "cata_smooth_gneiss_brick"
+	},
+	"cata:unbreakable_cut_gneiss": {
+		"sound": "mud_bricks",
+		"textures": "cata_cut_gneiss"
+	},
+	"cata:cut_gneiss": {
+		"sound": "mud_bricks",
+		"textures": "cata_cut_gneiss"
+	},
+	"cata:solar_ore": {
+		"sound": "ancient_debris",
+		"textures": "cata_solar_ore"
+	},
+	"cata:flare_stone": {
+		"sound": "ancient_debris",
+		"textures": "cata_flare_stone"
+	},
+	"cata:flare_stone_brick": {
+		"sound": "ancient_debris",
+		"textures": "cata_flare_stone_brick"
+	},
+	"cata:polished_flare_stone": {
+		"sound": "ancient_debris",
+		"textures": "cata_polished_flare_stone"
+	},
+	"cata:emberglow": {
+		"sound": "sculk"
+	},
+	"cata:flare_stone_chain": {
+		"sound": "ancient_debris"
+	},
+	"cata:flare_stone_lantern": {
+		"sound": "ancient_debris"
+	},
+	"cata:flare_stone_brick_slab": {
+		"sound": "ancient_debris"
+	},
+	"cata:flare_stone_tiles": {
+		"sound": "ancient_debris",
+		"textures": "cata_flare_stone_tiles"
+	},
+	"cata:occult_alter": {
+		"sound": "ancient_debris"
+	},
+	"cata:flare_stone_geyser": {
+		"sound": "ancient_debris"
+	},
+	"cata:flare_stone_rock": {
+		"sound": "ancient_debris"
+	},
+	"cata:verdant_crusher": {
+		"sound": "mud_bricks"
+	},
+	"cata:flare_stone_bulb": {
+		"sound": "ancient_debris",
+		"textures": "cata_flare_stone_bulb"
+	},
+	"cata:chiseled_flare_stone": {
+		"sound": "ancient_debris",
+		"textures": {
+			"up": "cata_chiseled_flare_stone_top",
+			"side": "cata_chiseled_flare_stone",
+			"down": "cata_flare_stone_pillar_top"
+		}
+	},
+	"cata:flare_stone_pillar": {
+		"sound": "ancient_debris"
+	},
+	"cata:polished_feralplast": {
+		"sound": "mud",
+		"textures": "cata_polished_feralplast"
+	},
+	"cata:feralplast_brick": {
+		"sound": "mud",
+		"textures": "cata_feralplast_brick"
+	},
+	"cata:grim_stone": {
+		"sound": "stone",
+		"textures": "cata_grim_stone"
+	},
+	"cata:grim_stone_brick": {
+		"sound": "stone",
+		"textures": "cata_grim_stone_brick"
+	},
+	"cata:polished_grim_stone": {
+		"sound": "stone",
+		"textures": "cata_polished_grim_stone"
+	},
+	"cata:polished_asteroid": {
+		"sound": "deepslate_bricks",
+		"textures": "cata_polished_asteroid"
+	},
+	"cata:asteroid_brick_slab": {
+		"sound": "deepslate_bricks"
+	},
+	"cata:abyssal_stone": {
+		"sound": "deepslate_bricks",
+		"textures": "cata_abyssal_stone"
+	},
+	"cata:abyssal_stone_brick": {
+		"sound": "deepslate_bricks",
+		"textures": "cata_abyssal_stone_brick"
+	},
+	"cata:lunar_ore": {
+		"sound": "deepslate_bricks",
+		"textures": "cata_lunar_ore"
+	},
+	"cata:elemental_alter": {
+		"sound": "deepslate_bricks"
+	},
+	"cata:alter_pedestal": {
+		"sound": "deepslate_bricks"
+	},
+	"cata:feral_flower": {
+		"sound": "cactus_flower"
+	},
+	"cata:platinum_ore": {
+		"sound": "stone",
+		"textures": "cata_platinum_ore"
+	},
+	"cata:deepslate_platinum_ore": {
+		"sound": "deepslate",
+		"textures": "cata_deepslate_platinum_ore"
+	},
+	"cata:platinum_block": {
+		"sound": "stone",
+		"textures": "cata_platinum_block"
+	},
+	"cata:solar_tesla_coil": {
+		"sound": "ancient_debris"
+	},
+	"cata:terrorite_brick": {
+		"sound": "calcite",
+		"textures": "cata_terrorite_brick"
+	},
+	"cata:terrorite_tile": {
+		"sound": "calcite",
+		"textures": "cata_terrorite_tile"
+	},
+	"cata:cracked_flare_stone_brick": {
+		"sound": "ancient_debris",
+		"textures": "cata_cracked_flare_stone_brick"
+	},
+	"cata:chiseled_flare_stone_brick": {
+		"sound": "ancient_debris",
+		"textures": "cata_chiseled_flare_stone_brick"
+	},
+	"cata:ancient_pot": {
+		"sound": "decorated_pot"
+	},
+	"cata:block_test": {
+		"sound": "stone",
+		"textures": "cata_block_test"
+	},
+	"cata:block_test2": {
+		"textures": "cata_block_test2",
+		"sound": "stone"
+	},
+	"cata:verdant_vault": {
+		"sound": "vault"
+	},
+	"cata:platinum_vault": {
+		"sound": "vault"
+	},
+	"cata:solar_block": {
+		"sound": "iron",
+		"textures": "cata_solar_block"
+	},
+	"cata:terrorite": {
+		"sound": "calcite",
+		"textures": "cata_terrorite"
+	},
+	"cata:cut_terrorite": {
+		"sound": "calcite",
+		"textures": "cata_cut_terrorite"
+	},
+	"cata:exodius_ore": {
+		"sound": "tuff_bricks",
+		"textures": "cata_exodius_ore"
+	},
+	"cata:polished_abyssal_stone": {
+		"sound": "deepslate_bricks",
+		"textures": "cata_polished_abyssal_stone"
+	}
+}

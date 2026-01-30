@@ -1,0 +1,21 @@
+{
+	"format_version": "1.21.20",
+	"minecraft:structure_set": {
+		"description": {
+			"identifier": "dungeons:nether_arena"
+		},
+		
+		"placement": {
+			"type": "minecraft:random_spread",
+			"salt": 19012025,
+			"separation": 10,
+			"spacing": 30
+		},
+		"structures": [
+			{
+				"structure": "dungeons:nether_arena",
+				"weight": 1
+			}
+		]
+	}
+}

@@ -1,0 +1,40 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.snareling.attack": {
+			"initial_state": "default",
+			"states": {
+				"attacking": {
+					"animations": [
+						"attack"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_delayed_attacking&&query.all_animations_finished"
+						}
+					]
+				},
+				"shooting": {
+					"animations": [
+						"shoot"
+					],
+					"transitions": [
+						{
+							"default": "!query.facing_target_to_range_attack||query.all_animations_finished"
+						}
+					]
+				},
+				"default": {
+					"transitions": [
+						{
+							"attacking": "query.is_delayed_attacking==1"
+						},
+						{
+							"shooting": "query.facing_target_to_range_attack"
+						}
+					]
+				}
+			}
+		}
+	}
+}

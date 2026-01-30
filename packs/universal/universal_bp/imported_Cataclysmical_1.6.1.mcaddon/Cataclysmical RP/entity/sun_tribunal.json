@@ -1,0 +1,66 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "cata:sun_tribunal",
+			"materials": {
+				"default": "drowned"
+			},
+			"textures": {
+				"default": "textures/entity/sun_tribunal_texture"
+			},
+			"geometry": {
+				"default": "geometry.sun_tribunal"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "cata_solarium_egg"
+			},
+			"animations": {
+				"rods": "animation.sun_tribunal.rods",
+				"bobbing": "animation.sun_tribunal.bobbing",
+				"idle": "animation.sun_tribunal.idle",
+				"stance": "animation.sun_tribunal.stance",
+				"move": "animation.sun_tribunal.move",
+				"normal_attack": "animation.sun_tribunal.normal_attack",
+				"move_controller": "controller.animation.solarium.move_controller",
+				"stance_controller": "controller.animation.solarium.stance_controller",
+				"awaken": "animation.sun_tribunal.awaken",
+				"solar_cores": "animation.sun_tribunal.solar_cores",
+				"awaken_controller": "controller.animation.cosmic_terror.awaken_controller",
+				"attack_controller": "controller.animation.sun_tribunal.attack_controller",
+				"normal_attack_projectile": "animation.sun_tribunal.normal_attack_projectile",
+				"double_dash_attack": "animation.sun_tribunal.double_dash_attack",
+				"heavy_attack_projectile": "animation.sun_tribunal.heavy_attack_projectile",
+				"chaos_attack1": "animation.sun_tribunal.chaos_attack1"
+			},
+			"scripts": {
+				"animate": [
+					"idle",
+					"rods",
+					"bobbing",
+					"solar_cores",
+					"move_controller",
+					"stance_controller",
+					"awaken_controller",
+					"attack_controller"
+				]
+			},
+			"particle_effects": {
+				"small_impact": "cata:small_impact",
+				"solar_slash": "cata:solar_slash",
+				"massive_impact": "cata:massive_impact",
+				"double_dash_attack_impact": "cata:double_dash_attack_impact",
+				"double_dash_attack_solar_slash": "cata:double_dash_attack_solar_slash"
+			},
+			"sound_effects": {
+				"solar_swing": "sound.solar_swing",
+				"sun_tribunal_double_dash_attack": "mob.sun_tribunal_double_dash_attack",
+				"sun_tribunal_normal_attack_projectile": "mob.sun_tribunal_normal_attack_projectile",
+				"sun_tribunal_normal_attack": "mob.sun_tribunal_normal_attack"
+			}
+		}
+	}
+}

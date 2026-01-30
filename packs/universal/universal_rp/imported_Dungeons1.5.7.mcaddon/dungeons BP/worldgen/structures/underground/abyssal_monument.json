@@ -1,0 +1,35 @@
+{
+  "format_version": "1.21.20",
+  "minecraft:jigsaw": {
+    "description": {
+      "identifier": "dungeons:abyssal_monument"
+    },
+    "biome_filters": [
+      {
+        "all_of": [
+          {
+            "test": "has_biome_tag",
+            "operator": "==",
+            "value": "ocean"
+          },
+          {
+            "test": "has_biome_tag",
+            "operator": "==",
+            "value": "deep"
+          }
+        ]
+      }
+    ],
+    "heightmap_projection": "ocean_floor",
+    "max_depth": 5,
+    "start_height": {
+      "type": "constant",
+      "value": {
+        "absolute": -28
+      }
+    },
+    "start_pool": "dungeons:abyssal_monument",
+    "step": "underground_structures",
+    "terrain_adaptation": "none"
+  }
+}

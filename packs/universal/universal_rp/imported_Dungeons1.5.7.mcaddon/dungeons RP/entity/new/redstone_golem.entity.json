@@ -1,0 +1,41 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:redstone_golem",
+			"materials": {
+				"default": "entity_emissive"
+			},
+			"textures": {
+				"default": "textures/entity/redstone_golem/redstone_golem"
+			},
+			"geometry": {
+				"default": "geometry.redstone_golem"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"animations": {
+				"move": "animation.redstone_golem.walk2",
+				"attack.rotations": "animation.redstone_golem.attack",
+				"attack_controller": "controller.animation.redstone_golem.attack",
+				"move_controller": "controller.animation.redstone_golem.move2",
+				"charge": "animation.redstone_golem.charge",
+				"charge_controller": "controller.animation.redstone_golem.charge"
+			},
+			"scripts": {
+				"animate": [
+					"attack_controller",
+					"move_controller",
+					"charge_controller"
+				]
+			},
+			"particle_effects": {
+				"charge": "dungeons:redstone_charge"
+			},
+			"spawn_egg": {
+				"texture": "egg_redstone_golem"
+			}
+		}
+	}
+}

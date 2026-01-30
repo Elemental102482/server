@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "thundering_arrow",
+        "metalness_emissive_roughness": "thundering_arrow_mer"
+    }
+}

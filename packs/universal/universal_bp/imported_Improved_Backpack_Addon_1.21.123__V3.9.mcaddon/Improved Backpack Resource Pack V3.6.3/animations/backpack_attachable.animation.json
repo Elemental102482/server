@@ -1,0 +1,20 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.backpack_attachable.wear": {
+			"loop": true,
+			"bones": {
+				"backpack": {
+					"rotation": [0, 0, 0],
+					"position": [0, 13, 7.75],
+					"scale": ["c.is_first_person ? 0 : 0.6", "c.is_first_person ? 0 : 0.6", "c.is_first_person ? 0 : 0.4"]
+				},
+				"backpack2": {
+					"rotation": [151.06666, 31.64137, 22.17962],
+					"position": [5, 14, 9],
+					"scale": "c.is_first_person ? 1 : 0"
+				}
+			}
+		}
+	}
+}

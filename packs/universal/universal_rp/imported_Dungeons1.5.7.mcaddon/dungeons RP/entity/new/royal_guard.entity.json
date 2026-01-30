@@ -1,0 +1,59 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:royal_guard",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/illager/royal_guard"
+			},
+			"geometry": {
+				"default": "geometry.royal_guard"
+			},
+			"spawn_egg": {
+				"texture": "egg_royal_guard"
+			},
+			"particle_effects": {
+				"shield": "dungeons:royal_guard_shield_break"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+				],
+				"animate": [
+					"vindicator_base",
+					"vindicator_walk",
+					"controller_look_at_target",
+					"controller_vindicator_base",
+					"controller_riding",
+					{
+						"shielded": "!query.is_saddled"
+					}
+				]
+			},
+			"animations": {
+				"look_at_target_default": "animation.humanoid.look_at_target.default",
+				"look_at_target_gliding": "animation.humanoid.look_at_target.gliding",
+				"look_at_target_swimming": "animation.humanoid.look_at_target.swimming",
+				"shielded": "animation.royal_guard.shielded",
+				"riding.arms": "animation.royal_guard.riding.arms",
+				"riding.legs": "animation.vindicator.riding.legs",
+				"vindicator_base": "animation.royal_guard.base",
+				"vindicator_attack": "animation.royal_guard.attack",
+				"vindicator_hand_attack": "animation.royal_guard.hand_attack",
+				"vindicator_walk": "animation.royal_guard.walk",
+				"celebrating": "animation.humanoid.celebrating",
+				"controller_look_at_target": "controller.animation.humanoid.look_at_target",
+				"controller_vindicator_base": "controller.animation.vindicator.base",
+				"controller_riding": "controller.animation.humanoid.riding"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"hide_armor": true,
+			"enable_attachables": true
+		}
+	}
+}

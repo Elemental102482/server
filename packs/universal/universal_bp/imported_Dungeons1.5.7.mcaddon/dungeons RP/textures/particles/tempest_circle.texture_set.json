@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "tempest_circle",
+        "metalness_emissive_roughness": "tempest_circle_mer"
+    }
+}

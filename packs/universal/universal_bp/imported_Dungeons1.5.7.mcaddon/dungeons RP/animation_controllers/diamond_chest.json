@@ -1,0 +1,55 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.diamond_chest.open": {
+			"initial_state": "default",
+			"states": {
+				"opening": {
+					"animations": [
+						"opening"
+					],
+					"transitions": [
+						{
+							"opened": "query.is_baby&&query.all_animations_finished"
+						}
+					]
+				},
+				"opened": {
+					"animations": [
+						"opened",
+						"open_lid"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_baby"
+						},
+						{
+							"opened_water": "query.is_in_water"
+						}
+					]
+				},
+				"opened_water": {
+					"animations": [
+						"opened_water",
+						"open_lid"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_baby"
+						},
+						{
+							"opened": "!query.is_in_water"
+						}
+					]
+				},
+				"default": {
+					"transitions": [
+						{
+							"opening": "query.is_baby"
+						}
+					]
+				}
+			}
+		}
+	}
+}

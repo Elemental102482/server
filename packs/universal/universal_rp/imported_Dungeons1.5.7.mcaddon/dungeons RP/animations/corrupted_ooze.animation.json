@@ -1,0 +1,236 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.corrupted_ooze.particles": {
+			"loop": true,
+			"animation_length": 0.3,
+			"particle_effects": {
+				"0.25": {
+					"effect": "slime",
+					"locator": "particles"
+				}
+			}
+		},
+		"animation.corrupted_ooze.spawn": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.3333,
+			"bones": {
+				"cube": {
+					"position": {
+						"0.0": [
+							0,
+							64,
+							0
+						],
+						"0.1667": [
+							0,
+							0,
+							0
+						]
+					},
+					"scale": {
+						"0.0": [
+							0.5,
+							1,
+							0.5
+						],
+						"0.1667": [
+							1,
+							1,
+							1
+						],
+						"0.2083": [
+							1.5,
+							0.1,
+							1.5
+						],
+						"0.2917": [
+							0.9,
+							1.1,
+							0.9
+						],
+						"0.3333": [
+							1,
+							1,
+							1
+						]
+					}
+				}
+			}
+		},
+		"animation.corrupted_ooze.land": {
+			"animation_length": 0.3333,
+			"bones": {
+				"cube": {
+					"scale": {
+						"0.0": [
+							1,
+							1,
+							1
+						],
+						"0.0417": [
+							1,
+							1,
+							1
+						],
+						"0.0833": [
+							1.5,
+							0.1,
+							1.5
+						],
+						"0.1667": [
+							0.9,
+							1.1,
+							0.9
+						],
+						"0.2083": [
+							1,
+							1,
+							1
+						]
+					}
+				}
+			}
+		},
+		"animation.corrupted_ooze.despawn": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"cube": {
+					"position": {
+						"0.2917": [
+							0,
+							0,
+							0
+						],
+						"0.5": [
+							0,
+							-2,
+							0
+						]
+					},
+					"scale": {
+						"0.0": [
+							1,
+							1,
+							1
+						],
+						"0.125": [
+							1.25,
+							0.2,
+							1.25
+						],
+						"0.2083": [
+							2,
+							0.1,
+							2
+						]
+					}
+				}
+			}
+		},
+		"animation.corrupted_ooze.target_acquired": {
+			"animation_length": 0.25,
+			"bones": {
+				"cube": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.0417": [
+							0,
+							0,
+							0
+						],
+						"0.25": [
+							0,
+							0,
+							0
+						]
+					},
+					"position": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.0417": [
+							0,
+							2,
+							0
+						],
+						"0.2083": [
+							0,
+							0,
+							0
+						]
+					},
+					"scale": {
+						"0.0": [
+							1,
+							1,
+							1
+						],
+						"0.0417": [
+							1,
+							1.4,
+							1
+						],
+						"0.1667": [
+							1,
+							0.9,
+							1
+						],
+						"0.2083": [
+							1,
+							0.5,
+							1
+						],
+						"0.25": [
+							1,
+							1,
+							1
+						]
+					}
+				}
+			}
+		},
+		"animation.corrupted_ooze.inflate": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.4583,
+			"bones": {
+				"cube": {
+					"scale": {
+						"0.0": [
+							1,
+							1,
+							1
+						],
+						"0.1667": [
+							2.2,
+							2.2,
+							2.2
+						],
+						"0.2083": [
+							1.9,
+							1.9,
+							1.9
+						],
+						"0.2917": [
+							2.05,
+							2.05,
+							2.05
+						],
+						"0.375": [
+							2,
+							2,
+							2
+						]
+					}
+				}
+			}
+		}
+	}
+}

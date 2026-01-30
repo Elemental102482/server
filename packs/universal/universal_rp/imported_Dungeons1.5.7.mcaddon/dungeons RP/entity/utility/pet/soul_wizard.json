@@ -1,0 +1,52 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:soul_wizard",
+			"materials": {
+				"default": "entity_emissive_alpha",
+				"enchanted": "dungeons_entity_enchant"
+			},
+			"textures": {
+				"default": "textures/entity/soul_wizard/soul_wizard",
+				"glow": "textures/entity/soul_wizard/enchanted_soul_wizard",
+				"enchanted": "textures/misc/enchanted_entity_glint"
+			},
+			"geometry": {
+				"default": "geometry.soul_wizard"
+			},
+			"particle_effects": {
+				"glow": "dungeons:soul_wizard_glow",
+				"enchanted_particles": "dungeons:small_humanoid_enchant"
+			},
+			"spawn_egg": {
+				"texture": "egg_soul_wizard"
+			},
+			"scripts": {
+				"animate": [
+					"base_controller",
+					"look_at_target",
+					"particles",
+					{
+						"enchanted_particles": "q.is_saddled==1"
+					}
+				]
+			},
+			"animations": {
+				"enchanted_particles": "animation.enchanted_mob.particles",
+				"particles": "animation.guardian_vex.particles",
+				"look_at_target": "animation.common.look_at_target",
+				"idle": "animation.soul_wizard.idle",
+				"shoot": "animation.soul_wizard.shoot",
+				"move": "animation.soul_wizard.fly",
+				"base_controller": "controller.animation.soul_wizard.general"
+			},
+			"render_controllers": [
+				"controller.render.soul_wizard",
+				{
+					"controller.render.dungeons_entity_enchanted": "q.is_saddled==1"
+				}
+			]
+		}
+	}
+}

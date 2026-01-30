@@ -1,0 +1,24 @@
+{
+	"format_version": 1.12,
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "e:sky_striker_2_to_3"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "e:sky_striker_book_2"
+			},
+			{
+				"item": "e:sky_striker_book_2"
+			}
+		],
+		"result": [
+			{
+				"item": "e:sky_striker_book_3"
+			}
+		]
+	}
+}

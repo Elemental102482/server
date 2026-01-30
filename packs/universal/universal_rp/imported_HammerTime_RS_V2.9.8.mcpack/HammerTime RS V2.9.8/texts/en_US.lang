@@ -1,0 +1,71 @@
+item.system:wood_great_sword=Wood Great Sword
+item.system:stone_great_sword=Stone Great Sword
+item.system:gold_great_sword=Gold Great Sword
+item.system:iron_great_sword=Iron Great Sword
+item.system:diamond_great_sword=Diamond Great Sword
+item.system:obsidian_great_sword=Obsidian Great Sword
+item.system:netherite_great_sword=Netherite Great Sword
+item.system:redstone_great_sword=Redstone Great Sword
+item.system:emerald_great_sword=Emerald Great Sword
+item.system:lapis_great_sword=Lapis Great Sword
+
+
+
+
+item.system:amethyst_hammer=Amethyst Hammer
+item.system:amethyst_sickle=Amethyst Sickle
+item.system:amethyst_great_axe=Amethyst Great Axe
+item.system:amethyst_great_shovel=Amethyst Great Shovel
+item.system:amethyst_great_sword=Amethyst Great Sword
+
+item.system:copper_hammer=Copper Hammer
+item.system:copper_sickle=Copper Sickle
+item.system:copper_great_axe=Copper Great Axe
+item.system:copper_great_shovel=Copper Great Shovel
+item.system:copper_great_sword=Copper Great Sword
+
+
+
+item.system:wood_great_shovel=Wood Great Shovel
+item.system:stone_great_shovel=Stone Great Shovel
+item.system:gold_great_shovel=Gold Great Shovel
+item.system:iron_great_shovel=Iron Great Shovel
+item.system:diamond_great_shovel=Diamond Great Shovel
+item.system:obsidian_great_shovel=Obsidian Great Shovel
+item.system:netherite_great_shovel=Netherite Great Shovel
+item.system:redstone_great_shovel=Redstone Great Shovel
+item.system:emerald_great_shovel=Emerald Great Shovel
+item.system:lapis_great_shovel=Lapis Great Shovel
+
+item.system:wood_great_axe=Wood Great Axe
+item.system:stone_great_axe=Stone Great Axe
+item.system:gold_great_axe=Gold Great Axe
+item.system:iron_great_axe=Iron Great Axe
+item.system:diamond_great_axe=Diamond Great Axe
+item.system:obsidian_great_axe=Obsidian Great Axe
+item.system:netherite_great_axe=Netherite Great Axe
+item.system:redstone_great_axe=Redstone Great Axe
+item.system:emerald_great_axe=Emerald Great Axe
+item.system:lapis_great_axe=Lapis Great Axe
+
+item.system:wood_sickle=Wood Sickle
+item.system:stone_sickle=Stone Sickle
+item.system:gold_sickle=Gold Sickle
+item.system:iron_sickle=Iron Sickle
+item.system:diamond_sickle=Diamond Sickle
+item.system:obsidian_sickle=Obsidian Sickle
+item.system:netherite_sickle=Netherite Sickle
+item.system:redstone_sickle=Redstone Sickle
+item.system:emerald_sickle=Emerald Sickle
+item.system:lapis_sickle=Lapis Sickle
+
+item.system:wood_hammer=Wood Hammer
+item.system:stone_hammer=Stone Hammer
+item.system:gold_hammer=Gold Hammer
+item.system:iron_hammer=Iron Hammer
+item.system:diamond_hammer=Diamond Hammer
+item.system:obsidian_hammer=Obsidian Hammer
+item.system:netherite_hammer=Netherite Hammer
+item.system:redstone_hammer=Redstone Hammer
+item.system:emerald_hammer=Emerald Hammer
+item.system:lapis_hammer=Lapis Hammer

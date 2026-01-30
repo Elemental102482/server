@@ -1,0 +1,53 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.watchling.attack": {
+			"initial_state": "default",
+			"states": {
+				"attacking": {
+					"animations": [
+						"attack"
+					],
+					"transitions": [
+						{
+							"default": "variable.attack_time<0"
+						}
+					]
+				},
+				"default": {
+					"transitions": [
+						{
+							"attacking": "variable.attack_time>=0"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.watchling.teleport": {
+			"initial_state": "default",
+			"states": {
+				"teleport": {
+					"animations": [
+						"temp_teleport"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_saddled&&query.all_animations_finished"
+						}
+					]
+				},
+				"default": {
+					"animations": [
+						"particles",
+						"look_at_target"
+					],
+					"transitions": [
+						{
+							"teleport": "query.is_saddled"
+						}
+					]
+				}
+			}
+		}
+	}
+}

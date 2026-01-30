@@ -1,0 +1,59 @@
+{
+	"format_version": "1.21.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "cata:flare_stone_pillar",
+			"menu_category": {
+				"category": "construction"
+			}
+		},
+		"components": {
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 7.5,
+				"item_specific_speeds": [
+					{
+						"destroy_speed": 0.4,
+						"item": "minecraft:iron_pickaxe"
+					},
+					{
+						"destroy_speed": 0.3,
+						"item": "minecraft:diamond_pickaxe"
+					},
+					{
+						"destroy_speed": 0.25,
+						"item": "minecraft:netherite_pickaxe"
+					},
+					{
+						"destroy_speed": 0.2,
+						"item": "minecraft:golden_pickaxe"
+					},
+					{
+						"destroy_speed": 0.5,
+						"item": "cata:sunflare_pickaxe"
+					}
+				]
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "cata_flare_stone_pillar",
+					"render_method": "opaque"
+				},
+				"up": {
+					"texture": "cata_flare_stone_pillar_top",
+					"render_method": "opaque"
+				},
+				"down": {
+					"texture": "cata_flare_stone_pillar_top",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 80
+			},
+			"minecraft:loot": "loot_tables/blocks/flare_stone_pillar.json",
+			"minecraft:geometry": {
+				"identifier": "minecraft:geometry.full_block"
+			}
+		}
+	}
+}

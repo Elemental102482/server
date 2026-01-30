@@ -1,0 +1,27 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:item": {
+		"description": {
+			"identifier": "cata:overloaded_solar_core",
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:cooldown": {
+				"category": "relic",
+				"duration": 1
+			},
+			"minecraft:block_placer": {
+				"block": "cata:overloaded_solar_core",
+				"use_on": [
+					"cata:overloaded_solar_core"
+				],
+				"replace_block_item": true
+			},
+			"minecraft:rarity": {
+				"value": "uncommon"
+			}
+		}
+	}
+}

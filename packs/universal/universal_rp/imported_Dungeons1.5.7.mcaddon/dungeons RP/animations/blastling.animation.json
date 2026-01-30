@@ -1,0 +1,208 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.blastling.particles": {
+			"loop": true,
+			"animation_length": 0.7,
+			"particle_effects": {
+				"0.0": {
+					"effect": "particle",
+					"locator": "particles"
+				}
+			}
+		},
+		"animation.blastling.flame_particles": {
+			"loop": true,
+			"animation_length": 0.41,
+			"particle_effects": {
+				"0.0": {
+					"effect": "blastling",
+					"locator": "right_1"
+				},
+				"0.1": {
+					"effect": "blastling",
+					"locator": "left_1"
+				},
+				"0.2": {
+					"effect": "blastling",
+					"locator": "head"
+				},
+				"0.4": {
+					"effect": "blastling",
+					"locator": "head"
+				}
+			}
+		},
+		"animation.blastling.aim": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.9,
+			"bones": {
+				"leftArm": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.25": [
+							"10",
+							0,
+							0
+						],
+						"0.5417": [
+							"-96",
+							0,
+							0
+						],
+						"0.625": [
+							"-90",
+							0,
+							0
+						]
+					}
+				},
+				"rightArm": {
+					"rotation": {
+						"0.0417": [
+							0,
+							0,
+							0
+						],
+						"0.27": [
+							"10",
+							0,
+							0
+						],
+						"0.55": [
+							"-96",
+							0,
+							0
+						],
+						"0.67": [
+							"-90",
+							0,
+							0
+						]
+					}
+				},
+				"head": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.25": [
+							10,
+							0,
+							0
+						],
+						"0.5833": [
+							-2,
+							0,
+							0
+						],
+						"0.7083": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			}
+		},
+		"animation.blastling.move_arms": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.4,
+			"bones": {
+				"leftArm": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.33": [
+							"10",
+							0,
+							0
+						]
+					}
+				},
+				"rightArm": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.33": [
+							"10",
+							0,
+							0
+						]
+					}
+				}
+			}
+		},
+		"animation.blastling.move": {
+			"loop": true,
+			"bones": {
+				"leftArm": {
+					"rotation": [
+						10,
+						0,
+						0
+					]
+				},
+				"leftLeg": {
+					"rotation": [
+						"variable.tcos0*-1.5",
+						0,
+						0
+					]
+				},
+				"rightLeg": {
+					"rotation": [
+						"variable.tcos0*1.5",
+						0,
+						0
+					]
+				},
+				"rightArm": {
+					"rotation": [
+						10,
+						0,
+						0
+					]
+				}
+			}
+		},
+		"animation.blastling.render": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"leftArm": {
+					"rotation": [
+						12.68664,
+						-9.76061,
+						-24.68558
+					]
+				},
+				"rightArm": {
+					"rotation": [
+						-25,
+						0,
+						0
+					]
+				},
+				"head": {
+					"rotation": [
+						0,
+						-25,
+						0
+					]
+				}
+			}
+		}
+	}
+}

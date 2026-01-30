@@ -1,0 +1,59 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "dungeons:unstable_boots",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "dungeons:unstable_chestplate",
+          "weight": 1,
+          "conditions": [{
+            "condition": "random_chance",
+            //VHOE loot has raised chances due to it being harder to fight multiple
+            "chance": 0.85
+          }]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "dungeons:unstable_leggings",
+          "weight": 1,
+          "conditions": [{
+            "condition": "random_chance",
+            //VHOE loot has raised chances due to it being harder to fight multiple
+            "chance": 0.85
+          }]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "dungeons:unstable_helmet",
+          "weight": 1,
+          "conditions": [{
+            "condition": "random_chance",
+            //VHOE loot has raised chances due to it being harder to fight multiple
+            "chance": 0.85
+          }]
+        }
+      ]
+    }
+  ]
+}

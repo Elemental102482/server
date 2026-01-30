@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "chestplate_sturdy_shulker",
+        "metalness_emissive_roughness": "chestplate_sturdy_shulker_mer"
+    }
+}

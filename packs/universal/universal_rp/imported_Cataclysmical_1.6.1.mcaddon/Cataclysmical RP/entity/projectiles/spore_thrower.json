@@ -1,0 +1,41 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "cata:spore_thrower",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/blank"
+			},
+			"geometry": {
+				"default": "geometry.wand_projectile"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"base_color": "#000000",
+				"overlay_color": "#FFFFFF"
+			},
+			"animations": {
+				"move": "animation.wand_projectile.move",
+				"particle": "animation.wand_projectile.particle",
+				"move2": "animation.projectile.move",
+				"particle_fast": "animation.wand_projectile.particle_fast"
+			},
+			"particle_effects": {
+				"wand_particle_fast": "cata:poison_cloud_emitter"
+			},
+			"scripts": {
+				"animate": [
+					"move",
+					"particle",
+					"move2",
+					"particle_fast"
+				]
+			}
+		}
+	}
+}

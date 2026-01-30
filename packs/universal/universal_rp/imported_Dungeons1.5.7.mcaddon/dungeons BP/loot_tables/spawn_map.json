@@ -1,0 +1,135 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:map",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "exploration_map",
+                            "destination": "dungeons:reaping_eye_lair"
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                "§9§oEnchanted Lair"
+                            ]
+                        },
+                        {
+                            "function": "set_name",
+                            "name": "§rEnchanted Explorer Map"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:map",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "exploration_map",
+                            "destination": "dungeons:ravenous_eye_lair"
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                "§9§oEnchanted Lair"
+                            ]
+                        },
+                        {
+                            "function": "set_name",
+                            "name": "§rEnchanted Explorer Map"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:map",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "exploration_map",
+                            "destination": "dungeons:blight_eye_lair"
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                "§9§oEnchanted Lair"
+                            ]
+                        },
+                        {
+                            "function": "set_name",
+                            "name": "§rEnchanted Explorer Map"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:map",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "exploration_map",
+                            "destination": "dungeons:binding_eye_lair"
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                "§9§oEnchanted Lair"
+                            ]
+                        },
+                        {
+                            "function": "set_name",
+                            "name": "§rEnchanted Explorer Map"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:map",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "exploration_map",
+                            "destination": "dungeons:savage_eye_lair"
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                "§9§oEnchanted Lair"
+                            ]
+                        },
+                        {
+                            "function": "set_name",
+                            "name": "§rEnchanted Explorer Map"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:map",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "exploration_map",
+                            "destination": "dungeons:spiked_eye_lair"
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                "§9§oEnchanted Lair"
+                            ]
+                        },
+                        {
+                            "function": "set_name",
+                            "name": "§rEnchanted Explorer Map"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

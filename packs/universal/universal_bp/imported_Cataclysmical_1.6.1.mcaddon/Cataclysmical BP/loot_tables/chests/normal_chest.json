@@ -1,0 +1,471 @@
+{
+	"pools": [
+		{
+			"rolls": {
+				"min": 4,
+				"max": 7
+			},
+			"entries": [
+				{
+					"type": "item",
+					"weight": 4,
+					"name": "minecraft:coal",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 5
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"weight": 4,
+					"name": "minecraft:copper_ingot",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 6
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"weight": 4,
+					"name": "minecraft:iron_nugget",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 8
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"weight": 2,
+					"name": "minecraft:slime_ball",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"weight": 4,
+					"name": "minecraft:string",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 5
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"weight": 4,
+					"name": "minecraft:gunpowder",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 5
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"weight": 2,
+					"name": "minecraft:lapis_lazuli",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 3
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"weight": 2,
+					"name": "minecraft:diamond",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"weight": 3,
+					"name": "minecraft:iron_ingot",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 3
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"weight": 3,
+					"name": "minecraft:gold_ingot",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 2
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"weight": 3,
+					"name": "minecraft:book",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 3
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"weight": 2,
+					"name": "minecraft:experience_bottle",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 2
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"weight": 2,
+					"name": "minecraft:emerald",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 3
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"weight": 1,
+					"name": "minecraft:saddle",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"weight": 1,
+					"name": "minecraft:name_tag",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"weight": 1,
+					"name": "minecraft:golden_apple",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 0,
+								"max": 1
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"weight": 3,
+					"name": "minecraft:enchanted_book",
+					"functions": [
+						{
+							"function": "enchant_randomly",
+							"treasure": true
+						}
+					]
+				},
+				{
+					"type": "item",
+					"weight": 1,
+					"name": "minecraft:diamond_horse_armor"
+				},
+				{
+					"type": "item",
+					"weight": 1,
+					"name": "minecraft:iron_helmet",
+					"functions": [
+						{
+							"function": "enchant_random_gear",
+							"chance": 100
+						}
+					]
+				},
+				{
+					"type": "item",
+					"weight": 1,
+					"name": "minecraft:iron_chestplate",
+					"functions": [
+						{
+							"function": "enchant_random_gear",
+							"chance": 100
+						}
+					]
+				},
+				{
+					"type": "item",
+					"weight": 1,
+					"name": "minecraft:iron_leggings",
+					"functions": [
+						{
+							"function": "enchant_random_gear",
+							"chance": 100
+						}
+					]
+				},
+				{
+					"type": "item",
+					"weight": 1,
+					"name": "minecraft:iron_boots",
+					"functions": [
+						{
+							"function": "enchant_random_gear",
+							"chance": 100
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:rotten_flesh",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 6
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"weight": 3,
+					"name": "minecraft:wheat",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"weight": 4,
+					"name": "minecraft:bread",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 2
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"weight": 1,
+					"name": "cata:platinum_chunk",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 2
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"weight": 2,
+					"name": "minecraft:amethyst_shard",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "empty",
+					"weight": 25
+				},
+				{
+					"type": "item",
+					"weight": 1,
+					"name": "cata:charm"
+				},
+				{
+					"type": "item",
+					"weight": 1,
+					"name": "cata:astro_jelly_in_a_bottle"
+				},
+				{
+					"type": "item",
+					"name": "cata:ancient_ring",
+					"weight": 1
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "empty",
+					"weight": 85
+				},
+				{
+					"type": "item",
+					"name": "minecraft:diamond_helmet",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "enchant_random_gear",
+							"chance": 1
+						},
+						{
+							"function": "set_damage",
+							"damage": {
+								"min": 0.4,
+								"max": 0.8
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"weight": 1,
+					"name": "minecraft:diamond_chestplate",
+					"functions": [
+						{
+							"function": "enchant_random_gear",
+							"chance": 1
+						},
+						{
+							"function": "set_damage",
+							"damage": {
+								"min": 0.4,
+								"max": 0.8
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:diamond_leggings",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "enchant_random_gear",
+							"chance": 1
+						},
+						{
+							"function": "set_damage",
+							"damage": {
+								"min": 0.4,
+								"max": 0.8
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:diamond_boots",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "enchant_random_gear",
+							"chance": 1
+						},
+						{
+							"function": "set_damage",
+							"damage": {
+								"min": 0.4,
+								"max": 0.8
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

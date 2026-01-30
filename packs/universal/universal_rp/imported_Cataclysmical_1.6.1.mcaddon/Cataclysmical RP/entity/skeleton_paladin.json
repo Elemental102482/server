@@ -1,0 +1,44 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "cata:skeleton_paladin",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/skeleton_paladin_texture"
+			},
+			"geometry": {
+				"default": "geometry.skeleton_paladin"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "cata_skeleton_paladin_egg"
+			},
+			"animations": {
+				"brute_idle": "animation.skeleton_paladin.idle",
+				"brute_move": "animation.skeleton_paladin.move",
+				"brute_shield_cooldown": "animation.skeleton_paladin.shield_cooldown",
+				"brute_attack": "animation.skeleton_paladin.attack",
+				"brute_move_controller": "controller.animation.verdant_skeleton.brute_move",
+				"brute_shield_controller": "controller.animation.verdant_skeleton.brute_shield",
+				"brute_attack_controller": "controller.animation.verdant_skeleton.brute_attack",
+				"look_at_target_default": "animation.humanoid.look_at_target.default"
+			},
+			"scripts": {
+				"animate": [
+					"brute_move_controller",
+					"brute_shield_controller",
+					"brute_attack_controller",
+					"look_at_target_default"
+				]
+			},
+			"sound_effects": {
+				"large_sword_swing": "sound.large_sword_swing"
+			}
+		}
+	}
+}

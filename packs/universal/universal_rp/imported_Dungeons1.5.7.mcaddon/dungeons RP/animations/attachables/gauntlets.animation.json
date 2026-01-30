@@ -1,0 +1,115 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.gauntlets.first_person_hold": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"rotation": [
+						78.07895,
+						-10.09106,
+						-36.79596
+					],
+					"position": [
+						-2,
+						28,
+						9
+					],
+					"scale": 2
+				},
+				"root_item2": {
+					"scale": 0
+				},
+				"glow_item": {
+					"rotation": [
+						78.07895,
+						-10.09106,
+						-36.79596
+					],
+					"position": [
+						-2,
+						28,
+						9
+					],
+					"scale": 2
+				},
+				"glow_item2": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.gauntlets.third_person_hold": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"rotation": [
+						90,
+						0,
+						0
+					],
+					"position": [
+						0.81,
+						25.5,
+						1.6
+					],
+					"scale": [
+						1.2,
+						1.1,
+						1
+					]
+				},
+				"root_item2": {
+					"rotation": [
+						90,
+						0,
+						0
+					],
+					"position": [
+						0.81,
+						25.5,
+						1.6
+					],
+					"scale": [
+						1.2,
+						1.1,
+						1
+					]
+				},
+				"glow_item": {
+					"rotation": [
+						90,
+						0,
+						0
+					],
+					"position": [
+						0.81,
+						25.5,
+						1.6
+					],
+					"scale": [
+						1.2,
+						1.1,
+						1
+					]
+				},
+				"glow_item2": {
+					"rotation": [
+						90,
+						0,
+						0
+					],
+					"position": [
+						0.81,
+						25.5,
+						1.6
+					],
+					"scale": [
+						1.2,
+						1.1,
+						1
+					]
+				}
+			}
+		}
+	}
+}

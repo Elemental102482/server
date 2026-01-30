@@ -1,0 +1,22 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "e:sky_striker_book_3",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "book_enchanted"
+			},
+			"minecraft:display_name": {
+				"value": "§eEnchanted Book \n§2Sky Striker III \n§dCan Enchant: \n§7-Sword \n§aAbility: \n§7-When hitting a mob It has a 75 procent  chance of Striking lightning on it \n§6Advanced Enchants"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.enchantedBook"
+			},
+			"minecraft:foil": true,
+			"minecraft:max_stack_size": 1
+		}
+	}
+}

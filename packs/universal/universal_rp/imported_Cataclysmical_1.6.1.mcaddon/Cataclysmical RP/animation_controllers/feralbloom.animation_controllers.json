@@ -1,0 +1,115 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.feralbloom.move_controller": {
+			"states": {
+				"unconscious": {
+					"animations": [
+						"unconscious"
+					],
+					"transitions": [
+						{
+							"awaken": "query.is_stunned&&query.skin_id==1"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"awaken": {
+					"animations": [
+						"awaken"
+					],
+					"transitions": [
+						{
+							"idle": "query.all_animations_finished"
+						},
+						{
+							"walking": "query.all_animations_finished"
+						},
+						{
+							"unconscious": "query.is_stunned&&query.skin_id==0"
+						}
+					],
+					"blend_transition": 0.4
+				},
+				"idle": {
+					"animations": [
+						"idle"
+					],
+					"transitions": [
+						{
+							"walking": "q.ground_speed>0.1"
+						},
+						{
+							"unconscious": "query.is_stunned&&query.skin_id==0"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"walking": {
+					"animations": [
+						"move"
+					],
+					"transitions": [
+						{
+							"idle": "q.ground_speed<0.1"
+						},
+						{
+							"unconscious": "query.is_stunned&&query.skin_id==0"
+						}
+					],
+					"blend_transition": 0.5
+				}
+			}
+		},
+		"controller.animation.feralbloom.attack_controller": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"normal_attack": "query.is_delayed_attacking==1&&query.skin_id==3"
+						},
+						{
+							"bloom_poison": "query.is_casting==1&&query.skin_id==5"
+						},
+						{
+							"heavy_attack": "query.is_delayed_attacking==1&&query.skin_id==4"
+						}
+					],
+					"blend_transition": 0.4
+				},
+				"normal_attack": {
+					"animations": [
+						"normal_attack"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_delayed_attacking"
+						}
+					],
+					"blend_transition": 0.4
+				},
+				"heavy_attack": {
+					"animations": [
+						"heavy_attack"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_delayed_attacking"
+						}
+					]
+				},
+				"bloom_poison": {
+					"animations": [
+						"bloom_poison"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_casting"
+						}
+					],
+					"blend_transition": 0.4
+				}
+			}
+		}
+	}
+}

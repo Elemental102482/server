@@ -1,0 +1,29 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.buzzy_nest.fall": {
+			"initial_state": "default",
+			"states": {
+				"fall": {
+					"animations": [
+						"fall"
+					],
+					"transitions": [
+						{
+							"default": "!q.is_saddled"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"default": {
+					"transitions": [
+						{
+							"fall": "q.is_saddled"
+						}
+					],
+					"blend_transition": 0
+				}
+			}
+		}
+	}
+}

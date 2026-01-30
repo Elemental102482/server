@@ -1,0 +1,285 @@
+[
+	{
+		"flipbook_texture": "textures/blocks/astral_dust",
+		"atlas_tile": "cata_astral_dust",
+		"frames": [
+			0,
+			1,
+			2,
+			3
+		],
+		"ticks_per_frame": 20,
+		"blend_frames": true
+	},
+	{
+		"flipbook_texture": "textures/blocks/emberglow",
+		"atlas_tile": "cata_emberglow",
+		"frames": [
+			0,
+			1
+		],
+		"ticks_per_frame": 20,
+		"blend_frames": true
+	},
+	{
+		"flipbook_texture": "textures/items/blooming_heart",
+		"atlas_tile": "cata_blooming_heart",
+		"frames": [
+			0,
+			1,
+			2,
+			3
+		],
+		"ticks_per_frame": 3,
+		"blend_frames": false
+	},
+	{
+		"flipbook_texture": "textures/items/phantasma_greatsword",
+		"atlas_tile": "cata_phantasma_greatsword",
+		"frames": [
+			0,
+			1
+		],
+		"ticks_per_frame": 40,
+		"blend_frames": true
+	},
+	{
+		"flipbook_texture": "textures/items/ectoplasm",
+		"atlas_tile": "cata_ectoplasm",
+		"frames": [
+			0,
+			1
+		],
+		"ticks_per_frame": 40,
+		"blend_frames": true
+	},
+	{
+		"flipbook_texture": "textures/items/terror_detector",
+		"atlas_tile": "cata_terror_detector",
+		"frames": [
+			0,
+			1
+		],
+		"ticks_per_frame": 40,
+		"blend_frames": true
+	},
+	{
+		"flipbook_texture": "textures/blocks/phantasma_stabilizer_side",
+		"atlas_tile": "cata_phantasma_stabilizer_side",
+		"frames": [
+			0,
+			1
+		],
+		"ticks_per_frame": 40,
+		"blend_frames": true
+	},
+	{
+		"flipbook_texture": "textures/items/terror_guide",
+		"atlas_tile": "cata_terror_guide",
+		"frames": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11
+		],
+		"ticks_per_frame": 10,
+		"blend_frames": false
+	},
+	{
+		"flipbook_texture": "textures/items/stellar_greatsword",
+		"atlas_tile": "cata_stellar_greatsword",
+		"frames": [
+			0,
+			1
+		],
+		"ticks_per_frame": 50,
+		"blend_frames": true
+	},
+	{
+		"flipbook_texture": "textures/items/overloaded_solar_core",
+		"atlas_tile": "cata_overloaded_solar_core",
+		"frames": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6
+		],
+		"ticks_per_frame": 2.5,
+		"blend_frames": false
+	},
+	{
+		"flipbook_texture": "textures/items/meowclysm",
+		"atlas_tile": "cata_meowclysm",
+		"frames": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9,
+			10,
+			11,
+			12,
+			13,
+			14
+		],
+		"ticks_per_frame": 2.4,
+		"blend_frames": false
+	},
+	{
+		"flipbook_texture": "textures/items/blazing_excalibur",
+		"atlas_tile": "cata_blazing_excalibur",
+		"frames": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"ticks_per_frame": 2.5,
+		"blend_frames": false
+	},
+	{
+		"flipbook_texture": "textures/items/calamity",
+		"atlas_tile": "cata_calamity",
+		"frames": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"ticks_per_frame": 2.5,
+		"blend_frames": false
+	},
+	{
+		"flipbook_texture": "textures/items/calamity_ring",
+		"atlas_tile": "cata_calamity_ring",
+		"frames": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"ticks_per_frame": 2.5,
+		"blend_frames": false
+	},
+	{
+		"flipbook_texture": "textures/items/shard_of_cataclysm",
+		"atlas_tile": "cata_shard_of_cataclysm",
+		"frames": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5
+		],
+		"ticks_per_frame": 2.5,
+		"blend_frames": false
+	},
+	{
+		"flipbook_texture": "textures/items/shard_of_calamity",
+		"atlas_tile": "cata_shard_of_calamity",
+		"frames": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5
+		],
+		"ticks_per_frame": 2.5,
+		"blend_frames": false
+	},
+	{
+		"flipbook_texture": "textures/items/sun_fragment",
+		"atlas_tile": "cata_sun_fragment",
+		"frames": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"ticks_per_frame": 2.5,
+		"blend_frames": false
+	},
+	{
+		"flipbook_texture": "textures/items/chaosspec_ingot",
+		"atlas_tile": "cata_chaosspec_ingot",
+		"frames": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7
+		],
+		"ticks_per_frame": 2.5,
+		"blend_frames": false
+	},
+	{
+		"flipbook_texture": "textures/items/sunflare_pickaxe",
+		"atlas_tile": "cata_sunflare_pickaxe",
+		"frames": [
+			0,
+			1,
+			2,
+			3,
+			4
+		],
+		"ticks_per_frame": 2.5,
+		"blend_frames": false
+	},
+	{
+		"flipbook_texture": "textures/items/phantasma_nucleus",
+		"atlas_tile": "cata_phantasma_nucleus",
+		"frames": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5
+		],
+		"ticks_per_frame": 2.5,
+		"blend_frames": false
+	},
+	{
+		"flipbook_texture": "textures/items/nebulous_greatsword",
+		"atlas_tile": "cata_nebulous_greatsword",
+		"frames": [
+			0,
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8,
+			9
+		],
+		"ticks_per_frame": 2.4,
+		"blend_frames": false
+	}
+]

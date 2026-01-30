@@ -1,0 +1,42 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:vengeful_heart_of_ender_death",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/vengeful_heart_of_ender/vengeful_heart_of_ender"
+			},
+			"geometry": {
+				"default": "geometry.vengeful_heart_of_ender"
+			},
+			"scripts": {
+				"animate": [
+					"death_controller",
+					"idle"
+				]
+			},
+			"particle_effects": {
+				"hornFlame": "dungeons:vhoe_horn",
+				"neckFlame": "dungeons:vhoe_neck",
+				"shake": "dungeons:vhoe_shake",
+				"stars": "dungeons:big_bang_stars"
+			},
+			"animations": {
+				"idle": "animation.vengeful_heart_of_ender.idle",
+				"vfx": "animation.vengeful_heart_of_ender.particles",
+				"awaken": "animation.vengeful_heart_of_ender.death",
+				"death_controller": "controller.animation.wretched_wraith.death"
+			},
+			"render_controllers": [
+				"controller.render.vengeful_heart_of_ender_death"
+			],
+			"spawn_egg": {
+				"base_color": "#204B16",
+				"overlay_color": "#769849"
+			}
+		}
+	}
+}

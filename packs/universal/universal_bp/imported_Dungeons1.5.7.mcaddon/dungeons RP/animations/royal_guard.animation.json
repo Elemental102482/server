@@ -1,0 +1,152 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.royal_guard.attack": {
+			"loop": true,
+			"bones": {
+				"leftArm": {
+					"rotation": [
+						"((query.is_riding?0:((math.cos(217.8*query.life_time)*28.65)+(math.sin(variable.attack_time*180)*68.76-(math.sin((1-(1-variable.attack_time)*(1-variable.attack_time))*180))*22.92)))/2)*!q.is_saddled",
+						0,
+						0
+					]
+				},
+				"rightArm": {
+					"rotation": [
+						"(-108+math.cos(76.8*query.life_time)*2.87)+(math.sin(variable.attack_time*180)*126.05-(math.sin((1-(1-variable.attack_time)*(1-variable.attack_time))*180))*22.92)",
+						0,
+						0
+					]
+				}
+			}
+		},
+		"animation.royal_guard.hand_attack": {
+			"loop": true,
+			"bones": {
+				"leftArm": {
+					"rotation": [
+						0,
+						0,
+						0
+					]
+				},
+				"rightArm": {
+					"rotation": [
+						"(-108+math.cos(76.8*query.life_time)*2.87)+(math.sin(variable.attack_time*180)*126.05-(math.sin((1-(1-variable.attack_time)*(1-variable.attack_time))*180))*22.92)",
+						0,
+						0
+					]
+				}
+			}
+		},
+		"animation.royal_guard.base": {
+			"loop": true,
+			"bones": {
+				"arms": {
+					"rotation": [
+						"-42.97-this",
+						0,
+						0
+					],
+					"position": [
+						0,
+						"-3-this",
+						"-1-this"
+					]
+				},
+				"leftArm": {
+					"rotation": [
+						"(math.cos(76.8*query.life_time)*2.87)*!q.is_saddled",
+						"-9*!q.is_saddled",
+						"(-1*(math.cos(103.2*query.life_time)*2.87+2.87))*!q.is_saddled"
+					]
+				},
+				"rightArm": {
+					"rotation": [
+						"math.cos(38.4*query.life_time)*2.87",
+						9,
+						"math.cos(51.6*query.life_time)*2.87+2.87"
+					]
+				}
+			}
+		},
+		"animation.royal_guard.riding.legs": {
+			"loop": true,
+			"bones": {
+				"leg0": {
+					"rotation": [
+						"-72-this",
+						"18-this",
+						"-this"
+					]
+				},
+				"leg1": {
+					"rotation": [
+						"-72-this",
+						"-18-this",
+						"-this"
+					]
+				}
+			}
+		},
+		"animation.royal_guard.riding.arms": {
+			"loop": true,
+			"bones": {
+				"leftArm": {
+					"rotation": [
+						"!q.is_saddled*-20",
+						0,
+						0
+					]
+				}
+			}
+		},
+		"animation.royal_guard.walk": {
+			"loop": true,
+			"bones": {
+				"leg0": {
+					"rotation": [
+						"variable.tcos0*-0.9",
+						-0.1,
+						-0.1
+					]
+				},
+				"leg1": {
+					"rotation": [
+						"variable.tcos0*0.9",
+						-0.1,
+						-0.1
+					]
+				}
+			}
+		},
+		"animation.royal_guard.shielded": {
+			"loop": "hold_on_last_frame",
+			"particle_effects": {
+				"0.01": {
+					"effect": "shield",
+					"locator": "shield_particles"
+				}
+			},
+			"bones": {
+				"shield": {
+					"scale": 0
+				},
+				"leftArm": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.7": [
+							67.5,
+							0,
+							0
+						]
+					}
+				}
+			}
+		}
+	}
+}

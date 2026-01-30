@@ -1,0 +1,22 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "cata:deepslate_platinum_ore"
+		},
+		"count": 6,
+		"replace_rules": [
+			{
+				"places_block": {
+					"name": "cata:deepslate_platinum_ore",
+					"states": {}
+				},
+				"may_replace": [
+					{
+						"name": "minecraft:deepslate"
+					}
+				]
+			}
+		]
+	}
+}

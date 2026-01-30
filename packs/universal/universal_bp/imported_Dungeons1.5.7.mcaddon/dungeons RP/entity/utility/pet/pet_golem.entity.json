@@ -1,0 +1,63 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:pet_iron_golem",
+			"materials": {
+				"default": "entity_emissive",
+				"enchanted": "dungeons_entity_enchant"
+			},
+			"textures": {
+				"default": "textures/entity/iron_golem",
+				"glow": "textures/entity/iron_golem/enchanted_iron_golem",
+				"cracked_high": "textures/entity/iron_golem/cracked_high",
+				"cracked_med": "textures/entity/iron_golem/cracked_medium",
+				"cracked_low": "textures/entity/iron_golem/cracked_low",
+				"cracked_none": "textures/entity/iron_golem/cracked_none",
+				"enchanted": "textures/misc/enchanted_entity_glint"
+			},
+			"geometry": {
+				"default": "geometry.dungeons_irongolem"
+			},
+			"animations": {
+				"enchanted_particles": "animation.enchanted_mob.particles",
+				"walk": "animation.iron_golem.walk",
+				"move": "animation.iron_golem.move",
+				"attack": "animation.iron_golem.attack",
+				"flower": "animation.iron_golem.flower",
+				"look_at_target": "animation.common.look_at_target",
+				"walk_to_target": "animation.iron_golem.walk_to_target",
+				"move_to_target": "animation.iron_golem.move_to_target",
+				"move_controller": "controller.animation.iron_golem.move",
+				"arm_controller": "controller.animation.iron_golem.arm_movement"
+			},
+			"render_controllers": [
+				"controller.render.dungeons_iron_golem",
+				"controller.render.dungeons_iron_golem_cracks",
+				{
+					"controller.render.dungeons_entity_enchanted": "q.is_saddled==1"
+				}
+			],
+			"particle_effects": {
+				"enchant": "dungeons:tall_humanoid_enchant"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.modified_tcos0 = Math.clamp(((Math.cos(query.modified_distance_moved * 13.5) * Math.min(query.modified_move_speed, 0.6) / variable.gliding_speed_value) * 25.0), -12.5, 12.5);"
+				],
+				"animate": [
+					"look_at_target",
+					"move_controller",
+					"arm_controller",
+					{
+						"enchanted_particles": "q.is_saddled==1"
+					}
+				]
+			},
+			"spawn_egg": {
+				"base_color": "#dbcdc2",
+				"overlay_color": "#74a332"
+			}
+		}
+	}
+}

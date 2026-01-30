@@ -1,0 +1,37 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.corrupted_ooze.land": {
+			"initial_state": "default",
+			"states": {
+				"squish": {
+					"animations": [
+						"land"
+					],
+					"transitions": [
+						{
+							"default": "q.is_on_ground&&q.all_animations_finished"
+						}
+					],
+					"blend_transition": 0
+				},
+				"air": {
+					"transitions": [
+						{
+							"squish": "q.is_on_ground"
+						}
+					],
+					"blend_transition": 0
+				},
+				"default": {
+					"transitions": [
+						{
+							"air": "!q.is_on_ground"
+						}
+					],
+					"blend_transition": 0
+				}
+			}
+		}
+	}
+}

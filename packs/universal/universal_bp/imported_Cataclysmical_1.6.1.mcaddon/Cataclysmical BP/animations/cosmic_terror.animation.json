@@ -1,0 +1,91 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.cosmic_terror.normal_attack": {
+			"animation_length": 1.75,
+			"loop": false
+		},
+		"animation.cosmic_terror.heavy_attack": {
+			"animation_length": 3,
+			"loop": false,
+			"timeline": {
+				"2.00": [
+					"/summon cata:cosmic_terror_heavy_attack ~ ~ ~",
+					"/particle cata:cosmic_terror_heavy_attack ~ ~ ~"
+				]
+			}
+		},
+		"animation.cosmic_terror.summon": {
+			"animation_length": 3,
+			"loop": false,
+			"timeline": {
+				"1": [
+					"/summon cata:cosmic_terror_skull ^^1^ facing ^90^^90",
+					"/summon cata:cosmic_terror_skull ^^1^ facing ^90^^-90",
+					"/summon cata:cosmic_terror_skull ^^1^ facing ^90^-90^",
+					"/summon cata:cosmic_terror_skull ^^1^ facing ^-90^-90^",
+					"/playsound mob.spirit_scream @a[r=32] ~ ~ ~ 1 1 1"
+				],
+				"2": [
+					"/summon cata:cosmic_terror_skull ^^1^ facing ^^^90",
+					"/summon cata:cosmic_terror_skull ^^1^ facing ^^^-90",
+					"/summon cata:cosmic_terror_skull ^^1^ facing ^90^^",
+					"/summon cata:cosmic_terror_skull ^^1^ facing ^-90^^",
+					"/playsound mob.spirit_scream @a[r=32] ~ ~ ~ 1 1 1"
+				],
+				"0.75": [
+					"/summon cata:cosmic_terror_skull ^^1.5^ facing ^^^90",
+					"/summon cata:cosmic_terror_skull ^^1.5^ facing ^^^-90",
+					"/summon cata:cosmic_terror_skull ^^1.5^ facing ^90^^",
+					"/summon cata:cosmic_terror_skull ^^1.5^ facing ^-90^^",
+					"/playsound mob.spirit_scream @a[r=32] ~ ~ ~ 1 1 1"
+				],
+				"1.25": [
+					"/summon cata:cosmic_terror_skull ^^1.5^ facing ^90^^90",
+					"/summon cata:cosmic_terror_skull ^^1.5^ facing ^90^^-90",
+					"/summon cata:cosmic_terror_skull ^^1.5^ facing ^90^-90^",
+					"/summon cata:cosmic_terror_skull ^^1.5^ facing ^-90^-90^",
+					"/playsound mob.spirit_scream @a[r=32] ~ ~ ~ 1 1 1"
+				],
+				"1.50": [
+					"/summon cata:cosmic_terror_skull ^^1^ facing ^^^90",
+					"/summon cata:cosmic_terror_skull ^^1^ facing ^^^-90",
+					"/summon cata:cosmic_terror_skull ^^1^ facing ^90^^",
+					"/summon cata:cosmic_terror_skull ^^1^ facing ^-90^^",
+					"/playsound mob.spirit_scream @a[r=32] ~ ~ ~ 1 1 1"
+				],
+				"1.75": [
+					"/summon cata:cosmic_terror_skull ^^1^ facing ^90^^90",
+					"/summon cata:cosmic_terror_skull ^^1^ facing ^90^^-90",
+					"/summon cata:cosmic_terror_skull ^^1^ facing ^90^-90^",
+					"/summon cata:cosmic_terror_skull ^^1^ facing ^-90^-90^",
+					"/playsound mob.spirit_scream @a[r=32] ~ ~ ~ 1 1 1"
+				]
+			}
+		},
+		"animation.cosmic_terror.roar": {
+			"animation_length": 2,
+			"loop": false,
+			"timeline": {
+				"0.5": [
+					"/summon cata:cosmic_terror_heavy_roar ~ ~ ~"
+				],
+				"0.6": [
+					"/summon cata:cosmic_terror_heavy_roar ~ ~ ~"
+				],
+				"0.7": [
+					"/summon cata:cosmic_terror_heavy_roar ~ ~ ~"
+				],
+				"0.8": [
+					"/summon cata:cosmic_terror_heavy_roar ~ ~ ~"
+				],
+				"1.00": [
+					"/summon cata:cosmic_terror_heavy_roar ~ ~ ~"
+				],
+				"1.20": [
+					"/summon cata:cosmic_terror_heavy_roar ~ ~ ~"
+				]
+			}
+		}
+	}
+}

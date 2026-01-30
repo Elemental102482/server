@@ -1,0 +1,109 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.cosmic_terror.move_controller": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"move": "q.ground_speed>0.1"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"move": {
+					"animations": [
+						"move"
+					],
+					"transitions": [
+						{
+							"default": "q.ground_speed<0.1"
+						}
+					],
+					"blend_transition": 0.5
+				}
+			}
+		},
+		"controller.animation.cosmic_terror.awaken_controller": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"awaken": "query.is_stunned&&query.skin_id==0"
+						}
+					]
+				},
+				"awaken": {
+					"animations": [
+						"awaken"
+					]
+				}
+			}
+		},
+		"controller.animation.cosmic_terror.attack_controller": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"normal_attack": "query.is_delayed_attacking==1&&query.skin_id==1"
+						},
+						{
+							"heavy_attack": "query.is_delayed_attacking==1&&query.skin_id==2"
+						},
+						{
+							"summon": "query.is_casting==1&&query.skin_id==3"
+						},
+						{
+							"roar": "query.is_casting==1&&query.skin_id==4"
+						}
+					],
+					"blend_transition": 0.4
+				},
+				"normal_attack": {
+					"animations": [
+						"normal_attack"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_delayed_attacking"
+						}
+					],
+					"blend_transition": 0.4
+				},
+				"heavy_attack": {
+					"animations": [
+						"heavy_attack"
+					],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.4
+				},
+				"summon": {
+					"animations": [
+						"summon"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_casting"
+						}
+					],
+					"blend_transition": 0.4
+				},
+				"roar": {
+					"animations": [
+						"roar"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_casting"
+						}
+					],
+					"blend_transition": 0.4
+				}
+			}
+		}
+	}
+}

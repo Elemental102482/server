@@ -1,0 +1,22 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.feralbloom.heavy_attack": {
+			"animation_length": 1.75,
+			"loop": false
+		},
+		"animation.feralbloom.bloom_poison": {
+			"animation_length": 2.25,
+			"loop": false,
+			"timeline": {
+				"1.05": [
+					"/summon cata:bloom_poison ^^^2"
+				]
+			}
+		},
+		"animation.feralbloom.normal_attack": {
+			"animation_length": 0.75,
+			"loop": false
+		}
+	}
+}

@@ -1,0 +1,18 @@
+{
+    "format_version": "1.21.20",
+    "minecraft:template_pool": {
+        "description": {
+            "identifier": "dungeons:monument_elder_guardian"
+        },
+        "elements": [
+            {
+                "element": {
+                    "element_type": "minecraft:single_pool_element",
+                    "location": "abyssal_monument/elder_guardian",
+                    "processors": "dungeons:processor_default"
+                },
+                "weight": 1
+            }
+        ]
+    }
+}

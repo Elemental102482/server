@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "wretched_wraith_fire",
+        "metalness_emissive_roughness": "wretched_wraith_fire_mer"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "zombified_fungus_thrower",
+        "metalness_emissive_roughness": "zombified_fungus_thrower_mer"
+    }
+}

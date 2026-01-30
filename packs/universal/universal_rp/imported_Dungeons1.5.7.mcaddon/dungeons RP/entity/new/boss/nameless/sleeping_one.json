@@ -1,0 +1,38 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:nameless_one_resting",
+			"materials": {
+				"default": "entity_emissive_alpha",
+				"orb": "entity_emissive_alpha_one_sided"
+			},
+			"textures": {
+				"default": "textures/entity/nameless_one/nameless_one_sleep",
+				"on": "textures/entity/nameless_one/nameless_one"
+			},
+			"geometry": {
+				"default": "geometry.nameless_one"
+			},
+			"render_controllers": [
+				"controller.render.nameless_one_sleeping"
+			],
+			"animations": {
+				"resting": "animation.nameless_one.resting",
+				"awaken": "animation.nameless_one.awaken",
+				"wake_controller": "controller.animation.redstone_monstrosity.rest"
+			},
+			"scripts": {
+				"animate": [
+					"wake_controller"
+				]
+			},
+			"sound_effects": {
+				"awaken": "mob.nameless_one.laugh"
+			},
+			"spawn_egg": {
+				"texture": "egg_nameless_one"
+			}
+		}
+	}
+}

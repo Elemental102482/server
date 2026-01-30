@@ -1,0 +1,25 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.player.sickle_tool.first_person": {
+			"loop": true,
+			"bones": {
+				"rightitem": {
+					"rotation": ["c.is_first_person ? 200 : 0", "c.is_first_person ? 180 : 0", "c.is_first_person ? 40 : 0"],
+					"position": [" c.is_first_person ? 3 : 0", "c.is_first_person ? 3 : 0", "c.is_first_person ? 3 : 0"],
+					"scale": 0.4
+				}
+			}
+		},
+		"animation.player.sickle_tool": {
+			"loop": true,
+			"bones": {
+				"rightitem": {
+					"rotation": [90, 0, -90],
+					"position": [0, -1.5, -3.2],
+					"scale": 0.4
+				}
+			}
+		}
+	}
+}

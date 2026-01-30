@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "helmet_sprout",
+        "metalness_emissive_roughness": "helmet_sprout_mer"
+    }
+}

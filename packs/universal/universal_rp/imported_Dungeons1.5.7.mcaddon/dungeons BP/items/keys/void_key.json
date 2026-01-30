@@ -1,0 +1,21 @@
+{
+	"format_version": "1.21.110",
+	"minecraft:item": {
+		"description": {
+			"identifier": "dungeons:void_key",
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:hover_text_color": {
+				"value": "light_purple"
+			},
+			"minecraft:icon": "void_key",
+			"minecraft:should_despawn": {
+				"value": false
+			},
+			"minecraft:fire_resistant": {}
+		}
+	}
+}

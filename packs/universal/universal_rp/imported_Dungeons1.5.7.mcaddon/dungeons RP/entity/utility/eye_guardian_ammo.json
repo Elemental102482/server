@@ -1,0 +1,36 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:eye_guardian_ammo",
+			"materials": {
+				"default": "fireball"
+			},
+			"textures": {
+				"default": "textures/misc/void"
+			},
+			"geometry": {
+				"default": "geometry.fireball"
+			},
+			"animations": {
+				"face_player": "animation.actor.billboard",
+				"particles": "animation.necromancer_shot.particles"
+			},
+			"particle_effects": {
+				"energy": "dungeons:eye_of_guardian"
+			},
+			"scripts": {
+				"scale": "0.45",
+				"animate": [
+					"face_player",
+					{
+						"particles": "20"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.blastling_ammo"
+			]
+		}
+	}
+}

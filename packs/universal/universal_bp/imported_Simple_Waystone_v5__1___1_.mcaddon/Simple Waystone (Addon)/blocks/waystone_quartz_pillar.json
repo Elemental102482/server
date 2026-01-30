@@ -1,0 +1,49 @@
+{
+  "format_version": "1.21.5",
+  "minecraft:block": {
+    "description": {
+      "identifier": "ws:waystone_quartz_pillar",
+      "menu_category": { "category": "items" },
+      "states": {
+        "ws:waystone": [0, 1, 2],
+        "ws:waystone_on": [false, true]
+      }
+    },
+    "components": {
+      "minecraft:custom_components": [ "ws:waystone" ],
+      "minecraft:loot": "loot_tables/empty.json",
+      "minecraft:light_dampening": 0,
+      "minecraft:geometry": {
+        "identifier": "geometry.waystone",
+        "bone_visibility": {
+          "waystone_item": "q.block_state('ws:waystone') == 0",
+          "waystone_down": "q.block_state('ws:waystone') == 1",
+          "waystone_up": "q.block_state('ws:waystone') == 2",
+          "waystone_on": "q.block_state('ws:waystone_on') && q.block_state('ws:waystone') != 2"
+        }
+      },
+      "minecraft:material_instances": {
+        "*": { "texture": "quartz_pillar_top", "render_method": "alpha_test" },
+        "letters": { "texture": "letters", "render_method": "alpha_test" }
+      },
+      "minecraft:selection_box": { "origin": [-5, 0, -5], "size": [10, 16, 10] },
+      "minecraft:destructible_by_explosion": { "explosion_resistance": 2 },
+      "minecraft:destructible_by_mining": { "seconds_to_destroy": 2 },
+      "minecraft:map_color": "#868887"
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('ws:waystone') == 1",
+        "components": {
+          "minecraft:placement_filter": { "conditions": [ { "allowed_faces": ["down"], "block_filter": ["ws:waystone_quartz_pillar"] } ] }
+        }
+      },
+      {
+        "condition": "q.block_state('ws:waystone') == 2",
+        "components": {
+          "minecraft:placement_filter": { "conditions": [ { "allowed_faces": ["up"], "block_filter": ["ws:waystone_quartz_pillar"] } ] }
+        }
+      }
+    ]
+  }
+}

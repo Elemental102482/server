@@ -1,0 +1,26 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cata:asteroid_brick_slab"
+		},
+		"pattern": [
+			"111"
+		],
+		"key": {
+			"1": {
+				"item": "cata:asteroid_brick"
+			}
+		},
+		"result": {
+			"item": "cata:asteroid_brick_slab",
+			"count": 4
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": {
+			"context": "AlwaysUnlocked"
+		}
+	}
+}

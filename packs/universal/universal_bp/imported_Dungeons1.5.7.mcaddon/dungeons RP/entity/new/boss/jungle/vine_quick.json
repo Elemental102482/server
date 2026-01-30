@@ -1,0 +1,33 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:abomination_quick_vine",
+			"min_engine_version": "1.10.0",
+			"materials": {
+				"default": "entity"
+			},
+			"textures": {
+				"default": "textures/entity/jungle_abomination/abomination_vine"
+			},
+			"geometry": {
+				"default": "geometry.abomination_vine"
+			},
+			"scripts": {
+				"animate": [
+					"attack"
+				]
+			},
+			"animations": {
+				"attack": "animation.abomination_vine.spike"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"base_color": "#204B16",
+				"overlay_color": "#769849"
+			}
+		}
+	}
+}

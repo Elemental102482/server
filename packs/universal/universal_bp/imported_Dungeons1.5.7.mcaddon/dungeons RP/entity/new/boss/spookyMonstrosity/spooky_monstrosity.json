@@ -1,0 +1,58 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:spooky_monstrosity",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/spooky_monstrosity/spooky_monstrosity",
+				"redstone": "textures/entity/spooky_monstrosity/spooky_monstrosity_redstone"
+			},
+			"geometry": {
+				"default": "geometry.spooky_monstrosity"
+			},
+			"render_controllers": [
+				"controller.render.monstrosity_redstone",
+				"controller.render.default"
+			],
+			"animations": {
+				"move": "animation.redstone_monstrosity.walk",
+				"smash": "animation.redstone_monstrosity.smash",
+				"attack_controller": "controller.animation.redstone_monstrosity.attack",
+				"move_controller": "controller.animation.redstone_monstrosity.move",
+				"roar": "animation.redstone_monstrosity.roar",
+				"roar_controller": "controller.animation.redstone_monstrosity.roar",
+				"death": "animation.necromancer_shot.particles",
+				"fire": "animation.spooky_monstrosity.fire",
+				"look_at_target": "animation.common.look_at_target"
+			},
+			"scripts": {
+				"animate": [
+					"attack_controller",
+					"move_controller",
+					"roar_controller",
+					"fire",
+					{
+						"look_at_target": "!query.is_casting&&!q.is_delayed_attacking"
+					},
+					{
+						"death": "query.is_alive!=1"
+					}
+				]
+			},
+			"particle_effects": {
+				"magma": "dungeons:magma_spit_spooky",
+				"smoke": "dungeons:magma_spit_smoke",
+				"hand_flames": "dungeons:spooky_monstrosity_fists",
+				"face_flames": "dungeons:spooky_monstrosity_face",
+				"energy": "minecraft:dragon_death_explosion_emitter"
+			},
+			"spawn_egg": {
+				"base_color": "#E61D00",
+				"overlay_color": "#FFFF97"
+			}
+		}
+	}
+}

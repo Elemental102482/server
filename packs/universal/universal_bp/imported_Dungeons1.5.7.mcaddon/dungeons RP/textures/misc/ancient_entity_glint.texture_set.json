@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "ancient_entity_glint",
+        "metalness_emissive_roughness": "enchanted_entity_glint_mer"
+    }
+}

@@ -1,0 +1,43 @@
+{
+	"format_version": "1.21.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "cata:platinum_ore",
+			"menu_category": {
+				"group": "minecraft:itemGroup.name.ore",
+				"category": "nature"
+			}
+		},
+		"components": {
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 7.5,
+				"item_specific_speeds": [
+					{
+						"destroy_speed": 0.4,
+						"item": "minecraft:iron_pickaxe"
+					},
+					{
+						"destroy_speed": 0.3,
+						"item": "minecraft:diamond_pickaxe"
+					},
+					{
+						"destroy_speed": 0.25,
+						"item": "minecraft:netherite_pickaxe"
+					},
+					{
+						"destroy_speed": 0.2,
+						"item": "minecraft:golden_pickaxe"
+					},
+					{
+						"destroy_speed": 0.5,
+						"item": "cata:sunflare_pickaxe"
+					}
+				]
+			},
+			"minecraft:loot": "loot_tables/blocks/platinum_ore.json",
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 75
+			}
+		}
+	}
+}

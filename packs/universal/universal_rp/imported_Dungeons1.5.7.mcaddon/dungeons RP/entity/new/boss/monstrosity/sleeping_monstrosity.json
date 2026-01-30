@@ -1,0 +1,39 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:redstone_monstrosity_resting",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/redstone_monstrosity/monstrosity",
+				"none": "textures/misc/void",
+				"redstone": "textures/entity/redstone_monstrosity/monstrosity_redstone"
+			},
+			"geometry": {
+				"default": "geometry.redstone_monstrosity"
+			},
+			"render_controllers": [
+				"controller.render.default",
+				"controller.render.monstrosity_awaken"
+			],
+			"animations": {
+				"resting": "animation.redstone_monstrosity.resting",
+				"awaken": "animation.redstone_monstrosity.awaken",
+				"wake_controller": "controller.animation.redstone_monstrosity.rest"
+			},
+			"scripts": {
+				"animate": [
+					"wake_controller"
+				]
+			},
+			"sound_effects": {
+				"awaken": "mob.monstrosity.awaken"
+			},
+			"spawn_egg": {
+				"texture": "egg_redstone_monstrosity"
+			}
+		}
+	}
+}

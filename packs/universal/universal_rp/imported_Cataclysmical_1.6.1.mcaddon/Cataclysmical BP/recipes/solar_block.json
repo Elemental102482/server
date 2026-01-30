@@ -1,0 +1,24 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "cata:solar_block"
+		},
+		"ingredients": [
+			{
+				"item": "cata:solar_element",
+				"count": 9
+			}
+		],
+		"result": {
+			"item": "cata:solar_block",
+			"count": 1
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": {
+			"context": "AlwaysUnlocked"
+		}
+	}
+}

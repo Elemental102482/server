@@ -1,0 +1,40 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:leapleaf",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/leapleaf/leapleaf"
+			},
+			"geometry": {
+				"default": "geometry.leapleaf"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"animations": {
+				"move": "animation.leapleaf.walk",
+				"attack.rotations": "animation.redstone_golem.attack",
+				"attack_controller": "controller.animation.redstone_golem.attack",
+				"move_controller": "controller.animation.redstone_golem.move2",
+				"look_at_target": "animation.common.look_at_target",
+				"stunned": "animation.leapleaf.stun",
+				"charge": "animation.leapleaf.roar",
+				"root_controller": "controller.animation.leapleaf.root"
+			},
+			"scripts": {
+				"animate": [
+					"attack_controller",
+					"move_controller",
+					"root_controller"
+				]
+			},
+			"spawn_egg": {
+				"texture": "egg_leapleaf"
+			}
+		}
+	}
+}

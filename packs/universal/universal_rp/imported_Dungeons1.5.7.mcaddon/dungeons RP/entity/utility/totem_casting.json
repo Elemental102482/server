@@ -1,0 +1,20 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:totem_of_casting",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/totem_casting"
+			},
+			"geometry": {
+				"default": "geometry.totem_of_casting"
+			},
+			"render_controllers": [
+				"controller.render.totem_casting"
+			]
+		}
+	}
+}

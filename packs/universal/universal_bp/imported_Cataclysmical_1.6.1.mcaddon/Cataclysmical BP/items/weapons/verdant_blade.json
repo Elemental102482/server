@@ -1,0 +1,63 @@
+{
+	"format_version": "1.21.80",
+	"minecraft:item": {
+		"description": {
+			"identifier": "cata:verdant_blade",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:damage": {
+				"value": 9
+			},
+			"minecraft:can_destroy_in_creative": true,
+			"minecraft:max_stack_size": {
+				"value": 1
+			},
+			"minecraft:durability": {
+				"max_durability": 3400
+			},
+			"minecraft:digger": {
+				"use_efficiency": true,
+				"destroy_speeds": [
+					{
+						"block": "minecraft:web",
+						"speed": 14
+					}
+				]
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"cata:verdant_plating"
+						],
+						"repair_amount": "query.max_durability*0.5"
+					},
+					{
+						"items": [
+							"cata:verdant_blade"
+						],
+						"repair_amount": "context.other->query.remaining_durability+0.12*context.other->query.max_durability"
+					}
+				]
+			},
+			"minecraft:interact_button": true,
+			"minecraft:rarity": {
+				"value": "rare"
+			},
+			"minecraft:block_placer": {
+				"block": "cata:verdant_blade",
+				"use_on": [
+					"cata:verdant_blade"
+				],
+				"replace_block_item": true
+			},
+			"minecraft:cooldown": {
+				"category": "verdant_blade",
+				"duration": 10
+			}
+		}
+	}
+}

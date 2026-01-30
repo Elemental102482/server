@@ -1,0 +1,27 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:item": {
+		"description": {
+			"identifier": "cata:stellar_necklace",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:icon": "cata_stellar_necklace",
+			"minecraft:max_stack_size": 1,
+			"minecraft:cooldown": {
+				"category": "stellar_necklace",
+				"duration": 1
+			},
+			"minecraft:rarity": {
+				"value": "uncommon"
+			},
+			"minecraft:tags": {
+				"tags": [
+					"novelty:is_neckless"
+				]
+			}
+		}
+	}
+}

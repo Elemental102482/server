@@ -1,0 +1,19 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:block": {
+		"description": {
+			"identifier": "cata:verdant_blade"
+		},
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "cata_verdant_blade",
+					"render_method": "alpha_test",
+					"face_dimming": false,
+					"ambient_occlusion": false
+				}
+			},
+			"minecraft:geometry": "geometry.verdant_blade"
+		}
+	}
+}

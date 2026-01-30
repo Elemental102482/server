@@ -1,0 +1,99 @@
+{
+	"format_version": "1.10.0",
+	"geometry.snow_boots": {
+		"texturewidth": 64,
+		"textureheight": 64,
+		"visible_bounds_width": 3,
+		"visible_bounds_height": 3,
+		"visible_bounds_offset": [
+			0,
+			1.5,
+			0
+		],
+		"bones": [
+			{
+				"name": "legs",
+				"parent": "body",
+				"pivot": [
+					0,
+					24,
+					0
+				]
+			},
+			{
+				"name": "rightLeg",
+				"pivot": [
+					-1.9,
+					12,
+					0
+				]
+			},
+			{
+				"name": "boot",
+				"parent": "rightLeg",
+				"pivot": [
+					5,
+					0,
+					0
+				],
+				"cubes": [
+					{
+						"origin": [
+							-4.1,
+							0,
+							-2
+						],
+						"size": [
+							4,
+							6,
+							4
+						],
+						"uv": [
+							44,
+							49
+						],
+						"inflate": 0.2
+					}
+				]
+			},
+			{
+				"name": "leftLeg",
+				"pivot": [
+					1.9,
+					12,
+					0
+				],
+				"mirror": true
+			},
+			{
+				"name": "boot2",
+				"parent": "leftLeg",
+				"pivot": [
+					0,
+					0,
+					0
+				],
+				"cubes": [
+					{
+						"origin": [
+							0.1,
+							0,
+							-2
+						],
+						"size": [
+							4,
+							6,
+							4
+						],
+						"uv": [
+							44,
+							49
+						],
+						"inflate": 0.21,
+						"mirror": true
+					}
+				]
+			}
+		]
+	}
+}

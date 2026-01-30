@@ -1,0 +1,52 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:guardian_vex",
+			"materials": {
+				"default": "entity_emissive_alpha",
+				"enchanted": "dungeons_entity_enchant"
+			},
+			"textures": {
+				"default": "textures/entity/vex/guardian_vex",
+				"glow": "textures/entity/vex/enchanted_guardian_vex",
+				"enchanted": "textures/misc/enchanted_entity_glint"
+			},
+			"geometry": {
+				"default": "geometry.guardian_vex"
+			},
+			"particle_effects": {
+				"glow": "dungeons:vex_glow",
+				"enchanted_particles": "dungeons:small_humanoid_enchant"
+			},
+			"spawn_egg": {
+				"texture": "egg_guardian_vex"
+			},
+			"scripts": {
+				"animate": [
+					"idle",
+					"look_at_target",
+					"particles",
+					{
+						"enchanted_particles": "q.is_saddled==1"
+					}
+				]
+			},
+			"animations": {
+				"enchanted_particles": "animation.enchanted_mob.particles",
+				"particles": "animation.guardian_vex.particles",
+				"look_at_target": "animation.common.look_at_target",
+				"idle": "animation.guardian_vex.idle",
+				"charging": "animation.guardian_vex.charging"
+			},
+			"render_controllers": [
+				"controller.render.guardian_vex",
+				{
+					"controller.render.dungeons_entity_enchanted": "q.is_saddled==1"
+				}
+			],
+			"hide_armor": true,
+			"enable_attachables": true
+		}
+	}
+}

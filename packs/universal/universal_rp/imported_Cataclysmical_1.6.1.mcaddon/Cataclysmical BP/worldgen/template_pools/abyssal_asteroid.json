@@ -1,0 +1,42 @@
+{
+	"format_version": "1.21.20",
+	"minecraft:template_pool": {
+		"description": {
+			"identifier": "cata:abyssal_asteroid"
+		},
+		"elements": [
+			{
+				"element": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "abyssal_asteroid/abyssal_asteroid1",
+					"processors": "cata:abyssal_asteroid_replacement"
+				},
+				"weight": 1
+			},
+			{
+				"element": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "abyssal_asteroid/abyssal_asteroid2",
+					"processors": "cata:abyssal_asteroid_replacement"
+				},
+				"weight": 2
+			},
+			{
+				"element": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "abyssal_asteroid/abyssal_asteroid3",
+					"processors": "cata:abyssal_asteroid_replacement"
+				},
+				"weight": 3
+			},
+			{
+				"element": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "abyssal_asteroid/abyssal_asteroid4",
+					"processors": "cata:abyssal_asteroid_replacement"
+				},
+				"weight": 4
+			}
+		]
+	}
+}

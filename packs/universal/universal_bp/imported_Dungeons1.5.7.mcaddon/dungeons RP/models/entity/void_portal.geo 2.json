@@ -1,0 +1,105 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.void_portal",
+				"texture_width": 240,
+				"texture_height": 240,
+				"visible_bounds_width": 16,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [
+					0,
+					0.25,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "portal",
+					"pivot": [
+						0,
+						1,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-120,
+								1,
+								-120
+							],
+							"size": [
+								240,
+								0,
+								240
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										240,
+										240
+									]
+								},
+								"east": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										240,
+										240
+									]
+								},
+								"south": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										240,
+										240
+									]
+								},
+								"west": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										240,
+										240
+									]
+								},
+								"up": {
+									"uv": [
+										240,
+										240
+									],
+									"uv_size": [
+										-240,
+										-240
+									]
+								},
+								"down": {
+									"uv": [
+										240,
+										240
+									],
+									"uv_size": [
+										-240,
+										-240
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,7 @@
+entity.korbon:mummy.name=Mummy
+item.spawn_egg.entity.korbon:mummy.name=Spawn Mummy
+entity.korbon:pirate.name=Pirate
+item.spawn_egg.entity.korbon:pirate.name=Spawn Pirate
+entity.korbon:herobrine.name=Herobrine
+entity.korbon:possessed_cow.name=Possessed Cow
+entity.korbon:possessed_villager.name=Possessed Villager

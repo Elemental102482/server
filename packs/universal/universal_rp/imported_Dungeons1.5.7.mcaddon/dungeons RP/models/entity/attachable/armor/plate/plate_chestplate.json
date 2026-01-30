@@ -1,0 +1,169 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.plate_chestplate",
+				"texture_width": 96,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [
+					0,
+					1.5,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "waist",
+					"pivot": [
+						0,
+						12,
+						0
+					]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [
+						0,
+						24,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								12,
+								-2
+							],
+							"size": [
+								8,
+								12,
+								4
+							],
+							"inflate": 0.5,
+							"uv": [
+								32,
+								0
+							]
+						},
+						{
+							"origin": [
+								-4,
+								12,
+								-2
+							],
+							"size": [
+								8,
+								12,
+								4
+							],
+							"inflate": 0.55,
+							"uv": [
+								18,
+								32
+							]
+						},
+						{
+							"origin": [
+								-4,
+								17.35822,
+								-2.37868
+							],
+							"size": [
+								8,
+								6,
+								5
+							],
+							"inflate": 0.55,
+							"pivot": [
+								0.05,
+								17.35822,
+								-0.37868
+							],
+							"rotation": [
+								45,
+								0,
+								0
+							],
+							"uv": [
+								57,
+								-1
+							]
+						}
+					]
+				},
+				{
+					"name": "rightArm",
+					"parent": "body",
+					"pivot": [
+						-5,
+						22,
+						0
+					],
+					"mirror": true,
+					"cubes": [
+						{
+							"origin": [
+								-8.67,
+								12,
+								-2
+							],
+							"size": [
+								4,
+								12,
+								4
+							],
+							"inflate": 0.485,
+							"uv": [
+								43,
+								48
+							],
+							"mirror": false
+						}
+					]
+				},
+				{
+					"name": "rightItem",
+					"parent": "rightArm",
+					"pivot": [
+						-6,
+						15,
+						1
+					]
+				},
+				{
+					"name": "leftArm",
+					"parent": "body",
+					"pivot": [
+						5,
+						22,
+						0
+					],
+					"mirror": true,
+					"cubes": [
+						{
+							"origin": [
+								4.67,
+								12,
+								-2
+							],
+							"size": [
+								4,
+								12,
+								4
+							],
+							"inflate": 0.485,
+							"uv": [
+								42,
+								18
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

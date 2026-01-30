@@ -1,0 +1,158 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "dungeons:spinblade_projectile",
+			"runtime_identifier": "minecraft:snowball",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"dungeons:despawn": {
+				"minecraft:instant_despawn": {}
+			},
+			"dungeons:fly_out": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"impact_damage": {
+							"damage": 11
+						},
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "dungeons:begin_return",
+								"target": "self"
+							}
+						}
+					},
+					"anchor": 1,
+					"power": 0.5,
+					"gravity": 0,
+					"angle_offset": 0,
+					"inertia": 1,
+					"liquid_inertia": 0.8,
+					"offset": [
+						0,
+						-0.1,
+						0
+					]
+				},
+				"minecraft:timer": {
+					"looping": true,
+					"time": 2.5,
+					"time_down_event": {
+						"event": "dungeons:begin_return",
+						"target": "self"
+					}
+				}
+			},
+			"dungeons:fly_in": {
+				"minecraft:entity_sensor": {
+					"minimum_count": 1,
+					"maximum_count": -1,
+					"sensor_range": 0.5,
+					"event_filters": {
+						"test": "is_owner",
+						"subject": "other"
+					},
+					"event": "dungeons:despawn"
+				},
+				"minecraft:projectile": {
+					"on_hit": {
+						"impact_damage": {
+							"damage": 11
+						}
+					},
+					"anchor": 1,
+					"power": 0,
+					"gravity": 0,
+					"angle_offset": 0,
+					"offset": [
+						0,
+						-0.1,
+						0
+					]
+				},
+				"minecraft:timer": {
+					"looping": true,
+					"time": 40,
+					"time_down_event": {
+						"event": "dungeons:despawn",
+						"target": "self"
+					}
+				}
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.25,
+				"height": 0.25
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:conditional_bandwidth_optimization": {
+				"default_values": {
+					"max_optimized_distance": 100,
+					"max_dropped_ticks": 7,
+					"use_motion_prediction_hints": true
+				}
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"dungeons:fly_out"
+					]
+				},
+				"queue_command": {
+					"command": [
+						"playsound artefact.spinblade.throw @a ~~~ 2"
+					]
+				}
+			},
+			"dungeons:hit": {
+				"queue_command": {
+					"command": [
+						"playsound artefact.spinblade.hit @a ~~~ 5",
+						"particle dungeons:daggers_strike ~~~"
+					]
+				},
+				"trigger": "dungeons:begin_return"
+			},
+			"dungeons:begin_return": {
+				"add": {
+					"component_groups": [
+						"dungeons:fly_in"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"dungeons:fly_out"
+					]
+				},
+				"queue_command": {
+					"command": [
+						"tag @s add dungeons:spinblade_returning"
+					]
+				}
+			},
+			"dungeons:despawn": {
+				"queue_command": {
+					"command": [
+						"stopsound @a[r=10] artefact.spinblade.loop"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"dungeons:despawn"
+					]
+				}
+			}
+		}
+	}
+}

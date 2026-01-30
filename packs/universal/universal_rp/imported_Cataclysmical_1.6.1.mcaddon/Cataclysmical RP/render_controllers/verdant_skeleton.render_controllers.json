@@ -1,0 +1,26 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.verdant_skeleton": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.variant0",
+						"Texture.variant1",
+						"Texture.variant2",
+						"Texture.variant3"
+					]
+				}
+			},
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"array.skins[query.variant]"
+			]
+		}
+	}
+}

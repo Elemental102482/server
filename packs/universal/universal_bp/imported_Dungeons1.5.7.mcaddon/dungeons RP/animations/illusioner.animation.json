@@ -1,0 +1,68 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.illusioner.move_drawing": {
+			"loop": true,
+			"bones": {
+				"leftleg": {
+					"rotation": [
+						"variable.tcos0*-1.4",
+						-0.1,
+						-0.1
+					]
+				},
+				"rightleg": {
+					"rotation": [
+						"variable.tcos0*1.4",
+						0.1,
+						0.1
+					]
+				}
+			}
+		},
+		"animation.illusioner.hide_bow": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"rightItem": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.illusioner.hold_bow": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"rightarm": {
+					"rotation": [
+						-90,
+						-10,
+						0
+					],
+					"position": [
+						0.25,
+						0,
+						0
+					]
+				},
+				"leftarm": {
+					"rotation": [
+						-90,
+						30,
+						0
+					],
+					"position": [
+						-0.25,
+						0,
+						-2
+					]
+				},
+				"rightItem": {
+					"rotation": [
+						0,
+						10,
+						0
+					]
+				}
+			}
+		}
+	}
+}

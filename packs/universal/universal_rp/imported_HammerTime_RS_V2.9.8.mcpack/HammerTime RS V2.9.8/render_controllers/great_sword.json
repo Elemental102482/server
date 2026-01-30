@@ -1,0 +1,32 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+      "controller.render.great_sword": {
+        "arrays": {
+          "geometries": {
+            "array.geos": [
+              "geometry.great_sword"
+            ]
+          },
+          "textures": {
+            "Array.skins": [
+              "Texture.iron_great_sword",
+              "Texture.diamond_great_sword",
+              "Texture.netherite_great_sword",
+              "Texture.gold_great_sword",
+              "Texture.obsidian_great_sword",
+              "Texture.emerald_great_sword",
+              "Texture.lapis_great_sword",
+              "Texture.stone_great_sword",
+              "Texture.wood_great_sword",
+              "Texture.redstone_great_sword"
+            ]
+          }
+        },
+        "geometry": "Array.geos[query.variant]",
+        "materials": [ { "*": "Material.default" } ],
+        "textures": [ "Array.skins[query.variant]" ]
+      }
+    }
+  }
+  

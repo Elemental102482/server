@@ -1,0 +1,36 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "cata:platinum_alloy"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "cata:platinum_chunk",
+				"count": 1
+			},
+			{
+				"item": "minecraft:diamond",
+				"count": 1
+			},
+			{
+				"item": "minecraft:quartz",
+				"count": 1
+			},
+			{
+				"item": "cata:ectoplasm",
+				"count": 1
+			}
+		],
+		"result": {
+			"item": "cata:platinum_alloy",
+			"count": 1
+		},
+		"unlock": {
+			"context": "AlwaysUnlocked"
+		}
+	}
+}

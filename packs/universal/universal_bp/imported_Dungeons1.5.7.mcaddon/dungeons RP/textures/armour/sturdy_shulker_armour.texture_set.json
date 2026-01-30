@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "sturdy_shulker_armour",
+        "metalness_emissive_roughness": "sturdy_shulker_armour_mer"
+    }
+}

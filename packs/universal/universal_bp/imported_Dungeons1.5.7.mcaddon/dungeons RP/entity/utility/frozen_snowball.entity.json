@@ -1,0 +1,30 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:frozen_snowball",
+			"materials": {
+				"default": "fireball"
+			},
+			"textures": {
+				"default": "textures/entity/frostball"
+			},
+			"geometry": {
+				"default": "geometry.fireball"
+			},
+			"animations": {
+				"face_player": "animation.actor.billboard",
+				"particles": "animation.necromancer_shot.particles"
+			},
+			"scripts": {
+				"scale": "0.5",
+				"animate": [
+					"face_player"
+				]
+			},
+			"render_controllers": [
+				"controller.render.fireball"
+			]
+		}
+	}
+}

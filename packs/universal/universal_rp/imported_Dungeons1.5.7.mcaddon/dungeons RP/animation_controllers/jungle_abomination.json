@@ -1,0 +1,51 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.jungle_abomination.attack": {
+			"initial_state": "default",
+			"states": {
+				"attack1": {
+					"animations": [
+						"attack1"
+					],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"attack2": {
+					"animations": [
+						"attack2"
+					],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"attack_picker": {
+					"transitions": [
+						{
+							"attack1": "math.random_integer(0,1)==0"
+						},
+						{
+							"attack2": "math.random_integer(0,1)==1"
+						}
+					],
+					"blend_transition": 0.3
+				},
+				"default": {
+					"transitions": [
+						{
+							"attack_picker": "query.is_delayed_attacking==1"
+						}
+					],
+					"blend_transition": 0.3
+				}
+			}
+		}
+	}
+}

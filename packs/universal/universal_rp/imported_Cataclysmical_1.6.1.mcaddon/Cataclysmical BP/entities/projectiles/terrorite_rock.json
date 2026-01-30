@@ -1,0 +1,96 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "cata:terrorite_rock",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"runtime_identifier": "minecraft:arrow"
+		},
+		"component_groups": {
+			"despawn": {
+				"minecraft:instant_despawn": {
+					"remove_child_entities": true
+				}
+			}
+		},
+		"components": {
+			"minecraft:physics": {},
+			"minecraft:collision_box": {
+				"width": 0.3,
+				"height": 0.3
+			},
+			"minecraft:projectile": {
+				"on_hit": {
+					"impact_damage": {
+						"damage": [
+							20,
+							20
+						],
+						"knockback": true,
+						"semi_random_diff_damage": false
+					},
+					"definition_event": {
+						"event_trigger": {
+							"event": "break"
+						}
+					},
+					"mob_effect": {
+						"effect": "slowness",
+						"duration": 3,
+						"visible": false,
+						"amplifier": 3
+					}
+				},
+				"power": 0.2,
+				"gravity": 0.02,
+				"uncertainty_base": 16,
+				"uncertainty_multiplier": 4,
+				"stop_on_hurt": true,
+				"anchor": 1,
+				"offset": [
+					0,
+					0,
+					0
+				]
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:conditional_bandwidth_optimization": {
+				"default_values": {
+					"max_optimized_distance": 1000,
+					"max_dropped_ticks": 7,
+					"use_motion_prediction_hints": true
+				}
+			},
+			"minecraft:timer": {
+				"looping": true,
+				"time": [
+					10,
+					10
+				],
+				"time_down_event": {
+					"event": "break"
+				}
+			}
+		},
+		"events": {
+			"break": {
+				"add": {
+					"component_groups": [
+						"despawn"
+					]
+				},
+				"queue_command": {
+					"command": [
+						"particle cata:terrorite_rock_break ~ ~ ~",
+						"playsound sound.rock_throw @a[r=16] ~ ~ ~ 10 0.5 10"
+					]
+				}
+			}
+		}
+	}
+}

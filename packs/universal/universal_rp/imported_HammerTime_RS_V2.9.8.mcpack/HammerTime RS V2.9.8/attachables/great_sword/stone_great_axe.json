@@ -1,0 +1,36 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "system:stone_great_sword",
+			"materials": {
+				"default": "entity_alphatest",
+				"enchanted": "entity_alphatest_glint"
+			},
+			"textures": {
+				"default": "textures/great_sword/stone_great_sword",
+				"enchanted": "textures/misc/enchanted_item_glint"
+			},
+			"geometry": {
+				"default": "geometry.great_sword"
+			},
+			"animations": {
+				"first_person": "animation.player.great_sword.first_person",
+				"default": "animation.player.great_sword"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"first_person": "c.is_first_person && c.item_slot == 'main_hand' && q.get_equipped_item_name == 'stone_great_sword'"
+					},
+					{
+						"default": "!c.is_first_person && c.item_slot == 'main_hand' && q.get_equipped_item_name == 'stone_great_sword'"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.hammer"
+			]
+		}
+	}
+}

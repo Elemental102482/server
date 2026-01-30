@@ -1,0 +1,1311 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "egg_ancient_guardian": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_ancient_guardian"
+    },
+    "egg_baby_ghast": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_baby_ghast"
+    },
+    "egg_blastling": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_blastling"
+    },
+    "egg_corrupted_cauldron": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_corrupted_cauldron"
+    },
+    "egg_corrupted_ooze": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_corrupted_ooze"
+    },
+    "egg_drowned_elite": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_drowned_elite"
+    },
+    "egg_drowned_hunter": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_drowned_hunter"
+    },
+    "egg_drowned_necromancer": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_drowned_necromancer"
+    },
+    "egg_dummy": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_dummy"
+    },
+    "egg_enchanted_blaze": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_enchanted_blaze"
+    },
+    "egg_enchanted_bogged": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_enchanted_bogged"
+    },
+    "egg_enchanted_cave_spider": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_enchanted_cave_spider"
+    },
+    "egg_enchanted_creeper": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_enchanted_creeper"
+    },
+    "egg_enchanted_endersent": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_enchanted_endersent"
+    },
+    "egg_enchanted_husk": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_enchanted_husk"
+    },
+    "egg_enchanted_iceologer": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_enchanted_iceologer"
+    },
+    "egg_enchanted_mossy_zombie": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_enchanted_mossy_zombie"
+    },
+    "egg_enchanted_necromancer": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_enchanted_necromancer"
+    },
+    "egg_enchanted_skeleton": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_enchanted_skeleton"
+    },
+    "egg_enchanted_spider": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_enchanted_spider"
+    },
+    "egg_enchanted_sunken_skeleton": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_enchanted_sunken_skeleton"
+    },
+    "egg_enchanted_vanguard": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_enchanted_vanguard"
+    },
+    "egg_enchanted_watchling": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_enchanted_watchling"
+    },
+    "egg_enchanted_witch": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_enchanted_witch"
+    },
+    "egg_enchanted_wither_skeleton": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_enchanted_wither_skeleton"
+    },
+    "egg_enchanted_wraith": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_enchanted_wraith"
+    },
+    "egg_enchanted_zombie": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_enchanted_zombie"
+    },
+    "egg_endersent": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_endersent"
+    },
+    "egg_frozen_zombie": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_frozen_zombie"
+    },
+    "egg_fungus_thrower": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_fungus_thrower"
+    },
+    "egg_guardian_vex": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_guardian_vex"
+    },
+    "egg_hovering_inferno": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_hovering_inferno"
+    },
+    "egg_iceologer": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_iceologer"
+    },
+    "egg_icy_creeper": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_icy_creeper"
+    },
+    "egg_illusioner": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_illusioner"
+    },
+    "egg_jungle_abomination": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_jungle_abomination"
+    },
+    "egg_leapleaf": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_leapleaf"
+    },
+    "egg_mooshroom_monstrosity": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_mooshroom_monstrosity"
+    },
+    "egg_mossy_zombie": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_mossy_zombie"
+    },
+    "egg_nameless_one": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_nameless_one"
+    },
+    "egg_necromancer": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_necromancer"
+    },
+    "egg_redstone_cube": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_redstone_cube"
+    },
+    "egg_redstone_golem": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_redstone_golem"
+    },
+    "egg_redstone_monstrosity": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_redstone_monstrosity"
+    },
+    "egg_rolling_flame": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_rolling_flame"
+    },
+    "egg_royal_guard": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_royal_guard"
+    },
+    "egg_snareling": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_snareling"
+    },
+    "egg_soul_wizard": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_soul_wizard"
+    },
+    "egg_spooky_monstrosity": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_spooky_monstrosity"
+    },
+    "egg_squall_golem": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_squall_golem"
+    },
+    "egg_sunken_skeleton": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_sunken_skeleton"
+    },
+    "egg_tempest_golem": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_tempest_golem"
+    },
+    "egg_tower_wraith": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_tower_wraith"
+    },
+    "egg_vanguard": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_vanguard"
+    },
+    "egg_vengeful_heart_of_ender": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_vengeful_heart_of_ender"
+    },
+    "egg_vindicator_chef": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_vindicator_chef"
+    },
+    "egg_watchling": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_watchling"
+    },
+    "egg_wavewhisperer": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_wavewhisperer"
+    },
+    "egg_whisperer": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_whisperer"
+    },
+    "egg_wildfire": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_wildfire"
+    },
+    "egg_windcaller": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_windcaller"
+    },
+    "egg_wraith": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_wraith_spooky"
+    },
+    "egg_wretched_wraith": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_wretched_wraith"
+    },
+    "egg_zombified_fungus_thrower": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_zombified_fungus_thrower"
+    },
+    "egg_zombified_piglin_brute": {
+      "textures": "textures/items/spawn_eggs/spawn_egg_zombified_piglin_brute"
+    },
+    "soul_bottle": {
+      "textures": "textures/items/soul_bottle"
+    },
+    "blue_print": {
+      "textures": "textures/items/blue_print"
+    },
+    "pink_print": {
+      "textures": "textures/items/pink_print"
+    },
+    "shock_powder": {
+      "textures": "textures/items/artifact/shock_powder"
+    },
+    "iron_hide": {
+      "textures": "textures/items/artifact/iron_hide"
+    },
+    "soul_healer": {
+      "textures": "textures/items/artifact/soul_healer"
+    },
+    "satchel_of_elements": {
+      "textures": "textures/items/artifact/satchel_of_elements"
+    },
+    "harvester": {
+      "textures": "textures/items/artifact/harvester"
+    },
+    "shadow_shifter": {
+      "textures": "textures/items/artifact/shadow_shifter"
+    },
+    "vexing_chant": {
+      "textures": "textures/items/artifact/vexing_chant"
+    },
+    "corrupted_seeds": {
+      "textures": "textures/items/artifact/corrupted_seeds"
+    },
+    "blast_fungus": {
+      "textures": "textures/items/artifact/blast_fungus"
+    },
+    "totem_regen": {
+      "textures": "textures/items/artifact/totem_regen"
+    },
+    "totem_shield": {
+      "textures": "textures/items/artifact/totem_shield"
+    },
+    "gong_weakening": {
+      "textures": "textures/items/artifact/gong_weakening"
+    },
+    "death_cap": {
+      "textures": "textures/items/artifact/death_cap"
+    },
+    "ice_wand": {
+      "textures": "textures/items/artifact/ice_wand"
+    },
+    "wind_horn": {
+      "textures": "textures/items/artifact/wind_horn"
+    },
+    "enchanted_grass": {
+      "textures": "textures/items/artifact/enchanted_grass"
+    },
+    "boots_swiftness": {
+      "textures": "textures/items/artifact/boots_swiftness"
+    },
+    "lightning_rod": {
+      "textures": "textures/items/artifact/lightning_rod"
+    },
+    "buzzy_nest": {
+      "textures": "textures/items/artifact/buzzy_nest"
+    },
+    "light_feather": {
+      "textures": "textures/items/artifact/light_feather"
+    },
+    "golem_kit": {
+      "textures": "textures/items/artifact/golem_kit"
+    },
+    "updraft_tome": {
+      "textures": "textures/items/artifact/updraft_tome"
+    },
+    "enchanters_tome": {
+      "textures": "textures/items/artifact/enchanters_tome"
+    },
+    "scatter_mines": {
+      "textures": "textures/items/artifact/scatter_mines"
+    },
+    "satchel_of_snacks": {
+      "textures": "textures/items/artifact/satchel_of_snacks"
+    },
+    "satchel_of_elixirs": {
+      "textures": "textures/items/artifact/satchel_of_elixirs"
+    },
+    "eye_guardian": {
+      "textures": "textures/items/artifact/eye_of_the_guardian"
+    },
+    "totem_of_casting": {
+      "textures": "textures/items/artifact/totem_casting"
+    },
+    "powershaker": {
+      "textures": "textures/items/artifact/powershaker"
+    },
+    "corrupted_beacon": {
+      "textures": "textures/items/artifact/corrupted_beacon"
+    },
+    "ghost_cloak": {
+      "textures": "textures/items/artifact/ghost_cloak"
+    },
+    "soul_lantern": {
+      "textures": "textures/items/artifact/soul_lantern"
+    },
+    "tome_of_duplication": {
+      "textures": "textures/items/artifact/tome_of_duplication"
+    },
+    "spinblade": {
+      "textures": "textures/items/artifact/spinblade"
+    },
+    "soul_scythe": {
+      "textures": "textures/items/weapon/soul_scythe"
+    },
+    "jailors_scythe": {
+      "textures": "textures/items/weapon/jailors_scythe"
+    },
+    "frost_scythe": {
+      "textures": "textures/items/weapon/frost_scythe"
+    },
+    "target_dummy": {
+      "textures": "textures/items/target_dummy"
+    },
+    "burning_arrow": {
+      "textures": "textures/items/burning_arrow"
+    },
+    "harpoon_arrow": {
+      "textures": "textures/items/harpoon_arrow"
+    },
+    "torment_arrow": {
+      "textures": "textures/items/torment_arrow"
+    },
+    "thundering_arrow": {
+      "textures": "textures/items/thundering_arrow"
+    },
+    "firework_arrow": {
+      "textures": "textures/items/firework_arrow"
+    },
+    "ministrosity": {
+      "textures": "textures/items/ministrosity"
+    },
+    "redstone_key": {
+      "textures": "textures/items/key_redstone"
+    },
+    "great_hammer": {
+      "textures": "textures/items/weapon/great_hammer"
+    },
+    "stormlander": {
+      "textures": "textures/items/weapon/stormlander"
+    },
+    "hammer_of_gravity": {
+      "textures": "textures/items/weapon/hammer_of_gravity"
+    },
+    "katana": {
+      "textures": "textures/items/weapon/katana"
+    },
+    "dark_katana": {
+      "textures": "textures/items/weapon/dark_katana"
+    },
+    "masters_katana": {
+      "textures": "textures/items/weapon/master_katana"
+    },
+    "soul_knife": {
+      "textures": "textures/items/weapon/soul_knife"
+    },
+    "eternal_knife": {
+      "textures": "textures/items/weapon/eternal_knife"
+    },
+    "truthseeker": {
+      "textures": "textures/items/weapon/truthseeker"
+    },
+    "nameless_key": {
+      "textures": "textures/items/key_nameless"
+    },
+    "sickles": {
+      "textures": "textures/items/weapon/sickles"
+    },
+    "nightmares_bite": {
+      "textures": "textures/items/weapon/nightmares_bite"
+    },
+    "alylicleaver": {
+      "textures": "textures/items/weapon/nothing_out_of_the_ordinary"
+    },
+    "last_laugh": {
+      "textures": "textures/items/weapon/last_laugh_2"
+    },
+    "starless_night": {
+      "textures": "textures/items/weapon/starless_night"
+    },
+    "obsidian_claymore": {
+      "textures": "textures/items/weapon/obsidian_claymore"
+    },
+    "questionable_key": {
+      "textures": "textures/items/key_questionable"
+    },
+    "claymore": {
+      "textures": "textures/items/weapon/claymore"
+    },
+    "heartstealer": {
+      "textures": "textures/items/weapon/heartstealer"
+    },
+    "broadsword": {
+      "textures": "textures/items/weapon/broadsword"
+    },
+    "great_axeblade": {
+      "textures": "textures/items/weapon/great_axeblade"
+    },
+    "mcd_axe": {
+      "textures": "textures/items/weapon/axe"
+    },
+    "firebrand": {
+      "textures": "textures/items/weapon/firebrand"
+    },
+    "highlands_axe": {
+      "textures": "textures/items/weapon/highlands_axe"
+    },
+    "wolf_helmet": {
+      "textures": "textures/items/armor/helmet_wolf"
+    },
+    "black_wolf_helmet": {
+      "textures": "textures/items/armor/helmet_black_wolf"
+    },
+    "wolf_chestplate": {
+      "textures": "textures/items/armor/chestplate_wolf"
+    },
+    "black_wolf_chestplate": {
+      "textures": "textures/items/armor/chestplate_black_wolf"
+    },
+    "wolf_leggings": {
+      "textures": "textures/items/armor/leggings_wolf"
+    },
+    "black_wolf_leggings": {
+      "textures": "textures/items/armor/leggings_black_wolf"
+    },
+    "wolf_boots": {
+      "textures": "textures/items/armor/boots_wolf"
+    },
+    "black_wolf_boots": {
+      "textures": "textures/items/armor/boots_black_wolf"
+    },
+    "fox_boots": {
+      "textures": "textures/items/armor/boots_fox"
+    },
+    "fox_leggings": {
+      "textures": "textures/items/armor/leggings_fox"
+    },
+    "fox_chestplate": {
+      "textures": "textures/items/armor/chestplate_fox"
+    },
+    "fox_helmet": {
+      "textures": "textures/items/armor/helmet_fox"
+    },
+    "double_axe": {
+      "textures": "textures/items/weapon/double_axe"
+    },
+    "cursed_axe": {
+      "textures": "textures/items/weapon/cursed_axe"
+    },
+    "whirlwind": {
+      "textures": "textures/items/weapon/whirlwind"
+    },
+    "dark_helmet": {
+      "textures": "textures/items/armor/helmet_dark"
+    },
+    "titans_shroud_helmet": {
+      "textures": "textures/items/armor/helmet_titans_shroud"
+    },
+    "dark_chestplate": {
+      "textures": "textures/items/armor/chestplate_dark"
+    },
+    "titans_shroud_chestplate": {
+      "textures": "textures/items/armor/chestplate_titans_shroud"
+    },
+    "dark_leggings": {
+      "textures": "textures/items/armor/leggings_dark"
+    },
+    "titans_shroud_leggings": {
+      "textures": "textures/items/armor/leggings_titans_shroud"
+    },
+    "dark_boots": {
+      "textures": "textures/items/armor/boots_dark"
+    },
+    "titans_shroud_boots": {
+      "textures": "textures/items/armor/boots_titans_shroud"
+    },
+    "wretched_key": {
+      "textures": "textures/items/key_wretched"
+    },
+    "rapier": {
+      "textures": "textures/items/weapon/rapier"
+    },
+    "freezing_foil": {
+      "textures": "textures/items/weapon/freezing_foil"
+    },
+    "bee_stinger": {
+      "textures": "textures/items/weapon/bee_stinger"
+    },
+    "redstone_painting": {
+      "textures": "textures/items/redstone_painting"
+    },
+    "nameless_painting": {
+      "textures": "textures/items/nameless_painting"
+    },
+    "dungeons_painting": {
+      "textures": "textures/items/dungeons_painting"
+    },
+    "wraith_painting": {
+      "textures": "textures/items/wraith_painting"
+    },
+    "cauldron_painting": {
+      "textures": "textures/items/cauldron_painting"
+    },
+    "abomination_painting": {
+      "textures": "textures/items/abomination_painting"
+    },
+    "spooky_painting": {
+      "textures": "textures/items/spooky_painting"
+    },
+    "tempest_painting": {
+      "textures": "textures/items/tempest_painting"
+    },
+    "guardian_painting": {
+      "textures": "textures/items/guardian_painting"
+    },
+    "wildfire_painting": {
+      "textures": "textures/items/wildfire_painting"
+    },
+    "endersent_painting": {
+      "textures": "textures/items/endersent_painting"
+    },
+    "vengeful_painting": {
+      "textures": "textures/items/vengeful_painting"
+    },
+    "grim_helmet": {
+      "textures": "textures/items/armor/helmet_grim"
+    },
+    "wither_helmet": {
+      "textures": "textures/items/armor/helmet_wither"
+    },
+    "grim_chestplate": {
+      "textures": "textures/items/armor/chestplate_grim"
+    },
+    "wither_chestplate": {
+      "textures": "textures/items/armor/chestplate_wither"
+    },
+    "grim_leggings": {
+      "textures": "textures/items/armor/leggings_grim"
+    },
+    "wither_leggings": {
+      "textures": "textures/items/armor/leggings_wither"
+    },
+    "grim_boots": {
+      "textures": "textures/items/armor/boots_grim"
+    },
+    "wither_boots": {
+      "textures": "textures/items/armor/boots_wither"
+    },
+    "mcd_snow_helmet": {
+      "textures": "textures/items/armor/helmet_snow"
+    },
+    "frost_helmet": {
+      "textures": "textures/items/armor/helmet_frost"
+    },
+    "mcd_snow_chestplate": {
+      "textures": "textures/items/armor/chestplate_snow"
+    },
+    "frost_chestplate": {
+      "textures": "textures/items/armor/chestplate_frost"
+    },
+    "mcd_snow_leggings": {
+      "textures": "textures/items/armor/leggings_snow"
+    },
+    "frost_leggings": {
+      "textures": "textures/items/armor/leggings_frost"
+    },
+    "mcd_snow_boots": {
+      "textures": "textures/items/armor/boots_snow"
+    },
+    "frost_boots": {
+      "textures": "textures/items/armor/boots_frost"
+    },
+    "battlestaff": {
+      "textures": "textures/items/weapon/battlestaff"
+    },
+    "growing_staff": {
+      "textures": "textures/items/weapon/growing_staff"
+    },
+    "battlestaff_of_terror": {
+      "textures": "textures/items/weapon/battlestaff_of_terror"
+    },
+    "bone_club": {
+      "textures": "textures/items/weapon/bone_club"
+    },
+    "bone_cudgel": {
+      "textures": "textures/items/weapon/bone_cudgel"
+    },
+    "diamond_dust": {
+      "textures": "textures/items/diamond_dust"
+    },
+    "redstone_core": {
+      "textures": "textures/items/redstone_core"
+    },
+    "corrupted_key": {
+      "textures": "textures/items/key_corrupted"
+    },
+    "daggers": {
+      "textures": "textures/items/weapon/daggers"
+    },
+    "moon_daggers": {
+      "textures": "textures/items/weapon/moon_daggers"
+    },
+    "sheer_daggers": {
+      "textures": "textures/items/weapon/sheer_daggers"
+    },
+    "frost_knives": {
+      "textures": "textures/items/weapon/frost_knives"
+    },
+    "evocation_helmet": {
+      "textures": "textures/items/armor/helmet_evocation"
+    },
+    "ember_helmet": {
+      "textures": "textures/items/armor/helmet_ember"
+    },
+    "evocation_chestplate": {
+      "textures": "textures/items/armor/chestplate_evocation"
+    },
+    "ember_chestplate": {
+      "textures": "textures/items/armor/chestplate_ember"
+    },
+    "evocation_leggings": {
+      "textures": "textures/items/armor/leggings_evocation"
+    },
+    "ember_leggings": {
+      "textures": "textures/items/armor/leggings_ember"
+    },
+    "evocation_boots": {
+      "textures": "textures/items/armor/boots_evocation"
+    },
+    "ember_boots": {
+      "textures": "textures/items/armor/boots_ember"
+    },
+    "verdant_boots": {
+      "textures": "textures/items/armor/boots_verdant"
+    },
+    "verdant_leggings": {
+      "textures": "textures/items/armor/leggings_verdant"
+    },
+    "verdant_chestplate": {
+      "textures": "textures/items/armor/chestplate_verdant"
+    },
+    "verdant_helmet": {
+      "textures": "textures/items/armor/helmet_verdant"
+    },
+    "cutlass": {
+      "textures": "textures/items/weapon/cutlass"
+    },
+    "nameless_blade": {
+      "textures": "textures/items/weapon/nameless_blade"
+    },
+    "dancers_sword": {
+      "textures": "textures/items/weapon/dancers_sword"
+    },
+    "mcd_sword": {
+      "textures": "textures/items/weapon/sword"
+    },
+    "hawkbrand": {
+      "textures": "textures/items/weapon/hawkbrand"
+    },
+    "mcd_diamond_sword": {
+      "textures": "textures/items/weapon/diamond_sword"
+    },
+    "whip": {
+      "textures": "textures/items/weapon/whip"
+    },
+    "vine_whip": {
+      "textures": "textures/items/weapon/vine_whip"
+    },
+    "jungle_key": {
+      "textures": "textures/items/key_jungle"
+    },
+    "book_of_heroes": {
+      "textures": "textures/items/book_of_heroes"
+    },
+    "ocelot_helmet": {
+      "textures": "textures/items/armor/helmet_ocelot"
+    },
+    "shadow_walker_helmet": {
+      "textures": "textures/items/armor/helmet_shadow_walker"
+    },
+    "ocelot_chestplate": {
+      "textures": "textures/items/armor/chestplate_ocelot"
+    },
+    "shadow_walker_chestplate": {
+      "textures": "textures/items/armor/chestplate_shadow_walker"
+    },
+    "ocelot_leggings": {
+      "textures": "textures/items/armor/leggings_ocelot"
+    },
+    "shadow_walker_leggings": {
+      "textures": "textures/items/armor/leggings_shadow_walker"
+    },
+    "ocelot_boots": {
+      "textures": "textures/items/armor/boots_ocelot"
+    },
+    "shadow_walker_boots": {
+      "textures": "textures/items/armor/boots_shadow_walker"
+    },
+    "bonehead_hammer": {
+      "textures": "textures/items/weapon/bonehead_hammer"
+    },
+    "skull_scythe": {
+      "textures": "textures/items/weapon/skull_scythe"
+    },
+    "sinister_sword": {
+      "textures": "textures/items/weapon/sinister_sword"
+    },
+    "skeleton_key": {
+      "textures": "textures/items/key_skeleton"
+    },
+    "spooky_gourdian_boots": {
+      "textures": "textures/items/armor/boots_spooky_gourdian"
+    },
+    "spooky_gourdian_leggings": {
+      "textures": "textures/items/armor/leggings_spooky_gourdian"
+    },
+    "spooky_gourdian_chestplate": {
+      "textures": "textures/items/armor/chestplate_spooky_gourdian"
+    },
+    "spooky_gourdian_helmet": {
+      "textures": "textures/items/armor/helmet_spooky_gourdian"
+    },
+    "tempest_knife": {
+      "textures": "textures/items/weapon/tempest_knife"
+    },
+    "resolute_tempest_knife": {
+      "textures": "textures/items/weapon/resolute_tempest_knife"
+    },
+    "chill_gale_knife": {
+      "textures": "textures/items/weapon/chill_gale_knife"
+    },
+    "tempest_key": {
+      "textures": "textures/items/key_tempest"
+    },
+    "emerald_boots": {
+      "textures": "textures/items/armor/boots_emerald"
+    },
+    "emerald_leggings": {
+      "textures": "textures/items/armor/leggings_emerald"
+    },
+    "emerald_chestplate": {
+      "textures": "textures/items/armor/chestplate_emerald"
+    },
+    "emerald_helmet": {
+      "textures": "textures/items/armor/helmet_emerald"
+    },
+    "gilded_glory_boots": {
+      "textures": "textures/items/armor/boots_gilded_glory"
+    },
+    "gilded_glory_leggings": {
+      "textures": "textures/items/armor/leggings_gilded_glory"
+    },
+    "gilded_glory_chestplate": {
+      "textures": "textures/items/armor/chestplate_gilded_glory"
+    },
+    "gilded_glory_helmet": {
+      "textures": "textures/items/armor/helmet_gilded_glory"
+    },
+    "opulent_boots": {
+      "textures": "textures/items/armor/boots_opulent"
+    },
+    "opulent_leggings": {
+      "textures": "textures/items/armor/leggings_opulent"
+    },
+    "opulent_chestplate": {
+      "textures": "textures/items/armor/chestplate_opulent"
+    },
+    "opulent_helmet": {
+      "textures": "textures/items/armor/helmet_opulent"
+    },
+    "turtle_boots": {
+      "textures": "textures/items/armor/boots_turtle"
+    },
+    "turtle_leggings": {
+      "textures": "textures/items/armor/leggings_turtle"
+    },
+    "turtle_chestplate": {
+      "textures": "textures/items/armor/chestplate_turtle"
+    },
+    "mcd_turtle_helmet": {
+      "textures": "textures/items/armor/helmet_turtle"
+    },
+    "nimble_turtle_boots": {
+      "textures": "textures/items/armor/boots_nimble_turtle"
+    },
+    "nimble_turtle_leggings": {
+      "textures": "textures/items/armor/leggings_nimble_turtle"
+    },
+    "nimble_turtle_chestplate": {
+      "textures": "textures/items/armor/chestplate_nimble_turtle"
+    },
+    "nimble_turtle_helmet": {
+      "textures": "textures/items/armor/helmet_nimble_turtle"
+    },
+    "coral_blade": {
+      "textures": "textures/items/weapon/coral_blade"
+    },
+    "sponge_striker": {
+      "textures": "textures/items/weapon/sponge_striker"
+    },
+    "anchor": {
+      "textures": "textures/items/weapon/anchor"
+    },
+    "encrusted_anchor": {
+      "textures": "textures/items/weapon/encrusted_anchor"
+    },
+    "longbow": {
+      "textures": "textures/items/ranged/longbow/standby"
+    },
+    "guardian_bow": {
+      "textures": "textures/items/ranged/guardian_bow/standby"
+    },
+    "red_snake": {
+      "textures": "textures/items/ranged/red_snake/standby"
+    },
+    "exploding_crossbow": {
+      "textures": "textures/items/ranged/exploding_crossbow/standby"
+    },
+    "imploding_crossbow": {
+      "textures": "textures/items/ranged/imploding_crossbow/standby"
+    },
+    "firebolt_thrower": {
+      "textures": "textures/items/ranged/firebolt_thrower/standby"
+    },
+    "bone_bow": {
+      "textures": "textures/items/ranged/bone_bow/standby"
+    },
+    "twin_bow": {
+      "textures": "textures/items/ranged/twin_bow/standby"
+    },
+    "soul_crossbow": {
+      "textures": "textures/items/ranged/soul_crossbow/standby"
+    },
+    "feral_soul_crossbow": {
+      "textures": "textures/items/ranged/feral_soul_crossbow/standby"
+    },
+    "voidcaller": {
+      "textures": "textures/items/ranged/voidcaller/standby"
+    },
+    "burst_crossbow": {
+      "textures": "textures/items/ranged/burst_crossbow/standby"
+    },
+    "soul_hunter_crossbow": {
+      "textures": "textures/items/ranged/soul_hunter_crossbow/standby"
+    },
+    "corrupted_crossbow": {
+      "textures": "textures/items/ranged/corrupted_crossbow/standby"
+    },
+    "snow_bow": {
+      "textures": "textures/items/ranged/snow_bow/standby"
+    },
+    "winters_touch": {
+      "textures": "textures/items/ranged/winters_touch/standby"
+    },
+    "harpoon_crossbow": {
+      "textures": "textures/items/ranged/harpoon_crossbow/standby"
+    },
+    "nautical_crossbow": {
+      "textures": "textures/items/ranged/nautical_crossbow/standby"
+    },
+    "wind_bow": {
+      "textures": "textures/items/ranged/wind_bow/standby"
+    },
+    "echo_of_the_valley": {
+      "textures": "textures/items/ranged/echo_of_the_valley/standby"
+    },
+    "burst_gale_bow": {
+      "textures": "textures/items/ranged/burst_gale_bow/standby"
+    },
+    "ancient_key": {
+      "textures": "textures/items/key_ancient"
+    },
+    "squid_helmet": {
+      "textures": "textures/items/armor/helmet_squid"
+    },
+    "glow_squid_helmet": {
+      "textures": "textures/items/armor/helmet_glow_squid"
+    },
+    "squid_chestplate": {
+      "textures": "textures/items/armor/chestplate_squid"
+    },
+    "glow_squid_chestplate": {
+      "textures": "textures/items/armor/chestplate_glow_squid"
+    },
+    "squid_leggings": {
+      "textures": "textures/items/armor/leggings_squid"
+    },
+    "glow_squid_leggings": {
+      "textures": "textures/items/armor/leggings_glow_squid"
+    },
+    "squid_boots": {
+      "textures": "textures/items/armor/boots_squid"
+    },
+    "glow_squid_boots": {
+      "textures": "textures/items/armor/boots_glow_squid"
+    },
+    "thief_helmet": {
+      "textures": "textures/items/armor/helmet_thief"
+    },
+    "spider_helmet": {
+      "textures": "textures/items/armor/helmet_spider"
+    },
+    "thief_chestplate": {
+      "textures": "textures/items/armor/chestplate_thief"
+    },
+    "spider_chestplate": {
+      "textures": "textures/items/armor/chestplate_spider"
+    },
+    "thief_leggings": {
+      "textures": "textures/items/armor/leggings_thief"
+    },
+    "spider_leggings": {
+      "textures": "textures/items/armor/leggings_spider"
+    },
+    "thief_boots": {
+      "textures": "textures/items/armor/boots_thief"
+    },
+    "spider_boots": {
+      "textures": "textures/items/armor/boots_spider"
+    },
+    "twisting_vine_bow": {
+      "textures": "textures/items/ranged/twisting_vine_bow/standby"
+    },
+    "weeping_vine_bow": {
+      "textures": "textures/items/ranged/weeping_vine_bow/standby"
+    },
+    "cog_crossbow": {
+      "textures": "textures/items/ranged/cog_crossbow/standby"
+    },
+    "pride_of_the_piglins": {
+      "textures": "textures/items/ranged/pride_of_the_piglins/standby"
+    },
+    "broken_sawblade": {
+      "textures": "textures/items/weapon/broken_sawblade"
+    },
+    "mechanised_sawblade": {
+      "textures": "textures/items/weapon/mechanised_sawblade"
+    },
+    "blaze_key": {
+      "textures": "textures/items/key_blaze"
+    },
+    "sprout_helmet": {
+      "textures": "textures/items/armor/helmet_sprout"
+    },
+    "living_vines_helmet": {
+      "textures": "textures/items/armor/helmet_living_vines"
+    },
+    "sprout_chestplate": {
+      "textures": "textures/items/armor/chestplate_sprout"
+    },
+    "living_vines_chestplate": {
+      "textures": "textures/items/armor/chestplate_living_vines"
+    },
+    "sprout_leggings": {
+      "textures": "textures/items/armor/leggings_sprout"
+    },
+    "living_vines_leggings": {
+      "textures": "textures/items/armor/leggings_living_vines"
+    },
+    "sprout_boots": {
+      "textures": "textures/items/armor/boots_sprout"
+    },
+    "living_vines_boots": {
+      "textures": "textures/items/armor/boots_living_vines"
+    },
+    "root_rot_boots": {
+      "textures": "textures/items/armor/boots_root_rot"
+    },
+    "root_rot_leggings": {
+      "textures": "textures/items/armor/leggings_root_rot"
+    },
+    "root_rot_chestplate": {
+      "textures": "textures/items/armor/chestplate_root_rot"
+    },
+    "root_rot_helmet": {
+      "textures": "textures/items/armor/helmet_root_rot"
+    },
+    "black_spot_boots": {
+      "textures": "textures/items/armor/boots_black_spot"
+    },
+    "black_spot_leggings": {
+      "textures": "textures/items/armor/leggings_black_spot"
+    },
+    "black_spot_chestplate": {
+      "textures": "textures/items/armor/chestplate_black_spot"
+    },
+    "black_spot_helmet": {
+      "textures": "textures/items/armor/helmet_black_spot"
+    },
+    "piglin_helmet": {
+      "textures": "textures/items/armor/helmet_piglin"
+    },
+    "golden_piglin_helmet": {
+      "textures": "textures/items/armor/helmet_golden_piglin"
+    },
+    "piglin_chestplate": {
+      "textures": "textures/items/armor/chestplate_piglin"
+    },
+    "golden_piglin_chestplate": {
+      "textures": "textures/items/armor/chestplate_golden_piglin"
+    },
+    "piglin_leggings": {
+      "textures": "textures/items/armor/leggings_piglin"
+    },
+    "golden_piglin_leggings": {
+      "textures": "textures/items/armor/leggings_golden_piglin"
+    },
+    "piglin_boots": {
+      "textures": "textures/items/armor/boots_piglin"
+    },
+    "golden_piglin_boots": {
+      "textures": "textures/items/armor/boots_golden_piglin"
+    },
+    "heavy_crossbow": {
+      "textures": "textures/items/ranged/heavy_crossbow/standby"
+    },
+    "doom_crossbow": {
+      "textures": "textures/items/ranged/doom_crossbow/standby"
+    },
+    "slayer_crossbow": {
+      "textures": "textures/items/ranged/slayer_crossbow/standby"
+    },
+    "gauntlets": {
+      "textures": "textures/items/weapon/gauntlets"
+    },
+    "maulers": {
+      "textures": "textures/items/weapon/maulers"
+    },
+    "fighters_bindings": {
+      "textures": "textures/items/weapon/fighters_bindings"
+    },
+    "soul_fists": {
+      "textures": "textures/items/weapon/soul_fists"
+    },
+    "rune_a": {
+      "textures": "textures/items/rune/a"
+    },
+    "rune_c": {
+      "textures": "textures/items/rune/c"
+    },
+    "rune_i": {
+      "textures": "textures/items/rune/i"
+    },
+    "rune_o": {
+      "textures": "textures/items/rune/o"
+    },
+    "rune_p": {
+      "textures": "textures/items/rune/p"
+    },
+    "rune_r": {
+      "textures": "textures/items/rune/r"
+    },
+    "rune_s": {
+      "textures": "textures/items/rune/s"
+    },
+    "rune_t": {
+      "textures": "textures/items/rune/t"
+    },
+    "rune_u": {
+      "textures": "textures/items/rune/u"
+    },
+    "enchanted_eye_of_ender": {
+      "textures": "textures/items/enchanted_eye"
+    },
+    "echo_key": {
+      "textures": "textures/items/key_echo"
+    },
+    "void_key": {
+      "textures": "textures/items/key_void"
+    },
+    "guard_helmet": {
+      "textures": "textures/items/armor/helmet_guard"
+    },
+    "ender_helmet": {
+      "textures": "textures/items/armor/helmet_ender"
+    },
+    "guard_chestplate": {
+      "textures": "textures/items/armor/chestplate_guard"
+    },
+    "ender_chestplate": {
+      "textures": "textures/items/armor/chestplate_ender"
+    },
+    "guard_leggings": {
+      "textures": "textures/items/armor/leggings_guard"
+    },
+    "ender_leggings": {
+      "textures": "textures/items/armor/leggings_ender"
+    },
+    "guard_boots": {
+      "textures": "textures/items/armor/boots_guard"
+    },
+    "ender_boots": {
+      "textures": "textures/items/armor/boots_ender"
+    },
+    "entertainer_helmet": {
+      "textures": "textures/items/armor/helmet_entertainer"
+    },
+    "troubadour_helmet": {
+      "textures": "textures/items/armor/helmet_troubadour"
+    },
+    "entertainer_chestplate": {
+      "textures": "textures/items/armor/chestplate_entertainer"
+    },
+    "troubadour_chestplate": {
+      "textures": "textures/items/armor/chestplate_troubadour"
+    },
+    "entertainer_leggings": {
+      "textures": "textures/items/armor/leggings_entertainer"
+    },
+    "troubadour_leggings": {
+      "textures": "textures/items/armor/leggings_troubadour"
+    },
+    "entertainer_boots": {
+      "textures": "textures/items/armor/boots_entertainer"
+    },
+    "troubadour_boots": {
+      "textures": "textures/items/armor/boots_troubadour"
+    },
+    "glaive": {
+      "textures": "textures/items/weapon/glaive"
+    },
+    "grave_bane": {
+      "textures": "textures/items/weapon/grave_bane"
+    },
+    "venom_glaive": {
+      "textures": "textures/items/weapon/venom_glaive"
+    },
+    "soul_bow": {
+      "textures": "textures/items/ranged/soul_bow/standby"
+    },
+    "bow_of_lost_souls": {
+      "textures": "textures/items/ranged/bow_of_lost_souls/standby"
+    },
+    "nocturnal_bow": {
+      "textures": "textures/items/ranged/nocturnal_bow/standby"
+    },
+    "backstabber": {
+      "textures": "textures/items/weapon/backstabber"
+    },
+    "swift_striker": {
+      "textures": "textures/items/weapon/swift_striker"
+    },
+    "shulker_helmet": {
+      "textures": "textures/items/armor/helmet_shulker"
+    },
+    "sturdy_shulker_helmet": {
+      "textures": "textures/items/armor/helmet_sturdy_shulker"
+    },
+    "shulker_chestplate": {
+      "textures": "textures/items/armor/chestplate_shulker"
+    },
+    "sturdy_shulker_chestplate": {
+      "textures": "textures/items/armor/chestplate_sturdy_shulker"
+    },
+    "shulker_leggings": {
+      "textures": "textures/items/armor/leggings_shulker"
+    },
+    "sturdy_shulker_leggings": {
+      "textures": "textures/items/armor/leggings_sturdy_shulker"
+    },
+    "shulker_boots": {
+      "textures": "textures/items/armor/boots_shulker"
+    },
+    "sturdy_shulker_boots": {
+      "textures": "textures/items/armor/boots_sturdy_shulker"
+    },
+    "ladle": {
+      "textures": "textures/items/weapon/ladle"
+    },
+    "void_bow": {
+      "textures": "textures/items/ranged/void_bow/standby"
+    },
+    "call_of_the_void": {
+      "textures": "textures/items/ranged/call_of_the_void/standby"
+    },
+    "teleportation_helmet": {
+      "textures": "textures/items/armor/helmet_teleportation"
+    },
+    "unstable_helmet": {
+      "textures": "textures/items/armor/helmet_unstable"
+    },
+    "teleportation_chestplate": {
+      "textures": "textures/items/armor/chestplate_teleportation"
+    },
+    "unstable_chestplate": {
+      "textures": "textures/items/armor/chestplate_unstable"
+    },
+    "teleportation_leggings": {
+      "textures": "textures/items/armor/leggings_teleportation"
+    },
+    "unstable_leggings": {
+      "textures": "textures/items/armor/leggings_unstable"
+    },
+    "teleportation_boots": {
+      "textures": "textures/items/armor/boots_teleportation"
+    },
+    "unstable_boots": {
+      "textures": "textures/items/armor/boots_unstable"
+    },
+    "void_touched_blades": {
+      "textures": "textures/items/weapon/void_touched_blades"
+    },
+    "the_beginning_and_the_end": {
+      "textures": "textures/items/weapon/the_beginning_and_the_end"
+    },
+    "shadow_crossbow": {
+      "textures": "textures/items/ranged/shadow_crossbow/standby"
+    },
+    "veiled_crossbow": {
+      "textures": "textures/items/ranged/veiled_crossbow/standby"
+    },
+    "enchanted_explorer_map": {
+      "textures": "textures/items/enchanted_explorer_map"
+    },
+    "haunted_bow": {
+      "textures": "textures/items/ranged/haunted_bow/standby"
+    },
+    "webbed_bow": {
+      "textures": "textures/items/ranged/webbed_bow/standby"
+    },
+    "cackling_broom": {
+      "textures": "textures/items/weapon/cackling_broom"
+    },
+    "corrupted_pumpkin": {
+      "textures": "textures/items/artifact/corrupted_pumpkin"
+    },
+    "shrieking_crossbow": {
+      "textures": "textures/items/ranged/shrieking_crossbow/standby"
+    },
+    "plate_helmet": {
+      "textures": "textures/items/armor/helmet_plate"
+    },
+    "full_metal_helmet": {
+      "textures": "textures/items/armor/helmet_full_metal"
+    },
+    "plate_chestplate": {
+      "textures": "textures/items/armor/chestplate_plate"
+    },
+    "full_metal_chestplate": {
+      "textures": "textures/items/armor/chestplate_full_metal"
+    },
+    "plate_leggings": {
+      "textures": "textures/items/armor/leggings_plate"
+    },
+    "full_metal_leggings": {
+      "textures": "textures/items/armor/leggings_full_metal"
+    },
+    "plate_boots": {
+      "textures": "textures/items/armor/boots_plate"
+    },
+    "full_metal_boots": {
+      "textures": "textures/items/armor/boots_full_metal"
+    },
+    "cauldron_boots": {
+      "textures": "textures/items/armor/boots_cauldron"
+    },
+    "cauldron_leggings": {
+      "textures": "textures/items/armor/leggings_cauldron"
+    },
+    "cauldron_chestplate": {
+      "textures": "textures/items/armor/chestplate_cauldron"
+    },
+    "cauldron_helmet": {
+      "textures": "textures/items/armor/helmet_cauldron"
+    },
+    "ghostly_helmet": {
+      "textures": "textures/items/armor/helmet_ghostly"
+    },
+    "ghost_kindler_helmet": {
+      "textures": "textures/items/armor/helmet_ghost_kindler"
+    },
+    "ghostly_chestplate": {
+      "textures": "textures/items/armor/chestplate_ghostly"
+    },
+    "ghost_kindler_chestplate": {
+      "textures": "textures/items/armor/chestplate_ghost_kindler"
+    },
+    "ghostly_leggings": {
+      "textures": "textures/items/armor/leggings_ghostly"
+    },
+    "ghost_kindler_leggings": {
+      "textures": "textures/items/armor/leggings_ghost_kindler"
+    },
+    "ghostly_boots": {
+      "textures": "textures/items/armor/boots_ghostly"
+    },
+    "ghost_kindler_boots": {
+      "textures": "textures/items/armor/boots_ghost_kindler"
+    },
+    "cloaked_skull_boots": {
+      "textures": "textures/items/armor/boots_cloaked_skull"
+    },
+    "cloaked_skull_leggings": {
+      "textures": "textures/items/armor/leggings_cloaked_skull"
+    },
+    "cloaked_skull_chestplate": {
+      "textures": "textures/items/armor/chestplate_cloaked_skull"
+    },
+    "cloaked_skull_helmet": {
+      "textures": "textures/items/armor/helmet_cloaked_skull"
+    }
+  }
+}

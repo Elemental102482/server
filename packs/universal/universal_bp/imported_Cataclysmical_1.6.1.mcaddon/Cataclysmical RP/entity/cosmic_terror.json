@@ -1,0 +1,61 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "cata:cosmic_terror",
+			"materials": {
+				"default": "drowned"
+			},
+			"textures": {
+				"default": "textures/entity/cosmic_terror_texture"
+			},
+			"geometry": {
+				"default": "geometry.cosmic_terror"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "cata_cosmic_terror_egg"
+			},
+			"animations": {
+				"awaken": "animation.cosmic_terror.awaken",
+				"idle": "animation.cosmic_terror.idle",
+				"move": "animation.cosmic_terror.move",
+				"move_controller": "controller.animation.cosmic_terror.move_controller",
+				"awaken_controller": "controller.animation.cosmic_terror.awaken_controller",
+				"attack_controller": "controller.animation.cosmic_terror.attack_controller",
+				"normal_attack": "animation.cosmic_terror.normal_attack",
+				"summon": "animation.cosmic_terror.summon",
+				"roar": "animation.cosmic_terror.roar",
+				"heads": "animation.cosmic_terror.heads",
+				"heavy_attack": "animation.cosmic_terror.heavy_attack"
+			},
+			"scripts": {
+				"animate": [
+					"move_controller",
+					"awaken_controller",
+					"attack_controller",
+					"idle",
+					"heads"
+				]
+			},
+			"particle_effects": {
+				"cosmic_terror_particle": "cata:cosmic_terror_emitter",
+				"large_impact": "cata:massive_impact",
+				"terror_stage": "cata:terror_stage",
+				"small_impact": "cata:small_impact",
+				"cosmic_terror_heavy_attack": "cata:cosmic_terror_heavy_attack",
+				"cosmic_terror_roar": "cata:cosmic_terror_roar",
+				"cosmic_terror_roar_plasma": "cata:cosmic_terror_roar_plasma"
+			},
+			"sound_effects": {
+				"cosmic_terror_spawn": "sound.cosmic_terror_spawn",
+				"large_impact": "mob.large_impact",
+				"small_impact": "mob.small_impact",
+				"spirit_scream": "mob.spirit_scream",
+				"large_swing": "mob.large_swing"
+			}
+		}
+	}
+}

@@ -1,0 +1,95 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.redstone_monstrosity.rest": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						"resting"
+					],
+					"transitions": [
+						{
+							"awaken": "q.variant==1"
+						}
+					]
+				},
+				"awaken": {
+					"animations": [
+						"awaken"
+					]
+				}
+			}
+		},
+		"controller.animation.redstone_monstrosity.attack": {
+			"initial_state": "default",
+			"states": {
+				"attacking": {
+					"animations": [
+						"smash"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_delayed_attacking"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"default": {
+					"transitions": [
+						{
+							"attacking": "query.is_delayed_attacking==1"
+						}
+					],
+					"blend_transition": 0.3
+				}
+			}
+		},
+		"controller.animation.redstone_monstrosity.move": {
+			"initial_state": "default",
+			"states": {
+				"moving": {
+					"animations": [
+						"move"
+					],
+					"transitions": [
+						{
+							"default": "q.modified_move_speed<=0.1||query.is_casting==1"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"default": {
+					"transitions": [
+						{
+							"moving": "q.modified_move_speed>0.1&&query.is_casting<=0"
+						}
+					],
+					"blend_transition": 0.5
+				}
+			}
+		},
+		"controller.animation.redstone_monstrosity.roar": {
+			"initial_state": "default",
+			"states": {
+				"roaring": {
+					"animations": [
+						"roar"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_casting&&query.all_animations_finished"
+						}
+					]
+				},
+				"default": {
+					"transitions": [
+						{
+							"roaring": "query.is_casting"
+						}
+					]
+				}
+			}
+		}
+	}
+}

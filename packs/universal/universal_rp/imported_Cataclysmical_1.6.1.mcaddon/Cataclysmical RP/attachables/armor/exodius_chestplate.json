@@ -1,0 +1,33 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "cata:exodius_chestplate",
+			"materials": {
+				"default": "drowned",
+				"enchanted": "armor_enchanted"
+			},
+			"textures": {
+				"default": "textures/models/armor/exodius_chestplate_texture",
+				"enchanted": "textures/misc/enchanted_item_glint"
+			},
+			"geometry": {
+				"default": "geometry.exodius_chestplate"
+			},
+			"scripts": {
+				"parent_setup": "variable.chest_layer_visible = 0.0;",
+				"animate": [
+					"move",
+					"move2"
+				]
+			},
+			"render_controllers": [
+				"controller.render.armor"
+			],
+			"animations": {
+				"move": "animation.exodius_chestplate.move",
+				"move2": "animation.exodius_chestplate.move2"
+			}
+		}
+	}
+}

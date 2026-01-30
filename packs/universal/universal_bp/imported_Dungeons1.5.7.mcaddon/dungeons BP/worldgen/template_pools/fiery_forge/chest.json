@@ -1,0 +1,18 @@
+{
+    "format_version": "1.21.20",
+    "minecraft:template_pool": {
+        "description": {
+            "identifier": "dungeons:forge_chest"
+        },
+        "elements": [
+            {
+                "element": {
+                    "element_type": "minecraft:single_pool_element",
+                    "location": "fiery_forge/chest",
+                    "processors": "dungeons:forge_processor_default"
+                },
+                "weight": 1
+            }
+        ]
+    }
+}

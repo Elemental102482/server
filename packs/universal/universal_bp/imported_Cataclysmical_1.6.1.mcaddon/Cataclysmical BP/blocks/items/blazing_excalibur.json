@@ -1,0 +1,19 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:block": {
+		"description": {
+			"identifier": "cata:blazing_excalibur"
+		},
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "cata_blazing_excalibur",
+					"render_method": "alpha_test",
+					"face_dimming": false,
+					"ambient_occlusion": false
+				}
+			},
+			"minecraft:geometry": "geometry.animated_32x32"
+		}
+	}
+}

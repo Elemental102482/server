@@ -1,0 +1,892 @@
+item.spawn_egg.entity.dungeons:enchanted_zombie.name=生成 §b魔化僵尸
+entity.dungeons:enchanted_zombie.name=§b魔化僵尸§f
+item.spawn_egg.entity.dungeons:enchanted_skeleton.name=生成 §b魔化骷髅
+entity.dungeons:enchanted_skeleton.name=§b魔化骷髅§f
+item.spawn_egg.entity.dungeons:enchanted_creeper.name=生成 §b魔化苦力怕
+entity.dungeons:enchanted_creeper.name=§b魔化苦力怕§f
+item.spawn_egg.entity.dungeons:enchanted_spider.name=生成 §b魔化蜘蛛
+entity.dungeons:enchanted_spider.name=§b魔化蜘蛛§f
+item.spawn_egg.entity.dungeons:enchanted_cave_spider.name=生成 §b魔化洞穴蜘蛛
+entity.dungeons:enchanted_cave_spider.name=§b魔化洞穴蜘蛛§f
+item.spawn_egg.entity.dungeons:enchanted_witch.name=生成 §b魔化女巫
+entity.dungeons:enchanted_witch.name=§b魔化女巫§f
+item.spawn_egg.entity.dungeons:enchanted_husk.name=生成 §b魔化尸壳
+entity.dungeons:enchanted_husk.name=§b魔化尸壳§f
+item.spawn_egg.entity.dungeons:enchanted_blaze.name=生成 §b魔化烈焰人
+entity.dungeons:enchanted_blaze.name=§b魔化烈焰人§f
+item.spawn_egg.entity.dungeons:enchanted_wither_skeleton.name=生成 §b魔化凋零骷髅
+entity.dungeons:enchanted_wither_skeleton.name=§b魔化凋零骷髅§f
+item.spawn_egg.entity.dungeons:enchanted_bogged.name=生成 §b魔化沼泽骷髅
+entity.dungeons:enchanted_bogged.name=§b魔化沼泽骷髅§f
+
+item.spawn_egg.entity.dungeons:enchanted_necromancer.name=生成 §b魔化死灵法师
+entity.dungeons:enchanted_necromancer.name=§b魔化死灵法师§f
+item.spawn_egg.entity.dungeons:enchanted_wraith.name=生成 §b魔化幽灵
+entity.dungeons:enchanted_wraith.name=§b幽灵§f
+item.spawn_egg.entity.dungeons:enchanted_iceologer.name=生成 §b魔化冰术师
+entity.dungeons:enchanted_iceologer.name=§b冰术师§f
+item.spawn_egg.entity.dungeons:enchanted_vanguard.name=生成 §b魔化先锋
+entity.dungeons:enchanted_vanguard.name=§b先锋§f
+item.spawn_egg.entity.dungeons:enchanted_sunken_skeleton.name=生成 §b魔化沉溺骷髅
+entity.dungeons:enchanted_sunken_skeleton.name=§b沉溺骷髅§f
+item.spawn_egg.entity.dungeons:enchanted_wither_skeleton_archer.name=生成 §b魔化凋零骷髅射手
+entity.dungeons:enchanted_wither_skeleton_archer.name=§b凋零骷髅§f
+item.spawn_egg.entity.dungeons:enchanted_watchling.name=生成 §b魔化看守灵
+entity.dungeons:enchanted_watchling.name=§b看守灵§f
+item.spawn_egg.entity.dungeons:enchanted_jungle_zombie.name=生成 §b魔化青苔僵尸
+entity.dungeons:enchanted_jungle_zombie.name=§b青苔僵尸§f
+item.spawn_egg.entity.dungeons:enchanted_wildfire.name=生成 §b魔化野火
+entity.dungeons:enchanted_wildfire.name=§b野火§f
+
+
+
+entity.dungeons:angry_mooshroom.name=???
+entity.dungeons:wretched_frozen_zombie.name=霜冻僵尸
+entity.dungeons:corrupted_ooze.name=腐化软泥怪
+item.spawn_egg.entity.dungeons:corrupted_ooze.name=生成 腐化软泥怪
+entity.dungeons:cauldron_bogged.name=腐化沼泽骷髅
+
+item.spawn_egg.entity.dungeons:frozen_zombie.name=生成 霜冻僵尸
+entity.dungeons:frozen_zombie.name=霜冻僵尸
+item.spawn_egg.entity.dungeons:icy_creeper.name=生成 寒冰苦力怕
+entity.dungeons:icy_creeper.name=寒冰苦力怕
+
+item.spawn_egg.entity.dungeons:mossy_skeleton.name=生成 青苔骷髅
+entity.dungeons:mossy_skeleton.name=青苔骷髅
+item.spawn_egg.entity.dungeons:jungle_zombie.name=生成 青苔僵尸
+entity.dungeons:jungle_zombie.name=青苔僵尸
+
+item.spawn_egg.entity.dungeons:drowned_hunter.name=生成 溺尸猎手
+entity.dungeons:drowned_hunter.name=溺尸猎手
+item.spawn_egg.entity.dungeons:drowned_elite.name=生成 精英溺尸
+entity.dungeons:drowned_elite.name=精英溺尸
+item.spawn_egg.entity.dungeons:sunken_skeleton.name=生成 沉溺骷髅
+entity.dungeons:sunken_skeleton.name=沉溺骷髅
+
+item.spawn_egg.entity.dungeons:zombified_piglin_brute.name=生成 僵尸猪灵蛮兵
+entity.dungeons:zombified_piglin_brute.name=僵尸猪灵蛮兵
+entity.dungeons:wither_skeleton_archer.name=凋零骷髅射手
+
+item.spawn_egg.entity.dungeons:baby_ghast.name=生成 幼年恶魂
+entity.dungeons:baby_ghast.name=幼年恶魂 
+
+
+
+item.spawn_egg.entity.dungeons:necromancer.name=生成 死灵法师蛮兵
+entity.dungeons:necromancer.name=死灵法师蛮兵
+item.spawn_egg.entity.dungeons:wraith.name=生成 幽灵
+entity.dungeons:wraith.name=幽灵
+item.spawn_egg.entity.dungeons:iceologer.name=生成 冰术师
+entity.dungeons:iceologer.name=冰术师
+item.spawn_egg.entity.dungeons:vanguard.name=生成 先锋
+entity.dungeons:vanguard.name=先锋
+item.spawn_egg.entity.dungeons:redstone_cube.name=生成 红石怪
+entity.dungeons:redstone_cube.name=红石怪
+item.spawn_egg.entity.dungeons:royal_guard.name=生成 皇家守卫
+entity.dungeons:royal_guard.name=皇家守卫
+item.spawn_egg.entity.dungeons:guardian_vex.name=生成 恼鬼守卫
+entity.dungeons:guardian_vex.name=恼鬼守卫
+item.spawn_egg.entity.dungeons:watchling.name=生成 看守灵
+entity.dungeons:watchling.name=看守灵
+item.spawn_egg.entity.dungeons:blastling.name=生成 爆破灵
+entity.dungeons:blastling.name=爆破灵
+entity.dungeons:snareling.name=迷惑灵
+item.spawn_egg.entity.dungeons:snareling.name=生成 迷惑灵
+item.spawn_egg.entity.dungeons:pet_bee.name=生成 蜜蜂
+entity.dungeons:pet_bee.name=蜜蜂
+entity.dungeons:pet_iron_golem.name=铁傀儡
+entity.dungeons:whisperer.name=唤藤者
+item.spawn_egg.entity.dungeons:whisperer.name=生成 唤藤者
+item.spawn_egg.entity.dungeons:enchanted_sheep.name=生成 魔化羊
+entity.dungeons:enchanted_sheep.name=魔化羊
+entity.dungeons:wavewhisperer.name=唤浪者
+item.spawn_egg.entity.dungeons:wavewhisperer.name=生成 唤浪者
+entity.dungeons:leapleaf.name=腾跃之叶
+item.spawn_egg.entity.dungeons:leapleaf.name=生成 腾跃之叶
+entity.dungeons:squall_golem.name=呼啸傀儡
+item.spawn_egg.entity.dungeons:squall_golem.name=生成 呼啸傀儡
+entity.dungeons:windcaller.name=唤风者
+item.spawn_egg.entity.dungeons:windcaller.name=生成 唤风者
+item.spawn_egg.entity.dungeons:tower_wraith.name=生成 高塔幽灵
+entity.dungeons:tower_wraith.name=高塔幽灵
+item.spawn_egg.entity.dungeons:piglin_fungus_thrower.name=生成 猪灵掷菌手
+entity.dungeons:piglin_fungus_thrower.name=猪灵掷菌手
+item.spawn_egg.entity.dungeons:zombified_piglin_fungus_thrower.name=生成 尸化·猪灵掷菌手
+entity.dungeons:zombified_piglin_fungus_thrower.name=尸化·猪灵掷菌手
+item.spawn_egg.entity.dungeons:vindicator_chef.name=卫道士厨师刷怪蛋
+entity.dungeons:vindicator_chef.name=卫道士厨师
+item.spawn_egg.entity.dungeons:soul_wizard.name=灵魂巫师刷怪蛋
+entity.dungeons:soul_wizard.name=灵魂巫师
+
+item.spawn_egg.entity.dungeons:wildfire.name=生成 野火
+entity.dungeons:wildfire.name=野火
+item.spawn_egg.entity.dungeons:redstone_golem.name=生成 红石傀儡
+entity.dungeons:redstone_golem.name=红石傀儡
+entity.dungeons:redstone_golem_resting.name=红石傀儡
+entity.dungeons:endersent.name=末影遣使
+item.spawn_egg.entity.dungeons:endersent.name=生成 末影遣使
+entity.dungeons:drowned_necromancer.name=溺尸死灵法师蛮兵
+item.spawn_egg.entity.dungeons:drowned_necromancer.name=生成 溺尸死灵法师蛮兵
+item.spawn_egg.entity.dungeons:illusioner.name=幻术师刷怪蛋
+entity.dungeons:illusioner.name=幻术师
+entity.dungeons:illusioner_clone.name=幻术师
+
+###BOSS
+item.spawn_egg.entity.dungeons:redstone_monstrosity_resting.name=生成 红石巨兽 
+entity.dungeons:redstone_monstrosity_resting.name=红石巨兽
+entity.dungeons:redstone_monstrosity.name=红石巨兽
+item.spawn_egg.entity.dungeons:nameless_one_resting.name=生成 无名者 
+entity.dungeons:nameless_one_resting.name=无名者
+entity.dungeons:nameless_one.name=无名者
+item.spawn_egg.entity.dungeons:mooshroom_monstrosity_resting.name=生成 哞菇巨兽 
+entity.dungeons:mooshroom_monstrosity_resting.name=哞菇巨兽 
+entity.dungeons:mooshroom_monstrosity.name=哞菇巨兽
+item.spawn_egg.entity.dungeons:wretched_wraith_resting.name=生成 哀霜幽灵 
+entity.dungeons:wretched_wraith_resting.name=哀霜幽灵
+entity.dungeons:wretched_wraith.name=哀霜幽灵
+item.spawn_egg.entity.dungeons:corrupted_cauldron_resting.name=生成 腐化锅釜怪 
+entity.dungeons:corrupted_cauldron_resting.name=腐化锅釜怪
+entity.dungeons:corrupted_cauldron.name=腐化锅釜怪
+item.spawn_egg.entity.dungeons:jungle_abomination_resting.name=生成 丛林恶物 
+entity.dungeons:jungle_abomination_resting.name=丛林恶物
+entity.dungeons:jungle_abomination.name=丛林恶物
+item.spawn_egg.entity.dungeons:tempest_golem_resting.name=生成 风暴傀儡 
+entity.dungeons:tempest_golem_resting.name=风暴傀儡
+entity.dungeons:tempest_golem.name=风暴傀儡
+item.spawn_egg.entity.dungeons:ancient_guardian_resting.name=生成 上古守卫者 
+entity.dungeons:ancient_guardian_resting.name=上古守卫者
+entity.dungeons:ancient_guardian.name=上古守卫者
+item.spawn_egg.entity.dungeons:boss_wildfire_resting.name=生成 野火BOSS 
+entity.dungeons:boss_wildfire_resting.name=野火BOSS
+entity.dungeons:boss_wildfire.name=野火BOSS
+item.spawn_egg.entity.dungeons:vengeful_heart_of_ender_resting.name=§d复仇末影之心刷怪蛋 
+entity.dungeons:vengeful_heart_of_ender_resting.name=§d复仇末影之心§r
+entity.dungeons:vengeful_heart_of_ender.name=§d复仇末影之心§r
+
+
+item.spawn_egg.entity.dungeons:spiked_eye_resting.name=§b尖刺之眼刷怪蛋 §r
+entity.dungeons:spiked_eye_resting.name=§b尖刺之眼§r
+entity.dungeons:spiked_eye.name=§b尖刺之眼§r
+item.spawn_egg.entity.dungeons:binding_eye_resting.name=§b束缚之眼刷怪蛋 §r
+entity.dungeons:binding_eye_resting.name=§b束缚之眼§r
+entity.dungeons:binding_eye.name=§b束缚之眼§r
+item.spawn_egg.entity.dungeons:reaping_eye_resting.name=§b收割之眼刷怪蛋 §r
+entity.dungeons:reaping_eye_resting.name=§b收割之眼§r
+entity.dungeons:reaping_eye.name=§b收割之眼§r
+item.spawn_egg.entity.dungeons:blight_eye_resting.name=§b凋零之眼刷怪蛋 §r
+entity.dungeons:blight_eye_resting.name=§b凋零之眼§r
+entity.dungeons:blight_eye.name=§b凋零之眼§r
+item.spawn_egg.entity.dungeons:ravenous_eye_resting.name=§b贪婪之眼刷怪蛋 §r
+entity.dungeons:ravenous_eye_resting.name=§b贪婪之眼§r
+entity.dungeons:ravenous_eye.name=§b贪婪之眼§r
+item.spawn_egg.entity.dungeons:savage_eye_resting.name=§b凶暴之眼刷怪蛋 §r
+entity.dungeons:savage_eye_resting.name=§b凶暴之眼§r
+entity.dungeons:savage_eye.name=§b凶暴之眼§r
+
+###召唤仆从
+entity.dungeons:cursed_presence.name=§6(召唤物)被诅咒的存在§f
+entity.dungeons:cursed_presence_guard.name=§c(召唤物)僵尸§f
+
+###假人
+entity.dungeons:target_dummy.name=训练假人
+item.dungeons:target_dummy=训练假人
+item.spawn_egg.entity.dungeons:dummy.name=生成 目标假人
+entity.dungeons:dummy.name=目标假人
+
+###技能
+entity.dungeons:spooky_monstrosity_resting.name=巨兽
+entity.dungeons:spooky_monstrosity.name=巨兽
+entity.dungeons:rolling_flame.name=滚动火焰
+
+item.spawn_egg.entity.dungeons:spooky_monstrosity_resting.name=§d幽灵巨兽刷怪蛋 §r
+item.spawn_egg.entity.dungeons:rolling_flame.name=§d滚动烈焰刷怪蛋§r
+
+
+
+entity.dungeons:web.name=蛛网
+entity.dungeons:wraith_fire.name=冰之华束
+entity.dungeons:wraith_fire_strong.name=冰之华束
+entity.dungeons:redstone_golem_mine.name=红石傀儡炸弹
+entity.dungeons:redstone_mine_explosion.name=红石傀儡炸弹
+entity.dungeons:necromancer_shot.name=能量弹
+entity.dungeons:necromancer_shot_strong.name=能量弹
+entity.dungeons:necromancer_shot_levitation.name=能量弹
+entity.dungeons:ice_chunk.name=冰块
+entity.dungeons:ice_chunk_strong.name=冰块
+entity.dungeons:ice_chunk_double.name=冰块
+entity.dungeons:blastling_ammo.name=爆破灵
+entity.dungeons:wildfire<>.name=野火
+entity.dungeons:wildfire_blast.name=野火
+entity.dungeons:wildfire_fireball.name=野火
+entity.dungeons:monstrosity_knockback.name=红石巨兽
+entity.dungeons:redstone_monstrosity_boom.name=红石巨兽
+entity.dungeons:redstone_monstrosity_awaken_boom.name=红石巨兽
+entity.dungeons:false_king.name=王之虚影
+entity.dungeons:totem_of_regeneration.name=再生图腾
+entity.dungeons:totem_of_shielding.name=护盾图腾
+entity.dungeons:mushroom_knockback.name=哞菇巨兽
+entity.dungeons:mushroom_rocket.name=哞菇火球
+entity.dungeons:mooshroom_monstrosity_awaken_boom.name=哞菇巨兽
+entity.dungeons:wretched_wraith_fire.name=仇炎灼世
+entity.dungeons:wretched_wraith_awaken_boom.name=哀霜幽灵
+entity.dungeons:whisperer_vine.name=唤藤者藤蔓
+entity.dungeons:whisperer_vine2.name=唤藤者藤蔓
+entity.dungeons:wavewhisperer_kelp.name=唤浪者海带
+entity.dungeons:wavewhisperer_kelp2.name=唤浪者海带
+entity.dungeons:redstone_core.name=Forge Core
+entity.dungeons:corrupted_cauldron_awaken_boom.name=腐化锅釜怪
+entity.dungeons:cauldron_fire.name=腐化之泥
+entity.dungeons:abomination_vine.name=憎恶藤蔓
+entity.dungeons:abomination_quick_vine.name=憎恶藤蔓
+entity.dungeons:jungle_abomination_awaken_boom.name=丛林恶物
+entity.dungeons:spooky_knockback.name=巨兽
+entity.dungeons:spooky_monstrosity_boom.name=巨兽
+entity.dungeons:spooky_monstrosity_awaken_boom.name=巨兽
+entity.dungeons:tempest_golem_awaken_boom.name=风暴傀儡
+entity.dungeons:tempest_golem_zap.name=风暴傀儡
+entity.dungeons:wind_totem_left.name=风之号角
+entity.dungeons:wind_totem_right.name=风之号角
+entity.dungeons:wind_totem_burst.name=风之号角
+entity.dungeons:wind_push_burst.name=唤风者
+entity.dungeons:wind_pillar_burst.name=唤风者
+entity.dungeons:drowned_necromancer_shot.name=溺尸死灵法师蛮兵
+entity.dungeons:ancient_guardian_awaken_boom.name=上古守卫者
+entity.dungeons:biomine.name=水雷
+entity.dungeons:biomine_boom.name=水雷
+entity.dungeons:biomine_poison.name=水雷
+entity.dungeons:tower_wraith_fire.name=冰之华束
+entity.dungeons:tower_wraith_poison.name=毒气
+entity.dungeons:player_scatter_mine.name=撒布地雷
+entity.dungeons:player_mine_explosion.name=撒布地雷
+entity.dungeons:ancient_guardian_ammo.name=上古守卫者激光
+entity.dungeons:eye_guardian_ammo.name=守卫者激光
+entity.dungeons:blue_nethershroom.name=蓝色地狱疣菌
+entity.dungeons:boss_wildfire<>.name=烈焰
+entity.dungeons:boss_wildfire_blast.name=野火之怒
+entity.dungeons:boss_wildfire_fireball.name=火球
+entity.dungeons:wildfire_blaze.name=火焰
+entity.dungeons:corrupted_beacon_ammo.name=信标光束
+entity.dungeons:corrupted_pumpkin_ammo.name=Haunted Beam
+entity.dungeons:endersent_awaken_boom.name=末影领主
+entity.dungeons:vengeful_heart_of_ender_awaken_boom.name=复仇末影之心
+entity.dungeons:vengeful_endermite_boom.name=复仇末影螨
+entity.dungeons:vengeful_endermite.name=末影螨
+entity.dungeons:vhoe_bomb.name=末影炸弹
+entity.dungeons:vhoe_bomb_explosion.name=末影炸弹
+entity.dungeons:vhoe_flame.name=复仇烈焰
+entity.dungeons:vhoe_projectile.name=复仇烈焰
+entity.dungeons:void_portal.name=虚空传送门
+
+###战利品
+
+item.dungeons:enchanted_rune_a=魔法符文
+item.dungeons:enchanted_rune_c=魔法符文
+item.dungeons:enchanted_rune_i=魔法符文
+item.dungeons:enchanted_rune_o=魔法符文
+item.dungeons:enchanted_rune_p=魔法符文
+item.dungeons:enchanted_rune_r=魔法符文
+item.dungeons:enchanted_rune_s=魔法符文
+item.dungeons:enchanted_rune_t=魔法符文
+item.dungeons:enchanted_rune_u=魔法符文
+
+item.dungeons:diamond_dust=钻石粉尘
+item.dungeons:blue_print=蓝图
+item.dungeons:pink_print=粉红印记
+
+tile.dungeons:redstone_golem_head.name=§e红石傀儡之首§r
+tile.dungeons:wildfire_head.name=§e野火之首§r
+
+tile.dungeons:ice_crown_replica.name=§b冰之冠§r
+tile.dungeons:staff_statue.name=§b无名者的技能§r
+tile.dungeons:corrupted_core.name=§b腐败之核§r
+tile.dungeons:benevolent_brew_statue.name=§b腐化锅釜怪§r
+tile.dungeons:abomination_bloom.name=§b憎恶绽华§r
+tile.dungeons:whirlwindgig.name=§b旋风狂舞§r
+tile.dungeons:enormous_eyeball.name=§b上古之眸§r
+tile.dungeons:blaze_cage.name=§b烈焰囚笼§r
+tile.dungeons:enchanted_pearl.name=§b附魔珍珠§r
+tile.dungeons:eternal_brazier.name=§b永恒火盆§r
+tile.dungeons:skullager.name=§dArch Skullager§r
+
+item.dungeons:redstone_ministrosity_statue=迷你红石雕像
+
+item.dungeons:redstone_core=Forge Core
+
+item.dungeons:redstone_painting=黑暗之画
+item.dungeons:nameless_painting=远古之画
+item.dungeons:mooshroom_painting=奇异之画
+item.dungeons:wraith_painting=恐惧之画
+item.dungeons:cauldron_painting=神秘之画
+item.dungeons:abomination_painting=扭曲之画
+item.dungeons:tempest_painting=旋风之画
+item.dungeons:guardian_painting=遗忘之画
+item.dungeons:wildfire_painting=炼狱之画
+item.dungeons:endersent_painting=影眸之画
+item.dungeons:vengeful_painting=终极之画
+
+item.dungeons:spooky_painting=诡异之画
+
+
+tile.dungeons:void_fluid.name=虚空
+tile.dungeons:void_portal_frame.name=虚空传送门框架
+
+
+item.dungeons:redstone_key=红石之钥
+item.dungeons:nameless_key=无名之钥
+item.dungeons:ancient_key=远古之钥
+item.dungeons:wretched_key=哀霜之钥
+item.dungeons:jungle_key=丛林之钥
+item.dungeons:questionable_key=可疑之钥
+item.dungeons:tempest_key=风暴之钥
+item.dungeons:corrupted_key=腐化之钥
+item.dungeons:blaze_key=烈焰之钥
+item.dungeons:echo_key=回声之钥(未更新)
+item.dungeons:void_key=§d§k虚空之钥§f
+
+item.dungeons:skeleton_key=骷髅之钥
+
+
+item.dungeons:book_of_heroes=英雄之书 
+
+item.dungeons:enchanted_eye_of_ender=附魔末影之眼
+
+###法器
+item.dungeons:totem_of_regeneration=再生图腾
+item.dungeons:rare_totem_of_regeneration=再生图腾 
+item.dungeons:soul_healer=灵魂治疗器
+item.dungeons:rare_soul_healer=灵魂治疗器 
+item.dungeons:iron_hide_amulet=铁皮护身符
+item.dungeons:rare_iron_hide_amulet=铁皮护身符 
+item.dungeons:harvester=收割者
+item.dungeons:rare_harvester=收割者 
+item.dungeons:gong_of_weakening=弱化之锣
+item.dungeons:rare_gong_of_weakening=弱化之锣 
+item.dungeons:shock_powder=休克粉末
+item.dungeons:rare_shock_powder=休克粉末 
+item.dungeons:blast_fungus=爆破菌
+item.dungeons:rare_blast_fungus=爆破菌 
+item.dungeons:totem_of_shielding=护盾图腾
+item.dungeons:rare_totem_of_shielding=护盾图腾 
+item.dungeons:shadow_shifter=暗影装置
+item.dungeons:rare_shadow_shifter=暗影装置 
+item.dungeons:vexing_chant=恼鬼奏章
+item.dungeons:rare_vexing_chant=恼鬼奏章 
+item.dungeons:satchel_of_elements=元素背袋
+item.dungeons:rare_satchel_of_elements=元素背袋 
+item.dungeons:wind_horn=风之号角
+item.dungeons:rare_wind_horn=风之号角 
+item.dungeons:ice_wand=寒冰魔杖
+item.dungeons:rare_ice_wand=寒冰魔杖 
+item.dungeons:death_cap_mushroom=毒帽菇
+item.dungeons:rare_death_cap_mushroom=毒帽菇 
+item.dungeons:enchanted_grass=魔化草
+item.dungeons:rare_enchanted_grass=魔化草 
+item.dungeons:corrupted_seeds=腐化种子
+item.dungeons:rare_corrupted_seeds=腐化种子 
+item.dungeons:boots_of_swiftness=迅捷之靴
+item.dungeons:rare_boots_of_swiftness=迅捷之靴 
+item.dungeons:lightning_rod=雷霆法杖
+item.dungeons:rare_lightning_rod=雷霆法杖 
+item.dungeons:buzzy_nest=嗡嗡蜂巢
+item.dungeons:rare_buzzy_nest=嗡嗡蜂巢 
+item.dungeons:light_feather=浮流之羽
+item.dungeons:rare_light_feather=浮流之羽 
+item.dungeons:golem_kit=傀儡用具
+item.dungeons:rare_golem_kit=傀儡用具 
+item.dungeons:updraft_tome=鼓风之典
+item.dungeons:rare_updraft_tome=鼓风之典 
+item.dungeons:enchanters_tome=附魔师之典
+item.dungeons:rare_enchanters_tome=附魔师之典 
+item.dungeons:scatter_mines=撒布地雷
+item.dungeons:rare_scatter_mines=撒布地雷 
+item.dungeons:satchel_of_snacks=零食背袋
+item.dungeons:rare_satchel_of_snacks=零食背袋 
+item.dungeons:satchel_of_elixirs=药水背袋
+item.dungeons:rare_satchel_of_elixirs=药水背袋 
+item.dungeons:eye_of_the_guardian=守卫者之眼
+item.dungeons:rare_eye_of_the_guardian=守卫者之眼 
+item.dungeons:totem_of_casting=施法图腾
+item.dungeons:rare_totem_of_casting=施法图腾 
+item.dungeons:powershaker=巨力沙锤
+item.dungeons:rare_powershaker=巨力沙锤 
+item.dungeons:corrupted_beacon=腐化信标
+item.dungeons:rare_corrupted_beacon=腐化信标 
+item.dungeons:ghost_cloak=幽灵斗篷
+item.dungeons:rare_ghost_cloak=幽灵斗篷 
+item.dungeons:soul_lantern=灵魂火灯笼
+item.dungeons:rare_soul_lantern=灵魂火灯笼 
+item.dungeons:tome_of_duplication=复制魔典
+item.dungeons:rare_tome_of_duplication=复制魔典 
+item.dungeons:spinblade=回旋之刃
+item.dungeons:rare_spinblade=回旋之刃 
+
+###武器装备
+item.dungeons:anchor=船锚
+item.dungeons:encrusted_anchor=覆藤船锚
+item.dungeons:axe=斧
+item.dungeons:highlands_axe=高地之斧
+item.dungeons:firebrand=烙火
+item.dungeons:backstabber=背刺者
+item.dungeons:swift_striker=迅捷打击者
+item.dungeons:battlestaff=战斗之杖
+item.dungeons:growing_staff=生长之杖
+item.dungeons:battlestaff_of_terror=恐怖之杖
+item.dungeons:bone_club=骨棒
+item.dungeons:bone_cudgel=骨棍
+item.dungeons:claymore=大剑
+item.dungeons:great_axeblade=斧阔剑
+item.dungeons:broadsword=阔剑
+item.dungeons:heartstealer=窃心者
+item.dungeons:coral_blade=珊瑚之刃
+item.dungeons:sponge_striker=海绵刺刃
+item.dungeons:cutlass=弯刀
+item.dungeons:nameless_blade=无名之刃
+item.dungeons:dancers_sword=舞者之剑
+item.dungeons:daggers=匕首
+item.dungeons:moon_daggers=月之匕首
+item.dungeons:sheer_daggers=纯正匕首
+item.dungeons:frost_knives=寒霜獠牙
+item.dungeons:double_axe=双刃斧
+item.dungeons:cursed_axe=诅咒之斧
+item.dungeons:whirlwind=旋风斧
+item.dungeons:gauntlets=铁拳套
+item.dungeons:fighters_bindings=斗士拳套
+item.dungeons:maulers=粉碎者
+item.dungeons:soul_fists=灵魂拳套
+item.dungeons:glaive=长柄刀
+item.dungeons:grave_bane=弑墓者
+item.dungeons:venom_glaive=剧毒长刀
+item.dungeons:great_hammer=巨锤
+item.dungeons:hammer_of_gravity=引力之锤
+item.dungeons:stormlander=雷霆之锤
+item.dungeons:katana=武士刀
+item.dungeons:masters_katana=大师武士刀
+item.dungeons:dark_katana=黑暗武士刀
+item.dungeons:mace=锤子
+item.dungeons:flail=链锤
+item.dungeons:suns_grace=日之恩惠
+item.dungeons:soul_knife=灵魂之刃
+item.dungeons:eternal_knife=永恒之刃
+item.dungeons:truthseeker=求真者
+item.dungeons:obsidian_claymore=黑曜石阔剑
+item.dungeons:starless_night=无星之夜
+item.dungeons:rapier=西洋剑
+item.dungeons:bee_stinger=蜂之螫针
+item.dungeons:freezing_foil=霜冻花剑
+item.dungeons:broken_sawblade=破损锯剑
+item.dungeons:mechanised_sawblade=机械锯剑
+item.dungeons:soul_scythe=灵魂长镰
+item.dungeons:frost_scythe=冰霜长镰
+item.dungeons:jailors_scythe=狱卒之镰
+item.dungeons:sword=长剑
+item.dungeons:diamond_sword=钻石长剑
+item.dungeons:hawkbrand=鹰身大剑
+item.dungeons:tempest_knife=暴风刃
+item.dungeons:resolute_tempest_knife=飓风刃
+item.dungeons:chill_gale_knife=霜风之刃
+item.dungeons:void_touched_blades=寂灭双刃
+item.dungeons:the_beginning_and_the_end=始·终
+item.dungeons:whip=鞭子
+item.dungeons:vine_whip=藤蔓长鞭 
+
+
+item.dungeons:dark_boots=黑暗之靴
+item.dungeons:dark_leggings=黑暗护腿
+item.dungeons:dark_chestplate=黑暗胸甲
+item.dungeons:dark_helmet=黑暗头盔
+item.dungeons:titans_shroud_boots=泰坦之靴
+item.dungeons:titans_shroud_leggings=泰坦护腿
+item.dungeons:titans_shroud_chestplate=泰坦胸甲
+item.dungeons:titans_shroud_helmet=泰坦头盔
+
+item.dungeons:grim_boots=死灵之靴
+item.dungeons:grim_leggings=死灵护腿
+item.dungeons:grim_chestplate=死灵胸甲
+item.dungeons:grim_helmet=死灵头盔
+item.dungeons:wither_boots=凋零之靴
+item.dungeons:wither_leggings=凋零护腿
+item.dungeons:wither_chestplate=凋零胸甲
+item.dungeons:wither_helmet=凋零头盔
+
+item.dungeons:snow_boots=雪之靴
+item.dungeons:snow_leggings=雪护腿
+item.dungeons:snow_chestplate=雪胸甲
+item.dungeons:snow_helmet=雪头盔
+item.dungeons:frost_boots=冰霜之靴
+item.dungeons:frost_leggings=冰霜护腿
+item.dungeons:frost_chestplate=冰霜胸甲
+item.dungeons:frost_helmet=冰霜头盔
+
+item.dungeons:wolf_boots=狼皮之靴
+item.dungeons:wolf_leggings=狼皮护腿
+item.dungeons:wolf_chestplate=狼皮胸甲
+item.dungeons:wolf_helmet=狼皮头盔
+item.dungeons:fox_boots=狐狸之靴
+item.dungeons:fox_leggings=狐狸护腿
+item.dungeons:fox_chestplate=狐狸胸甲
+item.dungeons:fox_helmet=狐狸头盔
+item.dungeons:black_wolf_boots=黑狼之靴
+item.dungeons:black_wolf_leggings=黑狼护腿
+item.dungeons:black_wolf_chestplate=黑狼胸甲
+item.dungeons:black_wolf_helmet=黑狼头盔
+
+item.dungeons:evocation_boots=唤魔之靴
+item.dungeons:evocation_leggings=唤魔护腿
+item.dungeons:evocation_chestplate=唤魔长袍
+item.dungeons:evocation_helmet=唤魔帽子
+item.dungeons:verdant_boots=碧绿之靴
+item.dungeons:verdant_leggings=碧绿护腿
+item.dungeons:verdant_chestplate=碧绿长袍
+item.dungeons:verdant_helmet=碧绿帽子
+item.dungeons:ember_boots=余烬之靴
+item.dungeons:ember_leggings=余烬护腿
+item.dungeons:ember_chestplate=余烬长袍
+item.dungeons:ember_helmet=余烬帽子
+
+item.dungeons:ocelot_boots=豹猫之靴
+item.dungeons:ocelot_leggings=豹猫护腿
+item.dungeons:ocelot_chestplate=豹猫胸甲
+item.dungeons:ocelot_helmet=豹猫头盔
+item.dungeons:shadow_walker_boots=暗影行者之靴
+item.dungeons:shadow_walker_leggings=暗影行者护腿
+item.dungeons:shadow_walker_chestplate=暗影行者胸甲
+item.dungeons:shadow_walker_helmet=暗影行者头盔
+
+item.dungeons:emerald_boots=绿宝石之靴
+item.dungeons:emerald_leggings=绿宝石护腿
+item.dungeons:emerald_chestplate=绿宝石胸甲
+item.dungeons:emerald_helmet=绿宝石头盔
+item.dungeons:opulent_boots=华丽之靴
+item.dungeons:opulent_leggings=华丽护腿
+item.dungeons:opulent_chestplate=华丽胸甲
+item.dungeons:opulent_helmet=华丽头盔
+item.dungeons:gilded_glory_boots=镶金荣光之靴
+item.dungeons:gilded_glory_leggings=镶金荣光护腿
+item.dungeons:gilded_glory_chestplate=镶金荣光胸甲
+item.dungeons:gilded_glory_helmet=镶金荣光头盔
+
+item.dungeons:turtle_boots=海龟之靴
+item.dungeons:turtle_leggings=海龟护腿
+item.dungeons:turtle_chestplate=海龟胸甲
+item.dungeons:turtle_helmet=海龟头盔
+item.dungeons:nimble_turtle_boots=敏捷海龟之靴
+item.dungeons:nimble_turtle_leggings=敏捷海龟护腿
+item.dungeons:nimble_turtle_chestplate=敏捷海龟胸甲
+item.dungeons:nimble_turtle_helmet=敏捷海龟头盔
+
+item.dungeons:squid_boots=鱿鱼之靴
+item.dungeons:squid_leggings=鱿鱼护腿
+item.dungeons:squid_chestplate=鱿鱼背心
+item.dungeons:squid_helmet=鱿鱼兜帽
+item.dungeons:glow_squid_boots=发光鱿鱼之靴
+item.dungeons:glow_squid_leggings=发光鱿鱼护腿
+item.dungeons:glow_squid_chestplate=发光鱿鱼背心
+item.dungeons:glow_squid_helmet=发光鱿鱼兜帽
+
+item.dungeons:thief_boots=窃贼之靴
+item.dungeons:thief_leggings=窃贼护腿
+item.dungeons:thief_chestplate=窃贼胸甲
+item.dungeons:thief_helmet=窃贼头盔
+item.dungeons:spider_boots=蜘蛛之靴
+item.dungeons:spider_leggings=蜘蛛护腿
+item.dungeons:spider_chestplate=蜘蛛胸甲
+item.dungeons:spider_helmet=蜘蛛头盔
+
+item.dungeons:sprout_boots=嫩芽藤靴
+item.dungeons:sprout_leggings=嫩芽藤腿
+item.dungeons:sprout_chestplate=嫩芽藤甲
+item.dungeons:sprout_helmet=嫩芽藤盔
+item.dungeons:living_vines_boots=生命藤靴
+item.dungeons:living_vines_leggings=生命藤腿
+item.dungeons:living_vines_chestplate=生命藤甲
+item.dungeons:living_vines_helmet=生命藤盔
+
+item.dungeons:root_rot_boots=腐根之靴
+item.dungeons:root_rot_leggings=腐根护腿
+item.dungeons:root_rot_chestplate=腐根胸甲
+item.dungeons:root_rot_helmet=腐根头盔
+item.dungeons:black_spot_boots=黑斑之靴
+item.dungeons:black_spot_leggings=黑斑护腿
+item.dungeons:black_spot_chestplate=黑斑胸甲
+item.dungeons:black_spot_helmet=黑斑头盔
+
+item.dungeons:piglin_boots=猪灵之靴
+item.dungeons:piglin_leggings=猪灵护腿
+item.dungeons:piglin_chestplate=猪灵胸甲
+item.dungeons:piglin_helmet=猪灵头盔
+item.dungeons:golden_piglin_boots=黄金猪灵之靴
+item.dungeons:golden_piglin_leggings=黄金猪灵护腿
+item.dungeons:golden_piglin_chestplate=黄金猪灵胸甲
+item.dungeons:golden_piglin_helmet=黄金猪灵头盔
+
+item.dungeons:guard_boots=守卫者长靴
+item.dungeons:guard_leggings=守卫者护腿
+item.dungeons:guard_chestplate=守卫者胸甲
+item.dungeons:guard_helmet=守卫者头盔
+item.dungeons:ender_boots=末影长靴
+item.dungeons:ender_leggings=末影护腿
+item.dungeons:ender_chestplate=末影胸甲
+item.dungeons:ender_helmet=末影头盔
+
+item.dungeons:entertainer_boots=艺人长靴
+item.dungeons:entertainer_leggings=艺人护腿
+item.dungeons:entertainer_chestplate=艺人外套
+item.dungeons:entertainer_helmet=艺人礼帽
+item.dungeons:troubadour_boots=游吟诗人之靴
+item.dungeons:troubadour_leggings=游吟诗人护腿
+item.dungeons:troubadour_chestplate=游吟诗人外套
+item.dungeons:troubadour_helmet=游吟诗人帽
+
+item.dungeons:shulker_boots=潜匿之贝长靴
+item.dungeons:shulker_leggings=潜匿之贝护腿
+item.dungeons:shulker_chestplate=潜匿之贝胸甲
+item.dungeons:shulker_helmet=潜匿之贝头盔
+item.dungeons:sturdy_shulker_boots=坚固潜匿长靴
+item.dungeons:sturdy_shulker_leggings=坚固潜匿护腿
+item.dungeons:sturdy_shulker_chestplate=坚固潜匿胸甲
+item.dungeons:sturdy_shulker_helmet=坚固潜匿头盔
+
+item.dungeons:teleportation_boots=传送长靴
+item.dungeons:teleportation_leggings=传送护腿
+item.dungeons:teleportation_chestplate=传送法袍
+item.dungeons:teleportation_helmet=传送兜帽
+item.dungeons:unstable_boots=不稳定长靴
+item.dungeons:unstable_leggings=不稳定护腿
+item.dungeons:unstable_chestplate=不稳定法袍
+item.dungeons:unstable_helmet=不稳定兜
+
+item.dungeons:plate_boots=Plate Boots
+item.dungeons:plate_leggings=Plate Leggings
+item.dungeons:plate_chestplate=Plate Chestplate
+item.dungeons:plate_helmet=Plate Helmet
+item.dungeons:full_metal_boots=Full Metal Boots
+item.dungeons:full_metal_leggings=Full Metal Leggings
+item.dungeons:full_metal_chestplate=Full Metal Chestplate
+item.dungeons:full_metal_helmet=Full Metal Helmet
+
+item.dungeons:ghostly_boots=Ghostly Boots
+item.dungeons:ghostly_leggings=Ghostly Leggings
+item.dungeons:ghostly_chestplate=Ghostly Chestplate
+item.dungeons:ghostly_helmet=Ghostly Helmet
+item.dungeons:ghost_kindler_boots=Ghost Kindler Boots
+item.dungeons:ghost_kindler_leggings=Ghost Kindler Leggings
+item.dungeons:ghost_kindler_chestplate=Ghost Kindler Chestplate
+item.dungeons:ghost_kindler_helmet=Ghost Kindler Helmet
+
+
+
+item.dungeons:burning_arrow=燃烧箭
+item.dungeons:thundering_arrow=雷电箭
+item.dungeons:torment_arrow=苦痛箭
+item.dungeons:harpoon_arrow=渔叉箭
+item.dungeons:firework_arrow=烟花箭
+
+item.dungeons:longbow=长弓
+item.dungeons:guardian_bow=守卫者之弓
+item.dungeons:red_snake=红蛇
+
+item.dungeons:bow=弓
+item.dungeons:bonebow=骨弓
+item.dungeons:twin_bow=双子弓
+
+item.dungeons:wind_bow=狂风之弓
+item.dungeons:echo_of_the_valley=空谷回声
+item.dungeons:burst_gale_bow=爆裂风弓
+
+item.dungeons:snow_bow=冰雪之弓
+item.dungeons:winters_touch=凛冬之触
+
+item.dungeons:twisting_vine_bow=缠怨藤蔓弓
+item.dungeons:weeping_vine_bow=垂泪藤蔓弓
+
+item.dungeons:soul_bow=灵魂长弓
+item.dungeons:bow_of_lost_souls=迷失之魂长弓
+item.dungeons:nocturnal_bow=暗夜长弓
+
+item.dungeons:void_bow=虚空长弓
+item.dungeons:call_of_the_void=虚空召唤
+
+item.dungeons:exploding_crossbow=爆炸弩
+item.dungeons:imploding_crossbow=聚爆弩
+item.dungeons:firebolt_thrower=火弩箭
+
+item.dungeons:soul_crossbow=灵魂弩
+item.dungeons:feral_soul_crossbow=野性灵魂弩
+item.dungeons:voidcaller=虚空召唤
+
+item.dungeons:burst_crossbow=爆裂弩
+item.dungeons:soul_hunter_crossbow=猎魂弩
+item.dungeons:corrupted_crossbow=腐化弩
+
+item.dungeons:harpoon_crossbow=渔叉弩
+item.dungeons:nautical_crossbow=航海弩
+
+item.dungeons:cog_crossbow=齿轮弩
+item.dungeons:pride_of_the_piglins=猪灵之傲
+
+item.dungeons:heavy_crossbow=重弩
+item.dungeons:doom_crossbow=末日弩
+item.dungeons:slayer_crossbow=杀戮之弩
+
+item.dungeons:shadow_crossbow=暗影弩
+item.dungeons:veiled_crossbow=隐翳弩
+
+
+
+item.dungeons:sinister_sword=邪恶之剑
+item.dungeons:skull_scythe=骷髅长镰
+item.dungeons:bonehead_hammer=头骨锤
+item.dungeons:cackling_broom=Cackling Broom
+item.dungeons:spooky_gourdian_helmet=惊悚南瓜面具
+item.dungeons:spooky_gourdian_chestplate=惊悚南瓜胸甲
+item.dungeons:spooky_gourdian_leggings=惊悚南瓜护腿
+item.dungeons:spooky_gourdian_boots=惊悚南瓜之靴
+item.dungeons:cauldron_helmet=Cauldron Helmet
+item.dungeons:cauldron_chestplate=Cauldron Chestplate
+item.dungeons:cauldron_leggings=Cauldron Leggings
+item.dungeons:cauldron_boots=Cauldron Boots
+item.dungeons:corrupted_pumpkin=Corrupted Pumpkin
+item.dungeons:haunted_bow=Haunted Bow
+item.dungeons:webbed_bow=Webbed Bow
+item.dungeons:shrieking_crossbow=Shrieking Crossbow
+
+
+
+###行为包文本翻译
+
+action.interact.redstone_monstrosity=唤醒巨兽
+action.interact.spooky_monstrosity=唤醒巨兽
+action.interact.nameless_one=扰乱无名者
+action.interact.mooshroom_monstrosity=唤醒巨兽
+action.interact.wretched_wraith=摘冠
+action.interact.corrupted_cauldron=查看锅釜怪
+action.interact.jungle_abomination=唤醒恶物
+action.interact.tempest_golem=唤醒傀儡
+action.interact.ancient_guardian=拿宝藏
+action.interact.boss_wildfire=移除神像
+action.interact.endersent=挑战附魔之眼
+action.interact.vengeful_heart_of_ender=召唤末影之心
+
+action.interact.redstone_golem=激活
+action.interact.squall_golem=风之力
+
+action.interact.unlock_chest=解锁
+action.interact.open_chest=打开
+action.interact.locked_chest=解上
+
+item.use.artefact=使用法器
+item.use.book_of_heroes=读
+
+
+dungeons:itemGroup.name.enchantedRunes=魔法符文s
+dungeons:itemGroup.name.dungeonsPainting=Boss展示
+dungeons:itemGroup.name.bossTrophies=Boss Trophies
+dungeons:itemGroup.name.bossKeys=BOSS之钥
+
+dungeons:itemGroup.name.commonMelee=Common Melee Weapons
+dungeons:itemGroup.name.uniqueMelee=§bUnique Melee Weapons
+dungeons:itemGroup.name.seasonalMelee=§dSeasonal Melee Weapons
+dungeons:itemGroup.name.commonRanged=Common Ranged Weapons
+dungeons:itemGroup.name.uniqueRanged=§bUnique Ranged Weapons
+dungeons:itemGroup.name.seasonalRanged=§dSeasonal Ranged Weapons
+dungeons:itemGroup.name.commonArmours=Armours
+dungeons:itemGroup.name.uniqueArmours=§bUnique Armours
+dungeons:itemGroup.name.seasonalArmours=§dSeasonal Armours
+dungeons:itemGroup.name.commonArtefact=Common Artefacts
+dungeons:itemGroup.name.rareArtefact=§aRare Artefacts
+
+dungeons:itemGroup.name.customArrows=改造箭矢
+
+### BOSS信息
+§dEnchanted Iceologer  Double Damage=§d魔化冰术师  双倍伤害
+§dEnchanted Iceologer  Protection=§d魔化冰术师  保护
+§dEnchanted Iceologer  Rapid Fire=§d魔化冰术师  速射
+§dEnchanted Necromancer  Quick=§d魔化死灵法师  迅捷
+§dEnchanted Necromancer  Levitation Shot=§d魔化死灵法师  飘浮射击
+§dEnchanted Necromancer  Rapid Fire=§d魔化死灵法师  速射
+§dEnchanted Vanguard  Quick=§d魔化先锋  迅捷
+§dEnchanted Vanguard  Cowardice=§d魔化先锋  胆小
+§dEnchanted Vanguard  Protection=§d魔化先锋  保护
+§dEnchanted Watchling  Shielding=§d魔化看守灵  护盾
+§dEnchanted Watchling  Sharpness=§d魔化看守灵  锋利
+§dEnchanted Watchling  Gravity Pulse=§d魔化看守灵  引力脉冲
+§dEnchanted Wraith  Protection=§d魔化幽灵  保护
+§dEnchanted Wraith  Chilling=§d魔化幽灵  冰冻
+§dEnchanted Wraith  Quick=§d魔化幽灵  迅捷
+§dEnchanted Blaze  Protection=§d魔化烈焰人  保护
+§dEnchanted Blaze  Shielding=§d魔化烈焰人  护盾
+§dEnchanted Blaze  Regeneration=§d魔化烈焰人  再生
+§dEnchanted Bogged  Protection=§d魔化沼泽骷髅  保护
+§dEnchanted Bogged  Thorns=§d魔化沼泽骷髅  荆棘
+§dEnchanted Bogged  Rush=§d魔化沼泽骷髅  急迫
+§dEnchanted Cave Spider  Protection=§d魔化洞穴蜘蛛  保护
+§dEnchanted Cave Spider  Cowardice=§d魔化洞穴蜘蛛  胆小
+§dEnchanted Cave Spider  Swirling=§d魔化洞穴蜘蛛  旋涡
+§dEnchanted Creeper  Deflect=§d魔化苦力怕  反弹
+§dEnchanted Creeper  Quick=§d魔化苦力怕  迅捷
+§dEnchanted Creeper  Rush=§d魔化苦力怕  急迫
+§dEnchanted Husk  Protection=§d魔化尸壳  保护
+§dEnchanted Husk  Weakening=§d魔化尸壳  弱化
+§dEnchanted Husk  Gravity Pulse=§d魔化尸壳  引力脉冲
+§dEnchanted Skeleton  Protection=§d魔化骷髅  保护
+§dEnchanted Skeleton  Quick=§d魔化骷髅  迅捷
+§dEnchanted Skeleton  Chilling=§d魔化骷髅  冰冻
+§dEnchanted Spider  Quick=§d魔化蜘蛛  迅捷
+§dEnchanted Spider  Frenzied=§d魔化蜘蛛  疯狂
+§dEnchanted Spider  Radiance=§d魔化蜘蛛  治愈光辉
+§dEnchanted Witch  Heals Allies=§d魔化女巫  范围治疗
+§dEnchanted Witch  Quick=§d魔化女巫  迅捷
+§dEnchanted Witch  Rapid Fire=§d魔化女巫  速射
+§dEnchanted Wither Skeleton  Deflect=§d魔化凋零骷髅  反弹
+§dEnchanted Wither Skeleton  Protection=§d魔化凋零骷髅  保护
+§dEnchanted Wither Skeleton  Leeching=§d魔化凋零骷髅  吸血
+§dEnchanted Zombie  Protection=§d魔化僵尸  保护
+§dEnchanted Zombie  Double Damage=§d魔化僵尸  双倍伤害
+§dEnchanted Zombie  Heals Allies=§d魔化僵尸  范围治疗
+§dEnchanted Mossy Zombie  Protection=§d魔化青苔僵尸  保护
+§dEnchanted Mossy Zombie  Thorns=§d魔化青苔僵尸  荆棘
+§dEnchanted Mossy Zombie  Regeneration=§d魔化青苔僵尸  再生
+§dEnchanted Sunken Skeleton  Regeneration=§d魔化沉溺骷髅  再生
+§dEnchanted Sunken Skeleton  Rapid Fire=§d魔化沉溺骷髅  速射
+§dEnchanted Sunken Skeleton  Deflect=§d魔化沉溺骷髅  反弹
+§dEnchanted Wither Skeleton  Quick=§d魔化凋零骷髅  迅捷
+ §eAncient Guardian§r = §e上古守卫者§r 
+ §dCorrupted Cauldron§r = §d腐化锅釜怪§r 
+ §qJungle Abomination§r =丛林恶物§r 
+ §5Mooshroom Monstrosity§r =哞菇巨兽§r 
+ §aNameless One§r = §a无名者§r 
+ §cRedstone Monstrosity§r = §c红石巨兽§r 
+ §uHaunted Monstrosity§r = §u巨兽§r 
+ §sTempest Golem§r = §s风暴傀儡§r 
+ §6Tempest Golem§r = §6风暴傀儡§r 
+§9Wind Totem§r=§9风之号角§r
+ §eHovering Inferno§r = §e野火BOSS§r 
+ §bWretched Wraith§r = §b哀霜幽灵§r 
+ §5Wretched Wraith§r = §5哀霜幽灵§r 
+ §eDrowned Necromancer§r = §e溺尸死灵法师§r 
+§5Endersent§r=§5末影遣使§r
+ §eEndersent§r = §e末影遣使§r 
+ §eRedstone Golem§r = §e红石傀儡§r 
+ §eWildfire§r = §e野火§r 
+ §eElder Guardian§r = §e远古守卫者§r 
+ §eEnderman§r = §e末影人§r 
+ §eEvoker§r = §e唤魔者§r 
+§ePillager Captain§r=§e掠夺者队长§r
+§eVindicator Captain§r=§e袭击队长§r
+§cEnchanted Zombie  Burning=§c魔化僵尸  燃烧
+§6Cursed Presence  Gravity Pulse  Poison  Chilling=§6(召唤物)被诅咒的存在  引力脉冲  毒  冰冻
+ §5The Binding Eye§r = §5束缚之眼§r 
+ §dThe§f Binding§d Eye§r = §d束§f缚§d之眼§r 
+ §5The Blight Eye§r = §5凋零之眼§r 
+ §dThe§2 Blight§d Eye§r = §d凋§2零§d之眼§r 
+ §5The Ravenous Eye§r = §5贪婪之眼§r 
+ §dThe§e Ravenous§d Eye§r = §d贪§e婪§d之眼§r 
+ §5The Reaping Eye§r = §5收割之眼§r 
+ §dThe§b Reaping§d Eye§r = §d收§b割§d之眼§r 
+ §5The Savage Eye§r = §5凶暴之眼§r 
+ §dThe§v Savage§d Eye§r = §d凶§v暴§d之眼§r 
+ §5The Spiked Eye§r = §5尖刺之眼§r 
+ §dThe§c Spiked§d Eye§r = §d尖§c刺§d之眼§r 
+ §dVengeful Heart of Ender§r = §d末影复仇之心§r 
+ §5Endersent§r = §5末影遣使§r 
+ §eIllusioner§r = §e幻术师§r 

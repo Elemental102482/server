@@ -1,0 +1,109 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.diamond_chest.particles": {
+			"loop": true,
+			"animation_length": 0.33,
+			"particle_effects": {
+				"0.01": {
+					"effect": "magic",
+					"locator": "enchanted_particles"
+				}
+			}
+		},
+		"animation.diamond_chest.water_particles": {
+			"loop": true,
+			"animation_length": 0.18,
+			"particle_effects": {
+				"0.01": {
+					"effect": "bubble",
+					"locator": "enchanted_particles"
+				}
+			}
+		},
+		"animation.diamond_chest.open_lid": {
+			"loop": true,
+			"bones": {
+				"top": {
+					"rotation": [
+						-145,
+						0,
+						0
+					]
+				}
+			}
+		},
+		"animation.diamond_chest.open": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 3,
+			"bones": {
+				"chest": {
+					"rotation": {
+						"0.25": [
+							0,
+							0,
+							0
+						],
+						"0.5": [
+							-10,
+							0,
+							0
+						],
+						"0.7083": [
+							0,
+							0,
+							0
+						]
+					},
+					"position": {
+						"0.375": [
+							0,
+							0,
+							0
+						],
+						"0.5417": [
+							0,
+							3,
+							0
+						],
+						"0.7083": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"top": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.5417": [
+							-175,
+							0,
+							0
+						],
+						"1.0": [
+							-145,
+							0,
+							0
+						]
+					}
+				}
+			},
+			"particle_effects": {
+				"0.25": {
+					"effect": "open",
+					"locator": "enchanted_particles"
+				}
+			},
+			"sound_effects": {
+				"0.33": {
+					"effect": "open"
+				}
+			}
+		}
+	}
+}

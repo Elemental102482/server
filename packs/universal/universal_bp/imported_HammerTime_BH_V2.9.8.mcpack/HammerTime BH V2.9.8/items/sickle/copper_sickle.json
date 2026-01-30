@@ -1,0 +1,76 @@
+{
+  "format_version": "1.20.50",
+  "minecraft:item": {
+  	"description": {
+     "identifier": "system:copper_sickle",
+     "menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.hoe"
+			}
+   },
+   "components": {
+     "minecraft:icon": {
+       "texture": "copper_sickle"
+     },
+    "minecraft:repairable": {
+      "repair_items": [
+        {
+          "items": [
+            "minecraft:copper_ingot",
+            "system:copper_sickle"
+          ]
+        }
+      ]
+    },
+    "minecraft:can_destroy_in_creative": false,
+    "minecraft:digger": {
+      "on_dig": {
+        "event": "durability_attack",
+        "target": "self"
+      },
+      "use_efficiency": true,
+      "destroy_speeds": [
+        {
+          "block": "minecraft:leaves",
+          "speed": 3
+        },
+        {
+          "block": "minecraft:leaves2",
+          "speed": 3
+        },
+        {
+          "block": "minecraft:tallgrass",
+          "speed": 3
+        },
+        {
+          "block": "minecraft:seagrass",
+          "speed": 3
+        },
+        {
+          "block": "minecraft:double_plant",
+          "speed": 3
+        },
+        {
+          "block": "minecraft:yellow_flower",
+          "speed": 3
+        },
+        {
+          "block": "minecraft:red_flower",
+          "speed": 3
+        }
+      ]
+    },
+    "minecraft:enchantable": {
+      "value": 10,
+      "slot": "hoe"
+    },
+    "minecraft:display_name": {},
+    "minecraft:mining_speed": 8,
+    "minecraft:durability": {
+      "max_durability": 130
+    },
+    "minecraft:max_stack_size": 1,
+    "minecraft:hand_equipped": true
+  }
+}
+}

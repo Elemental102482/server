@@ -1,0 +1,20 @@
+{
+	"format_version": "1.21.20",
+	"minecraft:structure_set": {
+		"description": {
+			"identifier": "dungeons:illager_camp"
+		},
+		"placement": {
+			"type": "minecraft:random_spread",
+			"salt": 12022024,
+			"separation": 32,
+			"spacing": 77
+		},
+		"structures": [
+			{
+				"structure": "dungeons:illager_camp",
+				"weight": 1
+			}
+		]
+	}
+}

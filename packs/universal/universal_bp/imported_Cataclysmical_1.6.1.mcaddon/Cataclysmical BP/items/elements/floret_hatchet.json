@@ -1,0 +1,34 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:item": {
+		"description": {
+			"identifier": "cata:floret_hatchet",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:icon": "cata_floret_hatchet",
+			"minecraft:damage": 8,
+			"minecraft:hand_equipped": true,
+			"minecraft:max_stack_size": 1,
+			"minecraft:durability": {
+				"max_durability": 450
+			},
+			"minecraft:can_destroy_in_creative": false,
+			"minecraft:digger": {
+				"use_efficiency": true,
+				"destroy_speeds": [
+					{
+						"block": "minecraft:web",
+						"speed": 14
+					}
+				]
+			},
+			"minecraft:cooldown": {
+				"category": "elemental_weapon",
+				"duration": 1.5
+			}
+		}
+	}
+}

@@ -1,0 +1,41 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.battlestaff.first_person_hold": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"rotation": [
+						128.5,
+						60,
+						-60
+					],
+					"position": [
+						3,
+						23,
+						4
+					],
+					"scale": 1.2
+				}
+			}
+		},
+		"animation.battlestaff.third_person_hold": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"rotation": [
+						90,
+						0,
+						0
+					],
+					"position": [
+						0.5,
+						22.5,
+						-0.5
+					],
+					"scale": 1.4
+				}
+			}
+		}
+	}
+}

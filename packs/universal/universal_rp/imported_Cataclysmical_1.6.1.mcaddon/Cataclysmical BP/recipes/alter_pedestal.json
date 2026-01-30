@@ -1,0 +1,30 @@
+{
+	"format_version": "1.21.90",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cata:alter_pedestal"
+		},
+		"pattern": [
+			"212",
+			"222"
+		],
+		"key": {
+			"1": {
+				"item": "cata:astral_alloy"
+			},
+			"2": {
+				"item": "cata:polished_asteroid"
+			}
+		},
+		"result": {
+			"item": "cata:alter_pedestal",
+			"count": 1
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": {
+			"context": "AlwaysUnlocked"
+		}
+	}
+}

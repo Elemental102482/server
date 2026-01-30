@@ -1,0 +1,20 @@
+{
+	"format_version": "1.21.20",
+	"minecraft:structure_set": {
+		"description": {
+			"identifier": "dungeons:fiery_forge"
+		},
+		"placement": {
+			"type": "minecraft:random_spread",
+			"salt": 12022024,
+			"separation": 32,
+			"spacing": 77
+		},
+		"structures": [
+			{
+				"structure": "dungeons:fiery_forge",
+				"weight": 1
+			}
+		]
+	}
+}

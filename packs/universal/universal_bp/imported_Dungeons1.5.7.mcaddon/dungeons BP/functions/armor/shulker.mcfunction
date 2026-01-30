@@ -1,0 +1,5 @@
+tag @a[tag=!dungeons:shulker_armour,hasitem=[{item=dungeons:shulker_helmet,location=slot.armor.head},{item=dungeons:shulker_chestplate,location=slot.armor.chest},{item=dungeons:shulker_leggings,location=slot.armor.legs},{item=dungeons:shulker_boots,location=slot.armor.feet}]] add dungeons:shulker_armour
+tag @a[tag=dungeons:shulker_armour,hasitem={quantity=0,item=dungeons:shulker_helmet,location=slot.armor.head}] remove dungeons:shulker_armour
+tag @a[tag=dungeons:shulker_armour,hasitem={quantity=0,item=dungeons:shulker_chestplate,location=slot.armor.chest}] remove dungeons:shulker_armour
+tag @a[tag=dungeons:shulker_armour,hasitem={quantity=0,item=dungeons:shulker_leggings,location=slot.armor.legs}] remove dungeons:shulker_armour
+tag @a[tag=dungeons:shulker_armour,hasitem={quantity=0,item=dungeons:shulker_boots,location=slot.armor.feet}] remove dungeons:shulker_armour

@@ -1,0 +1,23 @@
+{
+	"format_version": "1.21.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "cata:phantasma_nucleus",
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:rarity": {
+				"value": "common"
+			},
+			"minecraft:block_placer": {
+				"block": "cata:phantasma_nucleus",
+				"use_on": [
+					"cata:phantasma_nucleus"
+				],
+				"replace_block_item": true
+			}
+		}
+	}
+}

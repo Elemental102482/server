@@ -1,0 +1,24 @@
+{
+	"format_version": "1.18.0",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "e:firestarter_netherite_axe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "minecraft:netherite_axe"
+			},
+			{
+				"item": "e:firestarter_book_1"
+			}
+		],
+		"result": [
+			{
+				"item": "e:netherite_axe_fs"
+			}
+		]
+	}
+}

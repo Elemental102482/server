@@ -1,0 +1,42 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:false_king",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/nameless_one/nameless_one"
+			},
+			"geometry": {
+				"default": "geometry.nameless_one"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"animations": {
+				"awaken": "animation.nameless_one.vanish",
+				"wake_controller": "controller.animation.nameless_one.rest",
+				"orb": "animation.nameless_one.orb",
+				"look_at_target": "animation.common.look_at_target"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+				],
+				"animate": [
+					"wake_controller",
+					"orb",
+					{
+						"look_at_target": "query.variant==0"
+					}
+				]
+			},
+			"spawn_egg": {
+				"base_color": "#97b0af",
+				"overlay_color": "#258a17"
+			}
+		}
+	}
+}

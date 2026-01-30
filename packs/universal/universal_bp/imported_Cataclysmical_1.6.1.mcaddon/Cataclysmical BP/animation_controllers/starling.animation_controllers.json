@@ -1,0 +1,28 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.starling.starling_eat_controller": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"eat": "query.is_stunned==true"
+						}
+					],
+					"blend_transition": 0.7
+				},
+				"eat": {
+					"animations": [
+						"eat"
+					],
+					"transitions": [
+						{
+							"default": "query.is_stunned==false"
+						}
+					],
+					"blend_transition": 0.7
+				}
+			}
+		}
+	}
+}

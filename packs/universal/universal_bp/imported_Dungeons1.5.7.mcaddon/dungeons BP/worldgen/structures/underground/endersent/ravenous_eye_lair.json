@@ -1,0 +1,32 @@
+{
+  "format_version": "1.21.20",
+  "minecraft:jigsaw": {
+    "description": {
+      "identifier": "dungeons:ravenous_eye_lair"
+    },
+    "biome_filters": [{
+      "any_of": [{
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "extreme_hills"
+        },
+        {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "roofed"
+        }
+      ]
+    }],
+    "heightmap_projection": "world_surface",
+    "max_depth": 1,
+    "start_height": {
+      "type": "constant",
+      "value": {
+        "absolute": -32
+      }
+    },
+    "start_pool": "dungeons:ravenous_eye_lair",
+    "step": "underground_structures",
+    "terrain_adaptation": "encapsulate"
+  }
+}

@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "mechanised_sawblade_glow",
+        "metalness_emissive_roughness": "mechanised_sawblade_glow_mer"
+    }
+}

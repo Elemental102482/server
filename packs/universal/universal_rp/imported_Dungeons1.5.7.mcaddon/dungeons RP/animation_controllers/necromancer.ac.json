@@ -1,0 +1,27 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.necromancer.cast": {
+			"initial_state": "default",
+			"states": {
+				"casting": {
+					"animations": [
+						"cast"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_casting&&query.all_animations_finished"
+						}
+					]
+				},
+				"default": {
+					"transitions": [
+						{
+							"casting": "query.is_casting"
+						}
+					]
+				}
+			}
+		}
+	}
+}

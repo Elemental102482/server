@@ -1,0 +1,18 @@
+{
+	"format_version": "1.21.20",
+	"minecraft:template_pool": {
+		"description": {
+			"identifier": "cata:catacombs_entrance"
+		},
+		"elements": [
+			{
+				"element": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "catacombs/start_hall",
+					"processors": "cata:stone_replacement"
+				},
+				"weight": 1
+			}
+		]
+	}
+}

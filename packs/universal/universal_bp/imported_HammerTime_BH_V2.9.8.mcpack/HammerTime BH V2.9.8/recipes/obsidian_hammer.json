@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "system:obsidian_hammer"
+    },
+
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "CCC",
+      "CSC",
+      " S "
+    ],
+    "key": {
+      "S": {
+        "item": "minecraft:stick"
+      },
+      "C": {
+        "item": "minecraft:obsidian"
+      }
+    },
+    "result": {
+      "item": "system:obsidian_hammer"
+    }
+  }
+}

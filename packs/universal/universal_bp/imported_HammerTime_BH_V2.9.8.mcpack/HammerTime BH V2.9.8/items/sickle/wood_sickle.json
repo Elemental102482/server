@@ -1,0 +1,75 @@
+{
+  "format_version": "1.20.50",
+  "minecraft:item": {
+    "description": {
+      "identifier": "system:wood_sickle",
+      "menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.hoe"
+			}
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "wood_sickle"
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": [
+              "minecraft:log",
+              "minecraft:log2",
+              "minecraft:warped_stem",
+              "minecraft:crimson_stem",
+              "system:wood_great_axe"
+            ]
+          }
+        ]
+      },
+      "minecraft:can_destroy_in_creative": false,
+      "minecraft:digger": {
+        "use_efficiency": true,
+        "destroy_speeds": [
+          {
+            "block": "minecraft:leaves",
+            "speed": 2
+          },
+          {
+            "block": "minecraft:leaves2",
+            "speed": 2
+          },
+          {
+            "block": "minecraft:tallgrass",
+            "speed": 2
+          },
+          {
+            "block": "minecraft:seagrass",
+            "speed": 2
+          },
+          {
+            "block": "minecraft:double_plant",
+            "speed": 2
+          },
+          {
+            "block": "minecraft:yellow_flower",
+            "speed": 2
+          },
+          {
+            "block": "minecraft:red_flower",
+            "speed": 2
+          }
+        ]
+      },
+      "minecraft:enchantable": {
+        "value": 10,
+        "slot": "hoe"
+      },
+      "minecraft:display_name": {},
+      "minecraft:mining_speed": 8,
+      "minecraft:durability": {
+        "max_durability": 68
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true
+    }
+  }
+}

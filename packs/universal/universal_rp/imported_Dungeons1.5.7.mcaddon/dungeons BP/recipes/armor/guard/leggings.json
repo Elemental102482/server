@@ -1,0 +1,33 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "guard_leggings"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"BBB",
+			"I I",
+			"B B"
+		],
+		"unlock": [
+			{
+				"item": "minecraft:iron_ingot"
+			}
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:leather"
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			}
+		},
+		"result": {
+			"item": "dungeons:guard_leggings",
+			"count": 1
+		}
+	}
+}

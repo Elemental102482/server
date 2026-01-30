@@ -1,0 +1,55 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "cata:feralbloom",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/feralbloom_texture"
+			},
+			"geometry": {
+				"default": "geometry.feralbloom"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "cata_feralbloom_egg"
+			},
+			"animations": {
+				"unconscious": "animation.feralbloom.unconscious",
+				"awaken": "animation.feralbloom.awaken",
+				"idle": "animation.feralbloom.idle",
+				"move": "animation.feralbloom.move",
+				"normal_attack": "animation.feralbloom.normal_attack",
+				"bloom_poison": "animation.feralbloom.bloom_poison",
+				"move_controller": "controller.animation.feralbloom.move_controller",
+				"attack_controller": "controller.animation.feralbloom.attack_controller",
+				"look_at_target_default": "animation.humanoid.look_at_target.default",
+				"heavy_attack": "animation.feralbloom.heavy_attack"
+			},
+			"scripts": {
+				"animate": [
+					"move_controller",
+					"attack_controller",
+					"look_at_target_default"
+				]
+			},
+			"particle_effects": {
+				"bloom_poison": "cata:bloom_poison",
+				"small_impact": "cata:small_impact",
+				"feralbloom_dig": "cata:feralbloom_dig",
+				"feralboom_gneiss_dig_awakened": "cata:feralboom_gneiss_dig_awakened",
+				"feralboom_gneiss_dig": "cata:feralboom_gneiss_dig"
+			},
+			"sound_effects": {
+				"feralbloom_hurt": "mob.feralbloom_hurt",
+				"feral_gas": "sound.feral_gas",
+				"large_swing": "mob.large_swing",
+				"feralbloom_awaken": "mob.large_impact"
+			}
+		}
+	}
+}

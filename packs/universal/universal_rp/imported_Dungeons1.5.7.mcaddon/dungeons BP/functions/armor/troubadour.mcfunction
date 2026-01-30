@@ -1,0 +1,5 @@
+tag @a[tag=!dungeons:troubadour_armour,hasitem=[{item=dungeons:troubadour_helmet,location=slot.armor.head},{item=dungeons:troubadour_chestplate,location=slot.armor.chest},{item=dungeons:troubadour_leggings,location=slot.armor.legs},{item=dungeons:troubadour_boots,location=slot.armor.feet}]] add dungeons:troubadour_armour
+tag @a[tag=dungeons:troubadour_armour,hasitem={quantity=0,item=dungeons:troubadour_helmet,location=slot.armor.head}] remove dungeons:troubadour_armour
+tag @a[tag=dungeons:troubadour_armour,hasitem={quantity=0,item=dungeons:troubadour_chestplate,location=slot.armor.chest}] remove dungeons:troubadour_armour
+tag @a[tag=dungeons:troubadour_armour,hasitem={quantity=0,item=dungeons:troubadour_leggings,location=slot.armor.legs}] remove dungeons:troubadour_armour
+tag @a[tag=dungeons:troubadour_armour,hasitem={quantity=0,item=dungeons:troubadour_boots,location=slot.armor.feet}] remove dungeons:troubadour_armour

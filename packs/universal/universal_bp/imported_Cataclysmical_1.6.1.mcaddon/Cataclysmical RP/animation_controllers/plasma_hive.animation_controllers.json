@@ -1,0 +1,28 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.plasma_hive.summon_controller": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"summon": "query.is_casting==true"
+						}
+					],
+					"blend_transition": 0.4
+				},
+				"summon": {
+					"animations": [
+						"summon"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_casting"
+						}
+					],
+					"blend_transition": 0.4
+				}
+			}
+		}
+	}
+}

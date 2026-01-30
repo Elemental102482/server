@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "squall_golem_off",
+        "metalness_emissive_roughness": "squall_golem_off_mer"
+    }
+}

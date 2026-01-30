@@ -1,0 +1,38 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "bp_the_beginning_and_the_end"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"B": {
+				"item": "dungeons:blue_print"
+			},
+			"W": {
+				"item": "dungeons:the_beginning_and_the_end"
+			}
+		},
+		"unlock": [
+			{
+				"item": "dungeons:the_beginning_and_the_end"
+			}
+		],
+		"pattern": [
+			"B",
+			"W"
+		],
+		"result": [
+			{
+				"item": "dungeons:the_beginning_and_the_end",
+				"count": 1
+			},
+			{
+				"item": "dungeons:the_beginning_and_the_end",
+				"count": 1
+			}
+		]
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.stone_golem.attack": {
+			"animation_length": 3.125,
+			"loop": false,
+			"timeline": {
+				"0.95": [
+					"/camerashake add @a[r=5] 0.5 0.4 positional"
+				]
+			}
+		}
+	}
+}

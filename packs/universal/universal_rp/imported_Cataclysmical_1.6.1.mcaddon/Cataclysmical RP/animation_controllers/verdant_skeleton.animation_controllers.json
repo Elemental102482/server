@@ -1,0 +1,182 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.verdant_skeleton.move": {
+			"initial_state": "idle",
+			"states": {
+				"idle": {
+					"animations": [
+						"idle"
+					],
+					"transitions": [
+						{
+							"move": "q.ground_speed>1"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"move": {
+					"animations": [
+						"move"
+					],
+					"transitions": [
+						{
+							"idle": "q.ground_speed<0.5"
+						}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		},
+		"controller.animation.verdant_skeleton.attack": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"attack": "query.variant==0&&query.is_delayed_attacking||query.variant==2&&query.is_delayed_attacking"
+						},
+						{
+							"brute_attack": "query.variant==1&&query.is_delayed_attacking"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"attack": {
+					"animations": [
+						"attack"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_delayed_attacking"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"brute_attack": {
+					"animations": [
+						"brute_attack"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_delayed_attacking"
+						}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		},
+		"controller.animation.verdant_skeleton.brute_shield": {
+			"states": {
+				"brute_idle": {
+					"animations": [
+						"brute_idle"
+					],
+					"transitions": [
+						{
+							"brute_shield_cooldown": "query.skin_id==1"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"brute_shield_cooldown": {
+					"animations": [
+						"brute_shield_cooldown"
+					],
+					"transitions": [
+						{
+							"brute_idle": "query.skin_id==0"
+						}
+					],
+					"blend_transition": 0.1
+				}
+			}
+		},
+		"controller.animation.verdant_skeleton.brute_move": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"move": "q.ground_speed>1"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"move": {
+					"animations": [
+						"brute_move"
+					],
+					"transitions": [
+						{
+							"default": "q.ground_speed<0.5"
+						}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		},
+		"controller.animation.verdant_skeleton.brute_attack": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"brute_attack": "query.is_delayed_attacking"
+						}
+					]
+				},
+				"brute_attack": {
+					"animations": [
+						"brute_attack"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_delayed_attacking"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.verdant_skeleton.charger_move": {
+			"states": {
+				"default": {
+					"animations": [
+						"charger_idle"
+					],
+					"transitions": [
+						{
+							"move": "q.ground_speed>1"
+						},
+						{
+							"move_has_target": "q.ground_speed>1&&query.has_target"
+						}
+					],
+					"blend_transition": 0.4
+				},
+				"move": {
+					"animations": [
+						"charger_move"
+					],
+					"transitions": [
+						{
+							"default": "q.ground_speed<0.5"
+						},
+						{
+							"move_has_target": "q.ground_speed>1&&query.has_target"
+						}
+					],
+					"blend_transition": 0.4
+				},
+				"move_has_target": {
+					"animations": [
+						"charger_move_has_target"
+					],
+					"transitions": [
+						{
+							"default": "q.ground_speed<0.5"
+						}
+					],
+					"blend_transition": 0.4
+				}
+			}
+		}
+	}
+}

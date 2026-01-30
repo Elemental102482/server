@@ -1,0 +1,215 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.necromancer.walk": {
+			"loop": true,
+			"bones": {
+				"leftArm": {
+					"rotation": [
+						"variable.tcos0",
+						0,
+						0
+					]
+				},
+				"rightArm": {
+					"rotation": [
+						"variable.tcos0*-0.21",
+						0,
+						0
+					]
+				},
+				"leftLeg": {
+					"rotation": [
+						"variable.tcos0*-0.9",
+						0,
+						0
+					]
+				},
+				"rightLeg": {
+					"rotation": [
+						"variable.tcos0*0.9",
+						0,
+						0
+					]
+				}
+			}
+		},
+		"animation.necromancer.render": {
+			"loop": true,
+			"bones": {
+				"leftShoulder": {
+					"rotation": [
+						0,
+						-16,
+						0
+					]
+				},
+				"head": {
+					"rotation": [
+						0,
+						-35,
+						0
+					]
+				},
+				"leftArm": {
+					"rotation": [
+						-23.30696,
+						-9.30727,
+						-20.57639
+					]
+				},
+				"body": {
+					"scale": 1.15
+				}
+			}
+		},
+		"animation.necromancer.cast": {
+			"animation_length": 0.9,
+			"bones": {
+				"body": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.5417": [
+							25,
+							0,
+							0
+						],
+						"0.75": [
+							0,
+							0,
+							0
+						]
+					},
+					"position": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.5417": [
+							0,
+							0.29,
+							0
+						],
+						"0.75": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"legs": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.5417": [
+							-25,
+							0,
+							0
+						],
+						"0.75": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"leftArm": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.5417": [
+							-23.66235,
+							8.31087,
+							18.25612
+						],
+						"0.75": [
+							0,
+							0,
+							0
+						]
+					},
+					"position": [
+						0,
+						0,
+						0
+					]
+				},
+				"rightArm": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.5": [
+							65.18803,
+							-3.1622,
+							-6.80423
+						],
+						"0.6667": [
+							-32.31,
+							0,
+							0
+						],
+						"0.8333": [
+							-32.31,
+							0,
+							0
+						],
+						"0.9": [
+							0,
+							0,
+							0
+						]
+					},
+					"position": [
+						0,
+						0,
+						0
+					]
+				},
+				"head": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.5": [
+							20,
+							0,
+							0
+						],
+						"0.6667": [
+							-20,
+							0,
+							0
+						],
+						"0.9": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			"particle_effects": {
+				"0.6667": {
+					"effect": "summon",
+					"locator": "particles"
+				}
+			}
+		}
+	}
+}

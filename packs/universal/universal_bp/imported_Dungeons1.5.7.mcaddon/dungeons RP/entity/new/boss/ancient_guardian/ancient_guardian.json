@@ -1,0 +1,57 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:ancient_guardian",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/ancient_guardian/ancient_guardian"
+			},
+			"geometry": {
+				"default": "geometry.ancient_guardian"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"animations": {
+				"idle": "animation.ancient_guardian.idle",
+				"move": "animation.ancient_guardian.swim",
+				"hurt": "animation.ancient_guardian.hurt",
+				"spikes_in": "animation.ancient_guardian.spikes_in",
+				"has_target": "animation.ancient_guardian.eye_follow",
+				"no_target": "animation.ancient_guardian.eye_no_target",
+				"scale": "animation.ancient_guardian.scale",
+				"start_shooting": "animation.ancient_guardian.shoot_start",
+				"hold_shooting": "animation.ancient_guardian.shoot_hold",
+				"stop_shooting": "animation.ancient_guardian.shoot_end",
+				"roar": "animation.ancient_guardian.cast",
+				"aim": "animation.ancient_guardian.look_at_target",
+				"charge": "animation.ancient_guardian.charge",
+				"roar_controller": "controller.animation.redstone_monstrosity.roar",
+				"move_controller": "controller.animation.redstone_monstrosity.move",
+				"eye_controller": "controller.animation.ancient_guardian.eye",
+				"shoot_controller": "controller.animation.ancient_guardian.shooting",
+				"charge_controller": "controller.animation.ancient_guardian.charge"
+			},
+			"sound_effects": {
+				"melee": "mob.ancient_guardian.melee"
+			},
+			"particle_effects": {
+				"melee": "dungeons:ancient_melee"
+			},
+			"scripts": {
+				"animate": [
+					"idle",
+					"scale",
+					"eye_controller",
+					"move_controller",
+					"shoot_controller",
+					"roar_controller",
+					"charge_controller"
+				]
+			}
+		}
+	}
+}

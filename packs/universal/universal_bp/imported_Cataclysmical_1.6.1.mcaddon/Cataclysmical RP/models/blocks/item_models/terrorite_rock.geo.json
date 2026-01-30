@@ -1,0 +1,247 @@
+{
+	"format_version": "1.21.20",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.terrorite_rock",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 7,
+				"visible_bounds_height": 5,
+				"visible_bounds_offset": [
+					0,
+					1.5,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "item",
+					"pivot": [
+						0.225,
+						15.70513,
+						2.29487
+					]
+				},
+				{
+					"name": "cube",
+					"pivot": [
+						22,
+						14,
+						-11
+					],
+					"cubes": [
+						{
+							"origin": [
+								-6,
+								0,
+								-6
+							],
+							"size": [
+								12,
+								12,
+								12
+							],
+							"uv": [
+								0,
+								0
+							]
+						}
+					]
+				}
+			],
+			"item_display_transforms": {
+				"thirdperson_righthand": {
+					"rotation": [
+						2.96,
+						-27.02,
+						12.23
+					],
+					"translation": [
+						-1.75,
+						2.25,
+						0.5
+					],
+					"scale": [
+						0.5,
+						0.5,
+						0.5
+					],
+					"rotation_pivot": [
+						0,
+						0,
+						0
+					],
+					"scale_pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				"thirdperson_lefthand": {
+					"rotation": [
+						-174.38,
+						3.28,
+						165.17
+					],
+					"translation": [
+						-2.25,
+						3.25,
+						2
+					],
+					"scale": [
+						0.5,
+						0.5,
+						0.5
+					],
+					"rotation_pivot": [
+						0,
+						0,
+						0
+					],
+					"scale_pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				"firstperson_righthand": {
+					"rotation": [
+						0,
+						17,
+						0
+					],
+					"translation": [
+						0,
+						2,
+						0
+					],
+					"scale": [
+						0.8,
+						0.8,
+						0.8
+					],
+					"rotation_pivot": [
+						0,
+						0,
+						0
+					],
+					"scale_pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				"firstperson_lefthand": {
+					"rotation": [
+						0,
+						92,
+						-20
+					],
+					"translation": [
+						2,
+						2,
+						0
+					],
+					"scale": [
+						0.9,
+						0.9,
+						0.9
+					],
+					"rotation_pivot": [
+						0,
+						0,
+						0
+					],
+					"scale_pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				"ground": {
+					"rotation": [
+						0,
+						0,
+						0
+					],
+					"translation": [
+						0,
+						3.75,
+						0
+					],
+					"scale": [
+						0.5,
+						0.5,
+						0.5
+					],
+					"rotation_pivot": [
+						0,
+						0,
+						0
+					],
+					"scale_pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				"gui": {
+					"rotation": [
+						0,
+						40,
+						40
+					],
+					"translation": [
+						-0.75,
+						1.25,
+						0
+					],
+					"scale": [
+						0.8,
+						0.8,
+						0.8
+					],
+					"rotation_pivot": [
+						0,
+						0,
+						0
+					],
+					"scale_pivot": [
+						0,
+						0,
+						0
+					],
+					"fit_to_frame": false
+				},
+				"fixed": {
+					"rotation": [
+						0,
+						0,
+						0
+					],
+					"translation": [
+						0,
+						1.5,
+						0
+					],
+					"scale": [
+						1,
+						1,
+						1
+					],
+					"rotation_pivot": [
+						0,
+						0,
+						0
+					],
+					"scale_pivot": [
+						0,
+						0,
+						0
+					]
+				}
+			}
+		}
+	]
+}

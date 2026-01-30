@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "eternal_brazier",
+        "metalness_emissive_roughness": "eternal_brazier_mer"
+    }
+}

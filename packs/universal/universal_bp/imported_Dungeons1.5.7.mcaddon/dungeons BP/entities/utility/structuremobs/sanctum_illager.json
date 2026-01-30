@@ -1,0 +1,92 @@
+{
+	"format_version": "1.17.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "dungeons:sanctum_illager",
+			"is_summonable": true,
+			"is_spawnable": false,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"dungeons:pillager": {
+				"minecraft:transformation": {
+					"into": "minecraft:pillager<dungeons:spawn_structure>"
+				}
+			},
+			"dungeons:windcaller": {
+				"minecraft:transformation": {
+					"into": "dungeons:windcaller<dungeons:spawn_structure>"
+				}
+			},
+			"dungeons:royal_guard": {
+				"minecraft:transformation": {
+					"into": "dungeons:royal_guard<dungeons:spawn_structure>"
+				}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"inanimate",
+					"ignore"
+				]
+			},
+			"minecraft:health": {
+				"max": 20,
+				"value": 20
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "all",
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:custom_hit_test": {
+				"hitboxes": [
+					{
+						"pivot": [
+							0,
+							1000,
+							0
+						],
+						"width": 0,
+						"height": 0
+					}
+				]
+			},
+			"minecraft:physics": {
+				"has_collision": false,
+				"has_gravity": false
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			}
+		},
+		"events": {
+			"dungeons:pillager": {
+				"add": {
+					"component_groups": [
+						"dungeons:pillager"
+					]
+				}
+			},
+			"dungeons:windcaller": {
+				"add": {
+					"component_groups": [
+						"dungeons:windcaller"
+					]
+				}
+			},
+			"dungeons:royal_guard": {
+				"add": {
+					"component_groups": [
+						"dungeons:royal_guard"
+					]
+				}
+			}
+		}
+	}
+}

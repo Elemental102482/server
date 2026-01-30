@@ -1,0 +1,81 @@
+{
+	"format_version": "1.10.0",
+	"particle_effect": {
+		"description": {
+			"identifier": "dungeons:casting_ring_4",
+			"basic_render_parameters": {
+				"material": "particles_blend",
+				"texture": "textures/particles/forceglow_particles"
+			}
+		},
+		"curves": {
+			"variable.size": {
+				"type": "linear",
+				"input": "v.particle_age",
+				"horizontal_range": "v.particle_lifetime",
+				"nodes": [
+					1,
+					0
+				]
+			}
+		},
+		"components": {
+			"minecraft:emitter_rate_steady": {
+				"spawn_rate": 3,
+				"max_particles": 100
+			},
+			"minecraft:emitter_lifetime_once": {
+				"active_time": 5
+			},
+			"minecraft:emitter_shape_sphere": {
+				"offset": [
+					0,
+					1,
+					0
+				],
+				"radius": 4,
+				"surface_only": true,
+				"direction": "inwards"
+			},
+			"minecraft:particle_lifetime_expression": {
+				"max_lifetime": 2
+			},
+			"minecraft:particle_initial_spin": {
+				"rotation": "math.random(0,359)",
+				"rotation_rate": "60*(v.particle_age+v.particle_lifetime)"
+			},
+			"minecraft:particle_initial_speed": 1.8,
+			"minecraft:particle_motion_dynamic": {},
+			"minecraft:particle_appearance_billboard": {
+				"size": [
+					"0.15*v.size",
+					"0.15*v.size"
+				],
+				"facing_camera_mode": "lookat_direction",
+				"uv": {
+					"texture_width": 16,
+					"texture_height": 16,
+					"uv": [
+						"math.floor(v.particle_random_1*11)",
+						15
+					],
+					"uv_size": [
+						1,
+						1
+					]
+				}
+			},
+			"minecraft:particle_appearance_tinting": {
+				"color": {
+					"interpolant": "v.particle_age / v.particle_lifetime",
+					"gradient": {
+						"0.05": "#FFE3D1FF",
+						"0.23": "#FFCAEEFF",
+						"0.54": "#FFFFFFFF",
+						"1.0": "#00FFFFFF"
+					}
+				}
+			}
+		}
+	}
+}

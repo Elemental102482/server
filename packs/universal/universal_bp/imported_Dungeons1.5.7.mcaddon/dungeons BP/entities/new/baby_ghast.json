@@ -1,0 +1,233 @@
+{
+	"format_version": "1.21.90",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "dungeons:baby_ghast",
+			"spawn_category": "creature",
+			"is_spawnable": true,
+			"is_summonable": true
+		},
+		"component_groups": {
+			"dungeons:immune": {
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"cause": "all",
+							"deals_damage": "no"
+						}
+					]
+				},
+				"minecraft:behavior.follow_mob": {
+					"priority": 4,
+					"search_range": 24,
+					"stop_distance": 3,
+					"speed_multiplier": 1.1,
+					"preferred_actor_type": "player",
+					"filters": {
+						"all_of": [
+							{
+								"test": "is_underwater",
+								"subject": "other",
+								"value": false
+							},
+							{
+								"any_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									},
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "happy_ghast"
+									}
+								]
+							}
+						]
+					}
+				}
+			},
+			"dungeons:not_immune": {
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"cause": "all",
+							"deals_damage": "yes"
+						}
+					]
+				},
+				"minecraft:behavior.follow_mob": {
+					"priority": 4,
+					"search_range": 24,
+					"stop_distance": 3,
+					"speed_multiplier": 1.1,
+					"filters": {
+						"all_of": [
+							{
+								"test": "is_underwater",
+								"subject": "other",
+								"value": false
+							},
+							{
+								"any_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "happy_ghast"
+									}
+								]
+							}
+						]
+					}
+				},
+				"minecraft:behavior.avoid_mob_type": {
+					"priority": 5,
+					"entity_types": [
+						{
+							"filters": {
+								"test": "is_family",
+								"subject": "other",
+								"value": "player"
+							},
+							"max_dist": 6,
+							"walk_speed_multiplier": 1.5,
+							"sprint_speed_multiplier": 1.5
+						}
+					]
+				}
+			}
+		},
+		"components": {
+			"minecraft:follow_range": {
+				"value": 24
+			},
+			"minecraft:is_hidden_when_invisible": {},
+			"minecraft:type_family": {
+				"family": [
+					"baby_ghast",
+					"mob"
+				]
+			},
+			"minecraft:nameable": {
+				"default_trigger": {
+					"event": "dungeons:not_immune_to_damage",
+					"target": "self"
+				},
+				"name_actions": [
+					{
+						"name_filter": "Amelia",
+						"on_named": {
+							"event": "dungeons:immune_to_damage",
+							"target": "self"
+						}
+					}
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 0.52,
+				"height": 0.6
+			},
+			"minecraft:balloonable": {
+				"mass": 0.1
+			},
+			"minecraft:breathable": {
+				"totalSupply": 15,
+				"suffocateTime": 0
+			},
+			"minecraft:leashable": {},
+			"minecraft:leashable_to": {},
+			"minecraft:health": {
+				"value": 2
+			},
+			"minecraft:scale": {
+				"value": 1.16
+			},
+			"minecraft:fire_immune": {},
+			"minecraft:movement": {
+				"value": 0.1
+			},
+			"minecraft:flying_speed": {
+				"value": 0.1
+			},
+			"minecraft:navigation.hover": {
+				"can_path_over_water": true,
+				"can_sink": false,
+				"can_pass_doors": false,
+				"can_path_from_air": true,
+				"avoid_water": true,
+				"avoid_damage_blocks": true,
+				"avoid_sun": false
+			},
+			"minecraft:movement.hover": {},
+			"minecraft:jump.static": {},
+			"minecraft:can_fly": {},
+			"minecraft:physics": {
+				"has_gravity": false
+			},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:despawn": {
+				"despawn_from_distance": {}
+			},
+			"minecraft:conditional_bandwidth_optimization": {},
+			"minecraft:game_event_movement_tracking": {
+				"emit_flap": true
+			},
+			"minecraft:behavior.panic": {
+				"priority": 1,
+				"speed_multiplier": 2
+			},
+			"minecraft:behavior.float": {
+				"priority": 7
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 8,
+				"target_distance": 6,
+				"probability": 0.02
+			},
+			"minecraft:behavior.random_look_around": {
+				"priority": 8
+			},
+			"minecraft:behavior.random_hover": {
+				"priority": 9,
+				"xz_dist": 8,
+				"y_dist": 8,
+				"y_offset": -1,
+				"interval": 1,
+				"hover_height": [
+					1,
+					4
+				]
+			}
+		},
+		"events": {
+			"dungeons:immune_to_damage": {
+				"add": {
+					"component_groups": [
+						"dungeons:immune"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"dungeons:not_immune"
+					]
+				}
+			},
+			"dungeons:not_immune_to_damage": {
+				"remove": {
+					"component_groups": [
+						"dungeons:immune"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"dungeons:not_immune"
+					]
+				}
+			}
+		}
+	}
+}

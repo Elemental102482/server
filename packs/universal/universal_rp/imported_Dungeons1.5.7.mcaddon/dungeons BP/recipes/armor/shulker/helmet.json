@@ -1,0 +1,29 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "shulker_helmet"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"BBB",
+			"B B"
+		],
+		"unlock": [
+			{
+				"item": "minecraft:shulker_shell"
+			}
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:shulker_shell"
+			}
+		},
+		"result": {
+			"item": "dungeons:shulker_helmet",
+			"count": 1
+		}
+	}
+}

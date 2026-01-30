@@ -1,0 +1,165 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:crafting_items_catalog": {
+		"categories": [
+			{
+				"category_name": "equipment",
+				"groups": [
+					{
+						"group_identifier": {
+							"icon": "cata:floret_hatchet",
+							"name": "cata:itemGroup.name.elemental_weapon"
+						},
+						"items": [
+							"cata:floret_hatchet",
+							"cata:everbloom",
+							"cata:morningstar",
+							"cata:blazing_excalibur"
+						]
+					},
+					{
+						"group_identifier": {
+							"name": "cata:itemGroup.name.trinkets",
+							"icon": "cata:stellar_ring"
+						},
+						"items": [
+							"cata:stellar_ring",
+							"cata:stellar_necklace",
+							"cata:stellar_charm",
+							"cata:astro_jelly_in_a_bottle",
+							"cata:calibrated_stellar_core",
+							"cata:blooming_aegis",
+							"cata:floret_ring",
+							"cata:verdant_aegis",
+							"cata:floret_necklace",
+							"cata:floret_absorption",
+							"cata:verdant_ring",
+							"cata:solar_absorption",
+							"cata:solar_necklace",
+							"cata:solar_ring",
+							"cata:solar_aegis",
+							"cata:phantasma_necklace",
+							"cata:phantasma_ring",
+							"cata:terror_eye",
+							"cata:sun_engine",
+							"cata:sun_necklace",
+							"cata:sun_ring"
+						]
+					},
+					{
+						"group_identifier": {
+							"icon": "cata:wooden_greatsword",
+							"name": "cata:itemGroup.name.greatsword"
+						},
+						"items": [
+							"cata:wooden_greatsword",
+							"cata:stone_greatsword",
+							"cata:iron_greatsword",
+							"cata:diamond_greatsword",
+							"cata:netherite_greatsword",
+							"cata:platinum_greatsword",
+							"cata:stellar_greatsword",
+							"cata:phantasma_greatsword",
+							"cata:exodius_greatsword",
+							"cata:nebulous_greatsword"
+						]
+					},
+					{
+						"group_identifier": {
+							"icon": "cata:calamity",
+							"name": "cata:itemGroup.name.test_items"
+						},
+						"items": [
+							"cata:calamity",
+							"cata:meowclysm",
+							"cata:anchor",
+							"cata:stellar_wand",
+							"cata:solar_wand",
+							"cata:floret_wand",
+							"cata:floret_rune",
+							"cata:lunar_absorption",
+							"cata:lunar_necklace",
+							"cata:lunar_ring",
+							"cata:calamity_ring"
+						]
+					},
+					{
+						"group_identifier": {
+							"icon": "cata:ray_gun",
+							"name": "cata:itemGroup.name.miscellaneous_weapon"
+						},
+						"items": [
+							"cata:ray_gun",
+							"cata:spore_thrower",
+							"cata:terror_skull_launcher",
+							"cata:sunlight",
+							"cata:moonlight",
+							"cata:stellar_mace",
+							"cata:platinum_halberd",
+							"cata:verdant_hatchet",
+							"cata:bonebreaker"
+						]
+					},
+					{
+						"group_identifier": {
+							"name": "cata:itemGroup.name.flawless_item",
+							"icon": "cata:verdant_greatsword"
+						},
+						"items": [
+							"cata:verdant_greatsword",
+							"cata:divine_scythe_of_heaven"
+						]
+					},
+					{
+						"group_identifier": {
+							"icon": "cata:verdant_blade",
+							"name": "cata:itemGroup.name.boss_weapon"
+						},
+						"items": [
+							"cata:verdant_blade",
+							"cata:phoenix_blade"
+						]
+					}
+				]
+			},
+			{
+				"category_name": "construction",
+				"groups": [
+					{
+						"group_identifier": {
+							"icon": "cata:flare_stone_brick",
+							"name": "cata:itemGroup.name.flare_stone"
+						},
+						"items": [
+							"cata:flare_stone_brick",
+							"cata:cracked_flare_stone_brick",
+							"cata:chiseled_flare_stone_brick",
+							"cata:chiseled_flare_stone",
+							"cata:flare_stone_pillar",
+							"cata:polished_flare_stone",
+							"cata:flare_stone_tiles",
+							"cata:flare_stone_bulb",
+							"cata:flare_stone_chain",
+							"cata:flare_stone_lantern",
+							"cata:flare_stone_geyser"
+						]
+					},
+					{
+						"group_identifier": {
+							"icon": "cata:gneiss_brick",
+							"name": "cata:itemGroup.name.gneiss"
+						},
+						"items": [
+							"cata:cut_gneiss",
+							"cata:gneiss_brick",
+							"cata:gneiss_chain",
+							"cata:gneiss_grate",
+							"cata:gneiss_lantern",
+							"cata:smooth_gneiss_brick"
+						]
+					}
+				]
+			}
+		]
+	}
+}

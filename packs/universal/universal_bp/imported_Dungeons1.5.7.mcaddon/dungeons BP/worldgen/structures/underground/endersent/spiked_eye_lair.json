@@ -1,0 +1,37 @@
+{
+  "format_version": "1.21.20",
+  "minecraft:jigsaw": {
+    "description": {
+      "identifier": "dungeons:spiked_eye_lair"
+    },
+    "biome_filters": [{
+      "all_of": [{
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "forest"
+        },
+        {
+          "test": "has_biome_tag",
+          "operator": "not",
+          "value": "extreme_hills"
+        },
+        {
+          "test": "has_biome_tag",
+          "operator": "not",
+          "value": "roofed"
+        }
+      ]
+    }],
+    "heightmap_projection": "ocean_floor",
+    "max_depth": 1,
+    "start_height": {
+      "type": "constant",
+      "value": {
+        "absolute": -32
+      }
+    },
+    "start_pool": "dungeons:spiked_eye_lair",
+    "step": "underground_structures",
+    "terrain_adaptation": "encapsulate"
+  }
+}

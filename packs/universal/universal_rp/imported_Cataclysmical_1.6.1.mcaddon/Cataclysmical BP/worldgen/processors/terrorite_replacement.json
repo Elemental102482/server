@@ -1,0 +1,35 @@
+{
+	"format_version": "1.21.20",
+	"minecraft:processor_list": {
+		"description": {
+			"identifier": "cata:terrorite_replacement"
+		},
+		"processors": [
+			{
+				"processor_type": "minecraft:rule",
+				"rules": [
+					{
+						"input_predicate": {
+							"predicate_type": "minecraft:random_block_match",
+							"block": "cata:terrorite_brick",
+							"probability": 0.3
+						},
+						"output_state": {
+							"name": "cata:terrorite"
+						}
+					},
+					{
+						"input_predicate": {
+							"predicate_type": "minecraft:random_block_match",
+							"block": "cata:terrorite_tile",
+							"probability": 0.25
+						},
+						"output_state": {
+							"name": "cata:terrorite"
+						}
+					}
+				]
+			}
+		]
+	}
+}

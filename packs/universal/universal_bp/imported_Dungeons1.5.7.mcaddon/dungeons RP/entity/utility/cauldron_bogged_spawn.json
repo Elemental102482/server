@@ -1,0 +1,36 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:cauldron_bogged_spawn",
+			"materials": {
+				"default": "bogged",
+				"overlay": "bogged_clothes"
+			},
+			"textures": {
+				"default": "textures/entity/skeleton/bogged",
+				"overlay": "textures/entity/skeleton/bogged_clothes"
+			},
+			"geometry": {
+				"default": "geometry.skeleton.bogged",
+				"overlay": "geometry.bogged.armor"
+			},
+			"render_controllers": [
+				"controller.render.bogged_clothes",
+				"controller.render.bogged"
+			],
+			"animations": {
+				"summon": "animation.bogged.rise"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+				],
+				"animate": [
+					"summon"
+				]
+			},
+			"enable_attachables": true
+		}
+	}
+}

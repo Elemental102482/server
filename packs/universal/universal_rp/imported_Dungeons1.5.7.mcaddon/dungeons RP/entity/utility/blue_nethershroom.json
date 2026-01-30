@@ -1,0 +1,28 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:blue_nethershroom",
+			"materials": {
+				"default": "entity"
+			},
+			"textures": {
+				"default": "textures/entity/piglin/blue_nethershroom"
+			},
+			"geometry": {
+				"default": "geometry.blue_nethershroom"
+			},
+			"animations": {
+				"spin": "animation.blue_nethershroom.spin"
+			},
+			"scripts": {
+				"animate": [
+					"spin"
+				]
+			},
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "monstrosity_redstone",
+        "metalness_emissive_roughness": "monstrosity_redstone_mer"
+    }
+}

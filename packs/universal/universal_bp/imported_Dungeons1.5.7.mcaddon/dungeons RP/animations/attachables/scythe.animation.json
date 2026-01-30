@@ -1,0 +1,59 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.scythe.third_person_hold": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"rotation": [
+						-272.49997,
+						7.49523,
+						-359.99958
+					],
+					"position": [
+						0.95,
+						22,
+						1.23
+					],
+					"scale": 1.02
+				}
+			}
+		},
+		"animation.scythe.third_person_hold2": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"rotation": [
+						-272.49997,
+						7.49523,
+						-359.99958
+					],
+					"position": [
+						0.95,
+						23.2,
+						1.23
+					],
+					"scale": 1.02
+				}
+			}
+		},
+		"animation.scythe.first_person_hold": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"rotation": [
+						56.95272,
+						67.93238,
+						-418.83319
+					],
+					"position": [
+						0,
+						25,
+						3
+					],
+					"scale": 0.8
+				}
+			}
+		}
+	}
+}

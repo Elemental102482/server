@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "glow_dot",
+        "metalness_emissive_roughness": "glow_dot_mer"
+    }
+}

@@ -1,0 +1,41 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.katana.first_person_hold": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"rotation": [
+						159.7,
+						69.8,
+						-37.6
+					],
+					"position": [
+						-5,
+						29,
+						7
+					],
+					"scale": 1.25
+				}
+			}
+		},
+		"animation.katana.third_person_hold": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"rotation": [
+						77.5121,
+						0.0592,
+						0.5409
+					],
+					"position": [
+						-0.3,
+						21.5,
+						-0.5
+					],
+					"scale": 0.97
+				}
+			}
+		}
+	}
+}

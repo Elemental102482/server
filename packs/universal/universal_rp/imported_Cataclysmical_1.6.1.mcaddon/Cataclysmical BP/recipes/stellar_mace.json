@@ -1,0 +1,34 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cata:stellar_mace"
+		},
+		"pattern": [
+			"111",
+			"232",
+			" 3 "
+		],
+		"key": {
+			"1": {
+				"item": "cata:astral_block"
+			},
+			"2": {
+				"item": "cata:lunar_element"
+			},
+			"3": {
+				"item": "cata:asteroid"
+			}
+		},
+		"result": {
+			"item": "cata:stellar_mace",
+			"count": 1
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": {
+			"context": "AlwaysUnlocked"
+		}
+	}
+}

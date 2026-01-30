@@ -1,0 +1,135 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.gneiss_golem",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 6.5,
+				"visible_bounds_offset": [
+					0,
+					2.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "bb_main",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"locators": {
+						"leftstep": [
+							12,
+							0,
+							-12
+						],
+						"rightstep": [
+							-12,
+							0,
+							-12
+						],
+						"attack": [
+							0,
+							2,
+							-43
+						]
+					}
+				},
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						17,
+						0
+					]
+				},
+				{
+					"name": "head",
+					"parent": "root",
+					"pivot": [
+						0,
+						16.5,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-22,
+								17,
+								-9
+							],
+							"size": [
+								44,
+								57,
+								18
+							],
+							"uv": [
+								0,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "leftleg",
+					"parent": "root",
+					"pivot": [
+						12,
+						17,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								5,
+								0,
+								-7
+							],
+							"size": [
+								14,
+								17,
+								14
+							],
+							"uv": [
+								0,
+								75
+							]
+						}
+					]
+				},
+				{
+					"name": "rightleg",
+					"parent": "root",
+					"pivot": [
+						-12,
+						17,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-19,
+								0,
+								-7
+							],
+							"size": [
+								14,
+								17,
+								14
+							],
+							"uv": [
+								56,
+								75
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

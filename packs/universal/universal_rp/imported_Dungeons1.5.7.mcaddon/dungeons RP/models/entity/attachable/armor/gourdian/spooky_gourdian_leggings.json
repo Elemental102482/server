@@ -1,0 +1,114 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.spooky_gourdian_leggings",
+				"texture_width": 56,
+				"texture_height": 68,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [
+					0,
+					1.5,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "waist",
+					"pivot": [
+						0,
+						12,
+						0
+					]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [
+						0,
+						24,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								12,
+								-2
+							],
+							"size": [
+								8,
+								5,
+								4
+							],
+							"inflate": 0.6,
+							"uv": [
+								16,
+								23
+							]
+						}
+					]
+				},
+				{
+					"name": "rightLeg",
+					"parent": "body",
+					"pivot": [
+						-1.9,
+						12,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								7,
+								-2
+							],
+							"size": [
+								3,
+								5,
+								4
+							],
+							"inflate": 0.55,
+							"uv": [
+								1,
+								0
+							],
+							"mirror": true
+						}
+					]
+				},
+				{
+					"name": "leftLeg",
+					"parent": "body",
+					"pivot": [
+						1.9,
+						12,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								1,
+								7,
+								-2
+							],
+							"size": [
+								3,
+								5,
+								4
+							],
+							"inflate": 0.55,
+							"uv": [
+								1,
+								0
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

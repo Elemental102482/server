@@ -1,0 +1,60 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.spinblade_projectile",
+				"texture_width": 15,
+				"texture_height": 15,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [
+					0,
+					0,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"locators": {
+						"particles2": [
+							7,
+							1,
+							0
+						],
+						"particles1": [
+							-7,
+							1,
+							0
+						]
+					}
+				},
+				{
+					"name": "blade",
+					"parent": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"texture_meshes": [
+						{
+							"texture": "default",
+							"position": [
+								-7.5,
+								-1,
+								-7.5
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

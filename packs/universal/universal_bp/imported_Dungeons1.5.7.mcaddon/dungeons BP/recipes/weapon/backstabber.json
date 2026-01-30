@@ -1,0 +1,36 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "backstabber"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"OG",
+			"OG",
+			"S "
+		],
+		"unlock": [
+			{
+				"item": "minecraft:gold_ingot"
+			}
+		],
+		"key": {
+			"G": {
+				"item": "minecraft:gold_ingot"
+			},
+			"O": {
+				"item": "minecraft:obsidian"
+			},
+			"S": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": {
+			"item": "dungeons:backstabber",
+			"count": 1
+		}
+	}
+}

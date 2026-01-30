@@ -1,0 +1,27 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:item": {
+		"description": {
+			"identifier": "cata:astro_jelly_in_a_bottle",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:icon": "cata_astro_jelly_in_a_bottle",
+			"minecraft:max_stack_size": 1,
+			"minecraft:cooldown": {
+				"category": "astro_jelly_in_a_bottle",
+				"duration": 1
+			},
+			"minecraft:rarity": {
+				"value": "uncommon"
+			},
+			"minecraft:tags": {
+				"tags": [
+					"novelty:is_trinket"
+				]
+			}
+		}
+	}
+}

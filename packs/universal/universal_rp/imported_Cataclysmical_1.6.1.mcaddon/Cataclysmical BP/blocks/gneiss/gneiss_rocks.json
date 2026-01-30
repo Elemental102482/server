@@ -1,0 +1,60 @@
+{
+	"format_version": "1.21.20",
+	"minecraft:block": {
+		"description": {
+			"identifier": "cata:gneiss_rocks",
+			"menu_category": {
+				"category": "nature"
+			}
+		},
+		"components": {
+			"minecraft:geometry": "geometry.cata_custom_plant",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "cata_gneiss_rocks",
+					"render_method": "alpha_test",
+					"ambient_occlusion": false,
+					"face_dimming": false
+				}
+			},
+			"minecraft:light_dampening": 0,
+			"minecraft:collision_box": false,
+			"minecraft:selection_box": {
+				"origin": [
+					-5,
+					0,
+					-5
+				],
+				"size": [
+					11,
+					7,
+					11
+				]
+			},
+			"minecraft:loot": "loot_tables/empty.json",
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"block_filter": [
+							"cata:gneiss",
+							"cata:smooth_gneiss_brick",
+							"cata:gneiss_brick",
+							"cata:cut_gneiss",
+							"cata:gneiss_grate",
+							"cata:unbreakable_gneiss",
+							"cata:unbreakable_gneiss_brick",
+							"cata:unbreakable_smooth_gneiss_brick",
+							"cata:unbreakable_cut_gneiss"
+						],
+						"allowed_faces": [
+							"up"
+						]
+					}
+				]
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 50
+			}
+		}
+	}
+}

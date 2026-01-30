@@ -1,0 +1,36 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:abomination_vine",
+			"min_engine_version": "1.10.0",
+			"materials": {
+				"default": "entity"
+			},
+			"textures": {
+				"default": "textures/entity/jungle_abomination/abomination_vine"
+			},
+			"geometry": {
+				"default": "geometry.abomination_vine"
+			},
+			"scripts": {
+				"animate": [
+					"wake_controller",
+					"grow"
+				]
+			},
+			"animations": {
+				"grow": "animation.abomination_vine.rise",
+				"awaken": "animation.abomination_vine.sink",
+				"wake_controller": "controller.animation.nameless_one.rest"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"base_color": "#204B16",
+				"overlay_color": "#769849"
+			}
+		}
+	}
+}

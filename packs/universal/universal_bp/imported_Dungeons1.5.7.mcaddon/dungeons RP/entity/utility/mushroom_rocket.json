@@ -1,0 +1,31 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:mushroom_rocket",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/mooshroom_monstrosity/mushroom_rocket"
+			},
+			"geometry": {
+				"default": "geometry.mushroom_rocket"
+			},
+			"animations": {
+				"particles": "animation.necromancer_shot.particles"
+			},
+			"particle_effects": {
+				"energy": "dungeons:mushroom_rocket"
+			},
+			"scripts": {
+				"animate": [
+					"particles"
+				]
+			},
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

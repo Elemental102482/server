@@ -1,0 +1,77 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "e:iron_sword_corr",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:use_duration": 3600,
+			"minecraft:hand_equipped": true,
+			"minecraft:durability": {
+				"max_durability": 250
+			},
+			"minecraft:mining_speed": 1,
+			"minecraft:damage": 6,
+			"minecraft:enchantable": {
+				"value": 7,
+				"slot": "sword"
+			},
+			"minecraft:can_destroy_in_creative": false,
+			"minecraft:digger": {
+				"use_efficiency": true,
+				"destroy_speeds": [
+					{
+						"block": "minecraft:web",
+						"speed": 15
+					},
+					{
+						"block": "minecraft:bamboo",
+						"speed": 10
+					}
+				]
+			},
+			"minecraft:icon": {
+				"texture": "iron_sword"
+			},
+			"minecraft:display_name": {
+				"value": "§bIron Sword \n§7Durability: 250 \n§5Corruption \n§aAbility: \n§7-Inflicts Blindness III, Weakness II, and Slowness V"
+			},
+			"minecraft:weapon": {
+				"on_hurt_entity": {
+					"event": "break"
+				}
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.sword"
+			},
+			"minecraft:foil": true
+		},
+		"events": {
+			"break": {
+				"sequence": [
+					{
+						"damage": {
+							"type": "durability",
+							"amount": 1,
+							"target": "self"
+						}
+					},
+					{
+						"run_command": {
+							"target": "other",
+							"command": [
+								"effect @s blindness 30 2",
+								"effect @s weakness 30 1",
+								"effect @s slowness 30 4",
+								"playsound mob.evocation_illager.prepare_attack @p",
+								"particle minecraft:totem_particle ~ ~ ~"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

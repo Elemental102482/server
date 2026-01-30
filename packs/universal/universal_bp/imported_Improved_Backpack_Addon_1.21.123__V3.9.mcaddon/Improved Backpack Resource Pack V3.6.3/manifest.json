@@ -1,0 +1,33 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Made By:Dewdimpple\nYoutube:Dewdimpple Aoi Ch.\nTwitter:@Dewdimpple",
+    "name": "Improved Backpack Resoource Pack Version 3.6.3",
+    "uuid": "244fd642-bfac-490f-aed0-f912e00cb999",
+    "version": [
+      5,
+      0,
+      10
+    ],
+    "min_engine_version": [
+      1,
+      20,
+      50
+    ]
+  },
+  "modules": [
+    {
+      "description": "Backpack Resource Pack",
+      "type": "resources",
+      "uuid": "e839d0e9-4439-4e0b-97ca-8bc31e1870a9",
+      "version": [
+        5,
+        0,
+        10
+      ]
+    }
+  ],
+  "metadata": {
+    "product_type": "addon"
+  }
+}

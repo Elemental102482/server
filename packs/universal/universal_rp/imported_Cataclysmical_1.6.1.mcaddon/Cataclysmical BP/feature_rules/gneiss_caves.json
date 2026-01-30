@@ -1,0 +1,54 @@
+{
+	"format_version": "1.20.20",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "cata:gneiss_caves",
+			"places_feature": "cata:gneiss_caves"
+		},
+		"conditions": {
+			"placement_pass": "underground_pass",
+			"minecraft:biome_filter": {
+				"any_of": [
+					{
+						"test": "has_biome_tag",
+						"operator": "==",
+						"value": "overworld"
+					},
+					{
+						"test": "has_biome_tag",
+						"operator": "==",
+						"value": "overworld_generation"
+					}
+				]
+			}
+		},
+		"distribution": {
+			"iterations": 1,
+			"x": {
+				"distribution": "gaussian",
+				"extent": [
+					0,
+					16
+				]
+			},
+			"y": {
+				"distribution": "gaussian",
+				"extent": [
+					-64,
+					-10
+				]
+			},
+			"z": {
+				"distribution": "gaussian",
+				"extent": [
+					0,
+					16
+				]
+			},
+			"scatter_chance": {
+				"numerator": 1,
+				"denominator": 130
+			}
+		}
+	}
+}

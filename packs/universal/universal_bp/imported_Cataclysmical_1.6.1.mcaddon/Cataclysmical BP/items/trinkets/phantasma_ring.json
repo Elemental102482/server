@@ -1,0 +1,25 @@
+{
+	"format_version": "1.21.80",
+	"minecraft:item": {
+		"description": {
+			"identifier": "cata:phantasma_ring",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:icon": "cata_phantasma_ring",
+			"minecraft:max_stack_size": {
+				"value": 1
+			},
+			"minecraft:rarity": {
+				"value": "uncommon"
+			},
+			"minecraft:tags": {
+				"tags": [
+					"novelty:is_trinket"
+				]
+			}
+		}
+	}
+}

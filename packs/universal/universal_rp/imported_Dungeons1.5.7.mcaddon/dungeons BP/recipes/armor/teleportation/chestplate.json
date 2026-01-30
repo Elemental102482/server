@@ -1,0 +1,33 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "teleportation_chestplate"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"W W",
+			"SWS",
+			"SSS"
+		],
+		"unlock": [
+			{
+				"item": "minecraft:ender_pearl"
+			}
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:ender_pearl"
+			},
+			"W": {
+				"item": "minecraft:gold_ingot"
+			}
+		},
+		"result": {
+			"item": "dungeons:teleportation_chestplate",
+			"count": 1
+		}
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "system:obsidian_hammer",
+			"materials": {
+				"default": "entity_alphatest",
+				"enchanted": "entity_alphatest_glint"
+			},
+			"textures": {
+				"default": "textures/hammers/obsidian",
+				"enchanted": "textures/misc/enchanted_item_glint"
+			},
+			"geometry": {
+				"default": "geometry.player.hammer"
+			},
+			"animations": {
+				"first_person": "animation.player.hammer_tool.first_person",
+				"default": "animation.player.hammer_tool"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"first_person": "c.is_first_person && c.item_slot == 'main_hand' && q.get_equipped_item_name == 'obsidian_hammer'"
+					},
+					{
+						"default": "!c.is_first_person && c.item_slot == 'main_hand' && q.get_equipped_item_name == 'obsidian_hammer'"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.hammer"
+			]
+		}
+	}
+}

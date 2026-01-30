@@ -1,0 +1,465 @@
+v1.9
+-added new structures, Desert Sphinx, Abandoned Castle, Wild wheat
+-added golden oranges
+-added golden orange recipe
+-added loot to Jungle Treehouse
+-added new mob, Decayed Zombie (spawns in Abandoned Castle)
+-tweaked spawn rates of some structures
+
+v2.0
+-added new structures, Underground Totem Room, Rare Large Ore Veins, 2 Desert Dungeons, 3 More Ruins, Tower and a varaint with a basement level, Swamp Willow Tree
+-tweaked spawn rates of some structures
+
+v2.1
+-added new structures, Mineshaft Entrance, Endermite Nest, Ruin Spawner, Wild Carrots, Wild Potatoes, Crashed Endship, Fishing Hut, Mesa Pyramid
+-removed file mistakingly put into add-on
+-tweaked spawn rates of some structures
+-large cacti will no longer spawn in Mesa biome
+
+v2.2
+-added new structures, Mesa Temple, Big Igloo, Phantom Spawner Island
+-tweaked spawn rates of some structures
+-Buffed "Mummy" health to 30 (was 20)
+-Buffed "Mummy" damage to 7 (was 5)
+-Reduced the Blindness effect duration caused by Mummies to 15 seconds (was 30)
+-Mummies will now drop paper and gold ingots on death
+-Dungeon Tower now has a closed top floor for spawners, to add difficulty.
+
+v2.3 (Small Halloweenish Update)
+-added new structures, Haunted House, Witch Cauldrons
+-added new mob, Ghost (spawns in Haunted Houses)
+-added a new food item - Ectoplasm (obtained by killing Ghosts)
+-tweaked spawn rates of some structures
+
+v2.4
+-added new structures, Mushroom House, Sea Turtle Nest, Slime Cave
+-increased Ghost attacking speed
+-added Dungeon Tower with closed top layer (Forgot to add in previous versions)
+-tweaked spawn rates of some structures
+-changed Ghost spawn egg texture
+
+v2.5
+-added new structures, Cave Storage Room, Excavation Site, Gaint Beehive, Pear Tree
+-added new food item - Pears (obtained by mining Pear Leaves)
+-added new block - Pear Leaves
+-updated texture for Apple Leaves
+-tweaked spawn rates of some structures
+-Ghosts will now spawn naturally in the world at night (Halloween only)
+
+v2.6
+-added new biome - Orchard
+-added new structures, Peach Tree, Lemon Tree, Broken Conduit Drowned Spawner, Enraged Underground Dungeon
+-added new food item - Peaches (obtained by mining Peach Leaves), Lemons (obtained by mining Lemon Leaves)
+-added new blocks - Peach Leaves, Lemon Leaves, Enraged Cobblestone
+-nerfed spawn rates of most structures to make them more rare
+-Ghosts no longer spawn naturally
+-Added new mob - Enraged Zombie (Spawns in Enraged Dungeons)
+
+v2.7
+-added new structures, Cherry Tree, Meteor Crash, Winter Cabin
+-added new food item - Cherries
+-added new block - Cherry Leaves
+-changed spawn egg texture for Enraged Zombie
+-tweaked spawn rates of some structures
+-lowered spawn rate of Slime Cave
+
+v2.8
+-updated all "Leaves" blocks behaviors
+-updated all "Leaves" blocks textures and geometry
+-"Leaves" blocks will now burn, spread and destroy when on fire
+-added new blocks - Mysterious Totem Block, Vase, Spike Trap(beta)
+-added saplings for custom trees
+-updated some structures
+-lowered spawn rates of some structures
+
+v2.9
+-added new structures, Pillager Pub, Festive Tree (December only)
+-added new block, Present (December only), Tombstone (Sometimes spawns incorrectly rotated in graveyards)
+-Ghosts will now spawn in graveyards
+-added tombstones to graveyards
+-tweaked spawn rates of some structures
+
+v3.0
+-added new structures, Lush Cave, Fortress Ruins
+-added new blocks, Ectoplasm Block, Candle, Candle with Wall Support
+-added new recipes, Ectoplasm Block, Candle, Candle with Wall Support
+-spike trap now plays sounds when stepped on and off
+-changed all textures for Leaf blocks back to pre v2.8 textures
+-changed render method for Leaf Blocks to "opaque" to prevent blocks from disappearing when at a distance
+-fixed Mummy name
+-fixed a bug preventing player from placing tombstone block after breaking it
+-removed Orchard biome temporarily
+-tweaked spawn rates of some structures
+
+v3.1
+-added new structures, Spider Cave, Banana Tree
+-added new mobs, Baby Spider, Spider Queen(Mini Boss)
+-added new blocks, Spider Nest, Banana Bulb Block
+-added new food item, Banana
+-added new recipe, Banana Tree Sapling
+-added new sapling, Banana Tree Sapling
+-changed the amount of candles when crafted to 2
+-improved geometry of custom tree saplings
+-saplings will now drop themselves when broken
+-changed the growth time of custom tree saplings
+-custom tree saplings can now be bone mealed
+-ghosts will no longer get stuck in cobwebs
+-gold blocks can be crafted again (not sure why they couldn't before)
+-removed Festive Tree structure
+-tweaked spawn rates of some structures
+-added Russian language support (Credits to MJ105)
+
+v3.2 (fixes)
+-Spider Queen will now shoot web like projectiles that give slowness effect for 10 second per hit
+-Spider Queen now has 550 health
+-Spider Queen will give poison effect for 5 seconds per hit
+-Spider Queen can now swim quickly in water
+-less Baby Spiders will spawn when summoned by Spider Queen
+-Baby Spiders will no longer attack Spider Queen
+-raised attack damage for Baby Spider
+-Baby Spiders will no longer drop XP when killed
+-lowered hitbox for Baby Spider
+-updated food items to format version 1.16.100
+-updated eating animations for food items
+-changed texture for Enraged Zombie
+-Enraged Zombie will now shake
+-Enraged Zombies will now spawn naturally at night
+-tweaked spawn rates of some structures
+
+v3.3
+-added new structures, Rotten Swamp Tree, Blueberry Bush
+-added new plant/crop, Blueberry Bush
+-added new food item, Blueberries
+-added new items, Experience Book I, Experience Book II, Experience Book III, The Great Book of Experience (books made by MedicalJewel) (books not found in structures until v3.4)
+-changed texture for Orange
+-added new animations to Mummy
+-fixed error message with Pirate
+-new fruits will now appear in the "crops" category in the creative menu
+-tweaked spawn rates of some structures
+
+v3.4
+-added new structures, Mysterious Mushroom, Lumberjack Cabin
+-added new food items, Mysterious Mushroom, Mysterious Mushroom Stew
+-added new mob, Lumberjack Villager
+-added new blocks, Jukebox+, Sawmill
+-added new music disc, "Mystical"
+-added new recipes, Jukebox+, Spike Trap Block, Mysterious Mushroom Stew, Sawmill
+-added Experience Books as a rare drop for structures Phantom Island & Spider Cave (more will be added in the future)
+-cleaned up some files to make addon more compatible with other addons/resource packs
+-lowered spawn rates for most structures to make structures overall rarer to find and to make room for future structures
+
+v3.5
+-added new structure, Castle Island
+-added new event to Totem Room structure
+-added 3 new event mobs (don't have spawn eggs)
+-added new mob, Aetherial Knight
+-Decayed Zombies now have a 10% chance to drop a piece of their armor or weapon when killed
+-nerfed loot for Well structure
+-added Mystical record in loot tables for Well and Castle Island
+-added Experience Books to loot table for Castle Island treasure
+-lowered the drop chances of saplings when mining new fruit tree leaves
+-tweaked spawn rates of some structures
+-added Herobrine
+
+v3.6
+-added new mob, Crypt Crawler
+-added new structures, Crypt, Excavation Crane
+-lowered spawn chance for Oak Bush and Rock structures to prevent spawning inside other structures
+-readded Orchard biome
+-fruit trees will now only spawn in Orchard biome
+-added new block, Spike Trap
+-added new recipe, Spike Trap
+-renamed Spike Trap to Sandstone Spike Trap
+-changed recipe, Sandstone Spike Trap
+-added welcome message when joining the world for the first time
+-added new title screen logo
+-added custom main menu splash texts
+-added partial RTX support for some blocks in add-on (WIP)
+-added more compatibility with Mo' Music Discs addon
+-tweaked spawn rates of some structures
+
+v3.7
+-added new structures, Mushroom Tree House, Old Church Temple, Piglin Camp
+-added new splash text
+-updated Palm Tree structures
+-added new item, Coconut
+-added new food, Split Coconut
+-added new blocks, Coconut, Old Bell
+-added new recipe, Split Coconut
+-added coconuts to Palm trees (beach palm trees only)
+-palm tree leaves will now decay when all logs have been broken
+-added some compatibility with Expansive Biomes addon
+-removed ray-tracing support temporarily
+-tweaked spawn rate of Orchard biome a bit
+-tweaked spawn rates of some structures
+
+v3.7.1
+-bug fix
+
+v3.8
+-added new structures, Pillager Camp, Pillager Cabin
+-added new mob, Trapper Pillager, Pillager Wolf
+-updated texture of all fruit leaves
+-changed the render method of fruit leaves
+-bush structures will now spawn on the first surface pass
+-fixed a bug that caused the Haunted House structure to spawn in any biome
+-fixed a bug that caused the Crypt to not spawn
+-fixed some compatibility bugs
+-fixed some other minor bugs
+-tweaked spawn rates of some structures
+-added Hungarian language (credit to Nargoth from Disocrd)
+-added French language (credit to Skycubb73 from Discord)
+
+v3.9 (fixes and improvements!)
+-added a subpack for rare spawn rates of structures that can be selected in the addon settings
+-changed the placement pass of the Tower structure to prevent block replacement when spawned in the world
+-improved Orchard biome
+-improved how the Broken Conduit spawns to avoid it from spawning on land
+-improved how the underwater Head Statue structure spawns to avoid it from spawning on land
+-improved how the Magma Vent structure spawns to avoid it from spawning on land
+-Broken Conduits will no longer spawn in rivers and lakes
+-improved how palm trees spawn on beaches and deserts
+-improved how bushes spawn to further prevent them from spawning in structures
+-added new bob animation for Ghost mob
+-updated a line of splash text
+-improved title logo
+-tweaked spawn rates of some structures
+
+v4.0
+-added new structures, Piglin Boat, Piglin Outpost, Pirate Shipwrecks, End Ruins, End Pedestal
+-updated Pirate Ship structures
+-updated Piglin Fortress structure
+-updated Desert Pyramid structure
+-removed Large Ore Vein structures
+-renamed "Normal Spawn Rates" subpack setting to "Common Spawn Rates"
+-coconuts will now drop themselves when broken again
+-coconuts are now throwable
+-removed custom candles
+-updated texture of Vase block
+-updated geometry of Vase block
+-added more compatibility with Expansive Biomes
+-lowered spawn rates for Spider Cave structure
+-updated pack icon
+-tweaked spawn rates of some structures
+
+v4.1 (small update)
+-added new structures, Jungle Fort Ruin, Jungle Pedastal Ruin, Jungle Brazier Ruin
+-Palm Trees will now spawn less in desert biomes
+-Crypt Crawlers will now drop rotten flesh when killed
+-updated bobbing animation for Ghost
+-updated Mummy animations
+-Ghosts will no longer move their arms when walking
+-added more compatibility with Expansive Biomes
+-tweaked spawn rates of some structures
+
+v4.2 (major bug fixes/small Halloween update)
+-added new structures, Pumpkin House, Big Pumpkin
+-added new Halloween mobs, Pumpkin Head Skeleton, Pumpkin Head Zombie
+-removed 6 structures due to a Minecraft bug that causes world freezing and crashes
+-updated 7 structures to prevent crashes
+-Witch Cauldron structure will spawn more commonly during October
+-Haunted House structure will spawn more commonly during October
+-Ghosts will now spawn naturally during October
+-added more compatibility with Expansive Biomes
+-tweaked spawn rates of some structures
+
+v4.3
+-added new structure, Crashed Jungle Ship (credit to MJ105)
+-removed Halloween events
+-lowered spawn rates for witch cauldrons structure
+-lowered spawn rates for haunted house structure
+-lowered spawn rates for jungle brazier structure
+-disabled crypt structure from spawning temporarily due to lag
+-ghosts will no longer spawn naturally
+-updated title logo
+-updated pack icon
+-updated pack description
+-updated welcome message (credit to MJ105)
+-tweaked spawn rates of some structures
+
+v4.4 (small Christmas update)
+-added new structure, Festive Tree (limited time)
+-fixed a bug that caused Pillager Camps to crash nearby chunks
+-fixed a bug that caused an overabundance of Knights to spawn in floating castles
+-fixed a bug that caused Pillager Wolves to throw an error message
+-fixed welcome message font
+-tweaked spawn rates of some structures
+
+v4.5
+-removed Christmas/New Years features
+-updated Spider Cave structure
+-readded Spider Cave structure
+-removed unneeded generation blocks
+-fixed Piglin Outpost, Piglin Boat, and Piglin Fortress having an update block
+-fixed the letter spacing in the welcome message
+-nerfed Floating Castle treaure loot
+-nerfed Spider Cave loot
+-ghosts no longer use the skeleton render controller
+-tweaked spawn rates of some structures
+
+4.6
+-fixed certain blocks from appearing incorrectly due to removed block components
+
+4.7
+
+Blocks:
+-updated texture of Sawmill
+-updated geometry of Sawmill
+-removed Candle Holder
+-spike traps are now more fatal
+
+Generation:
+-various underground structures can now generate lower in the world
+-some underground structures are more likely to spawn less exposed to air
+-fruit trees can now be rarely found in plains biomes
+-removed Lush Cave structure
+
+Recipes:
+-updated recipe for Sandstone Spike Trap
+
+Bugs:
+-fixed a bug that caused nearby chunks to freeze when generating Coconuts
+-fixed some blocks from appearing incorrectly
+-fixed a bug causing blocks to not work on Realms/servers
+
+Misc.
+-updated welcome message
+-removed subpacks
+
+4.7.1
+
+Structures:
+-added Abandoned House Ruin
+-added Mangrove Hut
+-updated Small Abandoned House structure
+-updated Camp structure
+
+Bugs:
+-fixed an issue causing 1.20 cherry trees to have the wrong textures
+
+Misc:
+-added an "Increased Spawn Rates" toggle option
+-edited welcome message
+
+4.7.2
+
+Structures:
+-updated desert pyramid
+-updated desert sphinx
+-updated excavation site
+-updated well dungeon
+
+Generation:
+-cherry trees will now only spawn in Cherry Groves
+
+Misc:
+-updated pack icon
+-updated logo
+
+4.7.3
+
+Structures:
+-jungle pyramids now have a chance to contain wild armor trims
+-desert pyramids now have a chance to contain dune armor trims
+-mesa pyramids now have a chance to contain dune armor trims
+-mesa temples now have a chance to contain dune armor trims
+-pillager forts now have a chance to contain sentry armor trims
+-edited the treasure loot in spider caves
+
+Generation:
+-fruit tree clusters will now spawn in plains biomes
+
+Entities/Mobs:
+-enraged zombies no longer spawn naturally
+-ghosts no longer spawn naturally
+-edited queen spider loot
+-lowered queen spiders health to 250 (was 550)
+-lowered mummy health to 20 (was 30)
+-lowered mummy damage to 3 (was 7)
+-lowered ghost health to 20 (was 30)
+-lowered enraged zombie health to 30 (was 40)
+
+Items:
+-updated cherry tree sapling texture
+
+Bugs:
+-fixed several recipes
+-fixed various content log errors
+-fixed certain mobs from becoming invisible when using other addons
+
+4.7.4
+
+Structures:
+-added cave camp
+
+Blocks:
+-spike traps no longer destroy items
+-spikes no longer remain after breaking the spike trap block
+-updated geometry of spikes
+-updated texture of spikes
+-added several blocks to the creative menu
+
+Entities/Mobs:
+-lowered enraged zombie movement to match vanilla zombies
+
+Generation:
+-slightly lowered spawn rate of fruit tree clusters for the normal rate setting
+
+Misc:
+-removed welcome message
+
+v4.7.4.1
+
+Bugs:
+-fixed a bug that caused pillagers not to spawn in pillager camps
+
+Misc:
+-added compatibility for minecraft version 1.20.30
+
+v4.7.4.2
+
+Bugs:
+-fixed vases appearing as update blocks
+-fixed spider nests appearing as update blocks
+-fixed an issue causing log errors in servers
+
+v4.7.5
+
+Structures:
+-added villager mud brick statue
+-added forest watch tower
+
+v4.7.6
+
+Structures:
+-lowered spawn rate of forest watch tower
+
+v4.8.0
+
+IMPORTANT: The v4.8.0 version is essentially the same as previous versions, but has no custom block and items, and only includes very few custom mobs. Version 4.8.0 should not be used on existing worlds as custom blocks that were removed will not work, and will appear as dirt blocks with question marks.
+
+Structures:
+-added small desert tomb
+-added trial tower
+-updated totem room
+-updated broken conduit 
+-updated campsite
+-removed unnecessary structures (examples: boulders, fallen trees, etc)
+-lowered spawn rate of forest watch tower
+-lowered spawn rate of totem room
+
+Entities/Mobs:
+-removed majority of custom entities
+-updated texture of mummy
+
+Items:
+-removed all custom items
+
+Blocks:
+-removed all custom blocks
+
+Bugs:
+-fixed an entity that wouldn't despawn in totem rooms
+
+Misc:
+-addon no longer requires experimental toggles

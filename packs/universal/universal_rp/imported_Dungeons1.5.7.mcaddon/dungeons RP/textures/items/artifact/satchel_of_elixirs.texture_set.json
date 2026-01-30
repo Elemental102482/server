@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "satchel_of_elixirs",
+        "metalness_emissive_roughness": "satchel_of_elixirs_mer"
+    }
+}

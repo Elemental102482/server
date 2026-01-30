@@ -1,0 +1,38 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "cata:plasma_hive",
+			"materials": {
+				"default": "drowned"
+			},
+			"textures": {
+				"default": "textures/entity/plasma_hive_texture"
+			},
+			"geometry": {
+				"default": "geometry.plasma_hive"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "cata_plasma_hive_egg"
+			},
+			"animations": {
+				"bobbing": "animation.plasma.bobbing",
+				"move2": "animation.plasma.move2",
+				"move3": "animation.plasma.move3",
+				"summon": "animation.plasma.summon",
+				"summon_controller": "controller.animation.plasma_hive.summon_controller"
+			},
+			"scripts": {
+				"animate": [
+					"bobbing",
+					"move2",
+					"move3",
+					"summon_controller"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,109 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.verdant_sentinel_arm_summon",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 9,
+				"visible_bounds_height": 7,
+				"visible_bounds_offset": [
+					0,
+					1.5,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "leftarm",
+					"pivot": [
+						-0.00481,
+						-6.06667,
+						10.4107
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-30.4,
+								6.9
+							],
+							"size": [
+								6,
+								21,
+								6
+							],
+							"uv": [
+								0,
+								0
+							]
+						},
+						{
+							"origin": [
+								3,
+								-30.4,
+								9.9
+							],
+							"size": [
+								4,
+								21,
+								0
+							],
+							"pivot": [
+								3,
+								-19.9,
+								9.9
+							],
+							"rotation": [
+								0,
+								-50,
+								0
+							],
+							"uv": [
+								16,
+								70
+							]
+						},
+						{
+							"origin": [
+								-3,
+								-9.4,
+								5.9
+							],
+							"size": [
+								7,
+								8,
+								8
+							],
+							"uv": [
+								64,
+								59
+							]
+						}
+					]
+				},
+				{
+					"name": "particles",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"locators": {
+						"attack": [
+							0,
+							2,
+							-10
+						],
+						"summon": [
+							0,
+							26,
+							12
+						]
+					}
+				}
+			]
+		}
+	]
+}

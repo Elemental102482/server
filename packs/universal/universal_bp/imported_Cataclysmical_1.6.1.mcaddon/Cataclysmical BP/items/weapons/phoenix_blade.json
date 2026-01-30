@@ -1,0 +1,63 @@
+{
+	"format_version": "1.21.80",
+	"minecraft:item": {
+		"description": {
+			"identifier": "cata:phoenix_blade",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:damage": {
+				"value": 14
+			},
+			"minecraft:can_destroy_in_creative": false,
+			"minecraft:max_stack_size": {
+				"value": 1
+			},
+			"minecraft:durability": {
+				"max_durability": 8000
+			},
+			"minecraft:digger": {
+				"use_efficiency": true,
+				"destroy_speeds": [
+					{
+						"block": "minecraft:web",
+						"speed": 14
+					}
+				]
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"cata:sun_fragment"
+						],
+						"repair_amount": "query.max_durability*0.5"
+					},
+					{
+						"items": [
+							"cata:phoenix_blade"
+						],
+						"repair_amount": "context.other->query.remaining_durability+0.12*context.other->query.max_durability"
+					}
+				]
+			},
+			"minecraft:interact_button": true,
+			"minecraft:rarity": {
+				"value": "epic"
+			},
+			"minecraft:block_placer": {
+				"block": "cata:phoenix_blade",
+				"use_on": [
+					"cata:phoenix_blade"
+				],
+				"replace_block_item": true
+			},
+			"minecraft:cooldown": {
+				"category": "phoenix_blade",
+				"duration": 10
+			}
+		}
+	}
+}

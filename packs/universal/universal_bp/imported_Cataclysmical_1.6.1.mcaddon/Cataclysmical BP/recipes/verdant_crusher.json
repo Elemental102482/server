@@ -1,0 +1,37 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cata:verdant_crusher"
+		},
+		"pattern": [
+			"121",
+			"343",
+			"111"
+		],
+		"key": {
+			"1": {
+				"item": "cata:smooth_gneiss_brick"
+			},
+			"2": {
+				"item": "cata:verdant_plating"
+			},
+			"3": {
+				"item": "cata:verdant_shard"
+			},
+			"4": {
+				"item": "cata:floret_element"
+			}
+		},
+		"result": {
+			"item": "cata:verdant_crusher",
+			"count": 1
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": {
+			"context": "AlwaysUnlocked"
+		}
+	}
+}

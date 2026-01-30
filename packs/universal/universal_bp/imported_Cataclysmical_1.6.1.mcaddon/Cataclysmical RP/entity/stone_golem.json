@@ -1,0 +1,42 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "cata:stone_golem",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/stone_golem_texture"
+			},
+			"geometry": {
+				"default": "geometry.stone_golem"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "cata_stone_golem_egg"
+			},
+			"animations": {
+				"idle": "animation.stone_golem.idle",
+				"move": "animation.stone_golem.move",
+				"attack": "animation.stone_golem.attack",
+				"move_controller": "controller.animation.stone_golem.move",
+				"attack_controller": "controller.animation.stone_golem.attack"
+			},
+			"scripts": {
+				"animate": [
+					"move_controller",
+					"attack_controller"
+				]
+			},
+			"particle_effects": {
+				"small_impact": "cata:large_impact"
+			},
+			"sound_effects": {
+				"stone_golem_impact": "mob.stone_golem_impact"
+			}
+		}
+	}
+}

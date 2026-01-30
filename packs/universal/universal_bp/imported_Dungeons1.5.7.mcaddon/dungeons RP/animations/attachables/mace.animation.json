@@ -1,0 +1,23 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.mace.third_person_hold": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"rotation": [
+						85,
+						6,
+						0
+					],
+					"position": [
+						-0.5,
+						22.5,
+						-0.5
+					],
+					"scale": 0.76
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,58 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:pet_bee",
+			"materials": {
+				"default": "entity_emissive_alpha",
+				"enchanted": "dungeons_entity_enchant"
+			},
+			"textures": {
+				"default": "textures/entity/bee/bee",
+				"angry": "textures/entity/bee/bee_angry",
+				"nectar": "textures/entity/bee/bee_nectar",
+				"angry_nectar": "textures/entity/bee/bee_angry_nectar",
+				"glow": "textures/entity/bee/enchanted_bee",
+				"enchanted": "textures/misc/enchanted_entity_glint"
+			},
+			"geometry": {
+				"default": "geometry.dungeons_bee"
+			},
+			"animations": {
+				"flying": "animation.bee.flying",
+				"drip": "controller.animation.bee.drip",
+				"controller_bee_sting": "controller.animation.bee.sting",
+				"bee_sting": "animation.bee.sting",
+				"bee_no_stinger": "animation.bee.no_stinger",
+				"bee_fly_bobbing": "animation.bee.fly.bobbing",
+				"bee_root_controller": "controller.animation.bee.root",
+				"enchanted_particles": "animation.enchanted_mob.particles"
+			},
+			"particle_effects": {
+				"nectar_dripping": "minecraft:nectar_drip_particle",
+				"enchant": "dungeons:small_humanoid_enchant"
+			},
+			"scripts": {
+				"animate": [
+					"bee_root_controller",
+					{
+						"bee_no_stinger": "query.mark_variant==1"
+					},
+					{
+						"enchanted_particles": "q.is_saddled==1"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.dungeons_bee",
+				{
+					"controller.render.dungeons_entity_enchanted": "q.is_saddled==1"
+				}
+			],
+			"spawn_egg": {
+				"texture": "egg_bee",
+				"texture_index": 0
+			}
+		}
+	}
+}

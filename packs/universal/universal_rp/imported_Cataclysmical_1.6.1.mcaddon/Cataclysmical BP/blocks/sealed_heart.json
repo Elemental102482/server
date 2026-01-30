@@ -1,0 +1,26 @@
+{
+	"format_version": "1.21.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "cata:sealed_heart",
+			"menu_category": {
+				"category": "construction"
+			}
+		},
+		"components": {
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 5
+			},
+			"minecraft:geometry": "geometry.sealed_heart",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "cata_sealed_heart",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:custom_components": [
+				"component:sealed_heart"
+			]
+		}
+	}
+}

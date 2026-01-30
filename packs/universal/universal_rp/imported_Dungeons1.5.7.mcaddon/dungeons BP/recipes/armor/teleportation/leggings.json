@@ -1,0 +1,33 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "teleportation_leggings"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"WWW",
+			"S S",
+			"S S"
+		],
+		"unlock": [
+			{
+				"item": "minecraft:ender_pearl"
+			}
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:gold_ingot"
+			},
+			"W": {
+				"item": "minecraft:ender_pearl"
+			}
+		},
+		"result": {
+			"item": "dungeons:teleportation_leggings",
+			"count": 1
+		}
+	}
+}

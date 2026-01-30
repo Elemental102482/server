@@ -1,0 +1,75 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "cata:verdant_skeleton",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"variant0": "textures/entity/verdant_skeleton/verdant_skeleton_texture",
+				"variant1": "textures/entity/verdant_skeleton/verdant_skeleton_brute_texture",
+				"variant2": "textures/entity/verdant_skeleton/verdant_skeleton_charger",
+				"variant3": "textures/entity/verdant_skeleton/verdant_skeleton_summon_texture"
+			},
+			"geometry": {
+				"default": "geometry.verdant_skeleton"
+			},
+			"render_controllers": [
+				"controller.render.verdant_skeleton"
+			],
+			"spawn_egg": {
+				"texture": "cata_verdant_skeleton_egg"
+			},
+			"animations": {
+				"look_at_target_default": "animation.humanoid.look_at_target.default",
+				"idle": "animation.verdant_skeleton.idle",
+				"move": "animation.verdant_skeleton.move",
+				"attack": "animation.verdant_skeleton.attack",
+				"brute_idle": "animation.verdant_skeleton.brute_idle",
+				"brute_move": "animation.verdant_skeleton.brute_move",
+				"brute_shield_cooldown": "animation.verdant_skeleton.brute_shield_cooldown",
+				"brute_attack": "animation.verdant_skeleton.brute_attack",
+				"move_controller": "controller.animation.verdant_skeleton.move",
+				"attack_controller": "controller.animation.verdant_skeleton.attack",
+				"brute_shield_controller": "controller.animation.verdant_skeleton.brute_shield",
+				"brute_move_controller": "controller.animation.verdant_skeleton.brute_move",
+				"brute_attack_controller": "controller.animation.verdant_skeleton.brute_attack",
+				"charger_idle": "animation.verdant_skeleton.charger_idle",
+				"charger_move_has_target": "animation.verdant_skeleton.charger_move_has_target",
+				"charger_move": "animation.verdant_skeleton.charger_move",
+				"charger_move_controller": "controller.animation.verdant_skeleton.charger_move",
+				"summon_particle": "animation.verdant_skeleton.summon_particle"
+			},
+			"scripts": {
+				"animate": [
+					"look_at_target_default",
+					{
+						"move_controller": "query.variant==0||query.variant==3"
+					},
+					{
+						"attack_controller": "query.variant==0||query.variant==2||query.variant==3"
+					},
+					{
+						"brute_shield_controller": "query.variant==1"
+					},
+					{
+						"brute_move_controller": "query.variant==1"
+					},
+					{
+						"brute_attack_controller": "query.variant==1"
+					},
+					{
+						"charger_move_controller": "query.variant==2"
+					},
+					{
+						"summon_particle": "query.variant==3"
+					}
+				]
+			},
+			"particle_effects": {
+				"verdant_skeleton_summon": "cata:verdant_skeleton_summon"
+			}
+		}
+	}
+}

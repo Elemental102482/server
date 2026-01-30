@@ -1,0 +1,61 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.verdant_sentinel.normal_attack": {
+			"animation_length": 2.5,
+			"loop": false
+		},
+		"animation.verdant_sentinel.double_attack": {
+			"animation_length": 2.25,
+			"loop": false,
+			"timeline": {
+				"1.50": [
+					"/summon cata:verdant_sentinel_knockback ~ ~ ~"
+				]
+			}
+		},
+		"animation.verdant_sentinel.heavy_attack": {
+			"animation_length": 3.5,
+			"loop": false
+		},
+		"animation.verdant_sentinel.move_attack": {
+			"animation_length": 5.5,
+			"loop": false,
+			"timeline": {
+				"1.01": [
+					"/summon cata:verdant_sentinel_knockback ~ ~ ~"
+				],
+				"1.58": [
+					"/summon cata:verdant_sentinel_knockback ~ ~ ~"
+				],
+				"2.18": [
+					"/summon cata:verdant_sentinel_knockback ~ ~ ~"
+				],
+				"2.76": [
+					"/summon cata:verdant_sentinel_knockback ~ ~ ~"
+				],
+				"3.32": [
+					"/summon cata:verdant_sentinel_knockback ~ ~ ~"
+				],
+				"3.89": [
+					"/summon cata:verdant_sentinel_knockback ~ ~ ~"
+				],
+				"4.51": [
+					"/summon cata:verdant_sentinel_knockback ~ ~ ~"
+				],
+				"5.08": [
+					"/summon cata:verdant_sentinel_knockback ~ ~ ~"
+				]
+			}
+		},
+		"animation.verdant_sentinel.exhausted": {
+			"animation_length": 6.25,
+			"loop": false,
+			"timeline": {
+				"5.25": [
+					"/summon cata:verdant_sentinel_knockback ~ ~ ~"
+				]
+			}
+		}
+	}
+}

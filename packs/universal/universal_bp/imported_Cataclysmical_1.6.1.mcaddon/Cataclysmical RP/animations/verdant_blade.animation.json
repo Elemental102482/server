@@ -1,0 +1,236 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.verdant_blade.hold_first_person": {
+			"loop": true,
+			"bones": {
+				"right_item": {
+					"rotation": [
+						-13.81521,
+						73.19262,
+						-107.13193
+					],
+					"position": [
+						38,
+						1,
+						31
+					],
+					"scale": 2.5
+				}
+			}
+		},
+		"animation.verdant_blade.hold_third_person": {
+			"loop": true,
+			"bones": {
+				"right_item": {
+					"position": [
+						0.5,
+						11.5,
+						-2
+					]
+				}
+			}
+		},
+		"animation.verdant_blade.attack": {
+			"loop": true,
+			"animation_length": 0.5,
+			"bones": {
+				"right_item": {
+					"rotation": {
+						"0.0": {
+							"post": [
+								-3.00949,
+								-44.54902,
+								-117.58087
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"0.25": {
+							"post": [
+								-143.00949,
+								-44.54902,
+								-117.58087
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"0.5": {
+							"post": [
+								-3.00949,
+								-44.54902,
+								-117.58087
+							],
+							"lerp_mode": "catmullrom"
+						}
+					},
+					"position": {
+						"0.0": {
+							"post": [
+								-13,
+								11,
+								-40
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"0.25": {
+							"post": [
+								-16,
+								7,
+								-32
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"0.5": {
+							"post": [
+								-13,
+								11,
+								-40
+							],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "large_sword_swing"
+				}
+			}
+		},
+		"animation.verdant_blade.attack_third_person": {
+			"loop": true,
+			"animation_length": 0.5,
+			"bones": {
+				"right_item": {
+					"rotation": {
+						"0.0": {
+							"post": [
+								49.65298,
+								12.22552,
+								-93.9366
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"0.25": {
+							"post": [
+								-58.15868,
+								16.61961,
+								-90.82808
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"0.5": {
+							"post": [
+								49.65298,
+								12.22552,
+								-93.9366
+							],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "large_sword_swing"
+				},
+				"0.25": {
+					"effect": "large_sword_swing"
+				},
+				"0.5": {
+					"effect": "large_sword_swing"
+				}
+			}
+		},
+		"animation.verdant_blade.start_holding_first_person": {
+			"animation_length": 1.1667,
+			"bones": {
+				"right_item": {
+					"rotation": {
+						"0.0": {
+							"post": [
+								147.5,
+								0,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"0.4167": {
+							"post": [
+								147.5,
+								0,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"0.625": {
+							"post": [
+								-25.74017,
+								-7.76312,
+								28.46866
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"0.9583": {
+							"post": [
+								10,
+								0,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"1.1667": {
+							"post": [
+								0,
+								0,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						}
+					},
+					"position": {
+						"0.0": {
+							"post": [
+								23,
+								0,
+								-1
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"0.4167": {
+							"post": [
+								23,
+								0,
+								-1
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"0.625": {
+							"post": [
+								0,
+								0,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"0.9583": {
+							"post": [
+								0,
+								0,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"1.1667": {
+							"post": [
+								0,
+								0,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			}
+		}
+	}
+}

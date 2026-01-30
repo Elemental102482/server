@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "enormous_eyeball",
+        "metalness_emissive_roughness": "enormous_eyeball_mer"
+    }
+}

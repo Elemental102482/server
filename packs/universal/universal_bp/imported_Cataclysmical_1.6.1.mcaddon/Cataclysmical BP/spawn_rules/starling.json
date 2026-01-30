@@ -1,0 +1,42 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:spawn_rules": {
+		"description": {
+			"identifier": "cata:starling",
+			"population_control": "animal"
+		},
+		"conditions": [
+			{
+				"minecraft:spawns_on_surface": {},
+				"minecraft:biome_filter": [
+					{
+						"test": "has_biome_tag",
+						"operator": "==",
+						"value": "monster"
+					},
+					{
+						"test": "has_biome_tag",
+						"operator": "==",
+						"value": "overworld"
+					}
+				],
+				"minecraft:brightness_filter": {
+					"min": 0,
+					"max": 0,
+					"adjust_for_weather": true
+				},
+				"minecraft:weight": {
+					"default": 3
+				},
+				"minecraft:herd": {
+					"min_size": 2,
+					"max_size": 4
+				},
+				"minecraft:difficulty_filter": {
+					"min": "peaceful",
+					"max": "hard"
+				}
+			}
+		]
+	}
+}

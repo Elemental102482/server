@@ -1,0 +1,102 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.solarium.move_controller": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"move": "q.ground_speed>0.1"
+						}
+					],
+					"blend_transition": 0.4
+				},
+				"move": {
+					"animations": [
+						"move"
+					],
+					"transitions": [
+						{
+							"default": "q.ground_speed<0.1"
+						}
+					],
+					"blend_transition": 0.4
+				}
+			}
+		},
+		"controller.animation.solarium.attack_controller": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"attack": "query.is_delayed_attacking==1&&query.skin_id==0"
+						},
+						{
+							"summon": "query.is_casting&&query.skin_id==1"
+						},
+						{
+							"heavy_attack": "query.is_delayed_attacking==1&&query.skin_id==2"
+						}
+					],
+					"blend_transition": 0.4
+				},
+				"attack": {
+					"animations": [
+						"attack"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_delayed_attacking"
+						}
+					],
+					"blend_transition": 0.4
+				},
+				"summon": {
+					"animations": [
+						"summon"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_casting"
+						}
+					],
+					"blend_transition": 0.4
+				},
+				"heavy_attack": {
+					"animations": [
+						"heavy_attack"
+					],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.4
+				}
+			}
+		},
+		"controller.animation.solarium.stance_controller": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"stance": "!query.is_delayed_attacking&&!query.is_casting"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"stance": {
+					"animations": [
+						"stance"
+					],
+					"transitions": [
+						{
+							"default": "query.is_delayed_attacking||query.is_casting"
+						}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		}
+	}
+}

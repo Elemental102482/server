@@ -1,0 +1,58 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "§7[v4.8.0] §fMore Simple Structures - §2BP§r",
+    "uuid": "ab2d4a77-11f7-4d08-9b72-9bd28180de3e",
+    "description": "Adds more structures to the game for you to discover! §f| §eby iKorbon§r",
+    "version": [
+      1,
+      0,
+      25
+    ],
+    "min_engine_version": [
+      1,
+      20,
+      70
+    ]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "9a54da4f-d7fd-4f25-adf5-e9248d9d9c33",
+      "version": [
+        1,
+        0,
+        25
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "version": [
+        1,
+        0,
+        25
+      ],
+      "uuid": "e14cf1f1-12b1-4b77-93cc-ba732064c81c"
+    }
+  ],
+  "subpacks": [
+    {
+      "folder_name": "high_rates",
+      "name": "§eIncreased Spawn Rates§r",
+      "memory_tier": 0
+    },
+    {
+      "folder_name": "normal_rates",
+      "name": "§eNormal Spawn Rates §r(recommended)",
+      "memory_tier": 1
+    }
+  ],
+  "metadata": {
+    "generated_with": {
+      "bridge": [
+        "1.8.5"
+      ]
+    }
+  }
+}

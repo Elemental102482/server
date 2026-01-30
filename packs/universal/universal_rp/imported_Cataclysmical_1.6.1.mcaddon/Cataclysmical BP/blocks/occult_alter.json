@@ -1,0 +1,92 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:block": {
+		"description": {
+			"identifier": "cata:occult_alter",
+			"states": {
+				"cata:activated": [
+					false,
+					true
+				]
+			},
+			"menu_category": {
+				"category": "construction"
+			}
+		},
+		"permutations": [
+			{
+				"components": {
+					"minecraft:tick": {
+						"interval_range": [
+							400,
+							400
+						],
+						"looping": true
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.occult_alter_activated"
+					},
+					"minecraft:custom_components": [
+						"component:blank"
+					],
+					"minecraft:destructible_by_mining": {
+						"seconds_to_destroy": 9999
+					},
+					"tag:occult_alter_is_powered": {}
+				},
+				"condition": "q.block_state('cata:activated')"
+			}
+		],
+		"components": {
+			"minecraft:geometry": "geometry.occult_alter",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "cata_occult_alter",
+					"render_method": "alpha_test"
+				},
+				"flare_stone_pillar_top": {
+					"texture": "cata_flare_stone_pillar_top",
+					"render_method": "alpha_test"
+				},
+				"down": {
+					"texture": "cata_flare_stone_pillar_top",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:collision_box": {
+				"size": [
+					16,
+					12,
+					16
+				],
+				"origin": [
+					-8,
+					0,
+					-8
+				]
+			},
+			"minecraft:selection_box": {
+				"size": [
+					16,
+					12,
+					16
+				],
+				"origin": [
+					-8,
+					0,
+					-8
+				]
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 5
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 9999
+			},
+			"minecraft:custom_components": [
+				"component:occult_alter"
+			],
+			"tag:minecraft:is_pickaxe_item_destructible": {}
+		}
+	}
+}

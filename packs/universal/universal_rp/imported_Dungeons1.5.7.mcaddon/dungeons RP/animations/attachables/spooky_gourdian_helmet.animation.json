@@ -1,0 +1,52 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.spooky_gourdian.fire": {
+			"loop": true,
+			"bones": {
+				"flame0": {
+					"scale": [
+						1,
+						"0.3+math.abs(math.cos(q.anim_time*75)*1.1)",
+						1
+					]
+				},
+				"flame1": {
+					"scale": [
+						1,
+						"0.3+math.abs(math.sin(q.anim_time*50))",
+						1
+					]
+				},
+				"flame2": {
+					"scale": [
+						1,
+						"0.3+math.abs(math.cos(q.anim_time*75)*1.1)",
+						1
+					]
+				},
+				"flame3": {
+					"scale": [
+						1,
+						"0.3+math.abs(math.sin(q.anim_time*50))",
+						1
+					]
+				},
+				"flame4": {
+					"scale": [
+						1,
+						"0.7+math.abs(math.sin(15+q.anim_time*75)*0.6)",
+						1
+					]
+				},
+				"flame5": {
+					"scale": [
+						1,
+						"0.7+math.abs(math.sin(q.anim_time*75)*0.6)",
+						1
+					]
+				}
+			}
+		}
+	}
+}

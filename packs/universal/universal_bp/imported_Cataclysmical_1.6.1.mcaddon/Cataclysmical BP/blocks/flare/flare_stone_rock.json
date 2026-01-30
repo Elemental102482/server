@@ -1,0 +1,53 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "cata:flare_stone_rock"
+		},
+		"components": {
+			"minecraft:geometry": "geometry.cata_custom_plant",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "cata_flare_stone_rock",
+					"render_method": "alpha_test",
+					"ambient_occlusion": false,
+					"face_dimming": false
+				}
+			},
+			"minecraft:light_emission": 0,
+			"minecraft:collision_box": false,
+			"minecraft:selection_box": {
+				"origin": [
+					-5,
+					0,
+					-5
+				],
+				"size": [
+					11,
+					7,
+					11
+				]
+			},
+			"minecraft:loot": "loot_tables/empty.json",
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"block_filter": [
+							"cata:flare_stone",
+							"cata:flare_stone_brick",
+							"cata:polished_flare_stone",
+							"cata:flare_stone_tiles"
+						],
+						"allowed_faces": [
+							"up"
+						]
+					}
+				]
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 80
+			},
+			"tag:minecraft:is_pickaxe_item_destructible": {}
+		}
+	}
+}

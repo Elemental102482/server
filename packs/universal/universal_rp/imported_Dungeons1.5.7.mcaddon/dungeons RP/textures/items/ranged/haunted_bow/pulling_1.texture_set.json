@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "pulling_1",
+        "metalness_emissive_roughness": "pulling_1_mer"
+    }
+}

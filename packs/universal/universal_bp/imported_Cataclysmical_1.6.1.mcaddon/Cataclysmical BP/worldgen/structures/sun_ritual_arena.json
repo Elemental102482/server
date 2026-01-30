@@ -1,0 +1,25 @@
+{
+	"format_version": "1.21.100",
+	"minecraft:jigsaw": {
+		"description": {
+			"identifier": "cata:sun_ritual_arena"
+		},
+		"step": "underground_structures",
+		"terrain_adaptation": "beard_thin",
+		"start_pool": "cata:sun_ritual_arena1",
+		"max_depth": 20,
+		"heightmap_projection": "world_surface",
+		"biome_filters": {
+			"test": "has_biome_tag",
+			"operator": "==",
+			"value": "nether"
+		},
+		"start_height": {
+			"type": "constant",
+			"value": {
+				"absolute": -96
+			}
+		},
+		"liquid_settings": "ignore_waterlogging"
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.plasma.summon": {
+			"animation_length": 1.75,
+			"timeline": {
+				"0.95": [
+					"/summon cata:plasma ~ ~1 ~",
+					"/particle cata:plasma_summon ~ ~1 ~",
+					"/particle cata:plasma_hive_summon ~ ~0.5 ~",
+					"/playsound mob.vex.charge @a[r=10] ~ ~ ~"
+				]
+			}
+		}
+	}
+}

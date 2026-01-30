@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "key_echo",
+        "metalness_emissive_roughness": "key_echo_mer"
+    }
+}

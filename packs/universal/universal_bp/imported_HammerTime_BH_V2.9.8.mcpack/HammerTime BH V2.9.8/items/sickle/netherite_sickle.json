@@ -1,0 +1,72 @@
+{
+  "format_version": "1.20.50",
+  "minecraft:item": {
+    "description": {
+      "identifier": "system:netherite_sickle",
+      "menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.hoe"
+			}
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "netherite_sickle"
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": [
+              "minecraft:netherite_ingot",
+              "system:netherite_sickle"
+            ]
+          }
+        ]
+      },
+      "minecraft:can_destroy_in_creative": false,
+      "minecraft:digger": {
+        "use_efficiency": true,
+        "destroy_speeds": [
+          {
+            "block": "minecraft:leaves",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:leaves2",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:tallgrass",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:seagrass",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:double_plant",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:yellow_flower",
+            "speed": 9
+          },
+          {
+            "block": "minecraft:red_flower",
+            "speed": 9
+          }
+        ]
+      },
+      "minecraft:enchantable": {
+        "value": 10,
+        "slot": "hoe"
+      },
+      "minecraft:display_name": {},
+      "minecraft:mining_speed": 8,
+      "minecraft:durability": {
+        "max_durability": 2030
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true
+    }
+  }
+}

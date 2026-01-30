@@ -1,9 +1,12 @@
 # Ignorar artefatos de build
 /dist/
 *.mcpack
+!important: to allow imported .mcpack files
+!universal_bp/imported_*.mcpack
+!universal_rp/imported_*.mcpack
 
 # Arquivos gerados (os ícones padrão agora podem ser comitados se desejado)
 
 # Imported addons
-universal_bp/imported_*/
-universal_rp/imported_*/
+# NOTE: imported addon directories are now tracked in the repository to make bundled packs reproducible.
+# If you prefer to ignore them, add a more specific ignore rule here.

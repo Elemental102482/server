@@ -1,0 +1,170 @@
+{
+	"format_version": "1.16.210",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "dungeons:vengeful_heart_of_ender_death",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"dungeons:despawn": {
+				"minecraft:instant_despawn": {}
+			},
+			"dungeons:damaged": {
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"cause": "all",
+							"deals_damage": false
+						}
+					]
+				},
+				"minecraft:variant": {
+					"value": 1
+				},
+				"minecraft:timer": {
+					"looping": false,
+					"time": 8.9167,
+					"time_down_event": {
+						"event": "dungeons:despawn"
+					}
+				}
+			}
+		},
+		"components": {
+			"minecraft:scale": {
+				"value": 1
+			},
+			"minecraft:movement": {
+				"value": 0
+			},
+			"minecraft:type_family": {
+				"family": [
+					"vengeful_heart_of_ender_death",
+					"inanimate",
+					"gravity_immune"
+				]
+			},
+			"minecraft:variant": {
+				"value": 0
+			},
+			"minecraft:collision_box": {
+				"height": 8,
+				"width": 4.5
+			},
+			"minecraft:health": {
+				"value": 50000,
+				"max": 50000
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"on_damage": {
+							"filters": {
+								"all_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									},
+									{
+										"test": "is_variant",
+										"subject": "self",
+										"value": 0
+									},
+									{
+										"test": "inactivity_timer",
+										"subject": "self",
+										"operator": ">=",
+										"value": 1
+									}
+								]
+							},
+							"event": "dungeons:damaged"
+						},
+						"deals_damage": false
+					},
+					{
+						"on_damage": {
+							"filters": {
+								"any_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"operator": "not",
+										"value": "player"
+									},
+									{
+										"test": "is_variant",
+										"subject": "self",
+										"operator": "not",
+										"value": 0
+									},
+									{
+										"test": "inactivity_timer",
+										"subject": "self",
+										"operator": "<",
+										"value": 1
+									}
+								]
+							}
+						},
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:boss": {
+				"should_darken_sky": true,
+				"hud_range": 64,
+				"name": " §dVengeful Heart of Ender§r "
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:navigation.walk": {
+				"is_amphibious": true,
+				"avoid_sun": false,
+				"can_walk": true
+			},
+			"minecraft:knockback_resistance": {
+				"value": 1
+			},
+			"minecraft:fire_immune": {},
+			"minecraft:persistent": {},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:experience_reward": {
+				"on_death": 3000
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/vengeful_heart_of_ender.json"
+			},
+			"minecraft:conditional_bandwidth_optimization": {}
+		},
+		"events": {
+			"dungeons:despawn": {
+				"queue_command": {
+					"command": [
+						"event entity @e[type=dungeons:void_portal,c=1,r=64] dungeons:despawn",
+						"kill @s"
+					]
+				}
+			},
+			"minecraft:entity_spawned": {
+				"queue_command": {
+					"command": [
+						"playsound mob.vhoe.die @a[r=64] ~~~ 8.0 1.0",
+						"scriptevent dungeons:vhoe_death"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"dungeons:damaged"
+					]
+				}
+			}
+		}
+	}
+}

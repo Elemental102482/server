@@ -1,0 +1,36 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "cata:phantasma_bottle"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "cata:phantasma_nucleus",
+				"count": 1
+			},
+			{
+				"item": "cata:terrorite_brick",
+				"count": 1
+			},
+			{
+				"item": "cata:ectoplasm",
+				"count": 1
+			},
+			{
+				"item": "minecraft:glass_bottle",
+				"count": 1
+			}
+		],
+		"result": {
+			"item": "cata:phantasma_bottle",
+			"count": 1
+		},
+		"unlock": {
+			"context": "AlwaysUnlocked"
+		}
+	}
+}

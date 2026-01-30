@@ -1,0 +1,55 @@
+{
+  "format_version": "1.20.50",
+  "minecraft:item": {
+    "description": {
+      "identifier": "system:redstone_great_sword",
+      "menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.sword"
+			}
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "redstone_great_sword"
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": [
+              "minecraft:redstone_block",
+              "system:redstone_great_sword"
+            ]
+          }
+        ]
+      },
+      "minecraft:can_destroy_in_creative": false,
+      "minecraft:digger": {
+        "use_efficiency": false,
+        "destroy_speeds": [
+          {
+            "block": "minecraft:web",
+            "speed": 19
+          },
+          {
+            "block": "minecraft:bamboo",
+            "speed": 14
+          }
+        ]
+      },
+      "minecraft:enchantable": {
+        "value": 10,
+        "slot": "sword"
+      },
+      "minecraft:display_name": {},
+      "minecraft:damage": {
+        "value": 8
+      },
+      "minecraft:mining_speed": 8,
+      "minecraft:durability": {
+        "max_durability": 627
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true
+    }
+  }
+}

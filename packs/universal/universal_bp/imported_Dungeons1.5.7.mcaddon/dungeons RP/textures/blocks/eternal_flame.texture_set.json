@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "eternal_flame",
+        "metalness_emissive_roughness": "eternal_flame_mer"
+    }
+}

@@ -1,0 +1,17 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:item": {
+		"description": {
+			"identifier": "cata:blossom_jewel",
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:rarity": {
+				"value": "uncommon"
+			},
+			"minecraft:icon": "cata_blossom_jewel"
+		}
+	}
+}

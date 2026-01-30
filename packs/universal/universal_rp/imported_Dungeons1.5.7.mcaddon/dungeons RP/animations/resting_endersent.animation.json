@@ -1,0 +1,73 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.resting_endersent.idle": {
+			"loop": true,
+			"animation_length": 6,
+			"bones": {
+				"eye": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"3.0": [
+							0,
+							0,
+							0
+						]
+					},
+					"position": [
+						0,
+						"11+math.cos(q.life_time*180)",
+						0
+					],
+					"scale": 1.1
+				}
+			}
+		},
+		"animation.resting_endersent.awaken": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 5,
+			"sound_effects": {
+				"0.1": {
+					"effect": "awaken"
+				}
+			},
+			"bones": {
+				"eye": {
+					"rotation": [
+						0,
+						"360*(q.anim_time*q.anim_time)",
+						0
+					],
+					"position": [
+						0,
+						"11+math.cos(q.life_time*180)",
+						0
+					],
+					"scale": {
+						"0.0": [
+							1.1,
+							1.1,
+							1.1
+						],
+						"2.5": {
+							"pre": [
+								1.1,
+								1.1,
+								1.1
+							],
+							"post": [
+								0,
+								0,
+								0
+							]
+						}
+					}
+				}
+			}
+		}
+	}
+}

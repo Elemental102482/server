@@ -1,0 +1,27 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cata:abyssal_stone_brick"
+		},
+		"pattern": [
+			"11",
+			"11"
+		],
+		"key": {
+			"1": {
+				"item": "cata:abyssal_stone"
+			}
+		},
+		"result": {
+			"item": "cata:abyssal_stone_brick",
+			"count": 4
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": {
+			"context": "AlwaysUnlocked"
+		}
+	}
+}

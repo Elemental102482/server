@@ -1,0 +1,23 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:wind_totem_right",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "entity_emissive"
+			},
+			"textures": {
+				"default": "textures/entity/totem1",
+				"on": "textures/entity/totem2"
+			},
+			"geometry": {
+				"default": "geometry.wind_totem"
+			},
+			"render_controllers": [
+				"controller.render.wind_totem"
+			],
+			"enable_attachables": false
+		}
+	}
+}

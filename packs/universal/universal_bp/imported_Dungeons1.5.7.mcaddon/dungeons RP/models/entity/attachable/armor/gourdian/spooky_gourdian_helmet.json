@@ -1,0 +1,286 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.spooky_gourdian_helmet",
+				"texture_width": 56,
+				"texture_height": 68,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [
+					0,
+					1.5,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "waist",
+					"pivot": [
+						0,
+						12,
+						0
+					]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [
+						0,
+						24,
+						0
+					]
+				},
+				{
+					"name": "head",
+					"parent": "body",
+					"pivot": [
+						0,
+						24,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-1,
+								34.1,
+								0
+							],
+							"size": [
+								2,
+								4,
+								0
+							],
+							"uv": [
+								24,
+								36
+							]
+						},
+						{
+							"origin": [
+								-5,
+								23.6,
+								-5
+							],
+							"size": [
+								10,
+								10,
+								10
+							],
+							"inflate": 0.7,
+							"uv": [
+								16,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "fire",
+					"parent": "head",
+					"pivot": [
+						0,
+						24,
+						0
+					]
+				},
+				{
+					"name": "flame0",
+					"parent": "fire",
+					"pivot": [
+						-6,
+						23,
+						3
+					],
+					"rotation": [
+						0,
+						0,
+						-2.5
+					],
+					"cubes": [
+						{
+							"origin": [
+								-6,
+								23,
+								0
+							],
+							"size": [
+								0,
+								12,
+								6
+							],
+							"uv": [
+								0,
+								50
+							]
+						}
+					]
+				},
+				{
+					"name": "flame1",
+					"parent": "fire",
+					"pivot": [
+						-6,
+						23,
+						-3
+					],
+					"rotation": [
+						0,
+						0,
+						-2.5
+					],
+					"cubes": [
+						{
+							"origin": [
+								-6,
+								23,
+								-6
+							],
+							"size": [
+								0,
+								12,
+								6
+							],
+							"uv": [
+								30,
+								50
+							]
+						}
+					]
+				},
+				{
+					"name": "flame2",
+					"parent": "fire",
+					"pivot": [
+						7,
+						23,
+						3
+					],
+					"rotation": [
+						0,
+						0,
+						2.5
+					],
+					"cubes": [
+						{
+							"origin": [
+								6,
+								23,
+								0
+							],
+							"size": [
+								0,
+								12,
+								6
+							],
+							"uv": [
+								17,
+								50
+							],
+							"mirror": true
+						}
+					]
+				},
+				{
+					"name": "flame3",
+					"parent": "fire",
+					"pivot": [
+						7,
+						23,
+						-3
+					],
+					"rotation": [
+						0,
+						0,
+						2.5
+					],
+					"cubes": [
+						{
+							"origin": [
+								6,
+								23,
+								-6
+							],
+							"size": [
+								0,
+								12,
+								6
+							],
+							"uv": [
+								30,
+								50
+							]
+						}
+					]
+				},
+				{
+					"name": "flame4",
+					"parent": "fire",
+					"pivot": [
+						-3,
+						23,
+						7
+					],
+					"rotation": [
+						-90,
+						-87.5,
+						90
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								23,
+								4
+							],
+							"size": [
+								0,
+								12,
+								6
+							],
+							"uv": [
+								0,
+								50
+							],
+							"mirror": true
+						}
+					]
+				},
+				{
+					"name": "flame5",
+					"parent": "fire",
+					"pivot": [
+						3,
+						23,
+						7
+					],
+					"rotation": [
+						-90,
+						-87.5,
+						90
+					],
+					"cubes": [
+						{
+							"origin": [
+								2,
+								23,
+								4
+							],
+							"size": [
+								0,
+								12,
+								6
+							],
+							"uv": [
+								11,
+								50
+							],
+							"mirror": true
+						}
+					]
+				}
+			]
+		}
+	]
+}

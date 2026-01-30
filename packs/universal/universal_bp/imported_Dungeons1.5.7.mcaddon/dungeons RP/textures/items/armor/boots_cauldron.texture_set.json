@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "boots_cauldron",
+        "metalness_emissive_roughness": "boots_cauldron_mer"
+    }
+}

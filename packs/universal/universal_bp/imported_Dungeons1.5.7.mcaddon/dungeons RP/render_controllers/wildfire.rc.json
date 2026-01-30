@@ -1,0 +1,31 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.wildfire": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"texture.default"
+			],
+			"ignore_lighting": true,
+			"part_visibility": [
+				{
+					"shield1*": "query.property('dungeons:shields') > 3"
+				},
+				{
+					"shield3*": "query.property('dungeons:shields') > 2"
+				},
+				{
+					"shield2*": "query.property('dungeons:shields') > 1"
+				},
+				{
+					"shield4*": "query.property('dungeons:shields') > 0"
+				}
+			]
+		}
+	}
+}

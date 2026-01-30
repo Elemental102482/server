@@ -1,0 +1,37 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:jungle_abomination_resting",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/jungle_abomination/off",
+				"on": "textures/entity/jungle_abomination/on"
+			},
+			"geometry": {
+				"default": "geometry.jungle_abomination"
+			},
+			"render_controllers": [
+				"controller.render.redstone_monstrosity"
+			],
+			"animations": {
+				"resting": "animation.jungle_abomination.sleep",
+				"awaken": "animation.jungle_abomination.activate",
+				"wake_controller": "controller.animation.redstone_monstrosity.rest"
+			},
+			"scripts": {
+				"animate": [
+					"wake_controller"
+				]
+			},
+			"sound_effects": {
+				"awaken": "mob.jungle_abomination.awaken"
+			},
+			"spawn_egg": {
+				"texture": "egg_jungle_abomination"
+			}
+		}
+	}
+}

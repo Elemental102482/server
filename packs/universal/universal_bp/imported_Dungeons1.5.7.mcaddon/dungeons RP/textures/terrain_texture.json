@@ -1,0 +1,107 @@
+{
+	"resource_pack_name": "dungeons",
+	"texture_name": "atlas.terrain",
+	"padding": 8,
+	"num_mip_levels": 4,
+	"texture_data": {
+		"redstone_golem_head": {
+			"textures": "textures/blocks/redstone_golem_head"
+		},
+		"wildfire_head": {
+			"textures": "textures/blocks/wildfire_head"
+		},
+		"ministrosity": {
+			"textures": "textures/blocks/ministrosity"
+		},
+		"wretched_trophy": {
+			"textures": "textures/blocks/wretched_trophy"
+		},
+		"nameless_staff": {
+			"textures": "textures/blocks/nameless_staff"
+		},
+		"corrupted_core": {
+			"textures": "textures/blocks/corrupted_core"
+		},
+		"benevolent_brew": {
+			"textures": "textures/blocks/benevolent_brew"
+		},
+		"abomination_bloom": {
+			"textures": "textures/blocks/abomination_bloom"
+		},
+		"whirlwindgig": {
+			"textures": "textures/blocks/whirlwindgig"
+		},
+		"enormous_eyeball": {
+			"textures": "textures/blocks/enormous_eyeball"
+		},
+		"blaze_cage": {
+			"textures": "textures/blocks/blaze_cage"
+		},
+		"skullager": {
+			"textures": "textures/blocks/skullager"
+		},
+		"empty": {
+			"textures": "textures/blocks/empty"
+		},
+		"redstone_painting": {
+			"textures": "textures/blocks/redstone_painting"
+		},
+		"nameless_painting": {
+			"textures": "textures/blocks/nameless_painting"
+		},
+		"mooshroom_painting": {
+			"textures": "textures/blocks/mooshroom_painting"
+		},
+		"wraith_painting": {
+			"textures": "textures/blocks/wraith_painting"
+		},
+		"cauldron_painting": {
+			"textures": "textures/blocks/cauldron_painting"
+		},
+		"abomination_painting": {
+			"textures": "textures/blocks/abomination_painting"
+		},
+		"spooky_painting": {
+			"textures": "textures/blocks/spooky_painting"
+		},
+		"tempest_painting": {
+			"textures": "textures/blocks/tempest_painting"
+		},
+		"guardian_painting": {
+			"textures": "textures/blocks/guardian_painting"
+		},
+		"wildfire_painting": {
+			"textures": "textures/blocks/wildfire_painting"
+		},
+		"vengeful_painting": {
+			"textures": "textures/blocks/vengeful_painting"
+		},
+		"void_fluid": {
+			"textures": "textures/blocks/void"
+		},
+		"endersent_painting": {
+			"textures": "textures/blocks/endersent_painting"
+		},
+		"void_frame": {
+			"textures": "textures/blocks/voidframe_unified"
+		},
+		"void_frame_top": {
+			"textures": "textures/blocks/voidframe_top"
+		},
+		"void_frame_side": {
+			"textures": "textures/blocks/voidframe_side"
+		},
+		"void_frame_eye": {
+			"textures": "textures/blocks/voidframe_eye"
+		},
+		"enchanted_pearl": {
+			"textures": "textures/blocks/enchanted_pearl"
+		},
+		"eternal_brazier": {
+			"textures": "textures/blocks/eternal_brazier"
+		},
+		"eternal_flame": {
+			"textures": "textures/blocks/eternal_flame"
+		}
+	}
+}

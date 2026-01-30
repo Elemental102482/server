@@ -1,0 +1,410 @@
+{
+	"format_version": "1.21.80",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "cata:eternal_seal",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			"animations": {
+				"slam_attack": "animation.eternal_seal.slam_attack",
+				"triple_slam_attack": "animation.eternal_seal.triple_slam_attack",
+				"summon": "animation.eternal_seal.summon",
+				"attack_controller": "controller.animation.eternal_seal.attack_controller",
+				"death": "animation.eternal_seal.death"
+			},
+			"scripts": {
+				"animate": [
+					"attack_controller"
+				]
+			}
+		},
+		"component_groups": {
+			"meteor_attack": {
+				"minecraft:skin_id": {
+					"value": 1
+				},
+				"minecraft:behavior.summon_entity": {
+					"priority": 1,
+					"summon_choices": [
+						{
+							"do_casting": true,
+							"weight": 1,
+							"cast_duration": 1,
+							"sequence": [
+								{
+									"shape": "line",
+									"target": "target",
+									"base_delay": 0,
+									"delay_per_summon": 0,
+									"entity_type": "cata:flare_stone_meteor",
+									"num_entities_spawned": 1,
+									"entity_lifespan": -1,
+									"summon_cap": 1,
+									"summon_cap_radius": 1
+								}
+							],
+							"min_activation_range": 0,
+							"max_activation_range": 10
+						}
+					]
+				},
+				"minecraft:timer": {
+					"looping": true,
+					"time": [
+						5,
+						5
+					],
+					"time_down_event": {
+						"event": "slam"
+					}
+				}
+			},
+			"slam_attack": {
+				"minecraft:skin_id": {
+					"value": 2
+				},
+				"minecraft:behavior.delayed_attack": {
+					"priority": 1,
+					"speed_multiplier": 1,
+					"attack_once": false,
+					"require_complete_path": true,
+					"attack_duration": 1.75,
+					"reach_multiplier": 2.2,
+					"track_target": false,
+					"hit_delay_pct": 0.4
+				},
+				"minecraft:attack": {
+					"damage": 18
+				}
+			},
+			"triple_slam_attack": {
+				"minecraft:skin_id": {
+					"value": 3
+				},
+				"minecraft:behavior.delayed_attack": {
+					"priority": 1,
+					"speed_multiplier": 1,
+					"attack_once": false,
+					"require_complete_path": true,
+					"attack_duration": 3.25,
+					"reach_multiplier": 2.2,
+					"track_target": false,
+					"hit_delay_pct": 0.2
+				},
+				"minecraft:attack": {
+					"damage": 18
+				}
+			},
+			"meteor_madness": {
+				"minecraft:skin_id": {
+					"value": 4
+				},
+				"minecraft:behavior.summon_entity": {
+					"priority": 1,
+					"summon_choices": [
+						{
+							"do_casting": true,
+							"weight": 1,
+							"cast_duration": 1,
+							"sequence": [
+								{
+									"shape": "circle",
+									"target": "self",
+									"base_delay": 0,
+									"delay_per_summon": 0,
+									"entity_type": "cata:flare_stone_meteor",
+									"num_entities_spawned": 0,
+									"entity_lifespan": 0,
+									"summon_cap": 1
+								}
+							],
+							"cooldown_time": 2
+						}
+					]
+				}
+			},
+			"can_move": {
+				"minecraft:movement": {
+					"value": 0.18
+				}
+			},
+			"is_attacking": {
+				"minecraft:movement": {
+					"value": 0.01
+				}
+			},
+			"death": {
+				"minecraft:timer": {
+					"looping": true,
+					"time": [
+						3.5,
+						3.5
+					],
+					"time_down_event": {
+						"event": "phase2"
+					}
+				}
+			},
+			"despawn": {
+				"minecraft:instant_despawn": {
+					"remove_child_entities": true
+				}
+			}
+		},
+		"components": {
+			"minecraft:boss": {
+				"should_darken_sky": true,
+				"hud_range": 120,
+				"name": "Eternal Seal"
+			},
+			"minecraft:health": {
+				"value": 500,
+				"max": 500,
+				"min": 1
+			},
+			"minecraft:type_family": {
+				"family": [
+					"mob",
+					"monster",
+					"solar"
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 2.2,
+				"height": 3.6
+			},
+			"minecraft:physics": {
+				"has_collision": true,
+				"has_gravity": true
+			},
+			"minecraft:movement.basic": {
+				"max_turn": 20
+			},
+			"minecraft:navigation.walk": {
+				"avoid_powder_snow": true,
+				"avoid_portals": true,
+				"avoid_damage_blocks": true,
+				"avoid_water": true,
+				"can_path_over_water": true,
+				"can_path_over_lava": true,
+				"can_walk_in_lava": true
+			},
+			"minecraft:jump.static": {},
+			"minecraft:can_climb": {},
+			"minecraft:scale": {
+				"value": 1.2
+			},
+			"minecraft:knockback_resistance": {
+				"value": 10
+			},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1
+			},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 1,
+				"must_see": false,
+				"reselect_targets": true,
+				"entity_types": {
+					"filters": {
+						"all_of": [
+							{
+								"subject": "other",
+								"test": "is_family",
+								"value": "player"
+							}
+						]
+					},
+					"max_dist": 64,
+					"must_see": false
+				}
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "fall",
+						"deals_damage": "no"
+					},
+					{
+						"cause": "fire",
+						"deals_damage": "no"
+					},
+					{
+						"cause": "fire_tick",
+						"deals_damage": "no"
+					},
+					{
+						"cause": "projectile",
+						"damage_multiplier": 0.01,
+						"on_damage_sound_event": "hurt_by_projectile"
+					}
+				]
+			},
+			"minecraft:behavior.follow_mob": {
+				"priority": 3,
+				"start_distance": 16,
+				"stop_distance": 10,
+				"search_range": 64,
+				"filters": {
+					"operator": "==",
+					"subject": "other",
+					"test": "is_family",
+					"value": "player"
+				}
+			},
+			"minecraft:movement": {
+				"value": 0.1
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"can_move"
+					]
+				},
+				"trigger": {
+					"event": "attack_types"
+				}
+			},
+			"attack_types": {
+				"randomize": [
+					{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"meteor_madness"
+							]
+						},
+						"remove": {
+							"component_groups": [
+								"meteor_attack",
+								"slam_attack",
+								"triple_slam_attack"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"triple_slam_attack"
+							]
+						},
+						"remove": {
+							"component_groups": [
+								"meteor_attack",
+								"slam_attack",
+								"meteor_madness"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"meteor_attack"
+							]
+						},
+						"remove": {
+							"component_groups": [
+								"slam_attack",
+								"triple_slam_attack",
+								"meteor_madness"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"slam_attack"
+							]
+						},
+						"remove": {
+							"component_groups": [
+								"meteor_attack",
+								"triple_slam_attack",
+								"meteor_madness"
+							]
+						}
+					}
+				]
+			},
+			"is_attacking": {
+				"add": {
+					"component_groups": [
+						"is_attacking"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"can_move"
+					]
+				}
+			},
+			"finish_attack": {
+				"add": {
+					"component_groups": [
+						"can_move"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"is_attacking"
+					]
+				}
+			},
+			"slam": {
+				"add": {
+					"component_groups": [
+						"slam_attack"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"meteor_attack",
+						"triple_slam_attack",
+						"meteor_madness"
+					]
+				}
+			},
+			"phase2": {
+				"add": {
+					"component_groups": [
+						"despawn"
+					]
+				},
+				"queue_command": {
+					"command": [
+						"summon cata:sun_tribunal ~ ~ ~",
+						"particle cata:eternal_seal_spawn1 ~ ~5 ~",
+						"particle cata:eternal_seal_spawn2 ~ ~5 ~",
+						"particle cata:eternal_seal_spawn3 ~ ~5 ~"
+					]
+				}
+			},
+			"death": {
+				"add": {
+					"component_groups": [
+						"death",
+						"is_attacking"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"meteor_attack",
+						"slam_attack",
+						"triple_slam_attack",
+						"meteor_madness",
+						"can_move"
+					]
+				}
+			}
+		}
+	}
+}

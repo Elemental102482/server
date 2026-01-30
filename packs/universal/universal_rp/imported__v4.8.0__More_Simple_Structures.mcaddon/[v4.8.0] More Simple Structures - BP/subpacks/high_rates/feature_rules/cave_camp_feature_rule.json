@@ -1,0 +1,40 @@
+//bridge-file-version: #24
+{
+	"format_version": "1.13.0",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "korbon:cave_camp_feature_rule",
+			"places_feature": "korbon:cave_camp_feature_mcstructure"
+		},
+		"conditions": {
+			"placement_pass": "after_underground_pass",
+			"minecraft:biome_filter": [
+				{
+					"any_of": [
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "overworld"
+						}
+					]
+				}
+			]
+		},
+		"distribution": {
+			"iterations": 3,
+			"scatter_chance": {
+				"numerator": 2,
+				"denominator": 3
+			},
+			"z": 0,
+			"y": {
+				"distribution": "uniform",
+				"extent": [
+					-30,
+					30
+				]
+			},
+			"x": 0
+		}
+	}
+}

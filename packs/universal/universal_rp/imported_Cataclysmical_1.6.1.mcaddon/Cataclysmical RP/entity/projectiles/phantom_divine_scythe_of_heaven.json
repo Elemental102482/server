@@ -1,0 +1,39 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "cata:phantom_divine_scythe_of_heaven",
+			"materials": {
+				"default": "drowned"
+			},
+			"textures": {
+				"default": "textures/entity/projectile/phantom_divine_scythe_of_heaven"
+			},
+			"geometry": {
+				"default": "geometry.phantom_divine_scythe_of_heaven"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "cata_stone_golem_egg"
+			},
+			"animations": {
+				"move": "animation.sun_tribunal_phantom_blade.move",
+				"particle": "animation.sun_tribunal_phantom_blade.particle"
+			},
+			"scripts": {
+				"animate": [
+					"particle",
+					"move"
+				]
+			},
+			"sound_effects": {
+				"phatom_sword_spin": "mob.phatom_sword_spin"
+			},
+			"particle_effects": {
+				"sun_tribunal_phantom_blade_emitter": "cata:sun_tribunal_phantom_blade_emitter"
+			}
+		}
+	}
+}

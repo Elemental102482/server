@@ -1,0 +1,39 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "tome_of_duplication"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"PDB",
+			"DED",
+			"BDP"
+		],
+		"unlock": [
+			{
+				"item": "dungeons:diamond_dust"
+			}
+		],
+		"key": {
+			"D": {
+				"item": "dungeons:diamond_dust"
+			},
+			"B": {
+				"item": "minecraft:amethyst_block"
+			},
+			"P": {
+				"item": "minecraft:gold_block"
+			},
+			"E": {
+				"item": "minecraft:book"
+			}
+		},
+		"result": {
+			"item": "dungeons:tome_of_duplication",
+			"count": 1
+		}
+	}
+}

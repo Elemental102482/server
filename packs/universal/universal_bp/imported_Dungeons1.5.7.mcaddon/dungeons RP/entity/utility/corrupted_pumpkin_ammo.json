@@ -1,0 +1,37 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:corrupted_pumpkin_ammo",
+			"materials": {
+				"default": "fireball"
+			},
+			"textures": {
+				"default": "textures/misc/void"
+			},
+			"geometry": {
+				"default": "geometry.fireball"
+			},
+			"animations": {
+				"face_player": "animation.actor.billboard",
+				"particles": "animation.corrupted_beacon.particles"
+			},
+			"particle_effects": {
+				"energy": "dungeons:corrupted_pumpkin",
+				"energy2": "dungeons:corrupted_pumpkin_alt"
+			},
+			"scripts": {
+				"scale": "0.45",
+				"animate": [
+					"face_player",
+					{
+						"particles": "20"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.blastling_ammo"
+			]
+		}
+	}
+}

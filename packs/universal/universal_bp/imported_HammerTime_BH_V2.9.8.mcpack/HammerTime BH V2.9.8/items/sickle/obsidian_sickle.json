@@ -1,0 +1,73 @@
+{
+  "format_version": "1.20.50",
+  "minecraft:item": {
+    "description": {
+      "identifier": "system:obsidian_sickle",
+      "menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.hoe"
+			}
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "obsidian_sickle"
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": [
+              "minecraft:obsidian",
+              "minecraft:crying_obsidian",
+              "system:obsidian_sickle"
+            ]
+          }
+        ]
+      },
+      "minecraft:can_destroy_in_creative": false,
+      "minecraft:digger": {
+        "use_efficiency": true,
+        "destroy_speeds": [
+          {
+            "block": "minecraft:leaves",
+            "speed": 8
+          },
+          {
+            "block": "minecraft:leaves2",
+            "speed": 8
+          },
+          {
+            "block": "minecraft:tallgrass",
+            "speed": 8
+          },
+          {
+            "block": "minecraft:seagrass",
+            "speed": 8
+          },
+          {
+            "block": "minecraft:double_plant",
+            "speed": 8
+          },
+          {
+            "block": "minecraft:yellow_flower",
+            "speed": 8
+          },
+          {
+            "block": "minecraft:red_flower",
+            "speed": 8
+          }
+        ]
+      },
+      "minecraft:enchantable": {
+        "value": 10,
+        "slot": "hoe"
+      },
+      "minecraft:display_name": {},
+      "minecraft:mining_speed": 8,
+      "minecraft:durability": {
+        "max_durability": 1838
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true
+    }
+  }
+}

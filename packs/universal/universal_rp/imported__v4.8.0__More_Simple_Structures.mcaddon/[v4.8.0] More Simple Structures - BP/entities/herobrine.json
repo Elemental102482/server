@@ -1,0 +1,199 @@
+//bridge-file-version: #46
+{
+	"format_version": "1.19.20",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "korbon:herobrine",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"runtime_identifier": "minecraft:spider"
+		},
+		"component_groups": {
+			"despawn": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:breathable": {
+				"total_supply": 15,
+				"suffocate_time": 0,
+				"breathes_water": true
+			},
+			"minecraft:health": {
+				"value": 1000,
+				"max": 1000
+			},
+			"minecraft:attack": {
+				"damage": 20,
+				"effect_name": "blindness",
+				"effect_duration": 5
+			},
+			"minecraft:movement": {
+				"value": 0.25
+			},
+			"minecraft:navigation.walk": {
+				"is_amphibious": true,
+				"avoid_sun": false,
+				"avoid_water": true,
+				"avoid_damage_blocks": true,
+				"can_open_doors": true,
+				"can_pass_doors": true,
+				"can_sink": false,
+				"can_walk_in_lava": true,
+				"can_path_over_lava": true,
+				"can_path_over_water": true
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:can_climb": {},
+			"minecraft:fire_immune": {},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1
+			},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 1,
+				"reselect_targets": true,
+				"must_see": false,
+				"entity_types": [
+					{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"value": "player"
+						},
+						"max_dist": 16
+					}
+				],
+				"set_persistent": true
+			},
+			"minecraft:behavior.melee_attack": {
+				"priority": 1,
+				"track_target": true,
+				"speed_multiplier": 1.7,
+				"on_attack": {
+					"event": "despawn"
+				}
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 1,
+				"look_distance": 500
+			},
+			"minecraft:type_family": {
+				"family": [
+					"monster",
+					"mob",
+					"herobrine"
+				]
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:annotation.open_door": {},
+			"minecraft:behavior.open_door": {
+				"priority": 3,
+				"close_door_after": false
+			},
+			"minecraft:break_blocks": {
+				"breakable_blocks": [
+					"minecraft:planks",
+					"minecraft:cobblestone",
+					"minecraft:mossy_cobblestone",
+					"minecraft:stone",
+					"minecraft:dirt"
+				]
+			},
+			"minecraft:knockback_resistance": {
+				"value": 1
+			},
+			"minecraft:scale": {
+				"value": 1
+			},
+			"minecraft:target_nearby_sensor": {
+				"inside_range": 3,
+				"on_inside_range": {
+					"event": "despawn"
+				}
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "all",
+						"on_damage": {
+							"event": "despawn"
+						}
+					}
+				]
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {},
+			"despawn": {
+				"sequence": [
+					{
+						"queue_command": {
+							"command": "summon lightning_bolt ~~~"
+						},
+						"add": {
+							"component_groups": [
+								"despawn"
+							]
+						}
+					},
+					{
+						"queue_command": {
+							"command": "tellraw @a {\"rawtext\":[{\"text\":\"<Herobrine> §fIt has only just begun..\"}]}"
+						}
+					},
+					{
+						"queue_command": {
+							"command": "summon korbon:possessed_cow ~~~"
+						}
+					},
+					{
+						"queue_command": {
+							"command": "summon korbon:possessed_cow ~~~"
+						}
+					},
+					{
+						"queue_command": {
+							"command": "summon korbon:possessed_cow ~~~"
+						}
+					},
+					{
+						"queue_command": {
+							"command": "summon korbon:possessed_villager ~~~"
+						}
+					},
+					{
+						"queue_command": {
+							"command": "summon korbon:possessed_villager ~~~"
+						}
+					},
+					{
+						"queue_command": {
+							"command": "summon korbon:possessed_villager ~~~"
+						}
+					},
+					{
+						"queue_command": {
+							"command": "playsound ambient.cave @p[r=25] ~~~ 5 0.4"
+						}
+					},
+					{
+						"queue_command": {
+							"command": "playsound ambient.cave @p[r=25] ~~~ 5 0.4"
+						}
+					},
+					{
+						"queue_command": {
+							"command": "playsound ambient.cave @p[r=25] ~~~ 5 0.4"
+						}
+					}
+				]
+			}
+		}
+	}
+}

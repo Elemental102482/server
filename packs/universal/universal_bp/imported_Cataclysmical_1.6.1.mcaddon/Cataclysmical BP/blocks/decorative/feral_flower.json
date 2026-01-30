@@ -1,0 +1,60 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:block": {
+		"description": {
+			"identifier": "cata:feral_flower"
+		},
+		"components": {
+			"minecraft:geometry": "geometry.feral_flower",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "cata_feral_flower",
+					"render_method": "alpha_test",
+					"ambient_occlusion": false,
+					"face_dimming": false
+				}
+			},
+			"minecraft:collision_box": false,
+			"minecraft:selection_box": {
+				"size": [
+					16,
+					2,
+					16
+				],
+				"origin": [
+					-8,
+					0,
+					-8
+				]
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0
+			},
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"block_filter": [
+							"cata:feralplast",
+							"cata:gneiss",
+							"cata:smooth_gneiss_brick",
+							"cata:gneiss_grate",
+							"cata:gneiss_brick",
+							"cata:unbreakable_gneiss",
+							"cata:unbreakable_gneiss_brick",
+							"cata:unbreakable_smooth_gneiss_brick",
+							"cata:unbreakable_cut_gneiss",
+							"cata:cut_gneiss",
+							"minecraft:cobbled_deepslate",
+							"minecraft:deepslate",
+							"cata:polished_feralplast",
+							"cata:feralplast_brick"
+						],
+						"allowed_faces": [
+							"up"
+						]
+					}
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cata:empty_ring"
+		},
+		"pattern": [
+			" 1 ",
+			"1 1",
+			" 1 "
+		],
+		"key": {
+			"1": {
+				"item": "cata:platinum_alloy"
+			}
+		},
+		"result": {
+			"item": "cata:empty_ring",
+			"count": 1
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": {
+			"context": "AlwaysUnlocked"
+		}
+	}
+}

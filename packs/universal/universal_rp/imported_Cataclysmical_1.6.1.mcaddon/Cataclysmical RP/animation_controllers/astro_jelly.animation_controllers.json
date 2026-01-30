@@ -1,0 +1,51 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.astro_jelly.blow_up_controller": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"blow_up": "query.is_sheared"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"blow_up": {
+					"animations": [
+						"blow_up"
+					],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				}
+			}
+		},
+		"controller.animation.astro_jelly.random_controller": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"random": "query.skin_id==1"
+						}
+					]
+				},
+				"random": {
+					"animations": [
+						"random"
+					],
+					"transitions": [
+						{
+							"default": "!query.skin_id==1"
+						}
+					]
+				}
+			}
+		}
+	}
+}

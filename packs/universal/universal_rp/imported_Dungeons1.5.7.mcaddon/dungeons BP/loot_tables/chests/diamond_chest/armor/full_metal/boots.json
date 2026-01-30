@@ -1,0 +1,62 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "dungeons:full_metal_boots",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "dungeons:full_metal_chestplate",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "random_chance",
+              "chance": 0.7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "dungeons:full_metal_leggings",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "random_chance",
+              "chance": 0.7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "dungeons:full_metal_helmet",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "random_chance",
+              "chance": 0.7
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

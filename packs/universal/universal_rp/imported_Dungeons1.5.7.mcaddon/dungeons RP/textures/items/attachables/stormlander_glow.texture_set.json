@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "stormlander_glow",
+        "metalness_emissive_roughness": "stormlander_glow_mer"
+    }
+}

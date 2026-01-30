@@ -1,0 +1,761 @@
+{
+	"format_version": "1.14.0",
+	"sound_definitions": {
+		"attack.sweep": {
+			"category": "player",
+			"sounds": [
+				"sounds/sweep/sweep1",
+				"sounds/sweep/sweep2",
+				"sounds/sweep/sweep3",
+				"sounds/sweep/sweep4",
+				"sounds/sweep/sweep5",
+				"sounds/sweep/sweep6",
+				"sounds/sweep/sweep7"
+			]
+		},
+		"diamond_chest.open": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/diamond_chest/open"
+			]
+		},
+		"mob.blastling.shoot": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/blastling/shoot"
+			]
+		},
+		"mob.monstrosity.step": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/monstrosity/step_1",
+				"sounds/monstrosity/step_2"
+			]
+		},
+		"mob.monstrosity.awaken": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/monstrosity/awaken"
+			]
+		},
+		"mob.snareling.shoot": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/snareling/shoot"
+			]
+		},
+		"mob.snareling.impact": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/snareling/hit_1",
+				"sounds/snareling/hit_2"
+			]
+		},
+		"mob.endersent.attack": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/endersent/attack"
+			]
+		},
+		"mob.endersent.death": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/endersent/death"
+			]
+		},
+		"mob.endersent.teleport": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/endersent/teleport"
+			]
+		},
+		"mob.endersent.hurt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/endersent/hurt_1",
+				"sounds/endersent/hurt_2"
+			]
+		},
+		"mob.endersent.idle": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/endersent/idle_1",
+				"sounds/endersent/idle_2"
+			]
+		},
+		"mob.nameless_one.laugh": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/nameless_one/awaken"
+			]
+		},
+		"mob.wildfire.shield_impact": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/wildfire/impact_1",
+				"sounds/wildfire/impact_2"
+			]
+		},
+		"mob.wildfire.hurt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/wildfire/hurt_1",
+				"sounds/wildfire/hurt_2"
+			]
+		},
+		"mob.wildfire.idle": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/wildfire/idle_1",
+				"sounds/wildfire/idle_2"
+			]
+		},
+		"mob.wildfire.shield_break": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/wildfire/break_shield"
+			]
+		},
+		"mob.wildfire.death": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/wildfire/death"
+			]
+		},
+		"mob.wildfire.shoot": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/wildfire/shoot"
+			]
+		},
+		"mob.mooshroom_monstrosity.minion_spawn": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/monstrosity/mooshroom_spawn"
+			]
+		},
+		"mob.mooshroom_monstrosity.shoot": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/monstrosity/shoot_1",
+				"sounds/monstrosity/shoot_2"
+			]
+		},
+		"mob.wretched_wraith.awaken": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/wretched_wraith/awaken"
+			]
+		},
+		"mob.wretched_wraith.hurt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/wretched_wraith/hurt_1",
+				"sounds/wretched_wraith/hurt_2",
+				"sounds/wretched_wraith/hurt_3"
+			]
+		},
+		"mob.wretched_wraith.shoot": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/wretched_wraith/shoot_1",
+				"sounds/wretched_wraith/shoot_2",
+				"sounds/wretched_wraith/shoot_3"
+			]
+		},
+		"mob.wretched_wraith.idle": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/wretched_wraith/idle_1",
+				"sounds/wretched_wraith/idle_2",
+				"sounds/wretched_wraith/idle_3"
+			]
+		},
+		"mob.wretched_wraith.die": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/wretched_wraith/death"
+			]
+		},
+		"artefact.wind_horn": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/artefact/wind_horn"
+			]
+		},
+		"weapon.enchant.exploding": {
+			"category": "player",
+			"sounds": [
+				"sounds/weapon/exploding_1",
+				"sounds/weapon/exploding_2",
+				"sounds/weapon/exploding_3"
+			]
+		},
+		"artefact.shadow_break": {
+			"category": "player",
+			"sounds": [
+				"sounds/artefact/shadow_break"
+			]
+		},
+		"artefact.ice_wand": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/artefact/ice_wand1",
+				"sounds/artefact/ice_wand2"
+			]
+		},
+		"weapon.bone_club.hit": {
+			"category": "player",
+			"sounds": [
+				"sounds/weapon/bone_hit1",
+				"sounds/weapon/bone_hit2",
+				"sounds/weapon/bone_hit3"
+			]
+		},
+		"weapon.bone_club.crush": {
+			"category": "player",
+			"sounds": [
+				"sounds/weapon/bone_crush1",
+				"sounds/weapon/bone_crush2",
+				"sounds/weapon/bone_crush3"
+			]
+		},
+		"weapon.obsidian_claymore.hit": {
+			"category": "player",
+			"sounds": [
+				"sounds/weapon/obsidian_claymore/hit1",
+				"sounds/weapon/obsidian_claymore/hit2",
+				"sounds/weapon/obsidian_claymore/hit3",
+				"sounds/weapon/obsidian_claymore/hit4",
+				"sounds/weapon/obsidian_claymore/hit5",
+				"sounds/weapon/obsidian_claymore/hit6"
+			]
+		},
+		"weapon.obsidian_claymore.special": {
+			"category": "player",
+			"sounds": [
+				"sounds/weapon/obsidian_claymore/special1",
+				"sounds/weapon/obsidian_claymore/special2",
+				"sounds/weapon/obsidian_claymore/special3"
+			]
+		},
+		"weapon.enchant.swirling": {
+			"category": "player",
+			"sounds": [
+				"sounds/weapon/swirling1",
+				"sounds/weapon/swirling2"
+			]
+		},
+		"weapon.enchant.thundering": {
+			"category": "player",
+			"sounds": [
+				"sounds/weapon/zap1",
+				"sounds/weapon/zap2",
+				"sounds/weapon/zap3"
+			]
+		},
+		"mob.monstrosity.reload": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/monstrosity/core_reload"
+			]
+		},
+		"mob.monstrosity.zap": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/weapon/zap1",
+				"sounds/weapon/zap2",
+				"sounds/weapon/zap3"
+			]
+		},
+		"mob.monstrosity.exploding": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/weapon/exploding_1",
+				"sounds/weapon/exploding_2",
+				"sounds/weapon/exploding_3"
+			]
+		},
+		"mob.corrupted_cauldron.awaken": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/corrupted_cauldron/awaken"
+			]
+		},
+		"mob.corrupted_cauldron.die": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/corrupted_cauldron/death"
+			]
+		},
+		"mob.corrupted_cauldron.hurt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/corrupted_cauldron/hurt_1",
+				"sounds/corrupted_cauldron/hurt_2",
+				"sounds/corrupted_cauldron/hurt_3",
+				"sounds/corrupted_cauldron/hurt_4",
+				"sounds/corrupted_cauldron/hurt_5"
+			]
+		},
+		"mob.corrupted_cauldron.idle": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/corrupted_cauldron/idle_1",
+				"sounds/corrupted_cauldron/idle_2",
+				"sounds/corrupted_cauldron/idle_3",
+				"sounds/corrupted_cauldron/idle_4",
+				"sounds/corrupted_cauldron/idle_5"
+			]
+		},
+		"mob.corrupted_cauldron.charge": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/corrupted_cauldron/charge"
+			]
+		},
+		"mob.corrupted_cauldron.heal": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/corrupted_cauldron/heal_1",
+				"sounds/corrupted_cauldron/heal_2",
+				"sounds/corrupted_cauldron/heal_3"
+			]
+		},
+		"weapon.daggers.hit": {
+			"category": "player",
+			"sounds": [
+				"sounds/weapon/daggers/swing_1",
+				"sounds/weapon/daggers/swing_2",
+				"sounds/weapon/daggers/swing_3",
+				"sounds/weapon/daggers/swing_4"
+			]
+		},
+		"weapon.sword.parry": {
+			"category": "player",
+			"sounds": [
+				"sounds/weapon/obsidian_claymore/hit4",
+				"sounds/weapon/obsidian_claymore/hit5",
+				"sounds/weapon/obsidian_claymore/hit6"
+			]
+		},
+		"weapon.whip.crack": {
+			"category": "player",
+			"sounds": [
+				"sounds/weapon/whip/attack_1",
+				"sounds/weapon/whip/attack_2",
+				"sounds/weapon/whip/attack_3",
+				"sounds/weapon/whip/attack_4"
+			]
+		},
+		"mob.leapleaf.attack": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/leapleaf/attack"
+			]
+		},
+		"mob.leapleaf.charge": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/leapleaf/charge"
+			]
+		},
+		"mob.leapleaf.death": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/leapleaf/death1",
+				"sounds/leapleaf/death2"
+			]
+		},
+		"mob.leapleaf.hurt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/leapleaf/hurt1",
+				"sounds/leapleaf/hurt2"
+			]
+		},
+		"mob.leapleaf.step": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/leapleaf/step1",
+				"sounds/leapleaf/step2"
+			]
+		},
+		"mob.jungle_abomination.attack": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/jungle_abomination/attack1",
+				"sounds/jungle_abomination/attack2"
+			]
+		},
+		"mob.jungle_abomination.vine_attack": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/jungle_abomination/vine_attack"
+			]
+		},
+		"mob.jungle_abomination.awaken": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/jungle_abomination/awaken"
+			]
+		},
+		"mob.jungle_abomination.death": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/jungle_abomination/death"
+			]
+		},
+		"mob.jungle_abomination.idle": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/jungle_abomination/idle"
+			]
+		},
+		"mob.jungle_abomination.hurt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/jungle_abomination/hurt1",
+				"sounds/jungle_abomination/hurt2"
+			]
+		},
+		"mob.jungle_abomination.step": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/jungle_abomination/step1",
+				"sounds/jungle_abomination/step2"
+			]
+		},
+		"mob.jungle_abomination.burst": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/jungle_abomination/burst1",
+				"sounds/jungle_abomination/burst2",
+				"sounds/jungle_abomination/burst3"
+			]
+		},
+		"mob.squall_golem.zap": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/squall_golem/on"
+			]
+		},
+		"mob.squall_golem.attack": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/squall_golem/attack"
+			]
+		},
+		"mob.squall_golem.hurt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/squall_golem/hurt1",
+				"sounds/squall_golem/hurt2"
+			]
+		},
+		"mob.windcaller.fly": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/windcaller/fly"
+			]
+		},
+		"mob.windcaller.spell": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/windcaller/spell1",
+				"sounds/windcaller/spell2"
+			]
+		},
+		"mob.windcaller.spell_voice": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/windcaller/spell_voice1",
+				"sounds/windcaller/spell_voice2"
+			]
+		},
+		"mob.tempest_golem.attack": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/tempest_golem/attack1",
+				"sounds/tempest_golem/attack2",
+				"sounds/tempest_golem/attack3"
+			]
+		},
+		"mob.tempest_golem.awaken": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/tempest_golem/awaken"
+			]
+		},
+		"mob.tempest_golem.deactivate_arm": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/tempest_golem/deactivate_arm1",
+				"sounds/tempest_golem/deactivate_arm2"
+			]
+		},
+		"mob.tempest_golem.death": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/tempest_golem/death"
+			]
+		},
+		"mob.tempest_golem.hurt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/tempest_golem/hurt1",
+				"sounds/tempest_golem/hurt2",
+				"sounds/tempest_golem/hurt3"
+			]
+		},
+		"mob.tempest_golem.idle": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/tempest_golem/idle1",
+				"sounds/tempest_golem/idle2"
+			]
+		},
+		"mob.tempest_golem.shield_attack": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/tempest_golem/shield_attack"
+			]
+		},
+		"mob.tempest_golem.stun": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/tempest_golem/stun"
+			]
+		},
+		"weapon.enchant.sponge_striker": {
+			"category": "player",
+			"sounds": [
+				"sounds/weapon/sponge_striker"
+			]
+		},
+		"weapon.anchor.hit": {
+			"category": "player",
+			"sounds": [
+				"sounds/weapon/anchor"
+			]
+		},
+		"mob.drowned_necromancer.attack": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/drowned_necromancer/attack1",
+				"sounds/drowned_necromancer/attack2"
+			]
+		},
+		"mob.nameless_one.attack": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/nameless_one/spell1",
+				"sounds/nameless_one/spell2"
+			]
+		},
+		"mob.drowned_necromancer.summon": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/drowned_necromancer/summon"
+			]
+		},
+		"mob.ancient_guardian.awaken": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/ancient_guardian/awaken"
+			]
+		},
+		"mob.ancient_guardian.death": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/ancient_guardian/death"
+			]
+		},
+		"mob.ancient_guardian.melee": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/ancient_guardian/melee"
+			]
+		},
+		"mob.biomine.boom": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/ancient_guardian/boom"
+			]
+		},
+		"mob.wraith.rise": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/wraith/rise"
+			]
+		},
+		"weapon.enchant.ricochet": {
+			"category": "player",
+			"sounds": [
+				"sounds/weapon/deflect"
+			]
+		},
+		"weapon.enchant.sawblade_break": {
+			"category": "player",
+			"sounds": [
+				"sounds/weapon/sawblade/break"
+			]
+		},
+		"weapon.enchant.sawblade_attack": {
+			"category": "player",
+			"sounds": [
+				"sounds/weapon/sawblade/swing"
+			]
+		},
+		"weapon.enchant.sawblade_attack_unique": {
+			"category": "player",
+			"sounds": [
+				"sounds/weapon/sawblade/swing_unique"
+			]
+		},
+		"weapon.glaive.swing": {
+			"category": "player",
+			"sounds": [
+				"sounds/weapon/glaive/swing1",
+				"sounds/weapon/glaive/swing2",
+				"sounds/weapon/glaive/swing3"
+			]
+		},
+		"weapon.enchant.poison": {
+			"category": "player",
+			"sounds": [
+				"sounds/weapon/poison1",
+				"sounds/weapon/poison2"
+			]
+		},
+		"mob.endersent.awaken": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/endersent/awaken"
+			]
+		},
+		"weapon.void_blades.hit": {
+			"category": "player",
+			"sounds": [
+				"sounds/weapon/void_blades/swing1",
+				"sounds/weapon/void_blades/swing2",
+				"sounds/weapon/void_blades/swing3"
+			]
+		},
+		"mob.vhoe.summon": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/vhoe/summon"
+			]
+		},
+		"mob.vhoe.shoot": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/vhoe/shoot"
+			]
+		},
+		"mob.vhoe.hurt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/vhoe/hurt1",
+				"sounds/vhoe/hurt2",
+				"sounds/vhoe/hurt3"
+			]
+		},
+		"mob.vhoe.idle": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/vhoe/idle1",
+				"sounds/vhoe/idle2"
+			]
+		},
+		"mob.vhoe.step": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/vhoe/step1",
+				"sounds/vhoe/step2"
+			]
+		},
+		"mob.vhoe.enter": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/vhoe/enter"
+			]
+		},
+		"mob.vhoe.exit": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/vhoe/exit"
+			]
+		},
+		"mob.vhoe.melee": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/vhoe/melee1",
+				"sounds/vhoe/melee2"
+			]
+		},
+		"mob.vhoe.die": {
+			"category": "music",
+			"sounds": [
+				"sounds/vhoe/die"
+			]
+		},
+		"mob.vhoe.cutscene": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/vhoe/cutscene"
+			]
+		},
+		"artefact.spinblade.throw": {
+			"category": "player",
+			"sounds": [
+				"sounds/artefact/spinblade_throw"
+			]
+		},
+		"artefact.spinblade.loop": {
+			"category": "player",
+			"volume": 0.5,
+			"sounds": [
+				"sounds/artefact/spinblade_loop"
+			]
+		},
+		"artefact.spinblade.hit": {
+			"category": "player",
+			"sounds": [
+				"sounds/artefact/spinblade_hit"
+			]
+		},
+		"weapon.cackling_broom.swing": {
+			"category": "player",
+			"sounds": [
+				"sounds/weapon/cacklebroom_1",
+				"sounds/weapon/cacklebroom_2"
+			]
+		},
+		"artefact.corrupted_pumpkin": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/artefact/corruptedPumpkin"
+			]
+		},
+		"weapon.shrieking_crossbow.shoot": {
+			"category": "player",
+			"sounds": [
+				"sounds/weapon/shriekingcrossbow"
+			]
+		},
+		"weapon.alylicleaver.hit": {
+			"category": "player",
+			"sounds": [
+				"sounds/weapon/alylicleaver/hitsound_byfurnace"
+			]
+		},
+		"weapon.alylicleaver.swing": {
+			"category": "player",
+			"sounds": [
+				"sounds/weapon/alylicleaver/swingsound_byfurnace"
+			]
+		}
+	}
+}

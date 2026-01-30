@@ -1,0 +1,28 @@
+{
+	"format_version": "1.21.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "cata:stellar_bottle",
+			"menu_category": {
+				"category": "equipment",
+				"group": "minecraft:itemGroup.name.potion"
+			}
+		},
+		"components": {
+			"minecraft:icon": "cata_stellar_bottle",
+			"minecraft:use_animation": {
+				"value": "drink"
+			},
+			"minecraft:use_modifiers": {
+				"movement_modifier": 0.6,
+				"use_duration": 1.61
+			},
+			"minecraft:display_name": {
+				"value": "Stellar Bottle\n§7Regeneration II (2:00)\n§7Health Boost I (3:00)"
+			},
+			"minecraft:max_stack_size": {
+				"value": 1
+			}
+		}
+	}
+}

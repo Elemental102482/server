@@ -1,0 +1,38 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "cata:plasma",
+			"materials": {
+				"default": "drowned"
+			},
+			"textures": {
+				"default": "textures/entity/plasma_texture"
+			},
+			"geometry": {
+				"default": "geometry.plasma"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "cata_plasma_egg"
+			},
+			"animations": {
+				"move": "animation.plasma.move",
+				"bobbing": "animation.plasma.bobbing",
+				"particle": "animation.plasma.particle"
+			},
+			"scripts": {
+				"animate": [
+					"bobbing",
+					"move",
+					"particle"
+				]
+			},
+			"particle_effects": {
+				"plasma_emitter": "cata:plasma_emitter"
+			}
+		}
+	}
+}

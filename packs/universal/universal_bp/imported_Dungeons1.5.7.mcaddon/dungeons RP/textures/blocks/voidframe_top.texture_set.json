@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "voidframe_top",
+        "metalness_emissive_roughness": "voidframe_top_mer"
+    }
+}

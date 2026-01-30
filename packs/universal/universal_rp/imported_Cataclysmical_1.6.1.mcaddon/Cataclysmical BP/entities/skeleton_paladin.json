@@ -1,0 +1,315 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "cata:skeleton_paladin",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"variant1": {
+				"minecraft:variant": {
+					"value": 1
+				},
+				"minecraft:attack": {
+					"damage": 2
+				},
+				"minecraft:health": {
+					"value": 75,
+					"max": 75
+				},
+				"minecraft:behavior.delayed_attack": {
+					"priority": 2,
+					"attack_once": false,
+					"require_complete_path": true,
+					"reach_multiplier": 4,
+					"attack_duration": 1.0625,
+					"hit_delay_pct": 0.59
+				},
+				"minecraft:equipment": {
+					"table": "loot_tables/entities/skeleton_paladin_equipment.json",
+					"slot_drop_chance": [
+						{
+							"slot": "slot.weapon.mainhand",
+							"drop_chance": 0
+						},
+						{
+							"slot": "slot.inventory",
+							"drop_chance": 0
+						}
+					]
+				},
+				"minecraft:loot": {
+					"table": "loot_tables/entities/skeleton_paladin.json"
+				}
+			},
+			"is_shielding": {
+				"minecraft:skin_id": {
+					"value": 0
+				},
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"on_damage": {
+								"filters": {
+									"test": "has_equipment",
+									"subject": "other",
+									"domain": "hand",
+									"value": "cata:verdant_blade"
+								},
+								"event": "break_shielding"
+							},
+							"deals_damage": false
+						},
+						{
+							"on_damage": {
+								"filters": {
+									"test": "has_equipment",
+									"subject": "other",
+									"domain": "hand",
+									"value": "cata:verdant_axe"
+								},
+								"event": "break_shielding"
+							},
+							"deals_damage": false
+						},
+						{
+							"on_damage": {
+								"filters": {
+									"test": "has_equipment",
+									"subject": "other",
+									"domain": "hand",
+									"value": "minecraft:netherite_axe"
+								},
+								"event": "break_shielding"
+							},
+							"deals_damage": false
+						},
+						{
+							"on_damage": {
+								"filters": {
+									"test": "has_equipment",
+									"subject": "other",
+									"domain": "hand",
+									"value": "minecraft:diamond_axe"
+								},
+								"event": "break_shielding"
+							},
+							"deals_damage": false
+						},
+						{
+							"on_damage": {
+								"filters": {
+									"test": "has_equipment",
+									"subject": "other",
+									"domain": "hand",
+									"value": "minecraft:iron_axe"
+								},
+								"event": "break_shielding"
+							},
+							"deals_damage": false
+						},
+						{
+							"on_damage": {
+								"filters": {
+									"test": "has_equipment",
+									"subject": "other",
+									"domain": "hand",
+									"value": "minecraft:golden_axe"
+								},
+								"event": "break_shielding"
+							},
+							"deals_damage": false
+						},
+						{
+							"on_damage": {
+								"filters": {
+									"test": "has_damage",
+									"subject": "self",
+									"value": "attack"
+								},
+								"event": "shielding_sound"
+							},
+							"deals_damage": false
+						}
+					]
+				},
+				"minecraft:movement": {
+					"value": 0.19
+				}
+			},
+			"shield_cooldown": {
+				"minecraft:skin_id": {
+					"value": 1
+				},
+				"minecraft:timer": {
+					"looping": true,
+					"time": [
+						5.5,
+						5.5
+					],
+					"time_down_event": {
+						"event": "shield_cooldown_finish"
+					}
+				},
+				"minecraft:knockback_resistance": {
+					"value": 0.2
+				}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"mob",
+					"monster",
+					"undead"
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 0.6,
+				"height": 2
+			},
+			"minecraft:physics": {
+				"has_collision": true,
+				"has_gravity": true
+			},
+			"minecraft:experience_reward": {
+				"on_death": "query.last_hit_by_player?40:0"
+			},
+			"minecraft:movement": {
+				"value": 0.22
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 1,
+				"must_see": true,
+				"reselect_targets": true,
+				"entity_types": {
+					"filters": {
+						"all_of": [
+							{
+								"test": "is_family",
+								"subject": "other",
+								"operator": "==",
+								"value": "player"
+							}
+						]
+					},
+					"max_dist": 28,
+					"must_see": true
+				}
+			},
+			"minecraft:knockback_resistance": {
+				"value": 1
+			},
+			"minecraft:jump.static": {},
+			"minecraft:can_climb": {},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1,
+				"alert_same_type": true
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 7,
+				"look_distance": 8,
+				"probability": 0.02
+			},
+			"minecraft:follow_range": {
+				"value": 32
+			},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 7
+			},
+			"minecraft:navigation.walk": {
+				"avoid_damage_blocks": true,
+				"can_sink": true
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "fall",
+						"deals_damage": true,
+						"damage_multiplier": 0.3
+					}
+				]
+			},
+			"minecraft:despawn": {
+				"despawn_from_distance": {}
+			},
+			"minecraft:scale": {
+				"value": 1.2
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"randomize": [
+					{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"variant1",
+								"is_shielding"
+							]
+						}
+					}
+				]
+			},
+			"shielding_sound": {
+				"queue_command": {
+					"command": [
+						"playsound random.anvil_land @a[r=32] ~ ~ ~ 0.6 2 1"
+					]
+				},
+				"trigger": {
+					"event": "randomized_break_shielding"
+				}
+			},
+			"break_shielding": {
+				"add": {
+					"component_groups": [
+						"shield_cooldown"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"is_shielding"
+					]
+				},
+				"queue_command": {
+					"command": [
+						"playsound random.anvil_land @a[r=32] ~ ~ ~ 0.6 1.8 1"
+					]
+				}
+			},
+			"shield_cooldown_finish": {
+				"add": {
+					"component_groups": [
+						"is_shielding"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"shield_cooldown"
+					]
+				}
+			},
+			"randomized_break_shielding": {
+				"randomize": [
+					{
+						"weight": 10
+					},
+					{
+						"weight": 1,
+						"trigger": {
+							"event": "break_shielding"
+						}
+					}
+				]
+			}
+		}
+	}
+}

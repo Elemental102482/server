@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "bps:backpack"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "#B#",
+	  "X#X"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+	  "B": {
+        "item": "minecraft:chest"
+      },
+	  "X": {
+        "item": "minecraft:leather"
+      }
+    },
+    "result": {
+      "item": "bps:backpack"
+    }
+  }
+}

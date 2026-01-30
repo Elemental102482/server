@@ -1,0 +1,1082 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:item",
+      "is_spawnable": false,
+      "is_summonable": false,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+          "treeitem"
+        ]
+      },
+      "animations": {
+        "treeitem": "controller.animation.treeitem"
+      }
+    },
+    "component_groups": {
+      "iron_hammer": {
+        "minecraft:mark_variant": {
+          "value": 1
+        },
+        "minecraft:addrider": {
+          "entity_type": "new:treeditem",
+          "spawn_event": "new:iron_hammer"
+        }
+      },
+      "diamond_hammer": {
+        "minecraft:mark_variant": {
+          "value": 2
+        },
+        "minecraft:addrider": {
+          "entity_type": "new:treeditem",
+          "spawn_event": "new:diamond_hammer"
+        }
+      },
+      "netherite_hammer": {
+        "minecraft:mark_variant": {
+          "value": 3
+        },
+        "minecraft:damage_sensor": {
+          "triggers": [
+            {
+              "cause": "fire",
+              "deals_damage": false
+            },
+            {
+              "cause": "fire_tick",
+              "deals_damage": false
+            },
+            {
+              "cause": "lava",
+              "deals_damage": false
+            }
+          ]
+        },
+        "minecraft:addrider": {
+          "entity_type": "new:treeditem",
+          "spawn_event": "new:netherite_hammer"
+        }
+      },
+      "gold_hammer": {
+        "minecraft:mark_variant": {
+          "value": 4
+        },
+        "minecraft:addrider": {
+          "entity_type": "new:treeditem",
+          "spawn_event": "new:gold_hammer"
+        }
+      },
+      "obsidian_hammer": {
+        "minecraft:mark_variant": {
+          "value": 5
+        },
+        "minecraft:addrider": {
+          "entity_type": "new:treeditem",
+          "spawn_event": "new:obsidian_hammer"
+        }
+      },
+      "emerald_hammer": {
+        "minecraft:mark_variant": {
+          "value": 6
+        },
+        "minecraft:addrider": {
+          "entity_type": "new:treeditem",
+          "spawn_event": "new:emerald_hammer"
+        }
+      },
+      "lapis_hammer": {
+        "minecraft:mark_variant": {
+          "value": 7
+        },
+        "minecraft:addrider": {
+          "entity_type": "new:treeditem",
+          "spawn_event": "new:lapis_hammer"
+        }
+      },
+      "stone_hammer": {
+        "minecraft:mark_variant": {
+          "value": 8
+        },
+        "minecraft:addrider": {
+          "entity_type": "new:treeditem",
+          "spawn_event": "new:stone_hammer"
+        }
+      },
+      "wood_hammer": {
+        "minecraft:mark_variant": {
+          "value": 9
+        },
+        "minecraft:addrider": {
+          "entity_type": "new:treeditem",
+          "spawn_event": "new:wood_hammer"
+        }
+      },
+      "redstone_hammer": {
+        "minecraft:mark_variant": {
+          "value": 10
+        },
+        "minecraft:addrider": {
+          "entity_type": "new:treeditem",
+          "spawn_event": "new:redstone_hammer"
+        }
+      },
+
+      "iron_sickle": {
+        "minecraft:mark_variant": {
+          "value": 21
+        },
+        "minecraft:addrider": {
+          "entity_type": "new:treeditem",
+          "spawn_event": "new:iron_sickle"
+        }
+      },
+      "diamond_sickle": {
+        "minecraft:mark_variant": {
+          "value": 22
+        },
+        "minecraft:addrider": {
+          "entity_type": "new:treeditem",
+          "spawn_event": "new:diamond_sickle"
+        }
+      },
+      "netherite_sickle": {
+        "minecraft:mark_variant": {
+          "value": 23
+        },
+        "minecraft:damage_sensor": {
+          "triggers": [
+            {
+              "cause": "fire",
+              "deals_damage": false
+            },
+            {
+              "cause": "fire_tick",
+              "deals_damage": false
+            },
+            {
+              "cause": "lava",
+              "deals_damage": false
+            }
+          ]
+        },
+        "minecraft:addrider": {
+          "entity_type": "new:treeditem",
+          "spawn_event": "new:netherite_sickle"
+        }
+      },
+      "gold_sickle": {
+        "minecraft:mark_variant": {
+          "value": 24
+        },
+        "minecraft:addrider": {
+          "entity_type": "new:treeditem",
+          "spawn_event": "new:gold_sickle"
+        }
+      },
+      "obsidian_sickle": {
+        "minecraft:mark_variant": {
+          "value": 25
+        },
+        "minecraft:addrider": {
+          "entity_type": "new:treeditem",
+          "spawn_event": "new:obsidian_sickle"
+        }
+      },
+      "emerald_sickle": {
+        "minecraft:mark_variant": {
+          "value": 26
+        },
+        "minecraft:addrider": {
+          "entity_type": "new:treeditem",
+          "spawn_event": "new:emerald_sickle"
+        }
+      },
+      "lapis_sickle": {
+        "minecraft:mark_variant": {
+          "value": 27
+        },
+        "minecraft:addrider": {
+          "entity_type": "new:treeditem",
+          "spawn_event": "new:lapis_sickle"
+        }
+      },
+      "stone_sickle": {
+        "minecraft:mark_variant": {
+          "value": 28
+        },
+        "minecraft:addrider": {
+          "entity_type": "new:treeditem",
+          "spawn_event": "new:stone_sickle"
+        }
+      },
+      "wood_sickle": {
+        "minecraft:mark_variant": {
+          "value": 29
+        },
+        "minecraft:addrider": {
+          "entity_type": "new:treeditem",
+          "spawn_event": "new:wood_sickle"
+        }
+      },
+      "redstone_sickle": {
+        "minecraft:mark_variant": {
+          "value": 30
+        },
+        "minecraft:addrider": {
+          "entity_type": "new:treeditem",
+          "spawn_event": "new:redstone_sickle"
+        }
+      },
+
+
+
+      "iron_great_axe": {
+        "minecraft:mark_variant": {
+          "value": 11
+        },
+        "minecraft:addrider": {
+          "entity_type": "new:treeditem",
+          "spawn_event": "new:iron_great_axe"
+        }
+      },
+      "diamond_great_axe": {
+        "minecraft:mark_variant": {
+          "value": 12
+        },
+        "minecraft:addrider": {
+          "entity_type": "new:treeditem",
+          "spawn_event": "new:diamond_great_axe"
+        }
+      },
+      "netherite_great_axe": {
+        "minecraft:mark_variant": {
+          "value": 13
+        },
+        "minecraft:damage_sensor": {
+          "triggers": [
+            {
+              "cause": "fire",
+              "deals_damage": false
+            },
+            {
+              "cause": "fire_tick",
+              "deals_damage": false
+            },
+            {
+              "cause": "lava",
+              "deals_damage": false
+            }
+          ]
+        },
+        "minecraft:addrider": {
+          "entity_type": "new:treeditem",
+          "spawn_event": "new:netherite_great_axe"
+        }
+      },
+      "gold_great_axe": {
+        "minecraft:mark_variant": {
+          "value": 14
+        },
+        "minecraft:addrider": {
+          "entity_type": "new:treeditem",
+          "spawn_event": "new:gold_great_axe"
+        }
+      },
+      "obsidian_great_axe": {
+        "minecraft:mark_variant": {
+          "value": 15
+        },
+        "minecraft:addrider": {
+          "entity_type": "new:treeditem",
+          "spawn_event": "new:obsidian_great_axe"
+        }
+      },
+      "emerald_great_axe": {
+        "minecraft:mark_variant": {
+          "value": 16
+        },
+        "minecraft:addrider": {
+          "entity_type": "new:treeditem",
+          "spawn_event": "new:emerald_great_axe"
+        }
+      },
+      "lapis_great_axe": {
+        "minecraft:mark_variant": {
+          "value": 17
+        },
+        "minecraft:addrider": {
+          "entity_type": "new:treeditem",
+          "spawn_event": "new:lapis_great_axe"
+        }
+      },
+      "stone_great_axe": {
+        "minecraft:mark_variant": {
+          "value": 18
+        },
+        "minecraft:addrider": {
+          "entity_type": "new:treeditem",
+          "spawn_event": "new:stone_great_axe"
+        }
+      },
+      "wood_great_axe": {
+        "minecraft:mark_variant": {
+          "value": 19
+        },
+        "minecraft:addrider": {
+          "entity_type": "new:treeditem",
+          "spawn_event": "new:wood_great_axe"
+        }
+      },
+      "redstone_great_axe": {
+        "minecraft:mark_variant": {
+          "value": 20
+        },
+        "minecraft:addrider": {
+          "entity_type": "new:treeditem",
+          "spawn_event": "new:redstone_great_axe"
+        }
+      }
+    },
+    "components": {
+      "minecraft:rideable": {
+        "seat_count": 1,
+        "family_types": [
+          "3ditem"
+        ],
+        "seats": {
+          "position": [ 0.0, 0.0, 0.0 ]
+        }
+      },
+      "minecraft:environment_sensor": {
+        "triggers": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "iron_hammer"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 1
+                }
+              ]
+            },
+            "event": "new:iron_hammer"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "diamond_hammer"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 2
+                }
+              ]
+            },
+            "event": "new:diamond_hammer"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "netherite_hammer"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 3
+                }
+              ]
+            },
+            "event": "new:netherite_hammer"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "gold_hammer"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 4
+                }
+              ]
+            },
+            "event": "new:gold_hammer"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "obsidian_hammer"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 5
+                }
+              ]
+            },
+            "event": "new:obsidian_hammer"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "emerald_hammer"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 6
+                }
+              ]
+            },
+            "event": "new:emerald_hammer"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "lapis_hammer"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 7
+                }
+              ]
+            },
+            "event": "new:lapis_hammer"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "stone_hammer"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 8
+                }
+              ]
+            },
+            "event": "new:stone_hammer"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "wood_hammer"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 9
+                }
+              ]
+            },
+            "event": "new:wood_hammer"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "redstone_hammer"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 10
+                }
+              ]
+            },
+            "event": "new:redstone_hammer"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "iron_great_axe"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 11
+                }
+              ]
+            },
+            "event": "new:iron_great_axe"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "diamond_great_axe"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 12
+                }
+              ]
+            },
+            "event": "new:diamond_great_axe"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "netherite_great_axe"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 13
+                }
+              ]
+            },
+            "event": "new:netherite_great_axe"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "gold_great_axe"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 14
+                }
+              ]
+            },
+            "event": "new:gold_great_axe"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "obsidian_great_axe"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 15
+                }
+              ]
+            },
+            "event": "new:obsidian_great_axe"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "emerald_great_axe"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 16
+                }
+              ]
+            },
+            "event": "new:emerald_great_axe"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "lapis_great_axe"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 17
+                }
+              ]
+            },
+            "event": "new:lapis_great_axe"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "stone_great_axe"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 18
+                }
+              ]
+            },
+            "event": "new:stone_great_axe"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "wood_great_axe"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 19
+                }
+              ]
+            },
+            "event": "new:wood_great_axe"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "redstone_great_axe"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 20
+                }
+              ]
+            },
+            "event": "new:redstone_great_axe"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "iron_sickle"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 21
+                }
+              ]
+            },
+            "event": "new:iron_sickle"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "diamond_sickle"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 22
+                }
+              ]
+            },
+            "event": "new:diamond_sickle"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "netherite_sickle"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 23
+                }
+              ]
+            },
+            "event": "new:netherite_sickle"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "gold_sickle"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 24
+                }
+              ]
+            },
+            "event": "new:gold_sickle"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "obsidian_sickle"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 25
+                }
+              ]
+            },
+            "event": "new:obsidian_sickle"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "emerald_sickle"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 26
+                }
+              ]
+            },
+            "event": "new:emerald_sickle"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "lapis_sickle"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 27
+                }
+              ]
+            },
+            "event": "new:lapis_sickle"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "stone_sickle"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 28
+                }
+              ]
+            },
+            "event": "new:stone_sickle"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "wood_sickle"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 29
+                }
+              ]
+            },
+            "event": "new:wood_sickle"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_tag",
+                  "operator": "==",
+                  "value": "redstone_sickle"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "!=",
+                  "value": 30
+                }
+              ]
+            },
+            "event": "new:redstone_sickle"
+          }
+        ]
+      }
+    },
+    "events": {
+      "new:iron_hammer": {
+        "add": {
+          "component_groups": [
+            "iron_hammer"
+          ]
+        }
+      },
+      "new:diamond_hammer": {
+        "add": {
+          "component_groups": [
+            "diamond_hammer"
+          ]
+        }
+      },
+      "new:netherite_hammer": {
+        "add": {
+          "component_groups": [
+            "netherite_hammer"
+          ]
+        }
+      },
+      "new:gold_hammer": {
+        "add": {
+          "component_groups": [
+            "gold_hammer"
+          ]
+        }
+      },
+      "new:obsidian_hammer": {
+        "add": {
+          "component_groups": [
+            "obsidian_hammer"
+          ]
+        }
+      },
+      "new:emerald_hammer": {
+        "add": {
+          "component_groups": [
+            "emerald_hammer"
+          ]
+        }
+      },
+      "new:lapis_hammer": {
+        "add": {
+          "component_groups": [
+            "lapis_hammer"
+          ]
+        }
+      },
+      "new:stone_hammer": {
+        "add": {
+          "component_groups": [
+            "stone_hammer"
+          ]
+        }
+      },
+      "new:wood_hammer": {
+        "add": {
+          "component_groups": [
+            "wood_hammer"
+          ]
+        }
+      },
+      "new:redstone_hammer": {
+        "add": {
+          "component_groups": [
+            "redstone_hammer"
+          ]
+        }
+      },
+
+      "new:iron_great_axe": {
+        "add": {
+          "component_groups": [
+            "iron_great_axe"
+          ]
+        }
+      },
+      "new:diamond_great_axe": {
+        "add": {
+          "component_groups": [
+            "diamond_great_axe"
+          ]
+        }
+      },
+      "new:netherite_great_axe": {
+        "add": {
+          "component_groups": [
+            "netherite_great_axe"
+          ]
+        }
+      },
+      "new:gold_great_axe": {
+        "add": {
+          "component_groups": [
+            "gold_great_axe"
+          ]
+        }
+      },
+      "new:obsidian_great_axe": {
+        "add": {
+          "component_groups": [
+            "obsidian_great_axe"
+          ]
+        }
+      },
+      "new:emerald_great_axe": {
+        "add": {
+          "component_groups": [
+            "emerald_great_axe"
+          ]
+        }
+      },
+      "new:lapis_great_axe": {
+        "add": {
+          "component_groups": [
+            "lapis_great_axe"
+          ]
+        }
+      },
+      "new:stone_great_axe": {
+        "add": {
+          "component_groups": [
+            "stone_great_axe"
+          ]
+        }
+      },
+      "new:wood_great_axe": {
+        "add": {
+          "component_groups": [
+            "wood_great_axe"
+          ]
+        }
+      },
+      "new:redstone_great_axe": {
+        "add": {
+          "component_groups": [
+            "redstone_great_axe"
+          ]
+        }
+      },
+
+      "new:iron_sickle": {
+        "add": {
+          "component_groups": [
+            "iron_sickle"
+          ]
+        }
+      },
+      "new:diamond_sickle": {
+        "add": {
+          "component_groups": [
+            "diamond_sickle"
+          ]
+        }
+      },
+      "new:netherite_sickle": {
+        "add": {
+          "component_groups": [
+            "netherite_sickle"
+          ]
+        }
+      },
+      "new:gold_sickle": {
+        "add": {
+          "component_groups": [
+            "gold_sickle"
+          ]
+        }
+      },
+      "new:obsidian_sickle": {
+        "add": {
+          "component_groups": [
+            "obsidian_sickle"
+          ]
+        }
+      },
+      "new:emerald_sickle": {
+        "add": {
+          "component_groups": [
+            "emerald_sickle"
+          ]
+        }
+      },
+      "new:lapis_sickle": {
+        "add": {
+          "component_groups": [
+            "lapis_sickle"
+          ]
+        }
+      },
+      "new:stone_sickle": {
+        "add": {
+          "component_groups": [
+            "stone_sickle"
+          ]
+        }
+      },
+      "new:wood_sickle": {
+        "add": {
+          "component_groups": [
+            "wood_sickle"
+          ]
+        }
+      },
+      "new:redstone_sickle": {
+        "add": {
+          "component_groups": [
+            "redstone_sickle"
+          ]
+        }
+      }
+    }
+  }
+}

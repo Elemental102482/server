@@ -1,0 +1,59 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.armored_vindicator1": {
+			"geometry": "geometry.default",
+			"part_visibility": [
+				{
+					"rightArm": "query.is_angry || query.is_celebrating"
+				},
+				{
+					"leftArm": "query.is_angry || query.is_celebrating"
+				},
+				{
+					"rightItem": "query.is_angry"
+				},
+				{
+					"arms": "!(query.is_angry || query.is_celebrating)"
+				}
+			],
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"array.skins[query.skin_id]"
+			],
+			"arrays": {
+				"textures": {
+					"array.skins": [
+						"texture.default",
+						"texture.gold",
+						"texture.diamond"
+					]
+				}
+			}
+		},
+		"controller.render.armored_vindicator2": {
+			"geometry": "geometry.armored",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"array.skins[query.skin_id]"
+			],
+			"arrays": {
+				"textures": {
+					"array.skins": [
+						"texture.none",
+						"texture.gold",
+						"texture.diamond"
+					]
+				}
+			}
+		}
+	}
+}

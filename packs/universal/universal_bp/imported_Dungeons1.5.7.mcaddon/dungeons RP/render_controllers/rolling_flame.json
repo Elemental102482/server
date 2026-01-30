@@ -1,0 +1,34 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.rolling_flame": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"arrays": {
+				"textures": {
+					"array.skins": [
+						"texture.default",
+						"texture.B",
+						"texture.C",
+						"texture.D",
+						"texture.E",
+						"texture.F",
+						"Texture.G"
+					]
+				}
+			},
+			"textures": [
+				"array.skins[query.variant]"
+			],
+			"part_visibility": [
+				{
+					"shield": "query.is_saddled"
+				}
+			]
+		}
+	}
+}

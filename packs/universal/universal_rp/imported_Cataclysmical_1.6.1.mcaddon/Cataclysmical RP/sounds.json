@@ -1,0 +1,309 @@
+{
+	"individual_event_sounds": {
+		"events": {}
+	},
+	"block_sounds": {},
+	"entity_sounds": {
+		"defaults": {},
+		"entities": {
+			"cata:feralbloom": {
+				"events": {
+					"hurt": {
+						"sound": "mob.feralbloom_hurt",
+						"volume": 1.5
+					},
+					"step": {
+						"sound": "step.slime",
+						"volume": 1
+					},
+					"death": {
+						"sound": "mob.creaking.death",
+						"volume": 0.5,
+						"pitch": 1.5
+					}
+				},
+				"volume": [
+					1,
+					1
+				],
+				"pitch": [
+					1,
+					1
+				]
+			},
+			"cata:stone_golem": {
+				"events": {
+					"hurt": {
+						"sound": "mob.stone_golem_hurt",
+						"volume": 1
+					},
+					"step": {
+						"sound": "step.stone",
+						"volume": 1
+					},
+					"death": {
+						"sound": "hit.stone",
+						"volume": 1
+					}
+				},
+				"volume": [
+					1,
+					1
+				],
+				"pitch": [
+					1,
+					1
+				]
+			},
+			"cata:starling": {
+				"events": {
+					"ambient": "mob.allay.idle",
+					"hurt": "mob.allay.hurt",
+					"death": {
+						"sound": "mob.vex.death"
+					}
+				},
+				"pitch": [
+					0.5,
+					1.5
+				],
+				"volume": 1
+			},
+			"cata:verdant_skeleton": {
+				"events": {
+					"hurt": {
+						"sound": "mob.skeleton.hurt",
+						"volume": 0.8
+					},
+					"step": {
+						"sound": "mob.skeleton.step",
+						"volume": 0.8
+					},
+					"death": {
+						"sound": "mob.skeleton.death",
+						"volume": 0.8
+					},
+					"ambient": {
+						"sound": "mob.skeleton.say",
+						"volume": 0.8
+					}
+				},
+				"pitch": [
+					0.7,
+					0.7
+				],
+				"volume": [
+					0.5,
+					0.5
+				]
+			},
+			"cata:verdant_sentinel": {
+				"events": {
+					"hurt": {
+						"sound": "mob.verdant_sentinel_hurt",
+						"volume": 1
+					},
+					"death": {
+						"sound": "mob.verdant_sentinel_hurt",
+						"volume": 2.5
+					},
+					"step": {
+						"sound": "mob.verdant_sentinel_move",
+						"volume": 2.5
+					}
+				},
+				"pitch": [
+					0.9,
+					0.9
+				],
+				"volume": [
+					1,
+					1
+				]
+			},
+			"cata:astro_jelly": {
+				"events": {
+					"hurt": {
+						"sound": "mob.slime.hurt",
+						"volume": 1
+					},
+					"death": {
+						"sound": "mob.slime.death",
+						"volume": 1
+					},
+					"ambient": {
+						"sound": "use.slime",
+						"volume": 1
+					}
+				},
+				"volume": 1,
+				"pitch": 1.4
+			},
+			"cata:gneiss_golem": {
+				"volume": 2,
+				"pitch": 0.7,
+				"events": {
+					"step": {
+						"sound": "step.stone",
+						"volume": 1
+					},
+					"hurt": {
+						"sound": "mob.stone_golem_hurt",
+						"volume": 1
+					},
+					"death": {
+						"sound": "mob.stone_golem_hurt",
+						"volume": 1
+					}
+				}
+			},
+			"cata:plasma": {
+				"volume": 1,
+				"pitch": 1.5,
+				"events": {
+					"ambient": {
+						"sound": "mob.vex.ambient",
+						"volume": 1
+					},
+					"hurt": {
+						"sound": "mob.allay.hurt",
+						"volume": 1
+					},
+					"death": {
+						"sound": "mob.spirit_scream",
+						"volume": 1
+					}
+				}
+			},
+			"cata:solarium": {
+				"volume": 1,
+				"pitch": 1,
+				"events": {
+					"hurt": {
+						"sound": "mob.solar_mob_hurt",
+						"volume": 1
+					},
+					"death": {
+						"sound": "mob.blaze.death",
+						"volume": 1,
+						"pitch": 0.8
+					},
+					"ambient": {
+						"sound": "mob.blaze.breathe",
+						"volume": 1,
+						"pitch": 0.8
+					}
+				}
+			},
+			"cata:plasma_hive": {
+				"volume": 1,
+				"pitch": 1.3,
+				"events": {
+					"ambient": {
+						"sound": "mob.vex.ambient",
+						"volume": 1
+					},
+					"hurt": {
+						"sound": "mob.allay.hurt",
+						"volume": 1
+					},
+					"death": {
+						"sound": "mob.spirit_scream",
+						"volume": 1
+					}
+				}
+			},
+			"cata:solar_tesla": {
+				"volume": 1,
+				"pitch": 1,
+				"events": {
+					"hurt": {
+						"sound": "mob.solar_mob_hurt",
+						"volume": 1
+					},
+					"death": {
+						"sound": "mob.blaze.death",
+						"volume": 1,
+						"pitch": 0.8
+					},
+					"ambient": {
+						"sound": "mob.blaze.breathe",
+						"volume": 1,
+						"pitch": 0.8
+					}
+				}
+			},
+			"cata:skeleton_paladin": {
+				"volume": 1,
+				"pitch": 1,
+				"events": {
+					"hurt": {
+						"sound": "mob.skeleton.hurt",
+						"volume": 1
+					},
+					"death": {
+						"sound": "mob.skeleton.death",
+						"volume": 1
+					},
+					"ambient": {
+						"sound": "mob.skeleton.say",
+						"volume": 1
+					},
+					"step": {
+						"sound": "mob.skeleton.step",
+						"volume": 1
+					}
+				}
+			},
+			"cata:eternal_seal": {
+				"volume": 1,
+				"pitch": 0.8,
+				"events": {
+					"hurt": {
+						"sound": "mob.solar_mob_hurt",
+						"volume": 1
+					}
+				}
+			},
+			"cata:sun_tribunal": {
+				"volume": 2.5,
+				"pitch": 1,
+				"events": {
+					"hurt": {
+						"sound": "mob.solar_mob_hurt",
+						"pitch": 0.8,
+						"volume": 1.3
+					},
+					"ambient": {
+						"sound": "mob.blaze.breathe",
+						"volume": 1,
+						"pitch": 0.7
+					},
+					"death": {
+						"sound": "mob.blaze.death",
+						"volume": 1,
+						"pitch": 0.7
+					}
+				}
+			},
+			"cata:cosmic_terror": {
+				"volume": 1.2,
+				"pitch": 1.2,
+				"events": {
+					"ambient": {
+						"sound": "mob.wither.ambient",
+						"volume": 1
+					},
+					"hurt": {
+						"sound": "mob.wither.hurt",
+						"volume": 1
+					},
+					"death": {
+						"sound": "mob.wither.death",
+						"pitch": 1.5
+					}
+				}
+			}
+		}
+	}
+}

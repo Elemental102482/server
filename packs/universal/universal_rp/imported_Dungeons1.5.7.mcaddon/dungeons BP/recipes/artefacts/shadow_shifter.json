@@ -1,0 +1,36 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "shadow_shifter"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"GDG",
+			"DED",
+			"GDG"
+		],
+		"unlock": [
+			{
+				"item": "dungeons:diamond_dust"
+			}
+		],
+		"key": {
+			"D": {
+				"item": "dungeons:diamond_dust"
+			},
+			"G": {
+				"item": "minecraft:gold_ingot"
+			},
+			"E": {
+				"item": "minecraft:chorus_fruit"
+			}
+		},
+		"result": {
+			"item": "dungeons:shadow_shifter",
+			"count": 1
+		}
+	}
+}

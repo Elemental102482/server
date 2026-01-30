@@ -1,0 +1,42 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.eternal_seal.slam_attack": {
+			"animation_length": 1.75,
+			"timeline": {
+				"0.61": [
+					"/playsound mob.large_impact @a[r=35] ~ ~ ~ 1 0.8 1"
+				]
+			}
+		},
+		"animation.eternal_seal.triple_slam_attack": {
+			"animation_length": 3.25,
+			"timeline": {
+				"0.61": [
+					"/playsound mob.large_impact @a[r=35] ~ ~ ~ 1 0.8 1"
+				],
+				"1.39": [
+					"/summon cata:eternal_seal_dummy ~ ~ ~",
+					"/playsound mob.large_impact @a[r=35] ~ ~ ~ 1 0.8 1",
+					"/summon cata:eternal_seal_triple_slam2_dummy ~ ~ ~"
+				],
+				"2.2": [
+					"/summon cata:eternal_seal_dummy ~ ~ ~",
+					"/playsound mob.large_impact @a[r=35] ~ ~ ~ 1 0.8 1",
+					"/summon cata:eternal_seal_triple_slam3_dummy ~ ~ ~"
+				]
+			}
+		},
+		"animation.eternal_seal.summon": {
+			"animation_length": 1,
+			"timeline": {
+				"0.55": [
+					"/summon cata:eternal_seal_summon_dummy ~ ~ ~"
+				]
+			}
+		},
+		"animation.eternal_seal.death": {
+			"animation_length": 4
+		}
+	}
+}

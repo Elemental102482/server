@@ -1,0 +1,181 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:block": {
+		"description": {
+			"identifier": "cata:alter_pedestal",
+			"menu_category": {
+				"category": "construction"
+			},
+			"states": {
+				"cata:alter_pedestal_astral": [
+					false,
+					true
+				],
+				"cata:alter_pedestal_floret": [
+					false,
+					true
+				],
+				"cata:alter_pedestal_solar": [
+					false,
+					true
+				],
+				"cata:alter_pedestal_lunar": [
+					false,
+					true
+				]
+			}
+		},
+		"permutations": [
+			{
+				"components": {
+					"tag:alter_pedestal_astral": {},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "alter_pedestal_side",
+							"render_method": "alpha_test"
+						},
+						"up": {
+							"texture": "alter_pedestal_astral",
+							"render_method": "alpha_test"
+						},
+						"down": {
+							"texture": "cata_polished_asteroid",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:custom_components": [
+						"component:alter_pedestal_astral_remove"
+					]
+				},
+				"condition": "q.block_state('cata:alter_pedestal_astral')"
+			},
+			{
+				"components": {
+					"tag:alter_pedestal_floret": {},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "alter_pedestal_side",
+							"render_method": "alpha_test"
+						},
+						"up": {
+							"texture": "alter_pedestal_floret",
+							"render_method": "alpha_test"
+						},
+						"down": {
+							"texture": "cata_polished_asteroid",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:custom_components": [
+						"component:alter_pedestal_floret_remove"
+					]
+				},
+				"condition": "q.block_state('cata:alter_pedestal_floret')"
+			},
+			{
+				"components": {
+					"tag:alter_pedestal_solar": {},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "alter_pedestal_side",
+							"render_method": "alpha_test"
+						},
+						"up": {
+							"texture": "alter_pedestal_solar",
+							"render_method": "alpha_test"
+						},
+						"down": {
+							"texture": "cata_polished_asteroid",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:custom_components": [
+						"component:alter_pedestal_solar_remove"
+					]
+				},
+				"condition": "q.block_state('cata:alter_pedestal_solar')"
+			},
+			{
+				"components": {
+					"tag:alter_pedestal_lunar": {},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "alter_pedestal_side",
+							"render_method": "alpha_test"
+						},
+						"up": {
+							"texture": "alter_pedestal_lunar",
+							"render_method": "alpha_test"
+						},
+						"down": {
+							"texture": "cata_polished_asteroid",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:custom_components": [
+						"component:alter_pedestal_lunar_remove"
+					]
+				},
+				"condition": "q.block_state('cata:alter_pedestal_lunar')"
+			}
+		],
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "alter_pedestal_side",
+					"render_method": "alpha_test"
+				},
+				"up": {
+					"texture": "alter_pedestal_top",
+					"render_method": "alpha_test"
+				},
+				"down": {
+					"texture": "cata_polished_asteroid",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:geometry": {
+				"identifier": "minecraft:geometry.full_block"
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 100
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 7.5,
+				"item_specific_speeds": [
+					{
+						"destroy_speed": 0.6,
+						"item": "minecraft:stone_pickaxe"
+					},
+					{
+						"destroy_speed": 0.4,
+						"item": "minecraft:iron_pickaxe"
+					},
+					{
+						"destroy_speed": 0.3,
+						"item": "minecraft:diamond_pickaxe"
+					},
+					{
+						"destroy_speed": 0.25,
+						"item": "minecraft:netherite_pickaxe"
+					},
+					{
+						"destroy_speed": 0.2,
+						"item": "minecraft:golden_pickaxe"
+					},
+					{
+						"destroy_speed": 0.5,
+						"item": "cata:sunflare_pickaxe"
+					}
+				]
+			},
+			"minecraft:loot": "loot_tables/blocks/alter_pedestal.json",
+			"minecraft:custom_components": [
+				"component:alter_pedestal_lunar",
+				"component:alter_pedestal_solar",
+				"component:alter_pedestal_floret",
+				"component:alter_pedestal_astral"
+			]
+		}
+	}
+}

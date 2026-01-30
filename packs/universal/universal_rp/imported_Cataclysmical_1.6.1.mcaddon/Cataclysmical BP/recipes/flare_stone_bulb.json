@@ -1,0 +1,31 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cata:flare_stone_bulb"
+		},
+		"pattern": [
+			" 1 ",
+			"121",
+			" 1 "
+		],
+		"key": {
+			"1": {
+				"item": "cata:flare_stone_brick"
+			},
+			"2": {
+				"item": "cata:solar_element"
+			}
+		},
+		"result": {
+			"item": "cata:flare_stone_bulb",
+			"count": 1
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": {
+			"context": "AlwaysUnlocked"
+		}
+	}
+}

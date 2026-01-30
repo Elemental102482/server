@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "system:emerald_sickle"
+    },
+
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " C ",
+      "  C",
+      "SC "
+    ],
+    "key": {
+      "S": {
+        "item": "minecraft:stick"
+      },
+      "C": {
+        "item": "minecraft:emerald"
+      }
+    },
+    "result": {
+      "item": "system:emerald_sickle"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+	"format_version": "1.10.0",
+	"particle_effect": {
+		"description": {
+			"identifier": "dungeons:ricochet_shot",
+			"basic_render_parameters": {
+				"material": "particles_alpha",
+				"texture": "textures/particles/dot"
+			}
+		},
+		"curves": {
+			"variable.shrink": {
+				"type": "linear",
+				"input": "v.particle_age",
+				"horizontal_range": "v.particle_lifetime",
+				"nodes": [
+					1,
+					0.1
+				]
+			},
+			"variable.speed": {
+				"type": "bezier",
+				"input": "v.particle_age",
+				"horizontal_range": "v.particle_lifetime",
+				"nodes": [
+					1,
+					2,
+					2,
+					2
+				]
+			}
+		},
+		"components": {
+			"minecraft:emitter_rate_steady": {
+				"spawn_rate": 30,
+				"max_particles": 300
+			},
+			"minecraft:emitter_lifetime_once": {
+				"active_time": "0.2"
+			},
+			"minecraft:emitter_shape_sphere": {
+				"radius": 0.2,
+				"surface_only": true,
+				"direction": "outwards"
+			},
+			"minecraft:particle_lifetime_expression": {
+				"max_lifetime": "0.2"
+			},
+			"minecraft:particle_initial_speed": "6*variable.speed",
+			"minecraft:particle_motion_dynamic": {},
+			"minecraft:particle_appearance_billboard": {
+				"size": [
+					"1*variable.shrink",
+					"0.21*variable.shrink"
+				],
+				"facing_camera_mode": "lookat_direction"
+			},
+			"minecraft:particle_appearance_tinting": {
+				"color": {
+					"interpolant": "v.particle_age / v.particle_lifetime",
+					"gradient": {
+						"0.0": "#FFDBB9FF",
+						"0.5": "#FFD5E9FF",
+						"1.0": "#FFFFDFDF"
+					}
+				}
+			}
+		}
+	}
+}

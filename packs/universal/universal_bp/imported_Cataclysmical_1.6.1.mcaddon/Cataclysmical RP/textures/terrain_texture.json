@@ -1,0 +1,401 @@
+{
+	"num_mip_levels": 4,
+	"padding": 8,
+	"resource_pack_name": "Cataclysmical",
+	"texture_name": "atlas.terrain",
+	"texture_data": {
+		"cata_gneiss": {
+			"textures": "textures/blocks/gneiss"
+		},
+		"cata_feralplast": {
+			"textures": "textures/blocks/feralplast"
+		},
+		"cata_gneiss_brick": {
+			"textures": "textures/blocks/gneiss_brick"
+		},
+		"cata_floret_ore": {
+			"textures": "textures/blocks/floret_ore"
+		},
+		"cata_gneiss_grate": {
+			"textures": "textures/blocks/gneiss_grate"
+		},
+		"cata_asteroid": {
+			"textures": "textures/blocks/asteroid"
+		},
+		"cata_astral_ore": {
+			"textures": "textures/blocks/astral_ore"
+		},
+		"cata_astral_dust": {
+			"textures": "textures/blocks/astral_dust"
+		},
+		"cata_feral_roots": {
+			"textures": "textures/blocks/feral_roots"
+		},
+		"cata_smooth_gneiss_brick": {
+			"textures": "textures/blocks/smooth_gneiss_brick"
+		},
+		"cata_gneiss_rocks": {
+			"textures": "textures/blocks/gneiss_rocks"
+		},
+		"cata_gneiss_lantern": {
+			"textures": "textures/blocks/model_blocks/gneiss_lantern"
+		},
+		"cata_gneiss_chain": {
+			"textures": "textures/blocks/gneiss_chain"
+		},
+		"cata_flare_stone": {
+			"textures": "textures/blocks/flare_stone"
+		},
+		"cata_astral_block": {
+			"textures": "textures/blocks/astral_block"
+		},
+		"cata_floret_block": {
+			"textures": "textures/blocks/floret_block"
+		},
+		"cata_gneiss_door": {
+			"textures": "textures/blocks/gneiss_door"
+		},
+		"cata_gneiss_door_lock": {
+			"textures": "textures/blocks/gneiss_door_lock"
+		},
+		"cata_cut_gneiss": {
+			"textures": "textures/blocks/cut_gneiss"
+		},
+		"cata_solar_ore": {
+			"textures": "textures/blocks/solar_ore"
+		},
+		"cata_flare_stone_brick": {
+			"textures": "textures/blocks/flare_stone_brick"
+		},
+		"cata_polished_flare_stone": {
+			"textures": "textures/blocks/polished_flare_stone"
+		},
+		"cata_emberglow": {
+			"textures": "textures/blocks/emberglow"
+		},
+		"cata_flare_stone_lantern": {
+			"textures": "textures/blocks/model_blocks/flare_stone_lantern"
+		},
+		"cata_flare_stone_chain": {
+			"textures": "textures/blocks/flare_stone_chain"
+		},
+		"cata_flare_stone_tiles": {
+			"textures": "textures/blocks/flare_stone_tiles"
+		},
+		"cata_occult_alter": {
+			"textures": "textures/blocks/model_blocks/occult_alter"
+		},
+		"cata_flare_stone_geyser": {
+			"textures": "textures/blocks/model_blocks/flare_stone_geyser"
+		},
+		"cata_flare_stone_rock": {
+			"textures": "textures/blocks/flare_stone_rock"
+		},
+		"cata_asteroid_brick": {
+			"textures": "textures/blocks/asteroid_brick"
+		},
+		"cata_flare_stone_bulb": {
+			"textures": "textures/blocks/flare_stone_bulb"
+		},
+		"cata_chiseled_flare_stone": {
+			"textures": "textures/blocks/chiseled_flare_stone"
+		},
+		"cata_chiseled_flare_stone_top": {
+			"textures": "textures/blocks/chiseled_flare_stone_top"
+		},
+		"cata_flare_stone_pillar": {
+			"textures": "textures/blocks/flare_stone_pillar"
+		},
+		"cata_flare_stone_pillar_top": {
+			"textures": "textures/blocks/flare_stone_pillar_top"
+		},
+		"cata_verdant_crusher_top": {
+			"textures": "textures/blocks/verdant_crusher_top"
+		},
+		"cata_verdant_crusher_side": {
+			"textures": "textures/blocks/verdant_crusher_side"
+		},
+		"cata_polished_feralplast": {
+			"textures": "textures/blocks/polished_feralplast"
+		},
+		"cata_feralplast_brick": {
+			"textures": "textures/blocks/feralplast_brick"
+		},
+		"cata_grim_stone": {
+			"textures": "textures/blocks/grim_stone"
+		},
+		"cata_grim_stone_brick": {
+			"textures": "textures/blocks/grim_stone_brick"
+		},
+		"cata_polished_grim_stone": {
+			"textures": "textures/blocks/polished_grim_stone"
+		},
+		"cata_polished_asteroid": {
+			"textures": "textures/blocks/polished_asteroid"
+		},
+		"cata_abyssal_stone_brick": {
+			"textures": "textures/blocks/abyssal_stone_brick"
+		},
+		"cata_abyssal_stone": {
+			"textures": "textures/blocks/abyssal_stone"
+		},
+		"cata_lunar_ore": {
+			"textures": "textures/blocks/lunar_ore"
+		},
+		"cata_block_test": {
+			"textures": "textures/blocks/catatest"
+		},
+		"cata_elemental_alter": {
+			"textures": "textures/blocks/model_blocks/elemental_alter"
+		},
+		"cata_elemental_alter_powered": {
+			"textures": "textures/blocks/model_blocks/elemental_alter_powered"
+		},
+		"alter_pedestal_side": {
+			"textures": "textures/blocks/magic_alters/alter_pedestal_side"
+		},
+		"alter_pedestal_top": {
+			"textures": "textures/blocks/magic_alters/alter_pedestal_top"
+		},
+		"alter_pedestal_floret": {
+			"textures": "textures/blocks/magic_alters/alter_pedestal_top_floret"
+		},
+		"alter_pedestal_astral": {
+			"textures": "textures/blocks/magic_alters/alter_pedestal_top_astral"
+		},
+		"alter_pedestal_solar": {
+			"textures": "textures/blocks/magic_alters/alter_pedestal_top_solar"
+		},
+		"alter_pedestal_lunar": {
+			"textures": "textures/blocks/magic_alters/alter_pedestal_top_lunar"
+		},
+		"cata_feral_flower": {
+			"textures": "textures/blocks/model_blocks/feral_flower"
+		},
+		"cata_calamity": {
+			"textures": [
+				"textures/items/calamity"
+			]
+		},
+		"cata_stellar_greatsword": {
+			"textures": "textures/items/stellar_greatsword"
+		},
+		"cata_platinum_greatsword": {
+			"textures": "textures/items/platinum_greatsword"
+		},
+		"cata_platinum_ore": {
+			"textures": "textures/blocks/platinum_ore"
+		},
+		"cata_deepslate_platinum_ore": {
+			"textures": "textures/blocks/deepslate_platinum_ore"
+		},
+		"cata_platinum_block": {
+			"textures": "textures/blocks/platinum_block"
+		},
+		"cata_platinum_halberd": {
+			"textures": "textures/items/platinum_halberd"
+		},
+		"cata_terrorite_rock": {
+			"textures": "textures/items/item_mesh/terrorite_rock"
+		},
+		"cata_phantasma_stabilizer_top": {
+			"textures": "textures/blocks/phantasma_stabilizer_top"
+		},
+		"cata_phantasma_stabilizer_side": {
+			"textures": "textures/blocks/phantasma_stabilizer_side"
+		},
+		"cata_phantasma_stabilizer_bottom": {
+			"textures": "textures/blocks/phantasma_stabilizer_bottom"
+		},
+		"cata_phantasma_greatsword": {
+			"textures": "textures/items/phantasma_greatsword"
+		},
+		"cata_blooming_heart": {
+			"textures": "textures/items/blooming_heart"
+		},
+		"cata_ray_gun": {
+			"textures": "textures/items/item_mesh/ray_gun"
+		},
+		"cata_solar_tesla_coil": {
+			"textures": "textures/blocks/model_blocks/solar_tesla_coil"
+		},
+		"cata_verdant_greatsword": {
+			"textures": "textures/items/verdant_greatsword"
+		},
+		"cata_ectoplasm": {
+			"textures": "textures/items/ectoplasm"
+		},
+		"cata_terror_detector": {
+			"textures": "textures/items/terror_detector"
+		},
+		"cata_terrorite_brick": {
+			"textures": "textures/blocks/terrorite_brick"
+		},
+		"cata_terrorite_tile": {
+			"textures": "textures/blocks/terrorite_tiles"
+		},
+		"cata_terror_guide": {
+			"textures": "textures/items/terror_guide"
+		},
+		"cata_solar_core": {
+			"textures": "textures/items/item_mesh/solar_core"
+		},
+		"cata_overloaded_solar_core": {
+			"textures": "textures/items/overloaded_solar_core"
+		},
+		"cata_blazing_excalibur": {
+			"textures": "textures/items/blazing_excalibur"
+		},
+		"cata_cracked_flare_stone_brick": {
+			"textures": "textures/blocks/cracked_flare_stone_brick"
+		},
+		"cata_chiseled_flare_stone_brick": {
+			"textures": "textures/blocks/chiseled_flare_stone_brick"
+		},
+		"cata_everbloom": {
+			"textures": "textures/items/everbloom"
+		},
+		"cata_ancient_pot": {
+			"textures": "textures/blocks/model_blocks/ancient_pot"
+		},
+		"cata_ancient_pot_bottom": {
+			"textures": "textures/blocks/ancient_pot_bottom"
+		},
+		"cata_spore_thrower": {
+			"textures": "textures/items/item_mesh/spore_thrower"
+		},
+		"cata_stellar_mace": {
+			"textures": "textures/items/stellar_mace"
+		},
+		"cata_solar_monolith": {
+			"textures": "textures/blocks/model_blocks/solar_monolith"
+		},
+		"cata_solar_monolith_deactivated": {
+			"textures": "textures/blocks/model_blocks/solar_monolith_deactivated"
+		},
+		"cata_block_test2": {
+			"textures": "textures/blocks/catatest2"
+		},
+		"cata_verdant_vault_side": {
+			"textures": "textures/blocks/verdant_vault"
+		},
+		"cata_verdant_vault_top": {
+			"textures": "textures/blocks/verdant_vault_top"
+		},
+		"cata_verdant_vault_bottom": {
+			"textures": "textures/blocks/verdant_vault_bottom"
+		},
+		"cata_verdant_vault_top_open": {
+			"textures": "textures/blocks/verdant_vault_top_open"
+		},
+		"cata_platinum_vault_side": {
+			"textures": "textures/blocks/platinum_vault"
+		},
+		"cata_platinum_vault_top": {
+			"textures": "textures/blocks/platinum_vault_top"
+		},
+		"cata_platinum_vault_bottom": {
+			"textures": "textures/blocks/platinum_vault_bottom"
+		},
+		"cat_platinum_vault_top_open": {
+			"textures": "textures/blocks/platinum_vault_top_open"
+		},
+		"cata_sealed_heart": {
+			"textures": "textures/blocks/model_blocks/sealed_heart"
+		},
+		"cata_wooden_greatsword": {
+			"textures": [
+				"textures/items/wooden_greatsword"
+			]
+		},
+		"cata_stone_greatsword": {
+			"textures": [
+				"textures/items/stone_greatsword"
+			]
+		},
+		"cata_iron_greatsword": {
+			"textures": [
+				"textures/items/iron_greatsword"
+			]
+		},
+		"cata_diamond_greatsword": {
+			"textures": [
+				"textures/items/diamond_greatsword"
+			]
+		},
+		"cata_netherite_greatsword": {
+			"textures": [
+				"textures/items/netherite_greatsword"
+			]
+		},
+		"cata_meowclysm": {
+			"textures": "textures/items/meowclysm"
+		},
+		"cata_calamity_ring": {
+			"textures": "textures/items/calamity_ring"
+		},
+		"cata_shard_of_cataclysm": {
+			"textures": "textures/items/shard_of_cataclysm"
+		},
+		"cata_shard_of_calamity": {
+			"textures": "textures/items/shard_of_calamity"
+		},
+		"cata_sunlight": {
+			"textures": "textures/items/sunlight"
+		},
+		"cata_moonlight": {
+			"textures": "textures/items/moonlight"
+		},
+		"cata_sun_fragment": {
+			"textures": "textures/items/sun_fragment"
+		},
+		"cata_verdant_blade": {
+			"textures": "textures/entity/verdant_sentinel_texture"
+		},
+		"cata_solar_block": {
+			"textures": "textures/blocks/solar_block"
+		},
+		"cata_chaosspec_ingot": {
+			"textures": "textures/items/chaosspec_ingot"
+		},
+		"cata_terrorite": {
+			"textures": "textures/blocks/terrorite"
+		},
+		"cata_exodius_greatsword": {
+			"textures": "textures/items/exodius_greatsword"
+		},
+		"cata_anchor": {
+			"textures": "textures/items/anchor"
+		},
+		"cata_cut_terrorite": {
+			"textures": "textures/blocks/cut_terrorite"
+		},
+		"cata_phoenix_blade": {
+			"textures": "textures/items/item_mesh/phoenix_blade_texture"
+		},
+		"cata_sunflare_pickaxe": {
+			"textures": "textures/items/sunflare_pickaxe"
+		},
+		"cata_exodius_ore": {
+			"textures": "textures/blocks/exodius_ore"
+		},
+		"cata_polished_abyssal_stone": {
+			"textures": "textures/blocks/polished_abyssal_stone"
+		},
+		"cata_divine_scythe_of_heaven": {
+			"textures": "textures/items/divine_scythe_of_heaven"
+		},
+		"cata_terror_skull_launcher": {
+			"textures": "textures/items/item_mesh/terror_skull_launcher"
+		},
+		"cata_phantasma_nucleus": {
+			"textures": "textures/items/phantasma_nucleus"
+		},
+		"cata_bonebreaker": {
+			"textures": "textures/items/bonebreaker"
+		},
+		"cata_nebulous_greatsword": {
+			"textures": "textures/items/nebulous_greatsword"
+		}
+	}
+}

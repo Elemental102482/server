@@ -1,0 +1,36 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "void_bow"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" /S",
+			"- S",
+			" /S"
+		],
+		"key": {
+			"-": {
+				"item": "dungeons:void_fluid"
+			},
+			"/": {
+				"item": "minecraft:stick"
+			},
+			"S": {
+				"item": "minecraft:string"
+			}
+		},
+		"unlock": [
+			{
+				"item": "dungeons:void_fluid"
+			}
+		],
+		"result": {
+			"item": "dungeons:void_bow",
+			"count": 1
+		}
+	}
+}

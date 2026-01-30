@@ -1,0 +1,47 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:enchanted_witch",
+			"min_engine_version": "1.10.0",
+			"materials": {
+				"default": "entity_emissive_alpha",
+				"enchanted": "dungeons_entity_enchant"
+			},
+			"textures": {
+				"default": "textures/entity/witch/enchanted_witch",
+				"enchanted": "textures/misc/enchanted_entity_glint"
+			},
+			"particle_effects": {
+				"enchant": "dungeons:humanoid_enchant"
+			},
+			"geometry": {
+				"default": "geometry.new_witch"
+			},
+			"scripts": {
+				"scale": "0.9375",
+				"animate": [
+					"move_controller",
+					"general_controller",
+					"enchanted_particles"
+				]
+			},
+			"animations": {
+				"enchanted_particles": "animation.enchanted_mob.particles",
+				"villager_general": "animation.villager.general",
+				"look_at_target": "animation.common.look_at_target",
+				"move": "animation.villager.move",
+				"general": "animation.witch.general",
+				"general_controller": "controller.animation.witch.general",
+				"move_controller": "controller.animation.villager.move"
+			},
+			"render_controllers": [
+				"controller.render.witch",
+				"controller.render.dungeons_entity_enchanted"
+			],
+			"spawn_egg": {
+				"texture": "egg_enchanted_witch"
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ghostly_leggings"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"BBB",
+			"L L",
+			"L L"
+		],
+		"unlock": [
+			{
+				"item": "minecraft:bone"
+			}
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:bone"
+			},
+			"L": {
+				"item": "minecraft:leather"
+			}
+		},
+		"result": {
+			"item": "dungeons:ghostly_leggings",
+			"count": 1
+		}
+	}
+}

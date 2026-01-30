@@ -1,0 +1,125 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.stone_golem",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 4.5,
+				"visible_bounds_offset": [
+					0,
+					1.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "right_leg",
+					"parent": "root",
+					"pivot": [
+						-4.5,
+						13.5,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-8,
+								0,
+								-4
+							],
+							"size": [
+								7,
+								13,
+								8
+							],
+							"uv": [
+								60,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "left_leg",
+					"parent": "root",
+					"pivot": [
+						4.5,
+						13.5,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								1,
+								0,
+								-4
+							],
+							"size": [
+								7,
+								13,
+								8
+							],
+							"uv": [
+								60,
+								21
+							]
+						}
+					]
+				},
+				{
+					"name": "head",
+					"parent": "root",
+					"pivot": [
+						0,
+						14,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-9,
+								13,
+								-6
+							],
+							"size": [
+								18,
+								30,
+								12
+							],
+							"uv": [
+								0,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "particles",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"locators": {
+						"impact": [
+							0,
+							0,
+							-24
+						]
+					}
+				}
+			]
+		}
+	]
+}

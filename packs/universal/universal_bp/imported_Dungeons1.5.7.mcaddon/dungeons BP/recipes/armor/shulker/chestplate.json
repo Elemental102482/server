@@ -1,0 +1,36 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "shulker_chestplate"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"B B",
+			"LIL",
+			"BLB"
+		],
+		"unlock": [
+			{
+				"item": "minecraft:shulker_shell"
+			}
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:shulker_shell"
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			},
+			"L": {
+				"item": "minecraft:leather"
+			}
+		},
+		"result": {
+			"item": "dungeons:shulker_chestplate",
+			"count": 1
+		}
+	}
+}

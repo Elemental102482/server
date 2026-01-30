@@ -1,0 +1,39 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:squall_golem_resting",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/squall_golem/squall_golem_off",
+				"on": "textures/entity/squall_golem/squall_golem_on"
+			},
+			"geometry": {
+				"default": "geometry.squall_golem"
+			},
+			"render_controllers": [
+				"controller.render.redstone_monstrosity"
+			],
+			"animations": {
+				"resting": "animation.squall_golem.off",
+				"awaken": "animation.squall_golem.power_up",
+				"wake_controller": "controller.animation.redstone_monstrosity.rest"
+			},
+			"scripts": {
+				"animate": [
+					"wake_controller"
+				]
+			},
+			"sound_effects": {
+				"awaken": "mob.squall_golem.zap",
+				"wind": "mob.breeze.whirl"
+			},
+			"spawn_egg": {
+				"base_color": "#97b0af",
+				"overlay_color": "#258a17"
+			}
+		}
+	}
+}

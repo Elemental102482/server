@@ -1,0 +1,408 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "dungeons:windcaller",
+			"spawn_category": "monster",
+			"is_spawnable": true,
+			"is_summonable": true
+		},
+		"component_groups": {
+			"dungeons:has_home": {
+				"minecraft:home": {
+					"restriction_radius": 8,
+					"restriction_type": "random_movement"
+				}
+			},
+			"minecraft:celebrate": {
+				"minecraft:behavior.celebrate": {
+					"priority": 5,
+					"celebration_sound": "celebrate",
+					"sound_interval": {
+						"range_min": 2,
+						"range_max": 7
+					},
+					"jump_interval": {
+						"range_min": 1,
+						"range_max": 3.5
+					},
+					"duration": 30,
+					"on_celebration_end_event": {
+						"event": "minecraft:stop_celebrating",
+						"target": "self"
+					}
+				}
+			},
+			"minecraft:raid_configuration": {
+				"minecraft:dweller": {
+					"dwelling_type": "village",
+					"dweller_role": "hostile",
+					"update_interval_base": 60,
+					"update_interval_variant": 40,
+					"can_find_poi": false,
+					"can_migrate": true,
+					"first_founding_reward": 0
+				},
+				"minecraft:behavior.move_to_village": {
+					"priority": 6,
+					"speed_multiplier": 0.7
+				},
+				"minecraft:ambient_sound_interval": {
+					"value": 2,
+					"range": 4,
+					"event_name": "ambient.in.raid"
+				}
+			},
+			"minecraft:raid_persistence": {
+				"minecraft:persistent": {}
+			},
+			"minecraft:raid_despawn": {
+				"minecraft:despawn": {
+					"despawn_from_distance": {}
+				}
+			}
+		},
+		"components": {
+			"minecraft:equip_item": {},
+			"minecraft:shareables": {
+				"items": [
+					{
+						"item": "minecraft:banner:15",
+						"want_amount": 1,
+						"surplus_amount": 1,
+						"priority": 0
+					}
+				]
+			},
+			"minecraft:is_hidden_when_invisible": {},
+			"minecraft:experience_reward": {
+				"on_death": "query.last_hit_by_player?8:0"
+			},
+			"minecraft:type_family": {
+				"family": [
+					"windcaller",
+					"monster",
+					"illager",
+					"mob"
+				]
+			},
+			"minecraft:breathable": {
+				"total_supply": 15,
+				"suffocate_time": 0
+			},
+			"minecraft:nameable": {},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/windcaller.json"
+			},
+			"minecraft:health": {
+				"value": 24,
+				"max": 24
+			},
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"filters": {
+							"test": "in_lava",
+							"subject": "self",
+							"operator": "==",
+							"value": true
+						},
+						"cause": "lava",
+						"damage_per_tick": 4
+					}
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 0.6,
+				"height": 2.6
+			},
+			"minecraft:movement": {
+				"value": 0.5
+			},
+			"minecraft:navigation.walk": {
+				"can_path_over_water": true,
+				"can_pass_doors": true,
+				"can_open_doors": true,
+				"avoid_water": true
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:can_climb": {},
+			"minecraft:behavior.float": {
+				"priority": 0
+			},
+			"minecraft:behavior.summon_entity": {
+				"priority": 2,
+				"summon_choices": [
+					{
+						"min_activation_range": 1,
+						"max_activation_range": 16,
+						"weight": 1,
+						"cooldown_time": 5,
+						"cast_duration": 2,
+						"particle_color": "#ffffe603",
+						"sequence": [
+							{
+								"shape": "line",
+								"target": "self",
+								"base_delay": 2,
+								"delay_per_summon": 0.5,
+								"num_entities_spawned": 4,
+								"entity_type": "dungeons:wind_push_burst",
+								"size": 16,
+								"entity_lifespan": 5
+							}
+						]
+					},
+					{
+						"min_activation_range": 6,
+						"max_activation_range": 24,
+						"cooldown_time": 5,
+						"weight": 3,
+						"cast_duration": 2,
+						"particle_color": "#FF664D59",
+						"sequence": [
+							{
+								"shape": "circle",
+								"target": "target",
+								"base_delay": 0.05,
+								"delay_per_summon": 0,
+								"num_entities_spawned": 1,
+								"entity_type": "dungeons:wind_pillar_circle",
+								"size": 1,
+								"entity_lifespan": 5
+							},
+							{
+								"shape": "circle",
+								"target": "target",
+								"base_delay": 2,
+								"delay_per_summon": 0,
+								"num_entities_spawned": 1,
+								"entity_type": "dungeons:wind_pillar_burst",
+								"size": 1,
+								"entity_lifespan": 5
+							}
+						]
+					}
+				]
+			},
+			"minecraft:behavior.send_event": {
+				"priority": 3,
+				"event_choices": [
+					{
+						"min_activation_range": 0,
+						"max_activation_range": 16,
+						"cooldown_time": 5,
+						"cast_duration": 2,
+						"particle_color": "#FFB38033",
+						"weight": 3,
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "sheep"
+								},
+								{
+									"test": "is_color",
+									"subject": "other",
+									"value": "blue"
+								}
+							]
+						},
+						"start_sound_event": "cast.spell",
+						"sequence": [
+							{
+								"base_delay": 2,
+								"event": "wololo",
+								"sound_event": "prepare.wololo"
+							}
+						]
+					}
+				]
+			},
+			"minecraft:behavior.avoid_mob_type": {
+				"priority": 5,
+				"entity_types": [
+					{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"value": "player"
+						},
+						"max_dist": 8,
+						"walk_speed_multiplier": 0.6,
+						"sprint_speed_multiplier": 1
+					},
+					{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"value": "creaking"
+						},
+						"max_dist": 8,
+						"sprint_speed_multiplier": 1.2
+					}
+				]
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 8,
+				"speed_multiplier": 0.6
+			},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 2,
+				"entity_types": [
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "snowgolem"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "irongolem"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "wandering_trader"
+								}
+							]
+						},
+						"max_dist": 20
+					},
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "villager"
+								},
+								{
+									"test": "has_component",
+									"subject": "other",
+									"operator": "!=",
+									"value": "minecraft:is_baby"
+								}
+							]
+						},
+						"max_dist": 20
+					}
+				],
+				"must_see": true
+			},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1,
+				"entity_types": {
+					"filters": {
+						"test": "is_family",
+						"subject": "other",
+						"operator": "!=",
+						"value": "illager"
+					},
+					"max_dist": 64
+				}
+			},
+			"minecraft:behavior.equip_item": {
+				"priority": 3
+			},
+			"minecraft:behavior.pickup_items": {
+				"priority": 7,
+				"max_dist": 3,
+				"goal_radius": 2,
+				"speed_multiplier": 1
+			},
+			"minecraft:persistent": {},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:spell_effects": {
+				"add_effects": [
+					{
+						"effect": "slow_falling",
+						"duration": 999999,
+						"visible": false
+					}
+				]
+			},
+			"minecraft:follow_range": {
+				"value": 24
+			},
+			"minecraft:can_join_raid": {},
+			"minecraft:conditional_bandwidth_optimization": {}
+		},
+		"events": {
+			"dungeons:spawn_structure": {
+				"add": {
+					"component_groups": [
+						"dungeons:has_home"
+					]
+				}
+			},
+			"minecraft:spawn_for_raid": {
+				"add": {
+					"component_groups": [
+						"minecraft:raid_configuration",
+						"minecraft:raid_despawn",
+						"minecraft:raid_persistence"
+					]
+				}
+			},
+			"minecraft:start_celebrating": {
+				"sequence": [
+					{
+						"add": {
+							"component_groups": [
+								"minecraft:celebrate"
+							]
+						}
+					},
+					{
+						"filters": {
+							"test": "has_nametag",
+							"value": false
+						},
+						"remove": {
+							"component_groups": [
+								"minecraft:raid_persistence"
+							]
+						}
+					}
+				]
+			},
+			"minecraft:stop_celebrating": {
+				"remove": {
+					"component_groups": [
+						"minecraft:celebrate"
+					]
+				}
+			},
+			"minecraft:raid_expired": {
+				"sequence": [
+					{
+						"filters": {
+							"test": "has_nametag",
+							"value": false
+						},
+						"remove": {
+							"component_groups": [
+								"minecraft:raid_persistence"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

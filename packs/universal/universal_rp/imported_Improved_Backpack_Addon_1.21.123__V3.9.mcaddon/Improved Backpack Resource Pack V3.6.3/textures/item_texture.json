@@ -1,0 +1,18 @@
+{
+   "resource_pack_name" : "vanilla",
+   "texture_data" : {
+	   "backpack":{
+		   "textures" : "textures/bp/backpack"
+	   },
+	   "backpack_medium":{
+		   "textures" : "textures/bp/backpack_medium"
+	   },
+	   "backpack_big":{
+		   "textures" : "textures/bp/backpack_big"
+	   },
+	   "backpack_xl":{
+		   "textures" : "textures/bp/backpack_xl"
+	   }
+   },
+   "texture_name" : "atlas.items"
+}

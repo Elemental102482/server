@@ -1,0 +1,111 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "cata:terror_skull_launcher",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"runtime_identifier": "minecraft:snowball"
+		},
+		"component_groups": {
+			"despawn": {
+				"minecraft:instant_despawn": {
+					"remove_child_entities": true
+				},
+				"minecraft:explode": {
+					"power": 10,
+					"breaks_blocks": false,
+					"fuse_length": 0
+				}
+			}
+		},
+		"components": {
+			"minecraft:physics": {},
+			"minecraft:collision_box": {
+				"width": 0.3,
+				"height": 0.3
+			},
+			"minecraft:projectile": {
+				"on_hit": {
+					"impact_damage": {
+						"damage": 20,
+						"knockback": true
+					},
+					"definition_event": {
+						"event_trigger": {
+							"event": "explode"
+						}
+					}
+				},
+				"power": 0.5,
+				"gravity": 0.02,
+				"uncertainty_base": 16,
+				"uncertainty_multiplier": 4,
+				"stop_on_hurt": false,
+				"anchor": 0,
+				"offset": [
+					0,
+					0,
+					0
+				]
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:conditional_bandwidth_optimization": {
+				"default_values": {
+					"max_optimized_distance": 1000,
+					"max_dropped_ticks": 7,
+					"use_motion_prediction_hints": true
+				}
+			},
+			"minecraft:timer": {
+				"looping": true,
+				"time": [
+					2,
+					2
+				],
+				"time_down_event": {
+					"event": "explode"
+				}
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"on_damage": {
+							"filters": [
+								{
+									"test": "has_damage",
+									"subject": "other",
+									"value": "projectile"
+								}
+							]
+						},
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:despawn": {
+				"despawn_from_distance": {}
+			}
+		},
+		"events": {
+			"explode": {
+				"add": {
+					"component_groups": [
+						"despawn"
+					]
+				},
+				"queue_command": {
+					"command": [
+						"particle minecraft:huge_explosion_emitter ~ ~ ~",
+						"playsound random.explode @a[r=32] ~ ~ ~ 1 0.9 1",
+						"damage @e[r=6] 20 projectile"
+					]
+				}
+			}
+		}
+	}
+}

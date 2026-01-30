@@ -1,0 +1,48 @@
+{
+	"format_version": "1.21.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "cata:solar_monolith_top",
+			"states": {
+				"cata:solar_monolith_activate": [
+					false,
+					true
+				]
+			}
+		},
+		"components": {
+			"minecraft:destructible_by_explosion": false,
+			"minecraft:geometry": "geometry.solar_monolith_top",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "cata_solar_monolith_deactivated",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:custom_components": [
+				"component:solar_monolith_top_destroy"
+			],
+			"minecraft:loot": "loot_tables/empty.json",
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 9999
+			}
+		},
+		"permutations": [
+			{
+				"components": {
+					"minecraft:loot": "loot_tables/empty.json",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "cata_solar_monolith",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:custom_components": [
+						"component:solar_monolith_top_destroy"
+					]
+				},
+				"condition": "q.block_state('cata:solar_monolith_activate')"
+			}
+		]
+	}
+}

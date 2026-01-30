@@ -1,0 +1,33 @@
+{
+  "format_version": "1.21.60",
+  "minecraft:crafting_items_catalog": {
+    "categories": [
+      {
+        "category_name": "items",
+        "groups": [
+          {
+            "group_identifier": { "name": "ws:itemGroup.name.waystones", "icon": "ws:waystone_polished_andesite" },
+            "items": [
+              "ws:waystone_chiseled_nether_bricks",
+              "ws:waystone_chiseled_polished_blackstone",
+              "ws:waystone_chiseled_resin_bricks",
+              "ws:waystone_chiseled_stone_bricks",
+              "ws:waystone_chiseled_tuff_bricks",
+              "ws:waystone_chiseled_tuff",
+              "ws:waystone_cut_red_sandstone",
+              "ws:waystone_cut_sandstone",
+              "ws:waystone_polished_andesite",
+              "ws:waystone_polished_basalt",
+              "ws:waystone_polished_deepslate",
+              "ws:waystone_polished_diorite",
+              "ws:waystone_polished_granite",
+              "ws:waystone_polished_tuff",
+              "ws:waystone_prismarine_bricks",
+              "ws:waystone_quartz_pillar"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

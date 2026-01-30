@@ -1,0 +1,24 @@
+{
+	"format_version": 1.12,
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "e:ofts_netherite_sword"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "minecraft:netherite_sword"
+			},
+			{
+				"item": "e:origin_of_the_star_book_1"
+			}
+		],
+		"result": [
+			{
+				"item": "e:netherite_sword_ofts"
+			}
+		]
+	}
+}

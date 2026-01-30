@@ -1,0 +1,421 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.gauntlets",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root_item",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"binding": "q.item_slot_to_bone_name(c.item_slot)",
+					"cubes": [
+						{
+							"origin": [
+								-2.6,
+								-4,
+								-1
+							],
+							"size": [
+								3.6,
+								12,
+								4.1
+							],
+							"inflate": 0.21,
+							"pivot": [
+								-0.8,
+								2,
+								1.05
+							],
+							"rotation": [
+								-90,
+								0,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										4,
+										4
+									],
+									"uv_size": [
+										3,
+										12
+									]
+								},
+								"east": {
+									"uv": [
+										0,
+										4
+									],
+									"uv_size": [
+										4,
+										12
+									]
+								},
+								"south": {
+									"uv": [
+										11,
+										4
+									],
+									"uv_size": [
+										3,
+										12
+									]
+								},
+								"west": {
+									"uv": [
+										7,
+										4
+									],
+									"uv_size": [
+										4,
+										12
+									]
+								},
+								"up": {
+									"uv": [
+										4,
+										0
+									],
+									"uv_size": [
+										3,
+										4
+									]
+								},
+								"down": {
+									"uv": [
+										7,
+										4
+									],
+									"uv_size": [
+										3,
+										-4
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "root_item2",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"binding": "'leftitem'",
+					"cubes": [
+						{
+							"origin": [
+								-2.6,
+								-4,
+								-1
+							],
+							"size": [
+								3.6,
+								12,
+								4.1
+							],
+							"inflate": 0.21,
+							"pivot": [
+								-0.8,
+								2,
+								1.05
+							],
+							"rotation": [
+								-90,
+								0,
+								180
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										14,
+										4
+									],
+									"uv_size": [
+										-3,
+										12
+									]
+								},
+								"east": {
+									"uv": [
+										0,
+										4
+									],
+									"uv_size": [
+										4,
+										12
+									]
+								},
+								"south": {
+									"uv": [
+										7,
+										4
+									],
+									"uv_size": [
+										-3,
+										12
+									]
+								},
+								"west": {
+									"uv": [
+										7,
+										4
+									],
+									"uv_size": [
+										4,
+										12
+									]
+								},
+								"up": {
+									"uv": [
+										4,
+										0
+									],
+									"uv_size": [
+										3,
+										4
+									]
+								},
+								"down": {
+									"uv": [
+										7,
+										4
+									],
+									"uv_size": [
+										3,
+										-4
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.glowing_gauntlets",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "glow_item",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"binding": "q.item_slot_to_bone_name(c.item_slot)",
+					"cubes": [
+						{
+							"origin": [
+								-2.6,
+								-4,
+								-1
+							],
+							"size": [
+								3.6,
+								12,
+								4.1
+							],
+							"inflate": 0.21,
+							"pivot": [
+								-0.8,
+								2,
+								1.05
+							],
+							"rotation": [
+								-90,
+								0,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										4,
+										4
+									],
+									"uv_size": [
+										3,
+										12
+									]
+								},
+								"east": {
+									"uv": [
+										0,
+										4
+									],
+									"uv_size": [
+										4,
+										12
+									]
+								},
+								"south": {
+									"uv": [
+										11,
+										4
+									],
+									"uv_size": [
+										3,
+										12
+									]
+								},
+								"west": {
+									"uv": [
+										7,
+										4
+									],
+									"uv_size": [
+										4,
+										12
+									]
+								},
+								"up": {
+									"uv": [
+										4,
+										0
+									],
+									"uv_size": [
+										3,
+										4
+									]
+								},
+								"down": {
+									"uv": [
+										7,
+										4
+									],
+									"uv_size": [
+										3,
+										-4
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "glow_item2",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"binding": "'leftitem'",
+					"cubes": [
+						{
+							"origin": [
+								-2.6,
+								-4,
+								-1
+							],
+							"size": [
+								3.6,
+								12,
+								4.1
+							],
+							"inflate": 0.21,
+							"pivot": [
+								-0.8,
+								2,
+								1.05
+							],
+							"rotation": [
+								-90,
+								0,
+								180
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										14,
+										4
+									],
+									"uv_size": [
+										-3,
+										12
+									]
+								},
+								"east": {
+									"uv": [
+										0,
+										4
+									],
+									"uv_size": [
+										4,
+										12
+									]
+								},
+								"south": {
+									"uv": [
+										7,
+										4
+									],
+									"uv_size": [
+										-3,
+										12
+									]
+								},
+								"west": {
+									"uv": [
+										7,
+										4
+									],
+									"uv_size": [
+										4,
+										12
+									]
+								},
+								"up": {
+									"uv": [
+										4,
+										0
+									],
+									"uv_size": [
+										3,
+										4
+									]
+								},
+								"down": {
+									"uv": [
+										7,
+										4
+									],
+									"uv_size": [
+										3,
+										-4
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "truthseeker",
+        "metalness_emissive_roughness": "truthseeker_mer"
+    }
+}

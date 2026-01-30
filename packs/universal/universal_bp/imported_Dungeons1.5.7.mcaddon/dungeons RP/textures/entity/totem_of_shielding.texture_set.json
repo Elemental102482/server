@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "totem_of_shielding",
+        "metalness_emissive_roughness": "totem_of_shielding_mer"
+    }
+}

@@ -1,0 +1,139 @@
+{
+	"format_version": "1.21.20",
+	"minecraft:template_pool": {
+		"description": {
+			"identifier": "cata:verdant_dungeon_ew_hall"
+		},
+		"elements": [
+			{
+				"element": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "verdant_dungeon/ew_hall",
+					"processors": "cata:gneiss_replacement"
+				},
+				"weight": 20
+			},
+			{
+				"element": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "verdant_dungeon/main_hall",
+					"processors": "cata:gneiss_replacement"
+				},
+				"weight": 3
+			},
+			{
+				"element": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "verdant_dungeon/main_hall_int1",
+					"processors": "cata:gneiss_replacement"
+				},
+				"weight": 3
+			},
+			{
+				"element": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "verdant_dungeon/main_hall_int2",
+					"processors": "cata:gneiss_replacement"
+				},
+				"weight": 2
+			},
+			{
+				"element": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "verdant_dungeon/main_hall_int3",
+					"processors": "cata:gneiss_replacement"
+				},
+				"weight": 2
+			},
+			{
+				"element": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "verdant_dungeon/main_hall_int4",
+					"processors": "cata:gneiss_replacement"
+				},
+				"weight": 2
+			},
+			{
+				"element": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "verdant_dungeon/main_hall_int5",
+					"processors": "cata:gneiss_replacement"
+				},
+				"weight": 2
+			},
+			{
+				"element": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "verdant_dungeon/main_hall_int6",
+					"processors": "cata:gneiss_replacement"
+				},
+				"weight": 1
+			},
+			{
+				"element": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "verdant_dungeon/main_hall_int7",
+					"processors": "cata:gneiss_replacement"
+				},
+				"weight": 1
+			},
+			{
+				"element": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "verdant_dungeon/main_hall_int8",
+					"processors": "cata:gneiss_replacement"
+				},
+				"weight": 3
+			},
+			{
+				"element": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "verdant_dungeon/main_hall_int9",
+					"processors": "cata:gneiss_replacement"
+				},
+				"weight": 3
+			},
+			{
+				"element": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "verdant_dungeon/main_hall_int10",
+					"processors": "cata:gneiss_replacement"
+				},
+				"weight": 1
+			},
+			{
+				"element": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "verdant_dungeon/main_hall_int12",
+					"processors": "cata:gneiss_replacement"
+				},
+				"weight": 2
+			},
+			{
+				"element": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "verdant_dungeon/main_hall_vault1",
+					"processors": "cata:gneiss_replacement"
+				},
+				"weight": 1
+			},
+			{
+				"element": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "verdant_dungeon/main_hall_vault2",
+					"processors": "cata:gneiss_replacement"
+				},
+				"weight": 1
+			},
+			{
+				"element": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "verdant_dungeon/main_hall_vault3",
+					"processors": "cata:gneiss_replacement"
+				},
+				"weight": 1
+			}
+		],
+		"fallback": "cata:verdant_dungeon_ew_fallback"
+	}
+}

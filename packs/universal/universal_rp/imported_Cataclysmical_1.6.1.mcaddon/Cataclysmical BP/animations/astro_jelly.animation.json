@@ -1,0 +1,19 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.astro_jelly.blow_up": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.4167,
+			"timeline": {
+				"0.4167": [
+					"/playsound random.explode @a[r=10] ~ ~ ~ 4 1 1",
+					"/particle minecraft:huge_explosion_emitter ~ ~ ~",
+					"/particle minecraft:huge_explosion_emitter ~ ~ ~",
+					"/particle minecraft:huge_explosion_emitter ~ ~ ~",
+					"/particle cata:astro_blow_up ~ ~ ~",
+					"/summon cata:astro_knockback ~ ~ ~"
+				]
+			}
+		}
+	}
+}

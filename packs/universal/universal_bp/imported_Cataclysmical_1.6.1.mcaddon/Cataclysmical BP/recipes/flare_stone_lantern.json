@@ -1,0 +1,31 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cata:flare_stone_lantern"
+		},
+		"pattern": [
+			"111",
+			"121",
+			"111"
+		],
+		"key": {
+			"1": {
+				"item": "cata:flare_stone_brick"
+			},
+			"2": {
+				"item": "minecraft:torch"
+			}
+		},
+		"result": {
+			"item": "cata:flare_stone_lantern",
+			"count": 1
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": {
+			"context": "AlwaysUnlocked"
+		}
+	}
+}

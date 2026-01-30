@@ -1,0 +1,37 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:torment_arrow",
+			"materials": {
+				"default": "arrow"
+			},
+			"textures": {
+				"default": "textures/entity/arrows/torment_arrow"
+			},
+			"geometry": {
+				"default": "geometry.arrow"
+			},
+			"animations": {
+				"move": "animation.arrow.move",
+				"particles": "animation.necromancer_shot.particles"
+			},
+			"particle_effects": {
+				"energy": "dungeons:torment"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.shake = query.shake_time - query.frame_alpha;",
+					"variable.shake_power = variable.shake > 0.0 ? -Math.sin(variable.shake * 200.0) * variable.shake : 0.0;"
+				],
+				"animate": [
+					"move",
+					"particles"
+				]
+			},
+			"render_controllers": [
+				"controller.render.arrow"
+			]
+		}
+	}
+}

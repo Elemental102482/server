@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "fighters_bindings_glow",
+        "metalness_emissive_roughness": "fighters_bindings_glow_mer"
+    }
+}

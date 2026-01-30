@@ -1,0 +1,27 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.dungeons_bee": {
+			"arrays": {
+				"textures": {
+					"array.skins": [
+						"texture.default",
+						"texture.nectar",
+						"texture.angry",
+						"texture.angry_nectar",
+						"texture.glow"
+					]
+				}
+			},
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"array.skins[q.is_saddled ? 4 : (query.property('minecraft:has_nectar') + query.is_angry * 2)]"
+			]
+		}
+	}
+}

@@ -1,0 +1,127 @@
+{
+  "format_version": "1.21.20",
+  "minecraft:jigsaw": {
+    "description": {
+      "identifier": "dungeons:endersent_totem"
+    },
+    "biome_filters": [
+      {
+        "all_of": [
+          {
+            "none_of": [
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "river"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "ocean"
+              }
+            ]
+          },
+          {
+            "any_of": [
+              {
+                "any_of": [
+                  {
+                    "test": "has_biome_tag",
+                    "operator": "==",
+                    "value": "extreme_hills"
+                  },
+                  {
+                    "test": "has_biome_tag",
+                    "operator": "==",
+                    "value": "roofed"
+                  }
+                ]
+              },
+              {
+                "any_of": [
+                  {
+                    "test": "has_biome_tag",
+                    "operator": "==",
+                    "value": "mesa"
+                  },
+                  {
+                    "test": "has_biome_tag",
+                    "operator": "==",
+                    "value": "savanna"
+                  }
+                ]
+              },
+              {
+                "any_of": [
+                  {
+                    "test": "has_biome_tag",
+                    "operator": "==",
+                    "value": "swamp"
+                  },
+                  {
+                    "test": "has_biome_tag",
+                    "operator": "==",
+                    "value": "mangrove_swamp"
+                  }
+                ]
+              },
+              {
+                "any_of": [
+                  {
+                    "test": "has_biome_tag",
+                    "operator": "==",
+                    "value": "desert"
+                  }
+                ]
+              },
+              {
+                "any_of": [
+                  {
+                    "test": "has_biome_tag",
+                    "operator": "==",
+                    "value": "plains"
+                  },
+                  {
+                    "test": "has_biome_tag",
+                    "operator": "==",
+                    "value": "meadow"
+                  }
+                ]
+              },
+              {
+                "all_of": [
+                  {
+                    "test": "has_biome_tag",
+                    "operator": "==",
+                    "value": "forest"
+                  },
+                  {
+                    "test": "has_biome_tag",
+                    "operator": "not",
+                    "value": "extreme_hills"
+                  },
+                  {
+                    "test": "has_biome_tag",
+                    "operator": "not",
+                    "value": "roofed"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "heightmap_projection": "world_surface",
+    "max_depth": 1,
+    "start_height": {
+      "type": "constant",
+      "value": {
+        "absolute": 3
+      }
+    },
+    "start_pool": "dungeons:endersent_totem",
+    "step": "surface_structures",
+    "terrain_adaptation": "beard_thin"
+  }
+}

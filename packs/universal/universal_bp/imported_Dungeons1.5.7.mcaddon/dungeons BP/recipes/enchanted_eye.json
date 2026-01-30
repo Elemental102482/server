@@ -1,0 +1,39 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ench_eye"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"DZD",
+			"DPD",
+			"DED"
+		],
+		"unlock": [
+			{
+				"item": "dungeons:pink_print"
+			}
+		],
+		"key": {
+			"D": {
+				"item": "minecraft:diamond"
+			},
+			"E": {
+				"item": "minecraft:ender_eye"
+			},
+			"P": {
+				"item": "dungeons:pink_print"
+			},
+			"Z": {
+				"item": "dungeons:enchanted_eye_of_ender"
+			}
+		},
+		"result": {
+			"item": "dungeons:enchanted_eye_of_ender",
+			"count": 2
+		}
+	}
+}

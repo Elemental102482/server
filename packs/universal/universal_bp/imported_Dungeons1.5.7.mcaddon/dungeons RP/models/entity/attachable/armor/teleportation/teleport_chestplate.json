@@ -1,0 +1,160 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.teleportation_chestplate",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [
+					0,
+					1.5,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "waist",
+					"pivot": [
+						0,
+						12,
+						0
+					]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [
+						0,
+						24,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								12,
+								-2
+							],
+							"size": [
+								8,
+								12,
+								4
+							],
+							"inflate": 0.5,
+							"uv": [
+								32,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "rightArm",
+					"parent": "body",
+					"pivot": [
+						-5,
+						22,
+						0
+					],
+					"mirror": true,
+					"cubes": [
+						{
+							"origin": [
+								-8.67,
+								12.25,
+								-2
+							],
+							"size": [
+								5,
+								12,
+								4
+							],
+							"inflate": 0.51,
+							"uv": [
+								43,
+								48
+							],
+							"mirror": false
+						},
+						{
+							"origin": [
+								-11,
+								15.25,
+								0
+							],
+							"size": [
+								5,
+								12,
+								2
+							],
+							"inflate": 0.505,
+							"uv": [
+								0,
+								50
+							],
+							"mirror": false
+						}
+					]
+				},
+				{
+					"name": "rightItem",
+					"parent": "rightArm",
+					"pivot": [
+						-6,
+						15,
+						1
+					]
+				},
+				{
+					"name": "leftArm",
+					"parent": "body",
+					"pivot": [
+						5,
+						22,
+						0
+					],
+					"mirror": true,
+					"cubes": [
+						{
+							"origin": [
+								3.67,
+								12.25,
+								-2
+							],
+							"size": [
+								5,
+								12,
+								4
+							],
+							"inflate": 0.51,
+							"uv": [
+								40,
+								16
+							]
+						},
+						{
+							"origin": [
+								6.1,
+								15.25,
+								0
+							],
+							"size": [
+								5,
+								12,
+								2
+							],
+							"inflate": 0.505,
+							"uv": [
+								0,
+								50
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

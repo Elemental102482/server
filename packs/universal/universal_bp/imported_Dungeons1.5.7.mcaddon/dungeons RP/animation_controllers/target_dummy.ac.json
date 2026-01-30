@@ -1,0 +1,27 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.target_dummy.wiggle": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"wiggling": "(q.hurt_time-query.frame_alpha)>0"
+						}
+					]
+				},
+				"wiggling": {
+					"animations": [
+						"wiggle"
+					],
+					"transitions": [
+						{
+							"default": "(q.hurt_time-query.frame_alpha)<=0"
+						}
+					]
+				}
+			}
+		}
+	}
+}

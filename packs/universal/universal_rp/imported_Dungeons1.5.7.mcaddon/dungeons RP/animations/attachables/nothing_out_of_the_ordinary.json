@@ -1,0 +1,44 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.alylicleaver.first_person_hold": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"rotation": [
+						143.5,
+						60,
+						-60
+					],
+					"position": [
+						62,
+						62,
+						62
+					]
+				}
+			}
+		},
+		"animation.alylicleaver.third_person_hold": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"rotation": [
+						90,
+						0,
+						0
+					],
+					"position": [
+						0.5,
+						-57.5,
+						-76.5
+					],
+					"scale": [
+						0.21,
+						1,
+						1
+					]
+				}
+			}
+		}
+	}
+}

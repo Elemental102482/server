@@ -1,0 +1,46 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "cata:solar_tesla",
+			"materials": {
+				"default": "drowned"
+			},
+			"textures": {
+				"default": "textures/entity/solar_tesla_texture"
+			},
+			"geometry": {
+				"default": "geometry.solar_tesla"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "cata_solar_tesla_egg"
+			},
+			"animations": {
+				"idle": "animation.solar_tesla.idle",
+				"move": "animation.solar_tesla.move",
+				"attack": "animation.solar_tesla.normal_attack",
+				"summon": "animation.solar_tesla.summon",
+				"move_controller": "controller.animation.solar_tesla.move_controller",
+				"attack_controller": "controller.animation.solar_tesla.attack_controller"
+			},
+			"scripts": {
+				"animate": [
+					"move_controller",
+					"attack_controller"
+				]
+			},
+			"particle_effects": {
+				"large_impact": "cata:large_impact",
+				"solar_tesla_summon": "cata:solar_tesla_summon"
+			},
+			"sound_effects": {
+				"tesla_coil_zap": "sound.tesla_coil_zap",
+				"feralbloom_awaken": "mob.feralbloom_awaken",
+				"large_swing": "mob.large_swing"
+			}
+		}
+	}
+}

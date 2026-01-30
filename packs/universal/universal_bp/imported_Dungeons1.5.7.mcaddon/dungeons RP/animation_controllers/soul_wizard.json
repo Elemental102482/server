@@ -1,0 +1,56 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.soul_wizard.ranged": {
+			"initial_state": "default",
+			"states": {
+				"attack": {
+					"animations": [
+						"shoot"
+					],
+					"transitions": [
+						{
+							"default": "q.all_animations_finished&&!query.facing_target_to_range_attack"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"default": {
+					"transitions": [
+						{
+							"attack": "query.facing_target_to_range_attack"
+						}
+					],
+					"blend_transition": 0.1
+				}
+			}
+		},
+		"controller.animation.soul_wizard.general": {
+			"initial_state": "default",
+			"states": {
+				"moving": {
+					"animations": [
+						"move"
+					],
+					"transitions": [
+						{
+							"default": "!q.is_moving"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"default": {
+					"animations": [
+						"idle"
+					],
+					"transitions": [
+						{
+							"moving": "query.is_moving"
+						}
+					],
+					"blend_transition": 0.5
+				}
+			}
+		}
+	}
+}

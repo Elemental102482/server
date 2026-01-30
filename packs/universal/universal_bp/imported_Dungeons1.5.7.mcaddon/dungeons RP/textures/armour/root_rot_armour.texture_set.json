@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "root_rot_armour",
+        "metalness_emissive_roughness": "root_rot_armour_mer"
+    }
+}

@@ -1,0 +1,27 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:item": {
+		"description": {
+			"identifier": "cata:solar_aegis",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:icon": "cata_solar_aegis",
+			"minecraft:max_stack_size": 1,
+			"minecraft:cooldown": {
+				"category": "solar_aegis",
+				"duration": 1
+			},
+			"minecraft:rarity": {
+				"value": "rare"
+			},
+			"minecraft:tags": {
+				"tags": [
+					"novelty:is_back"
+				]
+			}
+		}
+	}
+}

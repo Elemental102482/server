@@ -1,0 +1,82 @@
+{
+	"format_version": "1.10.0",
+	"particle_effect": {
+		"description": {
+			"identifier": "dungeons:mushroom_slam",
+			"basic_render_parameters": {
+				"material": "particles_alpha",
+				"texture": "textures/particles/smoke_white"
+			}
+		},
+		"components": {
+			"minecraft:emitter_rate_instant": {
+				"num_particles": "math.random(30,45)"
+			},
+			"minecraft:emitter_lifetime_once": {
+				"active_time": 1
+			},
+			"minecraft:emitter_shape_disc": {
+				"offset": [
+					0,
+					0,
+					0
+				],
+				"radius": 1.5,
+				"direction": "outwards"
+			},
+			"minecraft:particle_lifetime_expression": {
+				"max_lifetime": "v.particle_random_2*0.5+0.3"
+			},
+			"minecraft:particle_initial_speed": 9,
+			"minecraft:particle_motion_dynamic": {
+				"linear_acceleration": [
+					0,
+					4,
+					0
+				],
+				"linear_drag_coefficient": 2
+			},
+			"minecraft:particle_appearance_billboard": {
+				"size": [
+					"(1.33+(0.5*v.particle_random_1))/2",
+					"(1.33+(0.5*v.particle_random_1))/2"
+				],
+				"facing_camera_mode": "rotate_xyz",
+				"uv": {
+					"texture_width": 1,
+					"texture_height": 12,
+					"flipbook": {
+						"base_UV": [
+							0,
+							0
+						],
+						"size_UV": [
+							1,
+							1
+						],
+						"step_UV": [
+							0,
+							1
+						],
+						"frames_per_second": 10,
+						"max_frame": 13,
+						"stretch_to_lifetime": true
+					}
+				}
+			},
+			"minecraft:particle_motion_collision": {
+				"collision_radius": 0.2,
+				"expire_on_contact": true
+			},
+			"minecraft:particle_appearance_tinting": {
+				"color": {
+					"interpolant": "v.particle_age / v.particle_lifetime",
+					"gradient": {
+						"0.0": "#FFFF016D",
+						"1.0": "#FFFFD5E8"
+					}
+				}
+			}
+		}
+	}
+}

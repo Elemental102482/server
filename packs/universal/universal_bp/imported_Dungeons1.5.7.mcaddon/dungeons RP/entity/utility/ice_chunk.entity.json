@@ -1,0 +1,32 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:ice_chunk",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/ice_chunk"
+			},
+			"geometry": {
+				"default": "geometry.ice_chunk2"
+			},
+			"animations": {
+				"root": "animation.ice_chunk.root"
+			},
+			"particle_effects": {
+				"frost_idle": "dungeons:frost_idle",
+				"frost_boom": "dungeons:frost_boom"
+			},
+			"scripts": {
+				"animate": [
+					"root"
+				]
+			},
+			"render_controllers": [
+				"controller.render.ice_chunk"
+			]
+		}
+	}
+}

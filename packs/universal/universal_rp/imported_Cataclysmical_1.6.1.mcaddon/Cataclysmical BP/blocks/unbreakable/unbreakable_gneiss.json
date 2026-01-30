@@ -1,0 +1,16 @@
+{
+	"format_version": "1.20.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "cata:unbreakable_gneiss"
+		},
+		"components": {
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 99999
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 99999
+			}
+		}
+	}
+}

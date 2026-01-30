@@ -1,0 +1,38 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "cata:feral_fang",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/projectile/feral_fang_texture"
+			},
+			"geometry": {
+				"default": "geometry.feral_fang"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"base_color": "#000000",
+				"overlay_color": "#FFFFFF"
+			},
+			"animations": {
+				"summon": "animation.feral_fang.summon"
+			},
+			"scripts": {
+				"animate": [
+					"summon"
+				]
+			},
+			"sound_effects": {
+				"feral_fang_summon": "mob.feral_fang_summon"
+			},
+			"particle_effects": {
+				"feral_fang_summon": "cata:feral_fang_summon"
+			}
+		}
+	}
+}

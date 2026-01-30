@@ -1,0 +1,42 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "§6[§b1.5.7 R§6] §6Alylica's Dungeons Addon",
+    "description": "§eAdds the textures and resources for the addon.\n§6Made by : §dAlylica",
+    "uuid": "3f8fcdbc-3434-49bf-8060-a2de4d12d3ce",
+    "version": [
+      1,
+      5,
+      7
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      100
+    ]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "b081ca60-afd3-4618-91ab-e633f0a88f0f",
+      "version": [
+        1,
+        5,
+        7
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "2c5e0de8-0360-49ac-bfe5-339a2a0e62f2",
+      "version": [
+        1,
+        5,
+        7
+      ]
+    }
+  ],
+  "capabilities": [
+    "pbr"
+  ]
+}

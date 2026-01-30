@@ -1,0 +1,54 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:nameless_one",
+			"materials": {
+				"default": "entity_emissive_alpha",
+				"orb": "entity_emissive_alpha_one_sided"
+			},
+			"textures": {
+				"default": "textures/entity/nameless_one/nameless_one"
+			},
+			"geometry": {
+				"default": "geometry.nameless_one"
+			},
+			"render_controllers": [
+				"controller.render.nameless_one"
+			],
+			"animations": {
+				"move": "animation.nameless_one.walk",
+				"orb": "animation.nameless_one.orb",
+				"cast_controller": "controller.animation.nameless_one.cast",
+				"move_controller": "controller.animation.nameless_one.move",
+				"cast": "animation.nameless_one.summon",
+				"cast2": "animation.nameless_one.summon2",
+				"look_at_target": "animation.common.look_at_target"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+				],
+				"animate": [
+					"orb",
+					"move_controller",
+					"cast_controller",
+					{
+						"look_at_target": "!query.is_casting&&!q.is_delayed_attacking"
+					}
+				]
+			},
+			"particle_effects": {
+				"summon": "dungeons:nameless_summon",
+				"charge": "dungeons:nameless_charge"
+			},
+			"sound_effects": {
+				"awaken": "mob.nameless_one.laugh"
+			},
+			"spawn_egg": {
+				"base_color": "#1d0021",
+				"overlay_color": "#097a64"
+			}
+		}
+	}
+}

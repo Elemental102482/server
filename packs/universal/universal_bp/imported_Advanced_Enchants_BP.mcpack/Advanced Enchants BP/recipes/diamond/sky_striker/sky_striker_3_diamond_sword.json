@@ -1,0 +1,24 @@
+{
+	"format_version": 1.12,
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "e:sky_striker_3_diamond_sword"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "minecraft:diamond_sword"
+			},
+			{
+				"item": "e:sky_striker_book_3"
+			}
+		],
+		"result": [
+			{
+				"item": "e:diamond_sword_ss3"
+			}
+		]
+	}
+}

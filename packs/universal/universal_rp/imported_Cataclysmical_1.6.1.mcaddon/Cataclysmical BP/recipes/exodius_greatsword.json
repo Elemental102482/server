@@ -1,0 +1,43 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cata:exodius_greatsword"
+		},
+		"pattern": [
+			"121",
+			"232",
+			"456"
+		],
+		"key": {
+			"1": {
+				"item": "cata:sun_fragment"
+			},
+			"2": {
+				"item": "cata:exodius_cluster"
+			},
+			"3": {
+				"item": "cata:stellar_greatsword"
+			},
+			"4": {
+				"item": "cata:floret_element"
+			},
+			"5": {
+				"item": "cata:solar_element"
+			},
+			"6": {
+				"item": "cata:lunar_element"
+			}
+		},
+		"result": {
+			"item": "cata:exodius_greatsword",
+			"count": 1
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": {
+			"context": "AlwaysUnlocked"
+		}
+	}
+}

@@ -1,0 +1,205 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "cata:starling",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			"animations": {
+				"eat": "animation.starling.eat",
+				"starling_eat_controller": "controller.animation.starling.starling_eat_controller"
+			},
+			"scripts": {
+				"animate": [
+					"starling_eat_controller"
+				]
+			},
+			"runtime_identifier": "minecraft:vex"
+		},
+		"component_groups": {
+			"spawn": {
+				"minecraft:interact": {
+					"interactions": {
+						"on_interact": {
+							"filters": {
+								"all_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									},
+									{
+										"test": "has_equipment",
+										"subject": "other",
+										"value": "minecraft:amethyst_shard"
+									}
+								]
+							},
+							"event": "has_transformed"
+						},
+						"use_item": true,
+						"transform_to_item": "minecraft:air",
+						"swing": true,
+						"take_item": true,
+						"interact_text": "action.interact.starling",
+						"play_sounds": "ambient"
+					}
+				}
+			},
+			"has_transformed": {
+				"minecraft:is_stunned": {},
+				"minecraft:timer": {
+					"looping": true,
+					"time": [
+						2.3,
+						2.3
+					],
+					"time_down_event": {
+						"event": "despawn"
+					}
+				}
+			},
+			"despawn": {
+				"minecraft:instant_despawn": {
+					"remove_child_entities": true
+				}
+			}
+		},
+		"components": {
+			"minecraft:health": {
+				"value": 10,
+				"max": 10
+			},
+			"minecraft:physics": {
+				"has_collision": true,
+				"has_gravity": false
+			},
+			"minecraft:movement": {
+				"value": 0.5
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:collision_box": {
+				"width": 0.5,
+				"height": 0.4
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "fall",
+						"deals_damage": false
+					},
+					{
+						"cause": "suffocation",
+						"deals_damage": false
+					},
+					{
+						"cause": "projectile",
+						"deals_damage": false
+					},
+					{
+						"cause": "magic",
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:nameable": {},
+			"minecraft:navigation.walk": {
+				"can_path_over_water": true,
+				"avoid_powder_snow": true,
+				"avoid_portals": true,
+				"avoid_damage_blocks": true,
+				"can_path_over_lava": true
+			},
+			"minecraft:breathable": {
+				"breathes_water": true,
+				"breathes_lava": true,
+				"breathes_air": true,
+				"breathes_solids": true,
+				"generates_bubbles": false
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 6,
+				"probability": 0.02,
+				"look_distance": 8
+			},
+			"minecraft:conditional_bandwidth_optimization": {},
+			"minecraft:behavior.random_stroll": {
+				"priority": 5
+			},
+			"minecraft:can_fly": true,
+			"minecraft:behavior.float": {
+				"priority": 0
+			},
+			"minecraft:type_family": {
+				"family": [
+					"mob",
+					"astral",
+					"strafe"
+				]
+			},
+			"minecraft:behavior.tempt": {
+				"priority": 2,
+				"within_radius": 32,
+				"speed_multiplier": 1,
+				"items": [
+					"minecraft:amethyst_shard"
+				]
+			},
+			"minecraft:behavior.move_to_block": {
+				"priority": 2,
+				"speed_multiplier": 1,
+				"tick_interval": 60,
+				"start_chance": 0.5,
+				"search_range": 25,
+				"search_height": 25,
+				"stay_duration": 100,
+				"target_selection_method": "random",
+				"target_blocks": [
+					"cata:asteroid",
+					"cata:polished_asteroid",
+					"cata:asteroid_brick",
+					"cata:asteroid_brick_slab",
+					"cata:astral_ore",
+					"minecraft:amethyst_block",
+					"minecraft:amethyst_cluster"
+				],
+				"goal_radius": 3
+			},
+			"minecraft:block_sensor": {
+				"sensor_radius": 25
+			},
+			"minecraft:despawn": {
+				"despawn_from_distance": {}
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"spawn"
+					]
+				}
+			},
+			"has_transformed": {
+				"add": {
+					"component_groups": [
+						"has_transformed"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"spawn"
+					]
+				}
+			},
+			"despawn": {
+				"add": {
+					"component_groups": [
+						"despawn"
+					]
+				}
+			}
+		}
+	}
+}

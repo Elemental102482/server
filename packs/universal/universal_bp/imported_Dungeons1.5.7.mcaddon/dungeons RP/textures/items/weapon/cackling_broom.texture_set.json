@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "cackling_broom",
+        "metalness_emissive_roughness": "cackling_broom_mer"
+    }
+}

@@ -1,0 +1,37 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cata:terror_skull_launcher"
+		},
+		"pattern": [
+			"112",
+			"134",
+			"244"
+		],
+		"key": {
+			"1": {
+				"item": "cata:phantasma_nucleus"
+			},
+			"2": {
+				"item": "minecraft:gunpowder"
+			},
+			"3": {
+				"item": "cata:ray_gun"
+			},
+			"4": {
+				"item": "cata:terrorite"
+			}
+		},
+		"result": {
+			"item": "cata:terror_skull_launcher",
+			"count": 1
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": {
+			"context": "AlwaysUnlocked"
+		}
+	}
+}

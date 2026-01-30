@@ -1,0 +1,41 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "cata:exodius_armor_elements",
+			"materials": {
+				"default": "drowned"
+			},
+			"textures": {
+				"default": "textures/models/armor/exodius_chestplate_texture"
+			},
+			"geometry": {
+				"default": "geometry.exodius_armor_elements"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "cata_stone_golem_egg"
+			},
+			"animations": {
+				"floret": "animation.exodius_armor_elements.floret",
+				"solar": "animation.exodius_armor_elements.solar",
+				"lunar": "animation.exodius_armor_elements.lunar"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"floret": "query.skin_id==0"
+					},
+					{
+						"solar": "query.skin_id==1"
+					},
+					{
+						"lunar": "query.skin_id==2"
+					}
+				]
+			}
+		}
+	}
+}

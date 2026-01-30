@@ -1,0 +1,28 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.enchanted_sheep": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"arrays": {
+				"textures": {
+					"array.skins": [
+						"texture.default",
+						"texture.green",
+						"texture.blue",
+						"texture.red_enchanted",
+						"texture.green_enchanted",
+						"texture.blue_enchanted"
+					]
+				}
+			},
+			"textures": [
+				"array.skins[query.variant+q.is_saddled*3]"
+			]
+		}
+	}
+}

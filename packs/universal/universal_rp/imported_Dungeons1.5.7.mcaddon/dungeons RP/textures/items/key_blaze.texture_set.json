@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "key_blaze",
+        "metalness_emissive_roughness": "key_blaze_mer"
+    }
+}

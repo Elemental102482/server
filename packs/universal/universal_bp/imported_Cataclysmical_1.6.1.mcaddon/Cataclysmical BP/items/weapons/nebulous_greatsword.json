@@ -1,0 +1,50 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:item": {
+		"description": {
+			"identifier": "cata:nebulous_greatsword",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:can_destroy_in_creative": false,
+			"minecraft:durability": {
+				"max_durability": 5000
+			},
+			"minecraft:damage": 15,
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"cata:astral_alloy"
+						],
+						"repair_amount": "query.max_durability*0.25"
+					},
+					{
+						"items": [
+							"cata:nebulous_greatsword"
+						],
+						"repair_amount": "context.other->query.remaining_durability+0.12*context.other->query.max_durability"
+					}
+				]
+			},
+			"minecraft:block_placer": {
+				"block": "cata:nebulous_greatsword",
+				"use_on": [
+					"cata:nebulous_greatsword"
+				],
+				"replace_block_item": true
+			},
+			"minecraft:cooldown": {
+				"category": "nebulous_greatsword",
+				"duration": 40
+			},
+			"minecraft:rarity": {
+				"value": "epic"
+			}
+		}
+	}
+}

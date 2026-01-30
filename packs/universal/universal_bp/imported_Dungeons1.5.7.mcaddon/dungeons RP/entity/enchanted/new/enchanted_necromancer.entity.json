@@ -1,0 +1,55 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:enchanted_necromancer",
+			"materials": {
+				"default": "entity_emissive_alpha",
+				"glow": "entity_emissive",
+				"enchanted": "dungeons_entity_enchant"
+			},
+			"textures": {
+				"default": "textures/entity/necromancer/enchanted_necromancer_glow",
+				"enchanted": "textures/misc/enchanted_entity_glint"
+			},
+			"geometry": {
+				"default": "geometry.necromancer"
+			},
+			"render_controllers": [
+				"controller.render.necromancer",
+				"controller.render.dungeons_entity_enchanted"
+			],
+			"animations": {
+				"enchanted_particles": "animation.enchanted_mob.particles",
+				"walk": "animation.necromancer.walk",
+				"cast_controller": "controller.animation.necromancer.cast",
+				"particles": "animation.necromancer_shot.particles",
+				"cast": "animation.necromancer.cast",
+				"look_at_target_default": "animation.humanoid.look_at_target.default",
+				"look_at_target_gliding": "animation.humanoid.look_at_target.gliding",
+				"look_at_target_swimming": "animation.humanoid.look_at_target.swimming",
+				"head_controller": "controller.animation.humanoid.look_at_target"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+				],
+				"animate": [
+					"particles",
+					"walk",
+					"head_controller",
+					"cast_controller",
+					"enchanted_particles"
+				]
+			},
+			"particle_effects": {
+				"energy": "dungeons:necromancer_orb",
+				"summon": "dungeons:necromancer_summon",
+				"enchant": "dungeons:tall_humanoid_enchant"
+			},
+			"spawn_egg": {
+				"texture": "egg_enchanted_necromancer"
+			}
+		}
+	}
+}

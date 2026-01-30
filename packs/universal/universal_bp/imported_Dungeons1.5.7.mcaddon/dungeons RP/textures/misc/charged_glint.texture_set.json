@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "charged_glint",
+        "metalness_emissive_roughness": "charged_glint_mer"
+    }
+}

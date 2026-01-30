@@ -1,0 +1,37 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:mooshroom_monstrosity_resting",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/mooshroom_monstrosity/mooshroom_monstrosity_off",
+				"on": "textures/entity/mooshroom_monstrosity/mooshroom_monstrosity_on"
+			},
+			"geometry": {
+				"default": "geometry.mooshroom_monstrosity"
+			},
+			"render_controllers": [
+				"controller.render.redstone_monstrosity"
+			],
+			"animations": {
+				"resting": "animation.redstone_monstrosity.resting",
+				"awaken": "animation.redstone_monstrosity.awaken",
+				"wake_controller": "controller.animation.redstone_monstrosity.rest"
+			},
+			"scripts": {
+				"animate": [
+					"wake_controller"
+				]
+			},
+			"sound_effects": {
+				"awaken": "mob.monstrosity.awaken"
+			},
+			"spawn_egg": {
+				"texture": "egg_mooshroom_monstrosity"
+			}
+		}
+	}
+}

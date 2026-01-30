@@ -1,0 +1,40 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "cata:starling",
+			"materials": {
+				"default": "drowned"
+			},
+			"textures": {
+				"default": "textures/entity/starling_texture"
+			},
+			"geometry": {
+				"default": "geometry.starling"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "cata_starling_egg"
+			},
+			"animations": {
+				"move": "animation.starling.move",
+				"eat": "animation.starling.eat",
+				"particle": "animation.starling.particle",
+				"starling_eat_controller": "controller.animation.starling.starling_eat_controller"
+			},
+			"particle_effects": {
+				"starling_emitter": "cata:starling_emitter",
+				"starling_eat_emitter": "cata:starling_eat_emitter"
+			},
+			"scripts": {
+				"animate": [
+					"particle",
+					"move",
+					"starling_eat_controller"
+				]
+			}
+		}
+	}
+}

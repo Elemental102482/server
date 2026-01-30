@@ -1,0 +1,295 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.skeleton_paladin.attack": {
+			"animation_length": 1.0625,
+			"bones": {
+				"rightArm": {
+					"rotation": {
+						"0.0": {
+							"post": [
+								0,
+								0,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"0.25": {
+							"post": [
+								-199.8514,
+								11.95457,
+								29.75834
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"0.625": {
+							"post": [
+								-199.8514,
+								11.95457,
+								29.75834
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"0.6875": {
+							"post": [
+								40,
+								0,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"0.9375": {
+							"post": [
+								0,
+								0,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						}
+					},
+					"position": {
+						"0.0": {
+							"post": [
+								0,
+								0,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"0.25": {
+							"post": [
+								0,
+								0,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"0.625": {
+							"post": [
+								0,
+								0,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"0.6875": {
+							"post": [
+								0,
+								0,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"0.9375": {
+							"post": [
+								0,
+								0,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"waist": {
+					"rotation": {
+						"0.0": {
+							"post": [
+								0,
+								0,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"0.25": {
+							"post": [
+								-6,
+								0,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"0.625": {
+							"post": [
+								-6,
+								0,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"0.6875": {
+							"post": [
+								9.5,
+								0,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"0.9375": {
+							"post": [
+								0,
+								0,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"rightItem": {
+					"rotation": {
+						"0.0": {
+							"post": [
+								0,
+								0,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"0.25": {
+							"post": [
+								-26,
+								0,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"0.625": {
+							"post": [
+								-26,
+								0,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"0.6875": {
+							"post": [
+								13,
+								0,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"0.9375": {
+							"post": [
+								0,
+								0,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			},
+			"sound_effects": {
+				"0.3125": {
+					"effect": "large_sword_swing"
+				}
+			}
+		},
+		"animation.skeleton_paladin.shield_cooldown": {
+			"loop": true
+		},
+		"animation.skeleton_paladin.move": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"leftLeg": {
+					"rotation": {
+						"0.0": [
+							-35,
+							0,
+							0
+						],
+						"0.5": [
+							35,
+							0,
+							0
+						],
+						"1.0": [
+							-35,
+							0,
+							0
+						]
+					}
+				},
+				"rightLeg": {
+					"rotation": {
+						"0.0": [
+							35,
+							0,
+							0
+						],
+						"0.5": [
+							-35,
+							0,
+							0
+						],
+						"1.0": [
+							35,
+							0,
+							0
+						]
+					}
+				},
+				"rightArm": {
+					"rotation": {
+						"0.0": {
+							"post": [
+								-40,
+								0,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"0.5": {
+							"post": [
+								15,
+								0,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						},
+						"1.0": {
+							"post": [
+								-40,
+								0,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			}
+		},
+		"animation.skeleton_paladin.idle": {
+			"loop": true,
+			"bones": {
+				"leftArm": {
+					"rotation": [
+						-44.3713,
+						-20.72946,
+						-3.43646
+					]
+				},
+				"item": {
+					"rotation": [
+						-17.12221,
+						-41.28928,
+						-61.89906
+					],
+					"position": [
+						0,
+						-0.9,
+						0
+					]
+				},
+				"rightArm": {
+					"rotation": [
+						-10,
+						-15,
+						-15
+					]
+				}
+			}
+		}
+	}
+}

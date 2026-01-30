@@ -1,0 +1,109 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.verdant_sentinel.attack_controller": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"normal_attack": "query.is_delayed_attacking==1&&query.skin_id==3"
+						},
+						{
+							"double_attack": "query.is_delayed_attacking==1&&query.skin_id==4"
+						},
+						{
+							"heavy_attack": "query.is_delayed_attacking==1&&query.skin_id==5"
+						},
+						{
+							"exhausted": "query.is_sheared&&query.health<=200"
+						},
+						{
+							"move_attack": "query.is_delayed_attacking==1&&query.skin_id==6"
+						}
+					]
+				},
+				"normal_attack": {
+					"animations": [
+						"normal_attack"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_delayed_attacking"
+						}
+					],
+					"on_entry": [
+						"@s is_attacking"
+					],
+					"on_exit": [
+						"@s finish_attack",
+						"@s attack_types"
+					]
+				},
+				"double_attack": {
+					"animations": [
+						"double_attack"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_delayed_attacking"
+						}
+					],
+					"on_entry": [
+						"@s is_attacking"
+					],
+					"on_exit": [
+						"@s finish_attack",
+						"@s attack_types"
+					]
+				},
+				"heavy_attack": {
+					"animations": [
+						"heavy_attack"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_delayed_attacking"
+						}
+					],
+					"on_entry": [
+						"@s is_attacking"
+					],
+					"on_exit": [
+						"@s finish_attack",
+						"@s attack_types"
+					]
+				},
+				"exhausted": {
+					"animations": [
+						"exhausted"
+					],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+					"on_entry": [
+						"@s exhausted_start"
+					],
+					"on_exit": [
+						"@s exhausted_finished"
+					]
+				},
+				"move_attack": {
+					"animations": [
+						"move_attack"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_delayed_attacking"
+						}
+					],
+					"on_exit": [
+						"@s finish_attack",
+						"@s attack_types"
+					]
+				}
+			}
+		}
+	}
+}

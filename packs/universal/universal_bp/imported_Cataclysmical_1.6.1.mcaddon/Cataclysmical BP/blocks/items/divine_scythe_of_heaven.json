@@ -1,0 +1,19 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:block": {
+		"description": {
+			"identifier": "cata:divine_scythe_of_heaven"
+		},
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "cata_divine_scythe_of_heaven",
+					"render_method": "alpha_test",
+					"face_dimming": false,
+					"ambient_occlusion": false
+				}
+			},
+			"minecraft:geometry": "geometry.divine_scythe_of_heaven"
+		}
+	}
+}

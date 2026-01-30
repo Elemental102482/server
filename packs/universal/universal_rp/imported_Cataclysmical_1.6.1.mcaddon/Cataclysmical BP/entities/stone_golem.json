@@ -1,0 +1,233 @@
+{
+	"format_version": "1.21.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "cata:stone_golem",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			"animations": {
+				"attack": "animation.stone_golem.attack",
+				"attack_controller": "controller.animation.stone_golem.attack"
+			},
+			"scripts": {
+				"animate": [
+					"attack_controller"
+				]
+			}
+		},
+		"component_groups": {
+			"is_attacking": {
+				"minecraft:movement": {
+					"value": 0.01
+				},
+				"minecraft:knockback_resistance": {
+					"value": 1
+				}
+			},
+			"can_move": {
+				"minecraft:movement": {
+					"value": 0.23
+				},
+				"minecraft:knockback_resistance": {
+					"value": 0.7
+				}
+			},
+			"attack": {
+				"minecraft:behavior.delayed_attack": {
+					"priority": 2,
+					"speed_multiplier": 1,
+					"attack_once": false,
+					"require_complete_path": true,
+					"reach_multiplier": 3,
+					"track_target": false,
+					"attack_duration": 3.125,
+					"hit_delay_pct": 0.35
+				},
+				"minecraft:skin_id": {
+					"value": 0
+				},
+				"minecraft:attack": {
+					"damage": 10
+				}
+			},
+			"cooldown": {
+				"minecraft:timer": {
+					"looping": true,
+					"time": [
+						0.9,
+						0.9
+					],
+					"time_down_event": {
+						"event": "attack"
+					}
+				}
+			}
+		},
+		"components": {
+			"minecraft:health": {
+				"value": 75,
+				"max": 75
+			},
+			"minecraft:type_family": {
+				"family": [
+					"mob",
+					"monster",
+					"debuff_immunity"
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 0.9,
+				"height": 1.8
+			},
+			"minecraft:physics": {
+				"has_collision": true,
+				"has_gravity": true
+			},
+			"minecraft:experience_reward": {
+				"on_death": "query.last_hit_by_player?30:0"
+			},
+			"minecraft:movement.basic": {
+				"max_turn": 30
+			},
+			"minecraft:jump.static": {},
+			"minecraft:can_climb": {},
+			"minecraft:scale": {
+				"value": 1.1
+			},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1,
+				"alert_same_type": true
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "fall",
+						"deals_damage": "no"
+					},
+					{
+						"cause": "projectile",
+						"deals_damage": "no"
+					}
+				]
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 7,
+				"look_distance": 8,
+				"probability": 0.02
+			},
+			"minecraft:follow_range": {
+				"value": 28
+			},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 6,
+				"speed_multiplier": 1
+			},
+			"minecraft:navigation.walk": {
+				"avoid_damage_blocks": true,
+				"can_sink": true
+			},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 1,
+				"entity_types": [
+					{
+						"must_see": true,
+						"max_dist": 24,
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"operator": "==",
+									"value": "player"
+								}
+							]
+						}
+					}
+				],
+				"reselect_targets": true
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/stone_golem.json"
+			},
+			"minecraft:equipment": {
+				"table": "loot_tables/entities/disable_shield.json",
+				"slot_drop_chance": [
+					{
+						"slot": "slot.inventory",
+						"drop_chance": 0
+					},
+					{
+						"slot": "slot.weapon.mainhand",
+						"drop_chance": 0
+					}
+				]
+			},
+			"minecraft:despawn": {
+				"despawn_from_distance": {}
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"can_move",
+						"attack"
+					]
+				}
+			},
+			"is_attacking": {
+				"add": {
+					"component_groups": [
+						"is_attacking"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"can_move"
+					]
+				}
+			},
+			"finish_attack": {
+				"add": {
+					"component_groups": [
+						"can_move"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"is_attacking"
+					]
+				}
+			},
+			"attack": {
+				"add": {
+					"component_groups": [
+						"attack"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"cooldown"
+					]
+				}
+			},
+			"cooldown": {
+				"add": {
+					"component_groups": [
+						"cooldown"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"attack"
+					]
+				}
+			}
+		}
+	}
+}

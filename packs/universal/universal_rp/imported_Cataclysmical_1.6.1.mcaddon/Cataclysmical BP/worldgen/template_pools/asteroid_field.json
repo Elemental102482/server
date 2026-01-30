@@ -1,0 +1,18 @@
+{
+	"format_version": "1.21.20",
+	"minecraft:template_pool": {
+		"description": {
+			"identifier": "cata:asteroid_field"
+		},
+		"elements": [
+			{
+				"element": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "asteroid_field/asteroid_field1",
+					"processors": "cata:astral_ore_replacement"
+				},
+				"weight": 1
+			}
+		]
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"format_version": "1.21.20",
+	"minecraft:template_pool": {
+		"description": {
+			"identifier": "cata:sun_ritual_arena1"
+		},
+		"elements": [
+			{
+				"element": {
+					"element_type": "minecraft:single_pool_element",
+					"location": "sun_ritual_arena/arena1",
+					"processors": "cata:flare_stone_replacement"
+				},
+				"weight": 1
+			}
+		]
+	}
+}

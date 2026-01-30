@@ -1,0 +1,73 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.solarium.attack_controller": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"attack": "query.is_delayed_attacking==1&&query.skin_id==0"
+						},
+						{
+							"summon": "query.is_casting&&query.skin_id==1"
+						},
+						{
+							"heavy_attack": "query.is_delayed_attacking==1&&query.skin_id==2"
+						}
+					]
+				},
+				"attack": {
+					"animations": [
+						"attack"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_delayed_attacking"
+						}
+					],
+					"on_entry": [
+						"@s is_attacking"
+					],
+					"on_exit": [
+						"@s finish_attack",
+						"@s attack_types"
+					]
+				},
+				"summon": {
+					"animations": [
+						"summon"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_casting"
+						}
+					],
+					"on_entry": [
+						"@s is_attacking"
+					],
+					"on_exit": [
+						"@s finish_attack",
+						"@s attack_types"
+					]
+				},
+				"heavy_attack": {
+					"animations": [
+						"heavy_attack"
+					],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+					"on_entry": [
+						"@s is_attacking"
+					],
+					"on_exit": [
+						"@s finish_attack",
+						"@s attack_types"
+					]
+				}
+			}
+		}
+	}
+}

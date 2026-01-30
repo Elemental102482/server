@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "ice_chunk",
+        "metalness_emissive_roughness": "ice_chunk_mer"
+    }
+}

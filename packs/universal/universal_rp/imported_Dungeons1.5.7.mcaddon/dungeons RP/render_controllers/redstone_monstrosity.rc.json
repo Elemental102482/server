@@ -1,0 +1,56 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.redstone_monstrosity": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"arrays": {
+				"textures": {
+					"array.skins": [
+						"texture.default",
+						"texture.on"
+					]
+				}
+			},
+			"textures": [
+				"array.skins[query.variant]"
+			]
+		},
+		"controller.render.monstrosity_redstone": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"texture.redstone"
+			],
+			"ignore_lighting": true
+		},
+		"controller.render.monstrosity_awaken": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"arrays": {
+				"textures": {
+					"array.skins": [
+						"texture.none",
+						"texture.redstone"
+					]
+				}
+			},
+			"textures": [
+				"array.skins[query.variant]"
+			],
+			"ignore_lighting": true
+		}
+	}
+}

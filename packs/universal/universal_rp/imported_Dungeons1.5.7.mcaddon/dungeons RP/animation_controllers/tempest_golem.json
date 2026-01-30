@@ -1,0 +1,197 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.tempest_golem.shields": {
+			"initial_state": "shields_shut",
+			"states": {
+				"shields_shut": {
+					"animations": [
+						"shields_shut",
+						"look_at_target"
+					],
+					"transitions": [
+						{
+							"shields_opening": "q.variant==1"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"shields_opening": {
+					"animations": [
+						"shields_opening"
+					],
+					"transitions": [
+						{
+							"shields_open": "q.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"shields_open": {
+					"animations": [
+						"shields_open"
+					],
+					"transitions": [
+						{
+							"shields_closing": "q.variant==0"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"shields_closing": {
+					"animations": [
+						"shields_closing",
+						"look_at_target"
+					],
+					"transitions": [
+						{
+							"shields_shut": "q.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		},
+		"controller.animation.tempest_golem.attack": {
+			"initial_state": "default",
+			"states": {
+				"attack_left": {
+					"animations": [
+						"attack_left"
+					],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"attack_right": {
+					"animations": [
+						"attack_right"
+					],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"attack_picker": {
+					"transitions": [
+						{
+							"attack_left": "(q.target_y_rotation<=0&&query.property('dungeons:left_arm')==true)||(query.property('dungeons:right_arm')==false)"
+						},
+						{
+							"attack_right": "(q.target_y_rotation>0&&query.property('dungeons:right_arm')==true)||(query.property('dungeons:left_arm')==false)"
+						}
+					],
+					"blend_transition": 0.3
+				},
+				"default": {
+					"transitions": [
+						{
+							"attack_picker": "query.is_delayed_attacking==1"
+						}
+					],
+					"blend_transition": 0.3
+				}
+			}
+		},
+		"controller.animation.tempest_golem.arms": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"left_off": "query.property('dungeons:left_arm')==false&&query.property('dungeons:right_arm')==true"
+						},
+						{
+							"right_off": "query.property('dungeons:right_arm')==false&&query.property('dungeons:left_arm')==true"
+						},
+						{
+							"both_off": "query.property('dungeons:left_arm')==false&&query.property('dungeons:right_arm')==false"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"left_off": {
+					"animations": [
+						"left_arm_disabled"
+					],
+					"transitions": [
+						{
+							"default": "query.property('dungeons:left_arm')==true&&query.property('dungeons:right_arm')==true"
+						},
+						{
+							"right_off": "query.property('dungeons:right_arm')==false&&query.property('dungeons:left_arm')==true"
+						},
+						{
+							"both_off": "query.property('dungeons:left_arm')==false&&query.property('dungeons:right_arm')==false"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"right_off": {
+					"animations": [
+						"right_arm_disabled"
+					],
+					"transitions": [
+						{
+							"default": "query.property('dungeons:left_arm')==true&&query.property('dungeons:right_arm')==true"
+						},
+						{
+							"left_off": "query.property('dungeons:left_arm')==false&&query.property('dungeons:right_arm')==true"
+						},
+						{
+							"both_off": "query.property('dungeons:left_arm')==false&&query.property('dungeons:right_arm')==false"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"both_off": {
+					"animations": [
+						"left_arm_disabled",
+						"right_arm_disabled"
+					],
+					"transitions": [
+						{
+							"default": "query.property('dungeons:left_arm')==true&&query.property('dungeons:right_arm')==true"
+						},
+						{
+							"right_off": "query.property('dungeons:right_arm')==false&&query.property('dungeons:left_arm')==true"
+						},
+						{
+							"left_off": "query.property('dungeons:left_arm')==false&&query.property('dungeons:right_arm')==true"
+						}
+					],
+					"blend_transition": 0.5
+				}
+			}
+		},
+		"controller.animation.tempest_golem.shield_melee": {
+			"initial_state": "default",
+			"states": {
+				"roaring": {
+					"animations": [
+						"shield_melee"
+					],
+					"transitions": [
+						{
+							"default": "!q.is_roaring&&query.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"default": {
+					"transitions": [
+						{
+							"roaring": "q.is_roaring"
+						}
+					],
+					"blend_transition": 0.3
+				}
+			}
+		}
+	}
+}

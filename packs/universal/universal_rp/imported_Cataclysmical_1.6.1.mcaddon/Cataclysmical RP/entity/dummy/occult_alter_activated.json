@@ -1,0 +1,33 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "cata:occult_alter_activated",
+			"materials": {
+				"default": "drowned"
+			},
+			"textures": {
+				"default": "textures/entity/dummy/occult_alter_activated_texture"
+			},
+			"geometry": {
+				"default": "geometry.occult_alter_activated_entity"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"animations": {
+				"spawn": "animation.occult_alter_activated.spawn"
+			},
+			"scripts": {
+				"animate": [
+					"spawn"
+				]
+			},
+			"sound_effects": {
+				"eternal_seal_spawn": "sound.eternal_seal_spawn",
+				"eternal_seal_woosh": "sound.eternal_seal_woosh",
+				"eternal_seal_spawn2": "soun.eternal_seal_spawn2"
+			}
+		}
+	}
+}

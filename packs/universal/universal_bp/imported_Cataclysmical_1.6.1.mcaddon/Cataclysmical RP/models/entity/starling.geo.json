@@ -1,0 +1,198 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.starling",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						3,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								1,
+								0,
+								-0.5
+							],
+							"size": [
+								2,
+								2,
+								1
+							],
+							"uv": [
+								12,
+								6
+							]
+						},
+						{
+							"origin": [
+								-3,
+								0,
+								-0.5
+							],
+							"size": [
+								2,
+								2,
+								1
+							],
+							"uv": [
+								11,
+								3
+							]
+						},
+						{
+							"origin": [
+								-2,
+								1,
+								-0.5
+							],
+							"size": [
+								4,
+								4,
+								1
+							],
+							"uv": [
+								0,
+								0
+							]
+						},
+						{
+							"origin": [
+								-4,
+								3,
+								-0.5
+							],
+							"size": [
+								2,
+								2,
+								1
+							],
+							"uv": [
+								10,
+								0
+							]
+						},
+						{
+							"origin": [
+								-1,
+								5,
+								-0.5
+							],
+							"size": [
+								2,
+								2,
+								1
+							],
+							"uv": [
+								6,
+								5
+							]
+						},
+						{
+							"origin": [
+								2,
+								3,
+								-0.5
+							],
+							"size": [
+								2,
+								2,
+								1
+							],
+							"uv": [
+								0,
+								5
+							]
+						}
+					],
+					"locators": {
+						"locator": [
+							0,
+							3,
+							0
+						]
+					}
+				},
+				{
+					"name": "wing1",
+					"parent": "root",
+					"pivot": [
+						2,
+						4,
+						0.5
+					],
+					"rotation": [
+						0,
+						40,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								2,
+								1,
+								0.5
+							],
+							"size": [
+								0,
+								6,
+								9
+							],
+							"uv": [
+								0,
+								6
+							]
+						}
+					]
+				},
+				{
+					"name": "wing2",
+					"parent": "root",
+					"pivot": [
+						-2,
+						4,
+						0.75
+					],
+					"rotation": [
+						0,
+						-40,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-2,
+								1,
+								0.5
+							],
+							"size": [
+								0,
+								6,
+								9
+							],
+							"uv": [
+								0,
+								0
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

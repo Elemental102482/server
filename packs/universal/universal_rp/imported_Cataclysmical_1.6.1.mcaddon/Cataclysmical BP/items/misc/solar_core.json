@@ -1,0 +1,23 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:item": {
+		"description": {
+			"identifier": "cata:solar_core",
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:rarity": {
+				"value": "uncommon"
+			},
+			"minecraft:block_placer": {
+				"block": "cata:solar_core",
+				"use_on": [
+					"cata:solar_core"
+				],
+				"replace_block_item": true
+			}
+		}
+	}
+}

@@ -1,0 +1,61 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "cata:eternal_seal",
+			"materials": {
+				"default": "drowned"
+			},
+			"textures": {
+				"default": "textures/entity/eternal_seal_texture"
+			},
+			"geometry": {
+				"default": "geometry.eternal_seal"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "cata_eternal_seal"
+			},
+			"animations": {
+				"large_rocks_move": "animation.eternal_seal.large_rocks_move",
+				"large_rocks_bobbing": "animation.eternal_seal.large_rocks_bobbing",
+				"big_rocks_move": "animation.eternal_seal.big_rocks_move",
+				"big_rocks_bobbing": "animation.eternal_seal.big_rocks_bobbing",
+				"small_rocks_move": "animation.eternal_seal.small_rocks_move",
+				"small_rocks_bobbing": "animation.eternal_seal.small_rocks_bobbing",
+				"bobbing": "animation.eternal_seal.bobbing",
+				"solar_cores": "animation.eternal_seal.solar_cores",
+				"slam_attack": "animation.eternal_seal.slam_attack",
+				"triple_slam_attack": "animation.eternal_seal.triple_slam_attack",
+				"attack_controller": "controller.animation.eternal_seal.attack_controller",
+				"summon": "animation.eternal_seal.summon",
+				"death": "animation.eternal_seal.death",
+				"spawn": "animation.eternal_seal.spawn"
+			},
+			"scripts": {
+				"animate": [
+					"large_rocks_move",
+					"large_rocks_bobbing",
+					"big_rocks_move",
+					"big_rocks_bobbing",
+					"small_rocks_move",
+					"small_rocks_bobbing",
+					"bobbing",
+					"solar_cores",
+					"attack_controller",
+					"spawn"
+				]
+			},
+			"particle_effects": {
+				"massive_impact": "cata:massive_impact"
+			},
+			"sound_effects": {
+				"eternal_seal_spawn2": "sound.eternal_seal_spawn2",
+				"sun_tribunal_normal_attack": "mob.sun_tribunal_normal_attack",
+				"eternal_seal_start_death": "mob.eternal_seal_start_death"
+			}
+		}
+	}
+}

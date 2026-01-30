@@ -1,0 +1,199 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "cata:gneiss_golem",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			"animations": {
+				"attack": "animation.gneiss_golem.attack",
+				"attack_controller": "controller.animation.stone_golem.attack"
+			},
+			"scripts": {
+				"animate": [
+					"attack_controller"
+				]
+			}
+		},
+		"component_groups": {
+			"is_attacking": {
+				"minecraft:movement": {
+					"value": 0.01
+				}
+			},
+			"can_move": {
+				"minecraft:movement": {
+					"value": 0.15
+				}
+			}
+		},
+		"components": {
+			"minecraft:health": {
+				"value": 700,
+				"max": 700
+			},
+			"minecraft:type_family": {
+				"family": [
+					"mob",
+					"monster",
+					"debuff_immunity"
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 1.4,
+				"height": 4.5
+			},
+			"minecraft:physics": {
+				"has_collision": true,
+				"has_gravity": true
+			},
+			"minecraft:movement.basic": {
+				"max_turn": 40
+			},
+			"minecraft:can_climb": {},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "all",
+						"deals_damage": true,
+						"on_damage": {
+							"event": "random_drop"
+						}
+					},
+					{
+						"cause": "mace_smash",
+						"deals_damage": true,
+						"damage_multiplier": 0.1,
+						"on_damage": {
+							"event": "random_drop"
+						}
+					}
+				]
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 7,
+				"look_distance": 8,
+				"probability": 0.02
+			},
+			"minecraft:follow_range": {
+				"value": 26
+			},
+			"minecraft:pushable": {
+				"is_pushable": true
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 6,
+				"speed_multiplier": 1
+			},
+			"minecraft:navigation.walk": {
+				"avoid_powder_snow": true,
+				"avoid_portals": true,
+				"avoid_water": true,
+				"avoid_damage_blocks": true
+			},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 1,
+				"entity_types": [
+					{
+						"must_see": true,
+						"max_dist": 28,
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"operator": "==",
+									"value": "player"
+								}
+							]
+						}
+					}
+				]
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/gneiss_golem.json"
+			},
+			"minecraft:equipment": {
+				"table": "loot_tables/entities/disable_shield.json",
+				"slot_drop_chance": [
+					{
+						"slot": "slot.inventory",
+						"drop_chance": 0
+					},
+					{
+						"slot": "slot.weapon.mainhand",
+						"drop_chance": 0
+					}
+				]
+			},
+			"minecraft:behavior.delayed_attack": {
+				"priority": 2,
+				"speed_multiplier": 1,
+				"attack_once": false,
+				"require_complete_path": true,
+				"reach_multiplier": 4.4,
+				"track_target": false,
+				"attack_duration": 5.1667,
+				"hit_delay_pct": 0.36
+			},
+			"minecraft:attack": {
+				"damage": 99999
+			},
+			"minecraft:knockback_resistance": {
+				"value": 100
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"can_move"
+					]
+				}
+			},
+			"is_attacking": {
+				"add": {
+					"component_groups": [
+						"is_attacking"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"can_move"
+					]
+				}
+			},
+			"finish_attack": {
+				"add": {
+					"component_groups": [
+						"can_move"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"is_attacking"
+					]
+				}
+			},
+			"random_drop": {
+				"randomize": [
+					{
+						"weight": 2
+					},
+					{
+						"weight": 1,
+						"queue_command": {
+							"command": [
+								"loot spawn ~~2~ loot \"entities/gneiss_golem_hurt\""
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

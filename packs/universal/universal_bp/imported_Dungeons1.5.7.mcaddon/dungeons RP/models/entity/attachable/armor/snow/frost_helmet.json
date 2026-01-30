@@ -1,0 +1,95 @@
+{
+	"format_version": "1.10.0",
+	"geometry.frost_helmet": {
+		"texturewidth": 64,
+		"textureheight": 64,
+		"visible_bounds_width": 3,
+		"visible_bounds_height": 3,
+		"visible_bounds_offset": [
+			0,
+			1.5,
+			0
+		],
+		"bones": [
+			{
+				"name": "head",
+				"pivot": [
+					0,
+					23,
+					0
+				],
+				"cubes": [
+					{
+						"origin": [
+							-5,
+							22.15,
+							-5
+						],
+						"size": [
+							10,
+							9,
+							10
+						],
+						"uv": [
+							0,
+							12
+						],
+						"inflate": 0.01
+					},
+					{
+						"origin": [
+							-1,
+							31.15,
+							-5
+						],
+						"size": [
+							2,
+							2,
+							10
+						],
+						"uv": [
+							20,
+							0
+						],
+						"inflate": -0.08,
+						"mirror": true
+					},
+					{
+						"origin": [
+							4,
+							31.15,
+							-5
+						],
+						"size": [
+							1,
+							1,
+							0
+						],
+						"uv": [
+							8,
+							20
+						],
+						"inflate": -0.08
+					},
+					{
+						"origin": [
+							-5,
+							31.15,
+							-5
+						],
+						"size": [
+							1,
+							1,
+							0
+						],
+						"uv": [
+							8,
+							20
+						],
+						"inflate": -0.08
+					}
+				]
+			}
+		]
+	}
+}

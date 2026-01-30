@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "explosion_ring_red",
+        "metalness_emissive_roughness": "explosion_ring_red_mer"
+    }
+}

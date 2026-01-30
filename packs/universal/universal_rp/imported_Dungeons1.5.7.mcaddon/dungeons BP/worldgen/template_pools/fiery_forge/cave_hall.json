@@ -1,0 +1,74 @@
+{
+    "format_version": "1.21.20",
+    "minecraft:template_pool": {
+        "description": {
+            "identifier": "dungeons:forge_cave_hall"
+        },
+        "elements": [
+            {
+                "element": {
+                    "element_type": "minecraft:single_pool_element",
+                    "location": "fiery_forge/cave/left",
+                    "processors": "dungeons:forge_processor_default"
+                },
+                "weight": 4
+            },
+            {
+                "element": {
+                    "element_type": "minecraft:single_pool_element",
+                    "location": "fiery_forge/cave/right",
+                    "processors": "dungeons:forge_processor_default"
+                },
+                "weight": 4
+            },
+            {
+                "element": {
+                    "element_type": "minecraft:single_pool_element",
+                    "location": "fiery_forge/cave/twoway",
+                    "processors": "dungeons:forge_processor_default"
+                },
+                "weight": 4
+            },
+            {
+                "element": {
+                    "element_type": "minecraft:single_pool_element",
+                    "location": "fiery_forge/cave/room_lava",
+                    "processors": "dungeons:forge_processor_default"
+                },
+                "weight": 2
+            },
+            {
+                "element": {
+                    "element_type": "minecraft:single_pool_element",
+                    "location": "fiery_forge/cave/room_branch",
+                    "processors": "dungeons:forge_processor_default"
+                },
+                "weight": 4
+            },
+            {
+                "element": {
+                    "element_type": "minecraft:single_pool_element",
+                    "location": "fiery_forge/cave/room_open",
+                    "processors": "dungeons:forge_processor_default"
+                },
+                "weight": 2
+            },
+            {
+                "element": {
+                    "element_type": "minecraft:single_pool_element",
+                    "location": "fiery_forge/cave/room_loot",
+                    "processors": "dungeons:forge_processor_default"
+                },
+                "weight": 2
+            },
+            {
+                "element": {
+                    "element_type": "minecraft:single_pool_element",
+                    "location": "fiery_forge/cave/room_mine_exit",
+                    "processors": "dungeons:forge_processor_default"
+                },
+                "weight": 1
+            }
+        ]
+    }
+}

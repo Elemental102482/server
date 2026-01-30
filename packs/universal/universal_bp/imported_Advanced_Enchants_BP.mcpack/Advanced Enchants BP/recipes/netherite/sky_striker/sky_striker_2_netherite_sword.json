@@ -1,0 +1,24 @@
+{
+	"format_version": 1.12,
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "e:sky_striker_2_netherite_sword"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "minecraft:netherite_sword"
+			},
+			{
+				"item": "e:sky_striker_book_2"
+			}
+		],
+		"result": [
+			{
+				"item": "e:netherite_sword_ss2"
+			}
+		]
+	}
+}

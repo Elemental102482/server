@@ -1,0 +1,36 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "soul_bow"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" /S",
+			"- S",
+			" /S"
+		],
+		"key": {
+			"-": {
+				"item": "minecraft:soul_torch"
+			},
+			"/": {
+				"item": "minecraft:stick"
+			},
+			"S": {
+				"item": "minecraft:string"
+			}
+		},
+		"unlock": [
+			{
+				"item": "minecraft:soul_sand"
+			}
+		],
+		"result": {
+			"item": "dungeons:soul_bow",
+			"count": 1
+		}
+	}
+}

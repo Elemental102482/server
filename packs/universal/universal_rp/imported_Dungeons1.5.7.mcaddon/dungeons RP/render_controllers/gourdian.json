@@ -1,0 +1,29 @@
+{
+	"format_version": "1.10.0",
+	"render_controllers": {
+		"controller.render.gourdian_fire": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.glow"
+				}
+			],
+			"textures": [
+				"texture.fire"
+			],
+			"ignore_lighting": true
+		},
+		"controller.render.gourdian_glow": {
+			"geometry": "geometry.glow",
+			"materials": [
+				{
+					"*": "material.glow"
+				}
+			],
+			"textures": [
+				"texture.glow"
+			],
+			"ignore_lighting": true
+		}
+	}
+}

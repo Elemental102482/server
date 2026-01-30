@@ -1,0 +1,19 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:block": {
+		"description": {
+			"identifier": "cata:stellar_greatsword"
+		},
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "cata_stellar_greatsword",
+					"render_method": "alpha_test",
+					"face_dimming": false,
+					"ambient_occlusion": false
+				}
+			},
+			"minecraft:geometry": "geometry.stellar_greatsword"
+		}
+	}
+}

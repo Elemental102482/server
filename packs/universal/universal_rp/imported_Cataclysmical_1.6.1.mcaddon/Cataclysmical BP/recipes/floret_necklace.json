@@ -1,0 +1,31 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cata:floret_necklace"
+		},
+		"pattern": [
+			" 1 ",
+			"1 1",
+			" 2 "
+		],
+		"key": {
+			"1": {
+				"item": "cata:platinum_alloy"
+			},
+			"2": {
+				"item": "cata:floret_element"
+			}
+		},
+		"result": {
+			"item": "cata:floret_necklace",
+			"count": 1
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": {
+			"context": "AlwaysUnlocked"
+		}
+	}
+}

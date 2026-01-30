@@ -1,0 +1,20 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:item": {
+		"description": {
+			"identifier": "cata:ectoplasm",
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:block_placer": {
+				"block": "cata:ectoplasm",
+				"use_on": [
+					"cata:ectoplasm"
+				],
+				"replace_block_item": true
+			}
+		}
+	}
+}

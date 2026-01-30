@@ -1,0 +1,36 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"conditions": [
+				{
+					"condition": "match_tool",
+					"item": "cata:sunflare_pickaxe",
+					"count": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "item",
+					"name": "cata:solar_element"
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"conditions": [
+				{
+					"condition": "match_tool",
+					"item": "minecraft:netherite_pickaxe",
+					"count": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "item",
+					"name": "cata:solar_element"
+				}
+			]
+		}
+	]
+}

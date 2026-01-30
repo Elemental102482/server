@@ -1,0 +1,179 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.sun_tribunal_phantom_blade.move": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 3.5,
+			"bones": {
+				"root": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"3.5": [
+							2160,
+							0,
+							0
+						]
+					},
+					"scale": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.5": [
+							1,
+							1,
+							1
+						],
+						"1.3": [
+							1,
+							1,
+							1
+						],
+						"1.8": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "phatom_sword_spin"
+				},
+				"0.6": {
+					"effect": "phatom_sword_spin"
+				},
+				"1.2": {
+					"effect": "phatom_sword_spin"
+				},
+				"1.8": {
+					"effect": "phatom_sword_spin"
+				},
+				"2.4": {
+					"effect": "phatom_sword_spin"
+				},
+				"3.0": {
+					"effect": "phatom_sword_spin"
+				}
+			}
+		},
+		"animation.sun_tribunal_phantom_blade.move2": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 3.5,
+			"bones": {
+				"root": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							90
+						],
+						"3.5": [
+							-2160,
+							0,
+							90
+						]
+					},
+					"scale": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.5": [
+							1,
+							1,
+							1
+						],
+						"1.3": [
+							1,
+							1,
+							1
+						],
+						"1.8": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "phatom_sword_spin"
+				},
+				"0.6": {
+					"effect": "phatom_sword_spin"
+				},
+				"1.2": {
+					"effect": "phatom_sword_spin"
+				},
+				"1.8": {
+					"effect": "phatom_sword_spin"
+				},
+				"2.4": {
+					"effect": "phatom_sword_spin"
+				},
+				"3.0": {
+					"effect": "phatom_sword_spin"
+				}
+			}
+		},
+		"animation.sun_tribunal_phantom_blade.move3": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 3.5,
+			"bones": {
+				"root": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"3.5": [
+							0,
+							-2160,
+							0
+						]
+					},
+					"scale": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.5": [
+							1,
+							1,
+							1
+						],
+						"3.0": [
+							1,
+							1,
+							1
+						],
+						"3.5": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			}
+		},
+		"animation.sun_tribunal_phantom_blade.particle": {
+			"loop": true,
+			"particle_effects": {
+				"0.0": {
+					"effect": "sun_tribunal_phantom_blade_emitter"
+				}
+			}
+		}
+	}
+}

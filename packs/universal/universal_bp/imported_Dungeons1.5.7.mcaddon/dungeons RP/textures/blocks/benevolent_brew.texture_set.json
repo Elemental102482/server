@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "benevolent_brew",
+        "metalness_emissive_roughness": "benevolent_brew_mer"
+    }
+}

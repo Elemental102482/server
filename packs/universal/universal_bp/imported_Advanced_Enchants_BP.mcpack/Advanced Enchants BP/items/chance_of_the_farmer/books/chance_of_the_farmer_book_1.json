@@ -1,0 +1,22 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "e:chance_of_the_farmer_book_1",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "book_enchanted"
+			},
+			"minecraft:display_name": {
+				"value": "§eEnchanted Book \n§2Chance of the Farmer I \n§dCan Enchant: \n§7-Hoe \n§aAbility: \n§7-Breaks things like grass in a certain area (Each level is increased by 1 \n§6Advanced Enchants"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.enchantedBook"
+			},
+			"minecraft:foil": true,
+			"minecraft:max_stack_size": 1
+		}
+	}
+}

@@ -1,0 +1,76 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.whisperer.move": {
+			"initial_state": "default",
+			"states": {
+				"moving": {
+					"animations": [
+						"move"
+					],
+					"transitions": [
+						{
+							"default": "q.modified_move_speed<=0.1"
+						}
+					],
+					"blend_transition": 0.3
+				},
+				"default": {
+					"transitions": [
+						{
+							"moving": "q.modified_move_speed>0.1"
+						}
+					],
+					"blend_transition": 0.3
+				}
+			}
+		},
+		"controller.animation.wavewhisperer.move": {
+			"initial_state": "default",
+			"states": {
+				"swim": {
+					"animations": [
+						"swim"
+					],
+					"transitions": [
+						{
+							"default": "variable.swim_amount<=0"
+						}
+					],
+					"blend_transition": 1
+				},
+				"moving": {
+					"animations": [
+						"move",
+						"idle",
+						"look_at_target"
+					],
+					"transitions": [
+						{
+							"default": "q.modified_move_speed<=0.1"
+						},
+						{
+							"swim": "variable.swim_amount>0"
+						}
+					],
+					"blend_transition": 0.3
+				},
+				"default": {
+					"animations": [
+						"idle",
+						"look_at_target"
+					],
+					"transitions": [
+						{
+							"moving": "q.modified_move_speed>0.1&&variable.swim_amount<=0"
+						},
+						{
+							"swim": "variable.swim_amount>0"
+						}
+					],
+					"blend_transition": 0.3
+				}
+			}
+		}
+	}
+}

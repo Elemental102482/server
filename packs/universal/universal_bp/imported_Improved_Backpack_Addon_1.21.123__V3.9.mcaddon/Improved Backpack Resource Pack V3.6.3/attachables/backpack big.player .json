@@ -1,0 +1,26 @@
+{
+  "format_version": "1.10",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "bps:backpack_big",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/backpack_big"
+      },
+      "geometry": {
+        "default": "geometry.backpack_attachable"
+      },
+      "scripts": {
+        "animate": [
+		  "main"
+        ]
+      },
+      "animations": {
+        "main": "animation.backpack_attachable.wear"
+      },
+      "render_controllers": [ "controller.render.default" ]
+    }
+  }
+}

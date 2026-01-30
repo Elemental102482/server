@@ -1,0 +1,29 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.corrupted_cauldron.charge": {
+			"initial_state": "default",
+			"states": {
+				"charging": {
+					"animations": [
+						"charge"
+					],
+					"transitions": [
+						{
+							"default": "!q.is_saddled"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"default": {
+					"transitions": [
+						{
+							"charging": "q.is_saddled"
+						}
+					],
+					"blend_transition": 0.3
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,66 @@
+{
+	"format_version": "1.10.0",
+	"particle_effect": {
+		"description": {
+			"identifier": "cata:feral_fang_summon",
+			"basic_render_parameters": {
+				"material": "particles_blend",
+				"texture": "textures/particles/feralplast_dust"
+			}
+		},
+		"components": {
+			"minecraft:emitter_rate_instant": {
+				"num_particles": 15
+			},
+			"minecraft:emitter_lifetime_once": {
+				"active_time": 1
+			},
+			"minecraft:emitter_shape_point": {
+				"offset": [
+					0,
+					0.5,
+					0
+				]
+			},
+			"minecraft:particle_lifetime_expression": {
+				"max_lifetime": "math.random(1.5,2.1)"
+			},
+			"minecraft:particle_initial_spin": {
+				"rotation": "math.random(-180,180)"
+			},
+			"minecraft:particle_initial_speed": 10,
+			"minecraft:particle_motion_dynamic": {
+				"linear_acceleration": [
+					0,
+					-22,
+					0
+				],
+				"linear_drag_coefficient": 3
+			},
+			"minecraft:particle_appearance_billboard": {
+				"size": [
+					0.6,
+					0.6
+				],
+				"facing_camera_mode": "rotate_xyz",
+				"uv": {
+					"texture_width": 16,
+					"texture_height": 16,
+					"uv": [
+						0,
+						0
+					],
+					"uv_size": [
+						16,
+						16
+					]
+				}
+			},
+			"minecraft:particle_motion_collision": {
+				"collision_drag": 10,
+				"collision_radius": 0.2
+			},
+			"minecraft:particle_appearance_lighting": {}
+		}
+	}
+}

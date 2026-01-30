@@ -1,0 +1,513 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "cata:sun_tribunal",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"animations": {
+				"normal_attack": "animation.sun_tribunal.normal_attack",
+				"attack_controller": "controller.animation.sun_tribunal.attack_controller",
+				"normal_attack_projectile": "animation.sun_tribunal.normal_attack_projectile",
+				"double_dash_attack": "animation.sun_tribunal.double_dash_attack",
+				"heavy_attack_projectile": "animation.sun_tribunal.heavy_attack_projectile",
+				"chaos_attack1": "animation.sun_tribunal.chaos_attack1"
+			},
+			"scripts": {
+				"animate": [
+					"attack_controller"
+				]
+			}
+		},
+		"component_groups": {
+			"awaken": {
+				"minecraft:skin_id": {
+					"value": 0
+				},
+				"minecraft:is_stunned": {},
+				"minecraft:timer": {
+					"looping": true,
+					"time": [
+						2,
+						2
+					],
+					"time_down_event": {
+						"event": "awaken"
+					}
+				},
+				"minecraft:damage_sensor": {
+					"triggers": {
+						"cause": "all",
+						"deals_damage": false
+					}
+				},
+				"minecraft:collision_box": {
+					"width": 0,
+					"height": 0
+				}
+			},
+			"has_target": {
+				"minecraft:collision_box": {
+					"width": 1.8,
+					"height": 4.5
+				},
+				"minecraft:behavior.look_at_player": {
+					"priority": 7,
+					"look_distance": 8,
+					"probability": 0.02
+				},
+				"minecraft:behavior.nearest_attackable_target": {
+					"priority": 1,
+					"entity_types": [
+						{
+							"max_dist": 128,
+							"must_see": false,
+							"filters": {
+								"all_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"operator": "==",
+										"value": "player"
+									}
+								]
+							}
+						}
+					],
+					"reselect_targets": true,
+					"must_see": false
+				},
+				"minecraft:follow_range": {
+					"value": 128
+				},
+				"minecraft:behavior.random_stroll": {
+					"priority": 7
+				},
+				"minecraft:pushable": {
+					"is_pushable": false,
+					"is_pushable_by_piston": true
+				},
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"cause": "magic",
+							"deals_damage": false
+						},
+						{
+							"cause": "projectile",
+							"deals_damage": true,
+							"damage_multiplier": 0.5
+						}
+					]
+				}
+			},
+			"normal_attack": {
+				"minecraft:skin_id": {
+					"value": 1
+				},
+				"minecraft:behavior.delayed_attack": {
+					"priority": 2,
+					"speed_multiplier": 1,
+					"attack_once": false,
+					"require_complete_path": true,
+					"attack_duration": 3,
+					"reach_multiplier": 3.2,
+					"track_target": false,
+					"hit_delay_pct": 0.31
+				},
+				"minecraft:attack": {
+					"damage": 22
+				}
+			},
+			"normal_attack_projectile": {
+				"minecraft:skin_id": {
+					"value": 2
+				},
+				"minecraft:behavior.delayed_attack": {
+					"priority": 2,
+					"speed_multiplier": 1,
+					"attack_once": false,
+					"require_complete_path": false,
+					"attack_duration": 3,
+					"reach_multiplier": 3.2,
+					"track_target": false,
+					"hit_delay_pct": 0.32
+				},
+				"minecraft:attack": {
+					"damage": 20
+				}
+			},
+			"double_dash_attack": {
+				"minecraft:skin_id": {
+					"value": 3
+				},
+				"minecraft:behavior.delayed_attack": {
+					"priority": 2,
+					"speed_multiplier": 1,
+					"attack_once": false,
+					"require_complete_path": false,
+					"attack_duration": 4.9583,
+					"reach_multiplier": 3,
+					"track_target": false,
+					"hit_delay_pct": 0.12
+				},
+				"minecraft:attack": {
+					"damage": 18
+				}
+			},
+			"double_dash_attack_move": {
+				"minecraft:movement": {
+					"value": 0.48
+				}
+			},
+			"heavy_attack_projectile": {
+				"minecraft:skin_id": {
+					"value": 4
+				},
+				"minecraft:behavior.summon_entity": {
+					"priority": 1,
+					"summon_choices": [
+						{
+							"do_casting": true,
+							"weight": 1,
+							"cast_duration": 6.25,
+							"sequence": [
+								{
+									"shape": "circle",
+									"target": "self",
+									"base_delay": 0,
+									"delay_per_summon": 0,
+									"num_entities_spawned": 0,
+									"entity_lifespan": 0,
+									"summon_cap": 1,
+									"summon_cap_radius": 1
+								}
+							]
+						}
+					]
+				},
+				"minecraft:attack": {
+					"damage": 0
+				}
+			},
+			"chaos_attack1": {
+				"minecraft:skin_id": {
+					"value": 5
+				},
+				"minecraft:behavior.delayed_attack": {
+					"priority": 2,
+					"speed_multiplier": 1,
+					"attack_once": false,
+					"require_complete_path": false,
+					"attack_duration": 5.5,
+					"reach_multiplier": 3.6,
+					"track_target": false,
+					"hit_delay_pct": 0.15
+				},
+				"minecraft:attack": {
+					"damage": 18
+				}
+			},
+			"chaos_attack1_move": {
+				"minecraft:movement": {
+					"value": 0.58
+				}
+			},
+			"can_move": {
+				"minecraft:movement": {
+					"value": 0.21
+				}
+			},
+			"is_attacking": {
+				"minecraft:movement": {
+					"value": 0.01
+				}
+			},
+			"despawn": {},
+			"flawless_loot": {
+				"minecraft:loot": {
+					"table": "loot_tables/entities/flawless/sun_tribunal.json"
+				}
+			},
+			"flawed_loot": {
+				"minecraft:loot": {
+					"table": "loot_tables/entities/sun_tribunal.json"
+				}
+			}
+		},
+		"components": {
+			"minecraft:physics": {
+				"has_collision": true,
+				"has_gravity": true
+			},
+			"minecraft:boss": {
+				"should_darken_sky": true,
+				"hud_range": 128,
+				"name": "Sun Tribunal"
+			},
+			"minecraft:health": {
+				"value": 800,
+				"max": 800
+			},
+			"minecraft:experience_reward": {
+				"on_death": "query.last_hit_by_player?6000:0"
+			},
+			"minecraft:type_family": {
+				"family": [
+					"mob",
+					"solar",
+					"monster",
+					"sun",
+					"debuff_immunity"
+				]
+			},
+			"minecraft:navigation.walk": {
+				"avoid_powder_snow": true,
+				"avoid_portals": true,
+				"can_path_over_water": true,
+				"can_path_over_lava": true
+			},
+			"minecraft:jump.static": {},
+			"minecraft:can_climb": {},
+			"minecraft:movement.basic": {},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1,
+				"alert_same_type": true
+			},
+			"minecraft:knockback_resistance": {
+				"value": 1
+			},
+			"minecraft:fire_immune": true,
+			"minecraft:scale": {
+				"value": 1.2
+			},
+			"minecraft:equipment": {
+				"table": "loot_tables/entities/disable_shield.json",
+				"slot_drop_chance": [
+					{
+						"slot": "slot.weapon.mainhand",
+						"drop_chance": 0
+					},
+					{
+						"slot": "slot.inventory",
+						"drop_chance": 0
+					}
+				]
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"awaken",
+						"flawless_loot"
+					]
+				}
+			},
+			"awaken": {
+				"add": {
+					"component_groups": [
+						"has_target",
+						"can_move"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"awaken"
+					]
+				},
+				"trigger": {
+					"event": "attack_types"
+				}
+			},
+			"attack_types": {
+				"randomize": [
+					{
+						"weight": 2,
+						"add": {
+							"component_groups": [
+								"normal_attack"
+							]
+						},
+						"remove": {
+							"component_groups": [
+								"normal_attack_projectile",
+								"double_dash_attack",
+								"heavy_attack_projectile",
+								"chaos_attack1"
+							]
+						}
+					},
+					{
+						"weight": 2,
+						"add": {
+							"component_groups": [
+								"normal_attack_projectile"
+							]
+						},
+						"remove": {
+							"component_groups": [
+								"normal_attack",
+								"double_dash_attack",
+								"heavy_attack_projectile",
+								"chaos_attack1"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"double_dash_attack"
+							]
+						},
+						"remove": {
+							"component_groups": [
+								"normal_attack",
+								"normal_attack_projectile",
+								"heavy_attack_projectile",
+								"chaos_attack1"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"heavy_attack_projectile"
+							]
+						},
+						"remove": {
+							"component_groups": [
+								"normal_attack",
+								"normal_attack_projectile",
+								"double_dash_attack",
+								"chaos_attack1"
+							]
+						}
+					},
+					{
+						"weight": 4,
+						"add": {
+							"component_groups": [
+								"chaos_attack1"
+							]
+						},
+						"remove": {
+							"component_groups": [
+								"normal_attack",
+								"normal_attack_projectile",
+								"double_dash_attack",
+								"heavy_attack_projectile"
+							]
+						}
+					}
+				]
+			},
+			"is_attacking": {
+				"add": {
+					"component_groups": [
+						"is_attacking"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"can_move"
+					]
+				}
+			},
+			"finish_attack": {
+				"add": {
+					"component_groups": [
+						"can_move"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"is_attacking"
+					]
+				}
+			},
+			"double_dash_attack_move": {
+				"add": {
+					"component_groups": [
+						"double_dash_attack_move"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"can_move",
+						"is_attacking"
+					]
+				}
+			},
+			"double_dash_attack_stop": {
+				"add": {
+					"component_groups": [
+						"is_attacking"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"double_dash_attack_move",
+						"can_move"
+					]
+				}
+			},
+			"summon_finished": {
+				"add": {
+					"component_groups": [
+						"normal_attack"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"normal_attack_projectile",
+						"heavy_attack_projectile",
+						"double_dash_attack",
+						"chaos_attack1"
+					]
+				}
+			},
+			"chaos_attack1_move": {
+				"add": {
+					"component_groups": [
+						"chaos_attack1_move"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"can_move",
+						"is_attacking"
+					]
+				}
+			},
+			"chaos_attack1_stop": {
+				"add": {
+					"component_groups": [
+						"is_attacking"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"can_move",
+						"chaos_attack1_move"
+					]
+				}
+			},
+			"flawed_fight": {
+				"add": {
+					"component_groups": [
+						"flawed_loot"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"flawless_loot"
+					]
+				}
+			}
+		}
+	}
+}

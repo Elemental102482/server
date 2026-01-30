@@ -1,0 +1,67 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:vengeful_heart_of_ender",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/vengeful_heart_of_ender/vengeful_heart_of_ender"
+			},
+			"geometry": {
+				"default": "geometry.vengeful_heart_of_ender"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"animations": {
+				"idle": "animation.vengeful_heart_of_ender.idle",
+				"vfx": "animation.vengeful_heart_of_ender.particles",
+				"move": "animation.vengeful_heart_of_ender.walk",
+				"move_controller": "controller.animation.redstone_monstrosity.move",
+				"roar": "animation.vengeful_heart_of_ender.summon_endermites",
+				"roar_controller": "controller.animation.redstone_monstrosity.roar",
+				"look_at_target_controller": "controller.animation.humanoid.look_at_target",
+				"look_at_target_default": "animation.humanoid.look_at_target.default",
+				"look_at_target_gliding": "animation.humanoid.look_at_target.gliding",
+				"look_at_target_swimming": "animation.humanoid.look_at_target.swimming",
+				"shoot": "animation.vengeful_heart_of_ender.vomit_projectile",
+				"shoot_controller": "controller.animation.vengeful_heart_of_ender.ranged_attack",
+				"smash": "animation.vengeful_heart_of_ender.melee",
+				"attack_controller": "controller.animation.redstone_monstrosity.attack",
+				"enter_portal": "animation.vengeful_heart_of_ender.enter_portal",
+				"exit_portal": "animation.vengeful_heart_of_ender.exit_portal",
+				"in_portal": "animation.vengeful_heart_of_ender.in_portal_charging",
+				"portal_controller": "controller.animation.vengeful_heart_of_ender.portal"
+			},
+			"scripts": {
+				"animate": [
+					"move_controller",
+					"roar_controller",
+					"shoot_controller",
+					"portal_controller",
+					"attack_controller",
+					"idle",
+					"vfx"
+				]
+			},
+			"particle_effects": {
+				"hornFlame": "dungeons:vhoe_horn",
+				"neckFlame": "dungeons:vhoe_neck",
+				"shake": "dungeons:vhoe_shake",
+				"stars": "dungeons:big_bang_stars"
+			},
+			"sound_effects": {
+				"awaken": "mob.vhoe.awaken",
+				"enter": "mob.vhoe.enter",
+				"exit": "mob.vhoe.exit",
+				"attack": "mob.vhoe.melee"
+			},
+			"spawn_egg": {
+				"base_color": "#000000",
+				"overlay_color": "#DD00FF"
+			}
+		}
+	}
+}

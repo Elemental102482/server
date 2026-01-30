@@ -1,0 +1,5 @@
+tag @a[tag=!dungeons:teleportation_armour,hasitem=[{item=dungeons:teleportation_helmet,location=slot.armor.head},{item=dungeons:teleportation_chestplate,location=slot.armor.chest},{item=dungeons:teleportation_leggings,location=slot.armor.legs},{item=dungeons:teleportation_boots,location=slot.armor.feet}]] add dungeons:teleportation_armour
+tag @a[tag=dungeons:teleportation_armour,hasitem={quantity=0,item=dungeons:teleportation_helmet,location=slot.armor.head}] remove dungeons:teleportation_armour
+tag @a[tag=dungeons:teleportation_armour,hasitem={quantity=0,item=dungeons:teleportation_chestplate,location=slot.armor.chest}] remove dungeons:teleportation_armour
+tag @a[tag=dungeons:teleportation_armour,hasitem={quantity=0,item=dungeons:teleportation_leggings,location=slot.armor.legs}] remove dungeons:teleportation_armour
+tag @a[tag=dungeons:teleportation_armour,hasitem={quantity=0,item=dungeons:teleportation_boots,location=slot.armor.feet}] remove dungeons:teleportation_armour

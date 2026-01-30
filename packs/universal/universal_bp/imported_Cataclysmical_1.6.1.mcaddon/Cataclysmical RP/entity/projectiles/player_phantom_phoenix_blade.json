@@ -1,0 +1,45 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "cata:player_phantom_phoenix_blade",
+			"materials": {
+				"default": "drowned"
+			},
+			"textures": {
+				"default": "textures/entity/projectile/sun_tribunal_phantom_blade_texture"
+			},
+			"geometry": {
+				"default": "geometry.sun_tribunal_phantom_blade"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "cata_stone_golem_egg"
+			},
+			"animations": {
+				"move": "animation.sun_tribunal_phantom_blade.move",
+				"move2": "animation.sun_tribunal_phantom_blade.move2",
+				"particle": "animation.sun_tribunal_phantom_blade.particle"
+			},
+			"scripts": {
+				"animate": [
+					"particle",
+					{
+						"move": "query.skin_id==0"
+					},
+					{
+						"move2": "query.skin_id==1"
+					}
+				]
+			},
+			"sound_effects": {
+				"phatom_sword_spin": "mob.phatom_sword_spin"
+			},
+			"particle_effects": {
+				"sun_tribunal_phantom_blade_emitter": "cata:sun_tribunal_phantom_blade_emitter"
+			}
+		}
+	}
+}

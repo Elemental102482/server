@@ -1,0 +1,188 @@
+{
+	"resource_pack-name": "vanilla",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"copper_hammer": {
+			"textures": "textures/items/copper_hammer.png"
+		},
+		"copper_sickle": {
+			"textures": "textures/items/copper_sickle.png"
+		},
+		"copper_great_shovel": {
+			"textures": "textures/items/copper_great_shovel.png"
+		},
+		"copper_great_axe": {
+			"textures": "textures/items/copper_great_axe.png"
+		},
+		"copper_great_sword": {
+			"textures": "textures/items/copper_great_sword.png"
+		},
+		"amethyst_hammer": {
+			"textures": "textures/items/amethyst_hammer.png"
+		},
+		"amethyst_sickle": {
+			"textures": "textures/items/amethyst_sickle.png"
+		},
+		"amethyst_great_shovel": {
+			"textures": "textures/items/amethyst_great_shovel.png"
+		},
+		"amethyst_great_axe": {
+			"textures": "textures/items/amethyst_great_axe.png"
+		},
+		"amethyst_great_sword": {
+			"textures": "textures/items/amethyst_great_sword.png"
+		},
+
+
+		"diamond_great_sword": {
+			"textures": "textures/items/diamond_great_sword.png"
+		},
+		"gold_great_sword": {
+			"textures": "textures/items/gold_great_sword.png"
+		},
+		"stone_great_sword": {
+			"textures": "textures/items/stone_great_sword.png"
+		},
+		"wood_great_sword": {
+			"textures": "textures/items/wood_great_sword.png"
+		},
+		"iron_great_sword": {
+			"textures": "textures/items/iron_great_sword.png"
+		},
+		"netherite_great_sword": {
+			"textures": "textures/items/netherite_great_sword.png"
+		},
+		"redstone_great_sword": {
+			"textures": "textures/items/redstone_great_sword.png"
+		},
+		"lapis_great_sword": {
+			"textures": "textures/items/lapis_great_sword.png"
+		},
+		"emerald_great_sword": {
+			"textures": "textures/items/emerald_great_sword.png"
+		},
+		"diamond_sickle": {
+			"textures": "textures/items/diamond_sickle.png"
+		},
+		"obsidian_sickle": {
+			"textures": "textures/items/obsidian_sickle.png"
+		},
+		"gold_sickle": {
+			"textures": "textures/items/gold_sickle.png"
+		},
+		"stone_sickle": {
+			"textures": "textures/items/stone_sickle.png"
+		},
+		"wood_sickle": {
+			"textures": "textures/items/wood_sickle.png"
+		},
+		"iron_sickle": {
+			"textures": "textures/items/iron_sickle.png"
+		},
+		"netherite_sickle": {
+			"textures": "textures/items/netherite_sickle.png"
+		},
+		"redstone_sickle": {
+			"textures": "textures/items/redstone_sickle.png"
+		},
+		"lapis_sickle": {
+			"textures": "textures/items/lapis_sickle.png"
+		},
+		"emerald_sickle": {
+			"textures": "textures/items/emerald_sickle.png"
+		},
+		"diamond_great_shovel": {
+			"textures": "textures/items/diamond_great_shovel.png"
+		},
+		"gold_great_shovel": {
+			"textures": "textures/items/gold_great_shovel.png"
+		},
+		"stone_great_shovel": {
+			"textures": "textures/items/stone_great_shovel.png"
+		},
+		"wood_great_shovel": {
+			"textures": "textures/items/wood_great_shovel.png"
+		},
+		"iron_great_shovel": {
+			"textures": "textures/items/iron_great_shovel.png"
+		},
+		"netherite_great_shovel": {
+			"textures": "textures/items/netherite_great_shovel.png"
+		},
+		"redstone_great_shovel": {
+			"textures": "textures/items/redstone_great_shovel.png"
+		},
+		"lapis_great_shovel": {
+			"textures": "textures/items/lapis_great_shovel.png"
+		},
+		"emerald_great_shovel": {
+			"textures": "textures/items/emerald_great_shovel.png"
+		},
+		"diamond_great_axe": {
+			"textures": "textures/items/diamond_great_axe.png"
+		},
+		"gold_great_axe": {
+			"textures": "textures/items/gold_great_axe.png"
+		},
+		"stone_great_axe": {
+			"textures": "textures/items/stone_great_axe.png"
+		},
+		"wood_great_axe": {
+			"textures": "textures/items/wood_great_axe.png"
+		},
+		"iron_great_axe": {
+			"textures": "textures/items/iron_great_axe.png"
+		},
+		"netherite_great_axe": {
+			"textures": "textures/items/netherite_great_axe.png"
+		},
+		"redstone_great_axe": {
+			"textures": "textures/items/redstone_great_axe.png"
+		},
+		"lapis_great_axe": {
+			"textures": "textures/items/lapis_great_axe.png"
+		},
+		"emerald_great_axe": {
+			"textures": "textures/items/emerald_great_axe.png"
+		},
+		"obsidian_great_axe": {
+			"textures": "textures/items/obsidian_great_axe.png"
+		},
+		"obsidian_great_shovel": {
+			"textures": "textures/items/obsidian_great_shovel.png"
+		},
+		"diamond_hammer": {
+			"textures": "textures/items/diamond_hammer.png"
+		},
+		"gold_hammer": {
+			"textures": "textures/items/gold_hammer.png"
+		},
+		"stone_hammer": {
+			"textures": "textures/items/stone_hammer.png"
+		},
+		"wood_hammer": {
+			"textures": "textures/items/wood_hammer.png"
+		},
+		"iron_hammer": {
+			"textures": "textures/items/iron_hammer.png"
+		},
+		"netherite_hammer": {
+			"textures": "textures/items/netherite_hammer.png"
+		},
+		"redstone_hammer": {
+			"textures": "textures/items/redstone_hammer.png"
+		},
+		"lapis_hammer": {
+			"textures": "textures/items/lapis_hammer.png"
+		},
+		"emerald_hammer": {
+			"textures": "textures/items/emerald_hammer.png"
+		},
+		"obsidian_hammer": {
+			"textures": "textures/items/obsidian_hammer.png"
+		},
+		"obsidian_great_sword": {
+			"textures": "textures/items/obsidian_great_sword.png"
+		}
+	}
+}

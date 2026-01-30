@@ -1,0 +1,5 @@
+tag @a[tag=!dungeons:entertainer_armour,hasitem=[{item=dungeons:entertainer_helmet,location=slot.armor.head},{item=dungeons:entertainer_chestplate,location=slot.armor.chest},{item=dungeons:entertainer_leggings,location=slot.armor.legs},{item=dungeons:entertainer_boots,location=slot.armor.feet}]] add dungeons:entertainer_armour
+tag @a[tag=dungeons:entertainer_armour,hasitem={quantity=0,item=dungeons:entertainer_helmet,location=slot.armor.head}] remove dungeons:entertainer_armour
+tag @a[tag=dungeons:entertainer_armour,hasitem={quantity=0,item=dungeons:entertainer_chestplate,location=slot.armor.chest}] remove dungeons:entertainer_armour
+tag @a[tag=dungeons:entertainer_armour,hasitem={quantity=0,item=dungeons:entertainer_leggings,location=slot.armor.legs}] remove dungeons:entertainer_armour
+tag @a[tag=dungeons:entertainer_armour,hasitem={quantity=0,item=dungeons:entertainer_boots,location=slot.armor.feet}] remove dungeons:entertainer_armour

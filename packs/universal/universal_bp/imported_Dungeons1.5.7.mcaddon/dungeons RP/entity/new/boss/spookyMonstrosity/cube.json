@@ -1,0 +1,45 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:rolling_flame",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/spooky_monstrosity/rolling_flame_1",
+				"B": "textures/entity/spooky_monstrosity/rolling_flame_2",
+				"C": "textures/entity/spooky_monstrosity/rolling_flame_3",
+				"D": "textures/entity/spooky_monstrosity/rolling_flame_4",
+				"E": "textures/entity/spooky_monstrosity/rolling_flame_5",
+				"F": "textures/entity/spooky_monstrosity/rolling_flame_6",
+				"G": "textures/entity/spooky_monstrosity/rolling_flame_7"
+			},
+			"geometry": {
+				"default": "geometry.rolling_flame"
+			},
+			"render_controllers": [
+				"controller.render.rolling_flame"
+			],
+			"animations": {
+				"move": "animation.redstone_cube.roll",
+				"particles": "animation.necromancer_shot.particles",
+				"move_controller": "controller.animation.redstone_cube.move"
+			},
+			"particle_effects": {
+				"energy": "dungeons:rolling_flame"
+			},
+			"scripts": {
+				"animate": [
+					"move_controller",
+					{
+						"particles": "!query.is_saddled"
+					}
+				]
+			},
+			"spawn_egg": {
+				"texture": "egg_rolling_flame"
+			}
+		}
+	}
+}

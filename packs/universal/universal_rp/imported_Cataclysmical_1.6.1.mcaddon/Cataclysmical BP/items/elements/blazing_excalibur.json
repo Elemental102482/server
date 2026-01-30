@@ -1,0 +1,63 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:item": {
+		"description": {
+			"identifier": "cata:blazing_excalibur",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:damage": 12,
+			"minecraft:max_stack_size": 1,
+			"minecraft:durability": {
+				"max_durability": 5000
+			},
+			"minecraft:can_destroy_in_creative": false,
+			"minecraft:interact_button": true,
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"cata:solar_element"
+						],
+						"repair_amount": "query.max_durability*0.5"
+					},
+					{
+						"items": [
+							"cata:blazing_excalibur"
+						],
+						"repair_amount": "context.other->query.remaining_durability+0.12*context.other->query.max_durability"
+					}
+				]
+			},
+			"minecraft:enchantable": {
+				"value": 13,
+				"slot": "sword"
+			},
+			"minecraft:digger": {
+				"use_efficiency": true,
+				"destroy_speeds": [
+					{
+						"block": "minecraft:web",
+						"speed": 100
+					}
+				]
+			},
+			"minecraft:block_placer": {
+				"block": "cata:blazing_excalibur",
+				"use_on": [
+					"cata:blazing_excalibur"
+				],
+				"replace_block_item": true
+			},
+			"minecraft:rarity": {
+				"value": "uncommon"
+			},
+			"minecraft:cooldown": {
+				"category": "blazing_excalibur",
+				"duration": 25
+			}
+		}
+	}
+}

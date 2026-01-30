@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "rolling_flame_7",
+        "metalness_emissive_roughness": "rolling_flame_mer"
+    }
+}

@@ -1,0 +1,392 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "dungeons:illusioner",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"dungeons:blindness_spell": {
+				"minecraft:behavior.summon_entity": {
+					"priority": 0,
+					"summon_choices": [
+						{
+							"min_activation_range": 0,
+							"max_activation_range": 13,
+							"cooldown_time": 5,
+							"weight": 1,
+							"cast_duration": 3,
+							"particle_color": "#ff000000",
+							"start_sound_event": "cast.spell",
+							"sequence": [
+								{
+									"shape": "circle",
+									"target": "self",
+									"base_delay": 2,
+									"delay_per_summon": 0,
+									"num_entities_spawned": 1,
+									"entity_type": "dungeons:illusion_blindness",
+									"size": 1,
+									"entity_lifespan": 1.1
+								}
+							]
+						}
+					]
+				},
+				"minecraft:entity_sensor": {
+					"sensor_range": 32,
+					"maximum_count": -1,
+					"minimum_count": 1,
+					"require_all": false,
+					"event_filters": {
+						"all_of": [
+							{
+								"test": "is_target",
+								"subject": "other"
+							},
+							{
+								"test": "has_mob_effect",
+								"subject": "other",
+								"value": "blindness"
+							}
+						]
+					},
+					"event": "dungeons:clone_spell"
+				}
+			},
+			"dungeons:clone_spell": {
+				"minecraft:behavior.summon_entity": {
+					"priority": 0,
+					"summon_choices": [
+						{
+							"min_activation_range": 0,
+							"max_activation_range": 20,
+							"cooldown_time": 44,
+							"weight": 1,
+							"cast_duration": 3,
+							"particle_color": "#ffF0F0ff",
+							"start_sound_event": "cast.spell",
+							"sequence": [
+								{
+									"shape": "circle",
+									"target": "self",
+									"base_delay": 2,
+									"delay_per_summon": 0,
+									"num_entities_spawned": 5,
+									"entity_type": "dungeons:illusioner_clone",
+									"size": 0.3,
+									"entity_lifespan": 40
+								},
+								{
+									"shape": "circle",
+									"target": "self",
+									"base_delay": 0,
+									"delay_per_summon": 0,
+									"num_entities_spawned": 5,
+									"entity_type": "dungeons:illusion_scatter",
+									"size": 1,
+									"entity_lifespan": 1.1
+								}
+							]
+						}
+					]
+				},
+				"minecraft:entity_sensor": {
+					"sensor_range": 32,
+					"maximum_count": -1,
+					"minimum_count": 1,
+					"require_all": false,
+					"event_filters": {
+						"all_of": [
+							{
+								"test": "is_target",
+								"subject": "other"
+							},
+							{
+								"test": "has_mob_effect",
+								"subject": "other",
+								"operator": "!=",
+								"value": "blindness"
+							}
+						]
+					},
+					"event": "dungeons:blindness_spell"
+				}
+			}
+		},
+		"components": {
+			"minecraft:is_hidden_when_invisible": {},
+			"minecraft:experience_reward": {
+				"on_death": "60"
+			},
+			"minecraft:type_family": {
+				"family": [
+					"illusioner",
+					"monster",
+					"illager",
+					"mob"
+				]
+			},
+			"minecraft:breathable": {
+				"total_supply": 15,
+				"suffocate_time": 0
+			},
+			"minecraft:nameable": {},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/illusioner.json"
+			},
+			"minecraft:boss": {
+				"should_darken_sky": false,
+				"hud_range": 18,
+				"name": " §eIllusioner§r "
+			},
+			"minecraft:health": {
+				"value": 133,
+				"max": 133
+			},
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"filters": {
+							"test": "in_lava",
+							"subject": "self",
+							"operator": "==",
+							"value": true
+						},
+						"cause": "lava",
+						"damage_per_tick": 4
+					}
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 0.6,
+				"height": 1.9
+			},
+			"minecraft:movement": {
+				"value": 0.23
+			},
+			"minecraft:navigation.walk": {
+				"can_path_over_water": true,
+				"can_pass_doors": true,
+				"can_open_doors": true,
+				"avoid_water": true
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:can_climb": {},
+			"minecraft:behavior.float": {
+				"priority": 0
+			},
+			"minecraft:mob_effect_immunity": {
+				"mob_effects": [
+					"blindness"
+				]
+			},
+			"minecraft:scale": {
+				"value": 1.09
+			},
+			"minecraft:behavior.avoid_mob_type": {
+				"priority": 5,
+				"entity_types": [
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								},
+								{
+									"test": "has_tag",
+									"subject": "other",
+									"operator": "!=",
+									"value": "origins:mob_evocation_illager_neutral"
+								}
+							]
+						},
+						"max_dist": 8,
+						"walk_speed_multiplier": 1.2,
+						"sprint_speed_multiplier": 1.4
+					},
+					{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"value": "creaking"
+						},
+						"max_dist": 8,
+						"sprint_speed_multiplier": 1.4
+					}
+				]
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 8,
+				"speed_multiplier": 1
+			},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 2,
+				"entity_types": [
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								},
+								{
+									"test": "has_tag",
+									"subject": "other",
+									"operator": "!=",
+									"value": "origins:mob_evocation_illager_neutral"
+								}
+							]
+						},
+						"max_dist": 20
+					},
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "snowgolem"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "irongolem"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "wandering_trader"
+								}
+							]
+						},
+						"max_dist": 20
+					},
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "villager"
+								},
+								{
+									"test": "has_component",
+									"subject": "other",
+									"operator": "!=",
+									"value": "minecraft:is_baby"
+								}
+							]
+						},
+						"max_dist": 20
+					}
+				],
+				"must_see": true
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 9,
+				"look_distance": 3,
+				"probability": 1
+			},
+			"minecraft:behavior.look_at_entity": {
+				"priority": 10,
+				"look_distance": 8,
+				"filters": {
+					"test": "is_family",
+					"subject": "other",
+					"value": "mob"
+				}
+			},
+			"minecraft:behavior.ranged_attack": {
+				"priority": 1,
+				"attack_interval_min": 0.8,
+				"attack_interval_max": 1.5,
+				"attack_radius": 15
+			},
+			"minecraft:equipment": {
+				"table": "loot_tables/entities/skeleton_gear.json"
+			},
+			"minecraft:shooter": {
+				"def": "minecraft:arrow"
+			},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1,
+				"entity_types": [
+					{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"operator": "!=",
+							"value": "illusioner"
+						}
+					}
+				]
+			},
+			"minecraft:persistent": {},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:follow_range": {
+				"value": 64
+			},
+			"minecraft:conditional_bandwidth_optimization": {},
+			"minecraft:on_death": {
+				"event": "dungeons:remove_clones",
+				"target": "self"
+			}
+		},
+		"events": {
+			"dungeons:remove_clones": {
+				"queue_command": {
+					"command": [
+						"event entity @e[family=clone_illusioner,r=24,c=18] dungeons:despawn"
+					]
+				}
+			},
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"dungeons:blindness_spell"
+					]
+				}
+			},
+			"dungeons:blindness_spell": {
+				"queue_command": {
+					"command": [
+						"event entity @e[family=clone_illusioner,r=24,c=18] dungeons:despawn"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"dungeons:blindness_spell"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"dungeons:clone_spell"
+					]
+				}
+			},
+			"dungeons:clone_spell": {
+				"add": {
+					"component_groups": [
+						"dungeons:clone_spell"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"dungeons:blindness_spell"
+					]
+				}
+			}
+		}
+	}
+}

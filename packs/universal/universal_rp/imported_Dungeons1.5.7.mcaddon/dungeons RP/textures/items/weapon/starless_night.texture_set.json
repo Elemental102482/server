@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "starless_night",
+        "metalness_emissive_roughness": "starless_night_mer"
+    }
+}

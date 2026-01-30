@@ -1,0 +1,62 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.solar_core_beam.spawn": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"root": {
+					"scale": {
+						"0.0": [
+							0,
+							1,
+							0
+						],
+						"1.0": [
+							1,
+							1,
+							1
+						]
+					}
+				}
+			}
+		},
+		"animation.solar_core_beam.active": {
+			"loop": true,
+			"animation_length": 2,
+			"bones": {
+				"root": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"2.0": [
+							0,
+							360,
+							0
+						]
+					},
+					"scale": {
+						"0.0": [
+							1,
+							1,
+							1
+						],
+						"1.0": [
+							0.9,
+							1,
+							0.9
+						],
+						"2.0": [
+							1,
+							1,
+							1
+						]
+					}
+				}
+			}
+		}
+	}
+}

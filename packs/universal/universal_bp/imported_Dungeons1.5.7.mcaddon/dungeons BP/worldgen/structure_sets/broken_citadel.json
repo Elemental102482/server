@@ -1,0 +1,21 @@
+{
+	"format_version": "1.21.20",
+	"minecraft:structure_set": {
+		"description": {
+			"identifier": "dungeons:broken_citadel"
+		},
+		
+		"placement": {
+			"type": "minecraft:random_spread",
+			"salt": 16062025,
+			"separation": 28,
+			"spacing": 59
+		},
+		"structures": [
+			{
+				"structure": "dungeons:broken_citadel",
+				"weight": 1
+			}
+		]
+	}
+}

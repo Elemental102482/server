@@ -1,0 +1,68 @@
+{
+	"format_version": "1.21.10",
+	"minecraft:item": {
+		"description": {
+			"identifier": "dungeons:tome_of_duplication",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:tags": {
+				"tags": [
+					"dungeons:tome_of_duplication"
+				]
+			},
+			"minecraft:icon": "tome_of_duplication",
+			"minecraft:max_stack_size": 1,
+			"minecraft:stacked_by_data": false,
+			"minecraft:can_destroy_in_creative": false,
+			"minecraft:custom_components": [
+				"dungeons:dynamic_cooldown",
+				"dungeons:tome_of_duplication",
+				"dungeons:blast_fungus",
+				"dungeons:buzzy_nest",
+				"dungeons:common_corrupted_beacon",
+				"dungeons:corrupted_seeds",
+				"dungeons:common_death_cap_mushroom",
+				"dungeons:enchanted_grass",
+				"dungeons:enchanters_tome",
+				"dungeons:eye_of_the_guardian",
+				"dungeons:common_ghost_cloak",
+				"dungeons:golem_kit",
+				"dungeons:common_gong_of_weakening",
+				"dungeons:common_harvester",
+				"dungeons:common_iron_hide_amulet",
+				"dungeons:light_feather",
+				"dungeons:common_lightning_rod",
+				"dungeons:common_powershaker",
+				"dungeons:satchel_of_elements",
+				"dungeons:satchel_of_elixirs",
+				"dungeons:common_satchel_of_snacks",
+				"dungeons:scatter_mines",
+				"dungeons:common_shock_powder",
+				"dungeons:common_soul_healer",
+				"dungeons:soul_lantern",
+				"dungeons:common_boots_of_swiftness",
+				"dungeons:totem_casting",
+				"dungeons:totem_regeneration",
+				"dungeons:totem_shielding",
+				"dungeons:updraft_tome",
+				"dungeons:common_shadow_shifter",
+				"dungeons:ice_wand",
+				"dungeons:common_wind_horn",
+				"dungeons:vexing_chant",
+				"dungeons:spinblade",
+				"dungeons:corrupted_pumpkin"
+			],
+			"minecraft:cooldown": {
+				"category": "tome_duplication_common",
+				"duration": 20
+			},
+			"minecraft:interact_button": "item.use.artefact",
+			"minecraft:use_modifiers": {
+				"use_duration": 0
+			}
+		}
+	}
+}

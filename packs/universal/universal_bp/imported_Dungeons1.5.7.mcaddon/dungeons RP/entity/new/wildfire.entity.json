@@ -1,0 +1,44 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:wildfire",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/wildfire/wildfire2"
+			},
+			"geometry": {
+				"default": "geometry.wildfire2"
+			},
+			"particle_effects": {
+				"smoke": "dungeons:wildfire_smoke",
+				"slam": "dungeons:wildfire_slam"
+			},
+			"spawn_egg": {
+				"texture": "egg_wildfire"
+			},
+			"scripts": {
+				"animate": [
+					"smoke",
+					"look_at_target",
+					"spin",
+					{
+						"death": "query.is_alive!=1"
+					}
+				]
+			},
+			"animations": {
+				"smoke": "animation.wildfire.smoke",
+				"shockwave": "animation.wildfire2.slam",
+				"spin": "animation.wildfire2.spin",
+				"death": "animation.wildfire2.death",
+				"look_at_target": "animation.common.look_at_target"
+			},
+			"render_controllers": [
+				"controller.render.wildfire"
+			]
+		}
+	}
+}

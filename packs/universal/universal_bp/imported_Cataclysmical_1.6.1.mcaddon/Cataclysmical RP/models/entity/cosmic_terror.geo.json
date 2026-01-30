@@ -1,0 +1,294 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cosmic_terror",
+				"texture_width": 144,
+				"texture_height": 144,
+				"visible_bounds_width": 6,
+				"visible_bounds_height": 5.5,
+				"visible_bounds_offset": [
+					0,
+					2.25,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						10,
+						0
+					]
+				},
+				{
+					"name": "waist",
+					"parent": "root",
+					"pivot": [
+						0,
+						18.25,
+						-0.25
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								7,
+								-3
+							],
+							"size": [
+								8,
+								13,
+								6
+							],
+							"uv": [
+								100,
+								92
+							]
+						},
+						{
+							"origin": [
+								-11,
+								20,
+								-8
+							],
+							"size": [
+								22,
+								18,
+								16
+							],
+							"uv": [
+								0,
+								48
+							]
+						},
+						{
+							"origin": [
+								0,
+								12,
+								3
+							],
+							"size": [
+								0,
+								21,
+								8
+							],
+							"uv": [
+								68,
+								108
+							]
+						}
+					]
+				},
+				{
+					"name": "rightarm",
+					"parent": "waist",
+					"pivot": [
+						-11,
+						31.5,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-19,
+								2,
+								-5
+							],
+							"size": [
+								8,
+								34,
+								10
+							],
+							"uv": [
+								0,
+								82
+							]
+						},
+						{
+							"origin": [
+								-23,
+								24,
+								0
+							],
+							"size": [
+								12,
+								19,
+								0
+							],
+							"uv": [
+								108,
+								111
+							]
+						}
+					]
+				},
+				{
+					"name": "leftarm",
+					"parent": "waist",
+					"pivot": [
+						11,
+						31.5,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								11,
+								2,
+								-5
+							],
+							"size": [
+								8,
+								34,
+								10
+							],
+							"uv": [
+								76,
+								48
+							]
+						},
+						{
+							"origin": [
+								11,
+								24,
+								0
+							],
+							"size": [
+								12,
+								19,
+								0
+							],
+							"uv": [
+								84,
+								111
+							]
+						}
+					]
+				},
+				{
+					"name": "heads",
+					"parent": "waist",
+					"pivot": [
+						0,
+						48,
+						0
+					]
+				},
+				{
+					"name": "head1",
+					"parent": "heads",
+					"pivot": [
+						0,
+						48,
+						-10
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								44,
+								-14
+							],
+							"size": [
+								8,
+								8,
+								8
+							],
+							"uv": [
+								36,
+								98
+							]
+						}
+					]
+				},
+				{
+					"name": "head2",
+					"parent": "heads",
+					"pivot": [
+						-12,
+						48,
+						7
+					],
+					"cubes": [
+						{
+							"origin": [
+								-16,
+								44,
+								3
+							],
+							"size": [
+								8,
+								8,
+								8
+							],
+							"uv": [
+								68,
+								92
+							]
+						}
+					]
+				},
+				{
+					"name": "head3",
+					"parent": "heads",
+					"pivot": [
+						12,
+						48,
+						7
+					],
+					"cubes": [
+						{
+							"origin": [
+								8,
+								44,
+								3
+							],
+							"size": [
+								8,
+								8,
+								8
+							],
+							"uv": [
+								36,
+								82
+							]
+						}
+					]
+				},
+				{
+					"name": "particle",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"locators": {
+						"nomal_attack": [
+							-16,
+							0,
+							-46
+						],
+						"roar": [
+							0,
+							27,
+							0
+						],
+						"heavy_attack1": [
+							14,
+							0,
+							-42
+						],
+						"heavy_attack2": [
+							-14,
+							0,
+							-42
+						]
+					}
+				}
+			]
+		}
+	]
+}

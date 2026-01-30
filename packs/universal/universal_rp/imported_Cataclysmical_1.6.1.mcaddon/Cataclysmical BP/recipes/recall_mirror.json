@@ -1,0 +1,31 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cata:recall_mirror"
+		},
+		"pattern": [
+			" 11",
+			" 21",
+			"1  "
+		],
+		"key": {
+			"1": {
+				"item": "minecraft:gold_ingot"
+			},
+			"2": {
+				"item": "minecraft:diamond"
+			}
+		},
+		"result": {
+			"item": "cata:recall_mirror",
+			"count": 1
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": {
+			"context": "AlwaysUnlocked"
+		}
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"format_version": "1.21.80",
+	"minecraft:structure_set": {
+		"description": {
+			"identifier": "cata:terror_crypt"
+		},
+		"placement": {
+			"type": "minecraft:random_spread",
+			"salt": 49785851,
+			"separation": 20,
+			"spacing": 50,
+			"spread_type": "linear"
+		},
+		"structures": [
+			{
+				"structure": "cata:terror_crypt",
+				"weight": 1
+			}
+		]
+	}
+}

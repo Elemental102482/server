@@ -1,0 +1,35 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.ooze": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"texture.default"
+			],
+			"ignore_lighting": true
+		},
+		"controller.render.ooze_armor": {
+			"geometry": "geometry.armor",
+			"materials": [
+				{
+					"*": "material.outer"
+				}
+			],
+			"textures": [
+				"texture.default"
+			],
+			"ignore_lighting": true,
+			"overlay_color": {
+				"r": "q.life_time<=1.6?1-(q.life_time/1.6):0",
+				"g": "q.life_time<=1.6?1-(q.life_time/1.6):0",
+				"b": "q.life_time<=1.6?1-(q.life_time/1.6):0",
+				"a": "q.life_time<=1.6?1-(q.life_time/1.6):0"
+			}
+		}
+	}
+}

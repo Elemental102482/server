@@ -1,0 +1,21 @@
+{
+	"format_version": "1.21.20",
+	"minecraft:structure_set": {
+		"description": {
+			"identifier": "dungeons:endersent_totem"
+		},
+		
+		"placement": {
+			"type": "minecraft:random_spread",
+			"salt": 14042025,
+			"separation": 15,
+			"spacing": 40
+		},
+		"structures": [
+			{
+				"structure": "dungeons:endersent_totem",
+				"weight": 1
+			}
+		]
+	}
+}

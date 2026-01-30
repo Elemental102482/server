@@ -1,0 +1,35 @@
+{
+	"format_version": "1.21.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "cata:recall_mirror",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:icon": "cata_recall_mirror",
+			"minecraft:use_animation": {
+				"value": "brush"
+			},
+			"minecraft:max_stack_size": {
+				"value": 1
+			},
+			"minecraft:durability": {
+				"max_durability": 5,
+				"damage_chance": {
+					"min": 0,
+					"max": 100
+				}
+			},
+			"minecraft:hand_equipped": {
+				"value": true
+			},
+			"minecraft:cooldown": {
+				"category": "recall_mirror",
+				"duration": 15
+			},
+			"minecraft:interact_button": true
+		}
+	}
+}

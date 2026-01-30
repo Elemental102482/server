@@ -1,0 +1,193 @@
+{
+	"format_version": "1.17.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "e:dummyentityooldg",
+			"is_summonable": true,
+			"is_spawnable": false,
+			"is_experimental": false
+		},
+		"components": {
+			"minecraft:custom_hit_test": {
+				"hitboxes": [
+					{
+						"pivot": [
+							0,
+							100,
+							0
+						],
+						"width": 0,
+						"height": 0
+					}
+				]
+			},
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"deals_damage": false
+				}
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:collision_box": {
+				"width": 0.0001,
+				"height": 0.0001
+			}
+		},
+		"events": {
+			"dirt": {
+				"run_command": {
+					"command": [
+						"loot spawn ~ ~ ~ loot eh_dirt_double"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"dies"
+					]
+				}
+			},
+			"clay": {
+				"run_command": {
+					"command": [
+						"loot spawn ~ ~ ~ loot eh_clay_double"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"dies"
+					]
+				}
+			},
+			"coarse_dirt": {
+				"run_command": {
+					"command": [
+						"loot spawn ~ ~ ~ loot eh_coarse_dirt_double"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"dies"
+					]
+				}
+			},
+			"gravel": {
+				"run_command": {
+					"command": [
+						"loot spawn ~ ~ ~ loot eh_gravel_double"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"dies"
+					]
+				}
+			},
+			"sand": {
+				"run_command": {
+					"command": [
+						"loot spawn ~ ~ ~ loot eh_sand_double"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"dies"
+					]
+				}
+			},
+			"soul_sand": {
+				"run_command": {
+					"command": [
+						"loot spawn ~ ~ ~ loot eh_soul_sand_double"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"dies"
+					]
+				}
+			},
+			"soul_soil": {
+				"run_command": {
+					"command": [
+						"loot spawn ~ ~ ~ loot eh_soul_soil_double"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"dies"
+					]
+				}
+			}
+		},
+		"component_groups": {
+			"dies": {
+				"minecraft:instant_despawn": {}
+			},
+			"dirt": {
+				"minecraft:timer": {
+					"looping": true,
+					"time": 0.2,
+					"time_down_event": {
+						"event": "dirt"
+					}
+				}
+			},
+			"clay": {
+				"minecraft:timer": {
+					"looping": true,
+					"time": 0.2,
+					"time_down_event": {
+						"event": "clay"
+					}
+				}
+			},
+			"coarse_dirt": {
+				"minecraft:timer": {
+					"looping": true,
+					"time": 0.2,
+					"time_down_event": {
+						"event": "coarse_dirt"
+					}
+				}
+			},
+			"gravel": {
+				"minecraft:timer": {
+					"looping": true,
+					"time": 0.2,
+					"time_down_event": {
+						"event": "gravel"
+					}
+				}
+			},
+			"sand": {
+				"minecraft:timer": {
+					"looping": true,
+					"time": 0.2,
+					"time_down_event": {
+						"event": "sand"
+					}
+				}
+			},
+			"soul_sand": {
+				"minecraft:timer": {
+					"looping": true,
+					"time": 0.2,
+					"time_down_event": {
+						"event": "soul_sand"
+					}
+				}
+			},
+			"soul_soil": {
+				"minecraft:timer": {
+					"looping": true,
+					"time": 0.2,
+					"time_down_event": {
+						"event": "soul_soil"
+					}
+				}
+			}
+		}
+	}
+}

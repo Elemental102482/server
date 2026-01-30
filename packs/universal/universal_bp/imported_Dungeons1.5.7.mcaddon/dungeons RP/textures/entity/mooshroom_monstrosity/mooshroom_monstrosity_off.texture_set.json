@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "mooshroom_monstrosity_off",
+        "metalness_emissive_roughness": "mooshroom_monstrosity_off_mer"
+    }
+}

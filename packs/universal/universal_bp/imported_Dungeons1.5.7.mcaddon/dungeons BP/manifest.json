@@ -1,0 +1,61 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "§6[§b1.5.7 B§6] §6Alylica's Dungeons Addon",
+    "description": "§eBrings in many new features from Minecraft Dungeons!\n§6Made By : §dAlylica",
+    "uuid": "9765c6c3-1615-40fa-861e-e1f014cf82e2",
+    "version": [
+      1,
+      5,
+      7
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      100
+    ]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "979b1411-612d-4aa1-b16c-cfd755f76136",
+      "version": [
+        1,
+        5,
+        7
+      ]
+    },
+    {
+      "uuid": "3c53f757-9367-49ed-ac70-6dcdd4118299",
+      "version": [
+        1,
+        5,
+        7
+      ],
+      "type": "script",
+      "language": "javascript",
+      "entry": "scripts/main.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "ab296f68-bb16-4ede-a49c-d0ed99b5b87b",
+      "version": [
+        1,
+        5,
+        7
+      ]
+    },
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.15.0"
+    },
+    {
+      "module_name": "@minecraft/server-ui",
+      "version": "1.2.0"
+    }
+  ],
+  "metadata": {
+    "product_type": "addon"
+  }
+}

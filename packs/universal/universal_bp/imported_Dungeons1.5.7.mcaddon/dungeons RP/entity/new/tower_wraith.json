@@ -1,0 +1,49 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:tower_wraith",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/tower_wraith/tower_wraith",
+				"pink": "textures/entity/tower_wraith/tower_wraith_pink"
+			},
+			"geometry": {
+				"default": "geometry.tower_wraith"
+			},
+			"render_controllers": [
+				"controller.render.tower_wraith"
+			],
+			"animations": {
+				"cast_controller": "controller.animation.tower_wraith.cast",
+				"cast_flame": "animation.tower_wraith.summon",
+				"cast_poison": "animation.tower_wraith.poison",
+				"look_at_target_default": "animation.humanoid.look_at_target.default",
+				"look_at_target_gliding": "animation.humanoid.look_at_target.gliding",
+				"look_at_target_swimming": "animation.humanoid.look_at_target.swimming",
+				"head_controller": "controller.animation.humanoid.look_at_target",
+				"move_controller": "controller.animation.wraith.move",
+				"move": "animation.tower_wraith.walk",
+				"spawn": "animation.tower_wraith.spawn"
+			},
+			"scripts": {
+				"animate": [
+					"cast_controller",
+					{
+						"head_controller": "query.variant!=1"
+					},
+					"move_controller",
+					"spawn"
+				]
+			},
+			"sound_effects": {
+				"awaken": "mob.wraith.rise"
+			},
+			"spawn_egg": {
+				"texture": "egg_tower_wraith"
+			}
+		}
+	}
+}

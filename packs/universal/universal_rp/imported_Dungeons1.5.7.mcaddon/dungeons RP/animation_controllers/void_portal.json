@@ -1,0 +1,27 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.void_portal.hide": {
+			"initial_state": "hide",
+			"states": {
+				"show": {
+					"transitions": [
+						{
+							"hide": "q.variant==0"
+						}
+					]
+				},
+				"hide": {
+					"animations": [
+						"hide"
+					],
+					"transitions": [
+						{
+							"show": "q.variant==1"
+						}
+					]
+				}
+			}
+		}
+	}
+}

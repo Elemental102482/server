@@ -1,0 +1,29 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cata:sun_engine"
+		},
+		"pattern": [
+			"121"
+		],
+		"key": {
+			"1": {
+				"item": "cata:sun_fragment"
+			},
+			"2": {
+				"item": "cata:calibrated_stellar_core"
+			}
+		},
+		"result": {
+			"item": "cata:sun_engine",
+			"count": 1
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": {
+			"context": "AlwaysUnlocked"
+		}
+	}
+}

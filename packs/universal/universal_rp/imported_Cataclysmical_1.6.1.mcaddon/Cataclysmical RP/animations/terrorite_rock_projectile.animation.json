@@ -1,0 +1,25 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.terrorite_rock_projectile.projectile": {
+			"loop": true,
+			"animation_length": 1.25,
+			"bones": {
+				"projectile": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.25": [
+							360,
+							0,
+							0
+						]
+					}
+				}
+			}
+		}
+	}
+}

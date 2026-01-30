@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "resolute_tempest_knife",
+        "metalness_emissive_roughness": "resolute_tempest_knife_mer"
+    }
+}

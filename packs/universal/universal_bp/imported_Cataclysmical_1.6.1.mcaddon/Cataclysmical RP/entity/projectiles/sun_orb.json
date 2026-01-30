@@ -1,0 +1,32 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "cata:sun_orb",
+			"materials": {
+				"default": "drowned"
+			},
+			"textures": {
+				"default": "textures/entity/projectile/sun_orb_texture"
+			},
+			"geometry": {
+				"default": "geometry.sun_orb"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"base_color": "#000000",
+				"overlay_color": "#FFFFFF"
+			},
+			"animations": {
+				"move": "animation.sun_orb.move"
+			},
+			"scripts": {
+				"animate": [
+					"move"
+				]
+			}
+		}
+	}
+}

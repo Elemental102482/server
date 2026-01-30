@@ -1,0 +1,207 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "bps:container_entity_new",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+	"component_groups":{	
+		"reset_health":{
+			"minecraft:health": {
+			"value": 9,
+			"max": 9,
+			"min": 1
+			},
+			"minecraft:breathable":{
+			"breathes_solids": true,
+			"breathes_lava": true,
+			"generates_bubbles": false
+			}
+		},
+		"drop":{
+			"minecraft:transformation": {
+			"into": "bps:container_entity_drop",
+			"drop_inventory": true
+			}
+		},
+		"despawn":{
+			"minecraft:instant_despawn":{}
+		},
+		
+		"open":{
+		"minecraft:entity_sensor": {
+		"sensor_range": 0.5,
+		"relative_range": false,
+		"minimum_count": 1,
+		"event_filters": {
+			"any_of":[
+			{
+			"all_of": [
+				{
+                "test": "is_family",
+                "subject": "other",
+                "value": "player"
+				},
+				{"test": "has_container_open","operator": "!=","subject": "other"}
+			]
+			}
+			]
+		},
+		"event": "close"
+		}
+		},
+		
+		"close":{
+		"minecraft:entity_sensor": {
+		"sensor_range": 0.5,
+		"relative_range": false,
+		"minimum_count": 1,
+		"event_filters": {
+			"any_of":[
+			{
+			"all_of": [
+				{
+                "test": "is_family",
+                "subject": "other",
+                "value": "player"
+				},
+				{"test": "has_container_open","subject": "other"}
+			]
+			}
+			]
+		},
+		"event": "open"
+		}
+		},
+		
+		"small":{
+		"minecraft:inventory":{
+		"container_type": "inventory",
+		"inventory_size": 16,
+		"private": false
+			}
+		},
+		"medium":{
+		"minecraft:inventory":{
+		"container_type": "inventory",
+		"inventory_size": 32,
+		"private": false
+			}
+		},
+		"big":{
+		"minecraft:inventory":{
+		"container_type": "inventory",
+		"inventory_size": 42,
+		"private": false
+			}
+		},
+		"xl":{
+		"minecraft:inventory":{
+		"container_type": "inventory",
+		"inventory_size": 63,
+		"private": false
+			}
+		}
+	},
+	
+    "components": {
+		"minecraft:type_family": {
+          "family": [ "bps","backpack" ]
+        },
+		"minecraft:breathable":{
+			"breathes_solids": true,
+			"breathes_lava": true,
+			"generates_bubbles": false
+			},
+		"minecraft:inventory":{
+		"container_type": "inventory",
+		"inventory_size": 63,
+		"private": false
+			},
+		"minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "all",
+          "deals_damage": false
+        }
+      },
+		"minecraft:persistent":{},
+	"minecraft:fire_immune": true,
+	"minecraft:health": {
+        "value": 9,
+        "max": 9,
+		"min": 1
+      },
+	  "minecraft:collision_box":{
+	  "height": 0.3,
+	  "width": 0.5
+	  },
+	  "minecraft:nameable":{
+	  "allow_name_tag_renaming": false,
+	  "always_show": false
+	  },
+	  "minecraft:knockback_resistance": {
+        "value": 1
+      },
+	  "minecraft:physics": {
+		"has_collision": false,
+	    "has_gravity": false
+      },
+	  "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      }
+    },
+	"events":{
+		"reset_health":{
+			"add":{"component_groups":["reset_health"]},
+			"queue_command":{
+				"command": ["tag @s remove small","tag @s remove medium","tag @s remove big","tag @s remove xl"]				
+			}
+		},
+		"despawn":{
+			"add":{"component_groups":["despawn"]},
+			"queue_command":{
+				"command": "effect @s Nausea 1 11 true"
+			}
+		},
+		"despawn2":{
+			"add":{"component_groups":["despawn"]}
+		},
+		"drop":{
+			"add":{"component_groups":["drop"]}
+		},
+		"open":{
+		"sequence":[
+		{
+		"add":{"component_groups":["open"]},
+		"remove":{"component_groups":["close"]}
+		}
+		]
+		},
+		"close":{
+		"remove":{"component_groups":["open"]},
+		"add":{"component_groups":["close"]},
+			"queue_command":{
+				"command": "effect @s Nausea 2 8 true"
+			}
+		},
+		"check":{
+			"add":{"component_groups":["check"]}
+		},
+		"small":{
+			"add":{"component_groups":["small"]}
+		},
+		"medium":{
+			"add":{"component_groups":["medium"]}
+		},
+		"big":{
+			"add":{"component_groups":["big"]}
+		},
+		"xl":{
+			"add":{"component_groups":["xl"]}
+		}
+	}
+  }
+}

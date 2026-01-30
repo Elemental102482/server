@@ -1,0 +1,46 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Created by kamii",
+    "name": "Novelty Resource v1.3",
+    "uuid": "aa3999ce-1081-417f-ba2c-1ca8150ded08",
+    "version": [
+      1,
+      3,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "Created by kamii",
+      "type": "resources",
+      "uuid": "49036ed8-b825-4324-82a7-a1acf492cbfb",
+      "version": [
+        1,
+        3,
+        0
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "379931a2-7419-40fb-90fb-34288ab4e971",
+      "version": [
+        1,
+        3,
+        0
+      ]
+    }
+  ],
+  "metadata": {
+    "authors": [
+      "Kamii"
+    ],
+    "product_type": "addon"
+  }
+}

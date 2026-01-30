@@ -1,0 +1,85 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "cata:bloom_poison",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"despawn": {
+				"minecraft:instant_despawn": {
+					"remove_child_entities": true
+				}
+			}
+		},
+		"components": {
+			"minecraft:knockback_resistance": {
+				"value": 100
+			},
+			"minecraft:physics": {
+				"has_collision": true,
+				"has_gravity": false
+			},
+			"minecraft:health": {
+				"value": 1
+			},
+			"minecraft:scale": {
+				"value": 1
+			},
+			"minecraft:collision_box": {
+				"width": 0,
+				"height": 0
+			},
+			"minecraft:type_family": {
+				"family": [
+					"inanimate",
+					"floret"
+				]
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "all",
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:mob_effect": {
+				"effect_range": 3,
+				"mob_effect": "fatal_poison",
+				"effect_time": 10,
+				"entity_filter": {
+					"all_of": [
+						{
+							"test": "is_family",
+							"subject": "other",
+							"operator": "!=",
+							"value": "floret"
+						}
+					]
+				}
+			},
+			"minecraft:timer": {
+				"looping": true,
+				"time": [
+					3,
+					3
+				],
+				"time_down_event": {
+					"event": "despawn"
+				}
+			}
+		},
+		"events": {
+			"despawn": {
+				"add": {
+					"component_groups": [
+						"despawn"
+					]
+				}
+			}
+		}
+	}
+}

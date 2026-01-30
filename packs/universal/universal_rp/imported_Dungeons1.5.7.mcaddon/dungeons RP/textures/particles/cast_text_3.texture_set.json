@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "cast_text_3",
+        "metalness_emissive_roughness": "cast_text_3_mer"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "nothing_out_of_the_ordinary",
+        "metalness_emissive_roughness": "nothing_out_of_the_ordinary_mer"
+    }
+}

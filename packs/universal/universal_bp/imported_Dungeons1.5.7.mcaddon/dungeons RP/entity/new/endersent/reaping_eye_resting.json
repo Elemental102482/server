@@ -1,0 +1,36 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:reaping_eye_resting",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/items/enchanted_eye"
+			},
+			"geometry": {
+				"default": "geometry.resting_endersent"
+			},
+			"render_controllers": [
+				"controller.render.resting_endersent"
+			],
+			"animations": {
+				"resting": "animation.resting_endersent.idle",
+				"awaken": "animation.resting_endersent.awaken",
+				"wake_controller": "controller.animation.redstone_monstrosity.rest"
+			},
+			"scripts": {
+				"animate": [
+					"wake_controller"
+				]
+			},
+			"sound_effects": {
+				"awaken": "mob.endersent.awaken"
+			},
+			"spawn_egg": {
+				"texture": "egg_enchanted_endersent"
+			}
+		}
+	}
+}

@@ -1,0 +1,136 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "nvy:novelty_inventory",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"properties": {
+				"nvy:open_inv": {
+					"type": "bool", 
+					"default": false,
+					"client_sync": true 
+				}
+			}
+		},
+			
+		"component_groups": {
+			"resize": {
+				"minecraft:collision_box": {
+					"width": 0.0,
+					"height": 0.0
+				}
+			}
+		},
+			
+		"components": {
+			"minecraft:collision_box": {
+				"width": 1.0,
+				"height": 1.0
+			},
+			"minecraft:health": {
+				"value": 1,
+				"max": 0
+			},
+			"minecraft:fire_immune": {
+			},
+			"minecraft:nameable": {
+				"always_show": false
+			},
+			"minecraft:type_family": {
+				"family": [ "inanimate" ]
+			},
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"deals_damage": false
+				}
+			},
+			"minecraft:knockback_resistance": {
+				"value": 1
+			},
+			"minecraft:behavior.float": {
+			  	"priority": 0
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:physics": {
+				"has_gravity": false,
+				"has_collision": false,
+                "push_towards_closest_space": true
+			},
+			"minecraft:tameable": {
+			  "probability": 0.0
+			},
+			"minecraft:is_tamed": {},
+			"minecraft:inventory":{
+				"can_be_siphoned_from": false,
+				"container_type": "minecart_chest",
+				"inventory_size": 24,
+				"private": false,
+				"restrict_to_owner": true
+			},
+			"minecraft:entity_sensor": {
+				"subsensors": [
+					{
+						"range": [1, 1],
+        				"cooldown": -1,
+						"require_all": false,
+						"event_filters": {
+							"all_of": [
+								{
+									"test": "is_owner",
+									"subject": "other",
+									"value": true 
+								},
+								{ 
+									"test": "has_container_open", 
+									"subject": "other", 
+									"operator": "==", 
+									"value": true 
+								}
+							]
+						},
+						"event": "set_open"
+					},
+					{
+						"range": [1, 1],
+        				"cooldown": -1,
+						"require_all": false,
+						"event_filters": {
+							"all_of": [
+								{
+									"test": "is_owner",
+									"subject": "other",
+									"value": true 
+								},
+								{ 
+									"test": "has_container_open", 
+									"subject": "other", 
+									"operator": "==", 
+									"value": false 
+								}
+							]
+						},
+						"event": "set_close"
+					}
+				]
+			}
+		},
+
+		"events": {
+			"set_open": {
+				"set_property":{
+					"nvy:open_inv": true
+				}
+			},
+			"set_close": {
+				"set_property":{
+					"nvy:open_inv": false
+				}
+			}
+		}
+	}
+}

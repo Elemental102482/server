@@ -1,0 +1,208 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.watchling",
+				"texture_width": 74,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [
+					0,
+					1.25,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "body",
+					"pivot": [
+						0,
+						30,
+						0
+					],
+					"locators": {
+						"particles": {
+							"offset": [
+								0,
+								24,
+								0
+							],
+							"rotation": [
+								0,
+								0,
+								0
+							],
+							"ignore_inherited_scale": true
+						}
+					}
+				},
+				{
+					"name": "leftLeg",
+					"parent": "body",
+					"pivot": [
+						3,
+						16,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								2,
+								0,
+								-1
+							],
+							"size": [
+								2,
+								16,
+								2
+							],
+							"uv": [
+								0,
+								31
+							]
+						}
+					]
+				},
+				{
+					"name": "rightLeg",
+					"parent": "body",
+					"pivot": [
+						-3,
+						16,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								0,
+								-1
+							],
+							"size": [
+								2,
+								16,
+								2
+							],
+							"uv": [
+								0,
+								31
+							]
+						}
+					]
+				},
+				{
+					"name": "torso",
+					"parent": "body",
+					"pivot": [
+						0,
+						23,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-5.5,
+								16,
+								-3
+							],
+							"size": [
+								11,
+								14,
+								6
+							],
+							"uv": [
+								34,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "rightArm",
+					"parent": "torso",
+					"pivot": [
+						-5.5,
+						30,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-9.5,
+								1,
+								-2
+							],
+							"size": [
+								4,
+								29,
+								4
+							],
+							"inflate": 0.01,
+							"uv": [
+								0,
+								16
+							]
+						}
+					]
+				},
+				{
+					"name": "leftArm",
+					"parent": "torso",
+					"pivot": [
+						5.5,
+						30,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								5.5,
+								1,
+								-2
+							],
+							"size": [
+								4,
+								29,
+								4
+							],
+							"inflate": 0.01,
+							"uv": [
+								0,
+								16
+							]
+						}
+					]
+				},
+				{
+					"name": "head",
+					"parent": "torso",
+					"pivot": [
+						0,
+						30,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4.5,
+								30,
+								-4
+							],
+							"size": [
+								9,
+								8,
+								8
+							],
+							"uv": [
+								0,
+								0
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

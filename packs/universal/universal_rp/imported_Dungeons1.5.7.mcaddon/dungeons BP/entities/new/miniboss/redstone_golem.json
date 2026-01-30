@@ -1,0 +1,165 @@
+{
+	"format_version": "1.17.20",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "dungeons:redstone_golem",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"components": {
+			"minecraft:is_hidden_when_invisible": {},
+			"minecraft:experience_reward": {
+				"on_death": "query.last_hit_by_player?50:0"
+			},
+			"minecraft:attack": {
+				"damage": 10
+			},
+			"minecraft:breathable": {
+				"suffocate_time": 0,
+				"total_supply": 999
+			},
+			"minecraft:collision_box": {
+				"height": 4,
+				"width": 2.35
+			},
+			"minecraft:health": {
+				"max": 250,
+				"value": 250
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "fall",
+						"deals_damage": false
+					},
+					{
+						"cause": "entity_explosion",
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:behavior.summon_entity": {
+				"priority": 2,
+				"summon_choices": [
+					{
+						"weight": 1,
+						"cooldown_time": 20,
+						"cast_duration": 3,
+						"start_sound_event": "cast.spell",
+						"sequence": [
+							{
+								"shape": "circle",
+								"target": "self",
+								"base_delay": 3,
+								"num_entities_spawned": 15,
+								"delay_per_summon": 0.05,
+								"entity_type": "dungeons:redstone_golem_mine",
+								"summon_cap": 30,
+								"summon_cap_radius": 16,
+								"size": 5
+							}
+						]
+					}
+				]
+			},
+			"minecraft:fire_immune": {},
+			"minecraft:jump.static": {},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/redstone_golem.json"
+			},
+			"minecraft:knockback_resistance": {
+				"value": 1
+			},
+			"minecraft:movement": {
+				"value": 0.21
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:nameable": {},
+			"minecraft:navigation.walk": {
+				"avoid_damage_blocks": false,
+				"can_path_over_water": false,
+				"can_sink": true
+			},
+			"minecraft:physics": {},
+			"minecraft:boss": {
+				"should_darken_sky": false,
+				"hud_range": 24,
+				"name": " §eRedstone Golem§r "
+			},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:behavior.delayed_attack": {
+				"priority": 3,
+				"track_target": true,
+				"require_complete_path": false,
+				"random_stop_interval": 0,
+				"reach_multiplier": 1.5,
+				"cooldown_time": 0.25,
+				"speed_multiplier": 1.44,
+				"attack_duration": 1,
+				"hit_delay_pct": 0.7
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 7,
+				"speed_multiplier": 1
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 8,
+				"look_distance": 6,
+				"probability": 0.02
+			},
+			"minecraft:behavior.random_look_around": {
+				"priority": 9
+			},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1
+			},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 2,
+				"must_see": true,
+				"reselect_targets": true,
+				"within_radius": 25,
+				"must_see_forget_duration": 17,
+				"entity_types": [
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "snowgolem"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "irongolem"
+								}
+							]
+						},
+						"max_dist": 16
+					}
+				]
+			},
+			"minecraft:conditional_bandwidth_optimization": {},
+			"minecraft:follow_range": {
+				"value": 64
+			},
+			"minecraft:type_family": {
+				"family": [
+					"monster",
+					"redstone_golem",
+					"redstone",
+					"mob"
+				]
+			}
+		}
+	}
+}

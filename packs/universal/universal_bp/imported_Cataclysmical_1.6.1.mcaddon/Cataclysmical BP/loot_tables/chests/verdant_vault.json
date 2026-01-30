@@ -1,0 +1,112 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"weight": 1,
+					"name": "cata:verdant_aegis"
+				},
+				{
+					"type": "item",
+					"weight": 2,
+					"name": "cata:spore_thrower"
+				},
+				{
+					"type": "item",
+					"weight": 3,
+					"name": "cata:floret_hatchet"
+				},
+				{
+					"type": "item",
+					"weight": 4,
+					"name": "cata:master_verdant_key"
+				},
+				{
+					"type": "item",
+					"weight": 2,
+					"name": "cata:verdant_crusher"
+				},
+				{
+					"type": "item",
+					"weight": 4,
+					"name": "cata:verdant_sword"
+				},
+				{
+					"type": "item",
+					"weight": 4,
+					"name": "cata:verdant_hatchet"
+				}
+			]
+		},
+		{
+			"rolls": {
+				"min": 2,
+				"max": 3
+			},
+			"entries": [
+				{
+					"type": "item",
+					"weight": 4,
+					"name": "cata:feralplast",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 6
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"weight": 3,
+					"name": "cata:floret_element",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"weight": 2,
+					"name": "minecraft:emerald",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 4
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"weight": 1,
+					"name": "minecraft:experience_bottle",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 2
+							}
+						}
+					]
+				},
+				{
+					"type": "empty",
+					"weight": 2
+				}
+			]
+		}
+	]
+}

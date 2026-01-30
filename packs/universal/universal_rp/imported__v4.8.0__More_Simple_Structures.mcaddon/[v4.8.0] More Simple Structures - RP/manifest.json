@@ -1,0 +1,29 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "§7[v4.8.0] §fMore Simple Structures - §2RP§r",
+    "description": "Adds more structures to the game for you to discover! §f| §eby iKorbon§r",
+    "min_engine_version": [
+      1,
+      20,
+      70
+    ],
+    "uuid": "87c1499c-a3f7-4d6a-ab17-58be839ad039",
+    "version": [
+      1,
+      0,
+      25
+    ]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "4f39c229-57a1-47d1-b43f-3c727ad65663",
+      "version": [
+        1,
+        0,
+        25
+      ]
+    }
+  ]
+}

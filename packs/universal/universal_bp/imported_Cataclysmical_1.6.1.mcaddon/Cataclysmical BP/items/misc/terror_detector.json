@@ -1,0 +1,27 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:item": {
+		"description": {
+			"identifier": "cata:terror_detector",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:max_stack_size": {
+				"value": 1
+			},
+			"minecraft:cooldown": {
+				"category": "terror_detector",
+				"duration": 1
+			},
+			"minecraft:block_placer": {
+				"block": "cata:terror_detector",
+				"use_on": [
+					"cata:terror_detector"
+				],
+				"replace_block_item": true
+			}
+		}
+	}
+}

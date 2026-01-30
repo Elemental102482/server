@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "amelia",
+        "metalness_emissive_roughness": "baby_ghast_mer"
+    }
+}

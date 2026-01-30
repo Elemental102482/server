@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "system:redstone_great_sword"
+    },
+
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " CC",
+      "CBC",
+      "SC"
+    ],
+    "key": {
+      "S": {
+        "item": "minecraft:stick"
+      },
+      "B": {
+        "item": "minecraft:redstone_block"
+      },
+      "C": {
+        "item": "minecraft:redstone"
+      }
+    },
+    "result": {
+      "item": "system:redstone_great_sword"
+    }
+  }
+}

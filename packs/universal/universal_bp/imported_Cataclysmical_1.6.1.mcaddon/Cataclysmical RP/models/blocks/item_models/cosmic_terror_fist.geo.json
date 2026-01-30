@@ -1,0 +1,270 @@
+{
+	"format_version": "1.21.20",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cosmic_terror_fist",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 5,
+				"visible_bounds_height": 7,
+				"visible_bounds_offset": [
+					0,
+					1.5,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "bone",
+					"pivot": [
+						0,
+						12,
+						1
+					],
+					"rotation": [
+						-90,
+						0,
+						180
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								0,
+								-4
+							],
+							"size": [
+								8,
+								23,
+								10
+							],
+							"uv": [
+								0,
+								0
+							]
+						},
+						{
+							"origin": [
+								-4,
+								11,
+								1
+							],
+							"size": [
+								12,
+								19,
+								0
+							],
+							"pivot": [
+								2,
+								20.5,
+								1
+							],
+							"rotation": [
+								0,
+								180,
+								0
+							],
+							"uv": [
+								0,
+								33
+							]
+						}
+					]
+				}
+			],
+			"item_display_transforms": {
+				"thirdperson_righthand": {
+					"rotation": [
+						0,
+						0,
+						0
+					],
+					"translation": [
+						0,
+						-5,
+						5.75
+					],
+					"scale": [
+						0.6,
+						0.6,
+						0.6
+					],
+					"rotation_pivot": [
+						0,
+						0,
+						0
+					],
+					"scale_pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				"thirdperson_lefthand": {
+					"rotation": [
+						-174.38,
+						3.28,
+						165.17
+					],
+					"translation": [
+						-2.25,
+						3.25,
+						2
+					],
+					"scale": [
+						0.5,
+						0.5,
+						0.5
+					],
+					"rotation_pivot": [
+						0,
+						0,
+						0
+					],
+					"scale_pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				"firstperson_righthand": {
+					"rotation": [
+						25,
+						0,
+						45
+					],
+					"translation": [
+						5,
+						-4.75,
+						0
+					],
+					"scale": [
+						1,
+						1,
+						1
+					],
+					"rotation_pivot": [
+						0,
+						0,
+						0
+					],
+					"scale_pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				"firstperson_lefthand": {
+					"rotation": [
+						0,
+						92,
+						-20
+					],
+					"translation": [
+						2,
+						2,
+						0
+					],
+					"scale": [
+						0.9,
+						0.9,
+						0.9
+					],
+					"rotation_pivot": [
+						0,
+						0,
+						0
+					],
+					"scale_pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				"ground": {
+					"rotation": [
+						0,
+						0,
+						0
+					],
+					"translation": [
+						0,
+						-0.5,
+						0
+					],
+					"scale": [
+						0.8,
+						0.8,
+						0.8
+					],
+					"rotation_pivot": [
+						0,
+						0,
+						0
+					],
+					"scale_pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				"gui": {
+					"rotation": [
+						90,
+						-46,
+						119
+					],
+					"translation": [
+						1.75,
+						-1.25,
+						0
+					],
+					"scale": [
+						0.7,
+						0.7,
+						0.7
+					],
+					"rotation_pivot": [
+						0,
+						0,
+						0
+					],
+					"scale_pivot": [
+						0,
+						0,
+						0
+					],
+					"fit_to_frame": false
+				},
+				"fixed": {
+					"rotation": [
+						90,
+						40,
+						90
+					],
+					"translation": [
+						1.5,
+						3.25,
+						-1.5
+					],
+					"scale": [
+						0.8,
+						0.8,
+						0.8
+					],
+					"rotation_pivot": [
+						0,
+						0,
+						0
+					],
+					"scale_pivot": [
+						0,
+						0,
+						0
+					]
+				}
+			}
+		}
+	]
+}

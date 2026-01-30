@@ -1,0 +1,5 @@
+tag @a[tag=!dungeons:ender_armour,hasitem=[{item=dungeons:ender_helmet,location=slot.armor.head},{item=dungeons:ender_chestplate,location=slot.armor.chest},{item=dungeons:ender_leggings,location=slot.armor.legs},{item=dungeons:ender_boots,location=slot.armor.feet}]] add dungeons:ender_armour
+tag @a[tag=dungeons:ender_armour,hasitem={quantity=0,item=dungeons:ender_helmet,location=slot.armor.head}] remove dungeons:ender_armour
+tag @a[tag=dungeons:ender_armour,hasitem={quantity=0,item=dungeons:ender_chestplate,location=slot.armor.chest}] remove dungeons:ender_armour
+tag @a[tag=dungeons:ender_armour,hasitem={quantity=0,item=dungeons:ender_leggings,location=slot.armor.legs}] remove dungeons:ender_armour
+tag @a[tag=dungeons:ender_armour,hasitem={quantity=0,item=dungeons:ender_boots,location=slot.armor.feet}] remove dungeons:ender_armour

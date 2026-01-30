@@ -1,0 +1,19 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:block": {
+		"description": {
+			"identifier": "cata:everbloom"
+		},
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "cata_everbloom",
+					"render_method": "alpha_test",
+					"face_dimming": false,
+					"ambient_occlusion": false
+				}
+			},
+			"minecraft:geometry": "geometry.everbloom"
+		}
+	}
+}

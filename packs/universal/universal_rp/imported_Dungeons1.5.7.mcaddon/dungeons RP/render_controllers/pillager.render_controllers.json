@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.armored_pillager": {
+			"geometry": "array.geo[query.skin_id]",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"array.skins[query.skin_id]"
+			],
+			"arrays": {
+				"textures": {
+					"array.skins": [
+						"texture.default",
+						"texture.gold",
+						"texture.diamond"
+					]
+				},
+				"geometries": {
+					"array.geo": [
+						"geometry.default",
+						"geometry.armored",
+						"geometry.armored"
+					]
+				}
+			}
+		}
+	}
+}

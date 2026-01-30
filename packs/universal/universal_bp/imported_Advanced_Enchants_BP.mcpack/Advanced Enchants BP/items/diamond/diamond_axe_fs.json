@@ -1,0 +1,787 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "e:diamond_axe_fs",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:durability": {
+				"max_durability": 1561,
+				"damage_chance": {
+					"min": 5,
+					"max": 10
+				}
+			},
+			"minecraft:mining_speed": 1,
+			"minecraft:enchantable": {
+				"value": 17,
+				"slot": "axe"
+			},
+			"minecraft:digger": {
+				"use_efficiency": true,
+				"destroy_speeds": [
+					{
+						"block": "minecraft:planks",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:mangrove_planks",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:crimson_planks",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:warped_planks",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:log",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:log2",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:mangrove_log",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:crimson_stem",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:warped_stem",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:stripped_oak_log",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:stripped_spruce_log",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:stripped_birch_log",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:stripped_jungle_log",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:stripped_acacia_log",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:stripped_dark_oak_log",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:stripped_mangrove_log",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:stripped_crimson_stem",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:stripped_warped_stem",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:wood",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:mangrove_wood",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:crimson_hyphae",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:warped_hyphae",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:trapdoor",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:spruce_trapdoor",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:birch_trapdoor",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:jungle_trapdoor",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:acacia_trapdoor",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:dark_oak_trapdoor",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:mangrove_trapdoor",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:crimson_trapdoor",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:warped_trapdoor",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:wooden_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:mangrove_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:crimson_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:warped_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:double_wooden_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:mangrove_double_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:crimson_double_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:warped_double_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:oak_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:spruce_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:birch_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:jungle_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:acacia_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:dark_oak_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:mangrove_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:crimson_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:warped_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:fence",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:mangrove_fence",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:crimson_fence",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:warped_fence",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:wooden_door",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:spruce_door",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:birch_door",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:jungle_door",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:acacia_door",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:dark_oak_door",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:mangrove_door",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:crimson_door",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:warped_door",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:fence_gate",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:spruce_fence_gate",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:birch_fence_gate",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:jungle_fence_gate",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:acacia_fence_gate",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:dark_oak_fence_gate",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:mangrove_fence_gate",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:crimson_fence_gate",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:warped_fence_gate",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:bee_nest",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:brown_mushroom_block",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:red_mushroom_block",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:melon_block",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:pumpkin",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:carved_pumpkin",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:lit_pumpkin",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:mangrove_roots",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:muddy_mangrove_roots",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:bed",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:crafting_table",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:cartography_table",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:fletching_table",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:smithing_table",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:beehive",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:campfire",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:soul_campfire",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:smoker",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:bookshelf",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:lectern",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:composter",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:chest",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:trapped_chest",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:barrel",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:noteblock",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:jukebox",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:scaffolding",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:ladder",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:shroomlight",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:chorus_plant",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"block": "minecraft:chorus_flower",
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						}
+					},
+					{
+						"speed": 8,
+						"on_dig": {
+							"event": "dam"
+						},
+						"block": {
+							"tags": "q.any_tag('fast_axe_minable')"
+						}
+					}
+				],
+				"on_dig": {
+					"event": "dam"
+				}
+			},
+			"minecraft:damage": 6,
+			"tag:minecraft:is_axe": {},
+			"minecraft:display_name": {
+				"value": "§bDiamond Axe \n§7Durability: 1561 \nMining Speed: 8 \n§4Firestarter \n§aAbility: \n§7-Sets Stuff on fire"
+			},
+			"minecraft:icon": {
+				"texture": "diamond_axe"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.axe"
+			},
+			"minecraft:weapon": {
+				"on_hurt_entity": {
+					"event": "dam"
+				}
+			},
+			"minecraft:foil": true
+		},
+		"events": {
+			"dam": {
+				"sequence": [
+					{
+						"damage": {
+							"type": "durability",
+							"target": "self",
+							"amount": 1
+						}
+					},
+					{
+						"run_command": {
+							"command": [
+								"setblock ~ ~ ~ fire"
+							],
+							"target": "other"
+						}
+					}
+				]
+			}
+		}
+	}
+}

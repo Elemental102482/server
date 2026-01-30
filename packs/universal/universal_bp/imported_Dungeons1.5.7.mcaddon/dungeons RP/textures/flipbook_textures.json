@@ -1,0 +1,21 @@
+[
+    {
+        "flipbook_texture": "textures/blocks/whirlwindgig",
+        "atlas_tile": "whirlwindgig",
+        "ticks_per_frame": 2,
+        "blend_frames": false
+    },
+    {
+        "flipbook_texture": "textures/blocks/void",
+        "atlas_tile": "void_fluid",
+        "ticks_per_frame": 20,
+        "blend_frames": true
+    },
+    {
+        "flipbook_texture": "textures/blocks/eternal_flame",
+        "atlas_tile": "eternal_flame",
+        "ticks_per_frame": 2,
+        "blend_frames": false
+    }
+]
+

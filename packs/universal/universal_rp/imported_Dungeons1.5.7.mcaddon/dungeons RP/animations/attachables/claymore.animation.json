@@ -1,0 +1,58 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.claymore.first_person_hold": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"rotation": [
+						61.33332,
+						52.46401,
+						-77.95425
+					],
+					"position": [
+						4,
+						26,
+						4
+					]
+				}
+			}
+		},
+		"animation.claymore.third_person_hold": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"rotation": [
+						90,
+						0,
+						0
+					],
+					"position": [
+						0,
+						21.5,
+						3.5
+					],
+					"scale": 1.2
+				}
+			}
+		},
+		"animation.claymore.third_person_hold2": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"rotation": [
+						90,
+						0,
+						0
+					],
+					"position": [
+						0,
+						20.5,
+						1.5
+					],
+					"scale": 1.2
+				}
+			}
+		}
+	}
+}

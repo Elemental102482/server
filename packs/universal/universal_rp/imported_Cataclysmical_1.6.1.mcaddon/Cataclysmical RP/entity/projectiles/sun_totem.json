@@ -1,0 +1,38 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "cata:sun_totem",
+			"materials": {
+				"default": "drowned"
+			},
+			"textures": {
+				"default": "textures/entity/projectile/sun_totem_texture"
+			},
+			"geometry": {
+				"default": "geometry.sun_totem"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "cata_stone_golem_egg"
+			},
+			"animations": {
+				"move": "animation.sun_totem.move",
+				"summon": "animation.sun_totem.summon",
+				"particle": "animation.sun_totem.particle"
+			},
+			"scripts": {
+				"animate": [
+					"move",
+					"summon",
+					"particle"
+				]
+			},
+			"particle_effects": {
+				"divine_scythe_of_heaven_attack": "cata:divine_scythe_of_heaven_attack"
+			}
+		}
+	}
+}

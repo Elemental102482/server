@@ -1,0 +1,67 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:tempest_golem",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/tempest_golem/tempest_golem"
+			},
+			"geometry": {
+				"default": "geometry.tempest_golem"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"animations": {
+				"death": "animation.tempest_golem.die",
+				"idle": "animation.tempest_golem.idle",
+				"wind_sounds": "animation.squall_golem.wind_sounds",
+				"look_at_target": "animation.common.look_at_target",
+				"shields_closing": "animation.tempest_golem.shield_swing_close",
+				"shields_shut": "animation.tempest_golem.shield_close",
+				"shields_opening": "animation.tempest_golem.shield_swing_open",
+				"shields_open": "animation.tempest_golem.shield_stun",
+				"shields_controller": "controller.animation.tempest_golem.shields",
+				"attack_left": "animation.tempest_golem.swing_sword_left",
+				"attack_right": "animation.tempest_golem.swing_sword_right",
+				"attack_controller": "controller.animation.tempest_golem.attack",
+				"left_arm_disabled": "animation.tempest_golem.turn_off_left",
+				"right_arm_disabled": "animation.tempest_golem.turn_off_right",
+				"arms_controller": "controller.animation.tempest_golem.arms",
+				"shield_melee": "animation.tempest_golem.shield_melee",
+				"melee_controller": "controller.animation.tempest_golem.shield_melee"
+			},
+			"scripts": {
+				"animate": [
+					"shields_controller",
+					"attack_controller",
+					"arms_controller",
+					"melee_controller",
+					"idle",
+					"wind_sounds",
+					{
+						"death": "query.is_alive!=1"
+					}
+				]
+			},
+			"sound_effects": {
+				"attack": "mob.tempest_golem.attack",
+				"shield_attack": "mob.tempest_golem.shield_attack",
+				"stun": "mob.tempest_golem.stun",
+				"deactivate": "mob.tempest_golem.deactivate_arm",
+				"wind": "mob.breeze.whirl"
+			},
+			"particle_effects": {
+				"attack1": "dungeons:tempest_smash_1",
+				"attack2": "dungeons:tempest_smash_2",
+				"attack3": "dungeons:tempest_smash_3"
+			},
+			"spawn_egg": {
+				"texture": "egg_tempest_golem"
+			}
+		}
+	}
+}

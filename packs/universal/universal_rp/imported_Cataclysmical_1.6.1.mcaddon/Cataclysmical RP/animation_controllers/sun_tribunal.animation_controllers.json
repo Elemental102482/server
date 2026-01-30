@@ -1,0 +1,84 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.sun_tribunal.attack_controller": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"normal_attack": "query.is_delayed_attacking==1&&query.skin_id==1"
+						},
+						{
+							"normal_attack_projectile": "query.is_delayed_attacking==1&&query.skin_id==2"
+						},
+						{
+							"double_dash_attack": "query.is_delayed_attacking==1&&query.skin_id==3"
+						},
+						{
+							"heavy_attack_projectile": "query.is_casting==1&&query.skin_id==4"
+						},
+						{
+							"chaos_attack1": "query.is_delayed_attacking==1&&query.skin_id==5"
+						}
+					],
+					"blend_transition": 0.4
+				},
+				"normal_attack": {
+					"animations": [
+						"normal_attack"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_delayed_attacking"
+						}
+					],
+					"blend_transition": 0.4
+				},
+				"normal_attack_projectile": {
+					"animations": [
+						"normal_attack_projectile"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_delayed_attacking"
+						}
+					],
+					"blend_transition": 0.4
+				},
+				"double_dash_attack": {
+					"animations": [
+						"double_dash_attack"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_delayed_attacking"
+						}
+					],
+					"blend_transition": 0.4
+				},
+				"heavy_attack_projectile": {
+					"animations": [
+						"heavy_attack_projectile"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_casting"
+						}
+					],
+					"blend_transition": 0.4
+				},
+				"chaos_attack1": {
+					"animations": [
+						"chaos_attack1"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_delayed_attacking"
+						}
+					],
+					"blend_transition": 0.4
+				}
+			}
+		}
+	}
+}

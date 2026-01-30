@@ -1,0 +1,31 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "cata:solar_monolith_dummy",
+			"materials": {
+				"default": "entity_alphablend"
+			},
+			"textures": {
+				"default": "textures/entity/blank"
+			},
+			"geometry": {
+				"default": "geometry.humanoid"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"particle_effects": {
+				"solar_monolith_barrier": "cata:solar_monolith_barrier"
+			},
+			"animations": {
+				"barrier": "animation.solar_monolith.barrier"
+			},
+			"scripts": {
+				"animate": [
+					"barrier"
+				]
+			}
+		}
+	}
+}

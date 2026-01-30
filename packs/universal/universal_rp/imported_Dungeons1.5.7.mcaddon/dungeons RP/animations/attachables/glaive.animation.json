@@ -1,0 +1,40 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.glaive_old.first_person_hold": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"rotation": [
+						135.28686,
+						50.78976,
+						-66.91604
+					],
+					"position": [
+						-4,
+						24,
+						5
+					]
+				}
+			}
+		},
+		"animation.glaive_old.third_person_hold": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"rotation": [
+						90,
+						2.5,
+						0
+					],
+					"position": [
+						0.5,
+						21.5,
+						3.5
+					],
+					"scale": 0.85
+				}
+			}
+		}
+	}
+}

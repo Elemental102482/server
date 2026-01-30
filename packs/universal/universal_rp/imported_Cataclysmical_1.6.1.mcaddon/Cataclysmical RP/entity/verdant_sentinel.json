@@ -1,0 +1,52 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "cata:verdant_sentinel",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/verdant_sentinel_texture"
+			},
+			"geometry": {
+				"default": "geometry.verdant_sentinel"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "cata_verdant_sentinel_egg"
+			},
+			"animations": {
+				"unconscious": "animation.verdant_sentinel.unconscious",
+				"awaken": "animation.verdant_sentinel.awaken",
+				"idle": "animation.verdant_sentinel.idle",
+				"move": "animation.verdant_sentinel.move",
+				"normal_attack": "animation.verdant_sentinel.normal_attack",
+				"double_attack": "animation.verdant_sentinel.double_attack",
+				"heavy_attack": "animation.verdant_sentinel.heavy_attack",
+				"move_attack": "animation.verdant_sentinel.move_attack",
+				"exhausted": "animation.verdant_sentinel.exhausted",
+				"move_controller": "controller.animation.verdant_sentinel.move_controller",
+				"look_at_target_default": "animation.humanoid.look_at_target.default",
+				"attack_controller": "controller.animation.verdant_sentinel.attack_controller"
+			},
+			"scripts": {
+				"animate": [
+					"move_controller",
+					"attack_controller",
+					"look_at_target_default"
+				]
+			},
+			"sound_effects": {
+				"large_sword_swing": "sound.large_sword_swing",
+				"verdant_sentinel_heavy_attack": "mob.verdant_sentinel_heavy_attack"
+			},
+			"particle_effects": {
+				"large_impact": "cata:massive_impact",
+				"small_impact": "cata:large_impact"
+			}
+		}
+	}
+}

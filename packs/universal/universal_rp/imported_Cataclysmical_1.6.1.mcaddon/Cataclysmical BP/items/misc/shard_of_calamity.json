@@ -1,0 +1,21 @@
+{
+	"format_version": "1.21.80",
+	"minecraft:item": {
+		"description": {
+			"identifier": "cata:shard_of_calamity",
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:hover_text_color": "red",
+			"minecraft:block_placer": {
+				"block": "cata:shard_of_calamity",
+				"use_on": [
+					"cata:shard_of_calamity"
+				],
+				"replace_block_item": true
+			}
+		}
+	}
+}

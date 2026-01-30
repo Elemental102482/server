@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "tempest_golem",
+        "metalness_emissive_roughness": "tempest_golem_mer"
+    }
+}

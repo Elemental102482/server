@@ -1,0 +1,57 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "cata:flare_stone_meteor",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/projectile/flare_stone_meteor_texture"
+			},
+			"geometry": {
+				"default": "geometry.flare_stone_meteor"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"base_color": "#000000",
+				"overlay_color": "#FFFFFF"
+			},
+			"animations": {
+				"spawn": "animation.flare_stone_meteor.spawn",
+				"spawn_variant1": "animation.flare_stone_meteor.spawn_variant1",
+				"spawn_variant2": "animation.flare_stone_meteor.spawn_variant2",
+				"spawn_variant3": "animation.flare_stone_meteor.spawn_variant3",
+				"rotate": "animation.flare_stone_meteor.rotate",
+				"particle": "animation.flare_stone_meteor.particle"
+			},
+			"scripts": {
+				"animate": [
+					"rotate",
+					"particle",
+					{
+						"spawn": "query.variant==0"
+					},
+					{
+						"spawn_variant1": "query.variant==1"
+					},
+					{
+						"spawn_variant2": "query.variant==2"
+					},
+					{
+						"spawn_variant3": "query.variant==3"
+					}
+				]
+			},
+			"particle_effects": {
+				"flare_stone_meteor_emitter": "cata:flare_stone_meteor_emitter",
+				"large_impact": "cata:large_impact"
+			},
+			"sound_effects": {
+				"meteor_crash": "mob.meteor_crash"
+			}
+		}
+	}
+}

@@ -1,0 +1,46 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:vengeful_heart_of_ender_resting",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/vengeful_heart_of_ender/vengeful_heart_of_ender"
+			},
+			"geometry": {
+				"default": "geometry.vengeful_heart_of_ender"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"animations": {
+				"resting": "animation.vengeful_heart_of_ender.resting",
+				"awaken": "animation.vengeful_heart_of_ender.rise_portal",
+				"cutscene": "animation.vengeful_heart_of_ender.cutscene",
+				"idle": "animation.vengeful_heart_of_ender.idle",
+				"vfx": "animation.vengeful_heart_of_ender.particles",
+				"wake_controller": "controller.animation.vengeful_heart_of_ender.rest"
+			},
+			"scripts": {
+				"animate": [
+					"wake_controller",
+					"idle"
+				]
+			},
+			"particle_effects": {
+				"hornFlame": "dungeons:vhoe_horn",
+				"neckFlame": "dungeons:vhoe_neck",
+				"thingy": "dungeons:vhoe_oreocat_canon"
+			},
+			"sound_effects": {
+				"exit": "mob.vhoe.exit",
+				"cutscene": "mob.vhoe.cutscene"
+			},
+			"spawn_egg": {
+				"texture": "egg_vengeful_heart_of_ender"
+			}
+		}
+	}
+}

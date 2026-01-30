@@ -1,0 +1,36 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:boss_wildfire_resting",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/wildfire/boss_wildfire_resting"
+			},
+			"geometry": {
+				"default": "geometry.boss_wildfire_rest"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"animations": {
+				"resting": "animation.boss_wildfire.resting",
+				"awaken": "animation.boss_wildfire.awaken",
+				"wake_controller": "controller.animation.redstone_monstrosity.rest"
+			},
+			"scripts": {
+				"animate": [
+					"wake_controller"
+				]
+			},
+			"sound_effects": {
+				"awaken": "mob.wither.spawn"
+			},
+			"spawn_egg": {
+				"texture": "egg_hovering_inferno"
+			}
+		}
+	}
+}

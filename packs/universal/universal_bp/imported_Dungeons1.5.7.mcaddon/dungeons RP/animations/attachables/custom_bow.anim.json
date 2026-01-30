@@ -1,0 +1,56 @@
+{
+	"format_version": "1.20.10",
+	"animations": {
+		"animation.custom_bow.first_person": {
+			"loop": true,
+			"bones": {
+				"rightItem": {
+					"rotation": [
+						38,
+						-120,
+						-63
+					],
+					"position": [
+						-5.5,
+						17,
+						-3
+					]
+				}
+			}
+		},
+		"animation.custom_bow.third_person": {
+			"loop": true,
+			"bones": {
+				"rightItem": {
+					"rotation": [
+						0,
+						0,
+						0
+					],
+					"position": [
+						-0.5,
+						21,
+						1
+					]
+				}
+			}
+		},
+		"animation.custom_bow.wield_first_person_pull": {
+			"loop": true,
+			"bones": {
+				"rightItem": {
+					"rotation": [
+						-181.32716,
+						61.43288,
+						175.9877
+					],
+					"position": [
+						-1.5,
+						"2.5+(v.charge_amount>=1?math.sin(1300*(q.life_time))*0.1-math.sin(q.life_time*45)*0.5:0)",
+						-4.8
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "system:wood_great_shovel"
+    },
+
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " CC",
+      " SC",
+      "S "
+    ],
+    "key": {
+      "S": {
+        "item": "minecraft:stick"
+      },
+      "C": {
+        "item": "minecraft:log"
+      }
+    },
+    "result": {
+      "item": "system:wood_great_shovel"
+    }
+  }
+}

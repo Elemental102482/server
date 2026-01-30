@@ -1,0 +1,22 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "e:firestarter_book_1",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "book_enchanted"
+			},
+			"minecraft:display_name": {
+				"value": "§eEnchanted Book \n§3Firestarter \n§dCan Enchant: \n§7-Axe \n§aAbility: \n§7-sets stuff on Fire \n§6Advanced Enchants"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.enchantedBook"
+			},
+			"minecraft:foil": true,
+			"minecraft:max_stack_size": 1
+		}
+	}
+}

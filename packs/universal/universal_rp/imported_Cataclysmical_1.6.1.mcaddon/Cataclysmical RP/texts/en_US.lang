@@ -1,0 +1,267 @@
+## Cataclysmical 1.6 log
+## Made by Minera
+
+
+##items
+item.cata:gneiss_rocks=Gneiss Rocks
+item.cata:floret_element=Floret Element
+item.cata:stellar_greatsword=Stellar Greatsword
+item.cata:floret_hatchet=Floret Hatchet
+item.cata:verdant_blade=Verdant Blade
+item.cata:astral_alloy=Astral Alloy
+item.cata:verdant_key=Verdant Key
+item.cata:morningstar=Morning Star
+item.cata:solar_element=Solar Element
+item.cata:verdant_helmet=Verdant Helmet
+item.cata:feral_roots=Feral Roots
+item.cata:terrorite_rock=Terrorite Rock
+item.cata:lunar_element=Lunar Element
+item.cata:stellar_helmet=Stellar Helmet
+item.cata:stellar_chestplate=Stellar Chestplate
+item.cata:stellar_leggings=Stellar Leggings
+item.cata:stellar_boots=Stellar Boots
+item.cata:verdant_shard=Verdant Shard
+item.cata:verdant_sword=Verdant Sword
+item.cata:shard_of_calamity=Shard of Calamity
+item.cata:floret_wand=Floret Wand
+item.cata:solar_wand=Solar Wand
+item.cata:shard_of_cataclysm=Shard of Cataclysm
+item.cata:master_verdant_key=Master Verdant Key
+item.cata:stellar_wand=Stellar Wand
+item.cata:feral_flower=Feral Flower
+item.cata:stellar_charm=Stellar Charm
+item.cata:charm=Charm
+item.cata:stellar_dust=Stellar Dust
+item.cata:verdant_hatchet=Verdant Hatchet
+item.cata:calamity=The Calamity
+item.cata:platinum_greatsword=Platinum Greatsword
+item.cata:platinum_halberd=Platinum Halberd
+item.cata:platinum_chunk=Platinum Chunk
+item.cata:platinum_alloy=Platinum Alloy
+item.cata:ancient_halberd=Ancient Halberd
+item.cata:terror_detector=Terror Detector
+item.cata:phantasma_greatsword=Phantasma Greatsword
+item.cata:blooming_heart=Blooming Heart
+item.cata:ray_gun=Ray Gun
+item.cata:phantasma_nucleus=Phantasma Nucleus
+item.cata:verdant_greatsword=Verdant Greatsword
+item.cata:ectoplasm=Ectoplasm
+item.cata:terroite_rock=Terroite Rock
+item.cata:terror_guide=Terror Guide
+item.cata:solar_core=Solar Core
+item.cata:overloaded_solar_core=Overloaded Solar Core
+item.cata:blazing_excalibur=Blazing Excalibur
+item.cata:everbloom=Everbloom
+item.cata:spore_thrower=Spore Thrower
+item.cata:verdant_plating=Verdant Plating
+item.cata:stellar_mace=Stellar Mace
+item.cata:verdant_chestplate=Verdant Chestplate
+item.cata:platinum_key=Platinum Key
+item.cata:sealed_heart=Sealed Heart
+item.cata:wooden_greatsword=Wooden Greatsword
+item.cata:stone_greatsword=Stone Greatsword
+item.cata:iron_greatsword=Iron Greatsword
+item.cata:diamond_greatsword=Diamond Greatsword
+item.cata:netherite_greatsword=Netherite Greatsword
+item.cata:meowclysm=Meowclysm
+item.cata:sunlight=Sunlight
+item.cata:moonlight=Moonlight
+item.cata:sun_fragment=Sun Fragment
+item.cata:blossom_jewel=Blossom Jewel
+item.cata:stellar_bottle=Stellar Bottle
+item.cata:floret_bottle=Floret Bottle
+item.cata:solar_bottle=Solar Bottle
+item.cata:phantasma_bottle=Phantasma Bottle
+item.cata:terror_bottle=Terror Bottle
+item.cata:lunar_bottle=Lunar Bottle
+item.cata:astral_chunk=Astral Chunk
+item.cata:chaosspec_ingot=Chaosspec Ingot
+item.cata:exodius_cluster=Exodius Cluster
+item.cata:exodius_greatsword=Exodius Greatsword
+item.cata:anchor=Anchor
+item.cata:exodius_helmet=Exodius Helmet
+item.cata:exodius_chestplate=Exodius Chestplate
+item.cata:exodius_leggings=Exodius Leggings
+item.cata:exodius_boots=Exodius Boots
+item.cata:phoenix_blade=Phoenix Blade
+item.cata:divine_scythe_of_heaven=Divine Scythe of Heaven
+item.cata:sunflare_pickaxe=Sunflare Pickaxe
+item.cata:terror_skull_launcher=Terror Skull Launcher
+item.cata:recall_mirror=Recall Mirror
+item.cata:cosmic_fragment=Cosmic Fragment
+item.cata:bonebreaker=Bonebreaker
+item.cata:nebulous_greatsword=Nebulous Greatsword
+
+
+
+##trinkets
+item.cata:empty_ring=Empty Ring
+item.cata:astro_jelly_in_a_bottle=Astro Jelly in a Bottle
+item.cata:verdant_aegis=Verdant Aegis
+item.cata:blooming_aegis=Blooming Aegis
+item.cata:sun_engine=Sun Engine
+item.cata:floret_absorption=Floret Absorption
+item.cata:solar_absorption=Solar Absorption
+item.cata:ancient_ring=Ancient Ring
+item.cata:floret_ring=Floret Ring
+item.cata:solar_ring=Solar Ring
+item.cata:calamity_ring=Calamity Ring
+item.cata:verdant_ring=Verdant Ring
+item.cata:calibrated_stellar_core=Calibrated Stellar Core
+item.cata:solar_aegis=Solar Aegis
+item.cata:phantasma_ring=Phantasma Ring
+item.cata:exodius_aegis=Exodius Aegis
+item.cata:floret_necklace=Floret Necklace
+item.cata:lunar_absorption=Lunar Absorption
+item.cata:lunar_necklace=Lunar Necklace
+item.cata:lunar_ring=Lunar Ring
+item.cata:phantasma_necklace=Phantasma Necklace
+item.cata:solar_necklace=Solar Necklace
+item.cata:stellar_necklace=Stellar Necklace
+item.cata:stellar_ring=Stellar Ring
+item.cata:sun_necklace=Sun Necklace
+item.cata:sun_ring=Sun Ring
+item.cata:terror_eye=Terror Eye
+
+##blocks
+
+tile.cata:block_test.name=Block Test
+tile.cata:block_test2.name=Block Test
+
+tile.cata:gneiss.name=Gneiss
+tile.cata:gneiss_brick.name=Gneiss Brick
+tile.cata:gneiss_brick_slab.name=Gneiss Brick Slab
+tile.cata:gneiss_lantern.name=Gneiss Lantern
+tile.cata:gneiss_chain.name=Gneiss Chain
+tile.cata:gneiss_door.name=Gneiss Door
+tile.cata:gneiss_door_lock.name=Gneiss Door Lock
+tile.cata:gneiss_rocks.name=Gneiss Rocks
+tile.cata:gneiss_grate.name=Gneiss Grate
+tile.cata:cut_gneiss.name=Cut Gneiss
+tile.cata:smooth_gneiss_brick.name=Smooth Gneiss Brick
+tile.cata:feralplast.name=Feralplast
+tile.cata:feral_roots.name=Feral Roots
+tile.cata:floret_ore.name=Floret Ore
+tile.cata:floret_block.name=Floret Block
+tile.cata:asteroid.name=Asteroid
+tile.cata:asteroid_brick.name=Asteroid Brick
+tile.cata:astral_dust.name=Astral Dust
+tile.cata:astral_ore.name=Astral Ore
+tile.cata:astral_block.name=Astral Block
+tile.cata:solar_ore.name=Solar Ore
+tile.cata:emberglow.name=EmberGlow
+tile.cata:occult_alter.name=Occult Alter
+tile.cata:flare_stone.name=Flare Stone
+tile.cata:flare_stone_brick_slab.name=Flare Stone Brick Slab
+tile.cata:flare_stone_brick.name=Flare Stone Brick
+tile.cata:flare_stone_chain.name=Flare Stone Chain
+tile.cata:flare_stone_lantern.name=Flare Stone Lantern
+tile.cata:flare_stone_geyser.name=Flare Stone Geyser
+tile.cata:flare_stone_pillar.name=Flare Stone Pillar
+tile.cata:flare_stone_rock.name=Flare Stone Rock
+tile.cata:flare_stone_bulb.name=Flare Stone Bulb
+tile.cata:flare_stone_tiles.name=Flare Stone Tiles
+tile.cata:polished_flare_stone.name=Polished Flare Stone
+tile.cata:chiseled_flare_stone.name=Chiseled Flare Stone
+tile.cata:star_dust_block.name=Star Dust Block
+tile.cata:grim_stone.name=Grim Stone
+tile.cata:grim_stone_brick.name=Grim Stone Brick
+tile.cata:polished_grim_stone.name=Polished Grim Stone
+tile.cata:polished_feralplast.name=Polished Feralplast
+tile.cata:feralplast_brick.name=Feralplast Brick
+tile.cata:polished_asteroid.name=Polished Asteroid
+tile.cata:asteroid_brick_slab.name=Asteroid Brick Slab
+tile.cata:feral_flower.name=Feral Flower
+tile.cata:abyssal_stone.name=Abyssal Stone
+tile.cata:abyssal_stone_brick.name=Abyssal Stone Brick
+tile.cata:lunar_ore.name=Lunar Ore
+tile.cata:elemental_alter.name=Elemental Alter
+tile.cata:alter_pedestal.name=Alter Pedestal
+tile.cata:platinum_ore.name=Platinum Ore
+tile.cata:deepslate_platinum_ore.name=Deepslate Platinum Ore
+tile.cata:platinum_block.name=Platinum Block
+tile.cata:solar_tesla_coil.name=Solar Tesla Coil
+tile.cata:phantasma_stabilizer.name=Phantasma Stabilizer
+tile.cata:terrorite_brick.name=Terrorite Brick
+tile.cata:terrorite_tile.name=Terrorite Tile
+tile.cata:cracked_flare_stone_brick.name=Cracked Flare Stone Brick
+tile.cata:chiseled_flare_stone_brick.name=Chiseled Flare Stone Brick
+tile.cata:ancient_pot.name=Ancient Pot
+tile.cata:solar_monolith_bottom.name=Solar Monolith
+tile.cata:solar_monolith_top.name=Solar Monolith Top
+tile.cata:verdant_vault.name=Verdant Vault
+tile.cata:verdant_crusher.name=Verdant Crusher
+tile.cata:platinum_vault.name=Platinum Vault
+tile.cata:sealed_heart.name=Sealed Heart
+tile.cata:solar_block.name=Solar Block
+tile.cata:terrorite.name=terrorite
+tile.cata:terrorite_brick_slab.name=Terrorite Brick Slab
+tile.cata:cut_terrorite.name=Cut Terrorite
+tile.cata:exodius_ore.name=Exodius Ore
+tile.cata:polished_abyssal_stone.name=Polished Abyssal Stone
+
+
+##block spawns
+
+
+##dummy
+entity.cata:astro_knockback.name=Astro Jelly
+entity.cata:floret_ore_explosion.name=Floret Ore
+entity.cata:solar_ore_explosion.name=Solar Ore
+entity.cata:verdant_blade_attack.name=Verdant Blade
+entity.cata:verdant_sentinel_knockback.name=Verdant Sentinel
+
+##projectiles
+entity.cata:bloom_poison.name=Bloom Poison
+entity.cata:feral_fang.name=Feral Fang
+entity.cata:floret_bolt_heavy.name=Floret Bolt Heavy
+entity.cata:floret_bolt=Floret Bolt
+entity.cata:poison_explode.name=Poison Explode
+entity.cata:solar_bolt.name=Solar Bolt
+entity.cata:stellar_bolt=Stellar Bolt
+entity.cata:solar_orb.name=Solar Orb
+entity.cata:terrorite_rock.name=Terrorite Rock
+entity.cata:terror_bolt.name=Terror Bolt
+
+##entities
+entity.cata:feralbloom.name=Feralbloom
+entity.cata:starling.name=Starling
+entity.cata:stone_golem.name=Stone Golem
+entity.cata:verdant_sentinel.name=Verdant Sentinel
+entity.cata:verdant_skeleton.name=Verdant Skeleton
+entity.cata:astro_jelly.name=Astro Jelly
+entity.cata:gneiss_golem.name=Gneiss Golem
+entity.cata:cosmic_terror.name=Cosmic Terror
+entity.cata:solarium.name=Solarium
+entity.cata:solar_tesla.name=Solar Tesla
+
+##item spawn eggs
+item.spawn_egg.entity.cata:feralbloom.name=Spawn Feralbloom
+item.spawn_egg.entity.cata:starling.name=Spawn Starling
+item.spawn_egg.entity.cata:verdant_sentinel.name=Spawn Verdant Sentinel
+item.spawn_egg.entity.cata:stone_golem.name=Spawn Stone Golem
+item.spawn_egg.entity.cata:verdant_skeleton.name=Verdant Skeleton
+item.spawn_egg.entity.cata:astro_jelly.name=Spawn Astro Jelly
+item.spawn_egg.entity.cata:gneiss_golem.name=Spawn Gneiss Golem
+item.spawn_egg.entity.cata:cosmic_terror.name=Spawn Cosmic Terror
+item.spawn_egg.entity.cata:plasma.name=Spawn Plasma
+item.spawn_egg.entity.cata:plasma_hive.name=Spawn Plasma Hive
+item.spawn_egg.entity.cata:solarium.name=Spawn Solarium
+item.spawn_egg.entity.cata:solar_tesla.name=Spawn Solar Tesla
+item.spawn_egg.entity.cata:skeleton_paladin.name=Spawn Skeleton Paladin
+item.spawn_egg.entity.cata:eternal_seal.name=Spawn Eternal Seal
+
+##action hints & item_catalog
+cata:itemGroup.name.tablet=Tablets
+cata:itemGroup.name.wand=Wands
+cata:itemGroup.name.elemental_weapon=Elemental Weapons
+cata:itemGroup.name.boss_weapon=Boss Weapons
+cata:itemGroup.name.flare_stone=Flare Stone Blocks
+cata:itemGroup.name.gneiss=Gneiss Blocks
+cata:itemGroup.name.trinkets=Trinkets
+cata:itemGroup.name.greatsword=Greatswords
+cata:itemGroup.name.test_items=Work in Progress Items
+cata:itemGroup.name.miscellaneous_weapon=Miscellaneous Weapons
+cata:itemGroup.name.flawless_item=Flawless Items
+
+##random

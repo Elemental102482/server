@@ -1,0 +1,83 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.nameless_one.rest": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"awaken": "q.variant==1"
+						}
+					]
+				},
+				"awaken": {
+					"animations": [
+						"awaken"
+					]
+				}
+			}
+		},
+		"controller.animation.nameless_one.cast": {
+			"initial_state": "default",
+			"states": {
+				"casting_vanguard": {
+					"animations": [
+						"cast"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_casting&&query.all_animations_finished"
+						}
+					]
+				},
+				"casting_false_king": {
+					"animations": [
+						{
+							"cast2": "0.75"
+						}
+					],
+					"transitions": [
+						{
+							"default": "!query.is_casting&&query.all_animations_finished"
+						}
+					]
+				},
+				"default": {
+					"transitions": [
+						{
+							"casting_vanguard": "q.variant==0&&query.is_casting==1"
+						},
+						{
+							"casting_false_king": "q.variant==1&&query.is_casting==1"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.nameless_one.move": {
+			"initial_state": "default",
+			"states": {
+				"moving": {
+					"animations": [
+						"move"
+					],
+					"transitions": [
+						{
+							"default": "q.modified_move_speed<=0.1"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"default": {
+					"transitions": [
+						{
+							"moving": "q.modified_move_speed>0.1"
+						}
+					],
+					"blend_transition": 0.5
+				}
+			}
+		}
+	}
+}

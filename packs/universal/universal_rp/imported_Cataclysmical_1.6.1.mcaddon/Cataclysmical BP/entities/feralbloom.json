@@ -1,0 +1,430 @@
+{
+	"format_version": "1.21.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "cata:feralbloom",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			"animations": {
+				"normal_attack": "animation.feralbloom.normal_attack",
+				"bloom_poison": "animation.feralbloom.bloom_poison",
+				"attack_controller": "controller.animation.feralbloom.attack_controller",
+				"heavy_attack": "animation.feralbloom.heavy_attack"
+			},
+			"scripts": {
+				"animate": [
+					"attack_controller"
+				]
+			}
+		},
+		"component_groups": {
+			"unconscious": {
+				"minecraft:skin_id": {
+					"value": 0
+				},
+				"minecraft:behavior.nearest_attackable_target": {
+					"priority": 1,
+					"must_see": true,
+					"entity_types": {
+						"max_dist": 6,
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"operator": "==",
+									"value": "player"
+								}
+							]
+						}
+					}
+				},
+				"minecraft:environment_sensor": {
+					"triggers": {
+						"filters": {
+							"test": "has_target",
+							"value": true
+						},
+						"event": "awaken_animation"
+					}
+				},
+				"minecraft:damage_sensor": {
+					"triggers": {
+						"cause": "all",
+						"deals_damage": "no"
+					}
+				},
+				"minecraft:is_stunned": {}
+			},
+			"awaken_animation": {
+				"minecraft:skin_id": {
+					"value": 1
+				},
+				"minecraft:timer": {
+					"looping": false,
+					"time": [
+						3.125,
+						3.125
+					],
+					"time_down_event": {
+						"event": "awaken"
+					}
+				},
+				"minecraft:damage_sensor": {
+					"triggers": {
+						"cause": "all",
+						"deals_damage": "no"
+					}
+				},
+				"minecraft:is_stunned": {}
+			},
+			"has_target": {
+				"minecraft:skin_id": {
+					"value": 2
+				},
+				"minecraft:behavior.look_at_player": {
+					"priority": 7,
+					"look_distance": 8,
+					"probability": 0.02
+				},
+				"minecraft:behavior.nearest_attackable_target": {
+					"priority": 1,
+					"must_see": true,
+					"reselect_targets": true,
+					"entity_types": {
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"operator": "==",
+									"value": "player"
+								}
+							]
+						},
+						"max_dist": 64,
+						"must_see": true
+					}
+				},
+				"minecraft:follow_range": {
+					"value": 64
+				},
+				"minecraft:behavior.random_stroll": {
+					"priority": 7
+				},
+				"minecraft:pushable": {
+					"is_pushable": true,
+					"is_pushable_by_piston": true
+				},
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"cause": "fire",
+							"damage_multiplier": 1.5
+						},
+						{
+							"cause": "fall",
+							"deals_damage": "no"
+						},
+						{
+							"cause": "projectile",
+							"damage_multiplier": 0.5
+						},
+						{
+							"cause": "magic",
+							"deals_damage": "no"
+						}
+					]
+				}
+			},
+			"normal_attack": {
+				"minecraft:skin_id": {
+					"value": 3
+				},
+				"minecraft:attack": {
+					"damage": 5
+				},
+				"minecraft:behavior.delayed_attack": {
+					"priority": 2,
+					"speed_multiplier": 1,
+					"attack_once": false,
+					"require_complete_path": true,
+					"attack_duration": 0.75,
+					"track_target": false,
+					"hit_delay_pct": 0.45,
+					"reach_multiplier": 3.9
+				}
+			},
+			"heavy_attack": {
+				"minecraft:skin_id": {
+					"value": 4
+				},
+				"minecraft:behavior.delayed_attack": {
+					"priority": 2,
+					"speed_multiplier": 1,
+					"attack_once": false,
+					"require_complete_path": true,
+					"attack_duration": 1.75,
+					"track_target": false,
+					"hit_delay_pct": 0.35,
+					"reach_multiplier": 4.2
+				},
+				"minecraft:attack": {
+					"damage": 12
+				}
+			},
+			"bloom_poison": {
+				"minecraft:skin_id": {
+					"value": 5
+				},
+				"minecraft:behavior.summon_entity": {
+					"priority": 1,
+					"summon_choices": [
+						{
+							"do_casting": true,
+							"weight": 1,
+							"cast_duration": 2.25,
+							"sequence": [
+								{
+									"shape": "circle",
+									"target": "self",
+									"base_delay": 0,
+									"delay_per_summon": 0,
+									"num_entities_spawned": 0,
+									"entity_lifespan": 0,
+									"summon_cap": 1,
+									"summon_cap_radius": 1
+								}
+							]
+						}
+					]
+				},
+				"minecraft:attack": {
+					"damage": 0
+				}
+			},
+			"is_attacking": {
+				"minecraft:movement": {
+					"value": 0.01
+				}
+			},
+			"can_move": {
+				"minecraft:movement": {
+					"value": 0.21
+				}
+			}
+		},
+		"components": {
+			"minecraft:health": {
+				"value": 80,
+				"max": 80
+			},
+			"minecraft:type_family": {
+				"family": [
+					"mob",
+					"monster",
+					"floret",
+					"undead",
+					"debuff_immunity"
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 0.8,
+				"height": 2.8
+			},
+			"minecraft:physics": {
+				"has_collision": true,
+				"has_gravity": true
+			},
+			"minecraft:experience_reward": {
+				"on_death": "query.last_hit_by_player?50:0"
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:navigation.walk": {
+				"avoid_damage_blocks": true,
+				"can_path_over_lava": true,
+				"can_path_over_water": true,
+				"can_sink": false,
+				"avoid_portals": true
+			},
+			"minecraft:jump.static": {},
+			"minecraft:can_climb": {},
+			"minecraft:scale": {
+				"value": 1
+			},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1,
+				"alert_same_type": true
+			},
+			"minecraft:conditional_bandwidth_optimization": {},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "projectile",
+						"deals_damage": "yes",
+						"damage_multiplier": 0.5
+					},
+					{
+						"cause": "magic",
+						"deals_damage": "no"
+					},
+					{
+						"cause": "wither",
+						"deals_damage": "no"
+					},
+					{
+						"cause": "fire_tick",
+						"deals_damage": "yes",
+						"damage_multiplier": 1.5
+					}
+				]
+			},
+			"minecraft:knockback_resistance": {
+				"value": 1
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/feralbloom.json"
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"unconscious"
+					]
+				}
+			},
+			"awaken_animation": {
+				"add": {
+					"component_groups": [
+						"awaken_animation"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"unconscious"
+					]
+				}
+			},
+			"awaken": {
+				"add": {
+					"component_groups": [
+						"has_target",
+						"can_move"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"is_attacking",
+						"unconscious",
+						"awaken_animation"
+					]
+				},
+				"trigger": {
+					"event": "attack"
+				}
+			},
+			"attack_types": {
+				"randomize": [
+					{
+						"weight": 4,
+						"add": {
+							"component_groups": [
+								"normal_attack"
+							]
+						},
+						"remove": {
+							"component_groups": [
+								"bloom_poison",
+								"heavy_attack"
+							]
+						},
+						"queue_command": {
+							"command": [
+								"tag @s add heavy_attack",
+								"tag @s remove normal_attack"
+							]
+						}
+					},
+					{
+						"weight": 2,
+						"add": {
+							"component_groups": [
+								"heavy_attack"
+							]
+						},
+						"remove": {
+							"component_groups": [
+								"normal_attack",
+								"bloom_poison"
+							]
+						},
+						"queue_command": {
+							"command": [
+								"tag @s remove heavy_attack",
+								"tag @s add normal_attack"
+							]
+						}
+					},
+					{
+						"weight": 1,
+						"add": {
+							"component_groups": [
+								"bloom_poison"
+							]
+						},
+						"remove": {
+							"component_groups": [
+								"normal_attack",
+								"heavy_attack"
+							]
+						},
+						"queue_command": {
+							"command": [
+								"tag @s remove heavy_attack",
+								"tag @s remove normal_attack"
+							]
+						}
+					}
+				]
+			},
+			"is_attacking": {
+				"add": {
+					"component_groups": [
+						"is_attacking"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"can_move"
+					]
+				}
+			},
+			"finish_attack": {
+				"add": {
+					"component_groups": [
+						"can_move"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"is_attacking"
+					]
+				}
+			},
+			"attack": {
+				"add": {
+					"component_groups": [
+						"normal_attack"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"bloom_poison"
+					]
+				}
+			}
+		}
+	}
+}

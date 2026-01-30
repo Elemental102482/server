@@ -1,0 +1,22 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.vengeful_heart_of_ender_death": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"texture.default"
+			],
+			"overlay_color": {
+				"r": "(q.life_time/2)>=2?(q.life_time/2)-2:0",
+				"g": "(q.life_time/2)>=2?(q.life_time/2)-2:0",
+				"b": "(q.life_time/2)>=2?(q.life_time/2)-2:0",
+				"a": "(q.life_time/2)>=2?(q.life_time/2)-2:0"
+			}
+		}
+	}
+}

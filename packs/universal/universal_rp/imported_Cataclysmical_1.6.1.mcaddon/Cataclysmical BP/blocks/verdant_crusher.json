@@ -1,0 +1,62 @@
+{
+	"format_version": "1.21.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "cata:verdant_crusher",
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "cata_verdant_crusher_side",
+					"render_method": "opaque"
+				},
+				"up": {
+					"texture": "cata_verdant_crusher_top",
+					"render_method": "opaque"
+				},
+				"down": {
+					"texture": "cata_smooth_gneiss_brick",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 7.5,
+				"item_specific_speeds": [
+					{
+						"destroy_speed": 0.6,
+						"item": "minecraft:stone_pickaxe"
+					},
+					{
+						"destroy_speed": 0.4,
+						"item": "minecraft:iron_pickaxe"
+					},
+					{
+						"destroy_speed": 0.3,
+						"item": "minecraft:diamond_pickaxe"
+					},
+					{
+						"destroy_speed": 0.25,
+						"item": "minecraft:netherite_pickaxe"
+					},
+					{
+						"destroy_speed": 0.2,
+						"item": "minecraft:golden_pickaxe"
+					},
+					{
+						"destroy_speed": 0.5,
+						"item": "cata:sunflare_pickaxe"
+					}
+				]
+			},
+			"minecraft:loot": "loot_tables/blocks/verdant_crusher.json",
+			"minecraft:geometry": "minecraft:geometry.full_block",
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 80
+			},
+			"component:verdant_crusher": {}
+		}
+	}
+}

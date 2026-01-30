@@ -1,0 +1,47 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:jungle_abomination",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/jungle_abomination/on"
+			},
+			"geometry": {
+				"default": "geometry.jungle_abomination"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"animations": {
+				"idle": "animation.jungle_abomination.idle",
+				"look_at_target": "animation.common.look_at_target",
+				"move": "animation.jungle_abomination.walk",
+				"attack1": "animation.jungle_abomination.slam",
+				"attack2": "animation.jungle_abomination.slam2",
+				"attack_controller": "controller.animation.jungle_abomination.attack",
+				"move_controller": "controller.animation.redstone_monstrosity.move",
+				"roar": "animation.jungle_abomination.vine_attack",
+				"roar_controller": "controller.animation.redstone_monstrosity.roar"
+			},
+			"scripts": {
+				"animate": [
+					"idle",
+					"attack_controller",
+					"move_controller",
+					"roar_controller",
+					"look_at_target"
+				]
+			},
+			"sound_effects": {
+				"attack": "mob.jungle_abomination.attack"
+			},
+			"spawn_egg": {
+				"base_color": "#2C1B17",
+				"overlay_color": "#FF3DD2"
+			}
+		}
+	}
+}

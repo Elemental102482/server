@@ -1,0 +1,103 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.vengeful_heart_of_ender.rest": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						"resting"
+					],
+					"transitions": [
+						{
+							"awaken": "q.variant==1"
+						},
+						{
+							"cutscene": "q.variant==2"
+						}
+					]
+				},
+				"awaken": {
+					"animations": [
+						"awaken"
+					]
+				},
+				"cutscene": {
+					"animations": [
+						"cutscene"
+					]
+				}
+			}
+		},
+		"controller.animation.vengeful_heart_of_ender.ranged_attack": {
+			"initial_state": "default",
+			"states": {
+				"shooting": {
+					"animations": [
+						"shoot"
+					],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					]
+				},
+				"default": {
+					"animations": [
+						"look_at_target_controller"
+					],
+					"transitions": [
+						{
+							"shooting": "query.is_charged"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.vengeful_heart_of_ender.portal": {
+			"initial_state": "default",
+			"states": {
+				"hiding": {
+					"animations": [
+						"enter_portal"
+					],
+					"transitions": [
+						{
+							"hidden": "query.all_animations_finished"
+						}
+					]
+				},
+				"hidden": {
+					"animations": [
+						"in_portal"
+					],
+					"transitions": [
+						{
+							"exiting": "!query.is_saddled"
+						}
+					]
+				},
+				"exiting": {
+					"animations": [
+						"exit_portal"
+					],
+					"transitions": [
+						{
+							"default": "query.all_animations_finished"
+						}
+					]
+				},
+				"default": {
+					"animations": [
+						"look_at_target_controller"
+					],
+					"transitions": [
+						{
+							"hiding": "query.is_saddled"
+						}
+					]
+				}
+			}
+		}
+	}
+}

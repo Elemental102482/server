@@ -1,0 +1,33 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.baby_ghast.root": {
+			"initial_state": "default",
+			"states": {
+				"moving": {
+					"animations": [
+						"idle_moving",
+						"walk"
+					],
+					"transitions": [
+						{
+							"default": "q.modified_move_speed<=0.1"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"default": {
+					"animations": [
+						"idle"
+					],
+					"transitions": [
+						{
+							"moving": "q.modified_move_speed>0.1"
+						}
+					],
+					"blend_transition": 0.5
+				}
+			}
+		}
+	}
+}

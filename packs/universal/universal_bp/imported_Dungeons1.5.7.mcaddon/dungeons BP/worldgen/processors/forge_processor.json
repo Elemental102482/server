@@ -1,0 +1,93 @@
+{
+    "format_version": "1.21.20",
+    "minecraft:processor_list": {
+        "description": {
+            "identifier": "dungeons:forge_processor_default"
+        },
+        "processors": [
+            {
+                "processor_type": "minecraft:rule",
+                "rules": [
+                    {
+                        "input_predicate": {
+                            "block": "lantern",
+                            "predicate_type": "minecraft:random_block_match",
+                            "probability": 0.1
+                        },
+                        "location_predicate": {
+                            "predicate_type": "minecraft:always_true"
+                        },
+                        "output_state": {
+                            "name": "minecraft:air"
+                        }
+                    },
+                    {
+                        "input_predicate": {
+                            "block": "stone_bricks",
+                            "predicate_type": "minecraft:random_block_match",
+                            "probability": 0.1
+                        },
+                        "location_predicate": {
+                            "predicate_type": "minecraft:always_true"
+                        },
+                        "output_state": {
+                            "name": "minecraft:cracked_stone_bricks"
+                        }
+                    },
+                    {
+                        "input_predicate": {
+                            "block": "deepslate_bricks",
+                            "predicate_type": "minecraft:random_block_match",
+                            "probability": 0.1
+                        },
+                        "location_predicate": {
+                            "predicate_type": "minecraft:always_true"
+                        },
+                        "output_state": {
+                            "name": "minecraft:cracked_deepslate_bricks"
+                        }
+                    },
+                    {
+                        "input_predicate": {
+                            "block": "minecraft:waxed_cut_copper_slab",
+                            "predicate_type": "minecraft:random_block_match",
+                            "probability": 0.1
+                        },
+                        "location_predicate": {
+                            "predicate_type": "minecraft:always_true"
+                        },
+                        "output_state": {
+                            "name": "minecraft:waxed_exposed_cut_copper_slab"
+                        }
+                    },
+                    {
+                        "input_predicate": {
+                            "block": "deepslate",
+                            "predicate_type": "minecraft:random_block_match",
+                            "probability": 0.05
+                        },
+                        "location_predicate": {
+                            "predicate_type": "minecraft:always_true"
+                        },
+                        "output_state": {
+                            "name": "minecraft:deepslate_redstone_ore"
+                        }
+                    },
+                    {
+                        "input_predicate": {
+                            "block": "minecraft:dirt",
+                            "predicate_type": "minecraft:random_block_match",
+                            "probability": 0.5
+                        },
+                        "location_predicate": {
+                            "predicate_type": "minecraft:always_true"
+                        },
+                        "output_state": {
+                            "name": "minecraft:coarse_dirt"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

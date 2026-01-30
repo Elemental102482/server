@@ -1,0 +1,36 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "cata:lunar_bottle"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "cata:lunar_element",
+				"count": 1
+			},
+			{
+				"item": "minecraft:shulker_shell",
+				"count": 1
+			},
+			{
+				"item": "cata:ectoplasm",
+				"count": 1
+			},
+			{
+				"item": "minecraft:glass_bottle",
+				"count": 1
+			}
+		],
+		"result": {
+			"item": "cata:lunar_bottle",
+			"count": 1
+		},
+		"unlock": {
+			"context": "AlwaysUnlocked"
+		}
+	}
+}

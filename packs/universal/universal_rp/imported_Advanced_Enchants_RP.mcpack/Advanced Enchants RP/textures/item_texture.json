@@ -1,0 +1,79 @@
+{
+	"resource_pack_name": "Advanced Enchants",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"diamond_hoe": {
+			"textures": "textures/items/diamond_hoe"
+		},
+		"diamond_shovel": {
+			"textures": [
+				"textures/items/diamond_shovel"
+			]
+		},
+		"diamond_sword": {
+			"textures": [
+				"textures/items/diamond_sword"
+			]
+		},
+		"diamond_pickaxe": {
+			"textures": [
+				"textures/items/diamond_pickaxe"
+			]
+		},
+		"diamond_axe": {
+			"textures": [
+				"textures/items/diamond_axe"
+			]
+		},
+		"netherite_hoe": {
+			"textures": [
+				"textures/items/netherite_hoe"
+			]
+		},
+		"netherite_shovel": {
+			"textures": [
+				"textures/items/netherite_shovel"
+			]
+		},
+		"netherite_axe": {
+			"textures": [
+				"textures/items/netherite_axe"
+			]
+		},
+		"netherite_sword": {
+			"textures": [
+				"textures/items/netherite_sword"
+			]
+		},
+		"netherite_pickaxe": {
+			"textures": [
+				"textures/items/netherite_pickaxe"
+			]
+		},
+		"iron_hoe": {
+			"textures": [
+				"textures/items/iron_hoe"
+			]
+		},
+		"iron_shovel": {
+			"textures": [
+				"textures/items/iron_shovel"
+			]
+		},
+		"iron_axe": {
+			"textures": [
+				"textures/items/iron_axe"
+			]
+		},
+		"iron_sword": {
+			"textures": [
+				"textures/items/iron_sword"
+			]
+		},
+		"iron_pickaxe": {
+			"textures": [
+				"textures/items/iron_pickaxe"
+			]
+		}
+	}
+}

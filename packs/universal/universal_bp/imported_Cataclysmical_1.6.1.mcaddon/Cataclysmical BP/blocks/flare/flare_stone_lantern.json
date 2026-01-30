@@ -1,0 +1,121 @@
+{
+	"format_version": "1.21.40",
+	"minecraft:block": {
+		"description": {
+			"identifier": "cata:flare_stone_lantern",
+			"traits": {
+				"minecraft:placement_position": {
+					"enabled_states": [
+						"minecraft:vertical_half"
+					]
+				}
+			},
+			"menu_category": {
+				"category": "construction"
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('minecraft:vertical_half') == 'top'",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.flare_stone_lantern_top",
+						"culling": "cata:custom_lantern_top"
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-8,
+							1,
+							-8
+						],
+						"size": [
+							16,
+							11,
+							16
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-5,
+							1,
+							-5
+						],
+						"size": [
+							10,
+							11,
+							10
+						]
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 7.5,
+				"item_specific_speeds": [
+					{
+						"destroy_speed": 0.4,
+						"item": "minecraft:iron_pickaxe"
+					},
+					{
+						"destroy_speed": 0.3,
+						"item": "minecraft:diamond_pickaxe"
+					},
+					{
+						"destroy_speed": 0.25,
+						"item": "minecraft:netherite_pickaxe"
+					},
+					{
+						"destroy_speed": 0.2,
+						"item": "minecraft:golden_pickaxe"
+					},
+					{
+						"destroy_speed": 0.5,
+						"item": "cata:sunflare_pickaxe"
+					}
+				]
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 80
+			},
+			"minecraft:geometry": {
+				"identifier": "geometry.flare_stone_lantern",
+				"culling": "cata:custom_lantern"
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "cata_flare_stone_lantern",
+					"render_method": "opaque",
+					"ambient_occlusion": false,
+					"face_dimming": false
+				}
+			},
+			"minecraft:collision_box": {
+				"origin": [
+					-5,
+					0,
+					-5
+				],
+				"size": [
+					10,
+					11,
+					10
+				]
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-5,
+					0,
+					-5
+				],
+				"size": [
+					10,
+					11,
+					10
+				]
+			},
+			"minecraft:light_emission": 12,
+			"minecraft:loot": "loot_tables/blocks/flare_stone_lantern.json"
+		}
+	}
+}

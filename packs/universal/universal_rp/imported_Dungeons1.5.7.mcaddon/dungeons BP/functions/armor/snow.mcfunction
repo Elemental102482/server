@@ -1,0 +1,5 @@
+tag @a[tag=!dungeons:frost_armour,hasitem=[{item=dungeons:snow_helmet,location=slot.armor.head},{item=dungeons:snow_chestplate,location=slot.armor.chest},{item=dungeons:snow_leggings,location=slot.armor.legs},{item=dungeons:snow_boots,location=slot.armor.feet}]] add dungeons:snow_armour
+tag @a[tag=dungeons:snow_armour,hasitem={quantity=0,item=dungeons:snow_helmet,location=slot.armor.head}] remove dungeons:snow_armour
+tag @a[tag=dungeons:snow_armour,hasitem={quantity=0,item=dungeons:snow_chestplate,location=slot.armor.chest}] remove dungeons:snow_armour
+tag @a[tag=dungeons:snow_armour,hasitem={quantity=0,item=dungeons:snow_leggings,location=slot.armor.legs}] remove dungeons:snow_armour
+tag @a[tag=dungeons:snow_armour,hasitem={quantity=0,item=dungeons:snow_boots,location=slot.armor.feet}] remove dungeons:snow_armour

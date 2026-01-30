@@ -1,0 +1,46 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dungeons:enchanted_blaze",
+			"min_engine_version": "1.10",
+			"materials": {
+				"body": "blaze_body",
+				"head": "entity_emissive_alpha",
+				"enchanted": "dungeons_entity_enchant"
+			},
+			"textures": {
+				"default": "textures/entity/blaze/enchanted_blaze",
+				"enchanted": "textures/misc/enchanted_entity_glint"
+			},
+			"geometry": {
+				"default": "geometry.blaze"
+			},
+			"animations": {
+				"look_at_target": "animation.common.look_at_target",
+				"move": "animation.blaze.move",
+				"move_controller": "controller.animation.blaze.move",
+				"flame_controller": "controller.animation.blaze.flame",
+				"enchanted_particles": "animation.enchanted_mob.particles"
+			},
+			"particle_effects": {
+				"charged_flames": "minecraft:mobflame_emitter",
+				"enchant": "dungeons:humanoid_enchant"
+			},
+			"scripts": {
+				"animate": [
+					"move_controller",
+					"flame_controller",
+					"enchanted_particles"
+				]
+			},
+			"render_controllers": [
+				"controller.render.blaze",
+				"controller.render.dungeons_entity_enchanted"
+			],
+			"spawn_egg": {
+				"texture": "egg_enchanted_blaze"
+			}
+		}
+	}
+}

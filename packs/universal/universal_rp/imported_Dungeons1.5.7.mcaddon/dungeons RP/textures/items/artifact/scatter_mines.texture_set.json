@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "scatter_mines",
+        "metalness_emissive_roughness": "scatter_mines_mer"
+    }
+}

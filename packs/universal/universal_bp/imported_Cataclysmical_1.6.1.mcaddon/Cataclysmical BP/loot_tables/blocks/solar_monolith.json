@@ -1,0 +1,171 @@
+{
+	"pools": [
+		{
+			"rolls": {
+				"min": 6,
+				"max": 8
+			},
+			"entries": [
+				{
+					"type": "item",
+					"weight": 4,
+					"name": "cata:solar_element",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 2
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"weight": 2,
+					"name": "minecraft:golden_apple"
+				},
+				{
+					"type": "item",
+					"weight": 2,
+					"name": "minecraft:enchanted_book",
+					"functions": [
+						{
+							"function": "enchant_with_levels",
+							"treasure": true,
+							"levels": {
+								"min": 25,
+								"max": 39
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"weight": 3,
+					"name": "minecraft:netherite_scrap",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 3
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:dried_ghast",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"name": "cata:ancient_pot",
+					"weight": 2
+				},
+				{
+					"type": "item",
+					"weight": 1,
+					"name": "minecraft:wither_skeleton_skull"
+				},
+				{
+					"type": "item",
+					"weight": 3,
+					"name": "minecraft:gold_ingot",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 20
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cata:flare_stone",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 12
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:netherite_ingot",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 2
+							}
+						}
+					]
+				},
+				{
+					"type": "empty",
+					"weight": 2
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"weight": 2,
+					"name": "cata:solar_tesla_coil"
+				},
+				{
+					"type": "item",
+					"weight": 2,
+					"name": "cata:ray_gun"
+				},
+				{
+					"type": "item",
+					"weight": 2,
+					"name": "cata:morningstar"
+				},
+				{
+					"type": "item",
+					"name": "minecraft:netherite_upgrade_smithing_template",
+					"weight": 1
+				},
+				{
+					"type": "item",
+					"weight": 2,
+					"name": "cata:solar_ring"
+				},
+				{
+					"type": "item",
+					"weight": 1,
+					"name": "cata:solar_aegis"
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"weight": 1,
+					"name": "cata:solar_core"
+				}
+			]
+		}
+	]
+}

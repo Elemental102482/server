@@ -1,0 +1,32 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+      "controller.render.shovel": {
+        "arrays": {
+          "geometries": {
+            "array.geos": [
+              "geometry.shovel"
+            ]
+          },
+          "textures": {
+            "Array.skins": [
+              "Texture.iron_shovel",
+              "Texture.diamond_shovel",
+              "Texture.netherite_shovel",
+              "Texture.gold_shovel",
+              "Texture.obsidian_shovel",
+              "Texture.emerald_shovel",
+              "Texture.lapis_shovel",
+              "Texture.stone_shovel",
+              "Texture.wood_shovel",
+              "Texture.redstone_shovel"
+            ]
+          }
+        },
+        "geometry": "Array.geos[query.variant]",
+        "materials": [ { "*": "Material.default" } ],
+        "textures": [ "Array.skins[query.variant]" ]
+      }
+    }
+  }
+  

@@ -1,0 +1,40 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cata:sunlight"
+		},
+		"pattern": [
+			"123",
+			"234",
+			"345"
+		],
+		"key": {
+			"1": {
+				"item": "cata:overloaded_solar_core"
+			},
+			"2": {
+				"item": "cata:solar_element"
+			},
+			"3": {
+				"item": "cata:sun_fragment"
+			},
+			"4": {
+				"item": "cata:lunar_element"
+			},
+			"5": {
+				"item": "minecraft:nether_star"
+			}
+		},
+		"result": {
+			"item": "cata:sunlight",
+			"count": 1
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": {
+			"context": "AlwaysUnlocked"
+		}
+	}
+}

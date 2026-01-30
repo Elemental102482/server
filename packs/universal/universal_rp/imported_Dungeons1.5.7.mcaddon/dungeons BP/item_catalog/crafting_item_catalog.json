@@ -1,0 +1,546 @@
+{
+  "format_version": "1.21.60",
+  "minecraft:crafting_items_catalog": {
+    "categories": [
+      {
+        "category_name": "items", // The Category
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "dungeons:redstone_key",
+              "name": "dungeons:itemGroup.name.bossKeys"
+            },
+            "items": [
+              "dungeons:redstone_key",
+              "dungeons:nameless_key",
+              "dungeons:questionable_key",
+              "dungeons:wretched_key",
+              "dungeons:corrupted_key",
+              "dungeons:jungle_key",
+              "dungeons:tempest_key",
+              "dungeons:ancient_key",
+              "dungeons:blaze_key",
+              "dungeons:echo_key",
+              "dungeons:void_key",
+              "dungeons:skeleton_key"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "dungeons:enchanted_rune_a",
+              "name": "dungeons:itemGroup.name.enchantedRunes"
+            },
+            "items": [
+              "dungeons:enchanted_rune_a",
+              "dungeons:enchanted_rune_c",
+              "dungeons:enchanted_rune_i",
+              "dungeons:enchanted_rune_o",
+              "dungeons:enchanted_rune_p",
+              "dungeons:enchanted_rune_r",
+              "dungeons:enchanted_rune_s",
+              "dungeons:enchanted_rune_t",
+              "dungeons:enchanted_rune_u"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "dungeons:redstone_painting",
+              "name": "dungeons:itemGroup.name.dungeonsPainting"
+            },
+            "items": [
+              "dungeons:redstone_painting",
+              "dungeons:nameless_painting",
+              "dungeons:mooshroom_painting",
+              "dungeons:wraith_painting",
+              "dungeons:cauldron_painting",
+              "dungeons:abomination_painting",
+              "dungeons:tempest_painting",
+              "dungeons:guardian_painting",
+              "dungeons:wildfire_painting",
+              "dungeons:endersent_painting",
+              "dungeons:vengeful_painting",
+              "dungeons:spooky_painting"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "dungeons:redstone_ministrosity_statue",
+              "name": "dungeons:itemGroup.name.bossTrophies"
+            },
+            "items": [
+              "dungeons:redstone_ministrosity_statue",
+              "dungeons:staff_statue",
+              "dungeons:corrupted_core",
+              "dungeons:ice_crown_replica",
+              "dungeons:benevolent_brew_statue",
+              "dungeons:abomination_bloom",
+              "dungeons:whirlwindgig",
+              "dungeons:enormous_eyeball",
+              "dungeons:blaze_cage",
+              "dungeons:enchanted_pearl",
+              "dungeons:eternal_brazier",
+              "dungeons:skullager"
+            ]
+          }
+        ]
+      },
+      {
+        "category_name": "equipment", // The Category
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "dungeons:katana",
+              "name": "dungeons:itemGroup.name.commonMelee"
+            },
+            "items": [
+              "dungeons:sword",
+              "dungeons:katana",
+              "dungeons:claymore",
+              "dungeons:cutlass",
+              "dungeons:daggers",
+              "dungeons:rapier",
+              "dungeons:glaive",
+              "dungeons:battlestaff",
+              "dungeons:axe",
+              "dungeons:double_axe",
+              "dungeons:coral_blade",
+              "dungeons:tempest_knife",
+              "dungeons:soul_knife",
+              "dungeons:soul_scythe",
+              "dungeons:gauntlets",
+              "dungeons:whip",
+              "dungeons:broken_sawblade",
+              "dungeons:great_hammer",
+              "dungeons:anchor",
+              "dungeons:bone_club",
+              "dungeons:backstabber",
+              "dungeons:void_touched_blades",
+              "dungeons:obsidian_claymore"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "dungeons:dark_katana",
+              "name": "dungeons:itemGroup.name.uniqueMelee"
+            },
+            "items": [
+              "dungeons:diamond_sword",
+              "dungeons:hawkbrand",
+              "dungeons:dark_katana",
+              "dungeons:masters_katana",
+              "dungeons:broadsword",
+              "dungeons:great_axeblade",
+              "dungeons:heartstealer",
+              "dungeons:dancers_sword",
+              "dungeons:nameless_blade",
+              "dungeons:frost_knives",
+              "dungeons:moon_daggers",
+              "dungeons:sheer_daggers",
+              "dungeons:bee_stinger",
+              "dungeons:freezing_foil",
+              "dungeons:grave_bane",
+              "dungeons:venom_glaive",
+              "dungeons:battlestaff_of_terror",
+              "dungeons:growing_staff",
+              "dungeons:firebrand",
+              "dungeons:highlands_axe",
+              "dungeons:cursed_axe",
+              "dungeons:whirlwind",
+              "dungeons:sponge_striker",
+              "dungeons:chill_gale_knife",
+              "dungeons:resolute_tempest_knife",
+              "dungeons:eternal_knife",
+              "dungeons:truthseeker",
+              "dungeons:frost_scythe",
+              "dungeons:jailors_scythe",
+              "dungeons:fighters_bindings",
+              "dungeons:maulers",
+              "dungeons:soul_fists",
+              "dungeons:vine_whip",
+              "dungeons:mechanised_sawblade",
+              "dungeons:hammer_of_gravity",
+              "dungeons:stormlander",
+              "dungeons:encrusted_anchor",
+              "dungeons:bone_cudgel",
+              "dungeons:swift_striker",
+              "dungeons:the_beginning_and_the_end",
+              "dungeons:starless_night"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "dungeons:sinister_sword",
+              "name": "dungeons:itemGroup.name.seasonalMelee"
+            },
+            "items": [
+              "dungeons:sinister_sword",
+              "dungeons:skull_scythe",
+              "dungeons:bonehead_hammer",
+              "dungeons:cackling_broom"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "dungeons:longbow",
+              "name": "dungeons:itemGroup.name.commonRanged"
+            },
+            "items": [
+              "dungeons:longbow",
+              "dungeons:snow_bow",
+              "dungeons:soul_bow",
+              "dungeons:wind_bow",
+              "dungeons:twisting_vine_bow",
+              "dungeons:void_bow",
+              "dungeons:burst_crossbow",
+              "dungeons:soul_crossbow",
+              "dungeons:heavy_crossbow",
+              "dungeons:exploding_crossbow",
+              "dungeons:cog_crossbow",
+              "dungeons:harpoon_crossbow",
+              "dungeons:shadow_crossbow"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "dungeons:red_snake",
+              "name": "dungeons:itemGroup.name.uniqueRanged"
+            },
+            "items": [
+              "dungeons:red_snake",
+              "dungeons:guardian_bow",
+              "dungeons:bonebow",
+              "dungeons:twin_bow",
+              "dungeons:winters_touch",
+              "dungeons:nocturnal_bow",
+              "dungeons:bow_of_lost_souls",
+              "dungeons:burst_gale_bow",
+              "dungeons:echo_of_the_valley",
+              "dungeons:weeping_vine_bow",
+              "dungeons:call_of_the_void",
+              "dungeons:corrupted_crossbow",
+              "dungeons:soul_hunter_crossbow",
+              "dungeons:feral_soul_crossbow",
+              "dungeons:voidcaller",
+              "dungeons:doom_crossbow",
+              "dungeons:slayer_crossbow",
+              "dungeons:firebolt_thrower",
+              "dungeons:imploding_crossbow",
+              "dungeons:pride_of_the_piglins",
+              "dungeons:nautical_crossbow",
+              "dungeons:veiled_crossbow"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "dungeons:haunted_bow",
+              "name": "dungeons:itemGroup.name.seasonalRanged"
+            },
+            "items": [
+              "dungeons:haunted_bow",
+              "dungeons:webbed_bow",
+              "dungeons:shrieking_crossbow"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "dungeons:dark_helmet",
+              "name": "dungeons:itemGroup.name.commonArmours"
+            },
+            "items": [
+              "dungeons:dark_helmet",
+              "dungeons:dark_chestplate",
+              "dungeons:dark_leggings",
+              "dungeons:dark_boots",
+              "dungeons:thief_helmet",
+              "dungeons:thief_chestplate",
+              "dungeons:thief_leggings",
+              "dungeons:thief_boots",
+              "dungeons:grim_helmet",
+              "dungeons:grim_chestplate",
+              "dungeons:grim_leggings",
+              "dungeons:grim_boots",
+              "dungeons:ghostly_helmet",
+              "dungeons:ghostly_chestplate",
+              "dungeons:ghostly_leggings",
+              "dungeons:ghostly_boots",
+              "dungeons:wolf_helmet",
+              "dungeons:wolf_chestplate",
+              "dungeons:wolf_leggings",
+              "dungeons:wolf_boots",
+              "dungeons:snow_helmet",
+              "dungeons:snow_chestplate",
+              "dungeons:snow_leggings",
+              "dungeons:snow_boots",
+              "dungeons:plate_helmet",
+              "dungeons:plate_chestplate",
+              "dungeons:plate_leggings",
+              "dungeons:plate_boots",
+              "dungeons:evocation_helmet",
+              "dungeons:evocation_chestplate",
+              "dungeons:evocation_leggings",
+              "dungeons:evocation_boots",
+              "dungeons:ocelot_helmet",
+              "dungeons:ocelot_chestplate",
+              "dungeons:ocelot_leggings",
+              "dungeons:ocelot_boots",
+              "dungeons:root_rot_helmet",
+              "dungeons:root_rot_chestplate",
+              "dungeons:root_rot_leggings",
+              "dungeons:root_rot_boots",
+              "dungeons:emerald_helmet",
+              "dungeons:emerald_chestplate",
+              "dungeons:emerald_leggings",
+              "dungeons:emerald_boots",
+              "dungeons:turtle_helmet",
+              "dungeons:turtle_chestplate",
+              "dungeons:turtle_leggings",
+              "dungeons:turtle_boots",
+              "dungeons:squid_helmet",
+              "dungeons:squid_chestplate",
+              "dungeons:squid_leggings",
+              "dungeons:squid_boots",
+              "dungeons:sprout_helmet",
+              "dungeons:sprout_chestplate",
+              "dungeons:sprout_leggings",
+              "dungeons:sprout_boots",
+              "dungeons:piglin_helmet",
+              "dungeons:piglin_chestplate",
+              "dungeons:piglin_leggings",
+              "dungeons:piglin_boots",
+              "dungeons:guard_helmet",
+              "dungeons:guard_chestplate",
+              "dungeons:guard_leggings",
+              "dungeons:guard_boots",
+              "dungeons:entertainer_helmet",
+              "dungeons:entertainer_chestplate",
+              "dungeons:entertainer_leggings",
+              "dungeons:entertainer_boots",
+              "dungeons:shulker_helmet",
+              "dungeons:shulker_chestplate",
+              "dungeons:shulker_leggings",
+              "dungeons:shulker_boots",
+              "dungeons:teleportation_helmet",
+              "dungeons:teleportation_chestplate",
+              "dungeons:teleportation_leggings",
+              "dungeons:teleportation_boots"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "dungeons:titans_shroud_helmet",
+              "name": "dungeons:itemGroup.name.uniqueArmours"
+            },
+            "items": [
+              "dungeons:titans_shroud_helmet",
+              "dungeons:titans_shroud_chestplate",
+              "dungeons:titans_shroud_leggings",
+              "dungeons:titans_shroud_boots",
+              "dungeons:spider_helmet",
+              "dungeons:spider_chestplate",
+              "dungeons:spider_leggings",
+              "dungeons:spider_boots",
+              "dungeons:wither_helmet",
+              "dungeons:wither_chestplate",
+              "dungeons:wither_leggings",
+              "dungeons:wither_boots",
+              "dungeons:ghost_kindler_helmet",
+              "dungeons:ghost_kindler_chestplate",
+              "dungeons:ghost_kindler_leggings",
+              "dungeons:ghost_kindler_boots",
+              "dungeons:black_wolf_helmet",
+              "dungeons:black_wolf_chestplate",
+              "dungeons:black_wolf_leggings",
+              "dungeons:black_wolf_boots",
+              "dungeons:fox_helmet",
+              "dungeons:fox_chestplate",
+              "dungeons:fox_leggings",
+              "dungeons:fox_boots",
+              "dungeons:frost_helmet",
+              "dungeons:frost_chestplate",
+              "dungeons:frost_leggings",
+              "dungeons:frost_boots",
+              "dungeons:full_metal_helmet",
+              "dungeons:full_metal_chestplate",
+              "dungeons:full_metal_leggings",
+              "dungeons:full_metal_boots",
+              "dungeons:ember_helmet",
+              "dungeons:ember_chestplate",
+              "dungeons:ember_leggings",
+              "dungeons:ember_boots",
+              "dungeons:verdant_helmet",
+              "dungeons:verdant_chestplate",
+              "dungeons:verdant_leggings",
+              "dungeons:verdant_boots",
+              "dungeons:shadow_walker_helmet",
+              "dungeons:shadow_walker_chestplate",
+              "dungeons:shadow_walker_leggings",
+              "dungeons:shadow_walker_boots",
+              "dungeons:black_spot_helmet",
+              "dungeons:black_spot_chestplate",
+              "dungeons:black_spot_leggings",
+              "dungeons:black_spot_boots",
+              "dungeons:gilded_glory_helmet",
+              "dungeons:gilded_glory_chestplate",
+              "dungeons:gilded_glory_leggings",
+              "dungeons:gilded_glory_boots",
+              "dungeons:opulent_helmet",
+              "dungeons:opulent_chestplate",
+              "dungeons:opulent_leggings",
+              "dungeons:opulent_boots",
+              "dungeons:nimble_turtle_helmet",
+              "dungeons:nimble_turtle_chestplate",
+              "dungeons:nimble_turtle_leggings",
+              "dungeons:nimble_turtle_boots",
+              "dungeons:glow_squid_helmet",
+              "dungeons:glow_squid_chestplate",
+              "dungeons:glow_squid_leggings",
+              "dungeons:glow_squid_boots",
+              "dungeons:living_vines_helmet",
+              "dungeons:living_vines_chestplate",
+              "dungeons:living_vines_leggings",
+              "dungeons:living_vines_boots",
+              "dungeons:golden_piglin_helmet",
+              "dungeons:golden_piglin_chestplate",
+              "dungeons:golden_piglin_leggings",
+              "dungeons:golden_piglin_boots",
+              "dungeons:ender_helmet",
+              "dungeons:ender_chestplate",
+              "dungeons:ender_leggings",
+              "dungeons:ender_boots",
+              "dungeons:troubadour_helmet",
+              "dungeons:troubadour_chestplate",
+              "dungeons:troubadour_leggings",
+              "dungeons:troubadour_boots",
+              "dungeons:sturdy_shulker_helmet",
+              "dungeons:sturdy_shulker_chestplate",
+              "dungeons:sturdy_shulker_leggings",
+              "dungeons:sturdy_shulker_boots",
+              "dungeons:unstable_helmet",
+              "dungeons:unstable_chestplate",
+              "dungeons:unstable_leggings",
+              "dungeons:unstable_boots"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "dungeons:spooky_gourdian_helmet",
+              "name": "dungeons:itemGroup.name.seasonalArmours"
+            },
+            "items": [
+              "dungeons:spooky_gourdian_helmet",
+              "dungeons:spooky_gourdian_chestplate",
+              "dungeons:spooky_gourdian_leggings",
+              "dungeons:spooky_gourdian_boots",
+              "dungeons:cloaked_skull_helmet",
+              "dungeons:cloaked_skull_chestplate",
+              "dungeons:cloaked_skull_leggings",
+              "dungeons:cloaked_skull_boots",
+              "dungeons:cauldron_helmet",
+              "dungeons:cauldron_chestplate",
+              "dungeons:cauldron_leggings",
+              "dungeons:cauldron_boots"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "dungeons:shock_powder",
+              "name": "dungeons:itemGroup.name.commonArtefact"
+            },
+            "items": [
+              "dungeons:satchel_of_elements",
+              "dungeons:ice_wand",
+              "dungeons:lightning_rod",
+              "dungeons:harvester",
+              "dungeons:scatter_mines",
+              "dungeons:blast_fungus",
+              "dungeons:eye_of_the_guardian",
+              "dungeons:corrupted_beacon",
+              "dungeons:updraft_tome",
+              "dungeons:spinblade",
+              "dungeons:soul_healer",
+              "dungeons:totem_of_regeneration",
+              "dungeons:iron_hide_amulet",
+              "dungeons:death_cap_mushroom",
+              "dungeons:boots_of_swiftness",
+              "dungeons:ghost_cloak",
+              "dungeons:light_feather",
+              "dungeons:totem_of_shielding",
+              "dungeons:totem_of_casting",
+              "dungeons:satchel_of_snacks",
+              "dungeons:satchel_of_elixirs",
+              "dungeons:powershaker",
+              "dungeons:shadow_shifter",
+              "dungeons:shock_powder",
+              "dungeons:gong_of_weakening",
+              "dungeons:wind_horn",
+              "dungeons:corrupted_seeds",
+              "dungeons:enchanters_tome",
+              "dungeons:enchanted_grass",
+              "dungeons:buzzy_nest",
+              "dungeons:golem_kit",
+              "dungeons:soul_lantern",
+              "dungeons:vexing_chant",
+              "dungeons:tome_of_duplication"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "dungeons:rare_satchel_of_elements",
+              "name": "dungeons:itemGroup.name.rareArtefact"
+            },
+            "items": [
+              "dungeons:rare_satchel_of_elements",
+              "dungeons:rare_ice_wand",
+              "dungeons:rare_lightning_rod",
+              "dungeons:rare_harvester",
+              "dungeons:rare_scatter_mines",
+              "dungeons:rare_blast_fungus",
+              "dungeons:rare_eye_of_the_guardian",
+              "dungeons:rare_corrupted_beacon",
+              "dungeons:rare_updraft_tome",
+              "dungeons:rare_spinblade",
+              "dungeons:rare_soul_healer",
+              "dungeons:rare_totem_of_regeneration",
+              "dungeons:rare_iron_hide_amulet",
+              "dungeons:rare_death_cap_mushroom",
+              "dungeons:rare_boots_of_swiftness",
+              "dungeons:rare_ghost_cloak",
+              "dungeons:rare_light_feather",
+              "dungeons:rare_totem_of_shielding",
+              "dungeons:rare_totem_of_casting",
+              "dungeons:rare_satchel_of_snacks",
+              "dungeons:rare_satchel_of_elixirs",
+              "dungeons:rare_powershaker",
+              "dungeons:rare_shadow_shifter",
+              "dungeons:rare_shock_powder",
+              "dungeons:rare_gong_of_weakening",
+              "dungeons:rare_wind_horn",
+              "dungeons:rare_corrupted_seeds",
+              "dungeons:rare_enchanters_tome",
+              "dungeons:rare_enchanted_grass",
+              "dungeons:rare_buzzy_nest",
+              "dungeons:rare_golem_kit",
+              "dungeons:rare_soul_lantern",
+              "dungeons:rare_vexing_chant",
+              "dungeons:rare_tome_of_duplication",
+              "dungeons:corrupted_pumpkin"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "dungeons:firework_arrow",
+              "name": "dungeons:itemGroup.name.customArrows"
+            },
+            "items": [
+              "dungeons:firework_arrow",
+              "dungeons:burning_arrow",
+              "dungeons:torment_arrow",
+              "dungeons:thundering_arrow",
+              "dungeons:harpoon_arrow"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
