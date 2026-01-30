@@ -1,0 +1,5 @@
+# Code owners — pessoas que podem aprovar pedidos
+# Cada linha tem o padrão: <caminho> @user
+/docs/ @Davigtkiller
+/.github/ @Davigtkiller
+/packs/ @Davigtkiller

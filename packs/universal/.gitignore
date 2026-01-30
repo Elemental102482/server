@@ -1,0 +1,9 @@
+# Ignorar artefatos de build
+/dist/
+*.mcpack
+
+# Arquivos gerados (os ícones padrão agora podem ser comitados se desejado)
+
+# Imported addons
+universal_bp/imported_*/
+universal_rp/imported_*/
